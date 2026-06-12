@@ -3,7 +3,7 @@ const { useState, useEffect, useMemo, useRef } = React;
 const allProducts = [
     { 
         id: 1, name: "Japanese Ramune Soda Original", price: 85, image: "images/ramune.png", category: "Азіатські напої", isNew: true,
-        details: { brand: "Hatakosen", country: "Японія", volume: "200 мл", calories: "70 ккал", description: "Традиційний японський лимонад в унікальній скляній пляшечці зі скляною кулькою всередині. Має освіжаючий лимонно-лаймовий смак, який ідеально підходить для спекотного літнього дня. Сам процес відкривання пляшки — це окреме задоволення!" }
+        details: { brand: "Hatakosen", country: "Японія", volume: "200 мл", calories: "70 ккал", description: "Традиційний японський лимонад в унікальній скляній пляшечці зі скляною кулькою всередині. Має освіжаючий лимонно-лаймовий смак, який ідеально підходить для спекотного літнього дня." }
     },
     { 
         id: 2, name: "Fanta Exotic Twist", price: 65, image: "images/fanta.png", category: "Газовані напої", outOfStock: true,
@@ -11,36 +11,96 @@ const allProducts = [
     },
     { 
         id: 3, name: "Dr Pepper Vanilla Float", price: 70, image: "images/drpepper.png", category: "Газовані напої", isPopular: true,
-        details: { brand: "Keurig Dr Pepper", country: "США", volume: "355 мл", calories: "150 ккал", description: "Класичний і неповторний бленд з 23 смаків Dr Pepper, доповнений м'якими, солодкими та кремовими нотками ванільного морозива. Ідеальний баланс між класичною газованкою та ніжним десертом." }
+        details: { brand: "Keurig Dr Pepper", country: "США", volume: "355 мл", calories: "150 ккал", description: "Класичний і неповторний бленд з 23 смаків Dr Pepper, доповнений м'якими, солодкими та кремовими нотками ванільного морозива." }
     },
     { 
         id: 4, name: "Mogu Mogu Lychee", price: 95, image: "images/mogumogu.png", category: "Соки зі шматочками", isPopular: true,
-        details: { brand: "Sappe", country: "Таїланд", volume: "320 мл", calories: "170 ккал", description: "Освіжаючий соковмісний напій зі смаком солодкого лічі. Його головна фішка — велика кількість шматочків кокосового желе (Ната де Коко), які так весело жувати під час пиття!" }
+        details: { brand: "Sappe", country: "Таїланд", volume: "320 мл", calories: "170 ккал", description: "Освіжаючий соковмісний напій зі смаком солодкого лічі. Його головна фішка — велика кількість шматочків кокосового желе." }
     },
     { 
         id: 5, name: "Japanese Ramune Strawberry", price: 85, image: "images/ramune.png", category: "Азіатські напої",
-        details: { brand: "Hatakosen", country: "Японія", volume: "200 мл", calories: "72 ккал", description: "Класичний японський лимонад з кулькою, але з додаванням яскравого, солодкого сиропу зі смаком стиглої полуниці. Улюблений напій на японських літніх фестивалях." }
+        details: { brand: "Hatakosen", country: "Японія", volume: "200 мл", calories: "72 ккал", description: "Класичний японський лимонад з кулькою, але з додаванням яскравого, солодкого сиропу зі смаком стиглої полуниці." }
     },
     { 
         id: 6, name: "Fanta Berry Blue", price: 65, image: "images/fanta.png", category: "Газовані напої",
-        details: { brand: "The Coca-Cola Company", country: "США", volume: "355 мл", calories: "160 ккал", description: "Незвичайна газованка яскраво-синього кольору з насиченим ягідним смаком. Солодка комбінація чорниці та малини створює неповторний освіжаючий мікс, який точно варто спробувати." }
+        details: { brand: "The Coca-Cola Company", country: "США", volume: "355 мл", calories: "160 ккал", description: "Незвичайна газованка яскраво-синього кольору з насиченим ягідним смаком. Солодка комбінація чорниці та малини." }
     },
     { 
         id: 7, name: "Dr Pepper Cherry", price: 70, image: "images/drpepper.png", category: "Газовані напої",
-        details: { brand: "Keurig Dr Pepper", country: "США", volume: "355 мл", calories: "160 ккал", description: "Оригінальний смак Dr Pepper стає ще глибшим завдяки зухвалому та соковитому вишневому акценту. Більш насичений та солодкий, ніж класична версія." }
+        details: { brand: "Keurig Dr Pepper", country: "США", volume: "355 мл", calories: "160 ккал", description: "Оригінальний смак Dr Pepper стає ще глибшим завдяки зухвалому та соковитому вишневому акценту." }
     },
     { 
         id: 8, name: "Mogu Mogu Mango", price: 95, image: "images/mogumogu.png", category: "Соки зі шматочками", isNew: true,
-        details: { brand: "Sappe", country: "Таїланд", volume: "320 мл", calories: "170 ккал", description: "Солодкий і густий смак тропічного манго у поєднанні з пружними шматочками кокосового желе. Справжній десерт у пляшечці, який підніме настрій на весь день!" }
+        details: { brand: "Sappe", country: "Таїланд", volume: "320 мл", calories: "170 ккал", description: "Солодкий і густий смак тропічного манго у поєднанні з пружними шматочками кокосового желе." }
     },
     { 
         id: 9, name: "Monster Energy Ultra White", price: 110, image: "images/ramune.png", category: "Енергетики",
-        details: { brand: "Monster Beverage", country: "США", volume: "500 мл", calories: "10 ккал", description: "Легкий, освіжаючий цитрусовий смак з нульовим вмістом цукру та калорій! Енергетик Monster Ultra зарядить вас бадьорістю за рахунок потужного енергетичного бленду без зайвої солодкості." }
+        details: { brand: "Monster Beverage", country: "США", volume: "500 мл", calories: "10 ккал", description: "Легкий, освіжаючий цитрусовий смак з нульовим вмістом цукру та калорій!" }
     },
     { 
         id: 10, name: "Chupa Chups Sparkling Melon", price: 60, image: "images/fanta.png", category: "Газовані напої", isNew: true,
-        details: { brand: "Namyang", country: "Південна Корея", volume: "345 мл", calories: "160 ккал", description: "Культовий смак знаменитих льодяників Chupa Chups зі смаком дині з вершками тепер у форматі освіжаючої газованки! Дуже м'який, кремовий і неймовірно солодкий напій." }
+        details: { brand: "Namyang", country: "Південна Корея", volume: "345 мл", calories: "160 ккал", description: "Культовий смак знаменитих льодяників Chupa Chups зі смаком дині з вершками тепер у форматі освіжаючої газованки!" }
     },
+    { 
+        id: 11, name: "Coca-Cola Vanilla", price: 65, image: "images/drpepper.png", category: "Газовані напої",
+        details: { brand: "The Coca-Cola Company", country: "США", volume: "355 мл", calories: "150 ккал", description: "Оригінальна Кока-Кола з додаванням м'яких, ніжних ноток ванілі. Легендарний смак з кремовим відтінком." }
+    },
+    { 
+        id: 12, name: "Mountain Dew Baja Blast", price: 75, image: "images/fanta.png", category: "Газовані напої", isPopular: true,
+        details: { brand: "PepsiCo", country: "США", volume: "355 мл", calories: "170 ккал", description: "Ексклюзивний тропічний лаймовий смак, який раніше був доступний тільки в Taco Bell. Тепер у бляшанці!" }
+    },
+    { 
+        id: 13, name: "Sangaria Melon Soda", price: 120, image: "images/ramune.png", category: "Азіатські напої",
+        details: { brand: "Sangaria", country: "Японія", volume: "500 мл", calories: "200 ккал", description: "Яскраво-зелена газована вода зі смаком дині, надзвичайно популярна у японських кафе. Має густий і солодкий аромат." }
+    },
+    { 
+        id: 14, name: "Mogu Mogu Strawberry", price: 95, image: "images/mogumogu.png", category: "Соки зі шматочками",
+        details: { brand: "Sappe", country: "Таїланд", volume: "320 мл", calories: "165 ккал", description: "Солодкий полуничний сік з ніжними кубиками желе Ната де Коко." }
+    },
+    { 
+        id: 15, name: "Red Bull Peach Edition", price: 85, image: "images/ramune.png", category: "Енергетики",
+        details: { brand: "Red Bull", country: "Австрія", volume: "250 мл", calories: "110 ккал", description: "Класична енергія Red Bull зі смаком стиглого персика та абрикоса. Ідеально підходить для літніх пригод." }
+    },
+    { 
+        id: 16, name: "Fanta Grape", price: 65, image: "images/fanta.png", category: "Газовані напої", outOfStock: true,
+        details: { brand: "The Coca-Cola Company", country: "США", volume: "355 мл", calories: "170 ккал", description: "Насичений фіолетовий колір і глибокий смак винограду сорту Конкорд. Справжня американська класика." }
+    },
+    { 
+        id: 17, name: "Tomomasu Watermelon Cider", price: 130, image: "images/ramune.png", category: "Азіатські напої", isNew: true,
+        details: { brand: "Tomomasu", country: "Японія", volume: "300 мл", calories: "120 ккал", description: "Елегантна скляна пляшечка з легким, преміальним сидром зі смаком свіжого кавуна." }
+    },
+    { 
+        id: 18, name: "Mogu Mogu Peach", price: 95, image: "images/mogumogu.png", category: "Соки зі шматочками",
+        details: { brand: "Sappe", country: "Таїланд", volume: "320 мл", calories: "160 ккал", description: "Соковитий персик та жувальні шматочки кокосового желе. Освіжає та заряджає енергією." }
+    },
+    { 
+        id: 19, name: "Sprite Cherry", price: 65, image: "images/fanta.png", category: "Газовані напої",
+        details: { brand: "The Coca-Cola Company", country: "США", volume: "355 мл", calories: "140 ккал", description: "Кришталево чистий Sprite з приємним доповненням у вигляді вишневого сиропу. Без кофеїну." }
+    },
+    { 
+        id: 20, name: "Ocean Bomb Sailor Moon Pomelo", price: 150, image: "images/ramune.png", category: "Азіатські напої", isPopular: true,
+        details: { brand: "YHB Ocean Bomb", country: "Тайвань", volume: "330 мл", calories: "90 ккал", description: "Газована вода зі смаком помело у колекційній бляшанці із зображенням героїв аніме Sailor Moon." }
+    },
+    { 
+        id: 21, name: "Monster Energy Mango Loco", price: 110, image: "images/ramune.png", category: "Енергетики",
+        details: { brand: "Monster Beverage", country: "США", volume: "500 мл", calories: "230 ккал", description: "Тропічний вибух соків манго, гуави та ананаса, заряджений потужним енергетичним блендом Monster." }
+    },
+    { 
+        id: 22, name: "Chupa Chups Sparkling Grape", price: 60, image: "images/fanta.png", category: "Газовані напої",
+        details: { brand: "Namyang", country: "Південна Корея", volume: "345 мл", calories: "160 ккал", description: "Виноградний льодяник Chupa Chups у рідкому вигляді. Дуже солодкий і ароматний напій." }
+    },
+    { 
+        id: 23, name: "Dr Pepper Strawberries & Cream", price: 75, image: "images/drpepper.png", category: "Газовані напої", isNew: true,
+        details: { brand: "Keurig Dr Pepper", country: "США", volume: "355 мл", calories: "150 ккал", description: "Остання новинка від Dr Pepper: поєднання класичних 23 смаків з ніжною полуницею та вершками." }
+    },
+    { 
+        id: 24, name: "Hata Ramune Matcha", price: 90, image: "images/ramune.png", category: "Азіатські напої",
+        details: { brand: "Hatakosen", country: "Японія", volume: "200 мл", calories: "75 ккал", description: "Унікальне поєднання традиційного газованого лимонаду Рамуне зі смаком справжнього японського чаю матча." }
+    },
+    { 
+        id: 25, name: "Arizona Mucho Mango", price: 100, image: "images/mogumogu.png", category: "Соки зі шматочками",
+        details: { brand: "AriZona Beverages", country: "США", volume: "680 мл", calories: "200 ккал", description: "Легендарний напій у величезній бляшанці! Дуже багато соку манго для максимального тропічного задоволення." }
+    }
 ];
 
 const categories = ["Всі напої", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
