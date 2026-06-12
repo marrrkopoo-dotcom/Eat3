@@ -128,6 +128,25 @@ const allProducts = [
     { id: 50, name: 'Nutella B-ready', price: 140, image: 'images/ramune.png', category: 'Снеки', isNew: true, details: { brand: 'Ferrero', country: 'Італія', volume: '132 г', calories: '650 ккал', description: 'Хрусткий вафельний батончик у формі багета, щедро наповнений оригінальною пастою Nutella.'} }
 ];
 
+const categoryImages = {
+    "Газовані напої": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&q=80",
+    "Азіатські напої": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80",
+    "Соки зі шматочками": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80",
+    "Енергетики": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&q=80",
+    "Снеки": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&q=80",
+    "Шоколад": "https://images.unsplash.com/photo-1548831772-2bb8b6680a13?w=400&q=80",
+    "Солодощі": "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400&q=80",
+    "Жуйки": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=400&q=80",
+    "Подарункові бокси ✨": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&q=80"
+};
+
+allProducts.forEach((p, index) => {
+    // Add a small seed to Unsplash URL to get slight variations within the same category if possible, or just use the category image
+    if (p.image.startsWith('images/')) {
+        p.image = categoryImages[p.category] || categoryImages["Снеки"];
+    }
+});
+
 const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 
@@ -516,14 +535,7 @@ const App = () => {
                     </>
                 )}
 
-                {activeView === 'shop' && activeNav !== 'Напої' && (
-                    <div className="flex flex-col items-center justify-center py-32 text-center glass-panel rounded-3xl mt-8 animate-in zoom-in-95 duration-500">
-                        <div className="text-6xl mb-6">🚧</div>
-                        <h3 className="text-3xl font-bold mb-4 text-dark dark:text-white">Розділ у розробці</h3>
-                        <p className="text-gray-500 mb-8 max-w-md text-lg">Товари у категорії <span className="font-bold">"{activeNav}"</span> з'являться зовсім скоро. Загляньте поки що у розділ з нашими напоями!</p>
-                        <button onClick={() => setActiveNav('Напої')} className="px-8 py-4 gradient-bg text-white font-bold rounded-xl shadow-lg hover:-translate-y-1 transition-transform">Перейти до напоїв</button>
-                    </div>
-                )}
+
 
                 {activeView === 'product' && selectedProduct && (
                     <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
