@@ -1,4 +1,4 @@
-const { useState, useEffect, useMemo } = React;
+const { useState, useEffect, useMemo, useRef } = React;
 
 const allProducts = [
     { 
@@ -175,6 +175,14 @@ const App = () => {
     
     const [lastOrderDetails, setLastOrderDetails] = useState(null);
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const carouselRef = useRef(null);
+
+    const scrollCarousel = (direction) => {
+        if (carouselRef.current) {
+            const scrollAmount = direction === 'left' ? -300 : 300;
+            carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    };
 
     // Browser History Integration
     useEffect(() => {
@@ -493,10 +501,18 @@ const App = () => {
                             <div className="mt-8">
                                 <div className="flex items-center justify-between mb-8">
                                     <h3 className="text-2xl lg:text-3xl font-black text-dark dark:text-white">Схожі товари</h3>
+                                    <div className="flex gap-2">
+                                        <button onClick={() => scrollCarousel('left')} className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-500 shadow-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                                        </button>
+                                        <button onClick={() => scrollCarousel('right')} className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-500 shadow-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory hide-scrollbar">
+                                <div ref={carouselRef} className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory hide-scrollbar items-stretch scroll-smooth">
                                     {similarProducts.map(p => (
-                                        <div key={p.id} className="min-w-[280px] sm:min-w-[320px] snap-start flex-shrink-0">
+                                        <div key={p.id} className="w-[260px] sm:w-[280px] snap-start flex-shrink-0 flex flex-col">
                                             <ProductCard product={p} addToCart={addToCart} onSelect={handleSelectProduct} />
                                         </div>
                                     ))}
