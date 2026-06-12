@@ -100,11 +100,36 @@ const allProducts = [
     { 
         id: 25, name: "Arizona Mucho Mango", price: 100, image: "images/mogumogu.png", category: "Соки зі шматочками",
         details: { brand: "AriZona Beverages", country: "США", volume: "680 мл", calories: "200 ккал", description: "Легендарний напій у величезній бляшанці! Дуже багато соку манго для максимального тропічного задоволення." }
-    }
+    },
+    { id: 26, name: 'Pocky Matcha Green Tea', price: 60, image: 'images/ramune.png', category: 'Снеки', details: { brand: 'Glico', country: 'Японія', volume: '40 г', calories: '180 ккал', description: 'Культові японські палички Pocky, вкриті преміальним шоколадом з додаванням справжнього чаю матча.'} },
+    { id: 27, name: 'Takis Fuego', price: 150, image: 'images/fanta.png', category: 'Снеки', isPopular: true, details: { brand: 'Barcel', country: 'Мексика', volume: '92 г', calories: '480 ккал', description: 'Екстремально гострі кукурудзяні чіпси у формі трубочок зі смаком вогняного чилі та лайма.'} },
+    { id: 28, name: 'KitKat Ruby Chocolate', price: 120, image: 'images/drpepper.png', category: 'Шоколад', details: { brand: 'Nestle', country: 'Японія', volume: '50 г', calories: '250 ккал', description: 'Унікальний рожевий шоколад Ruby з ягідними нотками та хрусткими вафлями.'} },
+    { id: 29, name: 'Reese\\'s Peanut Butter Cups', price: 80, image: 'images/mogumogu.png', category: 'Шоколад', isPopular: true, details: { brand: 'Hershey', country: 'США', volume: '42 г', calories: '210 ккал', description: 'Класичні американські кошики з ніжного молочного шоколаду з начинкою з солонуватої арахісової пасти.'} },
+    { id: 30, name: 'Mochi Taro', price: 95, image: 'images/ramune.png', category: 'Солодощі', details: { brand: 'Taiwan Dessert', country: 'Тайвань', volume: '120 г', calories: '320 ккал', description: 'Ніжні і тягучі тістечка моті з традиційною азіатською начинкою з солодкого таро.'} },
+    { id: 31, name: 'Doritos Nacho Cheese American', price: 130, image: 'images/fanta.png', category: 'Снеки', details: { brand: 'Frito-Lay', country: 'США', volume: '110 г', calories: '550 ккал', description: 'Оригінальні американські Doritos з мега-насиченим сирним смаком.'} },
+    { id: 32, name: 'Cheetos Flamin Hot', price: 140, image: 'images/drpepper.png', category: 'Снеки', isNew: true, details: { brand: 'Frito-Lay', country: 'США', volume: '99 г', calories: '500 ккал', description: 'Кукурудзяні палички з вогняно-гострим сирним смаком, які залишають на пальцях червоний пил.'} },
+    { id: 33, name: 'Milka Oreo White', price: 90, image: 'images/mogumogu.png', category: 'Шоколад', details: { brand: 'Mondelez', country: 'Німеччина', volume: '100 г', calories: '540 ккал', description: 'Ніжний білий альпійський шоколад з великою кількістю хрустких шматочків печива Oreo.'} },
+    { id: 34, name: 'Oreo Red Velvet', price: 110, image: 'images/ramune.png', category: 'Снеки', details: { brand: 'Nabisco', country: 'США', volume: '137 г', calories: '480 ккал', description: 'Лімітована серія Oreo зі смаком знаменитого торта Червоний оксамит та кремом з крем-сиру.'} },
+    { id: 35, name: 'Pop-Tarts Smores', price: 250, image: 'images/fanta.png', category: 'Снеки', isPopular: true, details: { brand: 'Kellogg\\'s', country: 'США', volume: '384 г', calories: '1600 ккал', description: 'Традиційне американське печиво для тостера з начинкою з маршмеллоу та шоколаду.'} },
+    { id: 36, name: 'Haribo Goldbears Sour', price: 70, image: 'images/drpepper.png', category: 'Солодощі', details: { brand: 'Haribo', country: 'Німеччина', volume: '100 г', calories: '340 ккал', description: 'Знамениті золоті ведмедики Харібо, але тепер у надзвичайно кислій посипці!'} },
+    { id: 37, name: 'Skittles Tropical', price: 50, image: 'images/mogumogu.png', category: 'Солодощі', details: { brand: 'Mars', country: 'США', volume: '61 г', calories: '240 ккал', description: 'Тропічний мікс популярних цукерок: банан-ягода, ківі-лайм, манго-танжело, ананас-маракуйя.'} },
+    { id: 38, name: 'Hubba Bubba Bubble Tape', price: 85, image: 'images/ramune.png', category: 'Жуйки', isNew: true, details: { brand: 'Wrigley', country: 'США', volume: '56 г', calories: '150 ккал', description: 'Гігантська жуйка-стрічка довжиною майже 2 метри зі смаком класичної солодкої полуниці.'} },
+    { id: 39, name: 'Trident Splash', price: 45, image: 'images/fanta.png', category: 'Жуйки', details: { brand: 'Mondelez', country: 'США', volume: '20 г', calories: '40 ккал', description: 'Жуйка без цукру з рідкою освіжаючою начинкою всередині. Довго зберігає смак.'} },
+    { id: 40, name: 'Mystery Snack Box', price: 650, image: 'images/drpepper.png', category: 'Подарункові бокси ✨', isPopular: true, details: { brand: 'Choco Yummy', country: 'Мікс', volume: '1.5 кг', calories: 'N/A', description: 'Сюрприз-бокс із 15 різноманітними солодощами та напоями з усього світу. Ідеально на подарунок!'} },
+    { id: 41, name: 'Asian Treat Box', price: 800, image: 'images/mogumogu.png', category: 'Подарункові бокси ✨', details: { brand: 'Choco Yummy', country: 'Азія', volume: '1.2 кг', calories: 'N/A', description: 'Спеціальний бокс, який містить виключно найкращі смаколики з Японії, Кореї та Тайваню.'} },
+    { id: 42, name: 'Pocky Strawberry', price: 60, image: 'images/ramune.png', category: 'Снеки', details: { brand: 'Glico', country: 'Японія', volume: '40 г', calories: '180 ккал', description: 'Класичні японські бісквітні палички у рожевій полуничній глазурі.'} },
+    { id: 43, name: 'KitKat Sake', price: 150, image: 'images/fanta.png', category: 'Шоколад', isNew: true, details: { brand: 'Nestle', country: 'Японія', volume: '60 г', calories: '280 ккал', description: 'Тільки в Японії! Ексклюзивний білий шоколад зі справжнім порошком японського саке.'} },
+    { id: 44, name: 'Nerds Rope Rainbow', price: 55, image: 'images/drpepper.png', category: 'Солодощі', details: { brand: 'Ferrara Candy', country: 'США', volume: '26 г', calories: '90 ккал', description: 'Довга жувальна мармеладка, повністю вкрита дрібними хрусткими та кисленькими цукерками Nerds.'} },
+    { id: 45, name: 'Warheads Extreme Sour', price: 90, image: 'images/mogumogu.png', category: 'Солодощі', isPopular: true, details: { brand: 'Impact Confections', country: 'США', volume: '28 г', calories: '100 ккал', description: 'Найкисліші цукерки у світі! Витримаєте перші 30 секунд кислоти, щоб дістатися солодкого центру?'} },
+    { id: 46, name: 'Pringles Pizza', price: 120, image: 'images/ramune.png', category: 'Снеки', details: { brand: 'Kellogg\\'s', country: 'США', volume: '158 г', calories: '800 ккал', description: 'Знамениті чіпси в тубусі зі смаком справжньої італійської піци з сиром та пепероні.'} },
+    { id: 47, name: 'Hershey\\'s Cookies n Creme', price: 75, image: 'images/fanta.png', category: 'Шоколад', details: { brand: 'Hershey', country: 'США', volume: '43 г', calories: '220 ккал', description: 'Культова плитка з ніжного білого шоколаду з хрусткими шматочками шоколадного печива.'} },
+    { id: 48, name: 'Jelly Belly Bean Boozled', price: 180, image: 'images/drpepper.png', category: 'Солодощі', isPopular: true, details: { brand: 'Jelly Belly', country: 'США', volume: '45 г', calories: '160 ккал', description: 'Рулетка смаків! Кожен колір може бути як смачним (персик), так і жахливим (блювота). Грайте з друзями!'} },
+    { id: 49, name: 'Toxic Waste Sour Candy', price: 110, image: 'images/mogumogu.png', category: 'Солодощі', details: { brand: 'Candy Dynamics', country: 'США', volume: '42 г', calories: '150 ккал', description: 'Ультра-кислі льодяники, запаковані у мініатюрну жовту бочку для токсичних відходів.'} },
+    { id: 50, name: 'Nutella B-ready', price: 140, image: 'images/ramune.png', category: 'Снеки', isNew: true, details: { brand: 'Ferrero', country: 'Італія', volume: '132 г', calories: '650 ккал', description: 'Хрусткий вафельний батончик у формі багета, щедро наповнений оригінальною пастою Nutella.'} }
 ];
 
-const categories = ["Всі напої", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
-const navItems = ["Солодощі", "Напої", "Снеки", "Шоколад", "Жуйки", "Подарункові бокси ✨"];
+const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
+const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 
 const ThemeToggle = ({ isDark, toggleTheme }) => (
     <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-600 dark:text-gray-300">
@@ -226,7 +251,7 @@ const App = () => {
     const [isDark, setIsDark] = useState(false);
     const [cart, setCart] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedCategory, setSelectedCategory] = useState("Всі напої");
+    const [selectedCategory, setSelectedCategory] = useState("Всі");
     const [currentPage, setCurrentPage] = useState(1);
     
     // Filters
@@ -261,6 +286,9 @@ const App = () => {
     const navigateTo = (view, nav = activeNav, product = selectedProduct) => {
         window.history.pushState({ view, nav, product }, '');
         setActiveView(view);
+        if (nav !== activeNav) {
+            setSelectedCategory(nav);
+        }
         setActiveNav(nav);
         setSelectedProduct(product);
         window.scrollTo(0, 0);
@@ -298,7 +326,7 @@ const App = () => {
 
     const clearFilters = () => {
         setSearchQuery(''); 
-        setSelectedCategory('Всі напої');
+        setSelectedCategory('Всі');
         setPriceRange({ min: '', max: '' });
         setCalRange({ min: '', max: '' });
     };
@@ -315,7 +343,11 @@ const App = () => {
                 p.details.brand.toLowerCase().includes(q) ||
                 p.details.country.toLowerCase().includes(q);
 
-            const matchCategory = selectedCategory === "Всі напої" || p.category === selectedCategory;
+            const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
+            const matchCategory = 
+                selectedCategory === "Всі" ? true :
+                selectedCategory === "Напої" ? drinkCategories.includes(p.category) :
+                p.category === selectedCategory;
             
             const matchPrice = (!priceRange.min || p.price >= Number(priceRange.min)) && 
                                (!priceRange.max || p.price <= Number(priceRange.max));
@@ -386,12 +418,12 @@ const App = () => {
             />
             
             <main className="flex-grow container mx-auto px-4 pb-20 pt-6 animate-in fade-in duration-500">
-                {activeView === 'shop' && activeNav === 'Напої' && (
+                {activeView === 'shop' && (
                     <>
                         <div className="py-2 text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
                             <span className="hover:text-primary cursor-pointer transition-colors">Головна</span>
                             <span className="mx-3 text-gray-300 dark:text-gray-600">/</span>
-                            <span className="text-dark dark:text-gray-200">Напої</span>
+                            <span className="text-dark dark:text-gray-200">{activeNav}</span>
                         </div>
 
                         <div className="flex flex-col lg:flex-row gap-8">
@@ -402,14 +434,19 @@ const App = () => {
                                         Категорії
                                     </h3>
                                     <ul className="space-y-2">
-                                        {categories.map(cat => (
-                                            <li key={cat}>
-                                                <button onClick={() => setSelectedCategory(cat)} className={`w-full flex justify-between items-center px-4 py-3 rounded-xl transition-all ${selectedCategory === cat ? 'bg-primary/10 dark:bg-primary/20 text-primary font-bold' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>
-                                                    <span>{cat}</span>
-                                                    <span className={`text-xs px-2 py-1 rounded-full ${selectedCategory === cat ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-gray-700'}`}>{cat === "Всі напої" ? allProducts.length : allProducts.filter(p => p.category === cat).length}</span>
-                                                </button>
-                                            </li>
-                                        ))}
+                                        {categories.map(cat => {
+                                            // Only show category if it has items, except for 'Всі'
+                                            const catCount = cat === "Всі" ? allProducts.length : allProducts.filter(p => p.category === cat).length;
+                                            if (cat !== "Всі" && catCount === 0) return null;
+                                            return (
+                                                <li key={cat}>
+                                                    <button onClick={() => setSelectedCategory(cat)} className={`w-full flex justify-between items-center px-4 py-3 rounded-xl transition-all ${selectedCategory === cat ? 'bg-primary/10 dark:bg-primary/20 text-primary font-bold' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>
+                                                        <span>{cat}</span>
+                                                        <span className={`text-xs px-2 py-1 rounded-full ${selectedCategory === cat ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-gray-700'}`}>{catCount}</span>
+                                                    </button>
+                                                </li>
+                                            );
+                                        })}
                                     </ul>
                                 </div>
 
