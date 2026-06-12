@@ -160,7 +160,7 @@ const ThemeToggle = ({ isDark, toggleTheme }) => (
     </button>
 );
 
-const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, activeView, setActiveView, activeNav, setActiveNav }) => {
+const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, activeView, setActiveView, activeNav, setActiveNav, navigateTo }) => {
     return (
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -434,6 +434,7 @@ const App = () => {
                 setActiveView={setActiveView}
                 activeNav={activeNav}
                 setActiveNav={setActiveNav}
+                navigateTo={navigateTo}
             />
             
             <main className="flex-grow container mx-auto px-4 pb-20 pt-6 animate-in fade-in duration-500">
