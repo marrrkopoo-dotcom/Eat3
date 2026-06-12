@@ -71,22 +71,25 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                     </div>
                 </div>
                 
-                {activeView === 'shop' && activeNav === 'Напої' && (
-                    <div className="flex-1 max-w-2xl mx-6 hidden sm:block">
-                        <div className="relative group">
-                            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                <svg className="h-5 w-5 text-gray-400 group-focus-within:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                            </div>
-                            <input 
-                                type="text" 
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                                placeholder="Глибокий пошук (назва, бренд, опис, країна)..." 
-                                className="w-full pl-11 pr-4 py-2.5 bg-gray-100/50 dark:bg-darkCard/50 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-full focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all shadow-inner" 
-                            />
+                <div className="flex-1 max-w-2xl mx-6 hidden sm:block">
+                    <div className="relative group">
+                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <svg className="h-5 w-5 text-gray-400 group-focus-within:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                         </div>
+                        <input 
+                            type="text" 
+                            value={searchQuery}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                if (activeView !== 'shop' || activeNav !== 'Напої') {
+                                    navigateTo('shop', 'Напої');
+                                }
+                            }}
+                            placeholder="Глибокий пошук (назва, бренд, опис, країна)..." 
+                            className="w-full pl-11 pr-4 py-2.5 bg-gray-100/50 dark:bg-darkCard/50 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-full focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all shadow-inner" 
+                        />
                     </div>
-                )}
+                </div>
 
                 <div className="flex items-center gap-4 ml-auto">
                     <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
@@ -295,11 +298,9 @@ const App = () => {
     // Similar products logic
     let similarProducts = [];
     if (selectedProduct) {
-        similarProducts = allProducts.filter(p => p.category === selectedProduct.category && p.id !== selectedProduct.id).slice(0, 3);
-        if (similarProducts.length < 3) {
-            const otherProducts = allProducts.filter(p => p.id !== selectedProduct.id && !similarProducts.find(sp => sp.id === p.id)).slice(0, 3 - similarProducts.length);
-            similarProducts = [...similarProducts, ...otherProducts];
-        }
+        similarProducts = allProducts.filter(p => p.id !== selectedProduct.id);
+        similarProducts.sort((a, b) => (a.category === selectedProduct.category ? -1 : 1) - (b.category === selectedProduct.category ? -1 : 1));
+        similarProducts = similarProducts.slice(0, 8);
     }
 
     return (
@@ -487,14 +488,18 @@ const App = () => {
                             </div>
                         </div>
 
-                        {/* Similar Products */}
+                        {/* Similar Products Carousel */}
                         {similarProducts.length > 0 && (
                             <div className="mt-8">
                                 <div className="flex items-center justify-between mb-8">
                                     <h3 className="text-2xl lg:text-3xl font-black text-dark dark:text-white">Схожі товари</h3>
                                 </div>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    {similarProducts.map(p => <ProductCard key={p.id} product={p} addToCart={addToCart} onSelect={handleSelectProduct} />)}
+                                <div className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory hide-scrollbar">
+                                    {similarProducts.map(p => (
+                                        <div key={p.id} className="min-w-[280px] sm:min-w-[320px] snap-start flex-shrink-0">
+                                            <ProductCard product={p} addToCart={addToCart} onSelect={handleSelectProduct} />
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         )}
