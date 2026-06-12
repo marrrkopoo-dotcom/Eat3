@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Магазин екзотичних напоїв та солодощів",
   "scripts": {
-    "start": "serve . -l tcp://0.0.0.0:$PORT",
-    "dev": "serve . -l 8080"
+    "start": "serve -s . -l tcp://0.0.0.0:$PORT",
+    "dev": "serve -s . -l 8080"
   },
   "dependencies": {
     "serve": "^14.2.3"
