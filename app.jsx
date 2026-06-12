@@ -60,7 +60,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
     return (
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-                <div className="flex items-center gap-4 group cursor-pointer" onClick={() => { setActiveView('shop'); setActiveNav('Напої'); }}>
+                <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Напої')}>
                     <div className="relative">
                         <div className="absolute inset-0 bg-primary rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
                         <img src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
@@ -97,7 +97,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                     </div>
                     
                     <button 
-                        onClick={() => setActiveView('checkout')}
+                        onClick={() => navigateTo('checkout')}
                         className={`relative p-2.5 rounded-full transition-all shadow-sm ${activeView === 'checkout' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-darkCard text-dark dark:text-white hover:bg-primary hover:text-white'}`}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
@@ -115,7 +115,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                         <ul className="flex items-center gap-8 text-sm font-semibold h-12 overflow-x-auto whitespace-nowrap hide-scrollbar text-gray-600 dark:text-gray-300">
                             {navItems.map(item => (
                                 <li key={item} 
-                                    onClick={() => { setActiveNav(item); setActiveView('shop'); }}
+                                    onClick={() => navigateTo('shop', item)}
                                     className={`cursor-pointer h-full flex items-center transition-colors ${activeNav === item ? 'text-primary border-b-2 border-primary' : 'hover:text-primary dark:hover:text-primary'}`}>
                                     {item}
                                 </li>
@@ -172,6 +172,28 @@ const App = () => {
     
     const [lastOrderDetails, setLastOrderDetails] = useState(null);
     const [selectedProduct, setSelectedProduct] = useState(null);
+
+    // Browser History Integration
+    useEffect(() => {
+        const handlePopState = (e) => {
+            if (e.state) {
+                setActiveView(e.state.view || 'shop');
+                if (e.state.nav) setActiveNav(e.state.nav);
+                if (e.state.product) setSelectedProduct(e.state.product);
+            }
+        };
+        window.history.replaceState({ view: activeView, nav: activeNav, product: selectedProduct }, '');
+        window.addEventListener('popstate', handlePopState);
+        return () => window.removeEventListener('popstate', handlePopState);
+    }, []);
+
+    const navigateTo = (view, nav = activeNav, product = selectedProduct) => {
+        window.history.pushState({ view, nav, product }, '');
+        setActiveView(view);
+        setActiveNav(nav);
+        setSelectedProduct(product);
+        window.scrollTo(0, 0);
+    };
 
     const itemsPerPage = 6;
 
@@ -261,13 +283,11 @@ const App = () => {
         });
 
         clearCart();
-        setActiveView('success');
+        navigateTo('success');
     };
 
     const handleSelectProduct = (product) => {
-        setSelectedProduct(product);
-        setActiveView('product');
-        window.scrollTo(0, 0);
+        navigateTo('product', activeNav, product);
     };
 
     const cartTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
@@ -402,29 +422,28 @@ const App = () => {
                 {activeView === 'product' && selectedProduct && (
                     <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <div className="py-2 text-sm text-gray-500 dark:text-gray-400 font-medium mb-6 flex items-center gap-2">
-                            <span onClick={() => {setActiveView('shop'); setActiveNav('Напої');}} className="hover:text-primary cursor-pointer transition-colors flex items-center gap-1">
+                            <span onClick={() => navigateTo('shop', 'Напої')} className="hover:text-primary cursor-pointer transition-colors flex items-center gap-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                                 Назад до каталогу
                             </span>
                             <span className="mx-2 text-gray-300 dark:text-gray-600">|</span>
-                            <span onClick={() => { setSelectedCategory(selectedProduct.category); setActiveView('shop'); setActiveNav('Напої'); }} className="hover:text-primary cursor-pointer transition-colors">{selectedProduct.category}</span>
+                            <span onClick={() => { setSelectedCategory(selectedProduct.category); navigateTo('shop', 'Напої'); }} className="hover:text-primary cursor-pointer transition-colors">{selectedProduct.category}</span>
                             <span className="mx-2 text-gray-300 dark:text-gray-600">/</span>
                             <span className="text-dark dark:text-gray-200 line-clamp-1">{selectedProduct.name}</span>
                         </div>
 
                         <div className="glass-panel w-full rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row relative mb-16">
                             {/* Image Section */}
-                            <div className="w-full md:w-1/2 bg-white dark:bg-gray-800/80 p-10 lg:p-20 flex items-center justify-center relative border-r border-gray-100 dark:border-gray-800">
+                            <div className="w-full md:w-1/2 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[400px]">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5"></div>
-                                <img src={selectedProduct.image} alt={selectedProduct.name} className="max-h-[500px] object-contain relative z-10 animate-float drop-shadow-2xl" />
+                                <img src={selectedProduct.image} alt={selectedProduct.name} className="absolute inset-0 w-full h-full object-cover z-10" />
                                 {selectedProduct.outOfStock && (
-                                    <div className="absolute top-8 left-8 bg-gray-500 text-white text-sm font-bold px-4 py-2 rounded-full z-10 shadow-md">Немає в наявності</div>
+                                    <div className="absolute top-8 left-8 bg-gray-500 text-white text-sm font-bold px-4 py-2 rounded-full z-20 shadow-md">Немає в наявності</div>
                                 )}
                             </div>
 
                             {/* Details Section */}
                             <div className="w-full md:w-1/2 p-8 lg:p-14 flex flex-col">
-                                <div className="text-sm font-bold text-accent mb-3 uppercase tracking-widest">{selectedProduct.category}</div>
                                 <h1 className="text-4xl lg:text-5xl font-black text-dark dark:text-white mb-6 leading-tight tracking-tight">{selectedProduct.name}</h1>
                                 
                                 <div className="flex items-end gap-4 mb-8">
@@ -499,7 +518,7 @@ const App = () => {
                                     <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
                                         <div className="text-6xl mb-4">🛒</div>
                                         <p className="mb-6 font-medium">Кошик поки порожній</p>
-                                        <button onClick={() => {setActiveView('shop'); setActiveNav('Напої');}} className="px-6 py-2.5 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-colors">Перейти до покупок</button>
+                                        <button onClick={() => navigateTo('shop', 'Напої')} className="px-6 py-2.5 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-colors">Перейти до покупок</button>
                                     </div>
                                 ) : (
                                     <>
@@ -585,7 +604,7 @@ const App = () => {
                                         <button type="submit" disabled={cart.length === 0} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
                                             Оформити замовлення
                                         </button>
-                                        <button type="button" onClick={() => {setActiveView('shop'); setActiveNav('Напої');}} className="w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors">
+                                        <button type="button" onClick={() => navigateTo('shop', 'Напої')} className="w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors">
                                             Повернутися до покупок
                                         </button>
                                     </div>
@@ -662,7 +681,7 @@ const App = () => {
                             </div>
 
                             <div className="mt-10 text-center relative z-10">
-                                <button onClick={() => {setActiveView('shop'); setActiveNav('Напої');}} className="px-8 py-4 gradient-bg text-white font-bold rounded-full shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1">
+                                <button onClick={() => navigateTo('shop', 'Напої')} className="px-8 py-4 gradient-bg text-white font-bold rounded-full shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1">
                                     Повернутися на головну
                                 </button>
                             </div>
@@ -680,7 +699,7 @@ const App = () => {
                                 Choco Yummy
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                                Найкращий магазин солодощів та екзотичних напоїв з усього світу. Ми доставляємо радість у кожен дім!
+                                Магазин солодощів та екзотичних напоїв з усього світу.
                             </p>
                         </div>
                         <div>
@@ -722,9 +741,8 @@ const App = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center text-sm font-medium text-gray-500 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div className="text-center text-sm font-medium text-gray-500 pt-8 border-t border-gray-800 flex justify-center items-center">
                         <span>&copy; {new Date().getFullYear()} Choco Yummy. Всі права захищені.</span>
-                        <span className="flex items-center gap-1">Зроблено з <span className="text-red-500">❤️</span> для любителів солодощів</span>
                     </div>
                 </div>
             </footer>
