@@ -24,6 +24,39 @@ allProducts.forEach((p, index) => {
 const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 
+const SmartImage = ({ src, alt, className, style }) => {
+    const [currentSrc, setCurrentSrc] = React.useState(src);
+    const [fallbackIndex, setFallbackIndex] = React.useState(0);
+    
+    React.useEffect(() => {
+        setCurrentSrc(src);
+        setFallbackIndex(0);
+    }, [src]);
+
+    const getFallbacks = (originalUrl) => {
+        if (!originalUrl || typeof originalUrl !== 'string' || !originalUrl.includes('-495x495')) return [originalUrl];
+        return [
+            originalUrl,
+            originalUrl.replace('-495x495', '-282x495'),
+            originalUrl.replace('-495x495', '-228x228'),
+            originalUrl.replace('-495x495', '-200x200'),
+            originalUrl.replace('-495x495', '-50x50'),
+            originalUrl.replace('-495x495', '')
+        ];
+    };
+    
+    const fallbacks = getFallbacks(src);
+
+    const handleError = () => {
+        if (fallbackIndex < fallbacks.length - 1) {
+            const nextIndex = fallbackIndex + 1;
+            setFallbackIndex(nextIndex);
+            setCurrentSrc(fallbacks[nextIndex]);
+        }
+    };
+
+    return <img src={currentSrc} alt={alt} className={className} style={style} onError={handleError} />;
+};
 const ThemeToggle = ({ isDark, toggleTheme }) => (
     <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-600 dark:text-gray-300">
         {isDark ? (
@@ -41,7 +74,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                 <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Напої')}>
                     <div className="relative">
                         <div className="absolute inset-0 bg-primary rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
-                        <img src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
+                        <SmartImage src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
                     </div>
                     <div className="hidden md:block">
                         <div className="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase">Магазин солодощів</div>
@@ -117,7 +150,7 @@ const ProductCard = ({ product, addToCart, onSelect }) => (
         
         <div className="relative mb-4 aspect-square flex items-center justify-center p-6 bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden group-hover:shadow-inner transition-shadow">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <img src={product.image} alt={product.name} className={`max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110 ${!product.outOfStock && 'animate-float'}`} style={{ animationDelay: `${product.id * 0.2}s` }} />
+            <SmartImage src={product.image} alt={product.name} className={`max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110 ${!product.outOfStock && 'animate-float'}`} style={{ animationDelay: `${product.id * 0.2}s` }} />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center backdrop-blur-[2px]">
                 <span className="text-white font-bold bg-white/20 px-4 py-2 rounded-full backdrop-blur-md">Детальніше</span>
             </div>
@@ -429,7 +462,7 @@ const App = () => {
                             {/* Image Section */}
                             <div className="w-full md:w-1/2 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[400px]">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5"></div>
-                                <img src={selectedProduct.image} alt={selectedProduct.name} className="absolute inset-0 w-full h-full object-cover z-10" />
+                                <SmartImage src={selectedProduct.image} alt={selectedProduct.name} className="absolute inset-0 w-full h-full object-cover z-10" />
                                 {selectedProduct.outOfStock && (
                                     <div className="absolute top-8 left-8 bg-gray-500 text-white text-sm font-bold px-4 py-2 rounded-full z-20 shadow-md">Немає в наявності</div>
                                 )}
@@ -531,7 +564,7 @@ const App = () => {
                                             {cart.map(item => (
                                                 <div key={item.id} className="flex gap-4 glass-panel p-3 rounded-2xl">
                                                     <div className="w-20 h-20 bg-white dark:bg-gray-800 rounded-xl p-2 border border-gray-100 dark:border-gray-700 flex-shrink-0 relative">
-                                                        <img src={item.image} alt={item.name} className="w-full h-full object-contain" />
+                                                        <SmartImage src={item.image} alt={item.name} className="w-full h-full object-contain" />
                                                         <button onClick={() => removeFromCart(item.id)} className="absolute -top-2 -right-2 bg-white dark:bg-gray-700 text-gray-400 hover:text-red-500 rounded-full p-1 shadow-md transition-colors">
                                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                                                         </button>
@@ -700,7 +733,7 @@ const App = () => {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                         <div>
                             <div className="font-extrabold text-xl gradient-text tracking-tight mb-4 flex items-center gap-2">
-                                <img src="images/logo.png" alt="Logo" className="h-8 w-8 object-contain" />
+                                <SmartImage src="images/logo.png" alt="Logo" className="h-8 w-8 object-contain" />
                                 Choco Yummy
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
