@@ -461,11 +461,29 @@ const App = () => {
 
                                         {totalPages > 1 && (
                                             <div className="flex justify-center mt-14">
-                                                <div className="flex items-center gap-2 glass-panel p-2 rounded-2xl shadow-sm">
+                                                <div className="flex flex-wrap items-center justify-center gap-2 glass-panel p-2 rounded-2xl shadow-sm">
                                                     <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="w-10 h-10 rounded-xl bg-gray-50 dark:bg-darkCard font-bold">&laquo;</button>
-                                                    {[...Array(totalPages)].map((_, i) => (
-                                                        <button key={i} onClick={() => setCurrentPage(i + 1)} className={`w-10 h-10 rounded-xl font-bold ${currentPage === i + 1 ? 'gradient-bg text-white scale-105' : 'bg-gray-50 dark:bg-darkCard'}`}>{i + 1}</button>
-                                                    ))}
+                                                    {(() => {
+                                                        let pages = [];
+                                                        if (totalPages <= 7) {
+                                                            for (let i = 1; i <= totalPages; i++) pages.push(i);
+                                                        } else {
+                                                            if (currentPage <= 4) {
+                                                                pages = [1, 2, 3, 4, 5, '...', totalPages];
+                                                            } else if (currentPage >= totalPages - 3) {
+                                                                pages = [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+                                                            } else {
+                                                                pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+                                                            }
+                                                        }
+                                                        return pages.map((page, index) => 
+                                                            page === '...' ? (
+                                                                <span key={`ellipsis-${index}`} className="w-10 h-10 flex items-center justify-center font-bold text-gray-400">...</span>
+                                                            ) : (
+                                                                <button key={page} onClick={() => setCurrentPage(page)} className={`w-10 h-10 rounded-xl font-bold transition-all ${currentPage === page ? 'gradient-bg text-white shadow-md scale-105' : 'bg-gray-50 dark:bg-darkCard hover:bg-gray-200 dark:hover:bg-gray-700'}`}>{page}</button>
+                                                            )
+                                                        );
+                                                    })()}
                                                     <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="w-10 h-10 rounded-xl bg-gray-50 dark:bg-darkCard font-bold">&raquo;</button>
                                                 </div>
                                             </div>
