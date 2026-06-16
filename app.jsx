@@ -25,122 +25,72 @@ const categories = ["Всі", "Газовані напої", "Азіатські
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 
 const SmartImage = ({ src, alt, className, style, onFinalError }) => {
-    const [currentSrc, setCurrentSrc] = React.useState(src);
-    const [fallbackIndex, setFallbackIndex] = React.useState(0);
+    const lowResSrc = src && src.includes('-495x495') ? src.replace('-495x495', '-50x50') : src;
+    
+    const [currentSrc, setCurrentSrc] = React.useState(lowResSrc);
+    const [isLoaded, setIsLoaded] = React.useState(false);
     
     React.useEffect(() => {
-        setCurrentSrc(src);
-        setFallbackIndex(0);
-    }, [src]);
+        if (!src || typeof src !== 'string' || !src.includes('-495x495')) {
+            setCurrentSrc(src);
+            setIsLoaded(true);
+            return;
+        }
 
-    const getFallbacks = (originalUrl) => {
-        if (!originalUrl || typeof originalUrl !== 'string' || !originalUrl.includes('-495x495')) return [originalUrl];
-        return [
-            originalUrl,
-            originalUrl.replace('-495x495', '-282x495'),
-            originalUrl.replace('-495x495', '-228x228'),
-            originalUrl.replace('-495x495', '-200x200'),
-            originalUrl.replace('-495x495', '-50x50'),
-            originalUrl.replace('-495x495', '')
+        setCurrentSrc(lowResSrc);
+        setIsLoaded(false);
+
+        const highResOptions = [
+            src,
+            src.replace('-495x495', '-282x495'),
+            src.replace('-495x495', '-228x228'),
+            src.replace('-495x495', '-200x200'),
+            src.replace('-495x495', '')
         ];
-    };
-    
-    const fallbacks = getFallbacks(src);
 
-    const handleError = () => {
-        if (fallbackIndex < fallbacks.length - 1) {
-            const nextIndex = fallbackIndex + 1;
-            setFallbackIndex(nextIndex);
-            setCurrentSrc(fallbacks[nextIndex]);
-        } else if (typeof onFinalError === 'function') {
+        let currentIndex = 0;
+        let isCancelled = false;
+
+        const tryLoadNext = () => {
+            if (isCancelled) return;
+            if (currentIndex >= highResOptions.length) {
+                setIsLoaded(true);
+                return;
+            }
+
+            const img = new Image();
+            img.onload = () => {
+                if (!isCancelled) {
+                    setCurrentSrc(highResOptions[currentIndex]);
+                    setIsLoaded(true);
+                }
+            };
+            img.onerror = () => {
+                currentIndex++;
+                tryLoadNext();
+            };
+            img.src = highResOptions[currentIndex];
+        };
+
+        tryLoadNext();
+
+        return () => { isCancelled = true; };
+    }, [src, lowResSrc]);
+
+    const handleLowResError = () => {
+        if (typeof onFinalError === 'function') {
             onFinalError();
         }
     };
 
-    return <img src={currentSrc} alt={alt} className={className} style={style} onError={handleError} onFinalError={onFinalError} />;
-};
-const ThemeToggle = ({ isDark, toggleTheme }) => (
-    <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-600 dark:text-gray-300">
-        {isDark ? (
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
-        ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
-        )}
-    </button>
-);
-
-const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, activeView, setActiveView, activeNav, setActiveNav, navigateTo }) => {
     return (
-        <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
-            <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-                <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Напої')}>
-                    <div className="relative">
-                        <div className="absolute inset-0 bg-primary rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
-                        <SmartImage src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
-                    </div>
-                    <div className="hidden md:block">
-                        <div className="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase">Магазин солодощів</div>
-                        <div className="font-extrabold text-xl gradient-text tracking-tight">Choco Yummy</div>
-                    </div>
-                </div>
-                
-                <div className="flex-1 max-w-2xl mx-6 hidden sm:block">
-                    <div className="relative group">
-                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <svg className="h-5 w-5 text-gray-400 group-focus-within:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                        </div>
-                        <input 
-                            type="text" 
-                            value={searchQuery}
-                            onChange={(e) => {
-                                setSearchQuery(e.target.value);
-                                if (activeView !== 'shop' || activeNav !== 'Напої') {
-                                    navigateTo('shop', 'Напої');
-                                }
-                            }}
-                            placeholder="Глибокий пошук (назва, бренд, опис, країна)..." 
-                            className="w-full pl-11 pr-4 py-2.5 bg-gray-100/50 dark:bg-darkCard/50 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-full focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all shadow-inner" 
-                        />
-                    </div>
-                </div>
-
-                <div className="flex items-center gap-4 ml-auto">
-                    <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
-                    
-                    <div className="flex flex-col text-right hidden lg:flex border-l border-gray-200 dark:border-gray-700 pl-4">
-                        <span className="font-bold text-dark dark:text-white text-sm">+38 (000) 000-00-00</span>
-                        <span className="text-xs text-gray-500 dark:text-gray-400">Пн-Нд: 09:00 - 20:00</span>
-                    </div>
-                    
-                    <button 
-                        onClick={() => navigateTo('checkout')}
-                        className={`relative p-2.5 rounded-full transition-all shadow-sm ${activeView === 'checkout' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-darkCard text-dark dark:text-white hover:bg-primary hover:text-white'}`}
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                        {cartItemsCount > 0 && (
-                            <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold rounded-full h-5 w-5 flex items-center justify-center border-2 border-white dark:border-darkBg shadow-sm cart-badge">
-                                {cartItemsCount}
-                            </span>
-                        )}
-                    </button>
-                </div>
-            </div>
-            {(activeView === 'shop' || activeView === 'product') && (
-                <nav className="border-t border-gray-100 dark:border-gray-800 bg-white/50 dark:bg-darkBg/50 backdrop-blur-md">
-                    <div className="container mx-auto px-4">
-                        <ul className="flex items-center gap-8 text-sm font-semibold h-12 overflow-x-auto whitespace-nowrap hide-scrollbar text-gray-600 dark:text-gray-300">
-                            {navItems.map(item => (
-                                <li key={item} 
-                                    onClick={() => navigateTo('shop', item)}
-                                    className={`cursor-pointer h-full flex items-center transition-colors ${activeNav === item ? 'text-primary border-b-2 border-primary' : 'hover:text-primary dark:hover:text-primary'}`}>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </nav>
-            )}
-        </header>
+        <img 
+            src={currentSrc} 
+            alt={alt} 
+            className={\ \ transition-all duration-700 ease-in-out} 
+            style={style} 
+            onError={handleLowResError} 
+        />
     );
 };
 
