@@ -25,13 +25,25 @@ const categories = ["Всі", "Газовані напої", "Азіатські
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 
 const SmartImage = ({ src, alt, className, style, onFinalError }) => {
-    const lowResSrc = src && typeof src === 'string' && src.includes('-495x495') ? src.replace('-495x495', '-50x50') : src;
+    // Extract base URL and extension
+    const extractBase = (url) => {
+        if (!url || typeof url !== 'string') return { base: '', ext: '' };
+        // Matches base path and extension, safely ignoring any -NxM dimension suffix
+        const match = url.match(/(.*?)(?:-\d+x\d+)?(\.(?:webp|jpg|jpeg|png))$/i);
+        if (match) {
+            return { base: match[1], ext: match[2] };
+        }
+        return { base: url, ext: '' };
+    };
+
+    const { base, ext } = extractBase(src);
+    const lowResSrc = base && ext ? `${base}-50x50${ext}` : src;
     
     const [currentSrc, setCurrentSrc] = React.useState(lowResSrc);
     const [isLoaded, setIsLoaded] = React.useState(false);
     
     React.useEffect(() => {
-        if (!src || typeof src !== 'string' || !src.includes('-495x495')) {
+        if (!base || !ext) {
             setCurrentSrc(src);
             setIsLoaded(true);
             return;
@@ -41,27 +53,59 @@ const SmartImage = ({ src, alt, className, style, onFinalError }) => {
         setIsLoaded(false);
 
         const highResOptions = [
-            src,
-            src.replace('-495x495', '-282x495'),
-            src.replace('-495x495', '-228x228'),
-            src.replace('-495x495', '-200x200'),
-            src.replace('-495x495', '')
+            src, // Always try exact provided first
+            `${base}-495x495${ext}`,
+            `${base}-500x500${ext}`,
+            `${base}-282x495${ext}`,
+            `${base}-228x228${ext}`,
+            `${base}-200x200${ext}`,
+            `${base}-150x150${ext}`,
+            `${base}${ext}`
         ];
+
+        if (ext.toLowerCase() !== '.webp') {
+            highResOptions.push(
+                `${base}-495x495.webp`,
+                `${base}-500x500.webp`,
+                `${base}-282x495.webp`,
+                `${base}-228x228.webp`,
+                `${base}-200x200.webp`,
+                `${base}-150x150.webp`,
+                `${base}.webp`
+            );
+        }
+        
+        if (ext.toLowerCase() !== '.jpg' && ext.toLowerCase() !== '.jpeg') {
+            highResOptions.push(
+                `${base}-495x495.jpg`,
+                `${base}-500x500.jpg`,
+                `${base}-282x495.jpg`,
+                `${base}-228x228.jpg`,
+                `${base}-200x200.jpg`,
+                `${base}-150x150.jpg`,
+                `${base}.jpg`
+            );
+        }
+
+        // Remove duplicates and empty
+        const uniqueOptions = [...new Set(highResOptions)].filter(Boolean);
 
         let currentIndex = 0;
         let isCancelled = false;
 
         const tryLoadNext = () => {
             if (isCancelled) return;
-            if (currentIndex >= highResOptions.length) {
-                setIsLoaded(true);
+            if (currentIndex >= uniqueOptions.length) {
+                if (typeof onFinalError === 'function') {
+                    onFinalError();
+                }
                 return;
             }
 
             const img = new Image();
             img.onload = () => {
                 if (!isCancelled) {
-                    setCurrentSrc(highResOptions[currentIndex]);
+                    setCurrentSrc(uniqueOptions[currentIndex]);
                     setIsLoaded(true);
                 }
             };
@@ -69,15 +113,15 @@ const SmartImage = ({ src, alt, className, style, onFinalError }) => {
                 currentIndex++;
                 tryLoadNext();
             };
-            img.src = highResOptions[currentIndex];
+            img.src = uniqueOptions[currentIndex];
         };
 
         tryLoadNext();
 
         return () => { isCancelled = true; };
-    }, [src, lowResSrc]);
+    }, [src, base, ext, lowResSrc]);
 
-    const handleLowResError = () => {
+    const handleCurrentError = () => {
         if (typeof onFinalError === 'function') {
             onFinalError();
         }
@@ -90,7 +134,7 @@ const SmartImage = ({ src, alt, className, style, onFinalError }) => {
                 alt={alt} 
                 className={`${className || ''} ${!isLoaded ? 'blur-md scale-110 opacity-70' : 'blur-0 scale-100 opacity-100'} transition-all duration-700 ease-in-out w-full h-full object-contain`} 
                 style={style} 
-                onError={handleLowResError} 
+                onError={handleCurrentError} 
             />
         </div>
     );
