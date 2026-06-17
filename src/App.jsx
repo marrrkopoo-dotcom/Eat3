@@ -2,11 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 
 import productsData from './data/products.json';
 
-const allProducts = [...productsData].sort((a, b) => {
-    if (!!a.localImage === !!b.localImage) return 0;
-    if (a.localImage && !b.localImage) return -1;
-    return 1;
-});
+const allProducts = productsData.filter(p => !!p.localImage);
 
 const categoryImages = {
     "Газовані напої": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&q=80",
