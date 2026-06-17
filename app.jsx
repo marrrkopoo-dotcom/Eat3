@@ -369,7 +369,7 @@ const App = () => {
 
             return matchSearch && matchCategory && matchPrice && matchCal;
         });
-    }, [searchQuery, selectedCategory, priceRange, calRange]);
+    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages]);
 
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const paginatedProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
