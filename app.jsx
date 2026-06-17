@@ -88,7 +88,7 @@ const SmartImage = ({ src, alt, className, style, onFinalError }) => {
         }
 
         // Remove duplicates and empty
-        const uniqueOptions = [...new Set(highResOptions)].filter(Boolean);
+        const uniqueOptions = Array.from(new Set(highResOptions)).filter(Boolean);
 
         let currentIndex = 0;
         let isCancelled = false;
