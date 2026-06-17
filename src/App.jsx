@@ -122,7 +122,7 @@ const ThemeToggle = ({ isDark, toggleTheme }) => (
     </button>
 );
 
-const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOpen, setIsSearchOverlayOpen, activeView, setActiveView, activeNav, setActiveNav, navigateTo, selectedCity, setIsCityConfirmed }) => {
+const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOpen, setIsSearchOverlayOpen, activeView, setActiveView, activeNav, setActiveNav, navigateTo, selectedCity, setIsCityConfirmed, currentUser, setIsAuthModalOpen }) => {
     return (
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -185,7 +185,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                     </div>
                     
                     <button 
-                        onClick={() => navigateTo('profile')}
+                        onClick={() => currentUser ? navigateTo('profile') : setIsAuthModalOpen(true)}
                         className={`relative p-2.5 rounded-full transition-all shadow-sm ml-2 ${activeView === 'profile' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-darkCard text-dark dark:text-white hover:bg-primary hover:text-white'}`}
                         title="Особистий кабінет"
                     >
@@ -327,9 +327,69 @@ const App = () => {
     const [isCityConfirmed, setIsCityConfirmed] = useState(false);
     const availableCities = ["Київ", "Львів", "Одеса", "Харків", "Дніпро"];
 
+    // Auth State
+    const [currentUser, setCurrentUser] = useState(() => {
+        const saved = localStorage.getItem('currentUser');
+        return saved ? JSON.parse(saved) : null;
+    });
+    const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+    const [authMode, setAuthMode] = useState('login'); // 'login' or 'register'
+    const [authForm, setAuthForm] = useState({ name: '', email: '', phone: '', address: '', password: '' });
+    const [authError, setAuthError] = useState('');
+
     const handleAcceptCookie = () => {
         localStorage.setItem('cookieAccepted', 'true');
         setCookieAccepted(true);
+    };
+    
+    const handleAuthSubmit = (e) => {
+        e.preventDefault();
+        setAuthError('');
+        
+        let users = JSON.parse(localStorage.getItem('users') || '[]');
+        
+        if (authMode === 'register') {
+            if (!authForm.name || !authForm.email || !authForm.password) {
+                setAuthError('Будь ласка, заповніть всі обов\'язкові поля');
+                return;
+            }
+            if (users.find(u => u.email === authForm.email)) {
+                setAuthError('Користувач з таким email вже існує');
+                return;
+            }
+            
+            const newUser = {
+                id: Date.now(),
+                ...authForm,
+                bonuses: 100, // Welcome bonuses!
+                avatar: `https://ui-avatars.com/api/?name=${encodeURIComponent(authForm.name)}&background=random`,
+                orders: []
+            };
+            
+            users.push(newUser);
+            localStorage.setItem('users', JSON.stringify(users));
+            localStorage.setItem('currentUser', JSON.stringify(newUser));
+            setCurrentUser(newUser);
+            setIsAuthModalOpen(false);
+            setAuthForm({ name: '', email: '', phone: '', address: '', password: '' });
+            
+        } else {
+            const user = users.find(u => u.email === authForm.email && u.password === authForm.password);
+            if (user) {
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                setCurrentUser(user);
+                setIsAuthModalOpen(false);
+                setAuthForm({ name: '', email: '', phone: '', address: '', password: '' });
+            } else {
+                setAuthError('Невірний email або пароль');
+            }
+        }
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem('currentUser');
+        setCurrentUser(null);
+        navigateTo('shop');
     };
     
     // Filters
@@ -499,6 +559,8 @@ const App = () => {
                 navigateTo={navigateTo}
                 selectedCity={selectedCity}
                 setIsCityConfirmed={setIsCityConfirmed}
+                currentUser={currentUser}
+                setIsAuthModalOpen={setIsAuthModalOpen}
             />
             {isSearchOverlayOpen && (
                 <>
@@ -566,6 +628,67 @@ const App = () => {
                         </div>
                     </div>
                 </>
+            )}
+            
+            {/* Auth Modal */}
+            {isAuthModalOpen && (
+                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-300">
+                    <div className="bg-white dark:bg-darkBg w-full max-w-md rounded-3xl shadow-2xl overflow-hidden relative">
+                        <button onClick={() => setIsAuthModalOpen(false)} className="absolute top-4 right-4 p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors z-10 text-gray-500 dark:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                        </button>
+                        
+                        <div className="p-8">
+                            <div className="text-center mb-8">
+                                <h2 className="text-2xl font-extrabold text-dark dark:text-white mb-2">
+                                    {authMode === 'login' ? 'З поверненням!' : 'Створити акаунт'}
+                                </h2>
+                                <p className="text-sm text-gray-500 dark:text-gray-400">
+                                    {authMode === 'login' ? 'Увійдіть, щоб отримати доступ до кабінету' : 'Зареєструйтесь і отримайте 100 бонусів!'}
+                                </p>
+                            </div>
+                            
+                            {authError && (
+                                <div className="mb-6 p-3 bg-red-100 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-xl text-red-600 dark:text-red-400 text-sm font-medium text-center">
+                                    {authError}
+                                </div>
+                            )}
+
+                            <form onSubmit={handleAuthSubmit} className="space-y-4">
+                                {authMode === 'register' && (
+                                    <>
+                                        <div>
+                                            <input type="text" placeholder="Ваше ім'я *" value={authForm.name} onChange={(e) => setAuthForm({...authForm, name: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                        </div>
+                                        <div>
+                                            <input type="tel" placeholder="Телефон" value={authForm.phone} onChange={(e) => setAuthForm({...authForm, phone: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Адреса доставки" value={authForm.address} onChange={(e) => setAuthForm({...authForm, address: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                        </div>
+                                    </>
+                                )}
+                                <div>
+                                    <input type="email" placeholder="Email *" value={authForm.email} onChange={(e) => setAuthForm({...authForm, email: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="Пароль *" value={authForm.password} onChange={(e) => setAuthForm({...authForm, password: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                </div>
+                                
+                                <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-1 mt-2">
+                                    {authMode === 'login' ? 'Увійти' : 'Зареєструватись'}
+                                </button>
+                            </form>
+                            
+                            <div className="mt-8 text-center text-sm font-medium text-gray-500 dark:text-gray-400">
+                                {authMode === 'login' ? 'Немає акаунту? ' : 'Вже маєте акаунт? '}
+                                <button type="button" onClick={() => setAuthMode(authMode === 'login' ? 'register' : 'login')} className="text-primary hover:underline focus:outline-none">
+                                    {authMode === 'login' ? 'Створити зараз' : 'Увійти'}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             )}
             
             <main className="flex-grow container mx-auto px-4 pb-20 pt-6 animate-in fade-in duration-500">
@@ -964,7 +1087,7 @@ const App = () => {
                     </div>
                 )}
 
-                {activeView === 'profile' && (
+                {activeView === 'profile' && currentUser && (
                     <div className="max-w-6xl mx-auto py-8 px-4 animate-in slide-in-from-bottom-4 duration-500">
                         <div className="flex items-center gap-4 mb-8">
                             <button onClick={() => navigateTo('shop')} className="p-2 bg-white dark:bg-darkCard rounded-full shadow-sm hover:shadow-md transition-all text-dark dark:text-white">
@@ -979,9 +1102,9 @@ const App = () => {
                                 {/* Profile Card */}
                                 <div className="glass-panel p-6 rounded-3xl shadow-sm">
                                     <div className="flex items-center gap-4 mb-6">
-                                        <img src={dummyUser.avatar} alt={dummyUser.name} className="w-16 h-16 rounded-full border-2 border-primary shadow-sm" />
+                                        <img src={currentUser.avatar} alt={currentUser.name} className="w-16 h-16 rounded-full border-2 border-primary shadow-sm" />
                                         <div>
-                                            <h3 className="text-xl font-bold text-dark dark:text-white">{dummyUser.name}</h3>
+                                            <h3 className="text-xl font-bold text-dark dark:text-white">{currentUser.name}</h3>
                                             <p className="text-sm text-gray-500 dark:text-gray-400">Постійний клієнт</p>
                                         </div>
                                     </div>
@@ -991,27 +1114,32 @@ const App = () => {
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                                             <div>
                                                 <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Телефон</div>
-                                                <div className="text-dark dark:text-white font-semibold">{dummyUser.phone}</div>
+                                                <div className="text-dark dark:text-white font-semibold">{currentUser.phone || "Не вказано"}</div>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                                             <div>
                                                 <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Email</div>
-                                                <div className="text-dark dark:text-white font-semibold">{dummyUser.email}</div>
+                                                <div className="text-dark dark:text-white font-semibold">{currentUser.email}</div>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                             <div>
                                                 <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Адреса доставки</div>
-                                                <div className="text-dark dark:text-white font-semibold">{dummyUser.address}</div>
+                                                <div className="text-dark dark:text-white font-semibold">{currentUser.address || "Не вказано"}</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button className="w-full mt-6 py-2.5 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                                        Редагувати профіль
-                                    </button>
+                                    <div className="flex gap-2 mt-6">
+                                        <button className="flex-1 py-2.5 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                                            Редагувати
+                                        </button>
+                                        <button onClick={handleLogout} className="py-2.5 px-4 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 font-bold rounded-xl hover:bg-red-200 dark:hover:bg-red-900/50 transition-colors" title="Вийти з акаунту">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" /></svg>
+                                        </button>
+                                    </div>
                                 </div>
                                 
                                 {/* Bonuses Card */}
@@ -1024,7 +1152,7 @@ const App = () => {
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                             </div>
                                         </div>
-                                        <div className="text-4xl font-extrabold mb-1">{dummyUser.bonuses}</div>
+                                        <div className="text-4xl font-extrabold mb-1">{currentUser.bonuses}</div>
                                         <div className="text-sm text-white/80 font-medium mb-6">Choco Coins</div>
                                         <div className="text-xs bg-black/10 p-3 rounded-xl backdrop-blur-sm border border-white/10">
                                             Ви можете використати їх для оплати до 50% вартості наступного замовлення!
@@ -1038,8 +1166,18 @@ const App = () => {
                                 <div className="glass-panel p-8 rounded-3xl shadow-sm h-full">
                                     <h3 className="text-xl font-bold text-dark dark:text-white mb-6">Історія замовлень</h3>
                                     
+                                    {(!currentUser.orders || currentUser.orders.length === 0) ? (
+                                        <div className="text-center py-10">
+                                            <div className="bg-gray-100 dark:bg-gray-800 rounded-full h-20 w-20 flex items-center justify-center mx-auto mb-4 text-gray-400">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                                            </div>
+                                            <h4 className="font-bold text-dark dark:text-white mb-2">У вас ще немає замовлень</h4>
+                                            <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Але це ніколи не пізно виправити!</p>
+                                            <button onClick={() => navigateTo('shop')} className="px-6 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-colors">Перейти до каталогу</button>
+                                        </div>
+                                    ) : (
                                     <div className="space-y-4">
-                                        {dummyOrders.map(order => (
+                                        {currentUser.orders.map(order => (
                                             <div key={order.id} className="border border-gray-100 dark:border-gray-800 rounded-2xl p-5 hover:border-primary/30 transition-colors">
                                                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4 pb-4 border-b border-gray-100 dark:border-gray-800">
                                                     <div>
@@ -1083,6 +1221,7 @@ const App = () => {
                                             </div>
                                         ))}
                                     </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
