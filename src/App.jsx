@@ -122,19 +122,34 @@ const ThemeToggle = ({ isDark, toggleTheme }) => (
     </button>
 );
 
-const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOpen, setIsSearchOverlayOpen, activeView, setActiveView, activeNav, setActiveNav, navigateTo }) => {
+const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOpen, setIsSearchOverlayOpen, activeView, setActiveView, activeNav, setActiveNav, navigateTo, selectedCity, setIsCityConfirmed }) => {
     return (
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-                <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Напої')}>
-                    <div className="relative">
-                        <div className="absolute inset-0 bg-primary rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
-                        <img src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
+                <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-primary rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
+                            <img src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
+                        </div>
+                        <div className="hidden md:block">
+                            <div className="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase">Мережа супермаркетів</div>
+                            <div className="font-extrabold text-xl gradient-text tracking-tight">Choco Yummy</div>
+                        </div>
                     </div>
-                    <div className="hidden md:block">
-                        <div className="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase">Магазин солодощів</div>
-                        <div className="font-extrabold text-xl gradient-text tracking-tight">Choco Yummy</div>
-                    </div>
+                    
+                    {selectedCity && (
+                        <div 
+                            className="hidden lg:flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors border border-gray-200 dark:border-gray-700" 
+                            onClick={() => setIsCityConfirmed(false)}
+                            title="Змінити місто"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                            <span className="text-sm font-bold text-dark dark:text-white">{selectedCity}</span>
+                        </div>
+                    )}
                 </div>
                 
                 <div className="flex-1 max-w-2xl mx-6 hidden sm:block">
@@ -430,6 +445,8 @@ const App = () => {
                 activeNav={activeNav}
                 setActiveNav={setActiveNav}
                 navigateTo={navigateTo}
+                selectedCity={selectedCity}
+                setIsCityConfirmed={setIsCityConfirmed}
             />
             {isSearchOverlayOpen && (
                 <>
@@ -628,58 +645,60 @@ const App = () => {
                                 )}
                             </div>
                             {/* Right Sidebar (Map) - Floating Overlay */}
-                            <aside className="fixed top-28 right-6 w-80 z-40 hidden xl:block animate-in fade-in slide-in-from-right-8 duration-500">
-                                <div className="glass-panel p-6 rounded-2xl shadow-sm sticky top-24">
-                                    <div className="flex justify-between items-start mb-1">
-                                        <h3 className="font-extrabold text-lg text-dark dark:text-white">
-                                            {isCityConfirmed ? `Місто: ${selectedCity}` : `Ваше місто ${selectedCity}?`}
-                                        </h3>
-                                        {isCityConfirmed && (
-                                            <button onClick={() => { setIsCityConfirmed(false); setIsSelectingCity(true); }} className="text-xs font-bold text-primary hover:underline mt-1">Змінити</button>
+                            {!isCityConfirmed && (
+                                <aside className="fixed top-28 right-6 w-80 z-50 animate-in fade-in slide-in-from-right-8 duration-500">
+                                    <div className="glass-panel p-6 rounded-2xl shadow-2xl relative">
+                                        <button onClick={() => setIsCityConfirmed(true)} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                                        </button>
+                                        <div className="flex justify-between items-start mb-1 pr-6">
+                                            <h3 className="font-extrabold text-lg text-dark dark:text-white">
+                                                Ваше місто {selectedCity}?
+                                            </h3>
+                                        </div>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">Товари та акції залежать від адреси</p>
+                                        
+                                        {!isSelectingCity && (
+                                            <div className="flex gap-2 mb-5">
+                                                <button onClick={() => setIsCityConfirmed(true)} className="flex-1 bg-primary hover:bg-primary/90 text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Так, вірно</button>
+                                                <button onClick={() => setIsSelectingCity(true)} className="flex-1 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Ні, інше</button>
+                                            </div>
                                         )}
-                                    </div>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">Товари та акції залежать від адреси</p>
-                                    
-                                    {!isCityConfirmed && !isSelectingCity && (
-                                        <div className="flex gap-2 mb-5">
-                                            <button onClick={() => setIsCityConfirmed(true)} className="flex-1 bg-primary hover:bg-primary/90 text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Так, вірно</button>
-                                            <button onClick={() => setIsSelectingCity(true)} className="flex-1 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Ні, інше</button>
-                                        </div>
-                                    )}
 
-                                    {isSelectingCity && (
-                                        <div className="mb-5">
-                                            <select 
-                                                value={selectedCity} 
-                                                onChange={(e) => {
-                                                    setSelectedCity(e.target.value);
-                                                    setIsSelectingCity(false);
-                                                    setIsCityConfirmed(true);
-                                                }}
-                                                className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all cursor-pointer appearance-none"
-                                            >
-                                                <option value="" disabled>Оберіть місто</option>
-                                                {availableCities.map(city => (
-                                                    <option key={city} value={city}>{city}</option>
-                                                ))}
-                                            </select>
-                                        </div>
-                                    )}
+                                        {isSelectingCity && (
+                                            <div className="mb-5">
+                                                <select 
+                                                    value={selectedCity} 
+                                                    onChange={(e) => {
+                                                        setSelectedCity(e.target.value);
+                                                        setIsSelectingCity(false);
+                                                        setIsCityConfirmed(true);
+                                                    }}
+                                                    className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all cursor-pointer appearance-none"
+                                                >
+                                                    <option value="" disabled>Оберіть місто</option>
+                                                    {availableCities.map(city => (
+                                                        <option key={city} value={city}>{city}</option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                        )}
 
-                                    <div className="rounded-xl overflow-hidden h-64 border border-gray-200 dark:border-gray-800 relative group">
-                                        <iframe 
-                                            width="100%" 
-                                            height="100%" 
-                                            frameBorder="0" 
-                                            scrolling="no" 
-                                            marginHeight="0" 
-                                            marginWidth="0" 
-                                            src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedCity)}&t=&z=12&ie=UTF8&iwloc=&output=embed&hl=uk`}
-                                            style={{ border: 'none' }}
-                                        ></iframe>
+                                        <div className="rounded-xl overflow-hidden h-64 border border-gray-200 dark:border-gray-800 relative group">
+                                            <iframe 
+                                                width="100%" 
+                                                height="100%" 
+                                                frameBorder="0" 
+                                                scrolling="no" 
+                                                marginHeight="0" 
+                                                marginWidth="0" 
+                                                src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedCity)}&t=&z=12&ie=UTF8&iwloc=&output=embed&hl=uk`}
+                                                style={{ border: 'none' }}
+                                            ></iframe>
+                                        </div>
                                     </div>
-                                </div>
-                            </aside>
+                                </aside>
+                            )}
                         </div>
                     </>
                 )}
