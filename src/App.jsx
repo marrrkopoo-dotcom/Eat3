@@ -241,9 +241,11 @@ const promotions = [
 
 const App = () => {
     // State
-    const [cookieAccepted, setCookieAccepted] = useState(false);
+    const [cookieAccepted, setCookieAccepted] = useState(() => {
+        return localStorage.getItem('cookieAccepted') === 'true';
+    });
     const [activeView, setActiveView] = useState('shop'); // 'shop', 'product', 'checkout', 'success'
-    const [activeNav, setActiveNav] = useState('Напої');
+    const [activeNav, setActiveNav] = useState('Всі');
     const [isDark, setIsDark] = useState(false);
     const [cart, setCart] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
@@ -251,6 +253,17 @@ const App = () => {
     const [selectedCategory, setSelectedCategory] = useState("Всі");
     const [currentPage, setCurrentPage] = useState(1);
     const [brokenImages, setBrokenImages] = useState(new Set());
+    
+    // City Selection State
+    const [selectedCity, setSelectedCity] = useState("Київ");
+    const [isSelectingCity, setIsSelectingCity] = useState(false);
+    const [isCityConfirmed, setIsCityConfirmed] = useState(false);
+    const availableCities = ["Київ", "Львів", "Одеса", "Харків", "Дніпро"];
+
+    const handleAcceptCookie = () => {
+        localStorage.setItem('cookieAccepted', 'true');
+        setCookieAccepted(true);
+    };
     
     // Filters
     const [priceRange, setPriceRange] = useState({ min: '', max: '' });
@@ -550,7 +563,7 @@ const App = () => {
 
                             <div className="flex-1 min-w-0">
                                 {/* Banners Section */}
-                                <div className="mb-8 overflow-x-auto hide-scrollbar">
+                                <div className="mb-8 overflow-x-auto pb-4">
                                     <div className="flex gap-4 pb-2 w-max">
                                         {promotions.map(promo => (
                                             <div key={promo.id} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
@@ -614,15 +627,45 @@ const App = () => {
                                     </div>
                                 )}
                             </div>
-                            {/* Right Sidebar (Map) */}
-                            <aside className="w-full lg:w-72 xl:w-80 flex-shrink-0 space-y-6">
+                            {/* Right Sidebar (Map) - Floating Overlay */}
+                            <aside className="fixed top-28 right-6 w-80 z-40 hidden xl:block animate-in fade-in slide-in-from-right-8 duration-500">
                                 <div className="glass-panel p-6 rounded-2xl shadow-sm sticky top-24">
-                                    <h3 className="font-extrabold text-lg mb-1 text-dark dark:text-white">Ваше місто Київ?</h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">Товари та акції залежать від адреси</p>
-                                    <div className="flex gap-2 mb-5">
-                                        <button className="flex-1 bg-primary hover:bg-primary/90 text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Так, вірно</button>
-                                        <button className="flex-1 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Ні, інше</button>
+                                    <div className="flex justify-between items-start mb-1">
+                                        <h3 className="font-extrabold text-lg text-dark dark:text-white">
+                                            {isCityConfirmed ? `Місто: ${selectedCity}` : `Ваше місто ${selectedCity}?`}
+                                        </h3>
+                                        {isCityConfirmed && (
+                                            <button onClick={() => { setIsCityConfirmed(false); setIsSelectingCity(true); }} className="text-xs font-bold text-primary hover:underline mt-1">Змінити</button>
+                                        )}
                                     </div>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">Товари та акції залежать від адреси</p>
+                                    
+                                    {!isCityConfirmed && !isSelectingCity && (
+                                        <div className="flex gap-2 mb-5">
+                                            <button onClick={() => setIsCityConfirmed(true)} className="flex-1 bg-primary hover:bg-primary/90 text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Так, вірно</button>
+                                            <button onClick={() => setIsSelectingCity(true)} className="flex-1 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Ні, інше</button>
+                                        </div>
+                                    )}
+
+                                    {isSelectingCity && (
+                                        <div className="mb-5">
+                                            <select 
+                                                value={selectedCity} 
+                                                onChange={(e) => {
+                                                    setSelectedCity(e.target.value);
+                                                    setIsSelectingCity(false);
+                                                    setIsCityConfirmed(true);
+                                                }}
+                                                className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all cursor-pointer appearance-none"
+                                            >
+                                                <option value="" disabled>Оберіть місто</option>
+                                                {availableCities.map(city => (
+                                                    <option key={city} value={city}>{city}</option>
+                                                ))}
+                                            </select>
+                                        </div>
+                                    )}
+
                                     <div className="rounded-xl overflow-hidden h-64 border border-gray-200 dark:border-gray-800 relative group">
                                         <iframe 
                                             width="100%" 
@@ -631,10 +674,9 @@ const App = () => {
                                             scrolling="no" 
                                             marginHeight="0" 
                                             marginWidth="0" 
-                                            src="https://www.openstreetmap.org/export/embed.html?bbox=30.4,50.4,30.6,50.5&amp;layer=mapnik&amp;marker=50.4501,30.5234" 
+                                            src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedCity)}&t=&z=12&ie=UTF8&iwloc=&output=embed&hl=uk`}
                                             style={{ border: 'none' }}
                                         ></iframe>
-                                        <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent pointer-events-none transition-colors"></div>
                                     </div>
                                 </div>
                             </aside>
@@ -982,6 +1024,17 @@ const App = () => {
                     </div>
                 </div>
             </footer>
+
+            {!cookieAccepted && (
+                <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-white dark:bg-darkCard p-4 rounded-2xl shadow-2xl z-50 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 max-w-2xl w-[calc(100%-2rem)] border border-gray-200 dark:border-gray-700 animate-in slide-in-from-bottom-8 duration-500">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 text-center sm:text-left">
+                        Ми використовуємо <strong>рекомендаційні технології</strong> та збираємо текстові файли cookie для аналітики та правильної роботи сайту. Залишаючись на сайті, ви <strong>погоджуєтесь з обробкою текстових файлів cookie</strong>.
+                    </p>
+                    <button onClick={handleAcceptCookie} className="w-full sm:w-auto whitespace-nowrap px-6 py-2.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white font-bold rounded-xl transition-colors">
+                        Погоджуюсь
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
