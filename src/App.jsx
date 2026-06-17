@@ -24,7 +24,7 @@ allProducts.forEach((p, index) => {
 const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Подарункові бокси ✨"];
 
-const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError }) => {
+const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
     // Generate variations for remote URLs
     const getVariations = (url) => {
         if (!url) return [];
@@ -100,7 +100,10 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError }) =
                 alt={alt} 
                 className={`${className || ''} ${!isLoaded ? 'blur-md scale-110 opacity-50' : 'blur-0 scale-100 opacity-100'} transition-all duration-700 ease-in-out w-full h-full object-contain`} 
                 style={style} 
-                onLoad={() => setIsLoaded(true)}
+                onLoad={() => {
+                    setIsLoaded(true);
+                    if (typeof onLoad === 'function') onLoad();
+                }}
                 onError={handleError} 
             />
         </div>
@@ -192,15 +195,18 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
     );
 };
 
-const ProductCard = ({ product, addToCart, onSelect, onImageError }) => (
-    <div className="glass-panel rounded-2xl p-4 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer" onClick={() => onSelect(product)}>
+const ProductCard = ({ product, addToCart, onSelect, onImageError }) => {
+    const [isImageLoaded, setIsImageLoaded] = React.useState(false);
+
+    return (
+    <div className={`glass-panel rounded-2xl p-4 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
         {product.isNew && <div className="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full z-10 shadow-md animate-pulse">Новинка</div>}
         {product.isPopular && !product.isNew && <div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10 shadow-md">Хіт</div>}
         {product.outOfStock && <div className="absolute top-4 left-4 bg-gray-500 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10 shadow-md">Немає в наявності</div>}
         
         <div className="relative mb-4 aspect-square flex items-center justify-center p-6 bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden group-hover:shadow-inner transition-shadow">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <SmartImage src={product.localImage} fallbackSrc={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110" onFinalError={onImageError} />
+            <SmartImage src={product.localImage} fallbackSrc={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110" onFinalError={onImageError} onLoad={() => setIsImageLoaded(true)} />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold bg-white/20 px-4 py-2 rounded-full">Детальніше</span>
             </div>
@@ -218,8 +224,8 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError }) => (
             </button>
         </div>
     </div>
-);
-
+  );
+};
 const App = () => {
     // State
     const [activeView, setActiveView] = useState('shop'); // 'shop', 'product', 'checkout', 'success'
