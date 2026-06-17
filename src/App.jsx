@@ -232,8 +232,16 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError }) => {
     </div>
   );
 };
+const promotions = [
+    { id: 1, title: "Ця добірка на 100% складається з лимонадів, ягід та морозива", image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80", tag: "Добірка" },
+    { id: 2, title: "Новинка від Kinder до сніданку", image: "https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?w=600&q=80", tag: "Новинка" },
+    { id: 3, title: "У нас Топ-дроп ось такооооої вишини", image: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=600&q=80", tag: "Акція" },
+    { id: 4, title: "Усім спорт! Знижки на нашу спортивну лінійку", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80", tag: "Знижки" }
+];
+
 const App = () => {
     // State
+    const [cookieAccepted, setCookieAccepted] = useState(false);
     const [activeView, setActiveView] = useState('shop'); // 'shop', 'product', 'checkout', 'success'
     const [activeNav, setActiveNav] = useState('Напої');
     const [isDark, setIsDark] = useState(false);
@@ -540,7 +548,22 @@ const App = () => {
                                 </div>
                             </aside>
 
-                            <div className="flex-1">
+                            <div className="flex-1 min-w-0">
+                                {/* Banners Section */}
+                                <div className="mb-8 overflow-x-auto hide-scrollbar">
+                                    <div className="flex gap-4 pb-2 w-max">
+                                        {promotions.map(promo => (
+                                            <div key={promo.id} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
+                                                <img src={promo.image} alt={promo.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80"></div>
+                                                <div className="absolute inset-0 p-5 flex flex-col">
+                                                    <span className="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md self-start uppercase tracking-wider mb-auto">{promo.tag}</span>
+                                                    <h4 className="text-white font-extrabold text-lg leading-tight mt-auto drop-shadow-md">{promo.title}</h4>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
                                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 glass-panel p-4 rounded-2xl">
                                     <h1 className="text-3xl font-black text-dark dark:text-white tracking-tight">{selectedCategory}</h1>
                                     <div className="text-sm font-bold text-gray-500">Знайдено: {filteredProducts.length} товарів</div>
@@ -591,6 +614,30 @@ const App = () => {
                                     </div>
                                 )}
                             </div>
+                            {/* Right Sidebar (Map) */}
+                            <aside className="w-full lg:w-72 xl:w-80 flex-shrink-0 space-y-6">
+                                <div className="glass-panel p-6 rounded-2xl shadow-sm sticky top-24">
+                                    <h3 className="font-extrabold text-lg mb-1 text-dark dark:text-white">Ваше місто Київ?</h3>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">Товари та акції залежать від адреси</p>
+                                    <div className="flex gap-2 mb-5">
+                                        <button className="flex-1 bg-primary hover:bg-primary/90 text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Так, вірно</button>
+                                        <button className="flex-1 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white rounded-xl py-2.5 font-bold transition-colors text-sm">Ні, інше</button>
+                                    </div>
+                                    <div className="rounded-xl overflow-hidden h-64 border border-gray-200 dark:border-gray-800 relative group">
+                                        <iframe 
+                                            width="100%" 
+                                            height="100%" 
+                                            frameBorder="0" 
+                                            scrolling="no" 
+                                            marginHeight="0" 
+                                            marginWidth="0" 
+                                            src="https://www.openstreetmap.org/export/embed.html?bbox=30.4,50.4,30.6,50.5&amp;layer=mapnik&amp;marker=50.4501,30.5234" 
+                                            style={{ border: 'none' }}
+                                        ></iframe>
+                                        <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent pointer-events-none transition-colors"></div>
+                                    </div>
+                                </div>
+                            </aside>
                         </div>
                     </>
                 )}
