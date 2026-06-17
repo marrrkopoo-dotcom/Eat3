@@ -402,6 +402,8 @@ const App = () => {
                 cartItemsCount={cart.reduce((s, i) => s + i.quantity, 0)}
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
+                isSearchOverlayOpen={isSearchOverlayOpen}
+                setIsSearchOverlayOpen={setIsSearchOverlayOpen}
                 activeView={activeView}
                 setActiveView={setActiveView}
                 activeNav={activeNav}
