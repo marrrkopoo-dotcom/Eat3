@@ -264,7 +264,8 @@ const customProducts = [
         category: "Газовані напої",
         localImage: "product_lemonade.png",
         weight: "500 мл",
-        brand: "Summer Splash"
+        brand: "Summer Splash",
+        details: { calories: "45 ккал", ingredients: "Вода, сік лимона" }
     },
     {
         id: "custom-kinder-01",
@@ -273,7 +274,8 @@ const customProducts = [
         category: "Шоколад",
         localImage: "product_kinder.png",
         weight: "40 г",
-        brand: "Kinder"
+        brand: "Kinder",
+        details: { calories: "420 ккал", ingredients: "Молоко, шоколад" }
     },
     {
         id: "custom-muffin-01",
@@ -282,7 +284,8 @@ const customProducts = [
         category: "Солодощі",
         localImage: "product_muffin.png",
         weight: "200 г",
-        brand: "Choco Yummy Bakery"
+        brand: "Choco Yummy Bakery",
+        details: { calories: "550 ккал", ingredients: "Шоколад, карамель, борошно" }
     },
     {
         id: "custom-protein-01",
@@ -291,7 +294,8 @@ const customProducts = [
         category: "Снеки",
         localImage: "product_protein.png",
         weight: "60 г",
-        brand: "Power Nutrition"
+        brand: "Power Nutrition",
+        details: { calories: "220 ккал", ingredients: "Протеїн, вівсянка" }
     }
 ];
 allProducts.push(...customProducts);
@@ -565,7 +569,7 @@ const App = () => {
             const matchPrice = (!priceRange.min || p.price >= Number(priceRange.min)) && 
                                (!priceRange.max || p.price <= Number(priceRange.max));
                                
-            const calories = parseInt(p.details.calories);
+            const calories = p.details?.calories ? parseInt(p.details.calories) : 0;
             const matchCal = (!calRange.min || calories >= Number(calRange.min)) && 
                              (!calRange.max || calories <= Number(calRange.max));
 
