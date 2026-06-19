@@ -256,11 +256,83 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError }) => {
     </div>
   );
 };
+const customProducts = [
+    {
+        id: "custom-lemonade-01",
+        name: "Summer Splash Lemonade 500ml",
+        price: 85,
+        category: "Газовані напої",
+        localImage: "product_lemonade.png",
+        weight: "500 мл",
+        brand: "Summer Splash"
+    },
+    {
+        id: "custom-kinder-01",
+        name: "Kinder Breakfast Milk Slice",
+        price: 45,
+        category: "Шоколад",
+        localImage: "product_kinder.png",
+        weight: "40 г",
+        brand: "Kinder"
+    },
+    {
+        id: "custom-muffin-01",
+        name: "XXL Топ-дроп Мафін з карамеллю",
+        price: 120,
+        category: "Солодощі",
+        localImage: "product_muffin.png",
+        weight: "200 г",
+        brand: "Choco Yummy Bakery"
+    },
+    {
+        id: "custom-protein-01",
+        name: "Power Protein Bar",
+        price: 95,
+        category: "Снеки",
+        localImage: "product_protein.png",
+        weight: "60 г",
+        brand: "Power Nutrition"
+    }
+];
+allProducts.push(...customProducts);
+
 const promotions = [
-    { id: 1, title: "Ця добірка на 100% складається з лимонадів, ягід та морозива", image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80", tag: "Добірка" },
-    { id: 2, title: "Новинка від Kinder до сніданку", image: "https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?w=600&q=80", tag: "Новинка" },
-    { id: 3, title: "У нас Топ-дроп ось такооооої вишини", image: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=600&q=80", tag: "Акція" },
-    { id: 4, title: "Усім спорт! Знижки на нашу спортивну лінійку", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80", tag: "Знижки" }
+    { 
+        id: 1, 
+        title: "Ця добірка на 100% складається з лимонадів, ягід та морозива", 
+        image: "images/banner_summer.png", 
+        tag: "ДОБІРКА",
+        content: "Літо у самому розпалі! І що може бути краще за освіжаючий ковток холодного лимонаду? Ми підготували для вас ідеальну добірку: свіжі ягоди, натуральні лимонади та найсмачніше морозиво. Відчуйте смак справжнього літнього відпочинку!",
+        featuredProducts: ["custom-lemonade-01"],
+        btnText: "Всі напої"
+    },
+    { 
+        id: 2, 
+        title: "Новинка від Kinder до сніданку", 
+        image: "images/banner_kinder.png", 
+        tag: "НОВИНКА",
+        content: "Ваш ідеальний ранок починається з Kinder! Представляємо абсолютно новий формат улюбленого шоколаду, створений спеціально для поживного сніданку. Ніжна молочна начинка, танучий шоколад та заряд енергії на весь день.",
+        featuredProducts: ["custom-kinder-01"],
+        btnText: "Купити Kinder"
+    },
+    { 
+        id: 3, 
+        title: "У нас Топ-дроп ось такоооої вишини", 
+        image: "images/banner_dessert.png", 
+        tag: "АКЦІЯ",
+        content: "Зустрічайте наш грандіозний Топ-дроп! Величезні порції задоволення: XXL мафіни з карамеллю, ексклюзивні десерти та преміальний шоколад. Встигніть скуштувати, поки все не розібрали!",
+        featuredProducts: ["custom-muffin-01"],
+        btnText: "Перейти до солодощів"
+    },
+    { 
+        id: 4, 
+        title: "Усім спорт! Знижки на нашу спортивну лінійку", 
+        image: "images/banner_sport.png", 
+        tag: "ЗНИЖКИ",
+        content: "Для тих, хто завжди в русі! Ми запускаємо глобальний розпродаж нашої спортивної лінійки. Протеїнові батончики, енергетики без цукру та корисні снеки тепер зі знижками до -30%. Досягайте своїх цілей разом із нами!",
+        featuredProducts: ["custom-protein-01"],
+        btnText: "Показати всі снеки"
+    }
 ];
 
 const dummyUser = {
@@ -311,7 +383,8 @@ const App = () => {
     const [cookieAccepted, setCookieAccepted] = useState(() => {
         return localStorage.getItem('cookieAccepted') === 'true';
     });
-    const [activeView, setActiveView] = useState('shop'); // 'shop', 'product', 'checkout', 'success'
+    const [activeView, setActiveView] = useState('shop'); // 'shop', 'product', 'checkout', 'success', 'profile', 'article'
+    const [activeArticle, setActiveArticle] = useState(null);
     const [activeNav, setActiveNav] = useState('Всі');
     const [isDark, setIsDark] = useState(false);
     const [cart, setCart] = useState([]);
@@ -421,14 +494,15 @@ const App = () => {
         return () => window.removeEventListener('popstate', handlePopState);
     }, []);
 
-    const navigateTo = (view, nav = activeNav, product = selectedProduct) => {
-        window.history.pushState({ view, nav, product }, '');
+    const navigateTo = (view, nav = activeNav, product = selectedProduct, article = activeArticle) => {
+        window.history.pushState({ view, nav, product, article }, '');
         setActiveView(view);
         if (nav !== activeNav) {
             setSelectedCategory(nav);
         }
         setActiveNav(nav);
         setSelectedProduct(product);
+        setActiveArticle(article);
         window.scrollTo(0, 0);
     };
 
@@ -758,7 +832,7 @@ const App = () => {
                                 <div className="mb-8 overflow-x-auto pb-4">
                                     <div className="flex gap-4 pb-2 w-max">
                                         {promotions.map(promo => (
-                                            <div key={promo.id} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
+                                            <div key={promo.id} onClick={() => navigateTo('article', activeNav, null, promo)} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
                                                 <img src={promo.image} alt={promo.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                                 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80"></div>
                                                 <div className="absolute inset-0 p-5 flex flex-col">
@@ -878,7 +952,51 @@ const App = () => {
                     </>
                 )}
 
+                {activeView === 'article' && activeArticle && (
+                    <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500 py-8 px-4">
+                        <button onClick={() => navigateTo('shop')} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-primary transition-colors font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                            </svg>
+                            Повернутися до магазину
+                        </button>
+                        
+                        <div className="rounded-3xl overflow-hidden mb-8 shadow-md relative h-80 sm:h-96">
+                            <img src={activeArticle.image} alt={activeArticle.title} className="w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                                <div className="p-8">
+                                    <span className="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider mb-3 inline-block">{activeArticle.tag}</span>
+                                    <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">{activeArticle.title}</h1>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div className="glass-panel p-8 sm:p-10 rounded-3xl mb-12 text-lg text-gray-700 dark:text-gray-300 leading-relaxed shadow-sm">
+                            <p>{activeArticle.content}</p>
+                            
+                            <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center">
+                                <span className="font-medium text-gray-500 hidden sm:block">Сподобалось? Обирайте швидше!</span>
+                                <button onClick={() => navigateTo('shop', 'Всі')} className="px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                                    {activeArticle.btnText || "Перейти до каталогу"}
+                                </button>
+                            </div>
+                        </div>
+
+                        {activeArticle.featuredProducts && activeArticle.featuredProducts.length > 0 && (
+                            <div className="mt-12">
+                                <h3 className="text-2xl font-black text-dark dark:text-white mb-6 flex items-center gap-3">
+                                    <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">✨</span>
+                                    Товари з цієї статті
+                                </h3>
+                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+                                    {allProducts.filter(p => activeArticle.featuredProducts.includes(p.id)).map(product => (
+                                        <ProductCard key={product.id} product={product} addToCart={addToCart} onSelect={handleSelectProduct} onImageError={() => setBrokenImages(prev => new Set(prev).add(product.id))} />
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                )}
 
                 {activeView === 'product' && selectedProduct && (
                     <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
