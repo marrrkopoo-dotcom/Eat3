@@ -296,6 +296,16 @@ const customProducts = [
         weight: "60 г",
         brand: "Power Nutrition",
         details: { calories: "220 ккал", ingredients: "Протеїн, вівсянка" }
+    },
+    {
+        id: "custom-monster-01",
+        name: "Monster Energy Original 500ml",
+        price: 65,
+        category: "Енергетики",
+        localImage: "product_monster.png",
+        weight: "500 мл",
+        brand: "Monster Energy",
+        details: { calories: "237 ккал", ingredients: "Вода, цукор, таурин, женьшень, кофеїн" }
     }
 ];
 allProducts.push(...customProducts);
@@ -321,12 +331,12 @@ const promotions = [
     },
     { 
         id: 3, 
-        title: "У нас Топ-дроп ось такоооої вишини", 
-        image: "images/banner_dessert.png", 
+        title: "Знижки на лінійку енергетиків Monster", 
+        image: "images/banner_monster.png", 
         tag: "АКЦІЯ",
-        content: "Зустрічайте наш грандіозний Топ-дроп! Величезні порції задоволення: XXL мафіни з карамеллю, ексклюзивні десерти та преміальний шоколад. Встигніть скуштувати, поки все не розібрали!",
-        featuredProducts: ["custom-muffin-01"],
-        btnText: "Перейти до солодощів"
+        content: "Потрібен заряд енергії? Зустрічайте шалені знижки на всю лінійку енергетиків Monster Energy! Охолодіть свій розум та зарядіться на максимум. Замовляйте улюблений смак просто зараз, поки він є в наявності!",
+        featuredProducts: ["custom-monster-01"],
+        btnText: "Перейти до енергетиків"
     },
     { 
         id: 4, 
