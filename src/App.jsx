@@ -323,7 +323,7 @@ const promotions = [
     { 
         id: 2, 
         title: "Новинка від Kinder до сніданку", 
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Wp8eOHs8Jw4-uFUdQPvKVadzE275RJIU91gXd52WQqRqRpXFsiraGW1X&s=10", 
+        image: "images/banner_kinder.png", 
         tag: "НОВИНКА",
         content: "Ваш ідеальний ранок починається з Kinder! Представляємо абсолютно новий формат улюбленого шоколаду, створений спеціально для поживного сніданку. Ніжна молочна начинка, танучий шоколад та заряд енергії на весь день.",
         featuredProducts: ["custom-kinder-01"],
@@ -332,7 +332,7 @@ const promotions = [
     { 
         id: 3, 
         title: "Знижки на лінійку енергетиків Monster", 
-        image: "images/banner_monster.png", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Wp8eOHs8Jw4-uFUdQPvKVadzE275RJIU91gXd52WQqRqRpXFsiraGW1X&s=10", 
         tag: "АКЦІЯ",
         content: "Потрібен заряд енергії? Зустрічайте шалені знижки на всю лінійку енергетиків Monster Energy! Охолодіть свій розум та зарядіться на максимум. Замовляйте улюблений смак просто зараз, поки він є в наявності!",
         featuredProducts: ["custom-monster-01"],
