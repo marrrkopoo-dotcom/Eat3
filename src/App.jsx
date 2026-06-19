@@ -262,7 +262,7 @@ const customProducts = [
         name: "Summer Splash Lemonade 500ml",
         price: 85,
         category: "Газовані напої",
-        localImage: "product_lemonade.png",
+        localImage: "images/product_lemonade.png",
         weight: "500 мл",
         brand: "Summer Splash",
         details: { calories: "45 ккал", ingredients: "Вода, сік лимона" }
@@ -272,7 +272,7 @@ const customProducts = [
         name: "Kinder Breakfast Milk Slice",
         price: 45,
         category: "Шоколад",
-        localImage: "product_kinder.png",
+        localImage: "images/product_kinder.png",
         weight: "40 г",
         brand: "Kinder",
         details: { calories: "420 ккал", ingredients: "Молоко, шоколад" }
@@ -282,7 +282,7 @@ const customProducts = [
         name: "XXL Топ-дроп Мафін з карамеллю",
         price: 120,
         category: "Солодощі",
-        localImage: "product_muffin.png",
+        localImage: "images/product_muffin.png",
         weight: "200 г",
         brand: "Choco Yummy Bakery",
         details: { calories: "550 ккал", ingredients: "Шоколад, карамель, борошно" }
@@ -292,7 +292,7 @@ const customProducts = [
         name: "Power Protein Bar",
         price: 95,
         category: "Снеки",
-        localImage: "product_protein.png",
+        localImage: "images/product_protein.png",
         weight: "60 г",
         brand: "Power Nutrition",
         details: { calories: "220 ккал", ingredients: "Протеїн, вівсянка" }
@@ -302,7 +302,7 @@ const customProducts = [
         name: "Monster Energy Original 500ml",
         price: 65,
         category: "Енергетики",
-        localImage: "product_monster.png",
+        localImage: "images/product_monster.png",
         weight: "500 мл",
         brand: "Monster Energy",
         details: { calories: "237 ккал", ingredients: "Вода, цукор, таурин, женьшень, кофеїн" }
@@ -323,7 +323,7 @@ const promotions = [
     { 
         id: 2, 
         title: "Новинка від Kinder до сніданку", 
-        image: "images/banner_kinder.png", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Wp8eOHs8Jw4-uFUdQPvKVadzE275RJIU91gXd52WQqRqRpXFsiraGW1X&s=10", 
         tag: "НОВИНКА",
         content: "Ваш ідеальний ранок починається з Kinder! Представляємо абсолютно новий формат улюбленого шоколаду, створений спеціально для поживного сніданку. Ніжна молочна начинка, танучий шоколад та заряд енергії на весь день.",
         featuredProducts: ["custom-kinder-01"],
