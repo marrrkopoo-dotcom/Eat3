@@ -304,7 +304,7 @@ const promotions = [
     { 
         id: 1, 
         title: "Тропічний вибух Chupa Chups 🥭", 
-        image: "https://images.unsplash.com/photo-1534080391025-09795d197a5b?w=800&q=80", 
+        image: "images/banner_chupachups.png", 
         tag: "АКЦІЯ",
         content: "Відчуй смак сонячного літа з неймовірною серією газованих напоїв Chupa Chups! Справжні соковиті манго, апельсин та виноград в улюбленому форматі. Спеціальна пропозиція: купуй солодкі напої Chupa Chups за суперціною!",
         featuredProducts: [4, 5, 6, 9],
@@ -313,7 +313,7 @@ const promotions = [
     { 
         id: 2, 
         title: "Заряд тайської енергії Red Bull ⚡", 
-        image: "https://images.unsplash.com/photo-1510563800743-aed2364902b8?w=800&q=80", 
+        image: "images/banner_redbull.png", 
         tag: "НОВИНКА",
         content: "Легендарний Red Bull Krating Daeng прямісінько з Таїланду! Той самий густий, концентрований смак, з якого почалася історія світового бренду. Заряджає енергією на 100% і дарує бадьорість. Спробуй оригінал першим!",
         featuredProducts: [1, 18, 19, 20],
@@ -322,7 +322,7 @@ const promotions = [
     { 
         id: 3, 
         title: "Американська класика Dr Pepper та Fanta 🇺🇸", 
-        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800&q=80", 
+        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=1200&q=80", 
         tag: "ЕКСКЛЮЗИВ",
         content: "Справжні Dr Pepper Strawberries & Cream та класична американська Fanta Orange вже на складі Жуйки! Особливі рецептури з насиченим смаком прямо з США. Зберіть свій унікальний набір улюблених американських напоїв.",
         featuredProducts: [49, 47, 30, 12],
@@ -331,11 +331,20 @@ const promotions = [
     { 
         id: 4, 
         title: "Кокосове божевілля з кислинкою 🥥🍏", 
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80", 
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80", 
         tag: "ТОП СМАК",
         content: "Унікальне поєднання вершкового відтінку кокоса, кислого яблука та лимона від Chupa Chups! Це вибух рецепторів, який не залишить байдужим жодного поціновувача екзотики. Спробуй екстраординарний мікс смаків!",
         featuredProducts: [39, 14, 17],
         btnText: "Спробувати екзотику"
+    },
+    {
+        id: 11,
+        title: "Шалені знижки на Monster Energy 🦖",
+        image: "images/banner_monster.png",
+        tag: "ГАРЯЧЕ",
+        content: "Вибухова добірка Monster Energy для справжніх фанатів! Monster Ultra White без цукру, тропічний Mango Loco та лімітований The Doctor — заряджайтеся на максимум. Тільки цього тижня діють спеціальні знижені ціни!",
+        featuredProducts: [26, 20, 21, 22],
+        btnText: "Всі енергетики"
     },
     {
         id: 5,
@@ -1373,7 +1382,7 @@ const App = () => {
                                 {/* Banners Section */}
                                 <div className="mb-8 overflow-x-auto pb-4">
                                     <div className="flex gap-4 pb-2 w-max">
-                                        {promotions.filter(promo => promo.id <= 4).map(promo => (
+                                        {promotions.filter(promo => !['ІНФОРМАЦІЯ', 'ДОПОМОГА', 'ДОКУМЕНТИ', 'ПОВЕРНЕННЯ', 'ПРО НАС'].includes(promo.tag)).map(promo => (
                                             <div key={promo.id} onClick={() => navigateTo('article', activeNav, null, promo)} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
                                                 <img src={promo.image} alt={promo.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                                 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80"></div>
