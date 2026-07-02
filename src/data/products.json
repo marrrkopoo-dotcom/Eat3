@@ -1515,21 +1515,6 @@
         "localImage":  null
     },
     {
-        "id":  102,
-        "name":  "Веганські снеки Латяо Genji Food Vegan Latiao Meat гострі 1шт",
-        "price":  39,
-        "image":  "/images/102.webp",
-        "category":  "Снеки",
-        "details":  {
-                        "brand":  "Choco Yummy",
-                        "country":  "Імпорт",
-                        "volume":  "N/A",
-                        "calories":  "N/A",
-                        "description":  "Веганські снеки Латяо Genji Food Vegan Latiao Meat — гострий смак без компромісівПривіт, друже! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
-                    },
-        "localImage":  "/images/102.webp"
-    },
-    {
         "id":  103,
         "name":  "Гігантські снеки Spicy Snack Shuangzai Super Large Strips Гострі 888 г.",
         "price":  99,
