@@ -576,22 +576,6 @@
         "outOfStock":  false
     },
     {
-        "id":  37,
-        "name":  "Газована вода Candy Can Bubblegum Sparkling Drink Sugar Free Жуйка",
-        "price":  129,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-candy-can-sparkling-bubblegum-330ml-5-200x200.jpg",
-        "category":  "Жуйки",
-        "details":  {
-                        "brand":  "Candy Can Bubblegum Sparkling Drink Sugar Free",
-                        "country":  "США",
-                        "volume":  "330мл",
-                        "calories":  "2 ккал / 100 г",
-                        "description":  "Газировка для веселих вечірок! Довготривалий смак та свіжість на кожен день. Обирай улюблений аромат!"
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
         "id":  38,
         "name":  "Газована вода Candy Can Cotton Candy Sparkling Drink Sugar Free Солодка Вата Без цукру",
         "price":  129,
@@ -957,22 +941,6 @@
                         "description":  "Чудова літня газована вода для тих, хто шукає нові смаки. У супермаркетах подібної ви не знайдете! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/60.jpg",
-        "outOfStock":  false
-    },
-    {
-        "id":  61,
-        "name":  "Газована Вода Lady Boba Brown Sugar Bubble Tea",
-        "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/lady-boba-brown-sugar-bubble-tea-200x200.jpg",
-        "category":  "Жуйки",
-        "details":  {
-                        "brand":  "Lady Boba Brown Sugar Bubble Tea",
-                        "country":  "Південна Корея",
-                        "volume":  "Не вказано",
-                        "calories":  "308 ккал / 100 г",
-                        "description":  " Довготривалий смак та свіжість на кожен день. Обирай улюблений аромат!"
-                    },
-        "localImage":  null,
         "outOfStock":  false
     },
     {
