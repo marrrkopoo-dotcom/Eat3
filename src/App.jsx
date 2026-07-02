@@ -1018,7 +1018,7 @@ const App = () => {
                 )}
 
                 {activeView === 'product' && selectedProduct && (
-                    <div className="max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <div className="py-2 text-sm text-gray-500 dark:text-gray-400 font-medium mb-6 flex items-center gap-2">
                             <span onClick={() => navigateTo('shop', 'Напої')} className="hover:text-primary cursor-pointer transition-colors flex items-center gap-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
@@ -1032,7 +1032,7 @@ const App = () => {
 
                         <div className="glass-panel w-full rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row relative mb-16">
                             {/* Image Section */}
-                            <div className="w-full md:w-1/2 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[400px]">
+                            <div className="w-full md:w-2/5 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[300px] max-h-[400px]">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5"></div>
                                 <SmartImage src={selectedProduct.localImage} fallbackSrc={selectedProduct.image} alt={selectedProduct.name} className="absolute inset-0 w-full h-full object-cover z-10" />
                                 {selectedProduct.outOfStock && (
@@ -1041,22 +1041,22 @@ const App = () => {
                             </div>
 
                             {/* Details Section */}
-                            <div className="w-full md:w-1/2 p-6 lg:p-10 flex flex-col">
-                                <h1 className="text-3xl lg:text-4xl font-black text-dark dark:text-white mb-4 leading-tight tracking-tight">{selectedProduct.name}</h1>
+                            <div className="w-full md:w-3/5 p-5 lg:p-8 flex flex-col">
+                                <h1 className="text-2xl lg:text-3xl font-black text-dark dark:text-white mb-3 leading-tight tracking-tight">{selectedProduct.name}</h1>
                                 
-                                <div className="flex items-end gap-3 mb-6">
-                                    <div className="text-4xl font-black gradient-text tracking-tighter">{selectedProduct.price} <span className="text-xl font-bold">₴</span></div>
-                                    {selectedProduct.isPopular && <span className="bg-orange-500 text-white text-[11px] font-bold px-2 py-1 rounded-full mb-1">Хіт продажу 🔥</span>}
+                                <div className="flex items-end gap-3 mb-5">
+                                    <div className="text-3xl font-black gradient-text tracking-tighter">{selectedProduct.price} <span className="text-lg font-bold">₴</span></div>
+                                    {selectedProduct.isPopular && <span className="bg-orange-500 text-white text-[10px] font-bold px-2 py-1 rounded-full mb-1">Хіт продажу 🔥</span>}
                                 </div>
 
-                                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base mb-8">
+                                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm mb-6">
                                     {selectedProduct.details.description}
                                 </p>
 
-                                <div className="grid grid-cols-2 gap-y-4 gap-x-6 text-sm mb-8 bg-gray-50 dark:bg-gray-800/50 p-5 rounded-xl border border-gray-100 dark:border-gray-700">
+                                <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-xs mb-6 bg-gray-50 dark:bg-gray-800/50 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
                                     <div>
                                         <span className="text-gray-500 block mb-1">Бренд</span>
-                                        <span className="font-bold text-base text-dark dark:text-white">{selectedProduct.details.brand}</span>
+                                        <span className="font-bold text-sm text-dark dark:text-white">{selectedProduct.details.brand}</span>
                                     </div>
                                     <div>
                                         <span className="text-gray-500 block mb-1">Країна</span>
