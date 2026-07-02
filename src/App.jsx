@@ -226,8 +226,6 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError }) => {
     const [isImageLoaded, setIsImageLoaded] = React.useState(false);
 
     return (
-    <div className={`glass-panel rounded-2xl p-3 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
-        {product.isNew && <div className="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10 shadow-md animate-pulse">Новинка</div>}
     <div className={`glass-panel rounded-2xl p-2 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
         {product.isNew && <div className="absolute top-2 left-2 bg-accent text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full z-10 shadow-md animate-pulse">Новинка</div>}
         {product.isPopular && !product.isNew && <div className="absolute top-2 left-2 bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full z-10 shadow-md">Хіт</div>}
