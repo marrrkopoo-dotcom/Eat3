@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 
 import productsData from './data/products.json';
 
-const allProducts = productsData.filter(p => !!p.localImage || !!p.image);
+const allProducts = productsData.filter(p => !!p.localImage);
 
 const categoryImages = {
     "Газовані напої": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&q=80",
