@@ -439,7 +439,7 @@ const promotions = [
     {
         id: 7,
         title: "Договір публічної оферти",
-        image: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
         tag: "ДОКУМЕНТИ",
         content: (
             <div className="space-y-6">
