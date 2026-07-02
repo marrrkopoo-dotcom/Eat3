@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 
 import productsData from './data/products.json';
 
-const allProducts = productsData.filter(p => !!p.localImage || !!p.image);
+const allProducts = productsData.filter(p => !!p.localImage || !!p.image).map(p => ({ ...p, _rand: Math.random() }));
 
 const categoryImages = {
     "Газовані напої": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&q=80",
@@ -607,6 +607,7 @@ const App = () => {
         }).sort((a, b) => {
             if (a.outOfStock && !b.outOfStock) return 1;
             if (!a.outOfStock && b.outOfStock) return -1;
+            if (selectedCategory === 'Всі') return a._rand - b._rand;
             return 0;
         });
     }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter]);
