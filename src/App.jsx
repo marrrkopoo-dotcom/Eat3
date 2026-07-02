@@ -435,6 +435,147 @@ const promotions = [
         ),
         featuredProducts: [],
         btnText: ""
+    },
+    {
+        id: 7,
+        title: "Договір публічної оферти",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?w=800&q=80",
+        tag: "ДОКУМЕНТИ",
+        content: (
+            <div className="space-y-6">
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">1. Загальні положення</h3>
+                    <div className="space-y-4 text-gray-600 dark:text-gray-400">
+                        <p>1.1. Договір оферти є офіційною пропозицією ФОП ОСТАШЕВСЬКА КАМІЛА АНДРІЇВНА (ІПН: 3740802563; адреса: Україна, 35065, Рівненська обл., Рівненський р-н., село Лісопіль, вулиця Центральна 103) (інтернет-магазин «Жуйка»), далі за текстом - «Продавець», укласти Договір купівлі-продажу товарів дистанційним способом, а саме через Інтернет-магазин, далі по тексту - «Договір», і розміщує Публічну оферту (пропозицію) на офіційному інтернет-сайті Продавця.</p>
+                        <p>1.2. Моментом повного і безумовного прийняття Покупцем пропозиції Продавця (акцептом) укласти електронний договір купівлі-продажу товарів, вважається факт оплати Покупцем замовлення на умовах цього Договору, у строки та за цінами, вказаними на Інтернет-сайті Продавця.</p>
+                        <p className="font-medium text-gray-900 dark:text-white">Діяльність веде ФОП Осташевська К.А.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">2. Поняття і визначення</h3>
+                    <div className="space-y-2 text-gray-600 dark:text-gray-400">
+                        <p>2.1. У цій оферті, якщо контекст не вимагає іншого, наведені нижче терміни мають таке значення:</p>
+                        <ul className="list-disc pl-5 space-y-2 mt-2">
+                            <li><strong className="text-gray-900 dark:text-white">«Товар»</strong> - солодощі, напої та інші супровідні продукти;</li>
+                            <li><strong className="text-gray-900 dark:text-white">«Інтернет-магазин»</strong> - відповідно до Закону України «про електронну комерцію», засіб для подання або реалізації товару, роботи або послуги шляхом здійснення електронної угоди.</li>
+                            <li><strong className="text-gray-900 dark:text-white">«Продавець»</strong> - компанія, яка реалізує товари, представлені на Інтернет-сайті.</li>
+                            <li><strong className="text-gray-900 dark:text-white">«Покупець»</strong> - фізична особа, що уклала з Продавцем Договір на умовах, викладених нижче.</li>
+                            <li><strong className="text-gray-900 dark:text-white">«Замовлення»</strong> - вибір окремих позицій з переліку товарів, зазначених Покупцем при розміщенні замовлення і проведенні оплати.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">3. Предмет договору</h3>
+                    <div className="space-y-4 text-gray-600 dark:text-gray-400">
+                        <p>3.1. Продавець зобов'язується передати у власність Покупця Товар, а Покупець зобов'язується оплатити і прийняти Товар на умовах даного Договору.</p>
+                        <p>Цей Договір регулює купівлю-продаж товарів в Інтернет-магазині, в тому числі:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>добровільний вибір Покупцем товарів в Інтернет-магазині;</li>
+                            <li>самостійне оформлення Покупцем замовлення в Інтернет-магазині;</li>
+                            <li>оплата Покупцем замовлення, оформленого в Інтернет-магазині;</li>
+                            <li>обробка і доставка замовлення Покупцеві у власність на умовах цього Договору.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">4. Порядок оформлення замовлення</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>4.1. Покупець має право оформити замовлення на будь-який товар, представлений на Сайті Інтернет-магазину і наявний.</p>
+                        <p>4.2. Кожна позиція може бути представлена в замовленні в будь-якій кількості.</p>
+                        <p>4.3. При відсутності товару на складі, Менеджер компанії зобов'язаний поставити Покупця до відома (по телефону або через електронну пошту).</p>
+                        <p>4.4. При відсутності товару Покупець має право замінити його аналогічним товаром, відмовитися від даного товару, анулювати замовлення.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">5. Порядок оплати замовлень</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p className="font-bold text-gray-900 dark:text-white">Накладеним платежем</p>
+                        <p>5.1. Оплата здійснюється за фактом отримання товару у відділенні транспортних компанії за готівковий розрахунок в гривнях при передоплаті у 100 гривень.</p>
+                        <p>5.2. При не надходження коштів Інтернет-магазин залишає за собою право анулювати замовлення.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">6. Умови доставки замовлення</h3>
+                    <div className="text-gray-600 dark:text-gray-400">
+                        <p>6.1. Доставка товарів, придбаних в Інтернет-магазині, здійснюється до складів транспортних компаній, де і здійснюється видача замовлень.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">7. Права та обов'язки сторін</h3>
+                    <div className="space-y-4 text-gray-600 dark:text-gray-400">
+                        <div>
+                            <p className="font-bold text-gray-900 dark:text-white">7.1. Продавець має право:</p>
+                            <ul className="list-disc pl-5 mt-1">
+                                <li>в односторонньому порядку припинити надання послуг за цим договором у разі порушення Покупцем умов цього договору.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p className="font-bold text-gray-900 dark:text-white">7.2. Покупець зобов'язаний:</p>
+                            <ul className="list-disc pl-5 mt-1">
+                                <li>своєчасно оплатити та отримати замовлення на умовах цього договору.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p className="font-bold text-gray-900 dark:text-white">7.3. Покупець має право:</p>
+                            <ul className="list-disc pl-5 mt-1">
+                                <li>оформити замовлення в Інтернет-магазині;</li>
+                                <li>оформити електронний договір;</li>
+                                <li>вимагати від Продавця виконання умов цього Договору.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">8. Відповідальність сторін</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>8.1. Сторони несуть відповідальність за невиконання або неналежне виконання умов цього договору в порядку, передбаченому цим договором та чинним законодавством України.</p>
+                        <p>8.2. Продавець не несе відповідальності за:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>змінений виробником зовнішній вигляд Товару;</li>
+                            <li>за незначну невідповідність колірної гами товару;</li>
+                            <li>за зміст і правдивість інформації, наданої Покупцем при оформленні замовлення;</li>
+                            <li>за затримку і перебої в наданні Послуг, які відбуваються з причин, що знаходяться поза сферою його контролю;</li>
+                            <li>за протиправні дії, здійснені Покупцем за допомогою даного доступу до мережі Інтернет;</li>
+                            <li>за передачу Покупцем своїх мережевих ідентифікаторів третім особам.</li>
+                        </ul>
+                        <p>8.3. Покупець самостійно несе відповідальність за шкоду, заподіяну його діями особам або їх майну, юридичним особам, державі.</p>
+                        <p>8.4. У разі настання обставин непереборної сили, сторони звільняються від виконання умов цього договору.</p>
+                        <p>8.5. Сторони прикладають максимум зусиль для вирішення будь-яких розбіжностей виключно шляхом переговорів.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">9. Інші умови</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>9.1. Інтернет-магазин залишає за собою право в односторонньому порядку вносити зміни до цього договору за умови попередньої публікації його на сайті.</p>
+                        <p>9.2. Інтернет-магазин створений для організації дистанційного способу продажу товарів через Інтернет.</p>
+                        <p>9.3. Покупець несе відповідальність за достовірність інформації, зазначеної при оформленні замовлення. При здійсненні акцепту Покупець надає Продавцю беззастережну згоду на збір, обробку, зберігання, використання своїх персональних даних.</p>
+                        <p>9.4. Оплата Покупцем замовлення означає повну згоду Покупця з умовами договору.</p>
+                        <p>9.5. Фактичною датою електронної угоди є дата прийняття умов, відповідно до Закону України «Про електронну комерцію».</p>
+                        <p>9.6. Використання ресурсу Інтернет-магазину для Покупця є безкоштовним.</p>
+                        <p>9.7. Інформація, яку надає Покупець, є конфіденційною. Інтернет-магазин використовує її виключно в цілях обробки замовлення та доставки.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">10. Термін дії договору</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>10.1. Електронний договір вважається укладеним з моменту одержання особою яка направила пропозицію укласти такий договір, відповіді про прийняття цієї пропозиції.</p>
+                        <p>10.2. До закінчення терміну дії цей Договір може бути розірваний за взаємною згодою сторін до моменту фактичної доставки товару, шляхом повернення грошових коштів.</p>
+                        <p>10.3. Сторони мають право розірвати цей договір в односторонньому порядку, в разі невиконання однією із сторін умов цього Договору.</p>
+                    </div>
+                </div>
+            </div>
+        ),
+        featuredProducts: [],
+        btnText: ""
     }
 ];
 
@@ -1606,6 +1747,8 @@ const App = () => {
                                 <li><a href="#" className="hover:text-primary transition-colors">Про нас</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 5)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Доставка та оплата</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 6)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Питання-відповідь</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 7)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Договір публічної оферти</a></li>
+                                <li><a href="#" className="hover:text-primary transition-colors">Політика конфіденційності</a></li>
                                 <li><a href="#" className="hover:text-primary transition-colors">Умови повернення</a></li>
                             </ul>
                         </div>
