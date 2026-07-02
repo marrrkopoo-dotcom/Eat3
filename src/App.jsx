@@ -576,6 +576,88 @@ const promotions = [
         ),
         featuredProducts: [],
         btnText: ""
+    },
+    {
+        id: 8,
+        title: "Політика конфіденційності",
+        image: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?w=800&q=80",
+        tag: "ДОКУМЕНТИ",
+        content: (
+            <div className="space-y-6">
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">1. Збір інформації</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>Ми збираємо інформацію, коли ви оформлюєте замовлення на нашому сайті, реєструєтесь або заповнюєте форми зворотного зв'язку.</p>
+                        <p>До персональних даних, які можуть збиратися, відносяться: Ваше ім'я, номер телефону, адреса електронної пошти та адреса для доставки (відділення Нової Пошти).</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">2. Використання інформації</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>Будь-яка зібрана нами інформація може використовуватися для:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Швидкої та якісної обробки і доставки Ваших замовлень;</li>
+                            <li>Зв'язку з Вами для підтвердження деталей замовлення;</li>
+                            <li>Покращення роботи нашого сайту та підвищення рівня обслуговування клієнтів.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">3. Захист даних</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>Ми впроваджуємо різноманітні засоби безпеки для забезпечення збереження Ваших персональних даних. Доступ до конфіденційних даних мають лише ті співробітники, які безпосередньо займаються складанням та відправкою замовлень.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">4. Згода з умовами</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>Користуючись послугами нашого інтернет-магазину та вказуючи свої дані при оформленні замовлення, Ви автоматично погоджуєтесь з даною Політикою конфіденційності.</p>
+                    </div>
+                </div>
+            </div>
+        ),
+        featuredProducts: [],
+        btnText: ""
+    },
+    {
+        id: 9,
+        title: "Умови повернення та обміну",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+        tag: "ПОВЕРНЕННЯ",
+        content: (
+            <div className="space-y-6">
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Повернення та обмін продуктів харчування</h3>
+                    <div className="space-y-4 text-gray-600 dark:text-gray-400">
+                        <p>Відповідно до Закону України «Про захист прав споживачів», продовольчі товари (продукти харчування, солодощі, напої) належної якості <strong className="text-gray-900 dark:text-white">не підлягають поверненню або обміну</strong>.</p>
+                        <p>Ми просимо Вас обов'язково перевіряти цілісність, терміни придатності та комплектацію Вашого замовлення безпосередньо у відділенні «Нова Пошта» при отриманні посилки.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Що робити у разі виявлення пошкоджень чи невідповідності?</h3>
+                    <div className="space-y-3 text-gray-600 dark:text-gray-400">
+                        <p>Якщо під час перевірки посилки у відділенні перевізника Ви виявили пошкодження товару, нестачу або невідповідність замовленому:</p>
+                        <ul className="list-decimal pl-5 space-y-2">
+                            <li>Складіть Акт прийому-передачі спільно зі співробітником «Нова Пошта»;</li>
+                            <li>Зробіть фото пошкоджень або невідповідного товару;</li>
+                            <li>Зв'яжіться з нами за телефоном: <a href="tel:+380987350505" className="font-bold hover:underline text-primary">(098) 735-05-05</a>;</li>
+                            <li>Ми оперативно вирішимо проблему: надішлемо заміну або повернемо кошти.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="bg-primary/10 border border-primary/20 p-6 rounded-2xl text-gray-800 dark:text-gray-200">
+                    <p className="font-medium text-primary">Важливо!</p>
+                    <p className="mt-1">Претензії щодо цілісності або комплектації замовлення, виявлені поза межами відділення Нової Пошти (вдома), на жаль, розгляду не підлягають, оскільки ми не можемо контролювати умови транспортування після отримання.</p>
+                </div>
+            </div>
+        ),
+        featuredProducts: [],
+        btnText: ""
     }
 ];
 
@@ -738,10 +820,30 @@ const App = () => {
             if (e.state) {
                 setActiveView(e.state.view || 'shop');
                 if (e.state.nav) setActiveNav(e.state.nav);
-                if (e.state.product) setSelectedProduct(e.state.product);
+                
+                if (e.state.productId) {
+                    const prod = allProducts.find(p => p.id === e.state.productId);
+                    setSelectedProduct(prod || null);
+                } else if (e.state.product) {
+                    setSelectedProduct(e.state.product);
+                } else {
+                    setSelectedProduct(null);
+                }
+
+                if (e.state.articleId) {
+                    const art = promotions.find(p => p.id === e.state.articleId);
+                    setActiveArticle(art || null);
+                } else {
+                    setActiveArticle(null);
+                }
             }
         };
-        window.history.replaceState({ view: activeView, nav: activeNav, product: selectedProduct }, '');
+        window.history.replaceState({ 
+            view: activeView, 
+            nav: activeNav, 
+            productId: selectedProduct ? selectedProduct.id : null,
+            articleId: activeArticle ? activeArticle.id : null
+        }, '');
         window.addEventListener('popstate', handlePopState);
         return () => window.removeEventListener('popstate', handlePopState);
     }, []);
@@ -757,7 +859,12 @@ const App = () => {
     }, [activeView, activeNav, selectedCategory, selectedProduct, activeArticle]);
 
     const navigateTo = (view, nav = activeNav, product = selectedProduct, article = activeArticle) => {
-        window.history.pushState({ view, nav, product, article }, '');
+        window.history.pushState({ 
+            view, 
+            nav, 
+            productId: product ? product.id : null, 
+            articleId: article ? article.id : null 
+        }, '');
         setActiveView(view);
         if (nav !== activeNav) {
             setSelectedCategory(nav);
@@ -1748,8 +1855,8 @@ const App = () => {
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 5)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Доставка та оплата</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 6)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Питання-відповідь</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 7)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Договір публічної оферти</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors">Політика конфіденційності</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors">Умови повернення</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 8)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Політика конфіденційності</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 9)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Умови повернення</a></li>
                             </ul>
                         </div>
                         <div>
