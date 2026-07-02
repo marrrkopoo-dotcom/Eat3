@@ -1032,9 +1032,9 @@ const App = () => {
 
                         <div className="glass-panel w-full rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row relative mb-16">
                             {/* Image Section */}
-                            <div className="w-full md:w-2/5 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[300px] max-h-[400px] flex items-center justify-center p-8">
+                            <div className="w-full md:w-2/5 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[300px] flex items-center justify-center p-8">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5"></div>
-                                <SmartImage src={selectedProduct.localImage} fallbackSrc={selectedProduct.image} alt={selectedProduct.name} className="relative w-full h-full object-contain z-10" />
+                                <SmartImage src={selectedProduct.localImage} fallbackSrc={selectedProduct.image} alt={selectedProduct.name} className="relative w-full h-full max-h-[400px] object-contain z-10" />
                                 {selectedProduct.outOfStock && (
                                     <div className="absolute top-8 left-8 bg-gray-500 text-white text-sm font-bold px-4 py-2 rounded-full z-20 shadow-md">Немає в наявності</div>
                                 )}
