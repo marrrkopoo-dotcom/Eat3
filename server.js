@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Load bot credentials from environment
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8986924734:AAE5TIbbb7BFEgWfyaHFov2aoKDA52UIBo8';
-const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+const CHAT_ID = process.env.TELEGRAM_CHAT_ID || '-1003921545216';
 
 // In-memory queues and mapping
 let tgMap = {}; // tgMessageId -> clientId
