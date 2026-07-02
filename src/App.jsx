@@ -222,32 +222,32 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
     );
 };
 
-const ProductCard = ({ product, addToCart, onSelect, onImageError }) => {
+const ProductCard = ({ product, addToCart, onSelect, onImageError, viewMode = 'small' }) => {
     const [isImageLoaded, setIsImageLoaded] = React.useState(false);
 
     return (
-    <div className={`glass-panel rounded-2xl p-2 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
-        {product.isNew && <div className="absolute top-2 left-2 bg-accent text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full z-10 shadow-md animate-pulse">Новинка</div>}
-        {product.isPopular && !product.isNew && <div className="absolute top-2 left-2 bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full z-10 shadow-md">Хіт</div>}
-        {product.outOfStock && <div className="absolute top-2 left-2 bg-gray-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full z-10 shadow-md">Немає в наявності</div>}
+    <div className={`glass-panel rounded-2xl ${viewMode === 'large' ? 'p-4' : viewMode === 'medium' ? 'p-3' : 'p-2'} product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
+        {product.isNew && <div className={`absolute ${viewMode === 'large' ? 'top-4 left-4 px-2.5 py-1 text-xs' : viewMode === 'medium' ? 'top-3 left-3 px-2 py-0.5 text-[11px]' : 'top-2 left-2 px-1.5 py-0.5 text-[10px]'} bg-accent text-white font-bold rounded-full z-10 shadow-md animate-pulse`}>Новинка</div>}
+        {product.isPopular && !product.isNew && <div className={`absolute ${viewMode === 'large' ? 'top-4 left-4 px-2.5 py-1 text-xs' : viewMode === 'medium' ? 'top-3 left-3 px-2 py-0.5 text-[11px]' : 'top-2 left-2 px-1.5 py-0.5 text-[10px]'} bg-orange-500 text-white font-bold rounded-full z-10 shadow-md`}>Хіт</div>}
+        {product.outOfStock && <div className={`absolute ${viewMode === 'large' ? 'top-4 left-4 px-2.5 py-1 text-xs' : viewMode === 'medium' ? 'top-3 left-3 px-2 py-0.5 text-[11px]' : 'top-2 left-2 px-1.5 py-0.5 text-[10px]'} bg-gray-500 text-white font-bold rounded-full z-10 shadow-md`}>Немає в наявності</div>}
         
-        <div className="relative mb-1.5 aspect-square flex items-center justify-center p-2 bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden group-hover:shadow-inner transition-shadow">
+        <div className={`relative ${viewMode === 'large' ? 'mb-4 p-6 rounded-xl' : viewMode === 'medium' ? 'mb-3 p-4 rounded-lg' : 'mb-1.5 p-2 rounded-lg'} aspect-square flex items-center justify-center bg-white dark:bg-gray-800/50 overflow-hidden group-hover:shadow-inner transition-shadow`}>
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <SmartImage src={product.localImage} fallbackSrc={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110" onFinalError={onImageError} onLoad={() => setIsImageLoaded(true)} />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xs bg-white/20 px-3 py-1.5 rounded-full">Детальніше</span>
+                <span className={`text-white font-bold ${viewMode === 'large' ? 'px-4 py-2 text-sm' : 'px-3 py-1.5 text-xs'} bg-white/20 rounded-full`}>Детальніше</span>
             </div>
         </div>
         
-        <div className="text-[10px] font-semibold text-accent mb-1 uppercase tracking-wider">{product.category}</div>
-        <h4 className="font-bold text-dark dark:text-gray-100 leading-snug mb-2 flex-grow hover:text-primary transition-colors cursor-pointer line-clamp-2 text-sm">{product.name}</h4>
+        <div className={`${viewMode === 'large' ? 'text-xs mb-1.5' : viewMode === 'medium' ? 'text-[11px] mb-1' : 'text-[10px] mb-1'} font-semibold text-accent uppercase tracking-wider`}>{product.category}</div>
+        <h4 className={`font-bold text-dark dark:text-gray-100 leading-snug ${viewMode === 'large' ? 'mb-3 text-lg' : viewMode === 'medium' ? 'mb-2 text-base' : 'mb-2 text-sm'} flex-grow hover:text-primary transition-colors cursor-pointer line-clamp-2`}>{product.name}</h4>
         
-        <div className="flex items-center justify-between mt-auto pt-2 border-t border-gray-100 dark:border-gray-700/50" onClick={(e) => e.stopPropagation()}>
-            <div className="font-extrabold text-lg text-dark dark:text-white flex items-baseline gap-1">
-                {product.price} <span className="text-xs text-gray-500 font-medium">₴</span>
+        <div className={`flex items-center justify-between mt-auto ${viewMode === 'large' ? 'pt-4' : viewMode === 'medium' ? 'pt-3' : 'pt-2'} border-t border-gray-100 dark:border-gray-700/50`} onClick={(e) => e.stopPropagation()}>
+            <div className={`font-extrabold text-dark dark:text-white flex items-baseline gap-1 ${viewMode === 'large' ? 'text-2xl' : viewMode === 'medium' ? 'text-xl' : 'text-lg'}`}>
+                {product.price} <span className={`${viewMode === 'large' ? 'text-sm' : 'text-xs'} text-gray-500 font-medium`}>₴</span>
             </div>
-            <button onClick={() => addToCart(product)} className={`w-8 h-8 rounded-lg transition-all duration-300 flex items-center justify-center ${product.outOfStock ? 'bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed' : 'gradient-bg text-white shadow-lg hover:shadow-primary/40 transform hover:-translate-y-1 z-20 relative'}`} disabled={product.outOfStock}>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" /></svg>
+            <button onClick={() => addToCart(product)} className={`${viewMode === 'large' ? 'w-10 h-10 rounded-xl' : viewMode === 'medium' ? 'w-9 h-9 rounded-xl' : 'w-8 h-8 rounded-lg'} transition-all duration-300 flex items-center justify-center ${product.outOfStock ? 'bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed' : 'gradient-bg text-white shadow-lg hover:shadow-primary/40 transform hover:-translate-y-1 z-20 relative'}`} disabled={product.outOfStock}>
+                <svg xmlns="http://www.w3.org/2000/svg" className={`${viewMode === 'large' ? 'h-5 w-5' : 'h-4 w-4'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" /></svg>
             </button>
         </div>
     </div>
@@ -404,6 +404,7 @@ const App = () => {
     const [selectedCategory, setSelectedCategory] = useState("Всі");
     const [currentPage, setCurrentPage] = useState(1);
     const [brokenImages, setBrokenImages] = useState(new Set());
+    const [viewMode, setViewMode] = useState('small'); // 'large', 'medium', 'small'
     
     // City Selection State
     const [selectedCity, setSelectedCity] = useState("Київ");
@@ -854,15 +855,22 @@ const App = () => {
                                         ))}
                                     </div>
                                 </div>
-                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 glass-panel p-4 rounded-2xl">
-                                    <h1 className="text-3xl font-black text-dark dark:text-white tracking-tight">{selectedCategory}</h1>
-                                    <div className="text-sm font-bold text-gray-500">Знайдено: {filteredProducts.length} товарів</div>
+                                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4 glass-panel p-4 rounded-2xl">
+                                    <div className="flex items-center gap-4">
+                                        <h1 className="text-2xl lg:text-3xl font-black text-dark dark:text-white tracking-tight">{selectedCategory}</h1>
+                                        <div className="text-sm font-bold text-gray-500 bg-white/50 dark:bg-gray-800/50 px-3 py-1 rounded-full">{filteredProducts.length} товарів</div>
+                                    </div>
+                                    <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-1 shrink-0">
+                                        <button onClick={() => setViewMode('large')} className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${viewMode === 'large' ? 'bg-white dark:bg-gray-700 shadow-sm text-primary' : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`}>Великі</button>
+                                        <button onClick={() => setViewMode('medium')} className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${viewMode === 'medium' ? 'bg-white dark:bg-gray-700 shadow-sm text-primary' : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`}>Середні</button>
+                                        <button onClick={() => setViewMode('small')} className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${viewMode === 'small' ? 'bg-white dark:bg-gray-700 shadow-sm text-primary' : 'text-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`}>Малі</button>
+                                    </div>
                                 </div>
                                 
                                 {paginatedProducts.length > 0 ? (
                                     <>
-                                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
-                                            {paginatedProducts.map(p => <ProductCard key={p.id} product={p} addToCart={addToCart} onSelect={handleSelectProduct} onImageError={() => setBrokenImages(prev => new Set(prev).add(p.id))} />)}
+                                        <div className={viewMode === 'large' ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" : viewMode === 'medium' ? "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5" : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4"}>
+                                            {paginatedProducts.map(p => <ProductCard key={p.id} product={p} viewMode={viewMode} addToCart={addToCart} onSelect={handleSelectProduct} onImageError={() => setBrokenImages(prev => new Set(prev).add(p.id))} />)}
                                         </div>
 
                                         {totalPages > 1 && (
@@ -999,9 +1007,9 @@ const App = () => {
                                     <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">✨</span>
                                     Товари з цієї статті
                                 </h3>
-                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+                                <div className={viewMode === 'large' ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" : viewMode === 'medium' ? "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5" : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4"}>
                                     {allProducts.filter(p => activeArticle.featuredProducts.includes(p.id)).map(product => (
-                                        <ProductCard key={product.id} product={product} addToCart={addToCart} onSelect={handleSelectProduct} onImageError={() => setBrokenImages(prev => new Set(prev).add(product.id))} />
+                                        <ProductCard key={product.id} product={product} viewMode={viewMode} addToCart={addToCart} onSelect={handleSelectProduct} onImageError={() => setBrokenImages(prev => new Set(prev).add(product.id))} />
                                     ))}
                                 </div>
                             </div>
@@ -1033,22 +1041,22 @@ const App = () => {
                             </div>
 
                             {/* Details Section */}
-                            <div className="w-full md:w-1/2 p-8 lg:p-14 flex flex-col">
-                                <h1 className="text-4xl lg:text-5xl font-black text-dark dark:text-white mb-6 leading-tight tracking-tight">{selectedProduct.name}</h1>
+                            <div className="w-full md:w-1/2 p-6 lg:p-10 flex flex-col">
+                                <h1 className="text-3xl lg:text-4xl font-black text-dark dark:text-white mb-4 leading-tight tracking-tight">{selectedProduct.name}</h1>
                                 
-                                <div className="flex items-end gap-4 mb-8">
-                                    <div className="text-5xl font-black gradient-text tracking-tighter">{selectedProduct.price} <span className="text-2xl font-bold">грн</span></div>
-                                    {selectedProduct.isPopular && <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-2">Хіт продажу</span>}
+                                <div className="flex items-end gap-3 mb-6">
+                                    <div className="text-4xl font-black gradient-text tracking-tighter">{selectedProduct.price} <span className="text-xl font-bold">₴</span></div>
+                                    {selectedProduct.isPopular && <span className="bg-orange-500 text-white text-[11px] font-bold px-2 py-1 rounded-full mb-1">Хіт продажу 🔥</span>}
                                 </div>
 
-                                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg mb-10">
+                                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base mb-8">
                                     {selectedProduct.details.description}
                                 </p>
 
-                                <div className="grid grid-cols-2 gap-y-6 gap-x-8 text-sm mb-12 bg-gray-50 dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                                <div className="grid grid-cols-2 gap-y-4 gap-x-6 text-sm mb-8 bg-gray-50 dark:bg-gray-800/50 p-5 rounded-xl border border-gray-100 dark:border-gray-700">
                                     <div>
                                         <span className="text-gray-500 block mb-1">Бренд</span>
-                                        <span className="font-bold text-lg text-dark dark:text-white">{selectedProduct.details.brand}</span>
+                                        <span className="font-bold text-base text-dark dark:text-white">{selectedProduct.details.brand}</span>
                                     </div>
                                     <div>
                                         <span className="text-gray-500 block mb-1">Країна</span>
