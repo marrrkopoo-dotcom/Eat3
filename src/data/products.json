@@ -1,7 +1,7 @@
 [
     {
         "id":  1,
-        "name":  "Енергетик Red Bull Krating Daeng Vitamin 800 Energy Drink Thai 145мл",
+        "name":  "Енергетик Red Bull Krating Daeng Vitamin 800 Energy Drink Thai",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/energetik-red-bull-krating-daeng-vitamin-800-thai-145ml-1-200x200.webp",
         "category":  "Енергетики",
@@ -16,7 +16,7 @@
     },
     {
         "id":  2,
-        "name":  "Енергетик Monster Energy Reserve Peaches N Creme 473мл",
+        "name":  "Енергетик Monster Energy Reserve Peaches N Creme",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/energetik-monster-energy-reserve-peaches-n-creme-473ml-6-200x200.webp",
         "category":  "Енергетики",
@@ -46,7 +46,7 @@
     },
     {
         "id":  4,
-        "name":  "Chupa Chups газировка Манго 345мл",
+        "name":  "Chupa Chups газировка Манго",
         "price":  99,
         "image":  "/images/4.webp",
         "category":  "Солодощі",
@@ -61,7 +61,7 @@
     },
     {
         "id":  5,
-        "name":  "Chupa Chups газована вода Апельсин 345мл",
+        "name":  "Chupa Chups газована вода Апельсин",
         "price":  79,
         "image":  "/images/5.webp",
         "category":  "Солодощі",
@@ -76,7 +76,7 @@
     },
     {
         "id":  6,
-        "name":  "Chupa Chups газована вода Виноград 345мл",
+        "name":  "Chupa Chups газована вода Виноград",
         "price":  99,
         "image":  "/images/6.webp",
         "category":  "Солодощі",
@@ -91,7 +91,7 @@
     },
     {
         "id":  7,
-        "name":  "Chupa Chups газована вода Вишнева Гумка 345мл",
+        "name":  "Chupa Chups газована вода Вишнева Гумка",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/chupa-chups-sparkling-cherry-bubble-gum-200x200.webp",
         "category":  "Солодощі",
@@ -106,7 +106,7 @@
     },
     {
         "id":  8,
-        "name":  "Chupa Chups газована вода Кавун 345мл",
+        "name":  "Chupa Chups газована вода Кавун",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/chupa-chups-sparkling-watermelon-200x200.webp",
         "category":  "Солодощі",
@@ -121,7 +121,7 @@
     },
     {
         "id":  9,
-        "name":  "Chupa Chups газована вода Кисла Чорниця 345мл",
+        "name":  "Chupa Chups газована вода Кисла Чорниця",
         "price":  79,
         "image":  "/images/9.webp",
         "category":  "Солодощі",
@@ -136,7 +136,7 @@
     },
     {
         "id":  10,
-        "name":  "Chupa Chups газована вода Кисле Яблуко 345мл",
+        "name":  "Chupa Chups газована вода Кисле Яблуко",
         "price":  79,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/chupa-chups-sparkling-sour-apple-200x200.webp",
         "category":  "Солодощі",
@@ -151,7 +151,7 @@
     },
     {
         "id":  11,
-        "name":  "Chupa Chups газована вода Кремова диня 250мл",
+        "name":  "Chupa Chups газована вода Кремова диня",
         "price":  59,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/napij-chupa-chups-melon-cream-200x200.webp",
         "category":  "Солодощі",
@@ -286,7 +286,7 @@
     },
     {
         "id":  20,
-        "name":  "Monster Mango Loco 500мл",
+        "name":  "Monster Mango Loco",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-mango-loco-200x200.webp",
         "category":  "Енергетики",
@@ -301,7 +301,7 @@
     },
     {
         "id":  21,
-        "name":  "Monster Pipeline Punch 500мл",
+        "name":  "Monster Pipeline Punch",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-pipeline-punch-200x200.webp",
         "category":  "Енергетики",
@@ -316,7 +316,7 @@
     },
     {
         "id":  22,
-        "name":  "Monster The Doctor 500мл",
+        "name":  "Monster The Doctor",
         "price":  129,
         "image":  "/images/22.webp",
         "category":  "Енергетики",
@@ -346,7 +346,7 @@
     },
     {
         "id":  24,
-        "name":  "Monster Ultra Paradise 500мл",
+        "name":  "Monster Ultra Paradise",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-ultra-paradise-200x200.webp",
         "category":  "Енергетики",
@@ -376,7 +376,7 @@
     },
     {
         "id":  26,
-        "name":  "Monster Ultra White 500мл",
+        "name":  "Monster Ultra White",
         "price":  129,
         "image":  "/images/26.jpg",
         "category":  "Енергетики",
@@ -391,7 +391,7 @@
     },
     {
         "id":  27,
-        "name":  "Prime Arsenal Hydration Drink Arsenal 500мл",
+        "name":  "Prime Arsenal Hydration Drink Arsenal",
         "price":  379,
         "image":  "/images/27.jpg",
         "category":  "Енергетики",
@@ -421,7 +421,7 @@
     },
     {
         "id":  29,
-        "name":  "Вода Monster Tour Water Deep Well Питна 473мл",
+        "name":  "Вода Monster Tour Water Deep Well Питна",
         "price":  399,
         "image":  "/images/29.jpg",
         "category":  "Енергетики",
@@ -436,7 +436,7 @@
     },
     {
         "id":  30,
-        "name":  "Газировка Fanta Orange USA Апельсин 355мл",
+        "name":  "Газировка Fanta Orange USA Апельсин",
         "price":  99,
         "image":  "/images/30.jpg",
         "category":  "Газовані напої",
@@ -451,7 +451,7 @@
     },
     {
         "id":  31,
-        "name":  "Газировка Fanta Tutti-frutti Zero Sugar Тутти Фрутти Без сахара 250мл",
+        "name":  "Газировка Fanta Tutti-frutti Zero Sugar Тутти Фрутти Без сахара",
         "price":  99,
         "image":  "/images/31.jpg",
         "category":  "Газовані напої",
@@ -466,7 +466,7 @@
     },
     {
         "id":  32,
-        "name":  "Газировка Китайська Fanta White Peach Jasmine China Білий Персик Жасмин 330мл",
+        "name":  "Газировка Китайська Fanta White Peach Jasmine China Білий Персик Жасмин",
         "price":  149,
         "image":  "/images/32.jpg",
         "category":  "Газовані напої",
@@ -481,7 +481,7 @@
     },
     {
         "id":  33,
-        "name":  "Газована вода 7-Up Tropical No Caffeine 355мл",
+        "name":  "Газована вода 7-Up Tropical No Caffeine",
         "price":  99,
         "image":  "/images/33.jpg",
         "category":  "Газовані напої",
@@ -496,7 +496,7 @@
     },
     {
         "id":  34,
-        "name":  "Газована вода A\u0026W Cream Soda No Caffeine 355мл",
+        "name":  "Газована вода A\u0026W Cream Soda No Caffeine",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-aw-cream-soda-no-caffeine-355ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -511,7 +511,7 @@
     },
     {
         "id":  35,
-        "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм 500 мл",
+        "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
         "price":  189,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-arizona-cherry-lime-rickey-650ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -526,7 +526,7 @@
     },
     {
         "id":  36,
-        "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм 650мл",
+        "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-arizona-cherry-lime-rickey-650ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -541,7 +541,7 @@
     },
     {
         "id":  37,
-        "name":  "Газована вода Candy Can Bubblegum Sparkling Drink Sugar Free Жуйка 330мл",
+        "name":  "Газована вода Candy Can Bubblegum Sparkling Drink Sugar Free Жуйка",
         "price":  129,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-candy-can-sparkling-bubblegum-330ml-5-200x200.jpg",
         "category":  "Жуйки",
@@ -556,7 +556,7 @@
     },
     {
         "id":  38,
-        "name":  "Газована вода Candy Can Cotton Candy Sparkling Drink Sugar Free Солодка Вата Без цукру 330мл",
+        "name":  "Газована вода Candy Can Cotton Candy Sparkling Drink Sugar Free Солодка Вата Без цукру",
         "price":  129,
         "image":  "/images/38.jpg",
         "category":  "Солодощі",
@@ -571,7 +571,7 @@
     },
     {
         "id":  39,
-        "name":  "Газована вода Chupa Chups Sour Coco Green Apple Кокос-Зелене яблуко 240 мл",
+        "name":  "Газована вода Chupa Chups Sour Coco Green Apple Кокос-Зелене яблуко",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/napij-chupa-chups-sour-coco-green-apple-240ml-4-200x200.jpg",
         "category":  "Солодощі",
@@ -586,7 +586,7 @@
     },
     {
         "id":  40,
-        "name":  "Газована вода Chupa Chups Sour Coco Lemon Кокос-Лимон 240мл",
+        "name":  "Газована вода Chupa Chups Sour Coco Lemon Кокос-Лимон",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/napij-chupa-chups-sour-coco-lemon-240ml-3-200x200.jpg",
         "category":  "Солодощі",
@@ -601,7 +601,7 @@
     },
     {
         "id":  41,
-        "name":  "Газована вода Chupa Chups Sparkling Cola 345мл",
+        "name":  "Газована вода Chupa Chups Sparkling Cola",
         "price":  79,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-chupa-chups-sparkling-cola-345ml-4-200x200.jpg",
         "category":  "Солодощі",
@@ -616,7 +616,7 @@
     },
     {
         "id":  42,
-        "name":  "Газована вода Coca-Cola Cherry Float Zero Sugar Вишня з ваніллю 355мл",
+        "name":  "Газована вода Coca-Cola Cherry Float Zero Sugar Вишня з ваніллю",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-coca-cola-cherry-float-zero-sugar-355ml-1-200x200.jpg",
         "category":  "Газовані напої",
@@ -631,7 +631,7 @@
     },
     {
         "id":  43,
-        "name":  "Газована вода Coca-Cola Cherry Float Вишня з ваніллю 355мл",
+        "name":  "Газована вода Coca-Cola Cherry Float Вишня з ваніллю",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-coca-cola-cherry-float-355ml-2-200x200.jpg",
         "category":  "Газовані напої",
@@ -646,7 +646,7 @@
     },
     {
         "id":  44,
-        "name":  "Газована вода Coca-Cola Holiday Creamy Vanilla Soda Ванільна 355мл",
+        "name":  "Газована вода Coca-Cola Holiday Creamy Vanilla Soda Ванільна",
         "price":  169,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-coca-cola-holiday-creamy-vanilla-soda-355ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -661,7 +661,7 @@
     },
     {
         "id":  45,
-        "name":  "Газована вода Coca-Cola Zero Sugar Caffeine Free 330мл",
+        "name":  "Газована вода Coca-Cola Zero Sugar Caffeine Free",
         "price":  179,
         "image":  "/images/45.jpg",
         "category":  "Газовані напої",
@@ -676,7 +676,7 @@
     },
     {
         "id":  46,
-        "name":  "Газована вода Coca-Cola Zero Sugar Кока Кола Без Цукру 355мл",
+        "name":  "Газована вода Coca-Cola Zero Sugar Кока Кола Без Цукру",
         "price":  129,
         "image":  "/images/46.jpg",
         "category":  "Газовані напої",
@@ -691,7 +691,7 @@
     },
     {
         "id":  47,
-        "name":  "Газована Вода Dr Pepper Cream Soda 355ml",
+        "name":  "Газована Вода Dr Pepper Cream Soda",
         "price":  99,
         "image":  "/images/47.jpg",
         "category":  "Газовані напої",
@@ -706,7 +706,7 @@
     },
     {
         "id":  48,
-        "name":  "Газована вода Dr Pepper Original 330мл",
+        "name":  "Газована вода Dr Pepper Original",
         "price":  59,
         "image":  "/images/48.png",
         "category":  "Газовані напої",
@@ -721,7 +721,7 @@
     },
     {
         "id":  49,
-        "name":  "Газована вода Dr. Pepper Strawberries \u0026 Cream Полуниця і вершки 330мл",
+        "name":  "Газована вода Dr. Pepper Strawberries \u0026 Cream Полуниця і вершки",
         "price":  59,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-dr-pepper-strawberries-cream-330ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -736,7 +736,7 @@
     },
     {
         "id":  50,
-        "name":  "Газована вода Dr. Pepper Vanilla Float Ванільне морозиво 330мл",
+        "name":  "Газована вода Dr. Pepper Vanilla Float Ванільне морозиво",
         "price":  59,
         "image":  "/images/50.jpg",
         "category":  "Газовані напої",
@@ -751,7 +751,7 @@
     },
     {
         "id":  51,
-        "name":  "Газована вода Dr.Pepper Blackberry Ожина 355мл",
+        "name":  "Газована вода Dr.Pepper Blackberry Ожина",
         "price":  149,
         "image":  "/images/51.jpg",
         "category":  "Газовані напої",
@@ -766,7 +766,7 @@
     },
     {
         "id":  52,
-        "name":  "Газована вода Fanta Diablo Crimson Cherry 330 мл",
+        "name":  "Газована вода Fanta Diablo Crimson Cherry",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-diablo-crimson-cherry-330ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -781,7 +781,7 @@
     },
     {
         "id":  53,
-        "name":  "Газована вода Fanta Fruit Twist Мультифрукт 330мл",
+        "name":  "Газована вода Fanta Fruit Twist Мультифрукт",
         "price":  99,
         "image":  "/images/53.jpg",
         "category":  "Газовані напої",
@@ -796,7 +796,7 @@
     },
     {
         "id":  54,
-        "name":  "Газована вода Fanta Grape Asia 320мл",
+        "name":  "Газована вода Fanta Grape Asia",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-grape-asia-320ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -811,7 +811,7 @@
     },
     {
         "id":  55,
-        "name":  "Газована вода Fanta Grape Japan Виноград 500мл",
+        "name":  "Газована вода Fanta Grape Japan Виноград",
         "price":  169,
         "image":  "/images/55.png",
         "category":  "Газовані напої",
@@ -826,7 +826,7 @@
     },
     {
         "id":  56,
-        "name":  "Газована вода Fanta Huong Xa Xi Sarsaparilla Vietnam 320мл",
+        "name":  "Газована вода Fanta Huong Xa Xi Sarsaparilla Vietnam",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-huong-xa-xi-sarsaparilla-vietnam-320ml-2-200x200.jpg",
         "category":  "Газовані напої",
@@ -841,7 +841,7 @@
     },
     {
         "id":  57,
-        "name":  "Газована вода Fanta Orange USA Zero Sugar Апельсин 355мл",
+        "name":  "Газована вода Fanta Orange USA Zero Sugar Апельсин",
         "price":  99,
         "image":  "/images/57.jpg",
         "category":  "Газовані напої",
@@ -856,7 +856,7 @@
     },
     {
         "id":  58,
-        "name":  "Газована вода Fanta Orange Xbox Ghost Call of Duty 330мл",
+        "name":  "Газована вода Fanta Orange Xbox Ghost Call of Duty",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-orange-xbox-ghost-call-duty-330ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -886,7 +886,7 @@
     },
     {
         "id":  60,
-        "name":  "Газована вода Hata Soda Ramune Watermelon Кавун 500мл",
+        "name":  "Газована вода Hata Soda Ramune Watermelon Кавун",
         "price":  199,
         "image":  "/images/60.jpg",
         "category":  "Газовані напої",
@@ -916,7 +916,7 @@
     },
     {
         "id":  62,
-        "name":  "Газована вода Lotte Chilsung Cider Soda Сидр 250мл",
+        "name":  "Газована вода Lotte Chilsung Cider Soda Сидр",
         "price":  69,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-lotte-chilsung-cider-soda-250ml-5-200x200.jpg",
         "category":  "Газовані напої",
@@ -931,7 +931,7 @@
     },
     {
         "id":  63,
-        "name":  "Газована вода Mountain Dew Baja Blast Лайм Апельсин Ананас 355мл",
+        "name":  "Газована вода Mountain Dew Baja Blast Лайм Апельсин Ананас",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/energetik_mountain_dew_voltage_baja_blast_355ml_2-200x200.jpg",
         "category":  "Енергетики",
@@ -946,7 +946,7 @@
     },
     {
         "id":  64,
-        "name":  "Газована вода Mountain Dew Baja Cabo Citrus 355мл",
+        "name":  "Газована вода Mountain Dew Baja Cabo Citrus",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-mountain-dew-baja-cabo-citrus-355ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -961,7 +961,7 @@
     },
     {
         "id":  65,
-        "name":  "Газована вода Mountain Dew Code Red Вишня 355мл",
+        "name":  "Газована вода Mountain Dew Code Red Вишня",
         "price":  179,
         "image":  "/images/65.jpg",
         "category":  "Газовані напої",
@@ -976,7 +976,7 @@
     },
     {
         "id":  66,
-        "name":  "Газована вода Mountain Dew Dragon Fruit Драконів фрукт 355мл",
+        "name":  "Газована вода Mountain Dew Dragon Fruit Драконів фрукт",
         "price":  179,
         "image":  "/images/66.jpg",
         "category":  "Газовані напої",
@@ -991,7 +991,7 @@
     },
     {
         "id":  67,
-        "name":  "Газована вода Mountain Dew Kickstart Energizing Orange Citrus Апельсин  Цитрус 453мл",
+        "name":  "Газована вода Mountain Dew Kickstart Energizing Orange Citrus Апельсин  Цитрус",
         "price":  249,
         "image":  "/images/67.jpg",
         "category":  "Газовані напої",
@@ -1006,7 +1006,7 @@
     },
     {
         "id":  68,
-        "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси 330мл",
+        "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-mountain-dew-pitch-black-330ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -1021,7 +1021,7 @@
     },
     {
         "id":  69,
-        "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси 500 мл",
+        "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси",
         "price":  199,
         "image":  "/images/69.jpg",
         "category":  "Газовані напої",
@@ -1036,7 +1036,7 @@
     },
     {
         "id":  70,
-        "name":  "Газована вода Mountain Dew Trolli Candy Cherry Lemon Zero Sugar Вишня Лимон 355мл",
+        "name":  "Газована вода Mountain Dew Trolli Candy Cherry Lemon Zero Sugar Вишня Лимон",
         "price":  199,
         "image":  "/images/70.jpg",
         "category":  "Солодощі",
@@ -1051,7 +1051,7 @@
     },
     {
         "id":  71,
-        "name":  "Газована вода Mountain Dew Voltage Raspberry Ginseng Малина Женьшень 355мл",
+        "name":  "Газована вода Mountain Dew Voltage Raspberry Ginseng Малина Женьшень",
         "price":  199,
         "image":  "/images/71.jpg",
         "category":  "Газовані напої",
@@ -1066,7 +1066,7 @@
     },
     {
         "id":  72,
-        "name":  "Газована вода Mountain Dew Zero Sugar Цитрус Без цукру 330мл",
+        "name":  "Газована вода Mountain Dew Zero Sugar Цитрус Без цукру",
         "price":  159,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-mountain-dew-zero-sugar-330ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -1081,7 +1081,7 @@
     },
     {
         "id":  73,
-        "name":  "Газована вода Pepsi Caffeine Free Diet Дієтична Без Кофеїну 355мл",
+        "name":  "Газована вода Pepsi Caffeine Free Diet Дієтична Без Кофеїну",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/693b231e1944b7f9-00012000008184-C1N1-200x200.png",
         "category":  "Газовані напої",
@@ -1096,7 +1096,7 @@
     },
     {
         "id":  74,
-        "name":  "Газована вода Pepsi Cream Soda Zero Sugar Крем-Сода 330мл",
+        "name":  "Газована вода Pepsi Cream Soda Zero Sugar Крем-Сода",
         "price":  149,
         "image":  "/images/74.jpg",
         "category":  "Газовані напої",
@@ -1111,7 +1111,7 @@
     },
     {
         "id":  75,
-        "name":  "Газована вода Pepsi Gold 235мл",
+        "name":  "Газована вода Pepsi Gold",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-pepsi-gold-235ml-5-200x200.jpg",
         "category":  "Газовані напої",
@@ -1126,7 +1126,7 @@
     },
     {
         "id":  76,
-        "name":  "Газована вода Pepsi Prebiotic Cola Cherry Vanilla з пребіотиками 355мл",
+        "name":  "Газована вода Pepsi Prebiotic Cola Cherry Vanilla з пребіотиками",
         "price":  199,
         "image":  "/images/76.jpg",
         "category":  "Газовані напої",
@@ -1141,7 +1141,7 @@
     },
     {
         "id":  77,
-        "name":  "Газована вода Pepsi Prebiotic Cola з пребіотиками 355мл",
+        "name":  "Газована вода Pepsi Prebiotic Cola з пребіотиками",
         "price":  199,
         "image":  "/images/77.jpg",
         "category":  "Газовані напої",
@@ -1156,7 +1156,7 @@
     },
     {
         "id":  78,
-        "name":  "Газована вода Pepsi Strawberries “N” Cream Zero Sugar Полуничний крем 330мл",
+        "name":  "Газована вода Pepsi Strawberries “N” Cream Zero Sugar Полуничний крем",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-pepsi-strawberries-n-cream-zero-sugar-330ml-1-200x200.jpg",
         "category":  "Газовані напої",
@@ -1171,7 +1171,7 @@
     },
     {
         "id":  79,
-        "name":  "Газована вода Pepsi White Peach Oolong Білий Персик та Улун 330мл",
+        "name":  "Газована вода Pepsi White Peach Oolong Білий Персик та Улун",
         "price":  199,
         "image":  "/images/79.jpg",
         "category":  "Газовані напої",
@@ -1186,7 +1186,7 @@
     },
     {
         "id":  80,
-        "name":  "Газована вода Sprite Chill Strawberry Kiwi Полуниця Ківі 355мл",
+        "name":  "Газована вода Sprite Chill Strawberry Kiwi Полуниця Ківі",
         "price":  99,
         "image":  "/images/80.jpg",
         "category":  "Газовані напої",
@@ -1201,7 +1201,7 @@
     },
     {
         "id":  81,
-        "name":  "Газована вода Sprite Glass Пляшка скло 1л",
+        "name":  "Газована вода Sprite Glass Пляшка скло",
         "price":  299,
         "image":  "/images/81.jpg",
         "category":  "Газовані напої",
@@ -1216,7 +1216,7 @@
     },
     {
         "id":  82,
-        "name":  "Газована вода Sprite Tea Lemon Чай з Лимоном 355 мл",
+        "name":  "Газована вода Sprite Tea Lemon Чай з Лимоном",
         "price":  99,
         "image":  "/images/82.jpg",
         "category":  "Газовані напої",
@@ -1231,7 +1231,7 @@
     },
     {
         "id":  83,
-        "name":  "Газована вода Sprite Zero Sugar Mint Chill Лимон-Лайм 1.25л",
+        "name":  "Газована вода Sprite Zero Sugar Mint Chill Лимон-Лайм",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/gazirovka-sprite-zero-sugar-mint-chill-lemon-lime-1250ml-4-200x200.jpg",
         "category":  "Газовані напої",
@@ -1246,7 +1246,7 @@
     },
     {
         "id":  84,
-        "name":  "Газована вода Ultrapop Dragon Ball Drink Strawberry \u0026 Banana 330мл",
+        "name":  "Газована вода Ultrapop Dragon Ball Drink Strawberry \u0026 Banana",
         "price":  179,
         "image":  "/images/84.jpg",
         "category":  "Газовані напої",
@@ -1261,7 +1261,7 @@
     },
     {
         "id":  85,
-        "name":  "Газована вода Ultrapop One Piece Soda Luffy Lemon \u0026 Strawberry Лимон і Полуниця 330мл",
+        "name":  "Газована вода Ultrapop One Piece Soda Luffy Lemon \u0026 Strawberry Лимон і Полуниця",
         "price":  179,
         "image":  "/images/85.jpg",
         "category":  "Газовані напої",
@@ -1276,7 +1276,7 @@
     },
     {
         "id":  86,
-        "name":  "Газована вода Warheads Sour Peach Soda Персик 355мл",
+        "name":  "Газована вода Warheads Sour Peach Soda Персик",
         "price":  79,
         "image":  "/images/86.jpg",
         "category":  "Газовані напої",
@@ -1351,7 +1351,7 @@
     },
     {
         "id":  91,
-        "name":  "Газована вода без цукру Fanta Chucky Forest Berries Zero Sugar зі смаком лісових ягід 330мл.",
+        "name":  "Газована вода без цукру Fanta Chucky Forest Berries Zero Sugar зі смаком лісових ягід",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/7777/fanta-chucky-forest-berries-zero-sugar-500ml-1-200x200.png",
         "category":  "Газовані напої",
@@ -1366,7 +1366,7 @@
     },
     {
         "id":  92,
-        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Citrus Цитрус Равлик Гері 330мл",
+        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Citrus Цитрус Равлик Гері",
         "price":  199,
         "image":  "/images/92.jpg",
         "category":  "Газовані напої",
@@ -1381,7 +1381,7 @@
     },
     {
         "id":  93,
-        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Grape Виноград Сквідвард 330 мл",
+        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Grape Виноград Сквідвард",
         "price":  199,
         "image":  "/images/93.jpg",
         "category":  "Газовані напої",
@@ -1396,7 +1396,7 @@
     },
     {
         "id":  94,
-        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Lychee Лічі Містер Крабс 330мл",
+        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Lychee Лічі Містер Крабс",
         "price":  199,
         "image":  "/images/94.jpg",
         "category":  "Газовані напої",
@@ -1411,7 +1411,7 @@
     },
     {
         "id":  95,
-        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Strawberry Полуниця Сенді Чікс 330мл",
+        "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Strawberry Полуниця Сенді Чікс",
         "price":  199,
         "image":  "/images/95.jpg",
         "category":  "Газовані напої",
@@ -1426,7 +1426,7 @@
     },
     {
         "id":  96,
-        "name":  "Газована вода Покемони Qdol Pokemon Citrus Squirtle Цитрус Сквіртл 330мл",
+        "name":  "Газована вода Покемони Qdol Pokemon Citrus Squirtle Цитрус Сквіртл",
         "price":  199,
         "image":  "/images/96.jpg",
         "category":  "Газовані напої",
@@ -1441,7 +1441,7 @@
     },
     {
         "id":  97,
-        "name":  "Газована вода Покемони Qdol Pokemon Grape Bulbasaur Виноград Бульбозавр 330мл",
+        "name":  "Газована вода Покемони Qdol Pokemon Grape Bulbasaur Виноград Бульбозавр",
         "price":  199,
         "image":  "/images/97.jpg",
         "category":  "Газовані напої",
@@ -1456,7 +1456,7 @@
     },
     {
         "id":  98,
-        "name":  "Газована вода Покемони Qdol Pokemon Lime Pikachu Лайм Пікачу 330мл",
+        "name":  "Газована вода Покемони Qdol Pokemon Lime Pikachu Лайм Пікачу",
         "price":  199,
         "image":  "/images/98.jpg",
         "category":  "Газовані напої",
@@ -1471,7 +1471,7 @@
     },
     {
         "id":  99,
-        "name":  "Газована вода Покемони Qdol Pokemon Lychee Charmander Лічі Чармандер 330мл",
+        "name":  "Газована вода Покемони Qdol Pokemon Lychee Charmander Лічі Чармандер",
         "price":  199,
         "image":  "/images/99.jpg",
         "category":  "Газовані напої",
@@ -1486,7 +1486,7 @@
     },
     {
         "id":  100,
-        "name":  "Газована вода Покемони Qdol Pokemon Peach Jigglypuff Персик Джиггліпуфф 330мл",
+        "name":  "Газована вода Покемони Qdol Pokemon Peach Jigglypuff Персик Джиггліпуфф",
         "price":  199,
         "image":  "/images/100.jpg",
         "category":  "Газовані напої",
@@ -1516,7 +1516,7 @@
     },
     {
         "id":  103,
-        "name":  "Гігантські снеки Spicy Snack Shuangzai Super Large Strips Гострі 888 г.",
+        "name":  "Гігантські снеки Spicy Snack Shuangzai Super Large Strips Гострі",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/other/asiaFlafor/Asia3/spicy-snack-shuangzai-super-large-strips-2-200x200.webp",
         "category":  "Снеки",
@@ -1531,7 +1531,7 @@
     },
     {
         "id":  104,
-        "name":  "Гігантське сухе латяо Xiaolala Spicy Chips Indian Flying Cake Flavor Гостре 900 г.",
+        "name":  "Гігантське сухе латяо Xiaolala Spicy Chips Indian Flying Cake Flavor Гостре",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/other/asiaFlafor/Asia9/xiaolala-spicy-chips-indian-flying-cake-flavor-1-200x200.webp",
         "category":  "Снеки",
@@ -1546,7 +1546,7 @@
     },
     {
         "id":  105,
-        "name":  "Горіхи Takis Hot Nuts Flare Double Crunch Гострі 90г",
+        "name":  "Горіхи Takis Hot Nuts Flare Double Crunch Гострі",
         "price":  219,
         "image":  "/images/105.webp",
         "category":  "Снеки",
@@ -1561,7 +1561,7 @@
     },
     {
         "id":  106,
-        "name":  "Горіхи Takis Hot Nuts Fuego Double Crunch Гострі 90г",
+        "name":  "Горіхи Takis Hot Nuts Fuego Double Crunch Гострі",
         "price":  219,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/oreshki-takis-hot-nuts-fuego-double-crunch-90g-1-200x200.webp",
         "category":  "Снеки",
@@ -1576,7 +1576,7 @@
     },
     {
         "id":  107,
-        "name":  "Горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Italian Red Meat Sauce 54г",
+        "name":  "Горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Italian Red Meat Sauce",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-be-cheery-x-lays-italian-red-meat-sauce-54g-5-200x200.webp",
         "category":  "Снеки",
@@ -1591,7 +1591,7 @@
     },
     {
         "id":  108,
-        "name":  "Горіхи Кешью Alesto Selection Cashewkerne 200г",
+        "name":  "Горіхи Кешью Alesto Selection Cashewkerne",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-alesto-selection-cashewkerne-200g-1-200x200.webp",
         "category":  "Снеки",
@@ -1606,7 +1606,7 @@
     },
     {
         "id":  109,
-        "name":  "Гострі горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Buldak Spicy 54г",
+        "name":  "Гострі горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Buldak Spicy",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-be-cheery-x-lays-buldak-spicy-54g-3-200x200.webp",
         "category":  "Снеки",
@@ -1621,7 +1621,7 @@
     },
     {
         "id":  110,
-        "name":  "Гострі макарони з сиром Cheetos Mac\u0027n Cheese Flamin Hot 160г",
+        "name":  "Гострі макарони з сиром Cheetos Mac\u0027n Cheese Flamin Hot",
         "price":  199,
         "image":  "/images/110.webp",
         "category":  "Снеки",
@@ -1636,7 +1636,7 @@
     },
     {
         "id":  111,
-        "name":  "Гострі мариновані водорості DD\u0027 Classmate Kelp Knots 26г",
+        "name":  "Гострі мариновані водорості DD\u0027 Classmate Kelp Knots",
         "price":  49,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-dd-classmate-kelp-knots-26g-3-200x200.webp",
         "category":  "Снеки",
@@ -1651,7 +1651,7 @@
     },
     {
         "id":  112,
-        "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак 15г",
+        "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак",
         "price":  49,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-05-11-16-04-54-200x200.webp",
         "category":  "Снеки",
@@ -1681,7 +1681,7 @@
     },
     {
         "id":  114,
-        "name":  "Гострі чіпси Lay\u0027s Latiao Spicy Strip Латяо 60г",
+        "name":  "Гострі чіпси Lay\u0027s Latiao Spicy Strip Латяо",
         "price":  219,
         "image":  "/images/114.webp",
         "category":  "Снеки",
@@ -1696,7 +1696,7 @@
     },
     {
         "id":  115,
-        "name":  "Гострі Чіпси Lays Spicy Crayfish Раки 70г",
+        "name":  "Гострі Чіпси Lays Spicy Crayfish Раки",
         "price":  219,
         "image":  "/images/115.webp",
         "category":  "Снеки",
@@ -1711,7 +1711,7 @@
     },
     {
         "id":  116,
-        "name":  "Гострі чіпси Pringles Enchilada Adobada Potato Свинина в соусі чилі 158г",
+        "name":  "Гострі чіпси Pringles Enchilada Adobada Potato Свинина в соусі чилі",
         "price":  299,
         "image":  "/images/116.webp",
         "category":  "Снеки",
@@ -1726,7 +1726,7 @@
     },
     {
         "id":  117,
-        "name":  "Гострі Чіпси Pringles HOT Smokin\u0027 BBQ Ribs Барбекю та Чилі 160г",
+        "name":  "Гострі Чіпси Pringles HOT Smokin\u0027 BBQ Ribs Барбекю та Чилі",
         "price":  159,
         "image":  "/images/117.webp",
         "category":  "Снеки",
@@ -1741,7 +1741,7 @@
     },
     {
         "id":  118,
-        "name":  "Гострі чіпси Samyang Buldak 4 Cheese Chips 4 сири 55г",
+        "name":  "Гострі чіпси Samyang Buldak 4 Cheese Chips 4 сири",
         "price":  259,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-samyang-buldak-4-cheese-55g-2-200x200.webp",
         "category":  "Снеки",
@@ -1756,7 +1756,7 @@
     },
     {
         "id":  119,
-        "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро і Лайм 55г",
+        "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро і Лайм",
         "price":  259,
         "image":  "/images/119.webp",
         "category":  "Снеки",
@@ -1771,7 +1771,7 @@
     },
     {
         "id":  120,
-        "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро з Лаймом 120г",
+        "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро з Лаймом",
         "price":  499,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/48-65/06-habanero-lime/samyang-buldak-potato-chips-habanero-lime-0-200x200.webp",
         "category":  "Снеки",
@@ -1786,7 +1786,7 @@
     },
     {
         "id":  121,
-        "name":  "Гострі чіпси Samyang Burduck Chips Original Чилі 55г",
+        "name":  "Гострі чіпси Samyang Burduck Chips Original Чилі",
         "price":  249,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-samyang-burduck-original-55g-1-200x200.webp",
         "category":  "Снеки",
@@ -1801,7 +1801,7 @@
     },
     {
         "id":  122,
-        "name":  "Гострі чіпси Takis Blue Heat Waves Hot Chili \u0026 Lime Чилі та Лайм 226г",
+        "name":  "Гострі чіпси Takis Blue Heat Waves Hot Chili \u0026 Lime Чилі та Лайм",
         "price":  499,
         "image":  "/images/122.webp",
         "category":  "Снеки",
@@ -1816,7 +1816,7 @@
     },
     {
         "id":  123,
-        "name":  "Гострі Чіпси латяо  Spicy Chips Latiao Indian Flying Cake Flavor зі Смаком Тістечка 0.9 кг.",
+        "name":  "Гострі Чіпси латяо  Spicy Chips Latiao Indian Flying Cake Flavor зі Смаком Тістечка",
         "price":  99,
         "image":  "/images/123.webp",
         "category":  "Снеки",
@@ -1831,7 +1831,7 @@
     },
     {
         "id":  124,
-        "name":  "Гострі Японські снеки Tohato Demon King Jolokia 90г",
+        "name":  "Гострі Японські снеки Tohato Demon King Jolokia",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-tohato-demon-king-jolokia-90g-3-200x200.webp",
         "category":  "Снеки",
@@ -1846,7 +1846,7 @@
     },
     {
         "id":  125,
-        "name":  "Гостра Локшина Samyang Buldak 2x Spicy Hot Chicken Ramen Булдак Рамен 140г",
+        "name":  "Гостра Локшина Samyang Buldak 2x Spicy Hot Chicken Ramen Булдак Рамен",
         "price":  199,
         "image":  "/images/125.webp",
         "category":  "Снеки",
@@ -1861,7 +1861,7 @@
     },
     {
         "id":  126,
-        "name":  "Гостра Локшина Samyang Buldak Habanero Lime Flavour Instant Noodles Лайм і Хабанеро 135г",
+        "name":  "Гостра Локшина Samyang Buldak Habanero Lime Flavour Instant Noodles Лайм і Хабанеро",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/lapsha_samyang_buldak_habanero_lime_instant_noodles_135g_2-200x200.jpg",
         "category":  "Снеки",
@@ -1876,7 +1876,7 @@
     },
     {
         "id":  127,
-        "name":  "Гостра Локшина Рамен Samyang Buldak Hot Chicken Ramen Stew Курка 145г",
+        "name":  "Гостра Локшина Рамен Samyang Buldak Hot Chicken Ramen Stew Курка",
         "price":  149,
         "image":  "/images/127.jpg",
         "category":  "Снеки",
@@ -1891,7 +1891,7 @@
     },
     {
         "id":  128,
-        "name":  "Гострий Снек Cheetos Minis Cheese Cheddar Jalapeño Чеддер Халапеньо 102г",
+        "name":  "Гострий Снек Cheetos Minis Cheese Cheddar Jalapeño Чеддер Халапеньо",
         "price":  299,
         "image":  "/images/128.jpg",
         "category":  "Снеки",
@@ -1906,7 +1906,7 @@
     },
     {
         "id":  129,
-        "name":  "Гострий снек Samyang 2X SPICY Zzaldduk Extreme Buldak HALAL Булдак 80г",
+        "name":  "Гострий снек Samyang 2X SPICY Zzaldduk Extreme Buldak HALAL Булдак",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/samyang-2x-spicy-zzaldduk-extreme-buldak-halal-80g-3-200x200.jpg",
         "category":  "Снеки",
@@ -1921,7 +1921,7 @@
     },
     {
         "id":  130,
-        "name":  "Гострий снек Samyang x Yanjinpuzi Buldak Da Mowang Konjac Snack 18г",
+        "name":  "Гострий снек Samyang x Yanjinpuzi Buldak Da Mowang Konjac Snack",
         "price":  49,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-samyang-x-yanjinpuzi-buldak-da-mowang-konjac-snack-18g-1-200x200.jpg",
         "category":  "Снеки",
@@ -1936,7 +1936,7 @@
     },
     {
         "id":  131,
-        "name":  "Гострий снек Samyang Zzaldduk Hot Chicken Курячий Рамен 120г",
+        "name":  "Гострий снек Samyang Zzaldduk Hot Chicken Курячий Рамен",
         "price":  199,
         "image":  "/images/131.jpg",
         "category":  "Снеки",
@@ -1951,7 +1951,7 @@
     },
     {
         "id":  132,
-        "name":  "Гострий снек Weilong Konjac Shuang Sichuan 10г",
+        "name":  "Гострий снек Weilong Konjac Shuang Sichuan",
         "price":  49,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-weilong-konjac-shuang-sichuan-10g-6-200x200.jpg",
         "category":  "Снеки",
@@ -1966,7 +1966,7 @@
     },
     {
         "id":  133,
-        "name":  "Екстра гострі чіпси HOT-CHIP Challenge Solo Pack Кукурудзяні 2.5г",
+        "name":  "Екстра гострі чіпси HOT-CHIP Challenge Solo Pack Кукурудзяні",
         "price":  99,
         "image":  "/images/133.jpg",
         "category":  "Снеки",
@@ -1981,7 +1981,7 @@
     },
     {
         "id":  134,
-        "name":  "Екстра Гострі Чіпси Takis Blue Heat Multipack Hot Chili Pepper Extreme Spicy Tortilla Чилі 871г",
+        "name":  "Екстра Гострі Чіпси Takis Blue Heat Multipack Hot Chili Pepper Extreme Spicy Tortilla Чилі",
         "price":  1499,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy_takis_blue_heat_mini_multipack_hot_chili_pepper_extreme_spicy_tortilla_871g_6-200x200.jpg",
         "category":  "Снеки",
@@ -1996,7 +1996,7 @@
     },
     {
         "id":  135,
-        "name":  "Екстра гострі Чіпси Takis Fuego Hot Chili Pepper \u0026 Lime Extreme Spicy Tortilla Чилі і Лайм 28.4г",
+        "name":  "Екстра гострі Чіпси Takis Fuego Hot Chili Pepper \u0026 Lime Extreme Spicy Tortilla Чилі і Лайм",
         "price":  69,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy_takis_fuego_hot_chili_pepper_lime_284g_2-200x200.jpg",
         "category":  "Снеки",
@@ -2011,7 +2011,7 @@
     },
     {
         "id":  136,
-        "name":  "Екстра гострі чіпси з перцем чилі Takis Blue Heat Blue Chips 200г",
+        "name":  "Екстра гострі чіпси з перцем чилі Takis Blue Heat Blue Chips",
         "price":  379,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-takis-blue-heat-blue-chips-fiesta-size-200g-4-200x200.jpg",
         "category":  "Снеки",
@@ -2026,7 +2026,7 @@
     },
     {
         "id":  137,
-        "name":  "Екстра Гострі чіпси з перцем Чилі Takis Blue Heat Blue Chips 92.3г",
+        "name":  "Екстра Гострі чіпси з перцем Чилі Takis Blue Heat Blue Chips",
         "price":  249,
         "image":  "/images/137.jpg",
         "category":  "Снеки",
@@ -2041,7 +2041,7 @@
     },
     {
         "id":  138,
-        "name":  "Екстра Гострі чіпси з перцем Чилі Takis Blue Heat Rolled Tortilla Chips 280.7г",
+        "name":  "Екстра Гострі чіпси з перцем Чилі Takis Blue Heat Rolled Tortilla Chips",
         "price":  399,
         "image":  "/images/138.jpg",
         "category":  "Снеки",
@@ -2056,7 +2056,7 @@
     },
     {
         "id":  139,
-        "name":  "Екстра Гостра Локшина Samyang Buldak Hot Chicken Flavour Ramen Ramen Рамен з Куркою 140г",
+        "name":  "Екстра Гостра Локшина Samyang Buldak Hot Chicken Flavour Ramen Ramen Рамен з Куркою",
         "price":  149,
         "image":  "/images/139.jpg",
         "category":  "Снеки",
@@ -2071,7 +2071,7 @@
     },
     {
         "id":  140,
-        "name":  "Екстра солоні чіпси HOT-CHIP Salt Chip Challenge Extremely Кукурудзяні (1 штука) 8г",
+        "name":  "Екстра солоні чіпси HOT-CHIP Salt Chip Challenge Extremely Кукурудзяні (1 штука)",
         "price":  99,
         "image":  "/images/140.jpg",
         "category":  "Снеки",
@@ -2086,7 +2086,7 @@
     },
     {
         "id":  141,
-        "name":  "Жувальні Гострі Снеки латяо Genji Food Latiao Spicy Snack Велика Упаковка 40 шт.",
+        "name":  "Жувальні Гострі Снеки латяо Genji Food Latiao Spicy Snack Велика Упаковка 40 шт",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/other/1-20/Latiao/genji-food-latiao-spicy-snack-1-200x200.jpg",
         "category":  "Снеки",
@@ -2101,7 +2101,7 @@
     },
     {
         "id":  142,
-        "name":  "Кеш\u0027ю Planters Whole Cashews Dill Pickle 142г",
+        "name":  "Кеш\u0027ю Planters Whole Cashews Dill Pickle",
         "price":  429,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/keshyu-planters-whole-cashews-dill-pickle-142g-2-200x200.jpg",
         "category":  "Снеки",
@@ -2131,7 +2131,7 @@
     },
     {
         "id":  144,
-        "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі 18г",
+        "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-seafood-spicy-baby-crab-18g-3-200x200.jpg",
         "category":  "Снеки",
@@ -2146,7 +2146,7 @@
     },
     {
         "id":  145,
-        "name":  "Китайські чіпси Lay\u0027s Big Wave Pork Свиняча грудинка Гриль 70г",
+        "name":  "Китайські чіпси Lay\u0027s Big Wave Pork Свиняча грудинка Гриль",
         "price":  219,
         "image":  "/images/145.jpg",
         "category":  "Снеки",
@@ -2161,7 +2161,7 @@
     },
     {
         "id":  146,
-        "name":  "Китайські чіпси Lay\u0027s Big Wave Pure Spicy Чілі 70г",
+        "name":  "Китайські чіпси Lay\u0027s Big Wave Pure Spicy Чілі",
         "price":  219,
         "image":  "/images/146.jpg",
         "category":  "Снеки",
@@ -2176,7 +2176,7 @@
     },
     {
         "id":  147,
-        "name":  "Китайські чіпси Lay\u0027s Big Wave Roasted Chicken Wing Курячі крильця Гриль 70г",
+        "name":  "Китайські чіпси Lay\u0027s Big Wave Roasted Chicken Wing Курячі крильця Гриль",
         "price":  219,
         "image":  "/images/147.jpg",
         "category":  "Снеки",
@@ -2191,7 +2191,7 @@
     },
     {
         "id":  148,
-        "name":  "Китайські чіпси Lay\u0027S China Keripik Kentang 90г",
+        "name":  "Китайські чіпси Lay\u0027S China Keripik Kentang",
         "price":  299,
         "image":  "/images/148.jpg",
         "category":  "Снеки",
@@ -2206,7 +2206,7 @@
     },
     {
         "id":  149,
-        "name":  "Китайські чіпси Lay\u0027s Cucumber Огірок 62г",
+        "name":  "Китайські чіпси Lay\u0027s Cucumber Огірок",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-lays-cucumber-potato-chips-62g-1-200x200.jpg",
         "category":  "Снеки",
@@ -2221,7 +2221,7 @@
     },
     {
         "id":  150,
-        "name":  "Китайські чіпси Lay\u0027s Fried Crab Смажений краб 70г",
+        "name":  "Китайські чіпси Lay\u0027s Fried Crab Смажений краб",
         "price":  219,
         "image":  "/images/150.jpg",
         "category":  "Снеки",
@@ -2236,7 +2236,7 @@
     },
     {
         "id":  151,
-        "name":  "Набір-сюрприз з печивом Stitch Mega Surprise Pack Cookies \u0026 Games Стіч 10г",
+        "name":  "Набір-сюрприз з печивом Stitch Mega Surprise Pack Cookies \u0026 Games Стіч",
         "price":  119,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-stitch-mega-surprise-pack-cookies-games-10g-2-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2251,7 +2251,7 @@
     },
     {
         "id":  152,
-        "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Skye Щенячий Патруль Скай 350г",
+        "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Skye Щенячий Патруль Скай",
         "price":  209,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nabor-dlya-pryanikiv-gellwe-pierniczki-paw-patrol-skye-350g-1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2266,7 +2266,7 @@
     },
     {
         "id":  153,
-        "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread 180г",
+        "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread",
         "price":  649,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lotus-biscoff-milk-chocolate-biscoff-spread-180g-4-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2281,7 +2281,7 @@
     },
     {
         "id":  154,
-        "name":  "Японські палички Glico Pocky Luxury Milk Chocolat Молочний шоколад 110г",
+        "name":  "Японські палички Glico Pocky Luxury Milk Chocolat Молочний шоколад",
         "price":  459,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/palochki-glico-pocky-luxury-milk-chocolat-110g-8-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2296,7 +2296,7 @@
     },
     {
         "id":  155,
-        "name":  "Nutella Biscuits 193г",
+        "name":  "Nutella Biscuits",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nutella-biscuits-193-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2311,7 +2311,7 @@
     },
     {
         "id":  156,
-        "name":  "Nutella Biscuits 304г",
+        "name":  "Nutella Biscuits",
         "price":  349,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nutella-biscuits304-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2341,7 +2341,7 @@
     },
     {
         "id":  158,
-        "name":  "Їстівні шматочки бісквітного тіста Hostess Twinkies Cookie Dough Bites 88г",
+        "name":  "Їстівні шматочки бісквітного тіста Hostess Twinkies Cookie Dough Bites",
         "price":  219,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/testo-hostess-twinkies-cookie-dough-bites-88g-3-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2356,7 +2356,7 @@
     },
     {
         "id":  159,
-        "name":  "Італійська Коломба Dal Colle Colomba Nocciola e Pistacchio 650г",
+        "name":  "Італійська Коломба Dal Colle Colomba Nocciola e Pistacchio",
         "price":  749,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/colomba-dal-colle-nocciola-e-pistacchio-650g-4-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2371,7 +2371,7 @@
     },
     {
         "id":  160,
-        "name":  "Італійська панеттоне Bauli Panettone Cointreau Крем Куантро 750г",
+        "name":  "Італійська панеттоне Bauli Panettone Cointreau Крем Куантро",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/panettone-bauli-cointreau-750g-1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2386,7 +2386,7 @@
     },
     {
         "id":  161,
-        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Pistachio Cream Яйце 620г",
+        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Pistachio Cream Яйце",
         "price":  699,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-pandori-luovo-pistachio-cream-620g-1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2401,7 +2401,7 @@
     },
     {
         "id":  162,
-        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Яйце 550г",
+        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Яйце",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-pandori-luovo-550g-4-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2416,7 +2416,7 @@
     },
     {
         "id":  163,
-        "name":  "Італійський Пандоро Bauli Pandoro Di Verona Lactose Free Без лактози 700г",
+        "name":  "Італійський Пандоро Bauli Pandoro Di Verona Lactose Free Без лактози",
         "price":  699,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-di-verona-lactose-free-700g-3-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2431,7 +2431,7 @@
     },
     {
         "id":  164,
-        "name":  "Італійський Пандоро Bauli X THUN Pandoro With Decorative Ceramic Angel з Декоративним Янголом 700г",
+        "name":  "Італійський Пандоро Bauli X THUN Pandoro With Decorative Ceramic Angel з Декоративним Янголом",
         "price":  1999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabir-bauli-x-thun-pandoro-decorative-ceramic-angel-700g-9-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2446,7 +2446,7 @@
     },
     {
         "id":  165,
-        "name":  "Італійський Торт Bauli Torte Bavarese Баварський із заварним кремом 700г",
+        "name":  "Італійський Торт Bauli Torte Bavarese Баварський із заварним кремом",
         "price":  749,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/tort_bauli_torte_bavarese_700g_1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2461,7 +2461,7 @@
     },
     {
         "id":  166,
-        "name":  "Бісквіт Hostess Original Twinkies Ванільний крем (1шт) 38г",
+        "name":  "Бісквіт Hostess Original Twinkies Ванільний крем (1шт)",
         "price":  59,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/biskvit-hostess-twinkies-original-38g-1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2476,7 +2476,7 @@
     },
     {
         "id":  167,
-        "name":  "Бісквіт Hostess Strawberry Twinkies Полуничний крем (1шт) 38г",
+        "name":  "Бісквіт Hostess Strawberry Twinkies Полуничний крем (1шт)",
         "price":  59,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/biskvit-hostess-strawberry-twinkies-38g-2-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2491,7 +2491,7 @@
     },
     {
         "id":  168,
-        "name":  "Бісквіт Kinder Pane Cioc 290г",
+        "name":  "Бісквіт Kinder Pane Cioc",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-panecioc-290-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2506,7 +2506,7 @@
     },
     {
         "id":  169,
-        "name":  "Бісквіт Kinder Plum Cake Грецький Йогурт 192г",
+        "name":  "Бісквіт Kinder Plum Cake Грецький Йогурт",
         "price":  259,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-plum-cake-yogurt-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2521,7 +2521,7 @@
     },
     {
         "id":  170,
-        "name":  "Бісквіт Kinder Plumcake con Carota e Granella di Mandorla Морква та Мигдаль 192г",
+        "name":  "Бісквіт Kinder Plumcake con Carota e Granella di Mandorla Морква та Мигдаль",
         "price":  259,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/keks-kinder-plumcake-con-carota-e-granella-di-mandorla-192g-1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2536,7 +2536,7 @@
     },
     {
         "id":  171,
-        "name":  "Бельгійські вафлі Everyday Liège Cocoa Waffles 600г",
+        "name":  "Бельгійські вафлі Everyday Liège Cocoa Waffles",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-everyday-liege-cocoa-waffles-600g-4-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2551,7 +2551,7 @@
     },
     {
         "id":  172,
-        "name":  "Будиночок із печива M\u0026M\u0027s Crafty Cooking Kits Whole Haunted Castle Замок 734г",
+        "name":  "Будиночок із печива M\u0026M\u0027s Crafty Cooking Kits Whole Haunted Castle Замок",
         "price":  1899,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/domik_mms_crafty_cooking_kits_whole_haunted_castle_734g_2-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2566,7 +2566,7 @@
     },
     {
         "id":  173,
-        "name":  "Будиночок із печива Sour Patch Kids Create A Treat Halloween Fun House Cookie Kit з желейками 695г",
+        "name":  "Будиночок із печива Sour Patch Kids Create A Treat Halloween Fun House Cookie Kit з желейками",
         "price":  1999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/domik_sour_patch_kids_halloween_fun_house_cookie_kit_695g_3-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2581,7 +2581,7 @@
     },
     {
         "id":  174,
-        "name":  "Вафельні батончики Knoppers Kokos Riegel з кокосом 200г",
+        "name":  "Вафельні батончики Knoppers Kokos Riegel з кокосом",
         "price":  249,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchiki-knoppers-kokos-riegel-200g_1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2596,7 +2596,7 @@
     },
     {
         "id":  175,
-        "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад 139.2г",
+        "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад",
         "price":  279,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-sticks-dark-chocolate-139g-2-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2611,7 +2611,7 @@
     },
     {
         "id":  176,
-        "name":  "Вафельні батончики Oreo Wafer Milk Chocolate Молочний шоколад 139.2г",
+        "name":  "Вафельні батончики Oreo Wafer Milk Chocolate Молочний шоколад",
         "price":  279,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-milk-chocolate-139g-2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2626,7 +2626,7 @@
     },
     {
         "id":  177,
-        "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад 139.2г",
+        "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
         "price":  279,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-white-chocolate-139g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2641,7 +2641,7 @@
     },
     {
         "id":  178,
-        "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад 58г",
+        "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-white-chocolate-58g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2656,7 +2656,7 @@
     },
     {
         "id":  179,
-        "name":  "Вафельні батончики Storck Knoppers Nussriegel з фундуком 200г",
+        "name":  "Вафельні батончики Storck Knoppers Nussriegel з фундуком",
         "price":  239,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchiki-storck-knoppers-nussriegel-200g_3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2671,7 +2671,7 @@
     },
     {
         "id":  180,
-        "name":  "Вафельні трубочки Oreo Cocoa Roll Guava \u0026 Grapes 50г",
+        "name":  "Вафельні трубочки Oreo Cocoa Roll Guava \u0026 Grapes",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki-oreo-cocoa-crispy-roll-guava-grapes-50g-5-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2686,7 +2686,7 @@
     },
     {
         "id":  181,
-        "name":  "Вафельні трубочки Oreo Cocoa Roll Pickled Plum \u0026 Tomatoes 50г",
+        "name":  "Вафельні трубочки Oreo Cocoa Roll Pickled Plum \u0026 Tomatoes",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki-oreo-cocoa-roll-pickled-plum-tomatoes-50g-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2701,7 +2701,7 @@
     },
     {
         "id":  182,
-        "name":  "Вафельні трубочки Oreo Cream-Filled Matcha Wafers Roll Матча 50г",
+        "name":  "Вафельні трубочки Oreo Cream-Filled Matcha Wafers Roll Матча",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki_oreo_cream_filled_wafers_matcha_50g_2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2716,7 +2716,7 @@
     },
     {
         "id":  183,
-        "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Chocolate Шоколад 50г",
+        "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Chocolate Шоколад",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki_oreo_cream_filled_wafers_chocolate_50g_2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2731,7 +2731,7 @@
     },
     {
         "id":  184,
-        "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Vanilla Ваніль 50г",
+        "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Vanilla Ваніль",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki_oreo_cream_filled_wafers_vanilla_50g_1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2746,7 +2746,7 @@
     },
     {
         "id":  185,
-        "name":  "Вафлі Beyoglu Matchico Premium Matcha Strawberry Wafer 32г",
+        "name":  "Вафлі Beyoglu Matchico Premium Matcha Strawberry Wafer",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-beyoglu-matchico-premium-matcha-strawberry-32g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2761,7 +2761,7 @@
     },
     {
         "id":  186,
-        "name":  "Вафлі Ferrero Hanuta 220г",
+        "name":  "Вафлі Ferrero Hanuta",
         "price":  39,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/hanuta1-200x200.png",
         "category":  "Печиво та вафлі",
@@ -2806,7 +2806,7 @@
     },
     {
         "id":  189,
-        "name":  "Вафлі Knoppers Black \u0026 White 200г",
+        "name":  "Вафлі Knoppers Black \u0026 White",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-knoppers-black-white-200g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2821,7 +2821,7 @@
     },
     {
         "id":  190,
-        "name":  "Вафлі Knoppers Minis 200г",
+        "name":  "Вафлі Knoppers Minis",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-knoppers-minis-200gl-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2836,7 +2836,7 @@
     },
     {
         "id":  191,
-        "name":  "Вафлі Milka Nussini 5x31,5 г",
+        "name":  "Вафлі Milka Nussini 5x31,",
         "price":  259,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/milka-nussini-5-x-31-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2851,7 +2851,7 @@
     },
     {
         "id":  192,
-        "name":  "Вафлі в шоколаді Milka Choco Mini Wafers 110г",
+        "name":  "Вафлі в шоколаді Milka Choco Mini Wafers",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-milka-choco-mini-wafers-110g-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2896,7 +2896,7 @@
     },
     {
         "id":  195,
-        "name":  "Вафли Knoppers з йогуртовою начинкою 200г",
+        "name":  "Вафли Knoppers з йогуртовою начинкою",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/waffle-knoppers-joghurt-200g-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2911,7 +2911,7 @@
     },
     {
         "id":  196,
-        "name":  "Великодній кекс Fiasconaro Dolce \u0026 Gabbana Colomba Strawberry \u0026 Chocolate 1 кг",
+        "name":  "Великодній кекс Fiasconaro Dolce \u0026 Gabbana Colomba Strawberry \u0026 Chocolate",
         "price":  4499,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/colomba_fiasconaro_dolce_gabbana_chocolate_wild_strawberry_1_kg_3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2926,7 +2926,7 @@
     },
     {
         "id":  197,
-        "name":  "Великодній кекс Fiasconaro Dolce \u0026 Gabbana Dolce \u0026 Gabbana Colomba di Sicilia 750г",
+        "name":  "Великодній кекс Fiasconaro Dolce \u0026 Gabbana Dolce \u0026 Gabbana Colomba di Sicilia",
         "price":  2999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kulich_colomba_fiasconaro_dolce_gabbana_di_sicilia_750g_7-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2941,7 +2941,7 @@
     },
     {
         "id":  198,
-        "name":  "Великодній кекс Ягня Konditor Osterlamm 400г",
+        "name":  "Великодній кекс Ягня Konditor Osterlamm",
         "price":  499,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kulich-konditor-osterlamm-400g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2971,7 +2971,7 @@
     },
     {
         "id":  200,
-        "name":  "Карамельне печиво Lotus Biscoff Biscuit 124г",
+        "name":  "Карамельне печиво Lotus Biscoff Biscuit",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-biscuit-124g-6-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2986,7 +2986,7 @@
     },
     {
         "id":  201,
-        "name":  "Карамельне печиво Lotus Biscoff Biscuit 125г",
+        "name":  "Карамельне печиво Lotus Biscoff Biscuit",
         "price":  129,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-biscuit-125g-5-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3001,7 +3001,7 @@
     },
     {
         "id":  202,
-        "name":  "Карамельне печиво Lotus Biscoff Choco з шоколадом 132г",
+        "name":  "Карамельне печиво Lotus Biscoff Choco з шоколадом",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-choco-132g-2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3016,7 +3016,7 @@
     },
     {
         "id":  203,
-        "name":  "Карамельне печиво Lotus Biscoff Cream Sandwich 150г",
+        "name":  "Карамельне печиво Lotus Biscoff Cream Sandwich",
         "price":  169,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/01-kinder-thing/lotus/lotus-biscoff-cream-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3031,7 +3031,7 @@
     },
     {
         "id":  204,
-        "name":  "Карамельне печиво Lotus Biscoff Mega Pack 279г",
+        "name":  "Карамельне печиво Lotus Biscoff Mega Pack",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-mega-pack-279g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3046,7 +3046,7 @@
     },
     {
         "id":  205,
-        "name":  "Кекс Fior Fiore Agnello Cioccolato Fondente e Cocco Ягня 750г",
+        "name":  "Кекс Fior Fiore Agnello Cioccolato Fondente e Cocco Ягня",
         "price":  1599,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kolomba-fior-fiore-agnello-cioccolato-fondente-e-cocco-750g-7-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3061,7 +3061,7 @@
     },
     {
         "id":  206,
-        "name":  "Кекс Hostess Peeps Cupcakes Marshmallow 42г",
+        "name":  "Кекс Hostess Peeps Cupcakes Marshmallow",
         "price":  69,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/keks-hostess-peeps-cupcakes-marshmallow-42g-5-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3076,7 +3076,7 @@
     },
     {
         "id":  207,
-        "name":  "Коломба Dolce \u0026 Gabbana Fiasconaro Colomba Mandorle di Sicilia 750г",
+        "name":  "Коломба Dolce \u0026 Gabbana Fiasconaro Colomba Mandorle di Sicilia",
         "price":  2999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/colomba-dolce-gabbana-fiasconaro-mandorle-di-sicilia-750g-6-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3091,7 +3091,7 @@
     },
     {
         "id":  208,
-        "name":  "коломба Fior Fiore Colomba Cioccolato e Cherry з вишнею 900г",
+        "name":  "коломба Fior Fiore Colomba Cioccolato e Cherry з вишнею",
         "price":  1799,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kolomba-fior-fiore-colomba-cioccolato-e-cherry-900g-6-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3106,7 +3106,7 @@
     },
     {
         "id":  209,
-        "name":  "коломба Fior Fiore Colomba Cioccolato e Pistacchio 800 г",
+        "name":  "коломба Fior Fiore Colomba Cioccolato e Pistacchio",
         "price":  1449,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kolomba-fior-fiore-colomba-cioccolato-e-pistacchio-800g-6-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3121,7 +3121,7 @@
     },
     {
         "id":  210,
-        "name":  "Коломба Fior Fiore Colomba Dolci Frutti 1кг",
+        "name":  "Коломба Fior Fiore Colomba Dolci Frutti",
         "price":  1449,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kolomba-fior-fiore-colomba-dolci-frutti-1000g-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3136,7 +3136,7 @@
     },
     {
         "id":  211,
-        "name":  "Коломба Шоколадна Bauli La Colomba Mora 700г",
+        "name":  "Коломба Шоколадна Bauli La Colomba Mora",
         "price":  1099,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/keks-bauli-la-colomba-mora-700g-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3151,7 +3151,7 @@
     },
     {
         "id":  212,
-        "name":  "Крекери з сиром Pepperidge Farm Goldfish Cheddar Crackers Halloween 21г",
+        "name":  "Крекери з сиром Pepperidge Farm Goldfish Cheddar Crackers Halloween",
         "price":  75,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/krekery-pepperidge-farm-goldfish-crackers-halloween-21g-6-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3166,7 +3166,7 @@
     },
     {
         "id":  213,
-        "name":  "Крекери з сиром Pepperidge Farm Goldfish Cheddar Crackers Halloween Multi-Pack Мультипак 510г",
+        "name":  "Крекери з сиром Pepperidge Farm Goldfish Cheddar Crackers Halloween Multi-Pack Мультипак",
         "price":  1299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/krekery-pepperidge-farm-goldfish-cheddar-crackers-halloween-multi-pack-510g-2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3181,7 +3181,7 @@
     },
     {
         "id":  214,
-        "name":  "Кренделі Reese\u0027s Peanut Butter and Jelly Filled Pretzels 510г",
+        "name":  "Кренделі Reese\u0027s Peanut Butter and Jelly Filled Pretzels",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/krendelki-reeses-peanut-butter-and-jelly-filled-pretzels-510g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3196,7 +3196,7 @@
     },
     {
         "id":  215,
-        "name":  "Круасани з фісташковим кремом Antonelli Croissant Pistachio 225г",
+        "name":  "Круасани з фісташковим кремом Antonelli Croissant Pistachio",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/antonelli-croissant-pistachio-225g_4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3211,7 +3211,7 @@
     },
     {
         "id":  216,
-        "name":  "Куліч Великодній Кролик KuchenMeister 350г",
+        "name":  "Куліч Великодній Кролик KuchenMeister",
         "price":  499,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kulich-easter-bunny-kuchenmeister-350g-2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3226,7 +3226,7 @@
     },
     {
         "id":  217,
-        "name":  "Міні-печиво Kandiz Crunchy Sweet Bites Naruto Cocoa Cream Шоколадний крем 30г",
+        "name":  "Міні-печиво Kandiz Crunchy Sweet Bites Naruto Cocoa Cream Шоколадний крем",
         "price":  129,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-kandiz-crunchy-sweet-bites-naruto-cocoa-cream-30g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3241,7 +3241,7 @@
     },
     {
         "id":  218,
-        "name":  "Міні-печиво Oreo Classic Original Eggy Party в стаканчику 55г",
+        "name":  "Міні-печиво Oreo Classic Original Eggy Party в стаканчику",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-oreo-classic-original-eggy-party-55g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3256,7 +3256,7 @@
     },
     {
         "id":  219,
-        "name":  "Міні-тістечка Rose Vimto Mini Cakes з фруктовою начинкою 200 г. (14 шт.)",
+        "name":  "Міні-тістечка Rose Vimto Mini Cakes з фруктовою начинкою. (14 шт.)",
         "price":  299,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/tistechka-rose-vimto-mini-cakes-200g-5-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3286,7 +3286,7 @@
     },
     {
         "id":  221,
-        "name":  "Молочний бісквіт Kinder Brioss 270г",
+        "name":  "Молочний бісквіт Kinder Brioss",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-brioss-milk-270-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3301,7 +3301,7 @@
     },
     {
         "id":  222,
-        "name":  "Молочний бісквіт з какао Kinder Brioss 270г",
+        "name":  "Молочний бісквіт з какао Kinder Brioss",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-brioss-milk-latte-cacao-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3316,7 +3316,7 @@
     },
     {
         "id":  223,
-        "name":  "Морозиво Astronaut Foods Cookies \u0026 Cream Ice Cream Sandwich сублімоване 31г",
+        "name":  "Морозиво Astronaut Foods Cookies \u0026 Cream Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/morozivo-astronaut-foods-cookies-cream-ice-cream-sandwich-31g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3331,7 +3331,7 @@
     },
     {
         "id":  224,
-        "name":  "Морозиво Astronaut Foods Mint Choc Chip Ice Cream Sandwich сублімоване 31г",
+        "name":  "Морозиво Astronaut Foods Mint Choc Chip Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/morozivo-astronaut-foods-mint-choc-chip-sandwich-31g-5-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3346,7 +3346,7 @@
     },
     {
         "id":  225,
-        "name":  "Морозиво Astronaut Foods Neapolitain Ice Cream Sandwich сублімоване 28г",
+        "name":  "Морозиво Astronaut Foods Neapolitain Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/morozivo-astronaut-foods-neapolitain-ice-cream-sandwich-31g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3361,7 +3361,7 @@
     },
     {
         "id":  226,
-        "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Chase Щенячий Патруль Чейз 350г",
+        "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Chase Щенячий Патруль Чейз",
         "price":  209,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nabor-dlya-pryanikiv-gellwe-pierniczki-paw-patrol-chase-350g-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3376,7 +3376,7 @@
     },
     {
         "id":  227,
-        "name":  "Набір для приготування торта Funfetti Halloween Cake Mix with Candy Bits 432г",
+        "name":  "Набір для приготування торта Funfetti Halloween Cake Mix with Candy Bits",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabor-funfetti-halloween-cake-mix-candy-bits-432g-2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3391,7 +3391,7 @@
     },
     {
         "id":  228,
-        "name":  "Набір для приготування торта Pillsbury Moist Supreme Perfectly Pumpkin Premium Cake Mix 432г",
+        "name":  "Набір для приготування торта Pillsbury Moist Supreme Perfectly Pumpkin Premium Cake Mix",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabor-pillsbury-moist-supreme-pumpkin-cake-mix-432g-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3406,7 +3406,7 @@
     },
     {
         "id":  229,
-        "name":  "Набір для прикрашання печива Create-A-Treat Harry Potter \u0026 Friends Cookie Kit 287г",
+        "name":  "Набір для прикрашання печива Create-A-Treat Harry Potter \u0026 Friends Cookie Kit",
         "price":  899,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/yfbh-create-treat-harry-potter-friends-cookie-287g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3421,7 +3421,7 @@
     },
     {
         "id":  230,
-        "name":  "Набір для прикрашання печива Oreo Christmas Ornament Cookie Kit 334г",
+        "name":  "Набір для прикрашання печива Oreo Christmas Ornament Cookie Kit",
         "price":  1049,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabor_oreo_christmas_ornament_cookie_kit_334g_4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3436,7 +3436,7 @@
     },
     {
         "id":  231,
-        "name":  "Набір печива OREO Gift Pack China 5 смаків 387г",
+        "name":  "Набір печива OREO Gift Pack China 5 смаків",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-oreo-china-cookies-5-flavors-gift-pack-387g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3451,7 +3451,7 @@
     },
     {
         "id":  232,
-        "name":  "Набір печива OREO Gift Pack China 7 смаків 1067г",
+        "name":  "Набір печива OREO Gift Pack China 7 смаків",
         "price":  2999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-oreo-china-cookies-7-flavors-gift-pack-1067g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3481,7 +3481,7 @@
     },
     {
         "id":  234,
-        "name":  "Набір солодощів Great Value Halloween Pretzel Dipping Kit Крендельки Глазур Цукерки 610г",
+        "name":  "Набір солодощів Great Value Halloween Pretzel Dipping Kit Крендельки Глазур Цукерки",
         "price":  799,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nabor_sladostej_great_value_halloween_pretzel_dipping_kit_610g_4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3496,7 +3496,7 @@
     },
     {
         "id":  235,
-        "name":  "Палички Glico Pocky Банановий Пудинг 35г",
+        "name":  "Палички Glico Pocky Банановий Пудинг",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glicopocky-puding-banana-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3526,7 +3526,7 @@
     },
     {
         "id":  237,
-        "name":  "Палички Glico Pocky Печиво Крем 40г",
+        "name":  "Палички Glico Pocky Печиво Крем",
         "price":  159,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pocky-cookies-cream-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3541,7 +3541,7 @@
     },
     {
         "id":  238,
-        "name":  "Палички Glico Pocky Подвійний Шоколад 47г",
+        "name":  "Палички Glico Pocky Подвійний Шоколад",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glico-pocky-double-choco-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3556,7 +3556,7 @@
     },
     {
         "id":  239,
-        "name":  "Палички Glico Pocky Полуниця Крем 45г",
+        "name":  "Палички Glico Pocky Полуниця Крем",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pocky-strawberry-cream-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3571,7 +3571,7 @@
     },
     {
         "id":  240,
-        "name":  "Палички Glico Pocky Полуничне молоко 45г",
+        "name":  "Палички Glico Pocky Полуничне молоко",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/palochki-glico-pocky-strawberry-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3586,7 +3586,7 @@
     },
     {
         "id":  241,
-        "name":  "Палички Glico Pocky Полуничний Пудинг 35г",
+        "name":  "Палички Glico Pocky Полуничний Пудинг",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glico-pocky-budding-strawberry-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3601,7 +3601,7 @@
     },
     {
         "id":  242,
-        "name":  "Палички Glico Pocky Шоколад 40г",
+        "name":  "Палички Glico Pocky Шоколад",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pocky-milk-chocolate-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3616,7 +3616,7 @@
     },
     {
         "id":  243,
-        "name":  "Панеттоне з грушевим кремом Bauli Creazioni Di Pandoro Pera Cioccolato 820г",
+        "name":  "Панеттоне з грушевим кремом Bauli Creazioni Di Pandoro Pera Cioccolato",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-creazioni-di-pera-cioccolato-820g-2-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3631,7 +3631,7 @@
     },
     {
         "id":  244,
-        "name":  "Пасхальний кекс Fiasconaro Dolce \u0026 Gabbana Colomba Strawberry \u0026 Chocolate Блакитна 1 кг",
+        "name":  "Пасхальний кекс Fiasconaro Dolce \u0026 Gabbana Colomba Strawberry \u0026 Chocolate Блакитна",
         "price":  5999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/colomba-fiasconaro-dolce-gabbana-choco-strawberry-blue1-kg-7-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3646,7 +3646,7 @@
     },
     {
         "id":  245,
-        "name":  "Печенье Oreo Golden Fresh Stacks Travel Box 228г",
+        "name":  "Печенье Oreo Golden Fresh Stacks Travel Box",
         "price":  209,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechene-oreo-golden-fresh-stacks-travel-box-228g-8-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3691,7 +3691,7 @@
     },
     {
         "id":  248,
-        "name":  "Печиво Hershey\u0027s Cookies “N” Creme Rounds 96г",
+        "name":  "Печиво Hershey\u0027s Cookies “N” Creme Rounds",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-hersheys-cookies-n-creme-rounds-96g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3706,7 +3706,7 @@
     },
     {
         "id":  249,
-        "name":  "Печиво Kellogg\u0027s Scooby-Doo! Graham Cracker Snacks 28г",
+        "name":  "Печиво Kellogg\u0027s Scooby-Doo! Graham Cracker Snacks",
         "price":  69,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-kelloggs-scooby-doo-graham-cracker-snacks-28g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3721,7 +3721,7 @@
     },
     {
         "id":  250,
-        "name":  "Печиво Kinder Duo Biscuits 150g",
+        "name":  "Печиво Kinder Duo Biscuits",
         "price":  249,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechenye-kinder-duo-200x200.jpg",
         "category":  "Печиво та вафлі",
