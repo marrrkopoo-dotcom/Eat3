@@ -366,6 +366,75 @@ const promotions = [
 Дякуємо, що вибрали наш інтернет-магазин і вдалих вам покупок, вам точно сподобається! :)`,
         featuredProducts: [],
         btnText: ""
+    },
+    {
+        id: 6,
+        title: "Питання-відповідь",
+        image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&q=80",
+        tag: "ДОПОМОГА",
+        content: (
+            <div className="space-y-6">
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">1.</span> Як оформити замовлення?</h3>
+                    <div className="space-y-2 text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        <p>1) Вибрати будь-який з товарів, що сподобалися, розташованих у категоріях, натиснувши на кнопку кошика.</p>
+                        <p>2) Якщо ви закінчили вибирати товар - перейдіть в розділ "Кошик", розташований у шапці сайту.</p>
+                        <p>3) Перевірте ваше замовлення та кількість обраного товару.</p>
+                        <p>4) Внесіть свої контактні дані та виберіть бажаний спосіб доставки, заповнивши необхідні дані одержувача.</p>
+                        <p>5) Вкажіть побажання до замовлення у вікні "Коментарі".</p>
+                        <p>6) Після цього натисніть кнопку "Оформити замовлення".</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">2.</span> Чому потрібна передоплата?</h3>
+                    <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        Передоплата обов'язкова та береться на випадок якщо у вас зміняться плани або не буде можливості забрати посилку з будь-яких причин – а нам у такому випадку прийдеться оплачувати доставку замовлення в обидва кінці.
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">3.</span> Скільки часу їде посилка?</h3>
+                    <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        Ми завжди намагаємось відправляти ваши замовлення день у день, але все залежить від часу його оформлення та внесення оплати/передоплати. Звичайно доставка займає 1-2 дні, у деякі віддалені міста та селища - 3-4.
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">4.</span> Як оформити посилку другу?</h3>
+                    <div className="space-y-2 text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        <p>Це зробити дуже легко, потрібно лише:</p>
+                        <p>1) Всі поля отримувача заповнити даними друга, окрім номеру телефона, його потрібно ввести ваш.</p>
+                        <p>2) У коментарях указати коректний номер телефона друга та побажання до замовлення.</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">5.</span> Де у вас самовивіз?</h3>
+                    <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        <p>Самовивіз є у Києві. Конкретно місце і час самовивозу уточнює менеджер після оформлення вашого замовлення!)</p>
+                        <p className="text-sm mt-2 text-gray-500">p.s. зазвичай це або 10:00 або 18:00</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">6.</span> Чи є у вас бокси?</h3>
+                    <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        <p>Так, звісно - ми можемо зібрати для тебе найкрутіший бокс на будь-яку зручну суму. Але є одна умова: це буде СЮРПРИЗ бокс, з усіма твоїми побажаннями, про вміст якого ти зможеш дізнатися тільки після отримання!)</p>
+                        <p className="mt-2">У інших випадках ти можеш самостійно додати солодощів до корзини та оформити свій власний бокс!</p>
+                    </div>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">7.</span> Чи є опт та дропшипінг?</h3>
+                    <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
+                        Дуже популярне питання, але нажаль ні. Єдине, що можемо запропонувати - це знижка на замовлення для "Офісу, компанії, гурту людей від 40 одиниць одного найменування"
+                    </div>
+                </div>
+            </div>
+        ),
+        featuredProducts: [],
+        btnText: ""
     }
 ];
 
@@ -1050,7 +1119,11 @@ const App = () => {
                         </div>
 
                         <div className="glass-panel p-8 sm:p-10 rounded-3xl mb-12 text-lg text-gray-700 dark:text-gray-300 leading-relaxed shadow-sm">
-                            <p className="whitespace-pre-wrap">{activeArticle.content}</p>
+                            {typeof activeArticle.content === 'string' ? (
+                                <p className="whitespace-pre-wrap">{activeArticle.content}</p>
+                            ) : (
+                                activeArticle.content
+                            )}
                             
                             <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center">
                                 <span className="font-medium text-gray-500 hidden sm:block">Сподобалось? Обирайте швидше!</span>
@@ -1532,7 +1605,7 @@ const App = () => {
                             <ul className="text-sm text-gray-400 space-y-3">
                                 <li><a href="#" className="hover:text-primary transition-colors">Про нас</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 5)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Доставка та оплата</a></li>
-                                <li><a href="#" className="hover:text-primary transition-colors">Політика конфіденційності</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 6)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Питання-відповідь</a></li>
                                 <li><a href="#" className="hover:text-primary transition-colors">Умови повернення</a></li>
                             </ul>
                         </div>
