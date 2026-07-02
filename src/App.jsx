@@ -658,6 +658,48 @@ const promotions = [
         ),
         featuredProducts: [],
         btnText: ""
+    },
+    {
+        id: 10,
+        title: "Про нас",
+        image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80",
+        tag: "ПРО НАС",
+        content: (
+            <div className="space-y-6">
+                <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4">Вітаємо у світі Жуйки! 🍬</h3>
+                    <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                        <p><strong>Жуйка</strong> — це не просто черговий інтернет-магазин солодощів. Це ваш персональний телепорт у найсолодші та найекзотичніші куточки планети! Ми знаходимо, привозимо та доставляємо те, чого ви ніколи не знайдете на полицях звичайних супермаркетів.</p>
+                        <p>Наш шлях почався з простої ідеї: перетворити звичайне споживання їжі на захоплюючу пригоду. Ми закохані в незвичайні смаки, лімітовані колекції та яскраві емоції, якими хочемо ділитися з кожним із вас.</p>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                        <span className="text-3xl mb-3 block">🌍</span>
+                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Ексклюзивний імпорт</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Прямі поставки унікальних солодощів та напоїв із США, Японії, Великобританії та країн Європи.</p>
+                    </div>
+                    <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                        <span className="text-3xl mb-3 block">⚡</span>
+                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Швидкість та якість</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Надсилаємо замовлення день у день, надійно та дбайливо пакуючи кожну баночку та цукерку.</p>
+                    </div>
+                    <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                        <span className="text-3xl mb-3 block">🎁</span>
+                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Бокси-сюрпризи</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Створюємо емоційні Mystery Boxes, наповнені несподіваними смаками та солодощами спеціально для вас.</p>
+                    </div>
+                </div>
+
+                <div className="bg-primary/10 border border-primary/20 p-6 rounded-2xl text-gray-800 dark:text-gray-200">
+                    <h4 className="font-bold mb-2">Дякуємо, що обираєте нас!</h4>
+                    <p className="text-sm">Жуйка — це про радість, про нові відкриття та про любов до солодкого життя. Замовляйте, куштуйте та діліться своїми враженнями з нами у соціальних мережах!</p>
+                </div>
+            </div>
+        ),
+        featuredProducts: [],
+        btnText: ""
     }
 ];
 
@@ -1219,7 +1261,7 @@ const App = () => {
                                 {/* Banners Section */}
                                 <div className="mb-8 overflow-x-auto pb-4">
                                     <div className="flex gap-4 pb-2 w-max">
-                                        {promotions.map(promo => (
+                                        {promotions.filter(promo => promo.id <= 4).map(promo => (
                                             <div key={promo.id} onClick={() => navigateTo('article', activeNav, null, promo)} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
                                                 <img src={promo.image} alt={promo.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                                 <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80"></div>
@@ -1851,7 +1893,7 @@ const App = () => {
                         <div>
                             <h4 className="font-bold text-white mb-4 uppercase tracking-wider text-sm">Інформація</h4>
                             <ul className="text-sm text-gray-400 space-y-3">
-                                <li><a href="#" className="hover:text-primary transition-colors">Про нас</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 10)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Про нас</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 5)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Доставка та оплата</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 6)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Питання-відповідь</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 7)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Договір публічної оферти</a></li>
