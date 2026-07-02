@@ -265,16 +265,6 @@ const customProducts = [
         details: { calories: "45 ккал", ingredients: "Вода, сік лимона" }
     },
     {
-        id: "custom-kinder-01",
-        name: "Kinder Breakfast Milk Slice",
-        price: 45,
-        category: "Шоколад",
-        localImage: "images/product_kinder.png",
-        weight: "40 г",
-        brand: "Kinder",
-        details: { calories: "420 ккал", ingredients: "Молоко, шоколад" }
-    },
-    {
         id: "custom-muffin-01",
         name: "XXL Топ-дроп Мафін з карамеллю",
         price: 120,
