@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 
 import productsData from './data/products.json';
 
-const allProducts = productsData;
+const allProducts = productsData.filter(p => !!p.localImage || !!p.image);
 
 const categoryImages = {
     "Газовані напої": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&q=80",
@@ -229,7 +229,7 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError }) => {
     const [isImageLoaded, setIsImageLoaded] = React.useState(false);
 
     return (
-    <div className={`glass-panel rounded-2xl p-4 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
+    <div className={`glass-panel rounded-2xl p-4 product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500`} onClick={() => onSelect(product)}>
         {product.isNew && <div className="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full z-10 shadow-md animate-pulse">Новинка</div>}
         {product.isPopular && !product.isNew && <div className="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10 shadow-md">Хіт</div>}
         {product.outOfStock && <div className="absolute top-4 left-4 bg-gray-500 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10 shadow-md">Немає в наявності</div>}
