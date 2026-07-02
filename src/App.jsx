@@ -125,12 +125,16 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-primary rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
-                            <img src="images/logo.png" alt="Choco Yummy" className="h-12 w-12 object-contain relative z-10 bg-white rounded-full p-1 shadow-sm" />
+                            <div className="absolute inset-0 bg-pink-500 rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
+                            <div className="relative z-10 bg-white rounded-full p-1.5 shadow-sm flex items-center justify-center">
+                                <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="16" fill="#ec4899" />
+                                    <circle cx="14" cy="14" r="4" fill="white" opacity="0.8" />
+                                </svg>
+                            </div>
                         </div>
-                        <div className="hidden md:block">
-                            <div className="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase">Мережа супермаркетів</div>
-                            <div className="font-extrabold text-xl gradient-text tracking-tight">Choco Yummy</div>
+                        <div className="hidden md:block ml-2">
+                            <div className="font-black text-3xl tracking-tighter text-gray-900 dark:text-white" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>Жуйка</div>
                         </div>
                     </div>
                     
