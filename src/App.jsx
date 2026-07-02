@@ -27,71 +27,66 @@ const categories = ["Всі", "Газовані напої", "Азіатські
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі", "Подарункові бокси ✨"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
-    // Generate variations for remote URLs
-    const getVariations = (url) => {
-        if (!url) return [];
-        const match = url.match(/(.*?)(?:-\d+x\d+)?(\.(?:webp|jpg|jpeg|png))$/i);
-        if (!match) return [url];
-        
+    const [currentSrc, setCurrentSrc] = React.useState(src || fallbackSrc);
+    const [isLoaded, setIsLoaded] = React.useState(false);
+    const [failedLocal, setFailedLocal] = React.useState(false);
+
+    // Try to upgrade remote URLs to high quality in the background
+    React.useEffect(() => {
+        if (src) return; // Don't upgrade local images
+        if (!fallbackSrc) return;
+
+        const match = fallbackSrc.match(/(.*?)(?:-\d+x\d+)?(\.(?:webp|jpg|jpeg|png))$/i);
+        if (!match) return;
+
         const base = match[1];
         const ext = match[2].toLowerCase();
         
-        const variations = [
+        const hqVariations = [
             `${base}-495x495${ext}`,
             `${base}-499x495${ext}`,
             `${base}-500x500${ext}`,
             `${base}-262x495${ext}`,
-            url,
             `${base}${ext}`
         ];
         
         if (ext !== '.webp') {
-            variations.push(
-                `${base}-495x495.webp`,
-                `${base}-499x495.webp`,
-                `${base}-500x500.webp`,
-                `${base}-262x495.webp`,
-                `${base}.webp`
-            );
+            hqVariations.push(`${base}-495x495.webp`, `${base}-499x495.webp`, `${base}-500x500.webp`);
         }
-        
         if (ext !== '.jpg' && ext !== '.jpeg') {
-            variations.push(
-                `${base}-495x495.jpg`,
-                `${base}-499x495.jpg`,
-                `${base}-500x500.jpg`,
-                `${base}-262x495.jpg`,
-                `${base}.jpg`
-            );
+            hqVariations.push(`${base}-495x495.jpg`, `${base}-499x495.jpg`, `${base}-500x500.jpg`);
         }
-        
-        return Array.from(new Set(variations));
-    };
 
-    const [currentSrc, setCurrentSrc] = React.useState(src || (getVariations(fallbackSrc)[0] || fallbackSrc));
-    const [isLoaded, setIsLoaded] = React.useState(false);
-    const [failedLocal, setFailedLocal] = React.useState(false);
-    const [variationIndex, setVariationIndex] = React.useState(0);
-    const [variations, setVariations] = React.useState(getVariations(fallbackSrc || src));
+        const tryLoadHQ = async () => {
+            for (let url of Array.from(new Set(hqVariations))) {
+                try {
+                    const img = new Image();
+                    await new Promise((resolve, reject) => {
+                        img.onload = () => resolve(img.src);
+                        img.onerror = reject;
+                        img.src = url;
+                    });
+                    setCurrentSrc(url);
+                    return; // Stop trying once we find a high quality one
+                } catch (e) {
+                    // Continue to next variation
+                }
+            }
+        };
+        
+        tryLoadHQ();
+    }, [src, fallbackSrc]);
 
     React.useEffect(() => {
-        const vars = getVariations(fallbackSrc || src);
-        setVariations(vars);
-        setCurrentSrc(src || (vars[0] || fallbackSrc));
+        setCurrentSrc(src || fallbackSrc);
         setIsLoaded(false);
         setFailedLocal(false);
-        setVariationIndex(0);
     }, [src, fallbackSrc]);
 
     const handleError = () => {
         if (!failedLocal && src && fallbackSrc) {
             setFailedLocal(true);
-            setCurrentSrc(variations[0] || fallbackSrc);
-            setVariationIndex(0);
-        } else if (variations.length > 0 && variationIndex + 1 < variations.length) {
-            const nextIndex = variationIndex + 1;
-            setVariationIndex(nextIndex);
-            setCurrentSrc(variations[nextIndex]);
+            setCurrentSrc(fallbackSrc);
         } else if (typeof onFinalError === 'function') {
             onFinalError();
         }
