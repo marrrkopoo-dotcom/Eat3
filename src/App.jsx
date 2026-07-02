@@ -519,7 +519,7 @@ const App = () => {
         window.scrollTo(0, 0);
     };
 
-    const itemsPerPage = 24;
+    const itemsPerPage = 60;
 
     // Theme logic
     useEffect(() => {
