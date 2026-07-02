@@ -404,7 +404,7 @@ const App = () => {
     const [selectedCategory, setSelectedCategory] = useState("Всі");
     const [currentPage, setCurrentPage] = useState(1);
     const [brokenImages, setBrokenImages] = useState(new Set());
-    const [viewMode, setViewMode] = useState('small'); // 'large', 'medium', 'small'
+    const [viewMode, setViewMode] = useState('medium'); // 'large', 'medium', 'small'
     
     // City Selection State
     const [selectedCity, setSelectedCity] = useState("Київ");
