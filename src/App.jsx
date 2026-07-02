@@ -37,18 +37,20 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
         const ext = match[2].toLowerCase();
         
         const variations = [
-            url,
             `${base}-495x495${ext}`,
+            `${base}-499x495${ext}`,
             `${base}-500x500${ext}`,
-            `${base}-228x228${ext}`,
+            `${base}-262x495${ext}`,
+            url,
             `${base}${ext}`
         ];
         
         if (ext !== '.webp') {
             variations.push(
                 `${base}-495x495.webp`,
+                `${base}-499x495.webp`,
                 `${base}-500x500.webp`,
-                `${base}-228x228.webp`,
+                `${base}-262x495.webp`,
                 `${base}.webp`
             );
         }
@@ -56,8 +58,9 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
         if (ext !== '.jpg' && ext !== '.jpeg') {
             variations.push(
                 `${base}-495x495.jpg`,
+                `${base}-499x495.jpg`,
                 `${base}-500x500.jpg`,
-                `${base}-228x228.jpg`,
+                `${base}-262x495.jpg`,
                 `${base}.jpg`
             );
         }
@@ -66,19 +69,21 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
     };
 
     const initialSrc = src || fallbackSrc;
-    const [currentSrc, setCurrentSrc] = React.useState(initialSrc);
+    const initialVariations = getVariations(fallbackSrc || initialSrc);
+    const [currentSrc, setCurrentSrc] = React.useState(initialVariations[0] || initialSrc);
     const [isLoaded, setIsLoaded] = React.useState(false);
     const [failedLocal, setFailedLocal] = React.useState(false);
     const [variationIndex, setVariationIndex] = React.useState(0);
-    const [variations, setVariations] = React.useState([]);
+    const [variations, setVariations] = React.useState(initialVariations);
 
     React.useEffect(() => {
         const initial = src || fallbackSrc;
-        setCurrentSrc(initial);
+        const vars = getVariations(fallbackSrc || initial);
+        setVariations(vars);
+        setCurrentSrc(vars[0] || initial);
         setIsLoaded(false);
         setFailedLocal(false);
         setVariationIndex(0);
-        setVariations(getVariations(fallbackSrc));
     }, [src, fallbackSrc]);
 
     const handleError = () => {
