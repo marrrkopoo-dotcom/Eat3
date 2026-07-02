@@ -12,8 +12,7 @@ const categoryImages = {
     "Снеки": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&q=80",
     "Шоколад": "https://images.unsplash.com/photo-1548831772-2bb8b6680a13?w=400&q=80",
     "Солодощі": "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400&q=80",
-    "Жуйки": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=400&q=80",
-    "Подарункові бокси ✨": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&q=80"
+    "Жуйки": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=400&q=80"
 };
 
 allProducts.forEach((p, index) => {
@@ -23,8 +22,8 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі", "Подарункові бокси ✨"];
-const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі", "Подарункові бокси ✨"];
+const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі"];
+const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
     const [currentSrc, setCurrentSrc] = React.useState(src || fallbackSrc);
