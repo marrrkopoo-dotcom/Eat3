@@ -311,15 +311,6 @@ const promotions = [
         btnText: "Скуштувати Chupa Chups"
     },
     { 
-        id: 2, 
-        title: "Заряд тайської енергії Red Bull ⚡", 
-        image: "images/banner_redbull.png", 
-        tag: "НОВИНКА",
-        content: "Легендарний Red Bull Krating Daeng прямісінько з Таїланду! Той самий густий, концентрований смак, з якого почалася історія світового бренду. Заряджає енергією на 100% і дарує бадьорість. Спробуй оригінал першим!",
-        featuredProducts: [1, 18, 19, 20],
-        btnText: "Зарядитися енергією"
-    },
-    { 
         id: 3, 
         title: "Американська класика Dr Pepper та Fanta 🇺🇸", 
         image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=1200&q=80", 
@@ -340,7 +331,7 @@ const promotions = [
     {
         id: 11,
         title: "Шалені знижки на Monster Energy 🦖",
-        image: "images/banner_monster.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYY7ORb6z_E2akgNlJtyz7LQNk6tX3e5lLnTDTLXLk_Q&s=10",
         tag: "ГАРЯЧЕ",
         content: "Вибухова добірка Monster Energy для справжніх фанатів! Monster Ultra White без цукру, тропічний Mango Loco та лімітований The Doctor — заряджайтеся на максимум. Тільки цього тижня діють спеціальні знижені ціни!",
         featuredProducts: [26, 20, 21, 22],
