@@ -85,6 +85,8 @@ app.post('/api/send-message', async (req, res) => {
             if (!messageQueues[clientId]) messageQueues[clientId] = [];
             messageQueues[clientId].push({
                 sender: 'support',
+                senderName: 'Дмитро',
+                senderAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
                 text: `[Демо-Режим] Привіт! Дякуємо за звернення до підтримки магазину "Жуйка". Це автоматична відповідь, оскільки Telegram Bot не налаштований у змінних середовища (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID).`,
                 timestamp: new Date().toISOString()
             });
@@ -120,8 +122,35 @@ app.post('/api/tg-webhook', (req, res) => {
             console.log(`Support reply to client ${clientId}: ${text}`);
             if (!messageQueues[clientId]) messageQueues[clientId] = [];
             
+            // Determine manager attribution
+            let managerName = 'Підтримка';
+            let managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
+            
+            const tgSender = update.message.from.first_name || '';
+            const lowerSender = tgSender.toLowerCase();
+            
+            if (lowerSender.includes('нат') || lowerSender.includes('nat')) {
+                managerName = 'Наташа';
+                managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
+            } else if (lowerSender.includes('дм') || lowerSender.includes('dm') || lowerSender.includes('дн') || lowerSender.includes('dmi')) {
+                managerName = 'Дмитро';
+                managerAvatar = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face';
+            } else {
+                // Alternating based on clientId characters hash
+                const clientHash = clientId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+                if (clientHash % 2 === 0) {
+                    managerName = 'Наташа';
+                    managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
+                } else {
+                    managerName = 'Дмитро';
+                    managerAvatar = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face';
+                }
+            }
+
             messageQueues[clientId].push({
                 sender: 'support',
+                senderName: managerName,
+                senderAvatar: managerAvatar,
                 text: text,
                 timestamp: new Date().toISOString()
             });

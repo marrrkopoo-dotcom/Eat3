@@ -848,6 +848,8 @@ const App = () => {
         e.preventDefault();
         if (!chatInput.trim()) return;
 
+        const isFirstMessage = chatMessages.filter(m => m.sender === 'client').length === 0;
+
         const clientMsg = {
             sender: 'client',
             text: chatInput,
@@ -857,6 +859,18 @@ const App = () => {
         setChatMessages(prev => [...prev, clientMsg]);
         const textToSend = chatInput;
         setChatInput('');
+
+        if (isFirstMessage) {
+            setTimeout(() => {
+                setChatMessages(prev => [...prev, {
+                    sender: 'support',
+                    senderName: 'Жуйка Бот 🤖',
+                    senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+                    text: 'Менеджер підключається... Зачекайте, будь ласка 💛',
+                    timestamp: new Date().toISOString()
+                }]);
+            }, 1000);
+        }
 
         try {
             await fetch('/api/send-message', {
@@ -2055,12 +2069,24 @@ const App = () => {
                                 </div>
                             ) : (
                                 chatMessages.map((msg, index) => (
-                                    <div key={index} className={`flex ${msg.sender === 'client' ? 'justify-end' : 'justify-start'}`}>
-                                        <div className={`max-w-[75%] rounded-2xl px-4 py-2.5 text-sm ${
+                                    <div key={index} className={`flex gap-2 ${msg.sender === 'client' ? 'justify-end' : 'justify-start'}`}>
+                                        {msg.sender === 'support' && (
+                                            <img 
+                                                src={msg.senderAvatar || 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face'} 
+                                                alt={msg.senderName || 'Підтримка'} 
+                                                className="w-7 h-7 rounded-full object-cover self-end mb-1 border border-gray-100 dark:border-gray-800" 
+                                            />
+                                        )}
+                                        <div className={`max-w-[70%] rounded-2xl px-4 py-2.5 text-sm ${
                                             msg.sender === 'client' 
                                                 ? 'bg-primary text-white rounded-br-none shadow-sm' 
                                                 : 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 border border-gray-100 dark:border-gray-700 rounded-bl-none shadow-sm'
                                         }`}>
+                                            {msg.sender === 'support' && (
+                                                <span className="text-[10px] font-black block text-primary mb-0.5">
+                                                    {msg.senderName || 'Підтримка'}
+                                                </span>
+                                            )}
                                             <p className="leading-relaxed break-words">{msg.text}</p>
                                             <span className={`text-[9px] block text-right mt-1 ${msg.sender === 'client' ? 'text-white/70' : 'text-gray-400'}`}>
                                                 {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
