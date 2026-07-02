@@ -68,26 +68,23 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
         return Array.from(new Set(variations));
     };
 
-    const initialSrc = src || fallbackSrc;
-    const initialVariations = getVariations(fallbackSrc || initialSrc);
-    const [currentSrc, setCurrentSrc] = React.useState(initialVariations[0] || initialSrc);
+    const [currentSrc, setCurrentSrc] = React.useState(src || (getVariations(fallbackSrc)[0] || fallbackSrc));
     const [isLoaded, setIsLoaded] = React.useState(false);
     const [failedLocal, setFailedLocal] = React.useState(false);
     const [variationIndex, setVariationIndex] = React.useState(0);
-    const [variations, setVariations] = React.useState(initialVariations);
+    const [variations, setVariations] = React.useState(getVariations(fallbackSrc || src));
 
     React.useEffect(() => {
-        const initial = src || fallbackSrc;
-        const vars = getVariations(fallbackSrc || initial);
+        const vars = getVariations(fallbackSrc || src);
         setVariations(vars);
-        setCurrentSrc(vars[0] || initial);
+        setCurrentSrc(src || (vars[0] || fallbackSrc));
         setIsLoaded(false);
         setFailedLocal(false);
         setVariationIndex(0);
     }, [src, fallbackSrc]);
 
     const handleError = () => {
-        if (!failedLocal && src && fallbackSrc && currentSrc !== fallbackSrc) {
+        if (!failedLocal && src && fallbackSrc) {
             setFailedLocal(true);
             setCurrentSrc(variations[0] || fallbackSrc);
             setVariationIndex(0);
