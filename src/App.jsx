@@ -313,7 +313,7 @@ const promotions = [
     { 
         id: 3, 
         title: "Американська класика Dr Pepper та Fanta 🇺🇸", 
-        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=1200&q=80", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTwbyopRuh81hS_TuuQTjtSZZRDNPTtrCvufvIRRI625DnXTRGXF9uaW0&s=10", 
         tag: "ЕКСКЛЮЗИВ",
         content: "Справжні Dr Pepper Strawberries & Cream та класична американська Fanta Orange вже на складі Жуйки! Особливі рецептури з насиченим смаком прямо з США. Зберіть свій унікальний набір улюблених американських напоїв.",
         featuredProducts: [49, 47, 30, 12],
@@ -322,7 +322,7 @@ const promotions = [
     { 
         id: 4, 
         title: "Кокосове божевілля з кислинкою 🥥🍏", 
-        image: "https://t3.ftcdn.net/jpg/08/17/76/98/360_F_817769820_5m9ljQyD0zdA7KpEundUTcRaWDJ1RSKO.jpg", 
+        image: "https://stockmeier-food.ru/uploads/posts/2021-11/medium/1637162624_aromatizator-kokos.jpg", 
         tag: "ТОП СМАК",
         content: "Унікальне поєднання вершкового відтінку кокоса, кислого яблука та лимона від Chupa Chups! Це вибух рецепторів, який не залишить байдужим жодного поціновувача екзотики. Спробуй екстраординарний мікс смаків!",
         featuredProducts: [39, 14, 17],
