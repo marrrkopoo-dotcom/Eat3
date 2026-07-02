@@ -394,14 +394,17 @@ const App = () => {
     const [cookieAccepted, setCookieAccepted] = useState(() => {
         return localStorage.getItem('cookieAccepted') === 'true';
     });
-    const [activeView, setActiveView] = useState('shop'); // 'shop', 'product', 'checkout', 'success', 'profile', 'article'
-    const [activeArticle, setActiveArticle] = useState(null);
-    const [activeNav, setActiveNav] = useState('Всі');
+    const [activeView, setActiveView] = useState(() => localStorage.getItem('activeView') || 'shop'); // 'shop', 'product', 'checkout', 'success', 'profile', 'article'
+    const [activeArticle, setActiveArticle] = useState(() => {
+        const savedId = localStorage.getItem('activeArticleId');
+        return savedId ? promotions.find(p => p.id === parseInt(savedId)) || null : null;
+    });
+    const [activeNav, setActiveNav] = useState(() => localStorage.getItem('activeNav') || 'Всі');
     const [isDark, setIsDark] = useState(false);
     const [cart, setCart] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
     const [isSearchOverlayOpen, setIsSearchOverlayOpen] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState("Всі");
+    const [selectedCategory, setSelectedCategory] = useState(() => localStorage.getItem('selectedCategory') || 'Всі');
     const [currentPage, setCurrentPage] = useState(1);
     const [brokenImages, setBrokenImages] = useState(new Set());
     const [viewMode, setViewMode] = useState('medium'); // 'large', 'medium', 'small'
@@ -483,7 +486,10 @@ const App = () => {
     const [calRange, setCalRange] = useState({ min: '', max: '' });
     
     const [lastOrderDetails, setLastOrderDetails] = useState(null);
-    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [selectedProduct, setSelectedProduct] = useState(() => {
+        const savedId = localStorage.getItem('selectedProductId');
+        return savedId ? allProducts.find(p => p.id === parseInt(savedId)) || null : null;
+    });
     const carouselRef = useRef(null);
 
     const scrollCarousel = (direction) => {
@@ -506,6 +512,16 @@ const App = () => {
         window.addEventListener('popstate', handlePopState);
         return () => window.removeEventListener('popstate', handlePopState);
     }, []);
+
+    useEffect(() => {
+        localStorage.setItem('activeView', activeView);
+        localStorage.setItem('activeNav', activeNav);
+        localStorage.setItem('selectedCategory', selectedCategory);
+        if (selectedProduct) localStorage.setItem('selectedProductId', selectedProduct.id);
+        else localStorage.removeItem('selectedProductId');
+        if (activeArticle) localStorage.setItem('activeArticleId', activeArticle.id);
+        else localStorage.removeItem('activeArticleId');
+    }, [activeView, activeNav, selectedCategory, selectedProduct, activeArticle]);
 
     const navigateTo = (view, nav = activeNav, product = selectedProduct, article = activeArticle) => {
         window.history.pushState({ view, nav, product, article }, '');
