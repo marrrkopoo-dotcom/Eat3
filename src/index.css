@@ -80,14 +80,14 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #f43f5e, #8b5cf6);
+    background: linear-gradient(135deg, #f43f5e, #9f1239);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #f43f5e, #8b5cf6);
+    background: linear-gradient(135deg, #f43f5e, #9f1239);
 }
 .gradient-bg:hover {
-    background: linear-gradient(135deg, #e11d48, #7c3aed);
+    background: linear-gradient(135deg, #e11d48, #881337);
 }

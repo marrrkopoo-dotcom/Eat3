@@ -405,6 +405,7 @@ const App = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [brokenImages, setBrokenImages] = useState(new Set());
     const [viewMode, setViewMode] = useState('medium'); // 'large', 'medium', 'small'
+    const [stockFilter, setStockFilter] = useState('all'); // 'all', 'inStock', 'outOfStock'
     
     // City Selection State
     const [selectedCity, setSelectedCity] = useState("Київ");
@@ -553,6 +554,7 @@ const App = () => {
         setSelectedCategory('Всі');
         setPriceRange({ min: '', max: '' });
         setCalRange({ min: '', max: '' });
+        setStockFilter('all');
     };
 
     // Filter logic
@@ -581,14 +583,22 @@ const App = () => {
             const matchCal = (!calRange.min || calories >= Number(calRange.min)) && 
                              (!calRange.max || calories <= Number(calRange.max));
 
-            return matchSearch && matchCategory && matchPrice && matchCal;
+            const matchStock = stockFilter === 'all' ? true : 
+                               stockFilter === 'inStock' ? !p.outOfStock :
+                               p.outOfStock;
+
+            return matchSearch && matchCategory && matchPrice && matchCal && matchStock;
+        }).sort((a, b) => {
+            if (a.outOfStock && !b.outOfStock) return 1;
+            if (!a.outOfStock && b.outOfStock) return -1;
+            return 0;
         });
-    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages]);
+    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter]);
 
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const paginatedProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-    useEffect(() => { setCurrentPage(1); }, [searchQuery, selectedCategory, priceRange, calRange]);
+    useEffect(() => { setCurrentPage(1); }, [searchQuery, selectedCategory, priceRange, calRange, stockFilter]);
 
     // Checkout Logic
     const handleCheckoutSubmit = (e) => {
@@ -834,6 +844,15 @@ const App = () => {
                                             <input type="number" placeholder="До" value={calRange.max} onChange={e => setCalRange({...calRange, max: e.target.value})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
                                         </div>
                                     </div>
+                                    
+                                    <div className="mb-5">
+                                        <label className="block text-sm font-bold text-gray-500 mb-2">Наявність</label>
+                                        <select value={stockFilter} onChange={e => setStockFilter(e.target.value)} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-sm text-dark dark:text-white">
+                                            <option value="all">Всі товари</option>
+                                            <option value="inStock">В наявності</option>
+                                            <option value="outOfStock">Немає в наявності</option>
+                                        </select>
+                                    </div>
 
                                     <button onClick={clearFilters} className="w-full mt-2 text-sm font-bold text-gray-500 hover:text-primary transition-colors">Очистити всі фільтри</button>
                                 </div>
@@ -1033,7 +1052,6 @@ const App = () => {
                         <div className="glass-panel w-full rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row relative mb-16">
                             {/* Image Section */}
                             <div className="w-full md:w-2/5 bg-white dark:bg-gray-800/80 relative border-r border-gray-100 dark:border-gray-800 min-h-[300px] flex items-center justify-center p-8">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-accent/5"></div>
                                 <SmartImage src={selectedProduct.localImage} fallbackSrc={selectedProduct.image} alt={selectedProduct.name} className="relative w-full h-full max-h-[400px] object-contain z-10" />
                                 {selectedProduct.outOfStock && (
                                     <div className="absolute top-8 left-8 bg-gray-500 text-white text-sm font-bold px-4 py-2 rounded-full z-20 shadow-md">Немає в наявності</div>

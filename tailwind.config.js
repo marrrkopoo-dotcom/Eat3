@@ -10,7 +10,7 @@ export default {
       colors: {
         primary: '#f43f5e',
         secondary: '#fb7185',
-        accent: '#8b5cf6',
+        accent: '#9f1239',
         darkBg: '#0f172a',
         darkCard: '#1e293b',
       },
