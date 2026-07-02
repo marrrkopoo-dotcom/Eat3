@@ -304,7 +304,7 @@ const promotions = [
     { 
         id: 1, 
         title: "Тропічний вибух Chupa Chups 🥭", 
-        image: "images/banner_chupachups.png", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqDqe3IcyldzErVFQCKqhCWxRzp8t5Xs0JJ0aTa9GydHT7njGoMR5cw7r&s=10", 
         tag: "АКЦІЯ",
         content: "Відчуй смак сонячного літа з неймовірною серією газованих напоїв Chupa Chups! Справжні соковиті манго, апельсин та виноград в улюбленому форматі. Спеціальна пропозиція: купуй солодкі напої Chupa Chups за суперціною!",
         featuredProducts: [4, 5, 6, 9],
@@ -322,7 +322,7 @@ const promotions = [
     { 
         id: 4, 
         title: "Кокосове божевілля з кислинкою 🥥🍏", 
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80", 
+        image: "https://t3.ftcdn.net/jpg/08/17/76/98/360_F_817769820_5m9ljQyD0zdA7KpEundUTcRaWDJ1RSKO.jpg", 
         tag: "ТОП СМАК",
         content: "Унікальне поєднання вершкового відтінку кокоса, кислого яблука та лимона від Chupa Chups! Це вибух рецепторів, який не залишить байдужим жодного поціновувача екзотики. Спробуй екстраординарний мікс смаків!",
         featuredProducts: [39, 14, 17],
