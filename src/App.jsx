@@ -11,8 +11,6 @@ const categoryImages = {
     "Енергетики": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&q=80",
     "Снеки": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&q=80",
     "Шоколад": "https://images.unsplash.com/photo-1548831772-2bb8b6680a13?w=400&q=80",
-    "Солодощі": "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400&q=80",
-    "Жуйки": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=400&q=80"
 };
 
 allProducts.forEach((p, index) => {
@@ -22,8 +20,8 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі"];
-const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Солодощі", "Жуйки", "Печиво та вафлі"];
+const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
+const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
     const [currentSrc, setCurrentSrc] = React.useState(src || fallbackSrc);
@@ -1978,7 +1976,7 @@ const App = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-lg">✉️</span>
-                                    <a href="mailto:hello@chocoyummy.com.ua" className="hover:text-primary transition-colors">hello@chocoyummy.com.ua</a>
+                                    <a href="mailto:hello@juyka.com" className="hover:text-primary transition-colors">hello@juyka.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -1999,15 +1997,11 @@ const App = () => {
                                 <li className="flex justify-between items-center"><span>Пн - Пт:</span> <span className="font-bold text-white">09:00 - 20:00</span></li>
                                 <li className="flex justify-between items-center border-t border-gray-800 pt-2"><span>Сб - Нд:</span> <span className="font-bold text-white">10:00 - 18:00</span></li>
                             </ul>
-                            <div className="flex gap-3">
-                                <a href="#" className="w-10 h-10 rounded-xl bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors font-bold text-sm">IG</a>
-                                <a href="#" className="w-10 h-10 rounded-xl bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors font-bold text-sm">FB</a>
-                                <a href="#" className="w-10 h-10 rounded-xl bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors font-bold text-sm">TG</a>
-                            </div>
+                            {/* Social networks removed */}
                         </div>
                     </div>
                     <div className="text-center text-sm font-medium text-gray-500 pt-8 border-t border-gray-800 flex justify-center items-center">
-                        <span>&copy; {new Date().getFullYear()} Choco Yummy. Всі права захищені.</span>
+                        <span>&copy; {new Date().getFullYear()} juyka.com. Всі права захищені.</span>
                     </div>
                 </div>
             </footer>
