@@ -124,17 +124,12 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-1.5 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
-                        <svg viewBox="0 0 40 40" className="h-8 w-8 shrink-0 block" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="6" y="8" width="28" height="24" rx="8" fill="url(#header-chiclet-grad)" />
-                            <path d="M 12 12 C 16 10, 24 10, 28 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" fill="none" />
-                            <defs>
-                                <linearGradient id="header-chiclet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stopColor="#ff758f" />
-                                    <stop offset="100%" stopColor="#ff3f6c" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                        <span className="font-black text-xl tracking-tight text-gray-900 dark:text-white lowercase leading-none select-none relative -top-[0.5px]" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>жуйка</span>
+                        <span className="font-black text-2xl tracking-tight text-primary dark:text-primary lowercase leading-none select-none flex items-center relative" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+                            жуйка
+                            <svg className="h-5 w-5 fill-current text-primary ml-1 relative -top-1.5 transform rotate-[15deg]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.41 5.59l2-2a1 1 0 0 1 1.41 0l1.59 1.59a1 1 0 0 1 0 1.41l-2 2M5.59 18.41l-2 2a1 1 0 0 0 0 1.41l1.59 1.59a1 1 0 0 0 1.41 0l2-2M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 9a3 3 0 1 1 3-3 3 3 0 0 1-3 3z" />
+                            </svg>
+                        </span>
                     </div>
                     
                     {selectedCity && (
@@ -1968,18 +1963,11 @@ const App = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                         <div>
-                            <div className="font-extrabold text-lg text-white tracking-tight mb-4 flex items-center gap-1.5 lowercase select-none">
-                                <svg viewBox="0 0 40 40" className="h-6 w-6 shrink-0 block" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="6" y="8" width="28" height="24" rx="8" fill="url(#footer-chiclet-grad)" />
-                                    <path d="M 12 12 C 16 10, 24 10, 28 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" fill="none" />
-                                    <defs>
-                                        <linearGradient id="footer-chiclet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stopColor="#ff758f" />
-                                            <stop offset="100%" stopColor="#ff3f6c" />
-                                        </linearGradient>
-                                    </defs>
+                            <div className="font-extrabold text-xl text-white tracking-tight mb-4 flex items-center select-none relative lowercase">
+                                жуйка
+                                <svg className="h-4 w-4 fill-current text-primary ml-1 relative -top-1 transform rotate-[15deg]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.41 5.59l2-2a1 1 0 0 1 1.41 0l1.59 1.59a1 1 0 0 1 0 1.41l-2 2M5.59 18.41l-2 2a1 1 0 0 0 0 1.41l1.59 1.59a1 1 0 0 0 1.41 0l2-2M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 9a3 3 0 1 1 3-3 3 3 0 0 1-3 3z" />
                                 </svg>
-                                <span className="relative -top-[0.5px]">жуйка</span>
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 Магазин солодощів та екзотичних напоїв з усього світу.
