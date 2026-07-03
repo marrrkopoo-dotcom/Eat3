@@ -123,8 +123,8 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-6">
-                    <div className="flex items-center gap-2 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
-                        <svg viewBox="0 0 40 40" className="h-8 w-8" xmlns="http://www.w3.org/2000/svg">
+                    <div className="flex items-center gap-1.5 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
+                        <svg viewBox="0 0 40 40" className="h-8 w-8 shrink-0 block" xmlns="http://www.w3.org/2000/svg">
                             <rect x="6" y="8" width="28" height="24" rx="8" fill="url(#header-chiclet-grad)" />
                             <path d="M 12 12 C 16 10, 24 10, 28 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" fill="none" />
                             <defs>
@@ -134,7 +134,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <span className="font-black text-xl tracking-tight text-gray-900 dark:text-white lowercase ml-1" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>жуйка</span>
+                        <span className="font-black text-xl tracking-tight text-gray-900 dark:text-white lowercase leading-none select-none relative -top-[0.5px]" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>жуйка</span>
                     </div>
                     
                     {selectedCity && (
@@ -1977,8 +1977,8 @@ const App = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                         <div>
-                            <div className="font-extrabold text-lg text-white tracking-tight mb-4 flex items-center gap-2 lowercase">
-                                <svg viewBox="0 0 40 40" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                            <div className="font-extrabold text-lg text-white tracking-tight mb-4 flex items-center gap-1.5 lowercase select-none">
+                                <svg viewBox="0 0 40 40" className="h-6 w-6 shrink-0 block" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="6" y="8" width="28" height="24" rx="8" fill="url(#footer-chiclet-grad)" />
                                     <path d="M 12 12 C 16 10, 24 10, 28 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" fill="none" />
                                     <defs>
@@ -1988,7 +1988,7 @@ const App = () => {
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                                жуйка
+                                <span className="relative -top-[0.5px]">жуйка</span>
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 Магазин солодощів та екзотичних напоїв з усього світу.
