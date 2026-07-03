@@ -123,19 +123,18 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-6">
-                    <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-pink-500 rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
-                            <div className="relative z-10 bg-white rounded-full p-1.5 shadow-sm flex items-center justify-center">
-                                <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="20" cy="20" r="16" fill="#ec4899" />
-                                    <circle cx="14" cy="14" r="4" fill="white" opacity="0.8" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="hidden md:block ml-2">
-                            <div className="font-black text-3xl tracking-tighter text-gray-900 dark:text-white" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>Жуйка</div>
-                        </div>
+                    <div className="flex items-center gap-2 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
+                        <svg viewBox="0 0 40 40" className="h-8 w-8" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="8" width="28" height="24" rx="8" fill="url(#header-chiclet-grad)" />
+                            <path d="M 12 12 C 16 10, 24 10, 28 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" fill="none" />
+                            <defs>
+                                <linearGradient id="header-chiclet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#ff758f" />
+                                    <stop offset="100%" stopColor="#ff3f6c" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span className="font-black text-xl tracking-tight text-gray-900 dark:text-white lowercase ml-1" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>жуйка</span>
                     </div>
                     
                     {selectedCity && (
@@ -1978,8 +1977,18 @@ const App = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                         <div>
-                            <div className="font-extrabold text-xl gradient-text tracking-tight mb-4 flex items-center gap-2">
-                                Choco Yummy
+                            <div className="font-extrabold text-lg text-white tracking-tight mb-4 flex items-center gap-2 lowercase">
+                                <svg viewBox="0 0 40 40" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="8" width="28" height="24" rx="8" fill="url(#footer-chiclet-grad)" />
+                                    <path d="M 12 12 C 16 10, 24 10, 28 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" fill="none" />
+                                    <defs>
+                                        <linearGradient id="footer-chiclet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stopColor="#ff758f" />
+                                            <stop offset="100%" stopColor="#ff3f6c" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                жуйка
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 Магазин солодощів та екзотичних напоїв з усього світу.
