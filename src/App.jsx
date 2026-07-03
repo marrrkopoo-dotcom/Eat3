@@ -124,7 +124,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-6">
                     <div className="flex items-center group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
-                        <img src="images/logo.svg?v=3" alt="жуйка" className="h-12 w-auto object-contain block select-none" />
+                        <img src="images/logo.svg?v=4" alt="жуйка" className="h-12 w-auto object-contain block select-none" />
                     </div>
                     
                     {selectedCity && (
@@ -1959,7 +1959,7 @@ const App = () => {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                         <div>
                             <div className="mb-4 flex items-center select-none">
-                                <img src="images/logo.svg?v=3" alt="жуйка" className="h-10 w-auto object-contain block" />
+                                <img src="images/logo.svg?v=4" alt="жуйка" className="h-10 w-auto object-contain block" />
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 Магазин солодощів та екзотичних напоїв з усього світу.
