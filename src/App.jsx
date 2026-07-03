@@ -169,7 +169,7 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                     <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
                     
                     <div className="flex flex-col text-right hidden lg:flex border-l border-gray-200 dark:border-gray-700 pl-4">
-                        <span className="font-bold text-dark dark:text-white text-sm">+38 (000) 000-00-00</span>
+                        <a href="tel:+380779152365" className="font-bold text-dark dark:text-white hover:text-primary transition-colors text-sm">+38 (077) 915-23-65</a>
                         <span className="text-xs text-gray-500 dark:text-gray-400">Пн-Нд: 09:00 - 20:00</span>
                     </div>
                     
@@ -624,7 +624,7 @@ const promotions = [
                         <ul className="list-decimal pl-5 space-y-2">
                             <li>Складіть Акт прийому-передачі спільно зі співробітником «Нова Пошта»;</li>
                             <li>Зробіть фото пошкоджень або невідповідного товару;</li>
-                            <li>Зв'яжіться з нами за телефоном: <a href="tel:+380987350505" className="font-bold hover:underline text-primary">(098) 735-05-05</a>;</li>
+                            <li>Зв'яжіться з нами за телефоном: <a href="tel:+380779152365" className="font-bold hover:underline text-primary">(077) 915-23-65</a>;</li>
                             <li>Ми оперативно вирішимо проблему: надішлемо заміну або повернемо кошти.</li>
                         </ul>
                     </div>
@@ -1691,7 +1691,7 @@ const App = () => {
                                         </div>
                                         <div>
                                             <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">Телефон</label>
-                                            <input required name="phone" type="tel" placeholder="+38 (000) 000-00-00" className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none" />
+                                            <input required name="phone" type="tel" placeholder="+38 (077) 915-23-65" className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none" />
                                         </div>
                                     </div>
 
@@ -1974,7 +1974,7 @@ const App = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-lg">📞</span>
-                                    <a href="tel:+380000000000" className="hover:text-primary transition-colors font-medium">+38 (000) 000-00-00</a>
+                                    <a href="tel:+380779152365" className="hover:text-primary transition-colors font-medium">+38 (077) 915-23-65</a>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-lg">✉️</span>
