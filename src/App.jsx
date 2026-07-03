@@ -266,16 +266,7 @@ const customProducts = [
         brand: "Summer Splash",
         details: { calories: "45 ккал", ingredients: "Вода, сік лимона" }
     },
-    {
-        id: "custom-muffin-01",
-        name: "XXL Топ-дроп Мафін з карамеллю",
-        price: 120,
-        category: "Солодощі",
-        localImage: "images/product_muffin.png",
-        weight: "200 г",
-        brand: "Choco Yummy Bakery",
-        details: { calories: "550 ккал", ingredients: "Шоколад, карамель, борошно" }
-    },
+
     {
         id: "custom-protein-01",
         name: "Power Protein Bar",
