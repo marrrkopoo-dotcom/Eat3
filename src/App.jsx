@@ -123,13 +123,8 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-6">
-                    <div className="flex items-center gap-1.5 group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
-                        <span className="font-black text-2xl tracking-tight text-primary dark:text-primary lowercase leading-none select-none flex items-center relative" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-                            жуйка
-                            <svg className="h-5 w-5 fill-current text-primary ml-1 relative -top-1.5 transform rotate-[15deg]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.41 5.59l2-2a1 1 0 0 1 1.41 0l1.59 1.59a1 1 0 0 1 0 1.41l-2 2M5.59 18.41l-2 2a1 1 0 0 0 0 1.41l1.59 1.59a1 1 0 0 0 1.41 0l2-2M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 9a3 3 0 1 1 3-3 3 3 0 0 1-3 3z" />
-                            </svg>
-                        </span>
+                    <div className="flex items-center group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
+                        <img src="images/logo.svg" alt="жуйка" className="h-10 w-auto object-contain block select-none" />
                     </div>
                     
                     {selectedCity && (
@@ -1963,11 +1958,8 @@ const App = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                         <div>
-                            <div className="font-extrabold text-xl text-white tracking-tight mb-4 flex items-center select-none relative lowercase">
-                                жуйка
-                                <svg className="h-4 w-4 fill-current text-primary ml-1 relative -top-1 transform rotate-[15deg]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18.41 5.59l2-2a1 1 0 0 1 1.41 0l1.59 1.59a1 1 0 0 1 0 1.41l-2 2M5.59 18.41l-2 2a1 1 0 0 0 0 1.41l1.59 1.59a1 1 0 0 0 1.41 0l2-2M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 9a3 3 0 1 1 3-3 3 3 0 0 1-3 3z" />
-                                </svg>
+                            <div className="mb-4 flex items-center select-none">
+                                <img src="images/logo.svg" alt="жуйка" className="h-8 w-auto object-contain block" />
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 Магазин солодощів та екзотичних напоїв з усього світу.
