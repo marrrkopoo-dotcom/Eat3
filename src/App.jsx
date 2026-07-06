@@ -22,7 +22,7 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
+const categories = ["Всі", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
@@ -246,17 +246,6 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError, viewMode = 's
   );
 };
 const customProducts = [
-    {
-        id: "custom-lemonade-01",
-        name: "Summer Splash Lemonade 500ml",
-        price: 85,
-        category: "Газовані напої",
-        localImage: "images/product_lemonade.png",
-        weight: "500 мл",
-        brand: "Summer Splash",
-        details: { calories: "45 ккал", ingredients: "Вода, сік лимона" }
-    },
-
     {
         id: "custom-protein-01",
         name: "Power Protein Bar",
