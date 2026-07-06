@@ -2,9 +2,31 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+const ENCRYPTION_KEY = process.env.IMAGE_PROXY_KEY || 'juyka-secret-key-32chars-for-aes!';
+const KEY = crypto.createHash('sha256').update(ENCRYPTION_KEY).digest();
+const ALGORITHM = 'aes-256-cbc';
+
+function decrypt(text) {
+    if (!text || !text.startsWith('enc-')) return text;
+    try {
+        const parts = text.split('-');
+        if (parts.length < 3) return text;
+        const iv = Buffer.from(parts[1], 'hex');
+        const encryptedText = Buffer.from(parts[2], 'hex');
+        const decipher = crypto.createDecipheriv(ALGORITHM, KEY, iv);
+        let decrypted = decipher.update(encryptedText, 'hex', 'utf8');
+        decrypted += decipher.final('utf8');
+        return decrypted;
+    } catch (e) {
+        console.error('Failed to decrypt URL:', e);
+        return text;
+    }
+}
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -164,9 +186,42 @@ app.post('/api/tg-webhook', (req, res) => {
             console.log(`No active client found for reply message ID ${replyToId}`);
         }
     }
-
+    
     // Always respond 200 OK to Telegram
     res.sendStatus(200);
+});
+
+// Image Proxy Endpoint to mask original image URLs
+app.get('/api/image-proxy', async (req, res) => {
+    const { token } = req.query;
+    if (!token) {
+        return res.status(400).send('Missing token');
+    }
+    try {
+        const decryptedUrl = decrypt(token);
+        if (!decryptedUrl.startsWith('http')) {
+            return res.status(400).send('Invalid image URL');
+        }
+        
+        const response = await fetch(decryptedUrl);
+        if (!response.ok) {
+            return res.status(response.status).send('Failed to fetch image');
+        }
+        
+        const contentType = response.headers.get('content-type');
+        if (contentType) {
+            res.setHeader('content-type', contentType);
+        }
+        
+        const cacheControl = response.headers.get('cache-control') || 'public, max-age=31536000';
+        res.setHeader('cache-control', cacheControl);
+        
+        const buffer = await response.arrayBuffer();
+        res.send(Buffer.from(buffer));
+    } catch (err) {
+        console.error('Image proxy server error:', err);
+        res.status(500).send('Image proxy error');
+    }
 });
 
 // Serve static build files

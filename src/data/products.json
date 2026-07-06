@@ -3,7 +3,7 @@
         "id":  1,
         "name":  "Енергетик Red Bull Krating Daeng Vitamin 800 Energy Drink Thai",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/energetik-red-bull-krating-daeng-vitamin-800-thai-145ml-1-200x200.webp",
+        "image":  "enc-6e51d27aa36d7167076f5926d05c7c9a-4a7d06fb89727facc328d66e4575de7769042a110a1f6e2f3bed2d4bd7632aabb4b49b36aeda3c707e522ad0057b525640a4860cfef93b2714a141de3420f60580d2eb6832cb3c0607c77d825ed2420f98f16c47a713189d554e5079386464b568e9145a39703737adfcc2ec95be4ed4202d3caf95101bcc3fc4a9261a580be9a473130de7c444d772347d2b4e28d55c",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Red Bull",
@@ -19,7 +19,7 @@
         "id":  2,
         "name":  "Енергетик Monster Energy Reserve Peaches N Creme",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/energetik-monster-energy-reserve-peaches-n-creme-473ml-6-200x200.webp",
+        "image":  "enc-68aea5cee9a919a45bb986b06de42389-8b519edadb5b7fcf9725296ae1a9dff08abcaccf6f5e7e53c3b60fe9e22ff9fffa902660a76c17d2b390975119a46edf7fb5e5f7ece678c9cde034428e174c5fb64bdf2e6ca58b73ac4422fe64e9212b3da78e803cf30a99204e9c388cec9089ddeedfce9474ddaba647ba5b4ab720f794031b323442c4fd3a15f76a731c7a22d9e94da371beb4eab97e7a9b1e96161a",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -99,7 +99,7 @@
         "id":  7,
         "name":  "Chupa Chups газована вода Вишнева Гумка",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/chupa-chups-sparkling-cherry-bubble-gum-200x200.webp",
+        "image":  "enc-1064d6dc9d4d989324d30addbe04e191-0e709bda26ecaf6c81f3e0ad95f05b054f01a9a1dc079681f57a9a3c40ab6a723824e8e727dec8923832a5fb207630560b78f46ddab34c2b0da5b4dab5371af9b81b8397b1eab8946a07b318bcdf8e00b58b7dc56d80796a2832b7235a2f16113c5b20b7b8cfe051c50483985fb8a36d0f6b6f66564a1c49e620cd982180cc3d",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -115,7 +115,7 @@
         "id":  8,
         "name":  "Chupa Chups газована вода Кавун",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/chupa-chups-sparkling-watermelon-200x200.webp",
+        "image":  "enc-345204fc3c280149fb377536bfa92acb-12e515dfe792eeb32817e265b814185215259ed36ed70418f96ccce5c6c88ea8db16977ffcda2bcb3b65f14dca7667dea36b53f0684679acd957c4a6be463647e5760ace8bfbdb8c897c79a9446dd0373efffd75815164beaf6d96d5d2464396f0bd7112c64fad462022b4486b576c9be6a6e17b20e5b229e4dc5e64b08eea67",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -147,7 +147,7 @@
         "id":  10,
         "name":  "Chupa Chups газована вода Кисле Яблуко",
         "price":  79,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/chupa-chups-sparkling-sour-apple-200x200.webp",
+        "image":  "enc-a6f3ffcc9fdf434792f71bc4461dca6a-138dc90fc5ee73079d64b4be5f2f9151aeb4fcb638c2bea10d3b81da0529d2609c8019f1ba44928568766ba1e55630632d0d106697499a6cf752530fc12d3fc493ef03feb87dc0585b86e8b12b19d4218c8383e5e6cc99ec20017c80a7caefdeaebafc1111b716a62ccb98ed9b22a4bdac016e50caf14b7516a095e82b8ed575",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -163,7 +163,7 @@
         "id":  11,
         "name":  "Chupa Chups газована вода Кремова диня",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/napij-chupa-chups-melon-cream-200x200.webp",
+        "image":  "enc-f569166efd639317f432bcca5f46dbb3-94ba779b246d1df68e667276362c66f9729f2fa10cedf961f1341822a17824fbb6361cf9331daa6415ade21ab02944e3d3afa02d73494c32992a03743b231c352fbe9d168761e50df5b2036f4502764f6696f1bfc2206b274b79c43cc2f66b38b1786591ab7d695fd8c6909904e88f6ba8dc3d7e0d75abb25c22da38232ee00a",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -195,7 +195,7 @@
         "id":  13,
         "name":  "Fanta Ананас",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/fanta-pineapple-200x200.webp",
+        "image":  "enc-876d254563103ec91e5aa524fc67e4d6-e79541ef365fed0e81bfb47368f3ff37bec421ae0a7be5fe1d6e86d7b7f5949784fddf7d38c4fb2ca08841fb2682cf6d27473eab3e7d218cf1dce556e9cef353400dcb2de83b73fb407581b3a4a42b0d702b0af5622b3ff37ea4d5532cd872cdc4317cd66990e8ccb2a9262da53aa2ca",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -243,7 +243,7 @@
         "id":  16,
         "name":  "Fanta Полуниця",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/fanta-strawberry0-200x200.webp",
+        "image":  "enc-f93885c41f5f67308c1b4c07bdd242a1-70d926fd7ee65829232deb1d73dcfe2ceda0bc400c3ab0efe6d9f0ea379e5284da00cec73c36b15c52212c38bdf2c206dd0dc1cf69767bf279111e758841d6488a5ab6bcee612f0bedb9a5ba7820f4d9808997b698b32d9e9af3f78b4b23dd6b525ac87447b434df9c314be4b06451d5",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -275,7 +275,7 @@
         "id":  18,
         "name":  "Monster Java Salted Caramel USA",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-java-salted-caramel-200x200.webp",
+        "image":  "enc-05f0fc5939d9ec1fce4dd5d585475cee-574de0553a236dccc20a663c591360775ff4e8a449a0968bf09a5032df6c6e4c76912c230f207a6e5b0d5f69e2ff9b000fd8b8e0b3acb6bcd7a4ab366f66303f5c69e9205db512349aa46d0a19777adc632f364173179d1e78d9201658d315038bcf5310d29f8592d9a3acc5567844ba",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -307,7 +307,7 @@
         "id":  20,
         "name":  "Monster Mango Loco",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-mango-loco-200x200.webp",
+        "image":  "enc-9e6e3a6b8be46360d9a282e676c4cef3-2ac705086870625c6540a3d2dad2b20be7a777560d3c2b250fe0f4bcd199f4bb78e5a82a0d38ae3d02c4b61a13b57a7570af053459ea1c1a77773af7a4abc08b3d38f9e33713e53079f5920a92050233fafb00f83ba99528eeee78e3b3e5fba9d0aeebf9ed481437f8a06bac4b65b6e7",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -323,7 +323,7 @@
         "id":  21,
         "name":  "Monster Pipeline Punch",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-pipeline-punch-200x200.webp",
+        "image":  "enc-64109d122f6651343a6504898df4e807-a56eeabdad95e8b2227f18b48b0e578ad7c01b2729b7c46280f4bae22687662b0f9afadd4256d3253481479b6bc3166d7d1597f34acd8b251468d9e8b1557702dacb6038113dcb828c31cac0595820014fe77df31dcfe8d26ff96dc462edbc0188eea7a2598445a62f7c82930d70175d",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -355,7 +355,7 @@
         "id":  23,
         "name":  "Monster Ultra Fiesta",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-ultra-fiesta-mango-200x200.webp",
+        "image":  "enc-2595dda38746f88753c6c1f61dbe44e2-eb2247da121d1e24fb4bd47e22f56adb35deaeec3b828adabd808ed367eb979c0b51f94c03d8c29f20a865e53f0bb8bb5a7d6edf337aa0ffd84495f15063525c49bc2018bc78df29acae8ec1dba2f93ee877cc57a930439357c22f9bff948b1153029dd4463d34d95a192ed45d06ec9f",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -371,7 +371,7 @@
         "id":  24,
         "name":  "Monster Ultra Paradise",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/monster-ultra-paradise-200x200.webp",
+        "image":  "enc-df3803d917df35ef901e0d1a4b3bea12-36c94bb8f67f3e3bcc6e98c2cecfcc9a66c28b689cc8f09fe2b518d53a588be20542d32da4427182a572283b04b7d3cd3c136fc9cd70d6b4341fcf2ebb164352e1ad1545e573a03f5c8c9f696110d47c0fa4bf0a16feaddb9ed5c5b611a9c74ec07fa29219e70281eaec36c7cd1777aa",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -387,7 +387,7 @@
         "id":  25,
         "name":  "Monster Ultra Watermelon",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/monster-ultra-watermelon-200x200.webp",
+        "image":  "enc-c93a978a718b3b039fa40d05e87cabd4-6be43bbdb69b46b0a729e144cdbb7474ebb507646be5200dc5376c3946e17a07d9ba9542a2da2029dc04fb9d7c685ea248b0635c07239b9dd7e7da58a94d4388540f921e28abd93a6b1b66c85e97b85e95e8a7d6702a1f292244ad7710805aa5bdd6edc19ae721aad372d51c271e20fe",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
@@ -515,7 +515,7 @@
         "id":  34,
         "name":  "Газована вода A\u0026W Cream Soda No Caffeine",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-aw-cream-soda-no-caffeine-355ml-3-200x200.jpg",
+        "image":  "enc-b00f5cd52a6d4e51a40aba739d4cb030-604643bd8a5dee9afbbed3e4eb0d4dab3a619fdec63740e4cce661cf4ff31680a32dc20d350dcbeb5b4d027bfc786f129dc1218958e20ad34d3bc49c83b6882c09822e5b254eb68a3f7caf9a2db670d2bc259150745e58a61281ef8f1b516fdf6faf6c96336a7ecefbc217dfb65eb4163645d861938bc7fe65d6ff16e0c9781c31310be1f742a98466e41da6dd31ebf0",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Choco Yummy",
@@ -531,7 +531,7 @@
         "id":  35,
         "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
         "price":  189,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-arizona-cherry-lime-rickey-650ml-4-200x200.jpg",
+        "image":  "enc-c4b1eaa2343264ae98f2200a1787b0e1-cdf33392242ebbe4f371bdde9d3df838efbc6a828e98bc30d4a6b1180ad691d9b1f693ab8b2027f55abb62d1918533034facecab33ccf2af885df40a0d82d6a11c7f3ff937e4ba1c639e073b7c6b9ebd5a547d9965d092dc30ef4805e0f591ed77ee1a205313e3587a7c7181d212474ae6e5d7a6bcaa7902a50412db93949a897e98263d23c7713eb80a509c75972ed2",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "AriZona",
@@ -547,7 +547,7 @@
         "id":  36,
         "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-arizona-cherry-lime-rickey-650ml-4-200x200.jpg",
+        "image":  "enc-d10ec44778e0b96e10a4a38fece56d07-237390ec0adf2ad0fd138162f05f2680e64c0eeee88883156f5ddd90b53e8acf34113acea422d1574e2ae4fe0a7635656f29cf2632a9602ee630345cba569efe6d178ef2f88468d54ea385e9fa2f5a59ebd6245c8bd769f6c71b7e36bbeba996ebd7c1eb6c7edeaddf14b6028438a7fa0044056923ee22bf487f5f93cba0a7d351f96ad147e5d73d476935c9438c568a",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "AriZona",
@@ -579,7 +579,7 @@
         "id":  39,
         "name":  "Газована вода Chupa Chups Sour Coco Green Apple Кокос-Зелене яблуко",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/napij-chupa-chups-sour-coco-green-apple-240ml-4-200x200.jpg",
+        "image":  "enc-2405c2afb408f343357817a3717869b2-ec15369d25f4238025770a2b08e0cb503d67c7e62476929e97b210ce7ff49f44cdaf435d2f2144f196aff2a0aa2c84bbac3a0bdeb6b99d5e01faa0df206513c48ecf769b82b4b99737bcbd4d4f0c85d799520ea87fb3a0d7183e0efedc38a0fac535f49ae31bfa541f5d2f969f6e37f55dbe9c7738186810d0c872b6cf5c5c1c13f475580c5f7775557126c2f752883d",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -595,7 +595,7 @@
         "id":  40,
         "name":  "Газована вода Chupa Chups Sour Coco Lemon Кокос-Лимон",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/napij-chupa-chups-sour-coco-lemon-240ml-3-200x200.jpg",
+        "image":  "enc-05df9ee119ca51e554175aa5a86014e9-7dcbe5c771265d5b0c4dcd875612478fed2d8b4c415a7bd6b488f3e99f73e75a0f6309770f88980e501d7c0417d8bca263014cbb66de819f4090795c83e89e02e7297c4cee51b369d70c53fbabdf7e4ac27862c5cc14bca4816bb544ecd148b2aaa4c83f6cceb60056bade32a97b6e26e0eabc41f8fd29bd271ef6a1f6fbd9e4",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -611,7 +611,7 @@
         "id":  41,
         "name":  "Газована вода Chupa Chups Sparkling Cola",
         "price":  79,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-chupa-chups-sparkling-cola-345ml-4-200x200.jpg",
+        "image":  "enc-f2e517b6b4b2107bab69e18a1ac18e0f-5907e09574492d4556dbde9265f7631c1e2fc55e07602b7ef274c4f243452c9e8ec6b4ab5745d2a435fd34134ea08c92d6e1c87f6eb328529aaf00adf8e3d8f8e98dc8b31ad721c72ad4e7333b7fcea770a52fb9367b9d7ad9ad8e4f6cddd49617ace1bea5f77449dba8f48a79898f248cc62cba010652d81243fbfea94f45dd24e2a82ce4caa19969853960898053f6",
         "category":  "Солодощі",
         "details":  {
                         "brand":  "Chupa Chups",
@@ -627,7 +627,7 @@
         "id":  42,
         "name":  "Газована вода Coca-Cola Cherry Float Zero Sugar Вишня з ваніллю",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-coca-cola-cherry-float-zero-sugar-355ml-1-200x200.jpg",
+        "image":  "enc-6a6a1eeaae11c3d3dd94021e0aa72723-b6030ea5cc262f20722ae7352a93ab05850f15bc14b22c1d523d1f1a5579056e8d9e667ed6127ae5b40c5c99653499157134f4c9625d2a3331279868904c3f0f8d55736d12b5b545e08a717dcc320f9bf9501aaf7ddf825e9b551db391ddccca6d92318ea0bf26ffd23ddb50a532ae0e4343256d0d1311ad672786ff77d9fe160834d8c45b7fdbcd181de08524080b7a",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Coca-Cola",
@@ -643,7 +643,7 @@
         "id":  43,
         "name":  "Газована вода Coca-Cola Cherry Float Вишня з ваніллю",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-coca-cola-cherry-float-355ml-2-200x200.jpg",
+        "image":  "enc-a04de68c022d234e198404e2b827afc7-7877e69421ec9e22196d899a0cb70489746e7963d6d8528041f75086d463e4fca2835f98748ffdb5e452b49c9a5dbb1ebb7e3ee1786211ab09ab01175bbd0a3b996a79ff59aafa34aea4eeacaec76ef2584798c6f97cbe4d4d957e9ff5ef86cc39ba9e5c8a5ab4718881800fd6a2832511a8ea8476d21f1a3c629f8cbb25dd07",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Coca-Cola",
@@ -659,7 +659,7 @@
         "id":  44,
         "name":  "Газована вода Coca-Cola Holiday Creamy Vanilla Soda Ванільна",
         "price":  169,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-coca-cola-holiday-creamy-vanilla-soda-355ml-3-200x200.jpg",
+        "image":  "enc-63053cf1498db559af248cf2a0f8d88e-a9e4979af0eb66c8827c3475f4271a5421025bad709241761ec581f909d44f4c319d4c0c59cf0dcea07f28500db15b57ce8b6549b8f25fa42256e814b31f3e03ebab597a95d48fa47571994cc5c7c4dc496272c76bdbbce88c5a6112c5b37edf40ef48d682c1c13aac8db2a20303b65841540488d409989679d74a72a8e2581564ad94ebe5be4046ca8f165f336b0f30",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Coca-Cola",
@@ -739,7 +739,7 @@
         "id":  49,
         "name":  "Газована вода Dr. Pepper Strawberries \u0026 Cream Полуниця і вершки",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-dr-pepper-strawberries-cream-330ml-3-200x200.jpg",
+        "image":  "enc-a2df9d6b6fc9e452506127f9cfe60f80-4a6a48dc8d73205d9ee4c4c7cbe6b0275fc02a26e08319607f9d475273daf377290e171a620af85ace1165c6ab9a04bae5ddfe165993fe30ecaac981724878a3cc3e80fcbbbd012126962a3686c319c5cb0a098f75741e17d3e1797c8e2b3374dcb2fd097d294540ac967abd114767d2367c4735e1019c02cd0328dcef2ff4452d6c02c233299e657babf7055141df48",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Dr. Pepper",
@@ -787,7 +787,7 @@
         "id":  52,
         "name":  "Газована вода Fanta Diablo Crimson Cherry",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-diablo-crimson-cherry-330ml-4-200x200.jpg",
+        "image":  "enc-dd62033fb17baee59fe82e0e0a71680a-baa17afb5770980f15e0e4113a867b0349df04e6dee9c0b106c6323cc52b0064a0b09b8f9dc414752b1b1352c75ac846e6e1a29adb6d61e2f95c39913e13f090b6843fe3a306496c26e602fb5c87fe29c20627664e7f45757a25432a17fd6ac981794f251cff0d72de6f18deea9f9a334ed1a197637710e2a4b27347f57524827fbd1c7b9590534a5e8e315abb08c51e",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -819,7 +819,7 @@
         "id":  54,
         "name":  "Газована вода Fanta Grape Asia",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-grape-asia-320ml-3-200x200.jpg",
+        "image":  "enc-91269b434419c4dd47bfcc3191257e8d-a67bdf6418e66f8e35e592621fd3aa0b2808ff24d0f516b207957b58e2bf35718d6f78b1fba1b172069a896dcd391f52338df8fb5609c745d2bb873f1017d4b22abf7952f739e5f0b42e590f4417dff36e56bc0c2475bc3a03ffad05c6dad3ed62a0abf5d5996cf99dcadf4ed1dfca058772609ef8c112e6584d61da54457a10",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -851,7 +851,7 @@
         "id":  56,
         "name":  "Газована вода Fanta Huong Xa Xi Sarsaparilla Vietnam",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-huong-xa-xi-sarsaparilla-vietnam-320ml-2-200x200.jpg",
+        "image":  "enc-7a8fa901307fa03d6de90b9c70b2c61e-b9c0169091fe741f09882f5e9915266186a0fdb7d3192c301fab535b0548deaf84feef9e5ff2e080832a022b8fc21df67796349097762cb193fb038d354c99ca0b313a04267e1ba3c20b531a08b8f6f19bf31c2e0cf14b42ab6f863a34e757680654ee04103230debbe0d701ea19ee6b17e738308a069f7c73ba087abe8d7993d45629ae420b6fec0d05ffeb0482556d",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -883,7 +883,7 @@
         "id":  58,
         "name":  "Газована вода Fanta Orange Xbox Ghost Call of Duty",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-fanta-orange-xbox-ghost-call-duty-330ml-4-200x200.jpg",
+        "image":  "enc-99d6c7eac5bbe79d348a21fa094dcfe3-253d00e6bcca219d930d26a0f9087c1b3cef3278a50eccdf27d51be55e912cd9d10a28c8099c03d03a9d4958496d878c1277a3819f5cdc93074a2001b1e8f82593e76c761f96fcff3e220905299c475fb8a2aac8b79c95779b51d72fd3be62176393a7dc3dabea6450ab7897a88c60422c2790550baa841bd42876d5069b8261e5800b60b8e4e4da497392f106f39484",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -899,7 +899,7 @@
         "id":  59,
         "name":  "Газована вода Fanta Виноград",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/fanta-grape-200x200.jpg",
+        "image":  "enc-933a18c5b78e6c0724c81f7910276a37-4315347518540d646b08b43649d37f71683b3bbc022961e8c0f3a00f0ba553c7026b60c9804af313a1c3b43457a52d9f72b318e6a551c62d6ed22800f658c8bd8d65e5878ffe8a830c061e8498638717e3e67566549d75f0f44432c76b469943074e57d52a8033d9a1a5dd688bec5423",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -931,7 +931,7 @@
         "id":  62,
         "name":  "Газована вода Lotte Chilsung Cider Soda Сидр",
         "price":  69,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-lotte-chilsung-cider-soda-250ml-5-200x200.jpg",
+        "image":  "enc-0db00d528a89e6b5a41dd1b1635fb6fd-debcfea0a9f5269fda384d2a02b7a5569587fdf3f5eb656b567ef24b3e342be75ee9f63f83795a029a4f9dae3ce59a7d8937f69c345128a17334f060b2de14823c34d6ef2c3b030527870617a1d3ab76796f159bfb6332eeb764a9bf8381b4b8b7e741acc7b05707d0dcc1e40fea107aef2e8d7462a8c50480f6656f8866c3df5e3b3e6b53cceb49fc3615e18aa5dee4",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Lotte Chilsung Cider Soda",
@@ -947,7 +947,7 @@
         "id":  63,
         "name":  "Газована вода Mountain Dew Baja Blast Лайм Апельсин Ананас",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/energetik_mountain_dew_voltage_baja_blast_355ml_2-200x200.jpg",
+        "image":  "enc-353a2d311a0c885013ed5c455d869afe-41c1bab64f9a13c969d81d8a340bfd83a3817510c38e90a2e5c05ae0ab60d2433d518269d81e0ed52100c816525ea6ae6921bd2b7ffbe8edd6a3fc761f8a2dea08a91647d4a7d1967aef18c96a6981bb0d37bb8425bc20e2e8029670e078bde635341686de213c302189b664af129017ed0f97087781615a40647836b4a4703b81d1c203a6ecfabafb29d57397ab759d",
         "category":  "Енергетики",
         "details":  {
                         "brand":  "Mountain Dew Baja Blast",
@@ -963,7 +963,7 @@
         "id":  64,
         "name":  "Газована вода Mountain Dew Baja Cabo Citrus",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-mountain-dew-baja-cabo-citrus-355ml-4-200x200.jpg",
+        "image":  "enc-454859e14e0c40a102fee57f3174b207-ded5437e58b2f9fa29afe98a98df51c3e4effac9ce29866b297b612d1dc30b9b20ff57307080fb288faf067bd2a86539194fd62c812a59088c021f27003d35ab7922b6636f218bb282d39b5f3b14d8e58a7e53314007a6403c0964b32527d24d69f4189eebeccf60c96194e3b9bf7c375508858427a4cdbc96ac3308ede79b6a002a1042b9709998322ca5c6a420481a",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Mountain Dew Baja Cabo Citrus",
@@ -1027,7 +1027,7 @@
         "id":  68,
         "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-mountain-dew-pitch-black-330ml-3-200x200.jpg",
+        "image":  "enc-2b156930f52df7466fbddbe8e9af0ee6-42c3f5c6b012f22a5fcb28600d7be1689ed41a255a49a8ed483b6f19030c90db4162ae1f390115bf7574c9db92cc34105d275dcdf5205dec926d1a9dd88799815963c1377f5c60f7b46edac368b08ca442acbd67c24ce8c9f313a6a459074fb5e28ac213b0c72981ca6ec9a03afac1b5b7631e30437a2e2550d155ba452c11c71fc374c1e7c2423403919d41df49c51b",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Mountain Dew Pitch Black",
@@ -1091,7 +1091,7 @@
         "id":  72,
         "name":  "Газована вода Mountain Dew Zero Sugar Цитрус Без цукру",
         "price":  159,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-mountain-dew-zero-sugar-330ml-4-200x200.jpg",
+        "image":  "enc-5b2110140a95f4ab33b66905e3a082d9-534a4dd1a2eb2820ef065e50c860f25e62169df01b857af476ceca90983296dd76c9ce739e84e669323485005c64087846776053dffa0b5285ad299fa5ec2405bfcf35020d7a3c4e92eda5444ee47a24bf7aa28673b70370e2dce2331a002e2c5b61c64b7d651f1deac67066e32ee61bc6a3eb01d91bb66b0ef462d65bfb27aa",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Mountain Dew Zero Sugar",
@@ -1107,7 +1107,7 @@
         "id":  73,
         "name":  "Газована вода Pepsi Caffeine Free Diet Дієтична Без Кофеїну",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/693b231e1944b7f9-00012000008184-C1N1-200x200.png",
+        "image":  "enc-90518a937773f7ad0c1b4aecc44eafbd-02111d80ace16ef8145c9e275328169f6ed117d883c58f30268dc601b23848bc47548c56717ba3918fd4993cc9ccf70b56bc77e33d82a06b8a90f92c6c706f5304f1639fb428a531fa7d86892bfd9da2ccc946b85b7c5d44bc4e24e862f3bf8f",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Pepsi Caffeine Free Diet",
@@ -1139,7 +1139,7 @@
         "id":  75,
         "name":  "Газована вода Pepsi Gold",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-pepsi-gold-235ml-5-200x200.jpg",
+        "image":  "enc-ce0d7440db64201b94fde5232290f39d-e511a6b98f78325d1021de61978d7b88cbf40c85d5415d4256622e92f3f5d44adc0177d17e34a459c9574f321765738d1d2f56cfd904715c32f63258a07ac903a8f4b5c628f0648d8c4c93a03572c5b64cbf243dd1f11fa948b66143a2deed4192566382209e2d8e223a122fa101b90a536772ea745861698afb59ec914469b7",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Pepsi Gold",
@@ -1187,7 +1187,7 @@
         "id":  78,
         "name":  "Газована вода Pepsi Strawberries “N” Cream Zero Sugar Полуничний крем",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-pepsi-strawberries-n-cream-zero-sugar-330ml-1-200x200.jpg",
+        "image":  "enc-082cd5cfb02d1e65d00188a488965c34-ac0cc3c0f8cfdba3586e7ab942dbcf940bcea808d06253367717c44021a6e024991a30536cdb893cab882f183f2bbcc3dfc99a505ffdad6d097be4beec3a6b71d33d259120838f9bc7b82534bf870af6adae87d70c66f51d9a42b5d2258769d04a91d48b360e56c32e69847cd97f5539b3937fb122f7efaa7bda83903695c7c113428e7a51188555e7c93d1ca726109a",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Pepsi Strawberries",
@@ -1267,7 +1267,7 @@
         "id":  83,
         "name":  "Газована вода Sprite Zero Sugar Mint Chill Лимон-Лайм",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Raznie/gazirovka-sprite-zero-sugar-mint-chill-lemon-lime-1250ml-4-200x200.jpg",
+        "image":  "enc-8f84bfd61fcea61bf2e841f1c60de75f-940ffca3da18d420576a1099056493f5aacfc5a98cc0a23a86ec63d84f922df4fe1631d159bda46d2b9015796f199730e897d8b9f6d122731ea88fe463bd9569d2ac094291aa7f3061ab962a179abafd9239fed0cd345ebfa900b0e11d4459dce57f45a42f4c5c32bc6771a809d9f40f51521625f3f18b38bee92456cc225744f9f200234032304d964b044a276e5886",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Sprite Zero Sugar Mint Chill",
@@ -1395,7 +1395,7 @@
         "id":  91,
         "name":  "Газована вода без цукру Fanta Chucky Forest Berries Zero Sugar зі смаком лісових ягід",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/7777/fanta-chucky-forest-berries-zero-sugar-500ml-1-200x200.png",
+        "image":  "enc-1362f33fd9d0e2b14252fa40f83b0fc1-62f01a8bfd8b15366cf8223079aa1c3ff9ae761683359ee9d9256264e0869e3c2d9214a7a31cbeb1a9b84297a637f8c8a2234a38aaff263c2be7c69551a3dcf95a88c19926bba53e728a532a5c198f1b5ffe6cbd50817c1b1f3ac50845b8a482585b776a4f584f9a77b519c8b70125dd189e15ad3dada4fa8dfbb463985e70fe9337b7b46a16831467f55e35bdfcdb3f489566b9f1d15746bd1743a10d06d2d6f30b01b647119df76beeaf81d97cf2277defc9b27adcf24016d0c2ead2e87e50d13bada3b2f6b60a196023131dd424bfb37fd4ddf1e1193657a321f2ecf32fb40f22c9230bce459edd902a3b07f26d43",
         "category":  "Газованінапої",
         "details":  {
                         "brand":  "Fanta",
@@ -1555,7 +1555,7 @@
         "id":  101,
         "name":  "Lay\u0027s Cheese Cranberry",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/Znimok-ekrana-2026-04-07-o-120023-200x200.webp",
+        "image":  "enc-3b0e11e39ef210d2bef51d1d2d56fc40-415a4b0a0740fbe6e6caed793313eaeda7f8d99f79deb5d46dc4dfa4129aae4ad9946b565f52c12711881937d3ef6d8deb4cc268ab66b4db3413c90f227f18dd21364244dbc5ce0b845a3a4f391be432d54097bf3e1d1eea8f7f77f0826720eeb28af3b1cc3e5af5c9857d910b146851",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
@@ -1571,7 +1571,7 @@
         "id":  103,
         "name":  "Гігантські снеки Spicy Snack Shuangzai Super Large Strips Гострі",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/other/asiaFlafor/Asia3/spicy-snack-shuangzai-super-large-strips-2-200x200.webp",
+        "image":  "enc-1fc29a6ba9a047efea5fe7cfa26f09d9-98a3b8ad6b726bfdb9a88d37af36401f8be941871c6ccd65655bafdb3d403a219a028953e1af958bddba0249b72e2becd22797b8cf473bd53335c4a9f77c46bd459cd71adba0647adcfde361f76fd64c9bb36fbe6e7918b975d5a9eb7a03e7aaba6867d6f87985292136d011825715a3ead8239e3336bf95e706a0edfa39ffad",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Spicy Snack Shuangzai Super Large Strips",
@@ -1587,7 +1587,7 @@
         "id":  104,
         "name":  "Гігантське сухе латяо Xiaolala Spicy Chips Indian Flying Cake Flavor Гостре",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/other/asiaFlafor/Asia9/xiaolala-spicy-chips-indian-flying-cake-flavor-1-200x200.webp",
+        "image":  "enc-43fe522e018688c51a18612891e69cc7-6b0c92307043ce6304f7b0c85cc1b44d3f5aebb3d8d78ede19162d9b61d4d561cf418cd707b7591fd6554a37f70c9f14208e83f9844156cf64191695401b1d39056ed7f11f49a6cc0c7f7ae41c6e2b224c6a2c4274dd00fe923894fda0e45067f75a437fd6401d2d3c3a4ab014ad9e5a2d48d0c532c45493e97a3fd53251648c90f53c1efdd4dba4fb7752842d805958",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Xiaolala Spicy Chips Indian Flying Cake Flavor",
@@ -1619,7 +1619,7 @@
         "id":  106,
         "name":  "Горіхи Takis Hot Nuts Fuego Double Crunch Гострі",
         "price":  219,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/oreshki-takis-hot-nuts-fuego-double-crunch-90g-1-200x200.webp",
+        "image":  "enc-f9584fb72dd05f7d569c0df30a108c13-31221bd7818230971104cdf401f1c9a9dbb892b1fcac26d889cd5b1296a831c52c89611f7a84c6f99aedfb872220e80ba52851b7263dca75e63c04b61c1f411b77fd8e17a6d30751f4a6f0ddfbfb652d8445fccd8673252a5896cd900aff26c79ca34bcde0e814f377f537c0d869cc0123f8428f3a12090e8e4a06b51c0a2c249768ceb56facad16e5c26f656923f194",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Takis Hot Nuts Fuego Double Crunch",
@@ -1635,7 +1635,7 @@
         "id":  107,
         "name":  "Горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Italian Red Meat Sauce",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-be-cheery-x-lays-italian-red-meat-sauce-54g-5-200x200.webp",
+        "image":  "enc-d0b0e9f6f3b42a2136caf25717796fb7-5f18766ee6659d612979f8dedb90817848cf17fff7c2613f11233b1ada3a4c6b02efb7f2da2f58ed78ac6a7a981dc75cac1fb4b72cf1ed00f6ebf6e86ccc25071edb0b5e3590d98bf8051620561c594926d2843242c6a5d415969c5474d3f4a11f7e03633011450120473aff2670a8a5a184e9a4f5637ab1ee8a1f58c37e22fd10d47a3cb7a97fccb1fd38b26a7020a3",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
@@ -1651,7 +1651,7 @@
         "id":  108,
         "name":  "Горіхи Кешью Alesto Selection Cashewkerne",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-alesto-selection-cashewkerne-200g-1-200x200.webp",
+        "image":  "enc-61cb0b12e8f11edb028a3e203dd8971c-176390433f6d8ccc7b02c7e1d52823030bdeffb52ff93ffc0003080cd2113da8cf0319d40d0f67779ab963784bdf2e2605120704cf3812396ac7350bda628208bc5e3abf6940e79a464cbafb60d469b19adb4cec3a0daa2399520d71de38449f02e6c8d2b664cb173022070bef5ae5110c32eafc413473e01dcb7efef5ace0eb",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Alesto Selection Cashewkerne",
@@ -1667,7 +1667,7 @@
         "id":  109,
         "name":  "Гострі горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Buldak Spicy",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-be-cheery-x-lays-buldak-spicy-54g-3-200x200.webp",
+        "image":  "enc-24f56b53a682080f688b33975a0d6ac0-17191e40e66329a1f3af4e0ab900f6ad6a658a5b328f86f84ba93aee11ec2fa3a328c359a3bd40819b90a733d5b1eccf70cbd2a7da91aa611a54bf7a8640ee2908b24c66a743d97193032a0b70cc6ce937840960378c61297d9bbbf76663e40446e1c133b341df1d9e8ae2afe733aad9a3f22e15973fc14a00f5c94166cbd2ad",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
@@ -1699,7 +1699,7 @@
         "id":  111,
         "name":  "Гострі мариновані водорості DD\u0027 Classmate Kelp Knots",
         "price":  49,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-dd-classmate-kelp-knots-26g-3-200x200.webp",
+        "image":  "enc-2a18014eafb1f1724af5c585dc3d7061-c615839a4b66e4f59aea48289c0c4040bb1d4bbead3bd99bd26c8ab4a74635172bdf18094e3c408e1776d785852f1aabab657324667d1fb8e2af426224febf8ae5f1b4814ee330c91012eb6eee7aeb1bf5469605095eca0472f8621bad3eefda324566cd9866e4c96be70dbe31dcd784535f45157e6a640b63f8c24c7fcd5fdd",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Choco Yummy",
@@ -1715,7 +1715,7 @@
         "id":  112,
         "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак",
         "price":  49,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-05-11-16-04-54-200x200.webp",
+        "image":  "enc-292db01b448a1f33aa27b7d09d204a98-cd02e899e52c16a612e75cccdbb5c749720ec35c6fe69f767d655ea3c415bbd739b188c082df67d804831d39e8de6a0b08df0c11cef4bd1fcfb5bf17566b202c7f4a70c9a473268b106b392ff18dd8a975068d468ec080670c97e9b38a2bf0d9",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Da Mowang Konjac Hot",
@@ -1731,7 +1731,7 @@
         "id":  113,
         "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак 20x15г",
         "price":  799,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-05-11-16-01-15-200x200.webp",
+        "image":  "enc-ac3ffced0507efe929a70bec422ee310-57321eb5a22d3619039a7ffb995717a1e55720ab802d05eacab55b4f985a864b9b52b6e98def9cc3327ba8eb21015ea1074cf7fe9862846b0e66c1940e61f4e0a846e02ab61215e01d3d841e334b7531bfe47b85e80ed114b1c99f13982b9ad2",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Da Mowang Konjac Hot",
@@ -1811,7 +1811,7 @@
         "id":  118,
         "name":  "Гострі чіпси Samyang Buldak 4 Cheese Chips 4 сири",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-samyang-buldak-4-cheese-55g-2-200x200.webp",
+        "image":  "enc-6e1ec63583ccd730292a5a6ce1683534-b961534d2633853b6ab80ce1631f2bd62cda9b418639bcb49af75f43784df1abca08eef827a80c708eaca108d63f85b4da6085a68e04056a7e11560638e5009eb5fe35802729ac956a2f8adf99fffd215ee6703ffdee0062049454a08cffa65278527613141c59d098669c00b9ed138ca0cf41fb7d269c811e101d96d8f3afcd",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak",
@@ -1843,7 +1843,7 @@
         "id":  120,
         "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро з Лаймом",
         "price":  499,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/48-65/06-habanero-lime/samyang-buldak-potato-chips-habanero-lime-0-200x200.webp",
+        "image":  "enc-dea5430a0196508df23bdc7b4458dd25-faed83bba1d42afb17f09112876ac37722bf39b2f2cf5830d6ffa3e2e3705c0b35c20f9bee8a7c49e68f973012c72d8748bc6e51ebabf551b415c7f67d1290718ca6efa0acbc07be599b996a0267e8d01891bfcd633f3f81210fcbfa5bf7db8d2c3fecdb696e9a169825cc8f1b71023710fb378f3b42b75110fda298bc7f481c9eb2c02e69055ffed5bed1caf005c83f",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Potato Chips Habanero Lime",
@@ -1859,7 +1859,7 @@
         "id":  121,
         "name":  "Гострі чіпси Samyang Burduck Chips Original Чилі",
         "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-samyang-burduck-original-55g-1-200x200.webp",
+        "image":  "enc-d7b0072061bb8e868455f628dffa3731-8adfc5234d800da3c967bec0c0a295bdd34d8dc8f4fbb2965fd700c05d04961650321fed61508a4dc09e560bb4d9e694e9e67db7db4b0fbb1efb96bdb64cd285d11381612a12c703646fe884818592b49aa899ca1aceccbe021537fcd701d13763c71faa5e63d0372956b97b75a96b2d7afadc8134ddb2237e652587a145c7f8",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang Burduck Chips Original",
@@ -1907,7 +1907,7 @@
         "id":  124,
         "name":  "Гострі Японські снеки Tohato Demon King Jolokia",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-tohato-demon-king-jolokia-90g-3-200x200.webp",
+        "image":  "enc-95a9f89aa0826171947b7cd3d152f199-70740ddfab87b3bf138a55e32adecd8b62e0e6c0e51f842c8271feaabac96da7363af07d30b79a7824d0d0f4b98fc6d58bb22d7f87a2ae02175da68788dc564f96b7cfbe2a06f47de23466d0c7bbc7ae21827167a423e9a6e6e8ab058d0dd62f6c99263fc9ca5d87bdcbcd1d78b0029dbdd8e40df39145e0533b61e062001f86",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Tohato Demon King Jolokia",
@@ -1939,7 +1939,7 @@
         "id":  126,
         "name":  "Гостра Локшина Samyang Buldak Habanero Lime Flavour Instant Noodles Лайм і Хабанеро",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/lapsha_samyang_buldak_habanero_lime_instant_noodles_135g_2-200x200.jpg",
+        "image":  "enc-bc448e5374764914db39f0614844569e-ea8b05b32810ab772478d4da7f4a01d8ff339549e5b56eb59f1994a621cfdfee17140d4bbaf0c1469e13a5db9e685266a26e65c340d1d53869d712e596d1a00c320d55f1f9f1f683c0d431870052aeb980d1397534fc27f6da72326d410e06a7375bdc8c52135662728c93de3ca1b61ff1dd42fdca8d9c749dbfdfab8984eb577bfeab5a6c28ad2cec9105fe3aecc1ec",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Habanero Lime Flavour Instant Noodles",
@@ -1987,7 +1987,7 @@
         "id":  129,
         "name":  "Гострий снек Samyang 2X SPICY Zzaldduk Extreme Buldak HALAL Булдак",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/samyang-2x-spicy-zzaldduk-extreme-buldak-halal-80g-3-200x200.jpg",
+        "image":  "enc-74c141a73155d3bbf5ee75f28e350657-4a6d63d3bd9479653d8cd8fe5008544fe4f280e2072cc5d79d18865b0734500b0f123af385695730f4a7f23a6f8c86c9806a9c8d34036834f5546421895f73e55fce134568dd8989112b1a7f6124ad3229fe4c8dc1e365658fff7a01bd8e7a0debb42d850fa0ab4ea0a4872041ef19b69a1a4f863f037d625b2d015b0b66526663fe07772c35b7eaad245e41de4090bf",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang",
@@ -2003,7 +2003,7 @@
         "id":  130,
         "name":  "Гострий снек Samyang x Yanjinpuzi Buldak Da Mowang Konjac Snack",
         "price":  49,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-samyang-x-yanjinpuzi-buldak-da-mowang-konjac-snack-18g-1-200x200.jpg",
+        "image":  "enc-ddba8f50d3194e36635b3cbce03f24a8-0d60ea6b09ee97adae86427fcfb217ed550a30bfa2a0a20b4bdee622378d596cd95c28e43595adadf797727fe38b1b9dcce732a298fe4e9c20325557b8e1eafef32584149423c375f7fba708eda90cae0be4e6908240d554079d7db3d06483131b1dacc6fe71ee321b064238e8ddad190f7dc2eaa2e3f62c3e401f2d9e24f411962058c30ff91db069f013a85c69f8fee0e6b444e02aa5c292f346f1e53be7fa",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Samyang X Yanjinpuzi Buldak Da Mowang Konjac Snack",
@@ -2035,7 +2035,7 @@
         "id":  132,
         "name":  "Гострий снек Weilong Konjac Shuang Sichuan",
         "price":  49,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-weilong-konjac-shuang-sichuan-10g-6-200x200.jpg",
+        "image":  "enc-f8509e9d4ad6efce8638f7c31ca7c212-4cea1fb0ae0cfac0a7ef819409bdfe4ecb0232549f32e62c505d892d5b33028d3b1e1459fc79efafadfefef3a69b622d3f336f58f7756852f5470aed9ae1ba0a6b1a682364979d1de92490af2d1d9bdaea45798bfdc0a6560737c76f2b9ba159f8e4c0b4bf2cf4db049668c9e053e0649f23f1160c8fd13992275c67449e9967",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Weilong Konjac Shuang Sichuan",
@@ -2067,7 +2067,7 @@
         "id":  135,
         "name":  "Екстра гострі Чіпси Takis Fuego Hot Chili Pepper \u0026 Lime Extreme Spicy Tortilla Чилі і Лайм",
         "price":  69,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy_takis_fuego_hot_chili_pepper_lime_284g_2-200x200.jpg",
+        "image":  "enc-7d009da8194bb86acde52447cb08b476-154cc7d9192664eeddeaed3fe044d09eee9396f1bb4b352b3aff0aeb66974e9b88046e32aa40903fc57bf167dfc0b3231d7a669352b7e0e840c4233847b605f2f0354539fab8c09745402fa663431bca02cdcd8767ccf6254df1450d5dad662384ea267c2a4a278d059ed0c2baa94a60ce5b7b6fe1b702c1d21fd6e6604cd143587da3e1609f24f59b32995e025c7982",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Takis Fuego Hot Chili Pepper",
@@ -2083,7 +2083,7 @@
         "id":  136,
         "name":  "Екстра гострі чіпси з перцем чилі Takis Blue Heat Blue Chips",
         "price":  379,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-takis-blue-heat-blue-chips-fiesta-size-200g-4-200x200.jpg",
+        "image":  "enc-cc91fe7ae02c29c12efea9a989b8dc70-288f44fec73e6eb113409420098a57bfd0e6fbf2a8be205e0ea56c6fa0a830103cd04062c6539536bb2d9f58ec69050dfc36fea3acd4626b8fed66f8d77bcb2282f5b4a99319e583036dbf5b4edd516dfacc6392d634664b805fa78808b77e1989bdc99c01241705ebe8889285517f09403f9a63b4e557b5d972792fa49cf8411f5c78db62bfa747bbe1509a75e9d4ff",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Takis Blue Heat Blue Chips",
@@ -2163,7 +2163,7 @@
         "id":  141,
         "name":  "Жувальні Гострі Снеки латяо Genji Food Latiao Spicy Snack Велика Упаковка 40 шт",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/other/1-20/Latiao/genji-food-latiao-spicy-snack-1-200x200.jpg",
+        "image":  "enc-8e44a401539771f77c60febfdc70b87d-ceecb0eff9eca1f548fae66188836143d8817d4aa4828898117f0ef23de9be1b058dfe3eaffcb7ba5458a4d626e27db4f0d550ef60cce26b2024d3172d837e8d5ca7064bb211de46a2f959cf478d9302c457dc536b6ee49cdf441a13b556beee75aa22f8b4ee4556bb99d29dc7ce760a",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Genji Food Latiao Spicy Snack",
@@ -2179,7 +2179,7 @@
         "id":  142,
         "name":  "Кеш\u0027ю Planters Whole Cashews Dill Pickle",
         "price":  429,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/keshyu-planters-whole-cashews-dill-pickle-142g-2-200x200.jpg",
+        "image":  "enc-558f54c5b31eb767808741e536d9c785-c0c33e21eee90ac888bfc452037307d9773adfd72a32b60743a5670b5d18266fd690c2f0756ce11dab193445c28daa3840bb014bc73bec64ea1abb84e62d2a5e6c673012de2893d23d9ba46d984d8dd032e5b0e52b85e619cd9252253256169fc52dc626a361cc52cfb59033a4ef9773e3712d130cd84ba8c8744d4d65d97b14301b2f9eff87d88090849eb2a928095c",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Planters Whole Cashews Dill Pickle",
@@ -2195,7 +2195,7 @@
         "id":  143,
         "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі 10x18г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-instant-seafood-spicy-baby-crab-10x18g-2-200x200.jpg",
+        "image":  "enc-f82e030bc57fdda6f5c33988b93c4ce6-038695ee64d7f1f0078ae7250feb71666c4937dfe535325c82b9c01898d52d63a57444151672e113046577e48c28b8bbb6676992b2dec443fb01a1b50c9cbf2a9ff7cfbbdaaa5c711b3915c905b80d0429f9072eec833779cb78bb2754af64202e8a253c93b0021a657ee889fbf0d6acb666590963978de75cd8b68ed995214249f99f6da960b47a835ecd5fa6567f77",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Seafood Spicy Baby Crab",
@@ -2211,7 +2211,7 @@
         "id":  144,
         "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-seafood-spicy-baby-crab-18g-3-200x200.jpg",
+        "image":  "enc-a4715b82d0f8b7a21e3ab29270b3eeca-ca752054c4f83c72d5e82544fdf4e71309e5f56a184828165c762ee27d172c40795ae4fed583247c2d6e1f6112c007f517d6032cfa378ddb669007c72f9acedb3b218bdc6858c73bd57f6550b4a4517456e1a07300666a5460f074eb250fc3c4d5ced12e35fe46513435e5c10202ab0c7bbf5e961e4a811ab0b367165d609d4c",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Seafood Spicy Baby Crab",
@@ -2291,7 +2291,7 @@
         "id":  149,
         "name":  "Китайські чіпси Lay\u0027s Cucumber Огірок",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-lays-cucumber-potato-chips-62g-1-200x200.jpg",
+        "image":  "enc-4a203e1ebea230f281c0ac818ea871d2-3bec48ac79a66ffce33e002cd107b4c8f852fbd4b8c517bca19ade264042d23394d072c89ba3c2820bd28e78db091feae827bc2e3b765bfe9cc186c67dfce3dffab0db330b49a0d8c2e09d6f1fda21e0cdd45b17f199481b377d1fc6624b6e86537502ded252f07b5f2c9b74950395f50396e552b1a1cceac182ef80af8d6dba",
         "category":  "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
@@ -2323,7 +2323,7 @@
         "id":  151,
         "name":  "Набір-сюрприз з печивом Stitch Mega Surprise Pack Cookies \u0026 Games Стіч",
         "price":  119,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-stitch-mega-surprise-pack-cookies-games-10g-2-200x200.webp",
+        "image":  "enc-f989e075f9c0fdfe028f555a2e7a8b9a-c68e6746e62b11a06183162c9d30843adc7cc6a89614cc54ab7021c1435b26e4a5febf375901dbcdfbc85c894b027f6b2fe5196a8af36e04ed692f977065fe525f9ad1a41334ebfed5ca39cff010d6ebccdc1c3eb7fcf5ce0592c90d4e4dafd0f021364996c609e7cfacc219633f686ad7cdc5e5f525c533c3bfcaaf271f4b328cdd4fd492ad04faeb71f373929046b3",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Stitch Mega Surprise Pack Cookies",
@@ -2339,7 +2339,7 @@
         "id":  152,
         "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Skye Щенячий Патруль Скай",
         "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nabor-dlya-pryanikiv-gellwe-pierniczki-paw-patrol-skye-350g-1-200x200.webp",
+        "image":  "enc-b0bba64e74e9f69875a01a0b702c72f4-834bdfb57c796d50928dd6a2145eae5be9ea970447168ee7ba554f2299f68b70536df6637b51651e036c150c080704b5129234964fba9f4b3fde5176ac34603351b71380a21646bbb33ba99969234d4f70798aa5e2af4bb3f714cfa59a4b6b94804ea981577b4cb8941d511fb1bb1f5cd2a5f54d305a18869351848e2dce449cb8c30b13d6a57654f7ea865572a98b60",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Gellwe Pierniczki Paw Patrol Skye",
@@ -2355,7 +2355,7 @@
         "id":  153,
         "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread",
         "price":  649,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lotus-biscoff-milk-chocolate-biscoff-spread-180g-4-200x200.webp",
+        "image":  "enc-fb89f7d31ffd8fd3daf95756a90da547-34967265f88da945e2a53ab8910ebac2fa392eec293cf386b13c35e8bf64efe86fe20bde80cadc3452392aac72b1bdcf3bb5d0564859841cec1742a3726c4914f3c495fad4f24342da2bd9eb4ee443469bb7c6e6fadf906ea22af5b3416ac01ee76348b7e6861e53162f84b1513cbbb2f7b645c212e9b30befb180f2bf943f3c2ebe025ff53084787ac836b677fa895f",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Milk Chocolate Biscoff Spread",
@@ -2371,7 +2371,7 @@
         "id":  154,
         "name":  "Японські палички Glico Pocky Luxury Milk Chocolat Молочний шоколад",
         "price":  459,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/palochki-glico-pocky-luxury-milk-chocolat-110g-8-200x200.webp",
+        "image":  "enc-a18bb09cae66ce9931dcdf6ae1517f5b-0b0504bdba2ed3a7c6cb7a474802bef1ec9364a8a23e3ae9e1712452646ed84ccda34c96fb820b5d7f277303ef272aa39c9d256cb19f37196917e1a0d88a8239235fb37edec3975054e596988c650ff6a769520c13f368f2ed71d8ba3191b5592e0ce707f977031879baac9b1a3400871061c6f01b9741fd6e8d7fa936bc4bda",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky Luxury Milk Chocolat",
@@ -2387,7 +2387,7 @@
         "id":  155,
         "name":  "Nutella Biscuits",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nutella-biscuits-193-200x200.webp",
+        "image":  "enc-7e353bc1092cae5fe61c37b73edf97c6-402596a0a1d43bd9a835129c7052b69547cee6bca890f7091decf93730cd5dede49cb403100dd82bf802d18468fdc3839b6fdbeca604070584f58d9109add9241e73dcc5bc1da89b2efc3fbb66fb803445970dbc1a25f904261932c8c72ef84a294e6e9301673ab539db9bd541feb955",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Nutella",
@@ -2403,7 +2403,7 @@
         "id":  156,
         "name":  "Nutella Biscuits",
         "price":  349,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nutella-biscuits304-200x200.webp",
+        "image":  "enc-8d1fa33fd5207e599a2ae9cbf30cbd21-ad10527be22d088d1c0c9eac244960b20e02e585ed5644affdc1461264670dd67cd91719ffd21c5942258400ba8000b91a57018359bfad1d6e2a57a3b2091111e4e11c30b26cacd9b16dd6a605129c1e2c234e6a3ed685f5d2c2515a4ff6f1ae53cf779e63f0017373e83a70f32209c5",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Nutella",
@@ -2419,7 +2419,7 @@
         "id":  157,
         "name":  "Їстівні Гроші Quintin Sweet Money 14 шт",
         "price":  79,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/dengi_quintin_sweet_money_14_pieces_1-200x200.webp",
+        "image":  "enc-798403076e0dcfd8017dcd40f39339a1-4b50d47d291e47026facf785e02ca321f1e9607c7009e53a9fb759ce8f088575e4cfd9ff5d7b2b7027cb739a7ae303701e6e57f2edf68c7aa85f17f5719e679fad29658d0bc9b14857032fae846f0f48959a288a86410499b264990f9c1f7c6b8f5f86daa466b91b3776d14069ef0cde5dfd4010af84e463b0b56787f653daaa",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Quintin Sweet Money",
@@ -2435,7 +2435,7 @@
         "id":  158,
         "name":  "Їстівні шматочки бісквітного тіста Hostess Twinkies Cookie Dough Bites",
         "price":  219,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/testo-hostess-twinkies-cookie-dough-bites-88g-3-200x200.webp",
+        "image":  "enc-f0750b3cf266d1f4dd788d746ad7a917-72ebf27ef582881ddb991a1484b21b4552ee70d108b2d4647f73a7187709b7ab4029cb5cb7022640ece65727556f6ccdcef6a620b0bb59f8fdd103c5f912380fd5ef6e86c64c3113cd36c78c5f1e7b318d6219ae835d42dceae5f1dadc91f8e5e889f2d426d60728520d4d7c0b16abafa0738cc606fff4d02e2a1e7bab7a929c",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Hostess Twinkies Cookie Dough Bites",
@@ -2451,7 +2451,7 @@
         "id":  160,
         "name":  "Італійська панеттоне Bauli Panettone Cointreau Крем Куантро",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/panettone-bauli-cointreau-750g-1-200x200.webp",
+        "image":  "enc-c625c95cb56f523865452e72736a27e3-aed605cd4c9c0685e2fd0c81accb46e35874eb3eb4933a8ee47a19ce6ae56ce11bb8e976be1556ee1b1b611b5f38bfff1718c58b710bf8b92c827997e59d2ffc88518d1c4cd38b4800417fef6cdf44f49d9a2cc1e5315108ba74ac4746ae5706473dd47e3b3b379cb1825de37b23f523",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Bauli Panettone Cointreau",
@@ -2467,7 +2467,7 @@
         "id":  162,
         "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Яйце",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-pandori-luovo-550g-4-200x200.webp",
+        "image":  "enc-b77c079fa68e6d41c89acbca3d8ad0a9-3ba6e5299a89d8568d6d8eebe8a37548abd694e1e75328aa587bf4c0dff0be39fe7ea89c2c64910315c6b505252995543885aca0738459bf72a0b4228741ff0dfeb21938892ac18d6e04787f1c6c6a81e18e3db7d6c4b8e8cf9d183ea259b271e6f99f37885a5a92e688303ed3e88977673f30d4c74a999c6175d0ff50585f36",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Bauli Pandori L",
@@ -2483,7 +2483,7 @@
         "id":  163,
         "name":  "Італійський Пандоро Bauli Pandoro Di Verona Lactose Free Без лактози",
         "price":  699,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-di-verona-lactose-free-700g-3-200x200.webp",
+        "image":  "enc-17b71f579984cbc0acc6815f562cfd0a-0ad1c9596e7d877a3669a2b834ac2554e853860e8462635ba446147eb61298cf87bb80c3ea78dd82ee9bf3c012c2f1245d88d53f3b0588a189f2b3b3ada41f5250214fa4085789b5d18be4868e2201ff9f3e49151ba7daa24161d60d9c246651fbb2026a515e03602d02f69c9ecd122a15b5ce2af8ae8da99006d8e28a58fe2b",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Bauli Pandoro Di Verona Lactose Free",
@@ -2499,7 +2499,7 @@
         "id":  165,
         "name":  "Італійський Торт Bauli Torte Bavarese Баварський із заварним кремом",
         "price":  749,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/tort_bauli_torte_bavarese_700g_1-200x200.webp",
+        "image":  "enc-f83b296d7d922bf6b46f2784598fb0ed-12b69d0fb5be6d0893c483f86065bdfd7b26300fba325bbbd6684899e20480aeaef3dd594e8bb1729ba576a00cb4dc104fb38e75cfe604be86d67814e8fe76db7cc17aac186861ed42f5516a17515467099ed4e6344ed31aca3ec59eea48a90152310fd622d6b6482446f5d286780a8d",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Bauli Torte Bavarese",
@@ -2515,7 +2515,7 @@
         "id":  166,
         "name":  "Бісквіт Hostess Original Twinkies Ванільний крем (1шт)",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/biskvit-hostess-twinkies-original-38g-1-200x200.webp",
+        "image":  "enc-3d5b8084371380d5124cfc7bb25334f4-730f969abbfbc0fba096d97202f86623512816cd774d81a561e03bcb58af717d0d4eaafbcedb570c978ee194c82acedcb7d3207470443b557844d82145b4852d85c44f0df9040d63f57d88a3df21065320661f0d68469f04e061b12b6b430a437c6cfd9703cb6cc64d623d3184204aaa08dc4379940eea8810bbc9347ff86871",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Hostess Original Twinkies",
@@ -2531,7 +2531,7 @@
         "id":  167,
         "name":  "Бісквіт Hostess Strawberry Twinkies Полуничний крем (1шт)",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/biskvit-hostess-strawberry-twinkies-38g-2-200x200.webp",
+        "image":  "enc-647b42a9b48e104b731dbfa090cab87d-3286782efb5095248520d8ae07dc34af37229db742226b0d19071b23363b74ef25f8db1238dd3e501955540f1bd732761d21fd5ca5810cd0441c3fc2ff8ab5ed1582bccd14bba4af91eea6abee6893b4fc209732ca6548ce362ae250db85430fc39e9428d2fe0eb7f9e1bf09bea8052b7af8d29617e6c09177cf1587352104ef",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Hostess Strawberry Twinkies",
@@ -2547,7 +2547,7 @@
         "id":  168,
         "name":  "Бісквіт Kinder Pane Cioc",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-panecioc-290-200x200.webp",
+        "image":  "enc-c8892a5017e6f5d71391628def09c0e6-8b5399f52db1b7a2824a1a438fc0f89ea8291630c9e9c86183bf4012667f5a5c3fac0e73f0e2d922d4165a6e8c3ee2bbd759734f8f35ef3e959f6a17be347da28a5eda779398360c09b007ca4674f61a542772d968757f0cacc0d2b6cffed984319342cc88ea4dd1b2d99f3c6edb3758",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kinder",
@@ -2563,7 +2563,7 @@
         "id":  169,
         "name":  "Бісквіт Kinder Plum Cake Грецький Йогурт",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-plum-cake-yogurt-200x200.webp",
+        "image":  "enc-c1d08148c49fb4c6a46becb479cd52d7-e99b1b37a944d9275b6c3ee8aef331930dffbd1549e511f2afa71bf65c60391ec5c9bf95e23e4bb3527352be1dbe1ddf4ba8000324528cf2fbaf9358a3ea2b639390ca52d2e16d8b595867b1ba2797bb4f530c50cc365b933712f5cad6154b2e89f6509bd96c5fd3aae57949c0427436",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kinder",
@@ -2579,7 +2579,7 @@
         "id":  170,
         "name":  "Бісквіт Kinder Plumcake con Carota e Granella di Mandorla Морква та Мигдаль",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/keks-kinder-plumcake-con-carota-e-granella-di-mandorla-192g-1-200x200.webp",
+        "image":  "enc-373353967f373e5e590c683e12d41ae7-f7c3f53853e4fe4f121742af54355746648b74869692b1f789606731743589e201a5e50af8a2741a60628518aedaa061460b37e4cb48fca43e1b50c8555127e30c2bbace90b40b48d386618323ee3ba45816734e5d97532a983eeedfccb8670f6a4f3606fded33bff42b643fba2dcda8d697d096d2104ba06c6087c9537e5e95ed0ad268792fdf75058e43bf015858f1",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kinder",
@@ -2595,7 +2595,7 @@
         "id":  171,
         "name":  "Бельгійські вафлі Everyday Liège Cocoa Waffles",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-everyday-liege-cocoa-waffles-600g-4-200x200.webp",
+        "image":  "enc-68e4d2bc4d2744d8bfd742c2828e52b4-b6803e71aa45a2b88f62b8f0cabcd8b3155095b14b4f12fc1bd2a73abe7d9a80c0e98a91b2fdf4bde4e4dc2be0fa8e5f14a9d1f5183fd4f44985edcc3944887c5cc94df40db5cfd3ac03622d6b882a5f25058ef5c2e1d4a06e78d5a9a2d1845099dc6a8ff92507f81777fe2df6a96e8665f60911d20ff4f32fcccaa3283fab0e",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Everyday Li",
@@ -2611,7 +2611,7 @@
         "id":  174,
         "name":  "Вафельні батончики Knoppers Kokos Riegel з кокосом",
         "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchiki-knoppers-kokos-riegel-200g_1-200x200.webp",
+        "image":  "enc-857feb47a326e8143b87b582d943b4a6-490c34d52f81a3f6ce2416dc7f2ca485309dd8a404e9366d214a68e86cab4ec9216c266c1972a30fa63c5e1106a98edcebfd82c59ec02c16b9a70ff64173706d22fb9ca71c4fce71c0dff03c4137eb9818626518fd71a3600a04f825c69cce005469d0cc2053513d0ee03e7e8fc58679e9ff44a0558f12cc969ca788272106a9",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers Kokos Riegel",
@@ -2627,7 +2627,7 @@
         "id":  175,
         "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-sticks-dark-chocolate-139g-2-200x200.webp",
+        "image":  "enc-02100dbab7c7ff338e33a7f312309a1a-f3917d48997e6a1a552195ddbc6808daa91f80f88fcb26ef1861ffe49247b11756796ae55a97ce64d659eb6d6d7d322b25ee3458866eb9d6f9051e0dc288fc87b763950e1af44ef2bfa9ae91e88ed25600f97af838e8f7fdf9296465d060c9ca23bae5b1b94adbf8124d39f3ec92ec3e9da5dd0f90c9afd23a2a080827a087e3",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2643,7 +2643,7 @@
         "id":  176,
         "name":  "Вафельні батончики Oreo Wafer Milk Chocolate Молочний шоколад",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-milk-chocolate-139g-2-200x200.jpg",
+        "image":  "enc-a3ae8237a3998bb3cc4ade71e80e1379-e89240f841818738fd88b7ad97744b9e5e88917f36a3c2c5807e3f0180cf86096fae8d3d34c2bffc67306028d59d54b152e9f157555267d22f28d9889a6cb2073a687820cdded3c5ae908d296cd0a696174368035fe4726deed3a9f5cc7245d8cb0e31ff119c4a9c77e6c41e1f2251ba7f3ba8c2e9026747df655e334a396b3b",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2659,7 +2659,7 @@
         "id":  177,
         "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-white-chocolate-139g-3-200x200.jpg",
+        "image":  "enc-937d9a9b060e0535c19a6b6d361ca0fd-adde17c3b5d9128bec4880065da5d78c4f1fb4f31aae3a260c15f335bcd8c3ab98a7d27dd93f58e2c2de6fa0176a33d6a2c468dc21bdfc10e9495c7e83aa99e4dce5924d32ae8ed33d1bcb8766701102771245dcb86aae3616aecbd0d423cb4add7e03b2c528ac9eb2269fcd8e8575be884bf254c818ca33cfd0b8eb1f6dc84c",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2675,7 +2675,7 @@
         "id":  178,
         "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-white-chocolate-58g-4-200x200.jpg",
+        "image":  "enc-c955685eb8132f53455ffa8a0466f3c6-24b48e104690e0ee86309dbc35d17c446fe3f4bc400e7cf8889c37115428226b7dc80bba2eb870e799796a4b8ccd19726640de02307f2fb95bd05d3f99d820a0483a5266e05dc8c5aa2fac3d635898786b77aa24c86983217b896a7822c141c3203eb769f881656dda568fe5d98f15b25130fe057373744bb894c521378ec78c",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2691,7 +2691,7 @@
         "id":  179,
         "name":  "Вафельні батончики Storck Knoppers Nussriegel з фундуком",
         "price":  239,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchiki-storck-knoppers-nussriegel-200g_3-200x200.jpg",
+        "image":  "enc-f3ba873203331b0e53196ea683ceab9e-7672220562120d72ad1ace04495aea77001550b2dffadcdc6ed215b59084edd7c479fec2e4293f2989482e6538c940d8cfceb3b0c6f84a845a374b6fca07884f16498a4a9999620e7bce3860ec9f000ff51cb98b9d93f7fdabcc1f861a40cd3f9622af43c392c3372151ff4c021791ad59ad6df83ab22fe733af11dd4ea5b889",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Storck Knoppers Nussriegel",
@@ -2707,7 +2707,7 @@
         "id":  180,
         "name":  "Вафельні трубочки Oreo Cocoa Roll Guava \u0026 Grapes",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki-oreo-cocoa-crispy-roll-guava-grapes-50g-5-200x200.jpg",
+        "image":  "enc-812cfc8d2863a3068a887b37201ff2c7-e86808f0fbfa2f7e80b420d6d721772c2d43f01e56069a7f639eb314dbf99453da14e85c831284c02bc3607a1e91a3a476523a242d0899894499a42b4ea168c6766cee9f9c7021867ce64c9a1da169e3083b043d8a2a69bfbaa1ec59f87490c77792b8e9b50305d28bb638aef29d98bc04d03eea6b1e380243ff52342b6f0411e56f40077bb9a17f100b293042ff90ba",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2723,7 +2723,7 @@
         "id":  181,
         "name":  "Вафельні трубочки Oreo Cocoa Roll Pickled Plum \u0026 Tomatoes",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki-oreo-cocoa-roll-pickled-plum-tomatoes-50g-1-200x200.jpg",
+        "image":  "enc-266cb471f1cf59b3899062cbe517672f-71be6040737ead1952625558b7bd90dab98ced96925f324bb5078bff9d673443d136ec728b0661f4f2f8d0962a35a920c8be3cd8273519e56419a0e56c8eaedaf067a34ea354646b426ef8cf1c6a9b170f4025996abc1a8c3129b4946c4d93dcfccb38f8cd7e2c12bca4f60cccbdf465483a1f59d5b5a3268a390440b4f50455cb144321ae00dfe1f127c9b1dc204b33",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2739,7 +2739,7 @@
         "id":  182,
         "name":  "Вафельні трубочки Oreo Cream-Filled Matcha Wafers Roll Матча",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki_oreo_cream_filled_wafers_matcha_50g_2-200x200.jpg",
+        "image":  "enc-0047d47928ab513d4ba42a7a20d7b647-7c18c6a1a94027c3800e5e15a8fd760b81101730dffca3292c2d9f262e05a85e2b3ee84d280028eb80519528a2e41fa0971afd21e6f84966ebd52aacdd3387d4873f7fbe2faf832393f8664e81bbb32f10b82cfd53de06f18d87d4537e2961576f3ec7c8ce3db9f8f21145012cc3d374128c9656b469899933d905f0b1a758d4",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2755,7 +2755,7 @@
         "id":  183,
         "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Chocolate Шоколад",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki_oreo_cream_filled_wafers_chocolate_50g_2-200x200.jpg",
+        "image":  "enc-ddae0b196d6eb38aaa3538c8fe76eb63-831b110257b2f330c3b9e1c36b0fdd20c7a3493cb5b533c01bcef6cdde04f9e541339d64c9eba5908b8fc97e6d0df65aedff743696920a4b92c93cc290ed35a0134b841994cbe56563a74e9a67c031a62d189edb371f3dadd2bcd60605c005cd4fe0c0d75db2b6ba41e1825b9208c51d5c6175f9247aa3f7398ddfa540b8c18a",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2771,7 +2771,7 @@
         "id":  184,
         "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Vanilla Ваніль",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki_oreo_cream_filled_wafers_vanilla_50g_1-200x200.jpg",
+        "image":  "enc-bc3535260b1b5d2581a503155b164346-4453d7444bce470f672481e81919c2d1e793f420b1e1e0e0f5931bb8ccec17c07dd23294dafcd3e650e25f1e30054c5c1188422fc61a5ee90fd4aaf02249433eb42a5b24d5f3f705080fcd185325881b051e606cfa45bfe8df8f2fbb4d2a1d0c913756047bf4cc7bdffce4322305d473a540f17b1c9d2673f4e3de59866ed292",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -2787,7 +2787,7 @@
         "id":  185,
         "name":  "Вафлі Beyoglu Matchico Premium Matcha Strawberry Wafer",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-beyoglu-matchico-premium-matcha-strawberry-32g-4-200x200.jpg",
+        "image":  "enc-b28084ae512c993956da4e8f82076f18-0e7099b0431d4289875ea1d5c5ff07b76bfe2a8e5bec753f3b1c847f46015418021737248c969d23270f4200561351394462eaf0e7162468b96919b01d860da6339aaaa216fe01489843c54ce276f1b3c3b66d22affbe4dc2a49e942d52e34e1dd3d0d4a8ea6b05bbad6e51a4ffea2730184947b5ad9ae08032074ac3cbb2e79c4889c577f3f37f897341e10d90be9c8",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Beyoglu Matchico Premium Matcha Strawberry Wafer",
@@ -2803,7 +2803,7 @@
         "id":  186,
         "name":  "Вафлі Ferrero Hanuta",
         "price":  39,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/hanuta1-200x200.png",
+        "image":  "enc-a689fcaf6ee6b02dcea004559d9a8aec-5a7f623f57427947dce83cc0e1eeac2415863ec689448d11aa365bee5009b96234a0a0e7ecd8437b8d3c6241f7a5ca2eeba106ea5ebe9d06aa7e2c296fefd6832d1bccb691ab89b12ad39b76f3230cf4372fe9451de87c681b85a30e0d972c79",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Ferrero Hanuta",
@@ -2819,7 +2819,7 @@
         "id":  187,
         "name":  "Вафлі Hanuta Kakao \u0026 Crispies",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/hanuta-kakao-crispies-200x200.jpg",
+        "image":  "enc-46aac737328c8b9e8e565d6c663c843d-4192b067562020dc7b954451926404b663580aa0d274efcb0754e9c32d560fe096da60cdba1447887b4ad986f5d34bdb5e75923fe543d04b4fd44b5df281e058e517a379c7c9d2fd98ef270fa82bfa569005fa2223a7890bf09c22a26b692b2b2584be2312401d6e15eef3a0429daef6",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Hanuta Kakao",
@@ -2835,7 +2835,7 @@
         "id":  188,
         "name":  "Вафлі Knoppers BigPack Молочно-горіхові 15x25г",
         "price":  369,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-knoppers-bigpack-15-stuck-3-200x200.jpg",
+        "image":  "enc-be740d266f32c03fba4b049d1c2fcbf0-f0f6bb6e03d57b5c81d921477083751db1a62a3a05f6b144ba320206517872bbbf1af753eddd29928c633f936ef1a47c2ed7faac123aa7c642241ea2d17dcb94766ca27e2f8e008b9839e2f90d5c94a05fc6f307c6ad331e239c81a88feb09c6e123ec0378f9e1edda5e5c9340eed01c",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers Bigpack",
@@ -2851,7 +2851,7 @@
         "id":  189,
         "name":  "Вафлі Knoppers Black \u0026 White",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-knoppers-black-white-200g-4-200x200.jpg",
+        "image":  "enc-cb047dbd979159d92cd75eb7a93ca8a7-813b2396b721e2c25d84afce5dce135756d2c5ea8c45f39f1812e304fbffb0a18d6a0d66c22d4aa7fd5984e923f6d5b0e443405889a06b285fafbf5530c8d961cdf3fe86651358ed96826ed304757eeaf565cf325ccc0256b53ebda13ab597f463adc40d7437c495efcddd08cbc1f3cc",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers Black",
@@ -2867,7 +2867,7 @@
         "id":  190,
         "name":  "Вафлі Knoppers Minis",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-knoppers-minis-200gl-3-200x200.jpg",
+        "image":  "enc-c59cc9e69bb13c4bb0189afcca494d59-589ae4467eac8bfa39a18da3f9f7f136ba991bf3b894fd3a637312c92ee83e53584ab0742a3fca3dcbf7ff2d5a482cd0e5c9e6946a7589f1491aebf9a9dbabf2f1351eb471b2f9d5cc6959836298bab95a07b11883bf9867b8256385794bce4685fe21524872766d05f0f0cbbb9c7e5c",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers Minis",
@@ -2883,7 +2883,7 @@
         "id":  191,
         "name":  "Вафлі Milka Nussini 5x31,",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/milka-nussini-5-x-31-1-200x200.jpg",
+        "image":  "enc-37c1e6929f4aadabc650d76618e95ae6-8a7893ff9f981107a9e385f1536edebbec26cfc8c1c53a392495ea0f9ff4cf62a3d405d2f2b8ec1ad3f3eeada5c0f0e185eb021b138a415f883eaa14ee8621468a8974ecb1ab9186081aef68bae7f0d58d0093e4730f1d7b8ba886a2ebcd5f1ed6b42130cea33ed87fa5191a1799277d",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Milka",
@@ -2899,7 +2899,7 @@
         "id":  192,
         "name":  "Вафлі в шоколаді Milka Choco Mini Wafers",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-milka-choco-mini-wafers-110g-1-200x200.jpg",
+        "image":  "enc-1af26be9e7df2c7506ea38f5a52cbeaa-5313361abd16a4051bd7d2f56c5d1d4c22f18d6e431f1f3ed493eada3493fc7331690fc6c05de60c98c2da3e83a256bff7a015c4033d534b4dfd07594c866cc13f459714260cc262a65f55b534fcff87111dfe551c2ec535ba35564b2933c0e75ec1cfbacb68658e615edf5036ec2d2ef763e18cd33471376dc84e30b11b38c7",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Milka",
@@ -2915,7 +2915,7 @@
         "id":  193,
         "name":  "Вафли Knoppers з арахісовою начинкою",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/knoppers-peanut-200x200.png",
+        "image":  "enc-02c9356317a8098cb7c960d4a0ff7a75-56afe93811ece694d5af837e5433f6eb891a1c2bfa87a46546dcdf84f23d3ac810bc5e71c1da5e2af51a07ad5984a9e34a71f959f09c42ac0882799d756ed7ec93e4a63f608feac6ed5d6cb00b65cb07a2ff9cd1825542f9277a2e4af2d29481",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers",
@@ -2931,7 +2931,7 @@
         "id":  194,
         "name":  "Вафли Knoppers з горіховою начинкой 1шт",
         "price":  35,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/knoppers-gefullte-waffelschnitte-200x200.jpg",
+        "image":  "enc-fed76579d87f57f049da2310716a0468-f3beb199b71cb1b3f977b500c1773d990e1cbce8e5cfdc4de57e7affcbd4245d72d71ccd838c5d295ced86cca0928d938c782d762e59013b0d63df9a63b2533f52c508f221d59e049147a51a1acac618aca1567930bca2d460b174266c65c3c5c9100a27f7d03ea7f406b223a77e02ff",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers",
@@ -2947,7 +2947,7 @@
         "id":  195,
         "name":  "Вафли Knoppers з йогуртовою начинкою",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/waffle-knoppers-joghurt-200g-200x200.jpg",
+        "image":  "enc-a38143d8d4f631ef591c036a9bce5ae9-16c218d8cb4526a588b98bd790be46ec121ad212692d156375ed6552dc903b7d2231d1c5ff9eeb11c449f1a5c56cb5d19c5de9c0b7250aed3014762ce05b022d7c2f8b11c893c7fe249d4b85805c91c7b45a41ab639aae23e2c24a02598993878d09be5a4246e98bf54edfdb179f8b34",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Knoppers",
@@ -2963,7 +2963,7 @@
         "id":  199,
         "name":  "Дитяче печиво Yizhi Chocolate Biscuit Peppa Pig Свинка Пеппа 1шт",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-yizhi-chocolate-biscuit-peppa-pig-1pack-3-200x200.jpg",
+        "image":  "enc-40f3664e89396adb9529533374038246-6ad152f6651d677e554346583ad82f31e88e7819b30285b0857a7fe23393d73c666c2ca45b078389497ff875ec64a8784ff94bc4eb20af049c4a05404185a7de77eb9f3c551fe283b2e234dc84a52a03df1e169ba9a8f4608ef82086ff781578abeafc738a82a5191a69902c457bb754d7ed7c9c6c053111506bc579b1781aa3",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Yizhi Chocolate Biscuit Peppa Pig",
@@ -2979,7 +2979,7 @@
         "id":  200,
         "name":  "Карамельне печиво Lotus Biscoff Biscuit",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-biscuit-124g-6-200x200.jpg",
+        "image":  "enc-7d97256e4633f3a6ffb915549356f313-11ca7ce38c339b19bd79b761fc7278355ae962f591a0e5902b1edfa5e556b14d669b20ede1822aad59e3c8779e403c47df57352115b99a9d29fab08794308e600f39d81acfa6537e76cba71c01b295682634cf9fdf23ac47fb5b61b1d47a8adcc2d250b6cd1f6a0b4c06b21536116c24663eeec2dd0e3536aeb685c943d47610",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Biscuit",
@@ -2995,7 +2995,7 @@
         "id":  201,
         "name":  "Карамельне печиво Lotus Biscoff Biscuit",
         "price":  129,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-biscuit-125g-5-200x200.jpg",
+        "image":  "enc-a002815c23a9fb17ae46a4182a2c8f0c-c680679f70bec6ed531373ec54dd27ddfb220a5db4d2042b6424134a6447fe4f4f151a8b8d39c51db3e422453fe8899a7508830c8cd1e7520e518e1c536ac3840e3537745afa771c5cd8a7321fcfbd212131e8722917ec2c8031e748cb664892fafcb09006a91d2d7527ddd2e2be1e8138c05f23f4c0e6f069410ebfb43b135e",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Biscuit",
@@ -3011,7 +3011,7 @@
         "id":  202,
         "name":  "Карамельне печиво Lotus Biscoff Choco з шоколадом",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-choco-132g-2-200x200.jpg",
+        "image":  "enc-ded0f1ff230d87c3fb3fdba480f9d6d6-fc7ac0cc5da8abf22984af469af1be8b68ea6f375902a30abf7138979c985513e74a66c95eb990416ade3fc2ea7f4ff327db42c1546311cf339881ec009202127acfe9c08d8b47233f478a3f69fbe53adbb52de0f8a33baa535810f08bd0169315d4583ee2487a49cb6b58697113ce48",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Choco",
@@ -3027,7 +3027,7 @@
         "id":  203,
         "name":  "Карамельне печиво Lotus Biscoff Cream Sandwich",
         "price":  169,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/01-kinder-thing/lotus/lotus-biscoff-cream-200x200.jpg",
+        "image":  "enc-b50a05d4bd3e5c396fbdb26cf0866ae0-e824197d9b1c212b6bbb9c4d2136cbe9ad280a5d2418e2a7f063adaada23b0402b1ec8a572fc9602ec2f511ce74ce292a89b7c68b80e4ac21b401e329853b5cb0edbfb1c0fea2acf5c54cc87c50b2c5b7a192f73defda7e6a151cba4a5c97ad24a3d18f275840913afefd521dfcabeb14fec99dacd6952c25a63ee3165286484e87528c9a69653ff3d9375131811e68ccaa9f4842a12575c6512402063d5c2f8ab13276853c043dc4059b589b0981194a3263709d7a0d6fdf2d7db9dfef949f25f3143a0f7b7ee87f1f4ff3b51a83618",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Cream Sandwich",
@@ -3043,7 +3043,7 @@
         "id":  204,
         "name":  "Карамельне печиво Lotus Biscoff Mega Pack",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-lotus-biscoff-mega-pack-279g-3-200x200.jpg",
+        "image":  "enc-eb119c256e00e36ae9d90a25855be953-0bb7ef4e8c3b1b3e11e99afe0ee4acd94578eaf6557b82a38a760a4199ad7463452f74d70682f9c50606ecc13a192407b74eb57960f2370448aaf63fc4d7110172fcbf08f79bb84f33a6895c244059bee403e4287192a5b7a88c66245b4adb7afffb0ed70c930910f511c2bc2ff83b5da272d22a35c52bbb6d79074e0e55bf70",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Mega Pack",
@@ -3059,7 +3059,7 @@
         "id":  211,
         "name":  "Коломба Шоколадна Bauli La Colomba Mora",
         "price":  1099,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/keks-bauli-la-colomba-mora-700g-1-200x200.jpg",
+        "image":  "enc-3b3ee87a2a67c415441c58e4ca7725e5-444ee48555a95c0daa13d30bc7db38e645264038a8e7a104b4cfeae50c2b1ef94a22d8385e872a46c4bd06c56b9f8512ba5cd9602cf8b575808601dab4d86cc99d7982dd1dc47d7e4d1bc066db2c5af36d36d59174ff81014d7048a3b173a3154bf98750a74ffc4a299af8af3761b784",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Bauli La Colomba Mora",
@@ -3075,7 +3075,7 @@
         "id":  212,
         "name":  "Крекери з сиром Pepperidge Farm Goldfish Cheddar Crackers Halloween",
         "price":  75,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/krekery-pepperidge-farm-goldfish-crackers-halloween-21g-6-200x200.jpg",
+        "image":  "enc-198d277dbda20f304ef7ff430a523a86-abb151c8458f81219df1d6bd1e3f7084e42e30999c030b97aad1c272243c75a7ef95342314e41f9e197ed628e07fae21a06d6bf7589850e36ee135d30fee6e69397fbed2d6d0d6b5664fc7956e4f0503c99a4d193cacbd8269950321d7af8d3ace15eee04b89f07dd26126799ad15f35743f0fa21b567aea2421d18ab02ebf91736390eb283006c93a6e072ebd0ea2c8",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Pepperidge Farm Goldfish Cheddar Crackers Halloween",
@@ -3091,7 +3091,7 @@
         "id":  214,
         "name":  "Кренделі Reese\u0027s Peanut Butter and Jelly Filled Pretzels",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/krendelki-reeses-peanut-butter-and-jelly-filled-pretzels-510g-4-200x200.jpg",
+        "image":  "enc-68a63ed7700e26a8c2a82cdd99e82e00-003a3d101c2b6bf1b21164cc7fdbce3d92ff3272faa6d09079784a0ee9c1117b82486386d75dba6abf93020b6e5153d961715c6ce2887d0778b49b98b44a4751db984231a42bec01b0807ecfa01ec9e02299684afb05714321085b40d28d2d9a2f63a020e780ae8f241d0d0b2e3c0c2017cfd1448fe4721f6d5a7be23561bd05e58cd2e3d1a28635b4e23a2e2d4f46af",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Reese\u0027\u0027s",
@@ -3107,7 +3107,7 @@
         "id":  215,
         "name":  "Круасани з фісташковим кремом Antonelli Croissant Pistachio",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/antonelli-croissant-pistachio-225g_4-200x200.jpg",
+        "image":  "enc-2526a9b99031746c5ba56c7882258421-4492f59c2f226967da25b116b65ce0c642333da36e916a8ba563213e10278870b139819d12c2f0599880180d850e8a2e812bc14895e49408034275f7a759edd0aa3d6eb3ffe8b17a22563780ba2e9a574497d9468f38bdf0d5e7e63f623e92dcb857a0ee9000e0d8605c8c3102b6dd02d53cda1aedaf8e95270d696d11ee44a1",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Antonelli Croissant Pistachio",
@@ -3123,7 +3123,7 @@
         "id":  217,
         "name":  "Міні-печиво Kandiz Crunchy Sweet Bites Naruto Cocoa Cream Шоколадний крем",
         "price":  129,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-kandiz-crunchy-sweet-bites-naruto-cocoa-cream-30g-4-200x200.jpg",
+        "image":  "enc-78e740895569955146984d1293d023a9-d12675f33f592fce80924d74ea07be09bca13780f02f9754d79c047994ce80be262da5ac1aa4cc73725dc572267c8026cc34950fc9cb3ca09984355792386c13dc993bdd2ffd2ab29766e41c920ddbeaf2d5de1abbe0072661d290c8a6d05765bc02d6cc65a120c69b3f70543b44a82fe70cbce08ce5db28072b5fa0137fc44d441aa720148bd044fc6a8c5e2b9e4c71",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kandiz Crunchy Sweet Bites Naruto Cocoa Cream",
@@ -3139,7 +3139,7 @@
         "id":  218,
         "name":  "Міні-печиво Oreo Classic Original Eggy Party в стаканчику",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-oreo-classic-original-eggy-party-55g-3-200x200.jpg",
+        "image":  "enc-be0160555bb8a69dfaafba1ee5572144-088df09398d054682e05b53ffbac9e5406e711edb7f975e100ed80c6d8ca37c391fcb3cc3a28e3318f86aca4bb18c642d812f2b7da28a01a7763bea27f92d2d0f6965dafe654d673088aab28628c61ad08deffae51ed5b002abae4d9bbe6920fbb21bc972c172a39aa286bb2b785fd202e45189530cc4bcec7ad5fd52b5b208d",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -3155,7 +3155,7 @@
         "id":  219,
         "name":  "Міні-тістечка Rose Vimto Mini Cakes з фруктовою начинкою. (14 шт.)",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/tistechka-rose-vimto-mini-cakes-200g-5-200x200.jpg",
+        "image":  "enc-4bee12568a94ac24a938f38e8aafd09d-07146d1486a1b46428df35079ed204fe4a640ac65dba6b6812435f74372480813d77a56c9c359e0bbe7d17ad33f93ed86ecf58aef238e4ad88612492ea038233a72f547f72203e79786e65aea34886633a0291418c20303f1900f9ad201645b828a962611c891a04e517291fd7d59b0ed0bd8b214ee2a451c26e3daba4b80b55",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Rose Vimto Mini Cakes",
@@ -3171,7 +3171,7 @@
         "id":  220,
         "name":  "Маршмеллоу Trolli MallowStars",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Marmelad/trolli-mallow-star-200x200.jpg",
+        "image":  "enc-ca9cb7edde633e6945e9ce6cad5f13ba-15948f3e6d44b317ce5cfbc3975f87442d29fec7dcc9cf9eea62ee9ac549c0fccf5205e32b3439d1e806552e295bf03e8a3eeeb74f6b12dc5b5b1b07b54e424c10583ba75ce3875e60d717fbc788dbd59fbd517472f04996965537bd1ae17526",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Trolli Mallowstars",
@@ -3187,7 +3187,7 @@
         "id":  221,
         "name":  "Молочний бісквіт Kinder Brioss",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-brioss-milk-270-200x200.jpg",
+        "image":  "enc-b1053b4ee09efcbe133fcf43321ba0d5-3dada3cef85d1c56e998cf2b904340df778072d1b18a0f9b828ceeebe533aebeccb8fb58cdc5b50150d77cea638fcf354b05b34c891177e499a91cbaadb26162de7a8c35509dff0a86b7ffdf6e9180b1a597729d845832c6b7c9cd5755deed1f3479d8ebf33f523fb30ae35dbd8a9271",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kinder",
@@ -3203,7 +3203,7 @@
         "id":  222,
         "name":  "Молочний бісквіт з какао Kinder Brioss",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kinder-brioss-milk-latte-cacao-200x200.jpg",
+        "image":  "enc-268559d8e9d6c295e5943c0596afdb78-498c7376cff494e9fd164689993451043e57ccd70c064eeac91b6975d7da748b784f7e8d4852764de64d33fd2d5c53672cda657a03a097b76b8ded67810f445511229ea23a7dd4934fb4b22f237eca3234a27a060a482bdff4bb1b24c35fb21a583201a8ce999a3c94fc97b346d3294b",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kinder",
@@ -3219,7 +3219,7 @@
         "id":  223,
         "name":  "Морозиво Astronaut Foods Cookies \u0026 Cream Ice Cream Sandwich сублімоване",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/morozivo-astronaut-foods-cookies-cream-ice-cream-sandwich-31g-4-200x200.jpg",
+        "image":  "enc-3675935ac35cf860e37c377fcd61c61e-a40179d2ba035c2acc9f58574069dabdecd5141e26d923542e81aa04b9159084b2848e1cd5abcb77b5975b985b4c6dcf2b125bd4a1bfd151910d6cd23d758ac323cdfa217b68544a2fcd26a6ac337730ea2be923aabf7b68d82f6e3874e75bbe0788a2b66d865e0d316323b094c21d03ab590d1dd23d01066356694429351d56d4bdec2fe0d67bce90b2fcf0b52f8bf0",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Astronaut Foods Cookies",
@@ -3235,7 +3235,7 @@
         "id":  224,
         "name":  "Морозиво Astronaut Foods Mint Choc Chip Ice Cream Sandwich сублімоване",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/morozivo-astronaut-foods-mint-choc-chip-sandwich-31g-5-200x200.jpg",
+        "image":  "enc-cbcd89dda87f19a0f3c5a9c6aaf7e457-b9cd2d970d1f8f256a860bff6b0362260fda9a48d3b8728d66afbfa6a1a73da4b469a718b10149c70b165f48c58408112d49d338477861e1039555ccae9162fc3a70ad6221f492b5b28a8fc8c3e1d8fb3f8a854ce6b7d5cf6225d0710d05d7a4e7ef02c2930c1b753849f88a4cef07130d931e90ddb674623486f33b54d68265c38e10aeee021d66b777f84d849622a4",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Astronaut Foods Mint Choc Chip Ice Cream Sandwich",
@@ -3251,7 +3251,7 @@
         "id":  225,
         "name":  "Морозиво Astronaut Foods Neapolitain Ice Cream Sandwich сублімоване",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/morozivo-astronaut-foods-neapolitain-ice-cream-sandwich-31g-3-200x200.jpg",
+        "image":  "enc-54446260413d1efbe3f14fcdffb4875c-d88e666ed86db1087e34772fd11a3c76a6ee117a3dcdd24e4f8eb36efcf6958ce4358e81ffe3a52f502e9acda95943b4480a1b4089f25a246b120883106b8e4a563fb318043261901a3bf57a25ae0056c9bdb26342686b9f9eb0327b1c9760c3660a0fd52c3fc2249403a1fb27caa73af6a2eb3cbfb3524e905cdeeef948ce64729d91885085ea34650196f5ee26068c",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Astronaut Foods Neapolitain Ice Cream Sandwich",
@@ -3267,7 +3267,7 @@
         "id":  226,
         "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Chase Щенячий Патруль Чейз",
         "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nabor-dlya-pryanikiv-gellwe-pierniczki-paw-patrol-chase-350g-200x200.jpg",
+        "image":  "enc-91e4133bc16e804d90b4c06b7863062c-6cf48da6b8bc5f74cf81a41d233c767b960a6f08e6e5a41fff7d48f605d4660fb157b52ebf65c613a5950323c0be6174b70b368a9d2ca5d4c80b4e3119c01cf66b8422f87e527804362b0bb6bc679e1e781e70ea556f8754c758bb8faefd7386aedb8a42c8da249ecb7d7001e569bd55fcfb5855ee93f5e97fb8ecbe14b34f25b4b6130d266799d7583c76ddb0dc1a20",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Gellwe Pierniczki Paw Patrol Chase",
@@ -3283,7 +3283,7 @@
         "id":  227,
         "name":  "Набір для приготування торта Funfetti Halloween Cake Mix with Candy Bits",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabor-funfetti-halloween-cake-mix-candy-bits-432g-2-200x200.jpg",
+        "image":  "enc-d10991ee7a933babb97a357701a5dca5-2024ebc2aac22d7faf726122576e4654aad60a54caa440735a935d527bcc3d74c8b544f72ed63463d234b0ea8b0c186c996848edcfdd5ad89bf73ed27149cbeeeabc6f7e4a1e5f0b30f87c097c9fa1dd8e8900f7424b1aa4c03b2ed0de06930d53dd1db2643e9f13b54faa532a7503106283602662120e6dc86d6e2fbba2991b",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Funfetti Halloween Cake Mix With Candy Bits",
@@ -3299,7 +3299,7 @@
         "id":  228,
         "name":  "Набір для приготування торта Pillsbury Moist Supreme Perfectly Pumpkin Premium Cake Mix",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabor-pillsbury-moist-supreme-pumpkin-cake-mix-432g-1-200x200.jpg",
+        "image":  "enc-fa9c015929cbb64dd2b2d44dd1362fb3-eacb0c7cea2824281933664b2b8b8d4aaa239f6c36becee36a895662357839461d7aba2aa7fc2faad7b7c2dfc02757060a83eedfd3def2acecbeb070d352fbbb5b58eabc370f8b27973ce20926fb0b381a24efe2133fef33a3e56a5193b9607c55aea69eb780bb65abd12c253ef2ef51b6d92d66836bd15b5edcaee9820fd2bb0dab3ae1fca5ded95c6a8b6307e53ab5",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Pillsbury Moist Supreme Perfectly Pumpkin Premium Cake Mix",
@@ -3315,7 +3315,7 @@
         "id":  229,
         "name":  "Набір для прикрашання печива Create-A-Treat Harry Potter \u0026 Friends Cookie Kit",
         "price":  899,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/yfbh-create-treat-harry-potter-friends-cookie-287g-3-200x200.jpg",
+        "image":  "enc-55082ca41d4f9423f6596b76d7f2b07c-de4c3dde5a6c3b589f1e3da5b0cf5de88917da4f3c923a49eb399f7ebf6fdfd02d1ff87f94f75b2c5df33420cb1e446162bb7f1f24147ff5e0c1b0097c9b9530df6e58ba75f207b64ca4089107e858d2cf3818c47e83bdc4f888e1280c8a9bdc0905e49444cd70ea3279ba6b6ed302f25ecee791984f20362f1cddf7ffc44d50eba508aad9ce1a7d61bc5076bdb1af97",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Create",
@@ -3331,7 +3331,7 @@
         "id":  230,
         "name":  "Набір для прикрашання печива Oreo Christmas Ornament Cookie Kit",
         "price":  1049,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/nabory/nabor_oreo_christmas_ornament_cookie_kit_334g_4-200x200.jpg",
+        "image":  "enc-07fdfdd9d4f94daaf250e8c96739df7b-6d34a743736e15e1c8f72804344d1d3a63917a374408c580a93d45ffded6fcc1b1a029e447de14961bd015bd770137f0de03f2959fd9b2bed68357981f95bc22df94960b6e44489a15317e489f6ed0fa36f30e1f47458c1805ceb1933a15e61dd839b6f049f2cc57c7b336c76ddbeacef1480dbf1f1fe30ccdb3c51a87f5ffdb",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -3347,7 +3347,7 @@
         "id":  231,
         "name":  "Набір печива OREO Gift Pack China 5 смаків",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-oreo-china-cookies-5-flavors-gift-pack-387g-4-200x200.jpg",
+        "image":  "enc-7ef60862e5b163f0ee3d33185602cbe1-026d13fb6bd8ae8bc1bed945a6f2c0f85ffe5ac7dfbb5c9f19339663c2dc3755202e6ec7d351fdab19521ebc493b2501081fe27cc949b6e27ea52f7cc61b0db179c7daaa01f8593d13df9b4b0b92ec5a5e22dd7a6b23784726ab9d308837619901d6d8df1d47b1702e01fa19f24d355e682782ed2105ed700c33f7e5ff21b2b46e7beb918a430fc31d37625ad0afd2cb",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -3363,7 +3363,7 @@
         "id":  234,
         "name":  "Набір солодощів Great Value Halloween Pretzel Dipping Kit Крендельки Глазур Цукерки",
         "price":  799,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/nabor_sladostej_great_value_halloween_pretzel_dipping_kit_610g_4-200x200.jpg",
+        "image":  "enc-27d4f52ce5d94aad568a48e6135e460c-4f6ba9be7c75637cf74d79cb13081c9b78262831f73816ac24037fdd6b63fcec34241e26499814b384fff2374a3f9aa7f4797204c382e7b25334f708aae33d6acf1eca386fe37b3afd196d33e17636e58024229ff506907006c71084d341b5a2abeee34b2d37fb44127fd0c91a747daa598a4d94de226f1942a943899ea23dd571c403f8dd14cf447eb87339f224aba2",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Great Value Halloween Pretzel Dipping Kit",
@@ -3379,7 +3379,7 @@
         "id":  235,
         "name":  "Палички Glico Pocky Банановий Пудинг",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glicopocky-puding-banana-200x200.jpg",
+        "image":  "enc-8fd49000ae0647c50ff4c172a76480e4-ab2c2c144eb5f2fa2547eadec471635857ce6986dd5b305e42112c3dbfebf5b06b38e62fe066eb5b4f4c0c6ab4a5f19dce1fd6278317313718f898287a1847d028f88c7c44393067ff88a85c66fb4bddeb8a2750293bed8a85c279b85d524a58bb37df166394bb0e2daf71176fc805b8",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3395,7 +3395,7 @@
         "id":  236,
         "name":  "Палички Glico Pocky Матча40г",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glico-pocky-matcha-200x200.jpg",
+        "image":  "enc-5c6e046c6a3f15e6eff9395c673eef5a-71da9bd8b3bcae1b6c8d12bb1e761f357a7fb8d529865c732f635c965b6594b6b1e8cfe6bd1980de960078288bfd0f39039b2a5f225fadb6a702324932e9a6212282ab659c5b539ef2230b7e09044640a1bd29972ad603c486197b07f50192a6",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3411,7 +3411,7 @@
         "id":  237,
         "name":  "Палички Glico Pocky Печиво Крем",
         "price":  159,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pocky-cookies-cream-200x200.jpg",
+        "image":  "enc-de1cb1e292da27fe64b8f89b17a03433-137693d611600297d41b26a0dcc747bfef8d409a6ce45bf465f0afda957fbf8c45bff1a73b809d56b90964ee0cd3aede8c10f0f8ce885122107a14f8e3bdc11599dab69872a054e16b6cd6e3a5ff7c84119f22bc8e96c60fd5371e89ef3b0d8387de9d3019fb9775dc5da748ffcf0d2a",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3427,7 +3427,7 @@
         "id":  238,
         "name":  "Палички Glico Pocky Подвійний Шоколад",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glico-pocky-double-choco-200x200.jpg",
+        "image":  "enc-abf3db3b3381455e22b4098a3bc6f289-792839f091fa89df25186f4414221c797289c4652b2283e3cd452e2dd8123f3cce1eee667e0e160c73afc6d3eaf097fcdbdf9abf54aa2ab0823f538f155eb069ce983d65a6635b865ae3522d2c0d07c98baae2d516a21c4f8ed3fb52f7c0dc1beab48ee59faa1cd16a2236a398a349e7",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3443,7 +3443,7 @@
         "id":  239,
         "name":  "Палички Glico Pocky Полуниця Крем",
         "price":  179,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pocky-strawberry-cream-200x200.jpg",
+        "image":  "enc-eb4e8b38a5a8fb333911c4f2eb3ac547-d113f08de557b9118aa2daf04d415f9d50782931f6d997b2dd822019ffd91341ef6efaafade0d809fb866c53a28e83416bab83cf910fd6679e3a413f5c26293afa5c0fb2349211c83436a8f155e3555543dd855e6da8c356e8e7a4afd980f9e4231789be538409621dcd21bf69e94c67",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3459,7 +3459,7 @@
         "id":  240,
         "name":  "Палички Glico Pocky Полуничне молоко",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/palochki-glico-pocky-strawberry-200x200.jpg",
+        "image":  "enc-254e632a73aac48897e3d2ef47b10a4f-162cfa3864d1200fbf1b8d7d62eb3fed8b915fd21255441755e5aac953fc9da3ef897aaedf19113daa32a6b3cc42df1a3b85ada2dc99ebb0a3fd933bfca84fc1de00a8b28d9b91ea07ce5f210d0b862501effe9e035eb6319ffa7f3cd20dcfff66270a021200e9130123c334e86bd076",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3475,7 +3475,7 @@
         "id":  241,
         "name":  "Палички Glico Pocky Полуничний Пудинг",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/glico-pocky-budding-strawberry-200x200.jpg",
+        "image":  "enc-adc58e57b2c98da20cc38b89990fbb52-27999227e7c6ef425e1b4b55d6ab6ccb44a4788d33c52b0fa6f510167fb2c3082987ad3bc37684f118332c40d400b550af5abcc7f01a19ba6651c0ae8727cc93b792bff8fc358c6f7a561548c4ad44663980901bd2224f7226c8d90836beb6eef346f7939619b407da862019702e66d8",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3491,7 +3491,7 @@
         "id":  242,
         "name":  "Палички Glico Pocky Шоколад",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pocky-milk-chocolate-200x200.jpg",
+        "image":  "enc-5c5161785d3e3b1e0eeb1ae55052773e-c874e9fe2fd42c3943d715549eda94ccd312a8b11e90a32bc50710c0ddc758234f629ac8715d01fb412a76bb086dc86e9d5ec730aae363980deb29f7be515a08d67fe9a159c4b49f45e054de2b4661ffd26e095961658cca1747f68e2ac980d6facf17f0c492b5372cf4dd9fa947c1a6",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Glico Pocky",
@@ -3507,7 +3507,7 @@
         "id":  243,
         "name":  "Панеттоне з грушевим кремом Bauli Creazioni Di Pandoro Pera Cioccolato",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-creazioni-di-pera-cioccolato-820g-2-200x200.jpg",
+        "image":  "enc-9049edf32aa36e72fb7638996a268f15-57506c5dd8aa587a72291460567b81e707cec6c7c21290fb84e52eb8d703ba8282eab2e7e327de04424e5d92fbe32ffbcf21826aad3b2485ebf4af20e2b0331c4bf6eac57e2cc496626b4429402d4a956215a59a8d5fa9fa6e94dbc8034b117418cc41aea0fc07cdac30119769d04ddca89b30ee31c150020e3bc2ed489188dd",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Bauli Creazioni Di Pandoro Pera Cioccolato",
@@ -3523,7 +3523,7 @@
         "id":  245,
         "name":  "Печенье Oreo Golden Fresh Stacks Travel Box",
         "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechene-oreo-golden-fresh-stacks-travel-box-228g-8-200x200.jpg",
+        "image":  "enc-d015f107525ebf61f0f6cf3926a2d45a-7caf18e2d98a372e06871bafc0447e9c3de172f09f1ca1e8a58bb8998e4ea2d42cb145c00c4855f6f9129a77d09426839289449c7bc3f12ef75bee7ee01649e5e67b14bf777aeb60a04547212623c16ba4ef3fc0db48b042594a1a6983e41173de7b02c6768b05234d6e0397c7e0b52c606fb399dc5227ddf39cf5e62d2cebd5",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Oreo",
@@ -3539,7 +3539,7 @@
         "id":  246,
         "name":  "Печиво Choco Pie Зелений чай 12шт",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/lotte-choco-pie-green-tea-200x200.jpg",
+        "image":  "enc-9c58a81f747265fdeb21ed7caa8d8a6e-a0bb26b3a4732e6f948bf39eedd95d3de07944e5cf8a4b24af9b323ff8970bb1cf77bce9ee332b6b1da50e5fbf938c7ebaa70c4101ca884b53ff9e945f542eb7606a0b4e7cf6930fe58e43d32ecb8874ed496e196240ddd6e9cc0840267248f0cd734799ce42aca4f58d501cdbb1c81d",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Choco Pie",
@@ -3555,7 +3555,7 @@
         "id":  247,
         "name":  "Печиво Choco Pie Какао 12шт",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/lotte-choco-pie-cacao-200x200.jpg",
+        "image":  "enc-6ea9858c004402503452d25792676d6c-ea381de48654d669cd023bec25fd23dbc853e74189a2db18c9f34b689c6dbdbae08ce32d7ba89fa8f8996636a6751f9937a9caed6bcb7367f149e89e0bde438c08cc4915f5603f06de99cca66042499937bc7263b8536d539ff9df58e7285002d7153188cc0881ca5d8a33473dd9810f",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Choco Pie",
@@ -3571,7 +3571,7 @@
         "id":  248,
         "name":  "Печиво Hershey\u0027s Cookies “N” Creme Rounds",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-hersheys-cookies-n-creme-rounds-96g-3-200x200.jpg",
+        "image":  "enc-5e5663b06c55c6ff6c4069bba315244e-1e4a7d6d79522c1ac22026d276aefa151dfb77627efb70561761efae6fccdb9ac9d10d543936fb170d1673cf8d80928f8f94bd0cb8fcfb381d7c15ffdda51a43ce7d234abee1dc8a74f8976ea935f45bea9ed286e9e79f96b7d901b1fab2f159cd8722757e969c59d12eb4cde86f303157b27a0b3997f5833c99ee5ae1fe0e64",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Hershey\u0027\u0027s",
@@ -3587,7 +3587,7 @@
         "id":  249,
         "name":  "Печиво Kellogg\u0027s Scooby-Doo! Graham Cracker Snacks",
         "price":  69,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-kelloggs-scooby-doo-graham-cracker-snacks-28g-3-200x200.jpg",
+        "image":  "enc-8f7da12e4fd7e5ee55f384bf3d294292-855028ea26565134219e9f8407acdfd5d6081c3669739f581ef7e35324b85d563ef4e19d312013c996295ccb1989e8480667c4dee16159c6cdf4beb29753074fc76baaf0a607a86675b2be5aa8443a3fc5e7b87152f80a93dddfa4676cceb0852ac08ca53a244db2383d3a88f1e78749f40eb757907ee12d691f244ca549aa16d2c0f08f49e21bb603625a83755cd1dd",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kellogg",
@@ -3603,7 +3603,7 @@
         "id":  250,
         "name":  "Печиво Kinder Duo Biscuits",
         "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechenye-kinder-duo-200x200.jpg",
+        "image":  "enc-df4279843d9027e0e612c2a834a11c44-9fde8da388551b482aeccec965fda8a25de7a86d3c977439db93d59dc18d99cf785faaf1cb9e62c3af27c229d78c07f1847cd989059a233692df727ab063eef3378e9acff48a37bd1f4b98db55dd81304563203d52ae46f8b075d37ddde337bfb3318c7b2cc566dde9f6053042d3af26",
         "category":  "Печивотавафлі",
         "details":  {
                         "brand":  "Kinder",
@@ -3619,7 +3619,7 @@
         "id":  251,
         "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread 180г",
         "price":  649,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lotus-biscoff-milk-chocolate-biscoff-spread-180g-4-200x200.webp",
+        "image":  "enc-b292b0d68a665061eb3df22f4731390a-f11f7f9e1bf5b26715b28be3bdba8a6338ef81a4e5c349957f306f201f47f7496dbaa7aa0113c00f1fff9042c86b88ee364cc87a86036974b014fa5c48d62fb50275c933800c13c942e8ffdcd8077ad428c37c7e4149ea2a0a8ca0964e069c3bbdf4ddb39b3b92487f65c942c66c0606b2e3a739110b2122d9671ab7e7db7183436a370a166a2cec116fcf6e8d8ac5cd",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lotus",
@@ -3635,7 +3635,7 @@
         "id":  253,
         "name":  "Kinder Гаррі Поттер Kinder Joy Funko Pop Harry Potter Return to Hogwarts Набір яєць 3x20г",
         "price":  549,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/nabir-yaec-kinder-joy-funko-pop-harry-potter-return-hogwards-3x20g-1-200x200.webp",
+        "image":  "enc-cb9c4d0d9fc36fe107111666c70ba8bc-bcf12e636ebd6ca6ddaaf79fce654d402b37889f8bb71d94b49b207be3b6c0667a97b3f43901d5fd418d60b8ccb5a19f8139dfcf3e6e530f70fb7a6258a6809c0fe6b00e6c8f03eb4dafb6e3dcce6ac23e99c04b646f056c9cb8991a43fd9ec1052542dcab9ac2e1403a91d57a4bf291d0c343c6d4066b4f8fa40cd8c71e596d19e470a5a7d72e36386e1b50c7e2200ca3aa5aff45f38ba1ebc3896d3c44cfd2",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -3651,7 +3651,7 @@
         "id":  254,
         "name":  "Kinder для дівчаток Kinder Surprise Fairy Disney Egg Феї 20г",
         "price":  89,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/yajce-kinder-surprise-fairy-disney-egg-20g-6-200x200.webp",
+        "image":  "enc-1fb45c9785b171d3017b3cbfa2025256-83ab3bfb9556467175f11dc1ce6e0ae8a1b6a18478609e1cb6c7c15fd389b7dc2facd2e804f71417ebd1d619f98bc8a56ec0ebe333fcacc56e6c55dbcd5a5323ec9a9f391eee4eaafb95c876b097678728ffc8838a0a103c0e99ba84bbe45bd97468d0ae89b7d74550eedac1d1d9651a7967cedc9f5b52103269726d888972ab",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -3667,7 +3667,7 @@
         "id":  255,
         "name":  "Milka Bubbly Білий 95г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-bubbly-white-95-200x200.webp",
+        "image":  "enc-fa84e6aa3b659a22d51d84ec6987ab46-476addd298ed2d036b326129859f8f3484a23ec97d0b4a0082d01447831ac79f0d80da5f5a86f3abe6b1fa189665f6c059504c02290d765ccbf222c1d7b5576fecf316f45937d62e55c7ddd8fa1030bc24e1360fe2468932b7e3a87ca257eb17040b2354949ea5f3186c01c928882495",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3683,7 +3683,7 @@
         "id":  256,
         "name":  "Milka Hazelnut",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-hazelnut-200x200.webp",
+        "image":  "enc-ccfcfecf828f50b7cf0b0f98d8ba16cf-87478d92c8497cb950be119b11b4a718d151a885254d9afc337cde6187961b6794b416deba281cd831e5e519ef2003fe9c3890ce1461c830fe32f7ca4053a0af6d2392b218c7771ee19e50f151f6e4269f9ac5c43e6c01ade9808d37aa460af5",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3699,7 +3699,7 @@
         "id":  257,
         "name":  "Milka mmax Nusinni 270g",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-mmax-nussini-200x200.webp",
+        "image":  "enc-676aa84991746f7661115bc3aa3d3147-68da36c63b90facfad735957b1647c322e7eb0bdeed7cd6241fe14df293a95dbdb4617556dab1180774b98f47b5dd2977e81d63a851c757b0fcf8932a6e6a6bd808d5c140edafac69c9e313935ff272698003c4f6ba59bdc59970ef7b926ad1ac3336f7f585a87a4dd5326ec8b5ca675",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3715,7 +3715,7 @@
         "id":  258,
         "name":  "Milka Noisette 270г",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-noisette300-200x200.webp",
+        "image":  "enc-da7c6fbc6b85aa2ea402d8ce6e69a782-be39aa064f38151d5d715bb6f04115fbb7b5bb8cda10aa681c567149ec09c24af39aa8f88daa0500fa06824b722fce5314944effb3e0206b868e27637b49aceb5ecf4e8ea2ae1dbdd8835ecc94f75ead14931dfec039229932a46303e88144e5",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3731,7 +3731,7 @@
         "id":  259,
         "name":  "Milka Oreo Brownie 100г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-oreo-choco1-200x200.webp",
+        "image":  "enc-06979785bb224645a701c35bd6abc1e8-a1444f5175fda4836236cd2faebd33fa7398b45b318f988ffac05a25f292d29d3a7e5152c18f0b6f5eaa164c5dfd909220a687c7eccd7aa3e57ca4d7cb64ff7133d6deeae829d39a341f47c6e7ce708e1d19554022ce28d7d17996bbfca97b4e",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3747,7 +3747,7 @@
         "id":  260,
         "name":  "Milka Peanut Crisp Caramel",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-peanut-crispy-caramel-90-200x200.webp",
+        "image":  "enc-32fdd497b5435c2d050bd2d5492164b3-9bf84262ec222f7c960153c2eed63eeb234df98414ebe943336073a4b37c86e3918830b40f90d6693e205e1e17b6e2526fd7fb464bef261a0dfd094bcf85b0b496c150828ee0c6a39ff744c562dca0cdccaf95f571bd46dbfca84711cb5a024bcf936b47ce0b8bb9e8068d40e4000b08",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3763,7 +3763,7 @@
         "id":  261,
         "name":  "Milka Raisins Hazelnuts 100г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-trauben-nuss-100g-200x200.webp",
+        "image":  "enc-43b8c95006f75c9cf2cbb720b3003f73-948fe3e8be85d65e38d01ee7701c3f9234e44ce550e9f275355913ccd4f2a90f980289d726cac2818283861786e6ef778c2deb9665425191c87489f08c4a95bbe597871af12399e00e1b336124b25c4ffcd91c024a26a03a86cb4ab6bd6bc84c9a9ac77ebe4ab18128d76cf9ad6aa0ae",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3779,7 +3779,7 @@
         "id":  262,
         "name":  "Milka Trauben Nuss Родзинки і Горіхи 270г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-trauben-nuss-300-200x200.webp",
+        "image":  "enc-8fbafcd5ab9a81d18b272fca0540465e-457c89dd4c7809939f1818f749404cfc87a121dfc3f8bb11ac305129d3fdd3d70e7edc968c49348c3d50cac1b4b7a0696a7aadf5c5212af628fc51b7acdebc6beef355d1760412ea10a79fc24ead726e4ec89e79be3fe13a8fc7553e32829fe623bd029827e0d1f17a7a11c1ea800e1c",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3795,7 +3795,7 @@
         "id":  263,
         "name":  "Milka Triolade 300г",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-triolade280-200x200.webp",
+        "image":  "enc-8e5337420fdc24dda1d77f21c3c2e5ec-366906f8c2dfa7359d54ba5098958e26cf1b9210ceb072eda8bb7675d759c9fdfdb432efde4af9b1c5b7b285dcc54a02c915d67c4b31043959082bc1fe2332a370a5edd4ab786a71b52ed5ea79d2f521d90f97e2332be520b79a6d078455a3f8",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3811,7 +3811,7 @@
         "id":  264,
         "name":  "Milka Whole Hazelnuts 270г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-whole-hazelnuts300-200x200.webp",
+        "image":  "enc-913202c6254dd075d320dc5712722cdf-e2bb4337094d72f03fb0b35dd5386c22a52d4c18e685f66f20ca35ea1d58cbac2bba5563d18439c8287feafc99327a67fa687f1a25a944802fff602e9dbb4b6848fddf2b6fb5428eea143827294683a0fc724511a28eacf4cb67c103e235b0f24f1024ba30db43c70b5ebbd77d1e3891",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3827,7 +3827,7 @@
         "id":  265,
         "name":  "Milka Карамель Daim 100г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-milka-daim-1-200x200.webp",
+        "image":  "enc-42cfbbb674c46ec3ec87d7c4005aacc2-37af3bc6fbc764a680ce060bb4733fac7c7e65cf1d0dea6e5449b69fc9e30256cf46bc4f056eb1ccfb460274a4474e31bc4e816876e459e3de25f015bbc0fb1efcb089a4c0d677a6f7ab4e2b14515df704bf75653a1f54fd66eb837d6d27fb63d03fa3f98740f020e2cc94da118b7947",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3843,7 +3843,7 @@
         "id":  266,
         "name":  "Milka Печиво Бісквіт 300г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-mmmax-schoko-and-keks-300-200x200.webp",
+        "image":  "enc-15265f004482716d3958cb074f84417c-17390a2d8222aa9bb9569407ff4fc77c6cb68aa3768e1117c0eca1437211555496bda29c601b66ba3be2aaf5c2b348a42b2764b19d2ae71e92f946411c145e09040a8fe421a18bc65a72386203f95ed63204dd5e947825ac5801a696afa432b298b1b90403c9e0cc6b700353839a590e",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3859,7 +3859,7 @@
         "id":  267,
         "name":  "Milka Полуниця 300г",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-strawberry-300-200x200.webp",
+        "image":  "enc-a05cb2dfacfd89125cba0d76b8c9ca74-955369f1b092c9681c0f4a0b80b89b55b5aa6c9e4326705045fbc590df09d9f999b004c40430ae22fac37fac55f7667c5ba7b7f2a1793880894d2f867a096d7701e0047eeb95c198a2741150784725ea8f7c194e491ebb8768faeb7c84a6d673c4e83d9dbc2576ee03d3f398085ee035",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3875,7 +3875,7 @@
         "id":  268,
         "name":  "Milka Трюфель Мигдаль 300г",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/znimokekrana2025-01-17o13.08.08-200x200.webp",
+        "image":  "enc-61c4a4bfd551d44732a23c44a22716ee-1b50fbc0e447ed7a155b6a8f9240c2f7c5415c92e5eef118f6657c8dc33aebe9c54fe102e2a65424763c68d700bfea01cf59d50091ccebeff39f4d8e093933da73d8550311094490fa0a9801adc4a357f8ec3ac03cae94201a372d4a0a24db6b",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -3891,7 +3891,7 @@
         "id":  269,
         "name":  "Toblerone Dark Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-dark-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "image":  "enc-eaa40fb2f3c93c931a82ef3682805c1c-39338343d81f7a253ac3b027a47a5d8a7e44c568b58e339f81805471dfa7936e907838d20522a9a94abd6fad7b4a27552999bd5d835083263893471b6e2a474f0b421d3d3d3cf713c7fecfc6b7b7fa4599da96d6c95529775787ff8e305032103bc5427b53596cccde132014f64190eb123c37dcb42447c1ca7f25a335cdb89e9138b08bf682175eb5b920619f5408fa",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -3907,7 +3907,7 @@
         "id":  270,
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-milk-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "image":  "enc-e8c0366762f11563c2767dd7b470b398-9b0ee488b2f697bd0bf2a6543c2ce47b48a78d09f664876992cc17ed06fd4aaa35620814621ca79ba95c79a0f64cf0da622ea806a808d5b442a0c7cb9e52396178505028fcc24da91c9afd38850f371e43a6bef584bdd99eadd28c87815a436cad9dfa0badfa00c4c63869760c5e995d2bc5b46a2b44226061619ef48aa482390ca03ffef4c48b6982d7b9ac562084b0",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -3923,7 +3923,7 @@
         "id":  271,
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat 35г",
         "price":  49,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-milk-chocolate-with-honey-and-almond-nougat35-200x200.webp",
+        "image":  "enc-1e755fb21701888dfc9314d7478d98e4-464a5bc2b59184b3efcfc7e9262bb837615fcb14897da01833756c766a3f3d107a1f3667ea90957360b29d9f342f1f7c5e768a6f1d8d894012526f0613532d951101131d17a729a52b993650025bbf7e04099214a30c702e6a49a595b61e46de344b95607fc4673df8facf4a8deed1e94c05d4f19f52a43aa6ea3d7466409c6d5a1d08e84e0acd204848cc0e5a6bdf5f",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -3939,7 +3939,7 @@
         "id":  272,
         "name":  "Toblerone White Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-white-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "image":  "enc-ff9d331e6e459e6114511d666ee7845f-950ac0844ef00af145e4915c6084d72aad083130a6beb20b25aa4e8c7f77063b86b39f79bbacd9298b60f23b8282bdc77933a6278cc76f0366c0c36d94a9bdd90fc3044c4071e6b9b8796ea3e4d7a27522adf746b6805bc708a64b49730dd7c2bb3d79cdc2927908c2b417c997a36ce62554e97814a9bfcd928c2a7db43baf3ea04f7c2983289b5e3ee311b7081e352a",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -3955,7 +3955,7 @@
         "id":  273,
         "name":  "Toblerone Родзинки Мед Мигдальний Нуга",
         "price":  139,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-fruit-nut-200x200.webp",
+        "image":  "enc-cd584cff34b8b67c9114bc4a0aa80864-bcb902305cbb96b576e224fc9c5b94b37c6089fe517199ed0cebc64f806252b0376d19e48e11a24ee2b7f5e9eadf502da9a4ec89b7fb5b65bfc1b8f2ff461de37951603cce7d7f244d7f2609fad5a1371b15fd8f2546d8260af0a11d20c7f7b74cee8c756b7ede44ddc1a3d4d74dffc3",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -3971,7 +3971,7 @@
         "id":  296,
         "name":  "Апельсин шоколадний з м\u0027ятою Terry s Chocolate Orange Mint 145г",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/terry_s_chocolate_orange_mint_145g-200x200.jpg",
+        "image":  "enc-33e365c5c95ab9172aa7352072b79596-6e8adc6efa7a5037363cc809f3626c8036c9bad4c52abe343aa53f92236df1606fcbcfb58ad56a51b1cb179c555fd17f6b11a0f9c6fc080b4547a77d69d8e33c45fb2732dd7c6d0979be4ddfc230dd5da16ce81c4601fc5a48057263746ac602011fe1342f61781501d090e616df4de7",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Апельсин",
@@ -3987,7 +3987,7 @@
         "id":  297,
         "name":  "Білий шоколад Lindt Nuss Selection Weiss-Mandel Фундук 150г",
         "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-nuss-selection-weiss-mandel-150g-6-200x200.jpg",
+        "image":  "enc-a0d80396eca301195d866ce2359b9295-6198a58e8ea46034080baf497428bc084bf777f98c30dfb9dfff5a8b1355be05b8c85f95ff859e846430d980fa50b8bff5f91870254f1fbdcaba79ce51e80ca7f4364f9c09562a0ce68efbdaffd6e5c18ccadb292767a68570fdf4034d843d33222ec2a2774a896f1345805fbc769b263723cfb9a526ac8487484eb5513ec9cb",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4003,7 +4003,7 @@
         "id":  298,
         "name":  "Білий шоколад Lindt Tokyo Style Chocolade Matcha Strawberry 145г",
         "price":  899,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-tokyo-style-chocolade-matcha-strawberry-145g-1-200x200.jpg",
+        "image":  "enc-ca48e28a8390494819a9f64a13190198-d6bd3725935e9f26c6e33715fb8470f43bcd7216f9db933b618270aad7ef548a4c30d6091433be6af461b96340faba44d819de505ecc71db2674aaa86e715bef7d7d1b64b78d8bd5840386fb2536ed84b701abb2700e793a69a48309c636f7eac8ba6be85269aef29988f4822eaceb975534d70692bdae57e82f133edf50c70438c964edae44a0c787aeec6a1768e929",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4019,7 +4019,7 @@
         "id":  299,
         "name":  "Білий шоколад MrBeast Feastables Pretzel Mint Crunch з шматочками м\u0027ятних льодяників 95г.",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/7777/beast2/mrbeast-feastables-pretzel-mint-crunch-95g-1-200x200.png",
+        "image":  "enc-f2d76fd9fde3dac34cdc0c74ecb79fb6-50488406dfd7df24a69b521c29ba3d0f04be1956076e1cfb44379cb29d35d4f11dadf5e735b4e91e4e6a8aa6643910bb667ef2270b1dc6b17300dd7ef4a386b4996f8447d3b5d3dc1c333062743ec942529124c2026a78c4b4a78ef64ffea21408c42354518607d0019346dfb9b788ba85c9bba0d4f7e047b4f1360e31b710f4b5d2eb03e0cc185e25bbf9a28aaae90629e3cdfc6abbf5d13ca79c094dcb9e435d2f61f249e4c7e8c0a73a470e629dde3baf66c2139322440d3969bb899d946d872e052eec017069531c90999f32bb65d703ae697931295364e98abb1296c49f8938d88e74f3e73c5c1e0327a77896bdf3672a10f88c0199339a7e84e1b7e297",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Білий",
@@ -4035,7 +4035,7 @@
         "id":  300,
         "name":  "Білий шоколад Reese\u0027s Peanut Butter Bar White 90г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-reeses-peanut-butter-bar-white-90g-2-200x200.jpg",
+        "image":  "enc-c61bad02f13d28b24a0d2730bd558bb4-bbe50f4d2522d1e51a7ab6c33d3d67ddcc5bb3ea4d5101483d515c6390cbcc82c4a171083207ce5b9ea12e5cc0a2a5845636249b801ae4570695be72b3d882b0f9504fe7035e1163ec73440644e83beed58f7156832ffcd98ed0b4676dd65090cfbb9c8f2e852d89fce7665deff424b207b943a444b269f5283f5e94f8eda79c",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Reese\u0027s",
@@ -4051,7 +4051,7 @@
         "id":  301,
         "name":  "Білий шоколад Twinkies Candy Bar з кремовою начинкою 60г",
         "price":  129,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-twinkies-candy-bar-60g-1-200x200.jpg",
+        "image":  "enc-941fc4b95d256dd625182ed54a6b3415-a99d0adfe6324ac0acf8af8c35f7b050e3f87820706f0ca8d08c25af21e362185ac9ce0ec9174778442b50de8e15a1c87c9c40e7a03a12c2b7bab54a4c59cca48d3eb37b6531bc304d09da3b0b8372922ed77ea6a8ac159389e06185b37a10d8420f151a4c926af8669d11bdc7d9430c",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Білий",
@@ -4067,7 +4067,7 @@
         "id":  302,
         "name":  "Білий шоколад з драже Ritter Sport Smarties White 100г",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-ritter-sport-smarties-100g-7-200x200.jpg",
+        "image":  "enc-0413e5037fe462f4cdf0d9ed2102531a-456527b329dc8b1074f5de2943b5ba21fd24b4d79cca2e95dc2d39b78d12b8c09f2e65e76fe6a7eb0bf2dc6a3608c23337e8655f8a47f3377b6684bfb0919ed04e7ef787be241c7f83cf7fd72ab724768c4b1e999e0a756e917ac381f345925ad8a56ceee6bae1cc6175b39a0fe9c4f6fe8661019555b5c2d3d7a8af23876133",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Ritter Sport",
@@ -4083,7 +4083,7 @@
         "id":  303,
         "name":  "Бельгійський шоколад Chocoboo Exciting Taste молочний 40г.",
         "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/4444/chocoboo-exciting-taste-40g1-200x200.png",
+        "image":  "enc-44219bb406a201b3dcdcdd09e54d9f61-482c81a219171ee16912adcbb459b519f5181cda0fd1453929e9eee67e31b27245131372b2d1650564d11a8f35f701cbc68d9d8be2b77993ac65fddc6c7d9cb5068f3afab3f4af2bd8be16b4c3cb5a190fe19035e8018c96446412b28c423f8730bd0b4d86a35c784fed73d915ee839a6db02b406ee02d79fc7784624a7e1ce88095682ddf77e902114a67bbde07965f513c55c9f403e899d5bdf8b96c73a6815a58dc1e37b1c13e3b834d72050612590ed534ceae379238fbd1f29a5fc61fa43a9e5441b072fd541aec0825f46fbefd9f295cdc5f95976a661f650fa7660459",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
@@ -4099,7 +4099,7 @@
         "id":  304,
         "name":  "Бельгійський шоколад Tabby Crunch Chocolate Fried Chicken Курячі ніжки KFC 50г",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-tabby-crunch-chocolate-fried-chicken-50g-3-200x200.jpg",
+        "image":  "enc-e23908d2cae2073f98e906bbafe85c6e-5a3e5c4eb49816a766f32d83e33f128afb3e8f1150d12e2097d25789dbb1300c5bc48d1068d7246221f2e8c5ed2fc8acaa4175e6956f5cfda6cf45ed104b701772217c925fa9c8663658e1b9fa4db1e7ef3f6483ca5695e04e24bf3a8b1b19663c25f8600bf634e90f6754dc5de1120818810689968ec3aad6e67aa29b5c9a7ee4a6b72bdb8201c66633f7a619248ea5",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
@@ -4115,7 +4115,7 @@
         "id":  305,
         "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад 139.2г",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-sticks-dark-chocolate-139g-2-200x200.jpg",
+        "image":  "enc-09a0132fa4b2b053a7f7d8444d2dbd85-bc24018af549e59a999a62dbc7f4d4858bbe225bfce912712064c2abf34167ac3837567b2f0d58e8603153bead903c20fc681a8226706289e984a6878537f144cff0e647dd216488eb3d5a91f81db1da3bc7f80676077dea375dae572aeec680b23db5467397f8f2091102aa4434afda1cf1c8b744f2ed8b8c8f66c093721eb4",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Вафельні",
@@ -4131,7 +4131,7 @@
         "id":  306,
         "name":  "Веганський шоколад Lindt Classic Vegan Hazelnut Chocolate Bar з фундуком 100 г.",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/02-liker/lindt-classic-recipe-vegan-hazelnut-bar-100g-200x200.png",
+        "image":  "enc-37a0aa6bf529fa6bac8f6b42853e7565-e23a766d82044ddbc3187c373850980c55bb5aef23a577ca3ab3efbda8611f72859ad1907c5161d55ab4d375c1b0137cb94d22c76a0b736485af4a79e9d3d1b4e967c24cc778a491271a0322823f9e3f9ae8891c508e3d96c8dfa2340638be05dc7e72259d1d99d1088fba35a71cc76e93412b1dac9f723c5a235b4a34c0b3322cb9fbf7631dc8b5bbd53411d7e7d583889723438965bb9a55184e362340806f",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4147,7 +4147,7 @@
         "id":  307,
         "name":  "Веганський шоколад Lindt Classic Vegan Milk Chocolate Bar молочний 100 г.",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/02-liker/lindt-classic-vegan-milk-chocolate-bar-100g-200x200.jpg",
+        "image":  "enc-f31efa194dd5268c03f7c52656155f66-acbf0bcc0ea560f2dbd7737ba60c387aad1cb2c105a23d0b9222ba42823dd5506a9b5a8870baaf5ba8183c7ecbb37c568d9d72054b76c9d108a6bc5fbf2524a304efc326c8bb7b7015407e5573fa30f1e7d05a10e7209bcf0d840fd8d6f963b0d4f9599913fa149a2db1af71a4194803963e5d6d2d2a59bcf7a58e92c644666661eb4161766aa8a0c8f63775a3281070a629e4cca6765e2093526c4fae39c630",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4163,7 +4163,7 @@
         "id":  308,
         "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
         "price":  549,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/cukerka-raffaello-grand-125g-200x200.jpg",
+        "image":  "enc-f32f349dcd1ce095321cd02588c5f6ef-89ea0fd6edbe46607214cabe9628c1bc43702d33ff5d15a236139c35bd9ce6811c7e63dba25eb5171142fe1e24ef40d9d2ddd662d9783ce79dcde81c49b18f908c49567c617761df954749b28ffa4225fa8108bb6baa87fbbc5574a6579dc2591fdc2588d966bfe24b91e8eaf42db6d4",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Велика",
@@ -4179,7 +4179,7 @@
         "id":  309,
         "name":  "Велика шоколадка Lindt Swiss Premium White Chocolate Almond 300г",
         "price":  749,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-swiss-premium-white-almond-300g-5-200x200.jpg",
+        "image":  "enc-a59fd75c4d0669b508f22b95148336b3-418985edce6f0c7ff63ab336ddccbf2659724ab6242fd32f9b4d66cd6d551f23b1ccb9bfd0dfd49ae4bff2dbe817e8e1bdfaebd2cb2c0596d8a3335f41350706bce11ee38b46e95d651fcd8a853a5d7ba33446dfea371df60fdbc81f7bf0a019b5c65714734062bf968cf0f06d3c8f69f7400af2ba6c8358c08cd9ad31f4c038",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4195,7 +4195,7 @@
         "id":  318,
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/2026-03-11-132341-200x200.jpg",
+        "image":  "enc-63a17d887eda9a9fe3ab6957e3cacb4d-67b489bba3f3b973abbdd6d63e479d78ad92a21fd0d4f4c65b19e12d53bb88b326c06f1177adf3eadc14fe96d2294fba6d734bd68f564179c510ad7a140c95f44713e45580ce2aa805ca6294328eb470705b5e3bb5d3564951e216201d1a2387",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -4211,7 +4211,7 @@
         "id":  319,
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/Znimok-ekrana-2026-03-11-o-142633-200x200.png",
+        "image":  "enc-9994e441197ca941cb6af476861a01e8-3fa0d1e63c8f9fceffd0431ea73b09c69bfca1009f80f3e3ed39c74f1fffe663e3c64b8ebe2b5a5a9561412d73bde2eab6ccea1d758b959ef363ed35f9f73f2b384dd991cb244958b6b6b5d931d94323f1945a9bd2a71b925e3e889835507a4daaffddee9ffbe25839cfc777c3221a5a",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -4227,7 +4227,7 @@
         "id":  320,
         "name":  "Дубайський молочний шоколад Bolci Dubai Chocolate Milk Kadayif Pistachio 200г.",
         "price":  549,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/5555/bolci-dubai-chocolate-milk-kadayif-pistachio-200g-1-200x200.png",
+        "image":  "enc-c837b35da2448c4bf5022960237eb2f5-0ea80c257e7f08b5c6bce187b40c1162470a7694c54ebed35d257cec8dd8128e7c9e4065afe46a158d4b8950caf46af699ce5bba726c73e1afb930fff365edeaa5ef6a5c293c574dcb4ce5f59b6b89f73131d69539e0db1685368e2ef97837def66083ac770ef292e03416cea29fb00c66621c7cf24d829ec19045b7dcd4d2168b1a5b5505c54281e7d4e94373a6b87197b3b817a97c56313818162effb55527fd4a3761c732cfad03954fcfdda6b7fb5b6705b1262a14b978bfaf07ab42a59ae368e6a955cc56c13c7fa230712620a28a3c919129180335a73dc8875c7abcc3a3c38838cebefa5db8a8cf5367bbf4b10b1f896ee9556c3d29e6cd9de492870d",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4243,7 +4243,7 @@
         "id":  321,
         "name":  "Дубайський шоколад Bolci Dubai Chocolate Pistachio Kadayif у коробці 256г",
         "price":  959,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/shokolad-bolci-dubai-pistachio-kadayif-256g-8-200x200.jpg",
+        "image":  "enc-f7ac4b94e88e443416df97096ff654a3-52777ad65c9765e98da93e1851d6a9c0dde1bcd6de3aebddde8b5a5a1401bdaf6bfbb40ecd41de286eeeb6507f78368e797d8d82817ff9a05796a254ffa5d81b8177bbf4552e81a95709f24af63febe4d28078277bc848a70fb9c74491719c59ffbf65b695c32bcf6ec7d96c9c1ce9ae00e0d59d780bffc25618cc03ff8405d3",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4259,7 +4259,7 @@
         "id":  322,
         "name":  "Дубайський шоколад Bolci Praliny Dubai Chocolate Цукерки 96г",
         "price":  429,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/cukerki-bolci-praliny-dubai-chocolate-96g-2-200x200.jpg",
+        "image":  "enc-b012721ef72b87e272948a279c904269-7e9b8dd1e5e78f3107bf6bc4a2c339f3b98855e107a198761b7da1dc7e96891c3513575c3eb038f42984c66e925049aa5d003bdc681cee5ea65006a688382fb783c606158640af93347021525460d887450e10c2a6724f605cf3eea1bf030ff755f8dc768863196bf53cd0d9e9e01a3ddfd938293a950e86c1a7896ca758d0c2",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4275,7 +4275,7 @@
         "id":  323,
         "name":  "Дубайський шоколад FIX Biscoff Spread Біскофф 100 г",
         "price":  409,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-biscoff-spread-100g-3-200x200.jpg",
+        "image":  "enc-7ff19630ebb6d728b5b1d705c3398a81-f8a493264e5fe3bd341bd52e865f26754d818ff758ddc1f620919335de76850ec089ad67972e030da1821c4b40f0a3b891148b1edf3a7aca2a4febb4ed3012996594f792994f70990a97159504fcc1383b2105fa2ab1e3f5fe817a765d8aa8d5051f4f104e2b17f161e25577263e3a4a",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4291,7 +4291,7 @@
         "id":  324,
         "name":  "Дубайський Шоколад Fix Chocolate Dubai Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad_fix_chocolate_dubai_knafeh_pistachio_200g_turkey_3-200x200.jpg",
+        "image":  "enc-5fb9a5c056ecb83dbb66d6ce93138ae0-3100f771d7e799efa3a24a8a9eefb47950deb0785a107b7c2798a95e916e1cf89b96c1f423b4e60d55d36a3ebcdd4538a9dba44e52ea1d8c5a70f8db7d679ce9fd56ca0fa2a1fd5fa6cf359f81e92c22284ff517fd823c55acdc719a641f4b697f9e4b4e7b6d0c86de9ce1577e4296d9b4423e45ddfa24aea95ec5515a3e2da337ffd9555226cce2435fb6ef1974753e",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4307,7 +4307,7 @@
         "id":  325,
         "name":  "Дубайський Шоколад Fix Chocolate Dubai with Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad_fix_chocolate_dubai_knafeh_and_pistachio_200g_turkey_5-200x200.jpg",
+        "image":  "enc-4c23e4817c104bd263295bf8696a3576-6ac418c5de50652a51bf9cab26f102d7b96d1133215c2b5fa1c5966818d2ad14b4c0c3ed3f46f5f1334810ad47c0ef0f0490b2691da2f5a421968cb0c252a265d4a40f0e9aa6672a3e6313a32d43abb8b7c890991ca7ff2c2a869f29303a712017c386620713c205385f18737e437ea71b1fca8934c8a04817a0651beb6b1fbd22279ad83889f6f3b3fca1c33324c544",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4323,7 +4323,7 @@
         "id":  326,
         "name":  "Дубайський шоколад Fix Chocolatie High On Hazelnut Лісовий Горіх 80г",
         "price":  349,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-chocolatie-high-hazelnut-80g-2-200x200.jpg",
+        "image":  "enc-aff62340b4be9cfdb7fc969944f94d8f-eb26d3e35f284ac8182dbd1e3b0c367d4da20d844734242ace967ad107c86ced0f0b024ebd2522561421b47ab98d6b75ce7a87a91c60c0f96e29b1eba3879e51b877395986b1b3101bc3b3cf4c3567ff3f546d6d85a04d20a29c56e878220ab5397fb60f309ed37c52ea14e8f9b061b69a32d52f0b36cd76bcb1050f80dd5bd6",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4339,7 +4339,7 @@
         "id":  327,
         "name":  "Дубайський шоколад Fix Mind Your Own Buiscoff з Карамельним печивом 80г",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-mind-your-own-buiscoff-80g-7-200x200.jpg",
+        "image":  "enc-6a3ecbf9cbb52419007657c392050e5c-916175416c5cfd8c5f69ba748d263f1d8c4443f95a102ee534c294ddefd1a100e0ea1bab999fd4981f465f32260e7442a963ceb9c1546a3ca55263124a1427b483d3d2235462f7d28fe99420279aa4f346a6ea5fada0c28f876f1a963c626642433cd1da017214f03802bb0943196862778f209709bac699f072e9d665e21cdb",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4355,7 +4355,7 @@
         "id":  328,
         "name":  "Дубайський шоколад Labudubai Chocolate з начинкою катаїфі та фісташкою 30г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/16-labudubai/labudubai-0-200x200.png",
+        "image":  "enc-7e31a01a136629c3368d550612b08e23-581184a3f4c91dc6cbb849ffecc139ac92bb9d0ebecb7b47f9aa33a885b530bbacab582ea7e26bc33111291a70a450e461146ba75e004e91117a35ca90a1be6377028f959da57e7c2d871cc95c8c8c60d67913a4ee54eab2aba28152999597327e3b524b102e7080792f87df8bbe9e68e13e5f11e49084e6921c1925f534a17fc7b5105a399244e169ea8e7a8b0ad1f02874e44fd179d41937fac7741a20ce96",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4371,7 +4371,7 @@
         "id":  329,
         "name":  "Дубайський шоколад Lindt Dubai Chocolate Bars 150г",
         "price":  1199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Znimok-ekrana-2025-02-20-o-124516-200x200.png",
+        "image":  "enc-7b18ed322f4acc8c8108878d40d9f1ad-c2acffc98f26bfa4a5674c97c15705ec5b65bea647e5250317fe437b490f415696a30d336c18550c5e1884e356c1282dbbc315aaeaaa581d6de756de0bac3ce1d27a3796ae344fe1f78cb8085c82c8fe79bfcde386019cfa489b00fff6c36c96",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4387,7 +4387,7 @@
         "id":  330,
         "name":  "Дубайський шоколадний батончик Rosso Bianco DubiGof Crispy \u0026 Creamy Фісташковий 30г",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchik-rosso-bianco-dubigof-crispy-creamy-bar-30g-1-200x200.jpg",
+        "image":  "enc-77fbf850568f8569432fc0e62e466adc-a768e4d4e08d515405a0fec99486b91e7fe0e73ede496c9dce24ea2148697c57897acdd7834cf39671e7b28315a3753671a09e58faf7146c5d35931720fd6d4cdd68fef865aadb661b772c4446f11d76443e214048193a57201114926bcfac8cd32c8f48dd86756cbf566942c3e8adb67d765a3d5229c279158def9c5b11bca6041be830caca7a0157d8c262c3f53bac",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -4403,7 +4403,7 @@
         "id":  331,
         "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread 180г",
         "price":  649,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lotus-biscoff-milk-chocolate-biscoff-spread-180g-4-200x200.webp",
+        "image":  "enc-11542618c4c28ffde7f3b42b965815c5-f8705cd04f3c050e64f5fd47ec009acb934653f177b74d0d0e79d60517b865e5d63ce31e05aff512e210a3cdbb6dc9f7bc55665b6d7a88d6ed3a68259d427efc990f9bf94f88a15f25f3c3ea87db5df916d7f8cf3f38d12b793e7d4733d529719f2c451803dbcb5c685ae0df6826cc134199842c8fc4f93a680cceb9032c404e587525ac4165ef6d5f221e035e1686ee",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lotus",
@@ -4419,7 +4419,7 @@
         "id":  333,
         "name":  "Kinder Гаррі Поттер Kinder Joy Funko Pop Harry Potter Return to Hogwarts Набір яєць 3x20г",
         "price":  549,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/nabir-yaec-kinder-joy-funko-pop-harry-potter-return-hogwards-3x20g-1-200x200.webp",
+        "image":  "enc-f5a4ab69f3f419c7703a201b1c2e20c0-329a2378350cdde74e60357b8bf11507926a9a4de559c60e43c6c106dd766a15854b4c8e91a5eddca84c36c2d41247f4e4ab8a48956dd4efbf1634ba5f5f77709acfc0c2edf1be02dffdbc1e55d9bd306e58ad6033d6012535d74c391d0b441cb1f542a8b2f3fd9ae7b9e3ade4a22209ab6b295971a5b89afe77672843bf408b063593f184f6bc61d4ad6e4c64c3a5450a78706c5a8462bc52bb89a3e854abc4",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -4435,7 +4435,7 @@
         "id":  334,
         "name":  "Kinder для дівчаток Kinder Surprise Fairy Disney Egg Феї 20г",
         "price":  89,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/yajce-kinder-surprise-fairy-disney-egg-20g-6-200x200.webp",
+        "image":  "enc-064aa275177bd10ffeb2b51075de98b2-753e53fb7f8c4aaaa17a2db9e66e916fd4e805b2171dca6d7eec7a043e2d548748565ad587cb4adff9f856cbc2ac2a8d6504040e2d1f4ab893b8b6533ad6378dbe0fd882c98d3472fb852a8bd9d158c5d2804b50e5236d515d948c768cefb148c78e639ae242bb7034e3e9b47b311c688dd97594f37aca3b0313981eda3cdc51",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -4451,7 +4451,7 @@
         "id":  335,
         "name":  "Milka Bubbly Білий 95г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-bubbly-white-95-200x200.webp",
+        "image":  "enc-08f661b3e21f2f5ea3fdeabb9b0ee923-f47af13d4e7a8b2c681b021da45cfa52805a8974183bfba004e9ecf54dbb8a08364b5ea273621d8e6eabc906eb875dd5d5276f6c04adb7d67edecb7a5779e295cb4f717f97f7e13e0a9c9d86374852d0186b3efe9c0efa796ec8178a87053c76c3f8d1f03227a7e419b2ef55701b86fd",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4467,7 +4467,7 @@
         "id":  336,
         "name":  "Milka Hazelnut",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-hazelnut-200x200.webp",
+        "image":  "enc-f50d542fa74b42c9c4ce1aacc15e7ee9-d4b045af07914058207cc1937685127849090a7befc440be865403af3921edcf27d23c3663f587d317a31bd015775608b9b57e3f219d349d22dfa97425ae04de47e62a4d69192fdc5f96f5b9e1dc749128a8cf619d5f61003d301907f1a01604",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4483,7 +4483,7 @@
         "id":  337,
         "name":  "Milka mmax Nusinni 270g",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-mmax-nussini-200x200.webp",
+        "image":  "enc-7ee10ef4d3fad0ccec5d8629c823dea2-28907636ac8706bd8b8268732643ce6aa0f0e7dfbe858e104ea92678e2dbf7c8746d6fa9fb74e3d1c174569c1599567529d70e686d57d85bace968cb95cf0471ec0935c168cdb49d3d8fdc423ebde8fd7611a85691f8dfb281861907575a2a6ae5e7d00d0bbdf684d262ce810c4f7922",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4499,7 +4499,7 @@
         "id":  338,
         "name":  "Milka Noisette 270г",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-noisette300-200x200.webp",
+        "image":  "enc-437e2554041809a6623479a5351c3b62-ada4395041f6962d2db3502b6dff7099fe9691200dc66371e268a07c5c73fd1cc60ef0a05df938130765ffe8807db69a6a0e772c081b924364e79ca88ccf05920a3265d468cbf06b2f0a4db0a47fb95f3006eb0b58479892ea437741c1ea45b1",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4515,7 +4515,7 @@
         "id":  339,
         "name":  "Milka Oreo Brownie 100г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-oreo-choco1-200x200.webp",
+        "image":  "enc-b881fa8593967faf0ed0bcdcdc629d3b-a283f64f6011498198faa30cd2ef8313e505bb361be7346de37799ac7f9436e59c1d14e673b8c5b315755f5ff37d6ad60149323c496df91a6dc77052a964aef59139c73651d7a8cb721bbe103fc7fea409bceac35eaf5ac6e08126f2722b05fd",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4531,7 +4531,7 @@
         "id":  340,
         "name":  "Milka Peanut Crisp Caramel",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-peanut-crispy-caramel-90-200x200.webp",
+        "image":  "enc-6f55fd3d27613b775c2dc1c5cf0e3dd9-79f6172bcb237b1314457a6ed095f7f36931237efa40093b955ab1fb8b73392885aa79c474344b8acce19c779b05bed6b0de43ce2e7c832b5043ac007fb50f7020db34c75e40aae49c5bda5509f8dff87aef2747acb8002db350ee7604f68a518904940a43eea78b153306eb23963f67",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4547,7 +4547,7 @@
         "id":  341,
         "name":  "Milka Raisins Hazelnuts 100г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-trauben-nuss-100g-200x200.webp",
+        "image":  "enc-77b6330a6514f92ffd00f4eb8559ab61-64e194b797b0e09f6ff268302d48ad8ba3a2f30315826bd7ca4a89325f8de871ee591e5e20972893b7e47b236b4008ebe527c38682e206655ef58341f7d1991f9b46297b4c41f2cd541a3a8e4297a3f520fb6ebb701502143f833725cfcad5f8607396755a9e9a0ef9ba9f7bf8e350f4",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4563,7 +4563,7 @@
         "id":  342,
         "name":  "Milka Trauben Nuss Родзинки і Горіхи 270г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-trauben-nuss-300-200x200.webp",
+        "image":  "enc-1c617a0863f089968417f1aa0450a273-9df66b8d22a7f34d7762dad724b3386f75644aa5553e834e1fbfb0abf501d283f637f5fff9742927e70190430ada9ef747a4e298ef1c00764fd97f31ff211eb94bd9c9e5b48a390a2044edd30e166ead8b90ec4fd7a168edcb6f646ce096ace32c986a2ff3b96cd0fc3eb14783dc0a74",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4579,7 +4579,7 @@
         "id":  343,
         "name":  "Milka Triolade 300г",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-triolade280-200x200.webp",
+        "image":  "enc-5e2bf8d4b292f3017f66c373f1a13dc4-237b3d550d5809e9bd5158e00d74d0f3098a2af1650ea05c20e101a4fe560f17cb9df27dfc09c0551cf49cb1a24ae4f214a01d4b7ea091e1c90b540b62e1dd516ca159c1bd8521e867c0e51c536944141d99455ec5ce75203f5282a943fab393",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4595,7 +4595,7 @@
         "id":  344,
         "name":  "Milka Whole Hazelnuts 270г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-whole-hazelnuts300-200x200.webp",
+        "image":  "enc-aebbd1a833c653cb1ec30cab2ca3cf3d-b820b1a7ede5718c6e4bb19ad0d5c0f56dc05f5e707c0b905a3685746b00ea1f77f850e2623218d83a38d37023f33d88500a0e2bb246e68975fd4c050240ffd36e8957b2ea5eb09fc62f8fb25f01e92848d9fc3b1a13b6b4a445e0af1fbbb2f0370baeff54de163767d7a0acc76ebb26",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4611,7 +4611,7 @@
         "id":  345,
         "name":  "Milka Карамель Daim 100г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-milka-daim-1-200x200.webp",
+        "image":  "enc-317f2b08f8e7f395438695672fea2e35-81b838f5a18746095cad9af2ff8a6697be59e46529f30c6c52cad857aad86986d4c61788cd0d5b22c776c2577ea441dd1f5a079c7e873cc840626e606ff76c273c00ee8e3a8bcf26004fd92979494c83b03c6e30899078af8b0a47957e5a5b27fb9c6a6f9b35f5c9e3a6758d46b067c0",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4627,7 +4627,7 @@
         "id":  346,
         "name":  "Milka Печиво Бісквіт 300г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-mmmax-schoko-and-keks-300-200x200.webp",
+        "image":  "enc-899fa5843fa64f219330b1d11be2538e-3f352a3eecd201ae8c4509181ab2cbdcb9bf9689c87f9471ab3331f4a43f933e16c204e5ff8430cbf9a0526318621f65bb0c4c6de625a59bdf995fb13c95af724d959935728d01092e3edb26bcc8cc04f6ad353086774628c2409245e036db05b11bf20e7e154f6be2e0c25265c03fad",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4643,7 +4643,7 @@
         "id":  347,
         "name":  "Milka Полуниця 300г",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-strawberry-300-200x200.webp",
+        "image":  "enc-6fb8cee2f219bb2cbc5805812dc0ffb8-e1d717f5dd49ebcffa1bddeb4781c1875ef66b70ab16a0213bfee3bd9b7b27548dff213a96c723f7f1e4cc34fd68f2ba14f6b207554be4d20f2c12a18b5d1ac6e417fec0cb8f6d63b451aef3a6af9c338627a9e39e1c013c5f8b649340d6491dbbfdd00e3cfb68e6ecf8a31ef75a8653",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4659,7 +4659,7 @@
         "id":  348,
         "name":  "Milka Трюфель Мигдаль 300г",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/znimokekrana2025-01-17o13.08.08-200x200.webp",
+        "image":  "enc-96b91cdb6434144688621dc8fc2254ef-c5865435659266cb0bd5ddc660ff6cf0b06f294ed27daa4330dc175d88e6d0169a13d1863e11666461adaceca066817dbdbdb1811a7796f6848ad3ec916d7848bc0605310d0f7a36eb559f31f6fdc9d3bffb2abbe90e7dc8ea27d53a234146f3",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Milka",
@@ -4675,7 +4675,7 @@
         "id":  349,
         "name":  "Toblerone Dark Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-dark-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "image":  "enc-04340c8270f8248bb688e7777027ffbe-e9ac224408be208af8bab0f5144bcb2ea476338045be89d22058b5cf530ef68216446c078927fc134c776639b4975c44408861ff7f70e978cce20b36d0f57e8a495d09a2c7524cfe8c1a4667d6df2667c7ba7c5a5a900f82af94563146fb2a0a151441bfcf8b431173a7668139805a251fd1b66fafda918828d3e4564619b902fa2bf7cb2d4c3eee8ce4ea5f88dd94af",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -4691,7 +4691,7 @@
         "id":  350,
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-milk-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "image":  "enc-80ca23fecb1291d6f4d8f82dc10d8340-8f441f2539f7f6fc0d3a6a67d4595595493a6668c859671cd44a96f797a91ba477dacc910f1a609587211e267b5f8a86fd2a68440d9e593c62ce82bd041c9278466ee2f069962737b9c263a8453f7511b3468e3c54bd2af19978a0c24fb7cc84abbf799412bf8217281dedee71dd0629d6641a3b41ca1ed14651d13e9334786732ca03e0800c1574dae2cefcf5956760",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -4707,7 +4707,7 @@
         "id":  351,
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat 35г",
         "price":  49,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-milk-chocolate-with-honey-and-almond-nougat35-200x200.webp",
+        "image":  "enc-d08ae291e76d717133e2a3654cf72826-511ee5b27f8d3e303c028c1d3c0325bf33232c66d11663335fd96244b012db19c0e192127141d8977dfff416a8259eab7748801eefb1482a6473c589234e764430c4319e57c7340101ce2cd044d28a6e02708139250a5fe5ed6f7377c4ff8a473067ef5ad841f49a5960c6c8bc2abd75521d0056016ecdbc3037eb6546d01640d743bd028ea588d5a5568dee7dcc1add",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -4723,7 +4723,7 @@
         "id":  352,
         "name":  "Toblerone White Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-white-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "image":  "enc-4e5354501c7cab1bb93e006c0803ddc9-8016f21cfe8c5682c22cadcb2c9736a0d572cad12dad2315965aa79ec1e79202111550e6a8090922fef20df92b9894f8485cf2c226bf7a156d875a22ec53912e6d98e35a9654296d9c2b031edfb37baea60eeb6d73cee9cd88852ae3bd28c87f28856242600db3518754051eea9cedf2ce0c04733df3a8d9ee69a5b5b9fb6e7243724ed38d3637e707014cf554a176c3",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -4739,7 +4739,7 @@
         "id":  353,
         "name":  "Toblerone Родзинки Мед Мигдальний Нуга",
         "price":  139,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-fruit-nut-200x200.webp",
+        "image":  "enc-c5e4d310c2f9b36194f8a062bfed7cb7-23931625a45ed02c88899305ec26ade6186b75b314510f97e2fa222cd4f16e4288f10a5c880f0bb838a26b02cc2a88359be1403f139ea7d108913cda771e7253efde53b091a9c39929a001ca104c6a1b5a81d00630fafadee325f97a3e7319e73b5e5e335b189273ede964dc1bfda79f",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
@@ -4755,7 +4755,7 @@
         "id":  376,
         "name":  "Апельсин шоколадний з м\u0027ятою Terry s Chocolate Orange Mint 145г",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/terry_s_chocolate_orange_mint_145g-200x200.jpg",
+        "image":  "enc-232eb209011326b5169275bc26b77ac0-0dcce8f72b83a1d7679f6cbfd72b920dfc21b0f9c0d378cb8929c70c05d493fa1871a24edaf406e20c0c3c532ada6c3991b62a1e8892916861daa29312ed62ff40849ffe062d7ca19b8d529bd38b3446236d40aaa6298ab9905168600b7b6d0e8d99ac5f8cb219b94c41084881bc46b6",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Апельсин",
@@ -4771,7 +4771,7 @@
         "id":  377,
         "name":  "Білий шоколад Lindt Nuss Selection Weiss-Mandel Фундук 150г",
         "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-nuss-selection-weiss-mandel-150g-6-200x200.jpg",
+        "image":  "enc-b87cbb667b064218e36b46a41ebcd74c-c0531411a5cb480fe7e522bdc495c70bd1792e38e6c5d806577bb5e5f8634478a0a18f8d1b5d3d86f5f85aacf1b0d7abe226fee4247655382bf02ad1ff23c590065a7db57a596ccec4906e693291734db9991f136b9fa35826ea072bbcf910bb41c350dceb8e1f1ea73ad4231a0a975f79276d69dab53034427f30fca8f995d4",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4787,7 +4787,7 @@
         "id":  378,
         "name":  "Білий шоколад Lindt Tokyo Style Chocolade Matcha Strawberry 145г",
         "price":  899,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-tokyo-style-chocolade-matcha-strawberry-145g-1-200x200.jpg",
+        "image":  "enc-e6c840a555553930dc8d963b9ff4084c-d716e24bf7213f59c3d7b3ffb8a4ab895a24edc1f12a30ee1382a099304a8b88f4cb53701451f468cb4c64cebe86a4cf4e7191c2a4ee8cbc790faf8781b88b65dc1f42729d2d646562f45ac21e33d9d12ec61fc82a8c30ce50b4e2e101c9b4394a9a4be09de460608021cce03f6f299f5c435e372bc7ceb92be16ad13c98cb930ab9f00861be5d6006718f24e9217cff",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4803,7 +4803,7 @@
         "id":  379,
         "name":  "Білий шоколад MrBeast Feastables Pretzel Mint Crunch з шматочками м\u0027ятних льодяників 95г.",
         "price":  399,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/7777/beast2/mrbeast-feastables-pretzel-mint-crunch-95g-1-200x200.png",
+        "image":  "enc-d0e1aede31322c60d2eb0f60d2be7777-b14085840bbcfa5ea6aa2cffa99eaaface8c45c5a12048e668cefda45609ed604dd00aa976dafd3704bc4f4d96f27ceaf2b803073631a9b6a8619c78428dc731db43f38c38eb9897019bb640425d8597fd3e7e7bfcc8e2d2c7cce13d6d35ef2dad5919d916278cff64f187c7c4868e5f3d9dcd678227cd1d1dc1ea6907f2baae5afcfa5215d10730ac6215147cbee28d70195a8b6fe1cf2d605946be4aee18186729c9876f2a86fee6ffc996db884572d4f39e34f93010e432477d35aa8ae2865c22d8e524b4a3a1007f22e5a175f9f5bc1af43b45592730c567cf80faf8e630642b9fbef6f03ccde1e657a13fb610b4198469d76f16972a4cbe6217847d1656",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Білий",
@@ -4819,7 +4819,7 @@
         "id":  380,
         "name":  "Білий шоколад Reese\u0027s Peanut Butter Bar White 90г",
         "price":  259,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-reeses-peanut-butter-bar-white-90g-2-200x200.jpg",
+        "image":  "enc-88ef5d984cc54da128a543691014a056-9e03eef184640f72f8b508be32bd9a6df19497231a12fe402c61d862425f7be247e19f2cf21c8f4fd64f8b96e4aa5e7f08c2578794d806588d6b64bf692c7617cbb8b94c58252a0bdc1edebad4f9ee2e96da41262d1f8b7391f5c092da915759fdb018b3f45f40b0609632a01b7e5efea5195a3d9009b4fee2f07107661c3d77",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Reese\u0027s",
@@ -4835,7 +4835,7 @@
         "id":  381,
         "name":  "Білий шоколад Twinkies Candy Bar з кремовою начинкою 60г",
         "price":  129,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-twinkies-candy-bar-60g-1-200x200.jpg",
+        "image":  "enc-adfe58844ac8dd941d13c74400f007e6-ded8ca62476d8e427a37279623f76dd68d3f5004350222d673ae5dd0f4cf874879bffbcd9aa0234d10e4bdd822ea1f4d5c4bb637b6a6304bb976c3ab46b0a0570c36e958ecdbb2f1fbd6df82b7d92954cce5d51b3c515c0a03de868c4a8e234810c1de82d0e575c97d157286fef26986",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Білий",
@@ -4851,7 +4851,7 @@
         "id":  382,
         "name":  "Білий шоколад з драже Ritter Sport Smarties White 100г",
         "price":  149,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-ritter-sport-smarties-100g-7-200x200.jpg",
+        "image":  "enc-cc5f5b2bcba03ba9ea94448ac9b96627-d935859e34859b0b8a9bd2d90059e94cda87fc3cdc2e8d3aef81dfdc3edc17a3fa01382a4affbc7f07e69a54752b3b5c11ad2e854539e8c88613081fdac9181dcd82e9d270d45db96b7c0c967345e4db5d38421ea28a60936bbea256e5b0081ea9fc90bda8ee1c79d32d2e178af0a06ebe40c78e3ca507e246eaeee271a694fa",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Ritter Sport",
@@ -4867,7 +4867,7 @@
         "id":  383,
         "name":  "Бельгійський шоколад Chocoboo Exciting Taste молочний 40г.",
         "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/4444/chocoboo-exciting-taste-40g1-200x200.png",
+        "image":  "enc-b09cfa19f28014ba3ddd80a97dc0c473-51b0895a7a70aefb451fc64754c37f61a25d4fea567cbf7c58e5723bd616d86c822675bcb01fd0a4366b2df1cf77b5f9672621e023db0f2f1f7a656184a8fd1eb19f7a1564f48bbb9b8e7952c02e7778957358a17f4cda8c0b3caca8a9e256b91067516209c4b00f6ff7969cb4c1fc11b801a144355863d0d8eb94370f60e55d6897767983a406c0758611dd5954acba20718f77784589fde600f5aeba3c7bf48e7409f96598cd0e01ef915b886a3d8a09ad4d6060ab643216322361f6c21502ece8a0ab0d2550ae4cd7ed2183094ba7875b7dc87baccea6cae71a750a9e0a46",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
@@ -4883,7 +4883,7 @@
         "id":  384,
         "name":  "Бельгійський шоколад Tabby Crunch Chocolate Fried Chicken Курячі ніжки KFC 50г",
         "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-tabby-crunch-chocolate-fried-chicken-50g-3-200x200.jpg",
+        "image":  "enc-603c52a97477683b2e88bcc3eb992f31-46d49d0ebff260c82d546126fdaf61cbf5a15e1665fc399ce30dc6bdd34185f104d3657ab01aa9ef04019f82bb9bffe566dbc2c420b951c31cb16fe9d517d9ec39a0cf35b0932df33c07a10b2294bb719057f6c449289f204b35b2366bca6466f6582e2c537f1f8846caa74b8e84a8f487bf31b6cbd6797e3566058d7a044847d6bd81dd3a5b6c1c58953950089b12a7",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
@@ -4899,7 +4899,7 @@
         "id":  385,
         "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад 139.2г",
         "price":  279,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-sticks-dark-chocolate-139g-2-200x200.jpg",
+        "image":  "enc-31934922e7087bbea86367e5060ea918-eabb88b4b4f7f13679a8e0bd4937e8683a19f31f1ca472731411c77a14c800af297e75bd8033ef783deb0db52db9f076656132f56af994401af249543fd7cf1432966c99a8ae70c6077225058ab8763afb4f52f50e3596e2dc0c4ba7ce235f57fdb4e70e1d4e77725a3a896f37fe795ed8053afc47b0508b7bcab2655ae77214",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Вафельні",
@@ -4915,7 +4915,7 @@
         "id":  386,
         "name":  "Веганський шоколад Lindt Classic Vegan Hazelnut Chocolate Bar з фундуком 100 г.",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/02-liker/lindt-classic-recipe-vegan-hazelnut-bar-100g-200x200.png",
+        "image":  "enc-d7310baa69388b7fd7b91257df6c08ee-bfd38c00fa8cd2e71f1e8ac0fe65f3e8438f011a72701dc23dfb29d8fbf523b9bf1b0f22230b003eead59e9cd1e3a5408947817a5b65aa6a45be29758d79c35b4c8c511ca7a0e3fb63b9a84da113e169889c7f4608a643dfe10eef5a815749b25d4ed4aef0bd50e0197544811c9e9c1ff9af34167f3fca80654b82f914d3007d4b064bf17c8a6f0c3fccc8d5fc061102d0d6db49eaeacf01814dec0d113f2c02",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4931,7 +4931,7 @@
         "id":  387,
         "name":  "Веганський шоколад Lindt Classic Vegan Milk Chocolate Bar молочний 100 г.",
         "price":  269,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/02-liker/lindt-classic-vegan-milk-chocolate-bar-100g-200x200.jpg",
+        "image":  "enc-e3ef2bb555fa484f8ce8d52966703e3f-9c3f5bea43ef31081bd6f71cb715b95119449b174873ce0f251a3e942fd8d69452f50a9ba03285f52e3d4367ca3969b289bf498a90c39a111b4c281bfa2e39cc3c6ddf4f46ade323ad49ac63e5a8006833990b4a9fbe399140404b01cb15579c32e194e8aaf8d00ff9d66ac8998497d5a0481a3072b7e830671a4ba58dfff2210eabe499d84227de9b380592e771b3c6ec982a92b26e4bd6522160c87c505b52",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4947,7 +4947,7 @@
         "id":  388,
         "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
         "price":  549,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/cukerka-raffaello-grand-125g-200x200.jpg",
+        "image":  "enc-c1fa8d4127b863af58b7664afb605763-cf9216112837786098c9597fbe62a62c246314064a80a4fa3ff69032e7524a0588264b5569904322607e54f1bddf61a7567361f9f4bd9fe2f3ab528177ffa38113f58b664810525db67b01791ebb2434b9c7e9366207dbb7130501d2ed718b775849079c2b25a9a7927fd2e716587428",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Велика",
@@ -4963,7 +4963,7 @@
         "id":  389,
         "name":  "Велика шоколадка Lindt Swiss Premium White Chocolate Almond 300г",
         "price":  749,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-swiss-premium-white-almond-300g-5-200x200.jpg",
+        "image":  "enc-95a5e0789d1cbfc2ff6283873bda0ff5-09a109d22ac3af8f2a76a7341059b88ef25bea7251130c716e55ea1832e8ae0718a3ecf1b778c0ee1b362adaf04920f027f4aee1ec5965f1ce96453d0c9f4929e40f0da44207df20fab309038766b529e667515df23564a9a2c6b2b2e49d2617173f1d2c004d09a35811d5fea6460b6d257018a1fb4eba8922f94ae0aff16244",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -4979,7 +4979,7 @@
         "id":  398,
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/2026-03-11-132341-200x200.jpg",
+        "image":  "enc-559a5daa43713d453561209dd3edddd2-4eab8bc89c5392325918df9cf16f242f6eead7c501408628d1617d5918e4837bc7d9c5d38a25918020e9690382cd38705e0924ddbbc44b587eea3b2578f440786d05073f3f725dbb1412e75605018cab6b52ea48df252e787c184074fefffcda",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -4995,7 +4995,7 @@
         "id":  399,
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/Znimok-ekrana-2026-03-11-o-142633-200x200.png",
+        "image":  "enc-d6512990eb891151feff3092bc2f5cf7-83d36ed7159ffcc1801e7b6d67a354c33bbfe8206a803872101136ac008ba46dd16ce4d82686ebc6fca1d1a50ffc04125252ea1cbd8d3985d040a4b7e8e730e2e7d6d94707406914bfa9815284f57c30d8b7eacf0967537df70e4ae85c595c9fd3881b4c2b8d9af20a85a40f49cd7071",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Kinder",
@@ -5011,7 +5011,7 @@
         "id":  400,
         "name":  "Дубайський молочний шоколад Bolci Dubai Chocolate Milk Kadayif Pistachio 200г.",
         "price":  549,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/5555/bolci-dubai-chocolate-milk-kadayif-pistachio-200g-1-200x200.png",
+        "image":  "enc-ad7ef5a4c5033e8a8b7b6c5503188d68-1b29a551a21f9db0d7e88ad356685bbed1fe2590cee1530e03d5b77647f4bbb6833ca842bb4a5942ed9804e411fed3815f0d310c2ba945e02d07bdaaeaf1643994c70c3bd1569cf7dc8392947673b323241dbf393f0d638077a0ab9c5fd112f5840ced40839709a88dd3684ebc308da71a2886d1f350a4781394804ea0e92a10dc2e174cd0d244c9ae5f69dea63f03e422d77e08038ab85180493253b5df8a17170344b82d6fa728ba982ceed90cc17ceb321c9a653acfccbc32ef3797ec160c741092d4e40247ab7610145799aca06ee5a6b1349aed543ad3fee41663f135b9a4532010bd9a01720bba994ecc1feb25f2e419c3aac3187fc2b86ce36d4b3dc5",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5027,7 +5027,7 @@
         "id":  401,
         "name":  "Дубайський шоколад Bolci Dubai Chocolate Pistachio Kadayif у коробці 256г",
         "price":  959,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/shokolad-bolci-dubai-pistachio-kadayif-256g-8-200x200.jpg",
+        "image":  "enc-2a983a387c763eebdd688e1adf0402c1-a785eda1c0794d35c6d335613760692c9186f2bc45d0525de4b515b989a2ad2935337b8a3ff403fbf1a580b40ba2970f129514011be7fa80c87d3f6e0d5869e6e93f1dd9c5357c37521b9006bd928061ffb9423787cbb2b1b8ef7d926fcb605b30716d17cb70050883f34144bb06c79dc70ddec2a80276e675205d36d766e3cf",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5043,7 +5043,7 @@
         "id":  402,
         "name":  "Дубайський шоколад Bolci Praliny Dubai Chocolate Цукерки 96г",
         "price":  429,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/cukerki-bolci-praliny-dubai-chocolate-96g-2-200x200.jpg",
+        "image":  "enc-5b2a7a8e0306d629e9725e665389dd45-e58968b470858cd00d5ef0cdc014481139ef34f65e772e95bd573789aaafa89178674797445ca6974aa03a3d65306b04cf20fb44939caa8fac3c0b27572609e6829165e23db6aef229159e893b5991cefd4b389166f198386aa5b7d39ae631e5ac227af12cbe0835d12b95c2e6465c38181e2e40cad36b4ca4e97c237e554d8a",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5059,7 +5059,7 @@
         "id":  403,
         "name":  "Дубайський шоколад FIX Biscoff Spread Біскофф 100 г",
         "price":  409,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-biscoff-spread-100g-3-200x200.jpg",
+        "image":  "enc-c2c7be1306c4391f4a3f120846b53a2d-6f6a9c11be955c3518bfa90d66c40f471684bdd87e614d8cf1a367dcb33fb48c0423c9e8341b95074c1b2bc9c3997bb66deac59366f2a3a9d17a1c941e7379af9f0341317ffa9b01466b4edf8743d84cd8963d1d2b6aac33f0a7b0421b9c531a9ff5cb39b7f83475c4179807ade267b4",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5075,7 +5075,7 @@
         "id":  404,
         "name":  "Дубайський Шоколад Fix Chocolate Dubai Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad_fix_chocolate_dubai_knafeh_pistachio_200g_turkey_3-200x200.jpg",
+        "image":  "enc-09d97df7aa885218f44bbe0902df5523-ca0d8aa95aedce0b7504776f563da80278748f5b5fed5d831ac1b96d89516fcd1b225ba47537076f93b6be0ac39ad90a6876380b6b01b12d45866da521aa734c03045fdb84f61b59a0eb0e6928ee6769dd6a67487d630f399a1bf7c133fbec565b16d063d43d1e2506b9e8d8fdac8fedeea324189f2dc5a1fbee2e59b16738bb0ab8534ca687f49ef92b74686bcee075",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5091,7 +5091,7 @@
         "id":  405,
         "name":  "Дубайський Шоколад Fix Chocolate Dubai with Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad_fix_chocolate_dubai_knafeh_and_pistachio_200g_turkey_5-200x200.jpg",
+        "image":  "enc-2c829305966219eba6669ad75a27f1f7-74371b8f9f22132b661b248d81e70f1af604fe88a0d6df97701294f3b239faae91f803f9921f1bd6ebf02eccea5aa981ca99c9e04802069e94f3fb63db1c4e1276d1a9eb2d80d6ba7054f1f4490902d9c96e2bc2b8f32e6d18b3e4496d3d4135444e4c3f0e6b30ef0d23c25fbc032d6359114adb2faa898f6a051a3c23f6dbefa1d6a6100bbd804221bd0e268104630c",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5107,7 +5107,7 @@
         "id":  406,
         "name":  "Дубайський шоколад Fix Chocolatie High On Hazelnut Лісовий Горіх 80г",
         "price":  349,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-chocolatie-high-hazelnut-80g-2-200x200.jpg",
+        "image":  "enc-451e34e583476ed48fb074e5a6fefe23-81e05462c1d91ea593a4da623b28f57010a72e68535ec676eaaafc6a41c2995a8d3cc8c23d83139a1520c0d01fc5f0b5b88ef49caf1e95260c03e6e7935b4194aadded60b7d9ebf7de899b77fc9f0eb44af35cba309df49aed34799c7f5207b76b40a2b500a19688f064c719bef56ff793afa647cd17e85676b24da7a0fe2f9a",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5123,7 +5123,7 @@
         "id":  407,
         "name":  "Дубайський шоколад Fix Mind Your Own Buiscoff з Карамельним печивом 80г",
         "price":  299,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-mind-your-own-buiscoff-80g-7-200x200.jpg",
+        "image":  "enc-1d129ad938aa335ba16c72282c7f0ea6-9ecf0f9f35637ed3e83ed4366c3e2dad166beee6f0ad043706c97c582605a9606795355a14639e16605284d3a354ee4f7d899e25bc1b9ea58f3678880d92ff8281f58987741ac3c7b6e57da8ef2b3f74116ece68b117b5f6569997de93652dc756f2b4987668f64daa4877a1471f70a984856b453794db8c6e0b54a1f7437de0",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5139,7 +5139,7 @@
         "id":  408,
         "name":  "Дубайський шоколад Labudubai Chocolate з начинкою катаїфі та фісташкою 30г",
         "price":  99,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/16-labudubai/labudubai-0-200x200.png",
+        "image":  "enc-f90cc6330800ad153cee7df81dc49dd9-fc0489b8cb4b5b9d40a26e5d9fe7876732507f669802ed19d28474126191b5fad0667812b87cdae57164ab59365b14a115fd1edd7ad2f9911637bcd5bd47f7a0d35cdb0c6d51331c2320304706e614b653265f676bd9b387f39fd9a6b0039338407db2ddabe32dd38aee5ef5225107f672f6d5e77c02ad87bcca59120786111fbf59c79c39f9390cd4ad353316dcd2fa49e140abefcf82eecf52019fb122c6b9",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
@@ -5155,7 +5155,7 @@
         "id":  409,
         "name":  "Дубайський шоколад Lindt Dubai Chocolate Bars 150г",
         "price":  1199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Znimok-ekrana-2025-02-20-o-124516-200x200.png",
+        "image":  "enc-ade675eaae0e6fdabea0c23948be91bd-81acfa0f7a6143ef7e252c8c8cfcc87a81ef02b7d21b27d8969354fe684c7b277f3683b4db20e3ea4d605b398ff04b3ef262fc56a0b8db630a66e56289bbfe12dd53d6a3bb4daa789572da1ff6c134bb72a4d27dfe5fb1b4d0952a8cd017db70",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Lindt",
@@ -5171,7 +5171,7 @@
         "id":  410,
         "name":  "Дубайський шоколадний батончик Rosso Bianco DubiGof Crispy \u0026 Creamy Фісташковий 30г",
         "price":  59,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchik-rosso-bianco-dubigof-crispy-creamy-bar-30g-1-200x200.jpg",
+        "image":  "enc-55ca2022062638a2cccc1d8cc3363c58-f627395b19ac1bbb1068aab7e085f4b0e985e5fd9e1effa69c7651434f77511b59a7054039439cb31a44212957fae14cd2b14bc4192517d2fbc2612c330e23333f56cc0584b784a17fffcaea10569cf4d9c1dbc03699fda135ef03d4d0a36b239334ac3ac5fd1a2305f0db2735f73bca6a05c940d1dbe88639806c219c0e5cb975bde71c604897aded311c7379efcd91",
         "category":  "Шоколад",
         "details":  {
                         "brand":  "Дубайський",

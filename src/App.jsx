@@ -17,6 +17,8 @@ allProducts.forEach((p, index) => {
     // Add a small seed to Unsplash URL to get slight variations within the same category if possible, or just use the category image
     if (p.image.startsWith('images/')) {
         p.image = categoryImages[p.category] || categoryImages["Снеки"];
+    } else if (p.image.startsWith('enc-')) {
+        p.image = `/api/image-proxy?token=${encodeURIComponent(p.image)}`;
     }
 });
 
