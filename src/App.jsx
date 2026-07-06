@@ -736,8 +736,11 @@ const App = () => {
     });
     const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
     const [authMode, setAuthMode] = useState('login'); // 'login' or 'register'
-    const [authForm, setAuthForm] = useState({ name: '', email: '', phone: '', address: '', password: '' });
+    const [authForm, setAuthForm] = useState({ name: '', email: '', phone: '', countryCode: '+380', address: '', password: '' });
     const [authError, setAuthError] = useState('');
+    const [isEditProfileOpen, setIsEditProfileOpen] = useState(false);
+    const [editProfileForm, setEditProfileForm] = useState({});
+    const [expandedOrderId, setExpandedOrderId] = useState(null);
 
     // Support Chat State
     const [isChatOpen, setIsChatOpen] = useState(false);
@@ -960,10 +963,9 @@ const App = () => {
         let users = JSON.parse(localStorage.getItem('users') || '[]');
 
         if (authMode === 'register') {
-            // Validate name: must be at least 2 words
-            const nameParts = (authForm.name || '').trim().split(/\s+/).filter(Boolean);
-            if (nameParts.length < 2) {
-                setAuthError("Введіть повне ім'я та прізвище (мінімум 2 слова).");
+            // Validate name: at least 2 characters
+            if (!authForm.name || authForm.name.trim().length < 2) {
+                setAuthError('Введіть ваше імʼя (мінімум 2 символи).');
                 return;
             }
             // Validate email
@@ -1026,6 +1028,23 @@ const App = () => {
                 setAuthError('Невірний email або пароль. Спробуйте ще раз.');
             }
         }
+    };
+
+    const handleEditProfileSave = () => {
+        const updatedUser = {
+            ...currentUser,
+            name: editProfileForm.name || currentUser.name,
+            phone: editProfileForm.phone || currentUser.phone,
+            address: editProfileForm.address || currentUser.address,
+            city: editProfileForm.city || currentUser.city,
+            avatar: `https://ui-avatars.com/api/?name=${encodeURIComponent(editProfileForm.name || currentUser.name)}&background=random`
+        };
+        setCurrentUser(updatedUser);
+        localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        const idx = users.findIndex(u => u.email === currentUser.email);
+        if (idx !== -1) { users[idx] = updatedUser; localStorage.setItem('users', JSON.stringify(users)); }
+        setIsEditProfileOpen(false);
     };
 
     const handleLogout = () => {
@@ -1362,17 +1381,16 @@ const App = () => {
                                     <>
                                         {/* Full name */}
                                         <div>
-                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Повне ім'я та прізвище <span className="text-red-500">*</span></label>
+                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Імʼя <span className="text-red-500">*</span></label>
                                             <input
                                                 type="text"
-                                                placeholder="Іван Іванов"
+                                                placeholder="Іван"
                                                 value={authForm.name}
                                                 onChange={(e) => setAuthForm({...authForm, name: e.target.value})}
-                                                minLength={5}
-                                                title="Введіть ім'я та прізвище (мінімум 2 слова)"
+                                                minLength={2}
+                                                title="Введіть ваше імʼя"
                                                 className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium"
                                             />
-                                            <p className="text-xs text-gray-400 mt-1">Вкажіть ім'я та прізвище через пробіл</p>
                                         </div>
 
                                         {/* Phone with country selector */}
@@ -1912,20 +1930,18 @@ const App = () => {
                                     {/* Name */}
                                     <div>
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
-                                            Імʼя та Прізвище <span className="text-red-500">*</span>
+                                            Імʼя <span className="text-red-500">*</span>
                                         </label>
                                         <input
                                             required
                                             name="name"
                                             type="text"
                                             defaultValue={currentUser ? currentUser.name : ''}
-                                            placeholder="Іван Іванов"
-                                            minLength={5}
-                                            pattern="[А-ЯҐЄІЇа-яґєії'\u2019A-Za-z]{2,}\s+[А-ЯҐЄІЇа-яґєії'\u2019A-Za-z]{2,}.*"
-                                            title="Введіть імʼя та прізвище (мінімум 2 слова)"
+                                            placeholder="Іван"
+                                            minLength={2}
+                                            title="Введіть ваше імʼя"
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
-                                        <p className="text-xs text-gray-400 mt-1">Введіть повне імʼя та прізвище</p>
                                     </div>
 
                                     {/* Phone with country code */}
@@ -2079,7 +2095,10 @@ const App = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-2 mt-6">
-                                        <button className="flex-1 py-2.5 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                                        <button
+                                            onClick={() => { setEditProfileForm({ name: currentUser.name, phone: currentUser.phone || '', city: currentUser.city || '', address: currentUser.address || '' }); setIsEditProfileOpen(true); }}
+                                            className="flex-1 py-2.5 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                                        >
                                             Редагувати
                                         </button>
                                         <button onClick={handleLogout} className="py-2.5 px-4 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 font-bold rounded-xl hover:bg-red-200 dark:hover:bg-red-900/50 transition-colors" title="Вийти з акаунту">
@@ -2087,7 +2106,7 @@ const App = () => {
                                         </button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             
                             {/* Right Column: Orders */}
@@ -2140,17 +2159,82 @@ const App = () => {
                                                 </div>
                                                 
                                                 <div className="flex gap-2">
-                                                    <button className="flex-1 py-2 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                                                        Деталі
+                                                    <button
+                                                        onClick={() => setExpandedOrderId(expandedOrderId === order.id ? null : order.id)}
+                                                        className="flex-1 py-2 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                                                    >
+                                                        {expandedOrderId === order.id ? 'Згорнути ▲' : 'Деталі ▼'}
                                                     </button>
-                                                    <button className="flex-1 py-2 bg-primary/10 text-primary font-bold rounded-xl text-sm hover:bg-primary hover:text-white transition-colors">
+                                                    <button
+                                                        onClick={() => {
+                                                            order.items.forEach(item => {
+                                                                const product = allProducts.find(p => p.name === item.name);
+                                                                if (product) addToCart(product);
+                                                            });
+                                                            navigateTo('checkout');
+                                                        }}
+                                                        className="flex-1 py-2 bg-primary/10 text-primary font-bold rounded-xl text-sm hover:bg-primary hover:text-white transition-colors"
+                                                    >
                                                         Повторити
                                                     </button>
                                                 </div>
+
+                                                {expandedOrderId === order.id && (
+                                                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 space-y-2 animate-in slide-in-from-top-2 duration-200">
+                                                        <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">Склад замовлення</h4>
+                                                        {order.items.map((item, idx) => (
+                                                            <div key={idx} className="flex justify-between items-center text-sm bg-gray-50 dark:bg-gray-800/50 rounded-xl px-4 py-2">
+                                                                <span className="text-gray-700 dark:text-gray-300 font-medium">{item.name}</span>
+                                                                <span className="text-primary font-bold">x{item.quantity}</span>
+                                                            </div>
+                                                        ))}
+                                                        <div className="flex justify-between items-center pt-3 border-t border-gray-100 dark:border-gray-800">
+                                                            <span className="text-sm font-bold text-gray-500">Сума:</span>
+                                                            <span className="text-lg font-extrabold text-primary">{order.total} ₴</span>
+                                                        </div>
+                                                    </div>
+                                                )}
                                             </div>
                                         ))}
                                     </div>
                                     )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {/* Edit Profile Modal */}
+                {isEditProfileOpen && currentUser && (
+                    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-300">
+                        <div className="bg-white dark:bg-darkBg w-full max-w-md rounded-3xl shadow-2xl overflow-hidden relative">
+                            <button onClick={() => setIsEditProfileOpen(false)} className="absolute top-4 right-4 p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors z-10 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                            </button>
+                            <div className="p-8">
+                                <h2 className="text-2xl font-extrabold text-dark dark:text-white mb-2">Редагування профілю</h2>
+                                <p className="text-sm text-gray-500 mb-6">Змініть свої дані</p>
+                                <div className="space-y-4">
+                                    <div>
+                                        <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Імʼя</label>
+                                        <input type="text" value={editProfileForm.name || ''} onChange={e => setEditProfileForm({...editProfileForm, name: e.target.value})} placeholder="Іван" minLength={2} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 font-medium" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Телефон</label>
+                                        <input type="tel" value={editProfileForm.phone || ''} onChange={e => setEditProfileForm({...editProfileForm, phone: e.target.value})} placeholder="+380 XX XXX XX XX" className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 font-medium" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Місто</label>
+                                        <input type="text" value={editProfileForm.city || ''} onChange={e => setEditProfileForm({...editProfileForm, city: e.target.value})} placeholder="Київ" className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 font-medium" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Відділення Нової Пошти</label>
+                                        <input type="text" value={editProfileForm.address || ''} onChange={e => setEditProfileForm({...editProfileForm, address: e.target.value})} placeholder="№1 або адреса" className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 font-medium" />
+                                    </div>
+                                    <div className="flex gap-3 pt-2">
+                                        <button onClick={() => setIsEditProfileOpen(false)} className="flex-1 py-3 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl hover:bg-gray-200 transition-colors">Скасувати</button>
+                                        <button onClick={handleEditProfileSave} className="flex-1 py-3 gradient-bg text-white font-bold rounded-xl hover:opacity-90 transition-opacity shadow-md">Зберегти</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
