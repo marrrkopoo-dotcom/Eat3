@@ -2060,8 +2060,8 @@ const App = () => {
                                         <p className="text-xs text-gray-400 mt-1">Наприклад: 0XXXXXXXXX (для України)</p>
                                     </div>
 
-                                    {/* City with autocomplete */}
-                                    <div className="relative">
+                                    {/* City - plain input */}
+                                    <div>
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
                                             Місто <span className="text-red-500">*</span>
                                         </label>
@@ -2069,31 +2069,15 @@ const App = () => {
                                             required
                                             name="city"
                                             type="text"
-                                            value={checkoutCity !== '' ? checkoutCity : (currentUser ? (currentUser.city || '') : '')}
-                                            onChange={e => { setCheckoutCity(e.target.value); setShowCitySuggestions(true); setCheckoutPostOffice(''); setNpBranches([]); }}
-                                            onFocus={() => setShowCitySuggestions(true)}
-                                            onBlur={() => setTimeout(() => setShowCitySuggestions(false), 150)}
-                                            placeholder="Почніть вводити місто..."
+                                            defaultValue={currentUser ? (currentUser.city || '') : ''}
+                                            placeholder="Наприклад: Київ"
                                             minLength={2}
-                                            autoComplete="off"
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
-                                        {showCitySuggestions && checkoutCity.length >= 1 && (() => {
-                                            const filtered = UA_CITIES.filter(c => c.toLowerCase().startsWith(checkoutCity.toLowerCase())).slice(0, 10);
-                                            return filtered.length > 0 ? (
-                                                <ul className="absolute z-30 top-full left-0 right-0 mt-1 bg-white dark:bg-darkCard border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl overflow-hidden max-h-52 overflow-y-auto">
-                                                    {filtered.map(city => (
-                                                        <li key={city} onMouseDown={() => { setCheckoutCity(city); setShowCitySuggestions(false); fetchNpBranches(city); }} className="px-4 py-2.5 hover:bg-primary/10 hover:text-primary cursor-pointer text-sm font-medium text-dark dark:text-white transition-colors flex items-center gap-2">
-                                                            <span>📍</span> {city}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            ) : null;
-                                        })()}
                                     </div>
 
-                                    {/* Post office with NP autocomplete */}
-                                    <div className="relative">
+                                    {/* Post office - plain input */}
+                                    <div>
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
                                             Відділення Нової Пошти <span className="text-red-500">*</span>
                                         </label>
@@ -2101,36 +2085,11 @@ const App = () => {
                                             required
                                             name="postOffice"
                                             type="text"
-                                            value={checkoutPostOffice || (currentUser ? (currentUser.address || '') : '')}
-                                            onChange={e => { setCheckoutPostOffice(e.target.value); setShowBranchSuggestions(true); }}
-                                            onFocus={() => setShowBranchSuggestions(true)}
-                                            onBlur={() => setTimeout(() => setShowBranchSuggestions(false), 150)}
-                                            placeholder="Відділення №1 або адреса"
+                                            defaultValue={currentUser ? (currentUser.address || '') : ''}
+                                            placeholder="Наприклад: Відділення №1"
                                             minLength={3}
-                                            autoComplete="off"
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
-                                        {showBranchSuggestions && checkoutCity.length >= 2 && (() => {
-                                            const currentCityName = checkoutCity;
-                                            const query = checkoutPostOffice.replace(/№/g, '').trim();
-                                            const branchCount = { 'Київ': 320, 'Харків': 210, 'Одеса': 180, 'Дніпро': 160, 'Львів': 140 };
-                                            const max = branchCount[currentCityName] || 80;
-                                            const branches = Array.from({ length: max }, (_, i) => `Відділення №${i + 1} (Нова Пошта), ${currentCityName}`);
-                                            const filtered = branches.filter(b => {
-                                                const num = String(b.match(/№(\d+)/)?.[1] || '');
-                                                return !query || num.startsWith(query.replace(/\D/g, ''));
-                                            }).slice(0, 8);
-                                            return filtered.length > 0 ? (
-                                                <ul className="absolute z-30 top-full left-0 right-0 mt-1 bg-white dark:bg-darkCard border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl overflow-hidden max-h-56 overflow-y-auto">
-                                                    {filtered.map(branch => (
-                                                        <li key={branch} onMouseDown={() => { setCheckoutPostOffice(branch); setShowBranchSuggestions(false); }} className="px-4 py-2.5 hover:bg-primary/10 hover:text-primary cursor-pointer text-sm font-medium text-dark dark:text-white transition-colors flex items-center gap-2">
-                                                            <span className="text-lg">📦</span> {branch}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            ) : null;
-                                        })()}
-                                        <p className="text-xs text-gray-400 mt-1">Оберіть місто вище, щоб побачити підказки</p>
                                     </div>
 
                                     {/* Payment */}
