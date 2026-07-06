@@ -259,7 +259,7 @@ const promotions = [
     { 
         id: 1, 
         title: "Тропічний вибух Chupa Chups 🥭", 
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqDqe3IcyldzErVFQCKqhCWxRzp8t5Xs0JJ0aTa9GydHT7njGoMR5cw7r&s=10", 
+        image: "/images/banner_chupachups_new.jpg", 
         tag: "АКЦІЯ",
         content: "Відчуй смак сонячного літа з неймовірною серією газованих напоїв Chupa Chups! Справжні соковиті манго, апельсин та виноград в улюбленому форматі. Спеціальна пропозиція: купуй солодкі напої Chupa Chups за суперціною!",
         featuredProducts: [4, 5, 6, 9],
@@ -268,7 +268,7 @@ const promotions = [
     { 
         id: 3, 
         title: "Американська класика Dr Pepper та Fanta 🇺🇸", 
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTwbyopRuh81hS_TuuQTjtSZZRDNPTtrCvufvIRRI625DnXTRGXF9uaW0&s=10", 
+        image: "/images/banner_drpepper_fanta_new.jpg", 
         tag: "ЕКСКЛЮЗИВ",
         content: "Справжні Dr Pepper Strawberries & Cream та класична американська Fanta Orange вже на складі Жуйки! Особливі рецептури з насиченим смаком прямо з США. Зберіть свій унікальний набір улюблених американських напоїв.",
         featuredProducts: [49, 47, 30, 12],
@@ -277,7 +277,7 @@ const promotions = [
     { 
         id: 4, 
         title: "Азіатський хрускіт: Lay's та міні-краби 🥢", 
-        image: "https://i.ytimg.com/vi/NW94I79wGik/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6lp-w9vMmfGd7H3QlHtcRp6r6Dw", 
+        image: "/images/banner_asian_new.jpg", 
         tag: "ЕКЗОТИКА",
         content: "Справжній гастрономічний вибух прямо з Азії! Спробуйте унікальні смаки китайських чіпсів Lay's Big Wave (Свиняча грудинка, Смажений краб, Свіжий огірок) та екзотичних сушених міні-крабиків Seafood Spicy Baby Crab. Такого ви більше ніде не спробуєте!",
         featuredProducts: [143, 145, 149, 150],
@@ -286,7 +286,7 @@ const promotions = [
     {
         id: 11,
         title: "Шалені знижки на Monster Energy 🦖",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYY7ORb6z_E2akgNlJtyz7LQNk6tX3e5lLnTDTLXLk_Q&s=10",
+        image: "/images/banner_monster_new.jpg", 
         tag: "ГАРЯЧЕ",
         content: "Вибухова добірка Monster Energy для справжніх фанатів! Monster Ultra White без цукру, тропічний Mango Loco та лімітований The Doctor — заряджайтеся на максимум. Тільки цього тижня діють спеціальні знижені ціни!",
         featuredProducts: [26, 20, 21, 22],
