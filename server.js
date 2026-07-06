@@ -192,8 +192,8 @@ app.post('/api/tg-webhook', (req, res) => {
 });
 
 // Image Proxy Endpoint to mask original image URLs
-app.get('/api/image-proxy', async (req, res) => {
-    const { token } = req.query;
+app.get('/images/cache/:token', async (req, res) => {
+    const { token } = req.params;
     if (!token) {
         return res.status(400).send('Missing token');
     }

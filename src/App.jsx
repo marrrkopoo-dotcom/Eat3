@@ -18,7 +18,7 @@ allProducts.forEach((p, index) => {
     if (p.image.startsWith('images/')) {
         p.image = categoryImages[p.category] || categoryImages["Снеки"];
     } else if (p.image.startsWith('enc-')) {
-        p.image = `/api/image-proxy?token=${encodeURIComponent(p.image)}`;
+        p.image = `/images/cache/${encodeURIComponent(p.image)}`;
     }
 });
 
