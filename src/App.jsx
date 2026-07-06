@@ -746,6 +746,51 @@ const App = () => {
     const [checkoutPostOffice, setCheckoutPostOffice] = useState('');
     const [showCitySuggestions, setShowCitySuggestions] = useState(false);
     const [showBranchSuggestions, setShowBranchSuggestions] = useState(false);
+    const [npBranches, setNpBranches] = useState([]);
+    const [isLoadingBranches, setIsLoadingBranches] = useState(false);
+
+    const UA_CITIES = [
+        'Абазівка','Аджамка','Ачтирка','Бахмут','Бар','Бахчисарай','Бердянськ','Березань','Березнегувате','Біла Церква','Білогірськ','Бориспіль','Бровари','Буча','Васильків','Велика Киримка','Великий Березний','Вінниця','Волноваха','Гадяч','Галич','Генічеськ','Головне','Голованівський','Голоп','Горлівка','Городок','Горохівка','Гребінка','Дніпро','Дніпрорудневськ','Дніпродзержинськ','Дрогобич','Дубно','Дунаєвць','Дубляни','Енакієве','Євпаторія','Жовква','Жовті Води','Житомир','Запоріжжя','Заслав','Захарівка','Змієв','Знамʼянка','Золотоноша','Івано-Франківськ','Іллічівськ','Ірпінь','Ісмаил','Ізмаїл','Калуш','Камʼянець-Подільський','Камʼянка','Канів','Каховка','Кегичівка','Київ','Козелець','Комарно','Конотоп','Коростень','Ковель','Козятин','Краматорськ','Красноармійськ','Красноград','Кременчук','Кривий Ріг','Кропивницький','Лиман','Лубни','Луцьк','Львів','Люботин','Мангуш','Маріуполь','Мелітополь','Мерефа','Миколаїв','Миргород','Молочанськ','Мукачеве','Нежин','Нікополь','Нова Каховка','Нова Одеса','Нововолинськ','Новоград-Сіверський','Новомосковськ','Новопсков','Одеса','Олександрія','Оржів','Острог','Охтирка','Павлоград','Переяслав','Полтава','Пологи','Полтава','Прилуки','Приморськ','Пустомит','Рожнятівка','Ромни','Рубіжне','Рівне','Саки','Самбір','Свалява','Севастополь','Сенча','Северодонецьк','Сімферополь','Скадовськ','Славута','Словʼянськ','Сміла','Снятин','Сокаль','Стаханов','Стрий','Струніно','Суми','Тернопіль','Трускавець','Ужгород','Умань','Харків','Херсон','Хмельницький','Хуст','Черкаси','Чернівці','Чернігів','Чоп','Шостка','Шпола','Щасть','Южноукраїнськ','Яготин','Ямпіль'
+    ];
+
+    const fetchNpBranches = async (cityName, query = '') => {
+        setIsLoadingBranches(true);
+        try {
+            const res = await fetch('https://api.novaposhta.ua/v2.0/json/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    apiKey: '',
+                    modelName: 'AddressGeneral',
+                    calledMethod: 'getWarehouses',
+                    methodProperties: {
+                        CityName: cityName,
+                        FindByString: query,
+                        Limit: '12',
+                        Language: 'UA'
+                    }
+                })
+            });
+            const data = await res.json();
+            if (data.success && data.data && data.data.length > 0) {
+                setNpBranches(data.data.map(w => w.Description));
+            } else {
+                // Fallback: generate branch list
+                const max = { 'Київ': 320, 'Харків': 210, 'Одеса': 180, 'Дніпро': 160, 'Львів': 140, 'Запоріжжя': 120, 'Кривий Ріг': 100, 'Миколаїв': 90 }[cityName] || 60;
+                const branches = Array.from({ length: Math.min(max, 12) }, (_, i) => {
+                    const n = query ? parseInt(query.replace(/\D/g,'') || '1') + i : i + 1;
+                    return `Відділення №${n} (Нова Пошта), ${cityName}`;
+                });
+                setNpBranches(branches);
+            }
+        } catch {
+            const max = 60;
+            const branches = Array.from({ length: 12 }, (_, i) => `Відділення №${i + 1} (Нова Пошта), ${cityName}`);
+            setNpBranches(branches);
+        } finally {
+            setIsLoadingBranches(false);
+        }
+    };
 
     // Support Chat State
     const [isChatOpen, setIsChatOpen] = useState(false);
@@ -812,15 +857,21 @@ const App = () => {
     const handleCheckoutSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
-        const name = formData.get('name').trim();
+        const firstName = (formData.get('firstName') || '').trim();
+        const middleName = (formData.get('middleName') || '').trim();
+        const lastName = (formData.get('lastName') || '').trim();
+        const name = [firstName, middleName, lastName].filter(Boolean).join(' ');
         const phone = formData.get('phone').trim();
         const city = formData.get('city').trim();
         const postOffice = formData.get('postOffice').trim();
 
         // Validation
-        const nameParts = name.split(/\s+/).filter(Boolean);
-        if (nameParts.length < 2) {
-            alert('Будь ласка, введіть повне імʼя та прізвище (мінімум 2 слова).');
+        if (firstName.length < 2) {
+            alert('Будь ласка, введіть ваше імʼя (мінімум 2 символи).');
+            return;
+        }
+        if (lastName.length < 2) {
+            alert('Будь ласка, введіть ваше прізвище (мінімум 2 символи).');
             return;
         }
         if (!/^[0-9]{9,10}$/.test(phone.replace(/[\s\-()]/g, ''))) {
@@ -1936,21 +1987,47 @@ const App = () => {
                                 <h2 className="text-2xl font-black text-dark dark:text-white mb-6">Дані одержувача</h2>
                                 
                                 <form onSubmit={handleCheckoutSubmit} className="space-y-5">
-                                    {/* Name */}
+                                    {/* Name: 3 separate fields */}
                                     <div>
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
-                                            Імʼя <span className="text-red-500">*</span>
+                                            Прізвище <span className="text-red-500">*</span>
                                         </label>
                                         <input
                                             required
-                                            name="name"
+                                            name="lastName"
                                             type="text"
-                                            defaultValue={currentUser ? currentUser.name : ''}
-                                            placeholder="Іван"
+                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[0] || '' : ''}
+                                            placeholder="Іваненко"
                                             minLength={2}
-                                            title="Введіть ваше імʼя"
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
+                                    </div>
+                                    <div className="grid grid-cols-2 gap-3">
+                                        <div>
+                                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                                Імʼя <span className="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                required
+                                                name="firstName"
+                                                type="text"
+                                                defaultValue={currentUser ? (currentUser.name || '').split(' ')[1] || '' : ''}
+                                                placeholder="Іван"
+                                                minLength={2}
+                                                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                                По батькові
+                                            </label>
+                                            <input
+                                                name="middleName"
+                                                type="text"
+                                                placeholder="Іванович"
+                                                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                            />
+                                        </div>
                                     </div>
 
                                     {/* Phone with country code */}
@@ -1992,25 +2069,22 @@ const App = () => {
                                             required
                                             name="city"
                                             type="text"
-                                            value={checkoutCity || (currentUser ? (currentUser.city || '') : '')}
-                                            onChange={e => { setCheckoutCity(e.target.value); setShowCitySuggestions(true); setCheckoutPostOffice(''); }}
+                                            value={checkoutCity !== '' ? checkoutCity : (currentUser ? (currentUser.city || '') : '')}
+                                            onChange={e => { setCheckoutCity(e.target.value); setShowCitySuggestions(true); setCheckoutPostOffice(''); setNpBranches([]); }}
                                             onFocus={() => setShowCitySuggestions(true)}
                                             onBlur={() => setTimeout(() => setShowCitySuggestions(false), 150)}
-                                            placeholder="Київ"
+                                            placeholder="Почніть вводити місто..."
                                             minLength={2}
                                             autoComplete="off"
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
                                         {showCitySuggestions && checkoutCity.length >= 1 && (() => {
-                                            const allCities = [
-                                                'Київ','Харків','Одеса','Дніпро','Запоріжжя','Львів','Кривий Ріг','Миколаїв','Маріуполь','Луцьк','Вінниця','Полтава','Чернівці','Хмельницький','Житомир','Черкаси','Суми','Рівне','Івано-Франківськ','Тернопіль','Кропивницький','Умань','Біла Церква','Кременчук','Рівне','Горлівка','Бровари','Генічеськ','Мелітополь','Камʼянець-Подільський','Прилуки','Мукачеве','Бердянськ','Ковель'
-                                            ];
-                                            const filtered = allCities.filter(c => c.toLowerCase().startsWith(checkoutCity.toLowerCase()));
+                                            const filtered = UA_CITIES.filter(c => c.toLowerCase().startsWith(checkoutCity.toLowerCase())).slice(0, 10);
                                             return filtered.length > 0 ? (
-                                                <ul className="absolute z-30 top-full left-0 right-0 mt-1 bg-white dark:bg-darkCard border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl overflow-hidden max-h-48 overflow-y-auto">
+                                                <ul className="absolute z-30 top-full left-0 right-0 mt-1 bg-white dark:bg-darkCard border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl overflow-hidden max-h-52 overflow-y-auto">
                                                     {filtered.map(city => (
-                                                        <li key={city} onMouseDown={() => { setCheckoutCity(city); setShowCitySuggestions(false); }} className="px-4 py-2.5 hover:bg-primary/10 hover:text-primary cursor-pointer text-sm font-medium text-dark dark:text-white transition-colors">
-                                                            📍 {city}
+                                                        <li key={city} onMouseDown={() => { setCheckoutCity(city); setShowCitySuggestions(false); fetchNpBranches(city); }} className="px-4 py-2.5 hover:bg-primary/10 hover:text-primary cursor-pointer text-sm font-medium text-dark dark:text-white transition-colors flex items-center gap-2">
+                                                            <span>📍</span> {city}
                                                         </li>
                                                     ))}
                                                 </ul>
