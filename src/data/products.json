@@ -2448,22 +2448,6 @@
         "outOfStock":  false
     },
     {
-        "id":  159,
-        "name":  "Італійська Коломба Dal Colle Colomba Nocciola e Pistacchio",
-        "price":  749,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/colomba-dal-colle-nocciola-e-pistacchio-650g-4-200x200.webp",
-        "category":  "Печивотавафлі",
-        "details":  {
-                        "brand":  "Dal Colle Colomba Nocciola E Pistacchio",
-                        "country":  "США",
-                        "volume":  "650г",
-                        "calories":  "468 ккал / 100 г",
-                        "description":  "Великодній голуб — італійська класика!Коломба в красивій фірмовій коробці — десерт ошатний, елегантн.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
         "id":  160,
         "name":  "Італійська панеттоне Bauli Panettone Cointreau Крем Куантро",
         "price":  999,
@@ -2478,22 +2462,6 @@
                     },
         "localImage":  null,
         "outOfStock":  false
-    },
-    {
-        "id":  161,
-        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Pistachio Cream Яйце",
-        "price":  699,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-pandori-luovo-pistachio-cream-620g-1-200x200.webp",
-        "category":  "Печивотавафлі",
-        "details":  {
-                        "brand":  "Bauli Pandori L",
-                        "country":  "Італія",
-                        "volume":  "620г",
-                        "calories":  "499 ккал / 100 г",
-                        "description":  "Це не просто пиріг, а великодній шедевр!Дріжджове тісто — повітряне, м’яке та ароматне, приготоване .."
-                    },
-        "localImage":  null,
-        "outOfStock":  true
     },
     {
         "id":  162,
@@ -2992,22 +2960,6 @@
         "outOfStock":  true
     },
     {
-        "id":  198,
-        "name":  "Великодній кекс Ягня Konditor Osterlamm",
-        "price":  499,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kulich-konditor-osterlamm-400g-4-200x200.jpg",
-        "category":  "Печивотавафлі",
-        "details":  {
-                        "brand":  "Konditor Osterlamm",
-                        "country":  "США",
-                        "volume":  "400г",
-                        "calories":  "492 ккал / 100 г",
-                        "description":  "Справжня зірка весняного столу!Кулич чудово впишеться у сімейне чаювання, прикрасить великодній стіл.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
         "id":  199,
         "name":  "Дитяче печиво Yizhi Chocolate Biscuit Peppa Pig Свинка Пеппа 1шт",
         "price":  59,
@@ -3104,22 +3056,6 @@
         "outOfStock":  false
     },
     {
-        "id":  206,
-        "name":  "Кекс Hostess Peeps Cupcakes Marshmallow",
-        "price":  69,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/keks-hostess-peeps-cupcakes-marshmallow-42g-5-200x200.jpg",
-        "category":  "Печивотавафлі",
-        "details":  {
-                        "brand":  "Mars",
-                        "country":  "США",
-                        "volume":  "42г",
-                        "calories":  "435 ккал / 100 г",
-                        "description":  "Капкейки Hostess Peeps — це лімітована великодня колекція 2026 року, створена у співпраці Hostess та.."
-                    },
-        "localImage":  null,
-        "outOfStock":  true
-    },
-    {
         "id":  211,
         "name":  "Коломба Шоколадна Bauli La Colomba Mora",
         "price":  1099,
@@ -3179,22 +3115,6 @@
                         "volume":  "225г",
                         "calories":  "431 ккал / 100 г",
                         "description":  "Щойно вам захочеться перекусити смачненького - біжіть до нас! Ми привезли дуже смачні фісташкові кру.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  216,
-        "name":  "Куліч Великодній Кролик KuchenMeister",
-        "price":  499,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/kulich-easter-bunny-kuchenmeister-350g-2-200x200.jpg",
-        "category":  "Печивотавафлі",
-        "details":  {
-                        "brand":  "Kuchenmeister",
-                        "country":  "США",
-                        "volume":  "350г",
-                        "calories":  "453 ккал / 100 г",
-                        "description":  "Великодній кролик від кондитерської KuchenMeister - наймиліша весняна паска!Упаковка з паскою ошатна.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -3707,22 +3627,6 @@
                         "volume":  "100г",
                         "calories":  "Не вказано",
                         "description":  "Цей шоколад не має собі рівних.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  252,
-        "name":  "Kinder Uberraschung Великоднє Серце 53G",
-        "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-13-12-52-40-200x200.webp",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "53G",
-                        "calories":  "Не вказано",
-                        "description":  "Як часто через проблеми, складності та купу справ ми забуваємо говорити близьким, що любимо їх?Xас в.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -4288,134 +4192,6 @@
         "outOfStock":  false
     },
     {
-        "id":  310,
-        "name":  "Великоднє шоколадне яйце Raffaello Easter 100 г",
-        "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnoe-yajco-raffaello-easter-egg-spring-100g-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Великоднє",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Весняні свята - час чудес і солодких сюрпризів) Ferrero приготували чудові великодні яйця для ваших .."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  311,
-        "name":  "Великоднє яйце Raffaello Easter Білий шоколад 100 г (термін придатності до 21.08.2025)",
-        "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnoe-yajco-raffaello-easter-100g-2-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Великоднє",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Приготували до весняних свят сюрпризи для коханих?)Яйце Raffaello прикрашене елегантним візерунком у.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  312,
-        "name":  "Великоднє яйце Toblerone Egg з молочним шоколадом 56г",
-        "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/yajce-toblerone-egg-56g-4-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Toblerone",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Великоднє яйце з культовою пірамідкою Toblerone)Зробіть несподіваний міні-подарунок друзям і підсоло.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  313,
-        "name":  "Великодній Кіндер Сюрприз Kinder Überraschung Набір яєць 4x20г",
-        "price":  359,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-22-18-48-33-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Свято Великодня особливе! Значить і Кіндер повинен запам\u0027ятатися) Нехай його буде БІЛЬШЕ! У 4 рази!К.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  314,
-        "name":  "Великодній Кролик Lindt Goldhase Dark Chocolate Темний Шоколад 100г",
-        "price":  449,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnyj-krolik-lindt-goldhase-dark-chocolate-100g-2-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Lindt",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Цей милий шоколадний джентльмен створений майстрами Lindt, які з 1845 року радують весь світ бездога.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  315,
-        "name":  "Великодній Кролик Lindt Goldhase White Chocolate Білий шоколад 100г",
-        "price":  449,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnyj-krolik-lindt-goldhase-white-chocolate-100g-6-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Lindt",
-                        "country":  "Швейцарія",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Цей милий зайчик найніжніший і найсолодший серед великодніх кроликів Lindt!Швейцарські майстри з 184.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  316,
-        "name":  "Великодній набір Kinder Maxi Mix",
-        "price":  429,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/kinder-maxi-mix-easter-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Дитяче пасхальне гніздечко Maxi Mix - універсальний подарунок на свята. Весняна подарункова коробка .."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  317,
-        "name":  "Великодній набір Kinder Mini Mix",
-        "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-13-13-26-19-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Лімітована колекція до Великодню!Святкові набори Kinder Mini Mix точно знадобляться для здійснення к.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
         "id":  318,
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
@@ -4635,22 +4411,6 @@
                         "volume":  "100г",
                         "calories":  "Не вказано",
                         "description":  "Цей шоколад не має собі рівних.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  332,
-        "name":  "Kinder Uberraschung Великоднє Серце 53G",
-        "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-13-12-52-40-200x200.webp",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "53G",
-                        "calories":  "Не вказано",
-                        "description":  "Як часто через проблеми, складності та купу справ ми забуваємо говорити близьким, що любимо їх?Xас в.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -5211,134 +4971,6 @@
                         "volume":  "100г",
                         "calories":  "Не вказано",
                         "description":  "Шоколадна плитка Lindt Swiss Premium — вишукане творіння швейцарських майстрів.Плитка в елегантній з.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  390,
-        "name":  "Великоднє шоколадне яйце Raffaello Easter 100 г",
-        "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnoe-yajco-raffaello-easter-egg-spring-100g-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Великоднє",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Весняні свята - час чудес і солодких сюрпризів) Ferrero приготували чудові великодні яйця для ваших .."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  391,
-        "name":  "Великоднє яйце Raffaello Easter Білий шоколад 100 г (термін придатності до 21.08.2025)",
-        "price":  199,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnoe-yajco-raffaello-easter-100g-2-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Великоднє",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Приготували до весняних свят сюрпризи для коханих?)Яйце Raffaello прикрашене елегантним візерунком у.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  392,
-        "name":  "Великоднє яйце Toblerone Egg з молочним шоколадом 56г",
-        "price":  249,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/yajce-toblerone-egg-56g-4-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Toblerone",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Великоднє яйце з культовою пірамідкою Toblerone)Зробіть несподіваний міні-подарунок друзям і підсоло.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  393,
-        "name":  "Великодній Кіндер Сюрприз Kinder Überraschung Набір яєць 4x20г",
-        "price":  359,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-22-18-48-33-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Свято Великодня особливе! Значить і Кіндер повинен запам\u0027ятатися) Нехай його буде БІЛЬШЕ! У 4 рази!К.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  394,
-        "name":  "Великодній Кролик Lindt Goldhase Dark Chocolate Темний Шоколад 100г",
-        "price":  449,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnyj-krolik-lindt-goldhase-dark-chocolate-100g-2-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Lindt",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Цей милий шоколадний джентльмен створений майстрами Lindt, які з 1845 року радують весь світ бездога.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  395,
-        "name":  "Великодній Кролик Lindt Goldhase White Chocolate Білий шоколад 100г",
-        "price":  449,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnyj-krolik-lindt-goldhase-white-chocolate-100g-6-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Lindt",
-                        "country":  "Швейцарія",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Цей милий зайчик найніжніший і найсолодший серед великодніх кроликів Lindt!Швейцарські майстри з 184.."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  396,
-        "name":  "Великодній набір Kinder Maxi Mix",
-        "price":  429,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/kinder-maxi-mix-easter-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Дитяче пасхальне гніздечко Maxi Mix - універсальний подарунок на свята. Весняна подарункова коробка .."
-                    },
-        "localImage":  null,
-        "outOfStock":  false
-    },
-    {
-        "id":  397,
-        "name":  "Великодній набір Kinder Mini Mix",
-        "price":  209,
-        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-13-13-26-19-200x200.jpg",
-        "category":  "Шоколад",
-        "details":  {
-                        "brand":  "Kinder",
-                        "country":  "Німеччина",
-                        "volume":  "100г",
-                        "calories":  "Не вказано",
-                        "description":  "Лімітована колекція до Великодню!Святкові набори Kinder Mini Mix точно знадобляться для здійснення к.."
                     },
         "localImage":  null,
         "outOfStock":  false
