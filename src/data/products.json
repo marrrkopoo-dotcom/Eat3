@@ -513,7 +513,7 @@
     },
     {
         "id":  34,
-        "name":  "Газована вода A&W Cream Soda No Caffeine",
+        "name":  "Газована вода A\u0026W Cream Soda No Caffeine",
         "price":  99,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-aw-cream-soda-no-caffeine-355ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -522,7 +522,7 @@
                         "country":  "США",
                         "volume":  "355мл",
                         "calories":  "31 ккал / 100 мл",
-                        "description":  "Газировка A&W Cream Soda - американська класика, популярність якої вже більше століття! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
+                        "description":  "Газировка A\u0026W Cream Soda - американська класика, популярність якої вже більше століття! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
         "outOfStock":  true
@@ -737,7 +737,7 @@
     },
     {
         "id":  49,
-        "name":  "Газована вода Dr. Pepper Strawberries & Cream Полуниця і вершки",
+        "name":  "Газована вода Dr. Pepper Strawberries \u0026 Cream Полуниця і вершки",
         "price":  59,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Napitki/Gazirovki/gazirovka-dr-pepper-strawberries-cream-330ml-3-200x200.jpg",
         "category":  "Газовані напої",
@@ -746,7 +746,7 @@
                         "country":  "США",
                         "volume":  "330мл",
                         "calories":  "35 ккал / 100 мл",
-                        "description":  "Легендарний Dr Pepper у версії Strawberries & Cream.Стильна тоненька банка зручно лежить у руці. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
+                        "description":  "Легендарний Dr Pepper у версії Strawberries \u0026 Cream.Стильна тоненька банка зручно лежить у руці. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -1194,7 +1194,7 @@
                         "country":  "США",
                         "volume":  "330мл",
                         "calories":  "3 ккал / 100 мл",
-                        "description":  "PEPSI Strawberries 'N' Cream - улюблене газування зі смаком десерту! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
+                        "description":  "PEPSI Strawberries \u0027N\u0027 Cream - улюблене газування зі смаком десерту! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -1281,7 +1281,7 @@
     },
     {
         "id":  84,
-        "name":  "Газована вода Ultrapop Dragon Ball Drink Strawberry & Banana",
+        "name":  "Газована вода Ultrapop Dragon Ball Drink Strawberry \u0026 Banana",
         "price":  179,
         "image":  "/images/84.jpg",
         "category":  "Газовані напої",
@@ -1297,7 +1297,7 @@
     },
     {
         "id":  85,
-        "name":  "Газована вода Ultrapop One Piece Soda Luffy Lemon & Strawberry Лимон і Полуниця",
+        "name":  "Газована вода Ultrapop One Piece Soda Luffy Lemon \u0026 Strawberry Лимон і Полуниця",
         "price":  179,
         "image":  "/images/85.jpg",
         "category":  "Газовані напої",
@@ -1553,16 +1553,16 @@
     },
     {
         "id":  101,
-        "name":  "Lay's Cheese Cranberry",
+        "name":  "Lay\u0027s Cheese Cranberry",
         "price":  179,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/Znimok-ekrana-2026-04-07-o-120023-200x200.webp",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
                         "volume":  "Не вказано",
                         "calories":  "492 ккал / 100 г",
-                        "description":  "Чіпси Lay's Cheese Cranberry - хвилі хрускоту зі смаком сиру та журавлини. Привіт, друже! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
+                        "description":  "Чіпси Lay\u0027s Cheese Cranberry - хвилі хрускоту зі смаком сиру та журавлини. Привіт, друже! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -1633,12 +1633,12 @@
     },
     {
         "id":  107,
-        "name":  "Горіхи кеш'ю Be & Cheery x Lay's Italian Red Meat Sauce",
+        "name":  "Горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Italian Red Meat Sauce",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-be-cheery-x-lays-italian-red-meat-sauce-54g-5-200x200.webp",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
                         "volume":  "54г",
                         "calories":  "472 ккал / 100 г",
@@ -1658,30 +1658,30 @@
                         "country":  "США",
                         "volume":  "200г",
                         "calories":  "524 ккал / 100 г",
-                        "description":  "Відбірні кеш'ю з серії Alesto Selection.Пакет хорошого формату - 200 грам. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
+                        "description":  "Відбірні кеш\u0027ю з серії Alesto Selection.Пакет хорошого формату - 200 грам. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
         "outOfStock":  false
     },
     {
         "id":  109,
-        "name":  "Гострі горіхи кеш'ю Be & Cheery x Lay's Buldak Spicy",
+        "name":  "Гострі горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Buldak Spicy",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/gorihi-be-cheery-x-lays-buldak-spicy-54g-3-200x200.webp",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
                         "volume":  "54г",
                         "calories":  "479 ккал / 100 г",
-                        "description":  "Фанати азіатського Buldak, для вас пачка офігенних горішків Be & Cheery x Lay's. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
+                        "description":  "Фанати азіатського Buldak, для вас пачка офігенних горішків Be \u0026 Cheery x Lay\u0027s. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
         "outOfStock":  true
     },
     {
         "id":  110,
-        "name":  "Гострі макарони з сиром Cheetos Mac'n Cheese Flamin Hot",
+        "name":  "Гострі макарони з сиром Cheetos Mac\u0027n Cheese Flamin Hot",
         "price":  199,
         "image":  "/images/110.webp",
         "category":  "Снеки",
@@ -1697,7 +1697,7 @@
     },
     {
         "id":  111,
-        "name":  "Гострі мариновані водорості DD' Classmate Kelp Knots",
+        "name":  "Гострі мариновані водорості DD\u0027 Classmate Kelp Knots",
         "price":  49,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/snek-dd-classmate-kelp-knots-26g-3-200x200.webp",
         "category":  "Снеки",
@@ -1713,7 +1713,7 @@
     },
     {
         "id":  112,
-        "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot & Spicy Конжак",
+        "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак",
         "price":  49,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-05-11-16-04-54-200x200.webp",
         "category":  "Снеки",
@@ -1729,7 +1729,7 @@
     },
     {
         "id":  113,
-        "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot & Spicy Конжак 20x15г",
+        "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак 20x15г",
         "price":  799,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-05-11-16-01-15-200x200.webp",
         "category":  "Снеки",
@@ -1745,16 +1745,16 @@
     },
     {
         "id":  114,
-        "name":  "Гострі чіпси Lay's Latiao Spicy Strip Латяо",
+        "name":  "Гострі чіпси Lay\u0027s Latiao Spicy Strip Латяо",
         "price":  219,
         "image":  "/images/114.webp",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
                         "volume":  "60г",
                         "calories":  "513 ккал / 100 г",
-                        "description":  "Полюєте за незвичайними смаками з усього світу? Спробуйте Lay's Latiao. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
+                        "description":  "Полюєте за незвичайними смаками з усього світу? Спробуйте Lay\u0027s Latiao. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  "/images/114.webp",
         "outOfStock":  false
@@ -1766,7 +1766,7 @@
         "image":  "/images/115.webp",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
                         "volume":  "70г",
                         "calories":  "517 ккал / 100 г",
@@ -1793,7 +1793,7 @@
     },
     {
         "id":  117,
-        "name":  "Гострі Чіпси Pringles HOT Smokin' BBQ Ribs Барбекю та Чилі",
+        "name":  "Гострі Чіпси Pringles HOT Smokin\u0027 BBQ Ribs Барбекю та Чилі",
         "price":  159,
         "image":  "/images/117.webp",
         "category":  "Снеки",
@@ -1873,7 +1873,7 @@
     },
     {
         "id":  122,
-        "name":  "Гострі чіпси Takis Blue Heat Waves Hot Chili & Lime Чилі та Лайм",
+        "name":  "Гострі чіпси Takis Blue Heat Waves Hot Chili \u0026 Lime Чилі та Лайм",
         "price":  499,
         "image":  "/images/122.webp",
         "category":  "Снеки",
@@ -2065,7 +2065,7 @@
     },
     {
         "id":  135,
-        "name":  "Екстра гострі Чіпси Takis Fuego Hot Chili Pepper & Lime Extreme Spicy Tortilla Чилі і Лайм",
+        "name":  "Екстра гострі Чіпси Takis Fuego Hot Chili Pepper \u0026 Lime Extreme Spicy Tortilla Чилі і Лайм",
         "price":  69,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy_takis_fuego_hot_chili_pepper_lime_284g_2-200x200.jpg",
         "category":  "Снеки",
@@ -2177,7 +2177,7 @@
     },
     {
         "id":  142,
-        "name":  "Кеш'ю Planters Whole Cashews Dill Pickle",
+        "name":  "Кеш\u0027ю Planters Whole Cashews Dill Pickle",
         "price":  429,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/keshyu-planters-whole-cashews-dill-pickle-142g-2-200x200.jpg",
         "category":  "Снеки",
@@ -2186,7 +2186,7 @@
                         "country":  "США",
                         "volume":  "142г",
                         "calories":  "500 ккал / 100 г",
-                        "description":  "Цілі горіхи кеш'ю Planters з кропом та маринованими огірками.Пікантні, ароматні. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
+                        "description":  "Цілі горіхи кеш\u0027ю Planters з кропом та маринованими огірками.Пікантні, ароматні. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
         "outOfStock":  true
@@ -2225,12 +2225,12 @@
     },
     {
         "id":  145,
-        "name":  "Китайські чіпси Lay's Big Wave Pork Свиняча грудинка Гриль",
+        "name":  "Китайські чіпси Lay\u0027s Big Wave Pork Свиняча грудинка Гриль",
         "price":  219,
         "image":  "/images/145.jpg",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
                         "volume":  "70г",
                         "calories":  "491 ккал / 100 г",
@@ -2241,12 +2241,12 @@
     },
     {
         "id":  146,
-        "name":  "Китайські чіпси Lay's Big Wave Pure Spicy Чілі",
+        "name":  "Китайські чіпси Lay\u0027s Big Wave Pure Spicy Чілі",
         "price":  219,
         "image":  "/images/146.jpg",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
                         "volume":  "70г",
                         "calories":  "466 ккал / 100 г",
@@ -2257,12 +2257,12 @@
     },
     {
         "id":  147,
-        "name":  "Китайські чіпси Lay's Big Wave Roasted Chicken Wing Курячі крильця Гриль",
+        "name":  "Китайські чіпси Lay\u0027s Big Wave Roasted Chicken Wing Курячі крильця Гриль",
         "price":  219,
         "image":  "/images/147.jpg",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
                         "volume":  "70г",
                         "calories":  "517 ккал / 100 г",
@@ -2273,12 +2273,12 @@
     },
     {
         "id":  148,
-        "name":  "Китайські чіпси Lay'S China Keripik Kentang",
+        "name":  "Китайські чіпси Lay\u0027S China Keripik Kentang",
         "price":  299,
         "image":  "/images/148.jpg",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
                         "volume":  "90г",
                         "calories":  "465 ккал / 100 г",
@@ -2289,12 +2289,12 @@
     },
     {
         "id":  149,
-        "name":  "Китайські чіпси Lay's Cucumber Огірок",
+        "name":  "Китайські чіпси Lay\u0027s Cucumber Огірок",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Chipsi-i-sneki/chipsy-lays-cucumber-potato-chips-62g-1-200x200.jpg",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
                         "volume":  "62г",
                         "calories":  "523 ккал / 100 г",
@@ -2305,23 +2305,23 @@
     },
     {
         "id":  150,
-        "name":  "Китайські чіпси Lay's Fried Crab Смажений краб",
+        "name":  "Китайські чіпси Lay\u0027s Fried Crab Смажений краб",
         "price":  219,
         "image":  "/images/150.jpg",
         "category":  "Снеки",
         "details":  {
-                        "brand":  "Lay''s",
+                        "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
                         "volume":  "70г",
                         "calories":  "487 ккал / 100 г",
-                        "description":  "Китайська версія від Lay's з морською темою: чіпси зі смаком смаженого краба! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
+                        "description":  "Китайська версія від Lay\u0027s з морською темою: чіпси зі смаком смаженого краба! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  "/images/150.jpg",
         "outOfStock":  false
     },
     {
         "id":  151,
-        "name":  "Набір-сюрприз з печивом Stitch Mega Surprise Pack Cookies & Games Стіч",
+        "name":  "Набір-сюрприз з печивом Stitch Mega Surprise Pack Cookies \u0026 Games Стіч",
         "price":  119,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-stitch-mega-surprise-pack-cookies-games-10g-2-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2481,7 +2481,7 @@
     },
     {
         "id":  161,
-        "name":  "Італійський Пандоро Bauli Pandori L'Uovo Pistachio Cream Яйце",
+        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Pistachio Cream Яйце",
         "price":  699,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-pandori-luovo-pistachio-cream-620g-1-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2497,7 +2497,7 @@
     },
     {
         "id":  162,
-        "name":  "Італійський Пандоро Bauli Pandori L'Uovo Яйце",
+        "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Яйце",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pandoro-bauli-pandori-luovo-550g-4-200x200.webp",
         "category":  "Печиво та вафлі",
@@ -2570,7 +2570,7 @@
                         "country":  "США",
                         "volume":  "38г",
                         "calories":  "485 ккал / 100 г",
-                        "description":  "Twinkies Strawberry - це легендарні американські бісквіти від Hostess. М'яке повітряне тісто з ваніл.."
+                        "description":  "Twinkies Strawberry - це легендарні американські бісквіти від Hostess. М\u0027яке повітряне тісто з ваніл.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -2586,7 +2586,7 @@
                         "country":  "Італія",
                         "volume":  "290г",
                         "calories":  "493 ккал / 100 г",
-                        "description":  "Kinder Pane Cioc - це незабутня солодка насолода від компанії Kinder. Цей продукт складається з м'як.."
+                        "description":  "Kinder Pane Cioc - це незабутня солодка насолода від компанії Kinder. Цей продукт складається з м\u0027як.."
                     },
         "localImage":  null,
         "outOfStock":  true
@@ -2618,7 +2618,7 @@
                         "country":  "Італія",
                         "volume":  "192г",
                         "calories":  "442 ккал / 100 г",
-                        "description":  "Kinder Plumcake - м'який, повітряний бісквіт, приготований на грецькому йогурті. З додаванням натура.."
+                        "description":  "Kinder Plumcake - м\u0027який, повітряний бісквіт, приготований на грецькому йогурті. З додаванням натура.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -2737,7 +2737,7 @@
     },
     {
         "id":  180,
-        "name":  "Вафельні трубочки Oreo Cocoa Roll Guava & Grapes",
+        "name":  "Вафельні трубочки Oreo Cocoa Roll Guava \u0026 Grapes",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki-oreo-cocoa-crispy-roll-guava-grapes-50g-5-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2746,14 +2746,14 @@
                         "country":  "США",
                         "volume":  "50г",
                         "calories":  "484 ккал / 100 г",
-                        "description":  "Oreo Cocoa Roll Guava & Grapes - тонкі хрусткі трубочки з какао та унікальною фруктовою начинкою.."
+                        "description":  "Oreo Cocoa Roll Guava \u0026 Grapes - тонкі хрусткі трубочки з какао та унікальною фруктовою начинкою.."
                     },
         "localImage":  null,
         "outOfStock":  false
     },
     {
         "id":  181,
-        "name":  "Вафельні трубочки Oreo Cocoa Roll Pickled Plum & Tomatoes",
+        "name":  "Вафельні трубочки Oreo Cocoa Roll Pickled Plum \u0026 Tomatoes",
         "price":  149,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/trubochki-oreo-cocoa-roll-pickled-plum-tomatoes-50g-1-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2762,7 +2762,7 @@
                         "country":  "США",
                         "volume":  "50г",
                         "calories":  "453 ккал / 100 г",
-                        "description":  "Oreo Cocoa Roll Pickled Plum & Tomatoes – тонкі хрусткі трубочки з какао та начинкою з ніжного к.."
+                        "description":  "Oreo Cocoa Roll Pickled Plum \u0026 Tomatoes – тонкі хрусткі трубочки з какао та начинкою з ніжного к.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -2794,7 +2794,7 @@
                         "country":  "США",
                         "volume":  "50г",
                         "calories":  "446 ккал / 100 г",
-                        "description":  "Любителі Орео, вам обов'язково треба спробувати китайську версію легендарного печива)Шоколадно-вафел.."
+                        "description":  "Любителі Орео, вам обов\u0027язково треба спробувати китайську версію легендарного печива)Шоколадно-вафел.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -2849,7 +2849,7 @@
     },
     {
         "id":  187,
-        "name":  "Вафлі Hanuta Kakao & Crispies",
+        "name":  "Вафлі Hanuta Kakao \u0026 Crispies",
         "price":  279,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/hanuta-kakao-crispies-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -2858,7 +2858,7 @@
                         "country":  "США",
                         "volume":  "Не вказано",
                         "calories":  "493 ккал / 100 г",
-                        "description":  "1799, Вафлі Hanuta Kakao & Crispies, 2103, 150 грн., HANUTA KAKAO & CRISPIES, Ferrero , Печи.."
+                        "description":  "1799, Вафлі Hanuta Kakao \u0026 Crispies, 2103, 150 грн., HANUTA KAKAO \u0026 CRISPIES, Ferrero , Печи.."
                     },
         "localImage":  null,
         "outOfStock":  true
@@ -2881,7 +2881,7 @@
     },
     {
         "id":  189,
-        "name":  "Вафлі Knoppers Black & White",
+        "name":  "Вафлі Knoppers Black \u0026 White",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-knoppers-black-white-200g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3082,7 +3082,7 @@
                         "country":  "Бельгія",
                         "volume":  "150г",
                         "calories":  "436 ккал / 100 г",
-                        "description":  "Любителям Біскофф обов'язково потрібно спробувати!Унікальний десерт - Biscoff у квадраті, відірватис.."
+                        "description":  "Любителям Біскофф обов\u0027язково потрібно спробувати!Унікальний десерт - Biscoff у квадраті, відірватис.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -3153,16 +3153,16 @@
     },
     {
         "id":  214,
-        "name":  "Кренделі Reese's Peanut Butter and Jelly Filled Pretzels",
+        "name":  "Кренделі Reese\u0027s Peanut Butter and Jelly Filled Pretzels",
         "price":  999,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/krendelki-reeses-peanut-butter-and-jelly-filled-pretzels-510g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
         "details":  {
-                        "brand":  "Reese''s",
+                        "brand":  "Reese\u0027\u0027s",
                         "country":  "США",
                         "volume":  "510г",
                         "calories":  "459 ккал / 100 г",
-                        "description":  "Reese’s PB&J - культовий американський дует.Окремий плюс - велика банка. Чудовий варіант для ком.."
+                        "description":  "Reese’s PB\u0026J - культовий американський дует.Окремий плюс - велика банка. Чудовий варіант для ком.."
                     },
         "localImage":  null,
         "outOfStock":  false
@@ -3290,14 +3290,14 @@
                         "country":  "Італія",
                         "volume":  "270г",
                         "calories":  "478 ккал / 100 г",
-                        "description":  "Kinder Ferrero Brioss to Chocolate Milk - є набором з 10 штук м'яких бісквітів зі смаком молочного ш.."
+                        "description":  "Kinder Ferrero Brioss to Chocolate Milk - є набором з 10 штук м\u0027яких бісквітів зі смаком молочного ш.."
                     },
         "localImage":  null,
         "outOfStock":  false
     },
     {
         "id":  223,
-        "name":  "Морозиво Astronaut Foods Cookies & Cream Ice Cream Sandwich сублімоване",
+        "name":  "Морозиво Astronaut Foods Cookies \u0026 Cream Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/morozivo-astronaut-foods-cookies-cream-ice-cream-sandwich-31g-4-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3393,7 +3393,7 @@
     },
     {
         "id":  229,
-        "name":  "Набір для прикрашання печива Create-A-Treat Harry Potter & Friends Cookie Kit",
+        "name":  "Набір для прикрашання печива Create-A-Treat Harry Potter \u0026 Friends Cookie Kit",
         "price":  899,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/yfbh-create-treat-harry-potter-friends-cookie-287g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3649,12 +3649,12 @@
     },
     {
         "id":  248,
-        "name":  "Печиво Hershey's Cookies “N” Creme Rounds",
+        "name":  "Печиво Hershey\u0027s Cookies “N” Creme Rounds",
         "price":  199,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-hersheys-cookies-n-creme-rounds-96g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
         "details":  {
-                        "brand":  "Hershey''s",
+                        "brand":  "Hershey\u0027\u0027s",
                         "country":  "США",
                         "volume":  "96г",
                         "calories":  "443 ккал / 100 г",
@@ -3665,7 +3665,7 @@
     },
     {
         "id":  249,
-        "name":  "Печиво Kellogg's Scooby-Doo! Graham Cracker Snacks",
+        "name":  "Печиво Kellogg\u0027s Scooby-Doo! Graham Cracker Snacks",
         "price":  69,
         "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/pechivo-kelloggs-scooby-doo-graham-cracker-snacks-28g-3-200x200.jpg",
         "category":  "Печиво та вафлі",
@@ -3691,6 +3691,1286 @@
                         "volume":  "150g",
                         "calories":  "496 ккал / 100 г",
                         "description":  "Два краще! Смачне печиво «Кіндер дуо» - справжня насолода для всіх шанувальників кіндер шоколаду. См.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  251,
+        "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread 180г",
+        "price":  649,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lotus-biscoff-milk-chocolate-biscoff-spread-180g-4-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lotus",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Цей шоколад не має собі рівних.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  252,
+        "name":  "Kinder Uberraschung Великоднє Серце 53G",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-13-12-52-40-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "53G",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Як часто через проблеми, складності та купу справ ми забуваємо говорити близьким, що любимо їх?Xас в.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  253,
+        "name":  "Kinder Гаррі Поттер Kinder Joy Funko Pop Harry Potter Return to Hogwarts Набір яєць 3x20г",
+        "price":  549,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/nabir-yaec-kinder-joy-funko-pop-harry-potter-return-hogwards-3x20g-1-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Ну що, гриффіндорці, повертаємося до Хоґвортсу?У кожному яйці — дві половинки:друга — капсула з екск.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  254,
+        "name":  "Kinder для дівчаток Kinder Surprise Fairy Disney Egg Феї 20г",
+        "price":  89,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/yajce-kinder-surprise-fairy-disney-egg-20g-6-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Крильця, блискітки... справжня магія!Тепер додамо інтриги: на вкладишах є код Applaydu — значить, гр.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  255,
+        "name":  "Milka Bubbly Білий 95г",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-bubbly-white-95-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Фіолетова корівка не перестає нас радувати, тому приготуйтеся до чергової смакоти в нашому асортимен.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  256,
+        "name":  "Milka Hazelnut",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-hazelnut-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Смачний молочний шоколад Milka Hazelnut поєднаний з меленим лісовим горіхом..."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  257,
+        "name":  "Milka mmax Nusinni 270g",
+        "price":  259,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-mmax-nussini-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "270g",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Супер велика, супер смачна та супер горіхова - Milka mmax Nusinni 270g!!!!!Milka mmax Nusinni - це н.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  258,
+        "name":  "Milka Noisette 270г",
+        "price":  269,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-noisette300-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Milka Noisette – це велика плитка справжнього задоволення. Ніжний альпійський шоколад просто тане в .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  259,
+        "name":  "Milka Oreo Brownie 100г",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-oreo-choco1-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "НЕРЕАЛЬНО НОВА Будемо дивувати!) Тепер у нас ще більше оригінальної Мілки з незвичайними с.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  260,
+        "name":  "Milka Peanut Crisp Caramel",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-peanut-crispy-caramel-90-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколад Мілка молочний з карамеллю і арахісом - це чудовий шоколад для любителів солодких ласощів. І.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  261,
+        "name":  "Milka Raisins Hazelnuts 100г",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-trauben-nuss-100g-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколаду MILKA багато не буває! Тепер у нас ще більше оригінальної Мілки з незвичайними смаками.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  262,
+        "name":  "Milka Trauben Nuss Родзинки і Горіхи 270г",
+        "price":  259,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-trauben-nuss-300-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Великі 300 грамові MILKA вже тут!) Для тих, кому мало звичайної порції) • MILKA TRAUBEN-NU.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  263,
+        "name":  "Milka Triolade 300г",
+        "price":  279,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-triolade280-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Великі 300 грамові MILKA вже тут!) Для тих, кому мало звичайної порції) • MILKA TRIOLADE –.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  264,
+        "name":  "Milka Whole Hazelnuts 270г",
+        "price":  259,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-whole-hazelnuts300-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколад Мілка з цільними лісовими горіхами. Неповторний смак, вдале і багатьма улюблене поєднання ні.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  265,
+        "name":  "Milka Карамель Daim 100г",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-milka-daim-1-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколад зі шматочками карамелі звучить надто звичайно, але що якщо додати до цього трохи солі?Так і .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  266,
+        "name":  "Milka Печиво Бісквіт 300г",
+        "price":  259,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-mmmax-schoko-and-keks-300-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Ми подумали і вирішили!) Вирішили зібрати повну колекцію 300г шоколадок у себе в магазині!)\u0026nbs.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  267,
+        "name":  "Milka Полуниця 300г",
+        "price":  269,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/milka-strawberry-300-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Для тих, кому мало звичайної порції) • MILKA STRAWBERRY MMMAX ― це шматочок літа навіть в самий.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  268,
+        "name":  "Milka Трюфель Мигдаль 300г",
+        "price":  279,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/znimokekrana2025-01-17o13.08.08-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Колекція величезних Milka продовжує поповнюватись!Милка з начинкою з ніжного трюфеля зі шматочками м.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  269,
+        "name":  "Toblerone Dark Chocolate With Honey \u0026 Almond Nougat",
+        "price":  149,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-dark-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Toblerone",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколад Toblerone Dark Chocolane Honey Almond Nougat - це найсмачніший чорний швейцарський шоколад у.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  270,
+        "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat",
+        "price":  149,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-milk-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Toblerone",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Всім підкорювачам гір приготується! Адже у нас з\u0027явилася нова вершина для ваших смакових сходжень!To.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  271,
+        "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat 35г",
+        "price":  49,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-milk-chocolate-with-honey-and-almond-nougat35-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Toblerone",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat - Ніжний молочний шоколад із різних сортів к.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  272,
+        "name":  "Toblerone White Chocolate With Honey \u0026 Almond Nougat",
+        "price":  149,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-white-chocolate-with-honey-and-almond-nougat-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Toblerone",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколад Toblerone White Chocolate With Honey \u0026 Almond Nougat ― ексклюзивний швейцарський шо.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  273,
+        "name":  "Toblerone Родзинки Мед Мигдальний Нуга",
+        "price":  139,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/toblerone-fruit-nut-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Toblerone",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Швейцарський шоколад преміум-якості TOBLERONE! ⠀Шоколадка виконана у формі маленьких пірамідок .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  274,
+        "name":  "Адвент календар 2023 з шоколадками Star Wars Mandalorian Christmas Advent Calendar 50г",
+        "price":  399,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/star-wars-mandalorian-christmas-advent-calendar-50g_3-200x200.webp",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "У Всесвіті \"Зоряних воєн\" роздають подарунки! Напередодні свят ми вирішили потішити всіх шанувальник.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  275,
+        "name":  "Адвент Календар Albert \u0026 Son Car Шоколадні фігурки 50г",
+        "price":  249,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/albert_son_advent_calendar_car_50g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "З Адвент календарем від Albert \u0026 Son нудьгувати у грудні вам точно не доведеться) Відкривайте пе.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  276,
+        "name":  "Адвент Календар Albert \u0026 Son Snowman Шоколадні фігурки 50г",
+        "price":  249,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/albert_son_advent_calendar_snowman_50g_1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Цей милий сніговик знає як подарувати вам солодкий грудень!Відкривайте вранці одну дверцята і отриму.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  277,
+        "name":  "Адвент Календар Alberts Santa Шоколадні фігурки 50г",
+        "price":  249,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/albert_son_advent_calendar_santa_50g_1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Санта з мішком подарунків вже чекає! Але спочатку вам доведеться пройти шоколадний квест)дзвіночок,я.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  278,
+        "name":  "Адвент Календар Disney Mickey Mouse Advent Milk Chocolate Міккі Маус 50г",
+        "price":  179,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Advent_Calendar/303349-1-snimek-obrazovky-2025-09-11-072242-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Хочете, щоб ваші діти з задоволенням чекали на Санта-Клауса? Покладіть їм під ялинку Адвент-календар.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  279,
+        "name":  "Адвент Календар Frankford Disney Stitch Merry Stitchmas Стіч 50г",
+        "price":  299,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Advent_Calendar/advent-kalendar-frankford-disney-stitch-merry-stitchmas-50g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Адвент-календар Merry Stitchmas — чудовий спосіб для малюків відраховувати дні до Нового року разом .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  280,
+        "name":  "Адвент календар Milka",
+        "price":  299,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Advent_Calendar/advent-calendar-milka-santa-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Милий спосіб наповнити грудень чарівництвом.Такий календар сподобається всім: дітям, дорослим і тим,.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  281,
+        "name":  "Адвент Календар Sexy XMAS Bakery Woman 75г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Advent_Calendar/advent-calendar-sexy-xmas-bakery-woman-75g-1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Готуйтеся, хлопці, до легкого хвилювання і флірту. На вас чекає не місяць мандаринок, а солодкі спок.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  282,
+        "name":  "Адвент Календар Terrys Chocolate Orange Шоколадний Апельсин 106г",
+        "price":  499,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/terrys_chocolate_orange_advent_calendar_106g_4-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Найочікуваніший Адвент Календар для любителів шоколадного апельсина Terrys!Тепер ласуни можуть насол.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  283,
+        "name":  "Адвент Календар із шоколадками Хот Вілс Kinnerton Hot Wheels Advent Calendar 40г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/kinnerton_hot_wheels_advent_calendar_40g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Ну що, погнали?! Напередодні новорічних свят саме час влаштувати шалені перегони! Спеціально для люб.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  284,
+        "name":  "Адвент Календар для дівчаток Frankford Disney Holiday Countdown Calendar Дісней 50г",
+        "price":  349,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Advent_Calendar/advent-calendar-frankford-disney-holiday-50g-1-1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "В адвенті 24 шоколадки із зображенням героїв Діснея.На звороті - прикраси, які можна розфарбувати, в.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  285,
+        "name":  "Адвент Календар для дітей Kinnerton Bluey Advent Calendar Блуї 40г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/kinnerton_bluey_advent_calendar_40g_1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Малюки дуже чекають на новорічні свята. З цікавим і непосидючим Блуї їм буде набагато веселіше відра.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  286,
+        "name":  "Адвент Календар для жінок Sexy Xmas Craftsmen 75г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/adventskalender_sexy_xmas_craftsmen_75g_1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Авжеж, дівчата, Адвент календар Sexy Xmas Craftsmen точно змусить ваші серця битися швидше. Приготуй.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  287,
+        "name":  "Адвент календар для чоловіків Sexy Xmas Women at Work 75г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/adventskalender_sexy_xmas_women_at_work_75g_1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Тримайтеся, хлопці! З Адвент календарем Sexy Xmas Women at Work зимовий фест буде дуже «гарячим».Адв.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  288,
+        "name":  "Адвент календар з шоколадками Щенячий Патруль Paw Patrol Merry Christmas 75г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/adventcalendar_paw_patrol_merry_christmas_75g_2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Відважні та добрі цуценята з Paw Patrol готові почати відраховувати дні до Нового року! Хлопчикам і .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  289,
+        "name":  "Адвент календар з шоколадками Щенячий Патруль Paw Patrol Merry Christmas 75г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/advent_kalendar_paw_patrol_merry_christmas_75_g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Малюки в очікуванні свят завжди дуже переживають. Чи отримає лист Дід Мороз, чи приїде на Новий рік?.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  290,
+        "name":  "Адвент календар з шоколадними оленями Maltesers Reindeer Chocolate Christmas Advent Calendar 108г",
+        "price":  209,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/maltesers_reindeer_chocolate_christmas_advent_calendar_108g_1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Нехай ваш грудень стане ще більш особливим! Адвент календар Maltesers Reindeer Chocolate Christmas -.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  291,
+        "name":  "Адвент Календар Кіндер Будиночок 3D з цукерками та шоколадом Kinder House Advent Calendar 234г",
+        "price":  699,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/kinder_3d_house_advent_calendar_234g_2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Починаємо рахувати дні до Нового року! Адвент календар Kinder Будиночок 3D - чарівний набір улюблени.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  292,
+        "name":  "Адвент Календар Мілка з шоколадними фігурками Milka Advent Calendar \"Санта з санями\" 200г",
+        "price":  899,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Drugoe/milka_advent_calendar_200g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Milka",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Найулюбленіша альпійська корівка Мілка готова відраховувати дні до різдвяних свят!Для всіх шанувальн.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  293,
+        "name":  "Адвент-календар Disney Pixar Cars Lightning McQueen Advent Calendar з молочними шоколадками 50г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/12-Disney%20Pixar/disney-pixar-cars-lightning-1-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент-календар",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Адвент-календар Disney Pixar Cars Lightning McQueen Advent Calendar — солодке очікування свята з улю.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  294,
+        "name":  "Адвент-календар Kinnerton Netflix Hot Wheels Let\u0027s Race Advent Calendar з шоколадками 40 г.",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/3-ak/kinnerton-hot-wheels-advent-calendar-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент-календар",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Адвент-календар Kinnerton Netflix Hot Wheels Let\u0027s Race 40 г — солодке очікування Різдва в стил.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  295,
+        "name":  "Адвент-Календар Kinnerton Paw Patrol Christmas Advent Calendar з шоколадками 40 г.",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/3-ak/kinnerton-paw-patrol-advent-calendar-1-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Адвент-Календар",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Адвент-календар Kinnerton Paw Patrol 40 г — шоколадна казка з героями улюбленого мультфільму!Привіт,.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  296,
+        "name":  "Апельсин шоколадний з м\u0027ятою Terry s Chocolate Orange Mint 145г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/terry_s_chocolate_orange_mint_145g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Апельсин",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "А ви вже пробували?)У нашому асортименті з\u0027явилася м\u0027ятна версія шоколадного апельсина Terry s. .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  297,
+        "name":  "Білий шоколад Lindt Nuss Selection Weiss-Mandel Фундук 150г",
+        "price":  249,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-nuss-selection-weiss-mandel-150g-6-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Білий шоколад з лісовими горіхами.Упаковка виконана у стилі казки «Лускунчик».."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  298,
+        "name":  "Білий шоколад Lindt Tokyo Style Chocolade Matcha Strawberry 145г",
+        "price":  899,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-tokyo-style-chocolade-matcha-strawberry-145g-1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шедевр від Lindt.У плиточці Lindt Tokyo Style Chocolate Matcha Strawberry поєднали вершковий білий ш.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  299,
+        "name":  "Білий шоколад MrBeast Feastables Pretzel Mint Crunch з шматочками м\u0027ятних льодяників 95г.",
+        "price":  399,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/7777/beast2/mrbeast-feastables-pretzel-mint-crunch-95g-1-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Білий",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Білий шоколад MrBeast Feastables Pretzel Mint Crunch з шматочками м’ятних льодяників 95г — ніжна пли.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  300,
+        "name":  "Білий шоколад Reese\u0027s Peanut Butter Bar White 90г",
+        "price":  259,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-reeses-peanut-butter-bar-white-90g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Reese\u0027s",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Обожнюєте цукерки Reese\u0027s?) Ця плитка точно буде лежати у вас на столі, щоб перекусити протягом дня..."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  301,
+        "name":  "Білий шоколад Twinkies Candy Bar з кремовою начинкою 60г",
+        "price":  129,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-twinkies-candy-bar-60g-1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Білий",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Легендарні бісквіти Twinkies у форматі шоколадки!Беріть з собою в дорогу, влаштовуйте солодкі паузи .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  302,
+        "name":  "Білий шоколад з драже Ritter Sport Smarties White 100г",
+        "price":  149,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-ritter-sport-smarties-100g-7-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Ritter Sport",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Ух, неймовірно!Ніжний білий шоколад і багато-багато різнокольорових драже Smarties. Цукерки яскраві,.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  303,
+        "name":  "Бельгійський шоколад Chocoboo Exciting Taste молочний 40г.",
+        "price":  209,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/4444/chocoboo-exciting-taste-40g1-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Бельгійський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Бельгійський шоколад Chocoboo Exciting Taste молочний 40г — маленька плитка, велика святкова емоція\u0026.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  304,
+        "name":  "Бельгійський шоколад Tabby Crunch Chocolate Fried Chicken Курячі ніжки KFC 50г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-tabby-crunch-chocolate-fried-chicken-50g-3-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Бельгійський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Яка частина курки KFC найсмачніша? Шоколадна!Якщо вас охоплюють сумніви - сходити в KFC чи перекусит.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  305,
+        "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад 139.2г",
+        "price":  279,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Pechenie/vafli-oreo-wafer-sticks-dark-chocolate-139g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Вафельні",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Цікава версія від Oreo, випущена спеціально для Китаю! Ці солодощі адаптовані до місцевих смаків і м.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  306,
+        "name":  "Веганський шоколад Lindt Classic Vegan Hazelnut Chocolate Bar з фундуком 100 г.",
+        "price":  269,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/02-liker/lindt-classic-recipe-vegan-hazelnut-bar-100g-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Веганський шоколад Lindt Classic Vegan Hazelnut 100 г — класика смаку без компромісів!Привіт, друже!.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  307,
+        "name":  "Веганський шоколад Lindt Classic Vegan Milk Chocolate Bar молочний 100 г.",
+        "price":  269,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/02-liker/lindt-classic-vegan-milk-chocolate-bar-100g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Веганський шоколад Lindt Classic Vegan Milk Chocolate 100 г — смак без компромісів і без молока!Прив.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  308,
+        "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
+        "price":  549,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/cukerka-raffaello-grand-125g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Велика",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Велика цукерка Raffaello – це розкішне святкове частування від Ferrero. У ній поєдналися витонченіст.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  309,
+        "name":  "Велика шоколадка Lindt Swiss Premium White Chocolate Almond 300г",
+        "price":  749,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-lindt-swiss-premium-white-almond-300g-5-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколадна плитка Lindt Swiss Premium — вишукане творіння швейцарських майстрів.Плитка в елегантній з.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  310,
+        "name":  "Великоднє шоколадне яйце Raffaello Easter 100 г",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnoe-yajco-raffaello-easter-egg-spring-100g-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Великоднє",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Весняні свята - час чудес і солодких сюрпризів) Ferrero приготували чудові великодні яйця для ваших .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  311,
+        "name":  "Великоднє яйце Raffaello Easter Білий шоколад 100 г (термін придатності до 21.08.2025)",
+        "price":  199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnoe-yajco-raffaello-easter-100g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Великоднє",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Приготували до весняних свят сюрпризи для коханих?)Яйце Raffaello прикрашене елегантним візерунком у.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  312,
+        "name":  "Великоднє яйце Toblerone Egg з молочним шоколадом 56г",
+        "price":  249,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/yajce-toblerone-egg-56g-4-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Toblerone",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Великоднє яйце з культовою пірамідкою Toblerone)Зробіть несподіваний міні-подарунок друзям і підсоло.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  313,
+        "name":  "Великодній Кіндер Сюрприз Kinder Überraschung Набір яєць 4x20г",
+        "price":  359,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-22-18-48-33-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Свято Великодня особливе! Значить і Кіндер повинен запам\u0027ятатися) Нехай його буде БІЛЬШЕ! У 4 рази!К.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  314,
+        "name":  "Великодній Кролик Lindt Goldhase Dark Chocolate Темний Шоколад 100г",
+        "price":  449,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnyj-krolik-lindt-goldhase-dark-chocolate-100g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Цей милий шоколадний джентльмен створений майстрами Lindt, які з 1845 року радують весь світ бездога.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  315,
+        "name":  "Великодній Кролик Lindt Goldhase White Chocolate Білий шоколад 100г",
+        "price":  449,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokoladnyj-krolik-lindt-goldhase-white-chocolate-100g-6-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Цей милий зайчик найніжніший і найсолодший серед великодніх кроликів Lindt!Швейцарські майстри з 184.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  316,
+        "name":  "Великодній набір Kinder Maxi Mix",
+        "price":  429,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/kinder-maxi-mix-easter-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Дитяче пасхальне гніздечко Maxi Mix - універсальний подарунок на свята. Весняна подарункова коробка .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  317,
+        "name":  "Великодній набір Kinder Mini Mix",
+        "price":  209,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/photo-2026-03-13-13-26-19-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Лімітована колекція до Великодню!Святкові набори Kinder Mini Mix точно знадобляться для здійснення к.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  318,
+        "name":  "Величезне яйце Kinder Surprise XXL 220г",
+        "price":  999,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/2026-03-11-132341-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Kinder Surprise рожева серія для дівчинки. Це надзвичайний солодкий подарунок з лімітованої серії, я.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  319,
+        "name":  "Величезне яйце Kinder Surprise XXL 220г",
+        "price":  999,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/kinder/Znimok-ekrana-2026-03-11-o-142633-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Kinder",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "220g",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколадне яйце Kinder Surprise XXL 220g Kinder Surprise блакитна серія для хлопчика. Це ду.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  320,
+        "name":  "Дубайський молочний шоколад Bolci Dubai Chocolate Milk Kadayif Pistachio 200г.",
+        "price":  549,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/02-pooh/harpor/03-ricola/11-mms/05-Mikolaje%20Czekoladowe/5555/bolci-dubai-chocolate-milk-kadayif-pistachio-200g-1-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Дубайський молочний шоколад Bolci Dubai Chocolate Milk Kadayif Pistachio 200г — ніжний молочний шоко.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  321,
+        "name":  "Дубайський шоколад Bolci Dubai Chocolate Pistachio Kadayif у коробці 256г",
+        "price":  959,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/shokolad-bolci-dubai-pistachio-kadayif-256g-8-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Серця гурманів по всьому світу підкорені Дубайським шоколадом. Цей розкішний десерт поєднує в собі т.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  322,
+        "name":  "Дубайський шоколад Bolci Praliny Dubai Chocolate Цукерки 96г",
+        "price":  429,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Konfeti/cukerki-bolci-praliny-dubai-chocolate-96g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "У цій коробці - комплімент зі східним шиком - вишукані цукерки в стилі Дубайського шоколаду. Цукерки.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  323,
+        "name":  "Дубайський шоколад FIX Biscoff Spread Біскофф 100 г",
+        "price":  409,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-biscoff-spread-100g-3-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Для шанувальників легендарного печива Lotus - це справжній must-have! Дубайський шоколад із кремовою.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  324,
+        "name":  "Дубайський Шоколад Fix Chocolate Dubai Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
+        "price":  799,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad_fix_chocolate_dubai_knafeh_pistachio_200g_turkey_3-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Популярність Дубайського шоколаду настільки величезна, що скуштувати плитку з фісташковою пастою хоч.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  325,
+        "name":  "Дубайський Шоколад Fix Chocolate Dubai with Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
+        "price":  799,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad_fix_chocolate_dubai_knafeh_and_pistachio_200g_turkey_5-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Дубайський шоколад із фісташковою пастою тримає в напрузі всі соцмережі! І вже кілька місяців, як пі.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  326,
+        "name":  "Дубайський шоколад Fix Chocolatie High On Hazelnut Лісовий Горіх 80г",
+        "price":  349,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-chocolatie-high-hazelnut-80g-2-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Дубайський шоколад зараз на піку популярності - його вірусять у соцмережах, дегустують блогери! І це.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  327,
+        "name":  "Дубайський шоколад Fix Mind Your Own Buiscoff з Карамельним печивом 80г",
+        "price":  299,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Shokolad/shokolad-fix-mind-your-own-buiscoff-80g-7-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Дубайський шоколад створений, щоб закохатися в нього з першого шматочка.Шоколадка преміальної якості.."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  328,
+        "name":  "Дубайський шоколад Labudubai Chocolate з начинкою катаїфі та фісташкою 30г",
+        "price":  99,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Anew/%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C/from%2027.11/1-18/15-kinder/16-labudubai/labudubai-0-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Labudubai Chocolate з начинкою катаїфі та фісташкою — східна розкіш смаку в кожному шматочкуПривіт, .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  329,
+        "name":  "Дубайський шоколад Lindt Dubai Chocolate Bars 150г",
+        "price":  1199,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Znimok-ekrana-2025-02-20-o-124516-200x200.png",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Lindt",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Майстри Ліндт, підхопивши світовий тренд, з гордістю представили власну плитку Дубайського шоколаду .."
+                    },
+        "localImage":  null,
+        "outOfStock":  false
+    },
+    {
+        "id":  330,
+        "name":  "Дубайський шоколадний батончик Rosso Bianco DubiGof Crispy \u0026 Creamy Фісташковий 30г",
+        "price":  59,
+        "image":  "https://choco-yummy.com.ua/image/cache/catalog/Products/Batonchiki/batonchik-rosso-bianco-dubigof-crispy-creamy-bar-30g-1-200x200.jpg",
+        "category":  "РЁРѕРєРѕР»Р°Рґ",
+        "details":  {
+                        "brand":  "Дубайський",
+                        "country":  "РќС–РјРµС‡С‡РёРЅР°",
+                        "volume":  "100Рі",
+                        "calories":  "РќРµ РІРєР°Р·Р°РЅРѕ",
+                        "description":  "Шоколадно-вафельний батончик DubiGof - це ніжні хрусткі вафельні коржі, м\u0027який фісташковий крем і ве.."
                     },
         "localImage":  null,
         "outOfStock":  false
