@@ -907,6 +907,55 @@ const App = () => {
             doNotCall: formData.get('doNotCall') === 'on'
         });
 
+        // Format order details for local support chat message
+        const orderItemsText = cart.map(item => `• ${item.name} x${item.quantity} (${item.price} грн)`).join('\n');
+        const doNotCallText = formData.get('doNotCall') === 'on' ? '❌ Не телефонувати' : '📞 Зателефонувати для підтвердження';
+        const orderMessageText = `📦 Нове замовлення #${newOrderId} успішно оформлено!\n\n` +
+            `👤 Одержувач: ${name}\n` +
+            `📞 Телефон: ${fullPhone}\n` +
+            `📍 Доставка: м. ${city}, ${postOffice}\n` +
+            `💬 Підтвердження: ${doNotCallText}\n\n` +
+            `🛍️ Товари:\n${orderItemsText}\n\n` +
+            `💰 Всього до сплати: ${orderTotal} грн`;
+
+        const botOrderMsg = {
+            sender: 'support',
+            senderName: 'Жуйка Бот 🤖',
+            senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+            text: orderMessageText,
+            timestamp: new Date().toISOString()
+        };
+
+        setChatMessages(prev => [...prev, botOrderMsg]);
+
+        // Send order to Telegram support chat via backend
+        const orderData = {
+            id: `#${newOrderId}`,
+            customerName: name,
+            customerPhone: fullPhone,
+            city: city,
+            postOffice: postOffice,
+            doNotCall: formData.get('doNotCall') === 'on',
+            items: cart.map(item => ({
+                name: item.name,
+                quantity: item.quantity,
+                price: item.price
+            })),
+            total: orderTotal
+        };
+
+        fetch('/api/send-order', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                clientId,
+                order: orderData,
+                clientName: name
+            })
+        }).catch(err => {
+            console.log('Error sending order to TG support:', err);
+        });
+
         clearCart();
         navigateTo('success');
     };

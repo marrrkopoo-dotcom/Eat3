@@ -118,6 +118,57 @@ app.post('/api/send-message', async (req, res) => {
     }
 });
 
+// API: Send order details from client to Telegram
+app.post('/api/send-order', async (req, res) => {
+    const { clientId, order, clientName } = req.body;
+    if (!clientId || !order) {
+        return res.status(400).json({ error: 'Missing clientId or order' });
+    }
+
+    console.log(`Order from ${clientId} (${clientName || 'Anonymous'}): ${order.id}`);
+
+    if (BOT_TOKEN && CHAT_ID) {
+        try {
+            const itemsText = order.items.map(item => `• ${item.name} x${item.quantity} (${item.price} грн)`).join('\n');
+            const text = `📦 *НОВЕ ЗАМОВЛЕННЯ ${order.id}*\n\n` +
+                         `👤 *Отримувач:* ${order.customerName}\n` +
+                         `📞 *Телефон:* \`${order.customerPhone}\`\n` +
+                         `📍 *Доставка:* м. ${order.city}, ${order.postOffice}\n` +
+                         `📞 *Підтвердження:* ${order.doNotCall ? '❌ Не телефонувати' : '📞 Зателефонувати'}\n\n` +
+                         `🛍️ *Товари:*\n${itemsText}\n\n` +
+                         `💰 *Сума:* *${order.total} грн*\n\n` +
+                         `🆔 *ID Клієнта:* \`${clientId}\``;
+
+            const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: CHAT_ID,
+                    text: text,
+                    parse_mode: 'Markdown'
+                })
+            });
+            const data = await response.json();
+            if (data.ok && data.result) {
+                const tgMessageId = data.result.message_id;
+                tgMap[tgMessageId] = clientId;
+                saveMap();
+                console.log(`Mapped TG message ${tgMessageId} (order) to client ${clientId}`);
+                return res.json({ success: true });
+            } else {
+                console.error('Telegram API error:', data);
+                return res.status(500).json({ error: 'Failed to send order to Telegram' });
+            }
+        } catch (err) {
+            console.error('Failed to connect to Telegram:', err);
+            return res.status(500).json({ error: 'Connection to Telegram failed' });
+        }
+    } else {
+        console.log('Telegram bot not configured. Running in Mock/Demo mode for order.');
+        return res.json({ success: true, warning: 'Running in demo mode' });
+    }
+});
+
 // API: Polling updates for client
 app.get('/api/chat-updates', (req, res) => {
     const { clientId } = req.query;
