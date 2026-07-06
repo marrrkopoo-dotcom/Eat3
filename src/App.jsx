@@ -804,6 +804,33 @@ const App = () => {
     const handleCheckoutSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
+        const name = formData.get('name').trim();
+        const phone = formData.get('phone').trim();
+        const city = formData.get('city').trim();
+        const postOffice = formData.get('postOffice').trim();
+
+        // Validation
+        const nameParts = name.split(/\s+/).filter(Boolean);
+        if (nameParts.length < 2) {
+            alert('Будь ласка, введіть повне імʼя та прізвище (мінімум 2 слова).');
+            return;
+        }
+        if (!/^[0-9]{9,10}$/.test(phone.replace(/[\s\-()]/g, ''))) {
+            alert('Будь ласка, введіть коректний номер телефону (9-10 цифр після коду країни).');
+            return;
+        }
+        if (city.length < 2) {
+            alert('Будь ласка, введіть назву міста.');
+            return;
+        }
+        if (postOffice.length < 3) {
+            alert('Будь ласка, введіть номер або адресу відділення Нової Пошти.');
+            return;
+        }
+
+        const countryCode = formData.get('countryCode') || '+380';
+        const fullPhone = countryCode + ' ' + phone;
+
         const newOrderId = Math.floor(100000 + Math.random() * 900000);
         const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
@@ -815,21 +842,42 @@ const App = () => {
             status: 'processing'
         };
 
+        let users = JSON.parse(localStorage.getItem('users') || '[]');
+
         if (currentUser) {
             const updatedUser = {
                 ...currentUser,
+                phone: fullPhone,
+                city: city,
+                address: postOffice,
                 orders: [newOrder, ...(currentUser.orders || [])]
             };
             setCurrentUser(updatedUser);
             localStorage.setItem('currentUser', JSON.stringify(updatedUser));
-
-            // Sync with users database in localStorage
-            const users = JSON.parse(localStorage.getItem('users') || '[]');
             const userIndex = users.findIndex(u => u.email === currentUser.email);
             if (userIndex !== -1) {
-                users[userIndex].orders = [newOrder, ...(users[userIndex].orders || [])];
+                users[userIndex] = updatedUser;
                 localStorage.setItem('users', JSON.stringify(users));
             }
+        } else {
+            // Auto-create account for guest
+            const guestEmail = `guest_${newOrderId}@zhujka.local`;
+            const autoPassword = Math.random().toString(36).slice(-8);
+            const newUser = {
+                id: Date.now(),
+                name: name,
+                email: guestEmail,
+                phone: fullPhone,
+                city: city,
+                address: postOffice,
+                password: autoPassword,
+                avatar: `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random`,
+                orders: [newOrder]
+            };
+            users.push(newUser);
+            localStorage.setItem('users', JSON.stringify(users));
+            localStorage.setItem('currentUser', JSON.stringify(newUser));
+            setCurrentUser(newUser);
         }
 
         setLastOrderDetails({
@@ -837,10 +885,10 @@ const App = () => {
             date: new Date().toLocaleString('uk-UA'),
             items: [...cart],
             total: orderTotal,
-            customer: formData.get('name'),
-            phone: formData.get('phone'),
-            city: formData.get('city'),
-            postOffice: formData.get('postOffice'),
+            customer: name,
+            phone: fullPhone,
+            city: city,
+            postOffice: postOffice,
             paymentMethod: "Накладений платіж",
             doNotCall: formData.get('doNotCall') === 'on'
         });
@@ -1762,29 +1810,93 @@ const App = () => {
                             <div className="w-full md:w-7/12 p-6 sm:p-10 relative">
                                 <h2 className="text-2xl font-black text-dark dark:text-white mb-6">Дані одержувача</h2>
                                 
-                                <form onSubmit={handleCheckoutSubmit} className="space-y-6">
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                        <div>
-                                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">Ім'я Прізвище</label>
-                                            <input required name="name" type="text" placeholder="Іван Іванов" className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none" />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">Телефон</label>
-                                            <input required name="phone" type="tel" placeholder="+38 (077) 915-23-65" className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none" />
-                                        </div>
-                                    </div>
-
+                                <form onSubmit={handleCheckoutSubmit} className="space-y-5">
+                                    {/* Name */}
                                     <div>
-                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">Місто</label>
-                                        <input required name="city" type="text" placeholder="Київ" className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none" />
+                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                            Імʼя та Прізвище <span className="text-red-500">*</span>
+                                        </label>
+                                        <input
+                                            required
+                                            name="name"
+                                            type="text"
+                                            defaultValue={currentUser ? currentUser.name : ''}
+                                            placeholder="Іван Іванов"
+                                            minLength={5}
+                                            pattern="[А-ЯҐЄІЇа-яґєії'\u2019A-Za-z]{2,}\s+[А-ЯҐЄІЇа-яґєії'\u2019A-Za-z]{2,}.*"
+                                            title="Введіть імʼя та прізвище (мінімум 2 слова)"
+                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                        />
+                                        <p className="text-xs text-gray-400 mt-1">Введіть повне імʼя та прізвище</p>
                                     </div>
 
+                                    {/* Phone with country code */}
                                     <div>
-                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">Відділення пошти</label>
-                                        <input required name="postOffice" type="text" placeholder="Відділення Нової Пошти №1" className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none" />
+                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                            Телефон <span className="text-red-500">*</span>
+                                        </label>
+                                        <div className="flex gap-2">
+                                            <select
+                                                name="countryCode"
+                                                defaultValue="+380"
+                                                className="flex-shrink-0 px-3 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm font-bold cursor-pointer"
+                                            >
+                                                <option value="+380">🇺🇦 +380</option>
+                                                <option value="+48">🇵🇱 +48</option>
+                                                <option value="+373">🇲🇩 +373</option>
+                                            </select>
+                                            <input
+                                                required
+                                                name="phone"
+                                                type="tel"
+                                                defaultValue={currentUser ? (currentUser.phone || '').replace(/^\+\d+\s*/, '') : ''}
+                                                placeholder="0XXXXXXXXX"
+                                                pattern="[0-9\s\-]{9,13}"
+                                                title="Введіть номер телефону (починаючи з 0 або без коду країни)"
+                                                maxLength={13}
+                                                className="flex-1 px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                            />
+                                        </div>
+                                        <p className="text-xs text-gray-400 mt-1">Наприклад: 0XXXXXXXXX (для України)</p>
                                     </div>
 
-                                    <div className="pt-2">
+                                    {/* City */}
+                                    <div>
+                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                            Місто <span className="text-red-500">*</span>
+                                        </label>
+                                        <input
+                                            required
+                                            name="city"
+                                            type="text"
+                                            defaultValue={currentUser ? (currentUser.city || '') : ''}
+                                            placeholder="Київ"
+                                            minLength={2}
+                                            title="Введіть назву міста (мінімум 2 символи)"
+                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                        />
+                                    </div>
+
+                                    {/* Post office */}
+                                    <div>
+                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                            Відділення Нової Пошти <span className="text-red-500">*</span>
+                                        </label>
+                                        <input
+                                            required
+                                            name="postOffice"
+                                            type="text"
+                                            defaultValue={currentUser ? (currentUser.address || '') : ''}
+                                            placeholder="Відділення №1 або адреса"
+                                            minLength={3}
+                                            title="Введіть номер або адресу відділення"
+                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                        />
+                                        <p className="text-xs text-gray-400 mt-1">Наприклад: №12 або вул. Хрещатик, 1</p>
+                                    </div>
+
+                                    {/* Payment */}
+                                    <div className="pt-1">
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">Оплата</label>
                                         <label className="flex items-center gap-3 p-4 border border-primary bg-primary/5 rounded-xl cursor-not-allowed opacity-90">
                                             <input type="radio" name="payment" checked readOnly className="w-5 h-5 text-primary accent-primary" />
@@ -1795,18 +1907,25 @@ const App = () => {
                                         </label>
                                     </div>
 
-                                    <div className="pt-2">
+                                    {/* Don't call */}
+                                    <div>
                                         <label className="flex items-center gap-3 cursor-pointer p-4 bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 rounded-xl hover:border-primary transition-colors">
                                             <input type="checkbox" name="doNotCall" className="w-5 h-5 text-primary rounded focus:ring-primary accent-primary cursor-pointer" />
-                                            <span className="text-sm font-bold text-gray-700 dark:text-gray-300">Не дзвонити мені для підтвердження замовлення</span>
+                                            <span className="text-sm font-bold text-gray-700 dark:text-gray-300">Не телефонувати для підтвердження замовлення</span>
                                         </label>
                                     </div>
+
+                                    {!currentUser && (
+                                        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4 text-sm text-blue-700 dark:text-blue-300">
+                                            💡 Після оформлення замовлення для вас автоматично буде створено особистий кабінет, де можна відстежувати статус замовлень.
+                                        </div>
+                                    )}
 
                                     <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
                                         <button type="submit" disabled={cart.length === 0} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
                                             Оформити замовлення
                                         </button>
-                                        <button type="button" onClick={() => navigateTo('shop', 'Напої')} className="w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors">
+                                        <button type="button" onClick={() => navigateTo('shop', 'Всі')} className="w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors">
                                             Повернутися до покупок
                                         </button>
                                     </div>
