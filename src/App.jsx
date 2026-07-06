@@ -29,12 +29,21 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
     const [currentSrc, setCurrentSrc] = React.useState(src || fallbackSrc);
     const [isLoaded, setIsLoaded] = React.useState(false);
     const [failedLocal, setFailedLocal] = React.useState(false);
+    const imgRef = React.useRef(null);
 
     React.useEffect(() => {
         setCurrentSrc(src || fallbackSrc);
         setIsLoaded(false);
         setFailedLocal(false);
     }, [src, fallbackSrc]);
+
+    // Handle cached images immediately
+    React.useEffect(() => {
+        if (imgRef.current && imgRef.current.complete) {
+            setIsLoaded(true);
+            if (typeof onLoad === 'function') onLoad();
+        }
+    }, [currentSrc]);
 
     const handleError = () => {
         if (!failedLocal && src && fallbackSrc) {
@@ -48,6 +57,7 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
     return (
         <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
             <img 
+                ref={imgRef}
                 src={currentSrc} 
                 alt={alt} 
                 className={`${className || ''} ${!isLoaded ? 'blur-md scale-110 opacity-50' : 'blur-0 scale-100 opacity-100'} transition-all duration-700 ease-in-out w-full h-full object-contain`} 
@@ -57,7 +67,6 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
                     if (typeof onLoad === 'function') onLoad();
                 }}
                 onError={handleError} 
-                loading="lazy"
             />
         </div>
     );
