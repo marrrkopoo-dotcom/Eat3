@@ -22,8 +22,8 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Акції", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
-const navItems = ["Всі", "Акції", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
+const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі", "Акції"];
+const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі", "Акції"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
     const [currentSrc, setCurrentSrc] = React.useState(src || fallbackSrc);
@@ -163,13 +163,25 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                 <nav className="border-t border-gray-100 dark:border-gray-800 bg-white/50 dark:bg-darkBg/50 backdrop-blur-md">
                     <div className="container mx-auto px-4">
                         <ul className="flex items-center gap-8 text-sm font-semibold h-12 overflow-x-auto whitespace-nowrap hide-scrollbar text-gray-600 dark:text-gray-300">
-                            {navItems.map(item => (
-                                <li key={item} 
-                                    onClick={() => navigateTo('shop', item)}
-                                    className={`cursor-pointer h-full flex items-center transition-colors ${activeNav === item ? 'text-primary border-b-2 border-primary' : 'hover:text-primary dark:hover:text-primary'}`}>
-                                    {item}
-                                </li>
-                            ))}
+                            {navItems.map(item => {
+                                const isPromo = item === 'Акції';
+                                return (
+                                    <li key={item} 
+                                        onClick={() => navigateTo('shop', item)}
+                                        className={`cursor-pointer h-full flex items-center gap-1 transition-all ${
+                                            isPromo 
+                                                ? activeNav === item 
+                                                    ? 'text-red-500 border-b-2 border-red-500 font-extrabold scale-105' 
+                                                    : 'text-red-500 dark:text-red-400 font-extrabold hover:text-red-600'
+                                                : activeNav === item 
+                                                    ? 'text-primary border-b-2 border-primary' 
+                                                    : 'hover:text-primary dark:hover:text-primary'
+                                        }`}>
+                                        {isPromo && <span>🏷️</span>}
+                                        <span>{item}</span>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 </nav>
@@ -1294,14 +1306,35 @@ const App = () => {
                                     </h3>
                                     <ul className="space-y-2">
                                         {categories.map(cat => {
-                                            // Only show category if it has items, except for 'Всі'
-                                            const catCount = cat === "Всі" ? allProducts.length : allProducts.filter(p => p.category === cat).length;
-                                            if (cat !== "Всі" && catCount === 0) return null;
+                                            const isPromo = cat === "Акції";
+                                            const catCount = cat === "Всі" ? allProducts.length : 
+                                                             isPromo ? allProducts.filter(p => !!p.oldPrice).length :
+                                                             allProducts.filter(p => p.category === cat).length;
+                                            if (cat !== "Всі" && !isPromo && catCount === 0) return null;
                                             return (
                                                 <li key={cat}>
-                                                    <button onClick={() => setSelectedCategory(cat)} className={`w-full flex justify-between items-center px-4 py-3 rounded-xl transition-all ${selectedCategory === cat ? 'bg-primary/10 dark:bg-primary/20 text-primary font-bold' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>
-                                                        <span>{cat}</span>
-                                                        <span className={`text-xs px-2 py-1 rounded-full ${selectedCategory === cat ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-gray-700'}`}>{catCount}</span>
+                                                    <button onClick={() => setSelectedCategory(cat)} className={`w-full flex justify-between items-center px-4 py-3 rounded-xl transition-all ${
+                                                        selectedCategory === cat 
+                                                            ? isPromo 
+                                                                ? 'bg-red-500/10 dark:bg-red-500/20 text-red-500 font-extrabold shadow-sm'
+                                                                : 'bg-primary/10 dark:bg-primary/20 text-primary font-bold' 
+                                                            : isPromo
+                                                                ? 'text-red-500 dark:text-red-400 font-extrabold hover:bg-red-500/5'
+                                                                : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                                                    }`}>
+                                                        <span className="flex items-center gap-1">
+                                                            {isPromo && <span>🏷️</span>}
+                                                            {cat}
+                                                        </span>
+                                                        <span className={`text-xs px-2 py-1 rounded-full ${
+                                                            selectedCategory === cat 
+                                                                ? isPromo 
+                                                                    ? 'bg-red-500 text-white' 
+                                                                    : 'bg-primary text-white' 
+                                                                : isPromo
+                                                                    ? 'bg-red-100 dark:bg-red-950/50 text-red-500'
+                                                                    : 'bg-gray-200 dark:bg-gray-700'
+                                                        }`}>{catCount}</span>
                                                     </button>
                                                 </li>
                                             );
