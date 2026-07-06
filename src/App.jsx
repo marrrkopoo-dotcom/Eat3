@@ -1941,44 +1941,43 @@ const App = () => {
                                     {/* Name: 3 separate fields */}
                                     <div>
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                            Імʼя <span className="text-red-500">*</span>
+                                        </label>
+                                        <input
+                                            required
+                                            name="firstName"
+                                            type="text"
+                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[0] || '' : ''}
+                                            placeholder="Іван"
+                                            minLength={2}
+                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
+                                            По батькові
+                                        </label>
+                                        <input
+                                            name="middleName"
+                                            type="text"
+                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[1] || '' : ''}
+                                            placeholder="Іванович"
+                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
                                             Прізвище <span className="text-red-500">*</span>
                                         </label>
                                         <input
                                             required
                                             name="lastName"
                                             type="text"
-                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[0] || '' : ''}
+                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[2] || '' : ''}
                                             placeholder="Іваненко"
                                             minLength={2}
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
-                                    </div>
-                                    <div className="grid grid-cols-2 gap-3">
-                                        <div>
-                                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
-                                                Імʼя <span className="text-red-500">*</span>
-                                            </label>
-                                            <input
-                                                required
-                                                name="firstName"
-                                                type="text"
-                                                defaultValue={currentUser ? (currentUser.name || '').split(' ')[1] || '' : ''}
-                                                placeholder="Іван"
-                                                minLength={2}
-                                                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
-                                                По батькові
-                                            </label>
-                                            <input
-                                                name="middleName"
-                                                type="text"
-                                                placeholder="Іванович"
-                                                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                                            />
-                                        </div>
                                     </div>
 
                                     {/* Phone with country code */}
@@ -2214,15 +2213,34 @@ const App = () => {
                                                 </div>
 
                                                 {expandedOrderId === order.id && (
-                                                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 space-y-2 animate-in slide-in-from-top-2 duration-200">
-                                                        <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">Склад замовлення</h4>
-                                                        {order.items.map((item, idx) => (
-                                                            <div key={idx} className="flex justify-between items-center text-sm bg-gray-50 dark:bg-gray-800/50 rounded-xl px-4 py-2">
-                                                                <span className="text-gray-700 dark:text-gray-300 font-medium">{item.name}</span>
-                                                                <span className="text-primary font-bold">x{item.quantity}</span>
+                                                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 space-y-3 animate-in slide-in-from-top-2 duration-200">
+                                                        {/* Customer info */}
+                                                        {(order.customerName || order.customerPhone) && (
+                                                            <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4 space-y-2">
+                                                                <h5 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Покупець</h5>
+                                                                {order.customerName && <div className="text-sm font-semibold text-dark dark:text-white">👤 {order.customerName}</div>}
+                                                                {order.customerPhone && <div className="text-sm text-gray-600 dark:text-gray-400">📞 {order.customerPhone}</div>}
                                                             </div>
-                                                        ))}
-                                                        <div className="flex justify-between items-center pt-3 border-t border-gray-100 dark:border-gray-800">
+                                                        )}
+                                                        {/* Delivery address */}
+                                                        {(order.city || order.postOffice) && (
+                                                            <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4 space-y-1">
+                                                                <h5 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Адреса доставки</h5>
+                                                                {order.city && <div className="text-sm font-semibold text-dark dark:text-white">📍 {order.city}</div>}
+                                                                {order.postOffice && <div className="text-sm text-gray-600 dark:text-gray-400">📦 {order.postOffice}</div>}
+                                                            </div>
+                                                        )}
+                                                        {/* Items */}
+                                                        <div>
+                                                            <h5 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">Склад замовлення</h5>
+                                                            {order.items.map((item, idx) => (
+                                                                <div key={idx} className="flex justify-between items-center text-sm bg-gray-50 dark:bg-gray-800/50 rounded-xl px-4 py-2 mb-1">
+                                                                    <span className="text-gray-700 dark:text-gray-300 font-medium">{item.name}</span>
+                                                                    <span className="text-primary font-bold">x{item.quantity}</span>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                        <div className="flex justify-between items-center pt-2 border-t border-gray-100 dark:border-gray-800">
                                                             <span className="text-sm font-bold text-gray-500">Сума:</span>
                                                             <span className="text-lg font-extrabold text-primary">{order.total} ₴</span>
                                                         </div>
