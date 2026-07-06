@@ -82,7 +82,7 @@ const ThemeToggle = ({ isDark, toggleTheme }) => (
     </button>
 );
 
-const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOpen, setIsSearchOverlayOpen, activeView, setActiveView, activeNav, setActiveNav, navigateTo, selectedCity, setIsCityConfirmed, currentUser, setIsAuthModalOpen }) => {
+const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOpen, setIsSearchOverlayOpen, activeView, setActiveView, activeNav, setActiveNav, navigateTo, selectedCity, setIsCityConfirmed, currentUser, setIsAuthModalOpen, setRepeatedOrderDetails }) => {
     return (
         <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -146,7 +146,10 @@ const Header = ({ isDark, toggleTheme, cartItemsCount, searchQuery, setSearchQue
                     </button>
                     
                     <button 
-                        onClick={() => navigateTo('checkout')}
+                        onClick={() => {
+                            if (setRepeatedOrderDetails) setRepeatedOrderDetails(null);
+                            navigateTo('checkout');
+                        }}
                         className={`relative p-2.5 rounded-full transition-all shadow-sm ml-2 ${activeView === 'checkout' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-darkCard text-dark dark:text-white hover:bg-primary hover:text-white'}`}
                         title="Кошик"
                     >
@@ -741,6 +744,7 @@ const App = () => {
     const [isEditProfileOpen, setIsEditProfileOpen] = useState(false);
     const [editProfileForm, setEditProfileForm] = useState({});
     const [expandedOrderId, setExpandedOrderId] = useState(null);
+    const [repeatedOrderDetails, setRepeatedOrderDetails] = useState(null);
 
 
     // Support Chat State
@@ -1367,6 +1371,7 @@ const App = () => {
                 setIsCityConfirmed={setIsCityConfirmed}
                 currentUser={currentUser}
                 setIsAuthModalOpen={setIsAuthModalOpen}
+                setRepeatedOrderDetails={setRepeatedOrderDetails}
             />
             
             {/* Running text marquee banner (бегущая строка) */}
@@ -2029,7 +2034,7 @@ const App = () => {
                             <div className="w-full md:w-7/12 p-6 sm:p-10 relative">
                                 <h2 className="text-2xl font-black text-dark dark:text-white mb-6">Дані одержувача</h2>
                                 
-                                <form onSubmit={handleCheckoutSubmit} className="space-y-5">
+                                <form key={repeatedOrderDetails ? 'repeated' : 'default'} onSubmit={handleCheckoutSubmit} className="space-y-5">
                                     {/* Name: 3 separate fields */}
                                     <div>
                                         <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
@@ -2039,7 +2044,7 @@ const App = () => {
                                             required
                                             name="firstName"
                                             type="text"
-                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[0] || '' : ''}
+                                            defaultValue={repeatedOrderDetails ? (repeatedOrderDetails.customerName || '').split(' ')[0] || '' : currentUser ? (currentUser.name || '').split(' ')[0] || '' : ''}
                                             placeholder="Іван"
                                             minLength={2}
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
@@ -2052,7 +2057,7 @@ const App = () => {
                                         <input
                                             name="middleName"
                                             type="text"
-                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[1] || '' : ''}
+                                            defaultValue={repeatedOrderDetails ? (repeatedOrderDetails.customerName || '').split(' ')[1] || '' : currentUser ? (currentUser.name || '').split(' ')[1] || '' : ''}
                                             placeholder="Іванович"
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                         />
@@ -2065,7 +2070,7 @@ const App = () => {
                                             required
                                             name="lastName"
                                             type="text"
-                                            defaultValue={currentUser ? (currentUser.name || '').split(' ')[2] || '' : ''}
+                                            defaultValue={repeatedOrderDetails ? (repeatedOrderDetails.customerName || '').split(' ')[2] || '' : currentUser ? (currentUser.name || '').split(' ')[2] || '' : ''}
                                             placeholder="Іваненко"
                                             minLength={2}
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
@@ -2080,7 +2085,7 @@ const App = () => {
                                         <div className="flex gap-2">
                                             <select
                                                 name="countryCode"
-                                                defaultValue="+380"
+                                                defaultValue={repeatedOrderDetails ? (repeatedOrderDetails.customerPhone || '').split(' ')[0] || '+380' : currentUser ? (currentUser.phone || '').split(' ')[0] || '+380' : '+380'}
                                                 className="flex-shrink-0 px-3 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm font-bold cursor-pointer"
                                             >
                                                 <option value="+380">🇺🇦 +380</option>
@@ -2091,7 +2096,7 @@ const App = () => {
                                                 required
                                                 name="phone"
                                                 type="tel"
-                                                defaultValue={currentUser ? (currentUser.phone || '').replace(/^\+\d+\s*/, '') : ''}
+                                                defaultValue={repeatedOrderDetails ? (repeatedOrderDetails.customerPhone || '').replace(/^\+\d+\s*/, '') : currentUser ? (currentUser.phone || '').replace(/^\+\d+\s*/, '') : ''}
                                                 placeholder="0XXXXXXXXX"
                                                 pattern="[0-9\s\-]{9,13}"
                                                 title="Введіть номер телефону (починаючи з 0 або без коду країни)"
@@ -2111,7 +2116,7 @@ const App = () => {
                                             required
                                             name="city"
                                             type="text"
-                                            defaultValue={currentUser ? (currentUser.city || '') : ''}
+                                            defaultValue={repeatedOrderDetails ? repeatedOrderDetails.city || '' : currentUser ? (currentUser.city || '') : ''}
                                             placeholder="Наприклад: Київ"
                                             minLength={2}
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
@@ -2127,7 +2132,7 @@ const App = () => {
                                             required
                                             name="postOffice"
                                             type="text"
-                                            defaultValue={currentUser ? (currentUser.address || '') : ''}
+                                            defaultValue={repeatedOrderDetails ? repeatedOrderDetails.postOffice || '' : currentUser ? (currentUser.address || '') : ''}
                                             placeholder="Наприклад: Відділення №1"
                                             minLength={3}
                                             className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
@@ -2149,7 +2154,7 @@ const App = () => {
                                     {/* Don't call */}
                                     <div>
                                         <label className="flex items-center gap-3 cursor-pointer p-4 bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 rounded-xl hover:border-primary transition-colors">
-                                            <input type="checkbox" name="doNotCall" className="w-5 h-5 text-primary rounded focus:ring-primary accent-primary cursor-pointer" />
+                                            <input type="checkbox" name="doNotCall" defaultChecked={repeatedOrderDetails ? repeatedOrderDetails.doNotCall : false} className="w-5 h-5 text-primary rounded focus:ring-primary accent-primary cursor-pointer" />
                                             <span className="text-sm font-bold text-gray-700 dark:text-gray-300">Не телефонувати для підтвердження замовлення</span>
                                         </label>
                                     </div>
@@ -2163,7 +2168,7 @@ const App = () => {
                                     <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
                                         {cartTotal < 350 && cart.length > 0 && (
                                             <div className="mb-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300 text-sm font-bold p-4 rounded-xl text-center">
-                                                ⚠️ Мінімальна сума замовлення — 350 грн. Додайте товари на суму ще хоча б {350 - cartTotal} грн.
+                                                ⚠️ Мінімальна сума замовлення — 350 грн.
                                             </div>
                                         )}
                                         <button type="submit" disabled={cart.length === 0 || cartTotal < 350} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 || cartTotal < 350 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
@@ -2300,6 +2305,13 @@ const App = () => {
                                                             order.items.forEach(item => {
                                                                 const product = allProducts.find(p => p.name === item.name);
                                                                 if (product) addToCart(product);
+                                                            });
+                                                            setRepeatedOrderDetails({
+                                                                customerName: order.customerName,
+                                                                customerPhone: order.customerPhone,
+                                                                city: order.city,
+                                                                postOffice: order.postOffice,
+                                                                doNotCall: order.doNotCall
                                                             });
                                                             navigateTo('checkout');
                                                         }}
