@@ -22,7 +22,7 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
+const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
