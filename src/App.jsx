@@ -741,56 +741,7 @@ const App = () => {
     const [isEditProfileOpen, setIsEditProfileOpen] = useState(false);
     const [editProfileForm, setEditProfileForm] = useState({});
     const [expandedOrderId, setExpandedOrderId] = useState(null);
-    // Checkout autocomplete state
-    const [checkoutCity, setCheckoutCity] = useState('');
-    const [checkoutPostOffice, setCheckoutPostOffice] = useState('');
-    const [showCitySuggestions, setShowCitySuggestions] = useState(false);
-    const [showBranchSuggestions, setShowBranchSuggestions] = useState(false);
-    const [npBranches, setNpBranches] = useState([]);
-    const [isLoadingBranches, setIsLoadingBranches] = useState(false);
 
-    const UA_CITIES = [
-        'Абазівка','Аджамка','Ачтирка','Бахмут','Бар','Бахчисарай','Бердянськ','Березань','Березнегувате','Біла Церква','Білогірськ','Бориспіль','Бровари','Буча','Васильків','Велика Киримка','Великий Березний','Вінниця','Волноваха','Гадяч','Галич','Генічеськ','Головне','Голованівський','Голоп','Горлівка','Городок','Горохівка','Гребінка','Дніпро','Дніпрорудневськ','Дніпродзержинськ','Дрогобич','Дубно','Дунаєвць','Дубляни','Енакієве','Євпаторія','Жовква','Жовті Води','Житомир','Запоріжжя','Заслав','Захарівка','Змієв','Знамʼянка','Золотоноша','Івано-Франківськ','Іллічівськ','Ірпінь','Ісмаил','Ізмаїл','Калуш','Камʼянець-Подільський','Камʼянка','Канів','Каховка','Кегичівка','Київ','Козелець','Комарно','Конотоп','Коростень','Ковель','Козятин','Краматорськ','Красноармійськ','Красноград','Кременчук','Кривий Ріг','Кропивницький','Лиман','Лубни','Луцьк','Львів','Люботин','Мангуш','Маріуполь','Мелітополь','Мерефа','Миколаїв','Миргород','Молочанськ','Мукачеве','Нежин','Нікополь','Нова Каховка','Нова Одеса','Нововолинськ','Новоград-Сіверський','Новомосковськ','Новопсков','Одеса','Олександрія','Оржів','Острог','Охтирка','Павлоград','Переяслав','Полтава','Пологи','Полтава','Прилуки','Приморськ','Пустомит','Рожнятівка','Ромни','Рубіжне','Рівне','Саки','Самбір','Свалява','Севастополь','Сенча','Северодонецьк','Сімферополь','Скадовськ','Славута','Словʼянськ','Сміла','Снятин','Сокаль','Стаханов','Стрий','Струніно','Суми','Тернопіль','Трускавець','Ужгород','Умань','Харків','Херсон','Хмельницький','Хуст','Черкаси','Чернівці','Чернігів','Чоп','Шостка','Шпола','Щасть','Южноукраїнськ','Яготин','Ямпіль'
-    ];
-
-    const fetchNpBranches = async (cityName, query = '') => {
-        setIsLoadingBranches(true);
-        try {
-            const res = await fetch('https://api.novaposhta.ua/v2.0/json/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    apiKey: '',
-                    modelName: 'AddressGeneral',
-                    calledMethod: 'getWarehouses',
-                    methodProperties: {
-                        CityName: cityName,
-                        FindByString: query,
-                        Limit: '12',
-                        Language: 'UA'
-                    }
-                })
-            });
-            const data = await res.json();
-            if (data.success && data.data && data.data.length > 0) {
-                setNpBranches(data.data.map(w => w.Description));
-            } else {
-                // Fallback: generate branch list
-                const max = { 'Київ': 320, 'Харків': 210, 'Одеса': 180, 'Дніпро': 160, 'Львів': 140, 'Запоріжжя': 120, 'Кривий Ріг': 100, 'Миколаїв': 90 }[cityName] || 60;
-                const branches = Array.from({ length: Math.min(max, 12) }, (_, i) => {
-                    const n = query ? parseInt(query.replace(/\D/g,'') || '1') + i : i + 1;
-                    return `Відділення №${n} (Нова Пошта), ${cityName}`;
-                });
-                setNpBranches(branches);
-            }
-        } catch {
-            const max = 60;
-            const branches = Array.from({ length: 12 }, (_, i) => `Відділення №${i + 1} (Нова Пошта), ${cityName}`);
-            setNpBranches(branches);
-        } finally {
-            setIsLoadingBranches(false);
-        }
-    };
 
     // Support Chat State
     const [isChatOpen, setIsChatOpen] = useState(false);
