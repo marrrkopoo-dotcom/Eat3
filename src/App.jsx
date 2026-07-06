@@ -277,7 +277,7 @@ const promotions = [
     { 
         id: 4, 
         title: "Азіатський хрускіт: Lay's та міні-краби 🥢", 
-        image: "https://www.myamericanshop.com/cdn/shop/files/My_american_shop_Samyang_Buldak_Dangmyeon_Original_p2_cf0f609d-8919-4b0d-bbb9-b26d5d011314.jpg?v=1781284576&width=1024", 
+        image: "https://i.ytimg.com/vi/NW94I79wGik/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6lp-w9vMmfGd7H3QlHtcRp6r6Dw", 
         tag: "ЕКЗОТИКА",
         content: "Справжній гастрономічний вибух прямо з Азії! Спробуйте унікальні смаки китайських чіпсів Lay's Big Wave (Свиняча грудинка, Смажений краб, Свіжий огірок) та екзотичних сушених міні-крабиків Seafood Spicy Baby Crab. Такого ви більше ніде не спробуєте!",
         featuredProducts: [143, 145, 149, 150],
