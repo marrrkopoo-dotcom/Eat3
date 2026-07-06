@@ -1030,11 +1030,11 @@ const App = () => {
             // Deep search
             const q = searchQuery.toLowerCase();
             const matchSearch = !q || 
-                p.name.toLowerCase().includes(q) || 
-                p.category.toLowerCase().includes(q) ||
-                p.details.description.toLowerCase().includes(q) ||
-                p.details.brand.toLowerCase().includes(q) ||
-                p.details.country.toLowerCase().includes(q);
+                (p.name && p.name.toLowerCase().includes(q)) || 
+                (p.category && p.category.toLowerCase().includes(q)) ||
+                (p.details?.description && p.details.description.toLowerCase().includes(q)) ||
+                (p.details?.brand && p.details.brand.toLowerCase().includes(q)) ||
+                (p.details?.country && p.details.country.toLowerCase().includes(q));
 
             const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
             const matchCategory = 
