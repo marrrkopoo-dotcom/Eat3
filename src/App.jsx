@@ -314,7 +314,7 @@ const promotions = [
 
 Ми ретельно пакуємо кожну, навіть найменшу посилку, адже нам важлива якість! Будь ласка, на пошті - обов'язково додатково перевіряйте цілісність і комплектацію вашого замовлення при отриманні товару, це дуже важливо!
 
-Звертаємо вашу увагу, що мінімальне замовлення в нашому магазині становить 300 грн, а усі ваши посилки застраховані на повну суму вашого замовлення, коміссія за страхування складає усього лише 0.5% від вартості замовлення!)
+Звертаємо вашу увагу, що мінімальне замовлення в нашому магазині становить 350 грн, а усі ваши посилки застраховані на повну суму вашого замовлення, коміссія за страхування складає усього лише 0.5% від вартості замовлення!)
 
 З усіх додаткових питань, пов'язаних з доставкою або оплатою замовлення звертайтесь за контактним телефоном: (098) 735-05-05
 
@@ -881,6 +881,11 @@ const App = () => {
 
         const newOrderId = Math.floor(100000 + Math.random() * 900000);
         const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+        if (orderTotal < 350) {
+            alert('Мінімальна сума замовлення становить 350 грн.');
+            return;
+        }
 
         const newOrder = {
             id: `#${newOrderId}`,
@@ -2156,7 +2161,12 @@ const App = () => {
                                     )}
 
                                     <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
-                                        <button type="submit" disabled={cart.length === 0} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
+                                        {cartTotal < 350 && cart.length > 0 && (
+                                            <div className="mb-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300 text-sm font-bold p-4 rounded-xl text-center">
+                                                ⚠️ Мінімальна сума замовлення — 350 грн. Додайте товари на суму ще хоча б {350 - cartTotal} грн.
+                                            </div>
+                                        )}
+                                        <button type="submit" disabled={cart.length === 0 || cartTotal < 350} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 || cartTotal < 350 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
                                             Оформити замовлення
                                         </button>
                                         <button type="button" onClick={() => navigateTo('shop', 'Всі')} className="w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors">
