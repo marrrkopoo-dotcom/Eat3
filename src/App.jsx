@@ -800,6 +800,55 @@ const App = () => {
         return () => clearInterval(interval);
     }, [clientId, isChatOpen]);
 
+    // Checkout Logic
+    const handleCheckoutSubmit = (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const newOrderId = Math.floor(100000 + Math.random() * 900000);
+        const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+        const newOrder = {
+            id: `#${newOrderId}`,
+            date: new Date().toLocaleDateString('uk-UA'),
+            items: cart.map(item => ({ name: item.name, quantity: item.quantity })),
+            total: orderTotal,
+            status: 'processing'
+        };
+
+        if (currentUser) {
+            const updatedUser = {
+                ...currentUser,
+                orders: [newOrder, ...(currentUser.orders || [])]
+            };
+            setCurrentUser(updatedUser);
+            localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+
+            // Sync with users database in localStorage
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+            const userIndex = users.findIndex(u => u.email === currentUser.email);
+            if (userIndex !== -1) {
+                users[userIndex].orders = [newOrder, ...(users[userIndex].orders || [])];
+                localStorage.setItem('users', JSON.stringify(users));
+            }
+        }
+
+        setLastOrderDetails({
+            id: newOrderId,
+            date: new Date().toLocaleString('uk-UA'),
+            items: [...cart],
+            total: orderTotal,
+            customer: formData.get('name'),
+            phone: formData.get('phone'),
+            city: formData.get('city'),
+            postOffice: formData.get('postOffice'),
+            paymentMethod: "Накладений платіж",
+            doNotCall: formData.get('doNotCall') === 'on'
+        });
+
+        clearCart();
+        navigateTo('success');
+    };
+
     const handleSendMessage = async (e) => {
         e.preventDefault();
         if (!chatInput.trim()) return;
@@ -1082,29 +1131,7 @@ const App = () => {
 
     useEffect(() => { setCurrentPage(1); }, [searchQuery, selectedCategory, priceRange, calRange, stockFilter]);
 
-    // Checkout Logic
-    const handleCheckoutSubmit = (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const newOrderId = Math.floor(100000 + Math.random() * 900000);
-        const orderTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-        setLastOrderDetails({
-            id: newOrderId,
-            date: new Date().toLocaleString('uk-UA'),
-            items: [...cart],
-            total: orderTotal,
-            customer: formData.get('name'),
-            phone: formData.get('phone'),
-            city: formData.get('city'),
-            postOffice: formData.get('postOffice'),
-            paymentMethod: "Накладений платіж",
-            doNotCall: formData.get('doNotCall') === 'on'
-        });
-
-        clearCart();
-        navigateTo('success');
-    };
 
     const handleSelectProduct = (product) => {
         navigateTo('product', activeNav, product);
@@ -1844,23 +1871,6 @@ const App = () => {
                                     </div>
                                 </div>
                                 
-                                {/* Bonuses Card */}
-                                <div className="bg-gradient-to-br from-primary to-orange-400 rounded-3xl p-6 shadow-lg text-white relative overflow-hidden group cursor-pointer hover:shadow-xl transition-all">
-                                    <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                                    <div className="relative z-10">
-                                        <div className="flex items-center justify-between mb-4">
-                                            <h3 className="font-bold text-white/90">Ваш баланс</h3>
-                                            <div className="bg-white/20 p-2 rounded-xl backdrop-blur-sm">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                            </div>
-                                        </div>
-                                        <div className="text-4xl font-extrabold mb-1">{currentUser.bonuses}</div>
-                                        <div className="text-sm text-white/80 font-medium mb-6">Choco Coins</div>
-                                        <div className="text-xs bg-black/10 p-3 rounded-xl backdrop-blur-sm border border-white/10">
-                                            Ви можете використати їх для оплати до 50% вартості наступного замовлення!
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             
                             {/* Right Column: Orders */}
