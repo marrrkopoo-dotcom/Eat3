@@ -173,7 +173,7 @@ const ProductCard = ({ product, addToCart, onSelect, onImageError, viewMode = 's
     const [isImageLoaded, setIsImageLoaded] = React.useState(false);
 
     return (
-    <div className={`glass-panel rounded-2xl ${viewMode === 'large' ? 'p-4' : viewMode === 'medium' ? 'p-3' : 'p-2'} product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`} onClick={() => onSelect(product)}>
+    <div className={`glass-panel rounded-2xl ${viewMode === 'large' ? 'p-4' : viewMode === 'medium' ? 'p-3' : 'p-2'} product-card relative group flex flex-col h-full overflow-hidden cursor-pointer transition-opacity duration-500`} onClick={() => onSelect(product)}>
         {product.isNew && <div className={`absolute ${viewMode === 'large' ? 'top-4 left-4 px-2.5 py-1 text-xs' : viewMode === 'medium' ? 'top-3 left-3 px-2 py-0.5 text-[11px]' : 'top-2 left-2 px-1.5 py-0.5 text-[10px]'} bg-accent text-white font-bold rounded-full z-10 shadow-md animate-pulse`}>Новинка</div>}
         {product.isPopular && !product.isNew && <div className={`absolute ${viewMode === 'large' ? 'top-4 left-4 px-2.5 py-1 text-xs' : viewMode === 'medium' ? 'top-3 left-3 px-2 py-0.5 text-[11px]' : 'top-2 left-2 px-1.5 py-0.5 text-[10px]'} bg-orange-500 text-white font-bold rounded-full z-10 shadow-md`}>Хіт</div>}
         {product.outOfStock && <div className={`absolute ${viewMode === 'large' ? 'top-4 left-4 px-2.5 py-1 text-xs' : viewMode === 'medium' ? 'top-3 left-3 px-2 py-0.5 text-[11px]' : 'top-2 left-2 px-1.5 py-0.5 text-[10px]'} bg-gray-500 text-white font-bold rounded-full z-10 shadow-md`}>Немає в наявності</div>}
@@ -994,7 +994,6 @@ const App = () => {
     // Filter logic
     const filteredProducts = useMemo(() => {
         return allProducts.filter(p => {
-            if (brokenImages.has(p.id)) return false;
             // Deep search
             const q = searchQuery.toLowerCase();
             const matchSearch = !q || 
@@ -1023,8 +1022,20 @@ const App = () => {
 
             return matchSearch && matchCategory && matchPrice && matchCal && matchStock;
         }).sort((a, b) => {
+            // Out of stock goes to the end
             if (a.outOfStock && !b.outOfStock) return 1;
             if (!a.outOfStock && b.outOfStock) return -1;
+            
+            // Broken images go to the absolute end
+            const aBroken = brokenImages.has(a.id);
+            const bBroken = brokenImages.has(b.id);
+            if (aBroken && !bBroken) return 1;
+            if (!aBroken && bBroken) return -1;
+
+            // Local images go first because they load instantly
+            if (a.localImage && !b.localImage) return -1;
+            if (!a.localImage && b.localImage) return 1;
+
             if (selectedCategory === 'Всі') return a._rand - b._rand;
             return 0;
         });
