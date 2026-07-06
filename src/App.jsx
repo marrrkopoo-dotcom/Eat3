@@ -956,43 +956,74 @@ const App = () => {
     const handleAuthSubmit = (e) => {
         e.preventDefault();
         setAuthError('');
-        
+
         let users = JSON.parse(localStorage.getItem('users') || '[]');
-        
+
         if (authMode === 'register') {
-            if (!authForm.name || !authForm.email || !authForm.password) {
-                setAuthError('Будь ласка, заповніть всі обов\'язкові поля');
+            // Validate name: must be at least 2 words
+            const nameParts = (authForm.name || '').trim().split(/\s+/).filter(Boolean);
+            if (nameParts.length < 2) {
+                setAuthError("Введіть повне ім'я та прізвище (мінімум 2 слова).");
                 return;
+            }
+            // Validate email
+            if (!authForm.email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(authForm.email)) {
+                setAuthError('Введіть коректну email-адресу.');
+                return;
+            }
+            // Validate password
+            if (!authForm.password || authForm.password.length < 6) {
+                setAuthError('Пароль повинен містити мінімум 6 символів.');
+                return;
+            }
+            // Validate phone if provided
+            if (authForm.phone) {
+                const rawPhone = authForm.phone.replace(/[\s\-()]/g, '');
+                if (!/^[0-9]{9,10}$/.test(rawPhone)) {
+                    setAuthError('Введіть коректний номер телефону (9-10 цифр без коду країни).');
+                    return;
+                }
             }
             if (users.find(u => u.email === authForm.email)) {
-                setAuthError('Користувач з таким email вже існує');
+                setAuthError('Користувач з таким email вже існує.');
                 return;
             }
-            
+
+            const fullPhone = authForm.countryCode && authForm.phone
+                ? authForm.countryCode + ' ' + authForm.phone
+                : authForm.phone || '';
+
             const newUser = {
                 id: Date.now(),
-                ...authForm,
-                bonuses: 100, // Welcome bonuses!
-                avatar: `https://ui-avatars.com/api/?name=${encodeURIComponent(authForm.name)}&background=random`,
+                name: authForm.name.trim(),
+                email: authForm.email.trim(),
+                phone: fullPhone,
+                address: authForm.address || '',
+                password: authForm.password,
+                avatar: `https://ui-avatars.com/api/?name=${encodeURIComponent(authForm.name.trim())}&background=random`,
                 orders: []
             };
-            
+
             users.push(newUser);
             localStorage.setItem('users', JSON.stringify(users));
             localStorage.setItem('currentUser', JSON.stringify(newUser));
             setCurrentUser(newUser);
             setIsAuthModalOpen(false);
-            setAuthForm({ name: '', email: '', phone: '', address: '', password: '' });
-            
+            setAuthForm({ name: '', email: '', phone: '', countryCode: '+380', address: '', password: '' });
+
         } else {
+            if (!authForm.email || !authForm.password) {
+                setAuthError('Введіть email та пароль.');
+                return;
+            }
             const user = users.find(u => u.email === authForm.email && u.password === authForm.password);
             if (user) {
                 localStorage.setItem('currentUser', JSON.stringify(user));
                 setCurrentUser(user);
                 setIsAuthModalOpen(false);
-                setAuthForm({ name: '', email: '', phone: '', address: '', password: '' });
+                setAuthForm({ name: '', email: '', phone: '', countryCode: '+380', address: '', password: '' });
             } else {
-                setAuthError('Невірний email або пароль');
+                setAuthError('Невірний email або пароль. Спробуйте ще раз.');
             }
         }
     };
@@ -1329,24 +1360,91 @@ const App = () => {
                             <form onSubmit={handleAuthSubmit} className="space-y-4">
                                 {authMode === 'register' && (
                                     <>
+                                        {/* Full name */}
                                         <div>
-                                            <input type="text" placeholder="Ваше ім'я *" value={authForm.name} onChange={(e) => setAuthForm({...authForm, name: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Повне ім'я та прізвище <span className="text-red-500">*</span></label>
+                                            <input
+                                                type="text"
+                                                placeholder="Іван Іванов"
+                                                value={authForm.name}
+                                                onChange={(e) => setAuthForm({...authForm, name: e.target.value})}
+                                                minLength={5}
+                                                title="Введіть ім'я та прізвище (мінімум 2 слова)"
+                                                className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium"
+                                            />
+                                            <p className="text-xs text-gray-400 mt-1">Вкажіть ім'я та прізвище через пробіл</p>
                                         </div>
+
+                                        {/* Phone with country selector */}
                                         <div>
-                                            <input type="tel" placeholder="Телефон" value={authForm.phone} onChange={(e) => setAuthForm({...authForm, phone: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Телефон</label>
+                                            <div className="flex gap-2">
+                                                <select
+                                                    value={authForm.countryCode || '+380'}
+                                                    onChange={(e) => setAuthForm({...authForm, countryCode: e.target.value})}
+                                                    className="flex-shrink-0 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-3 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm font-bold cursor-pointer"
+                                                >
+                                                    <option value="+380">🇺🇦 +380</option>
+                                                    <option value="+48">🇵🇱 +48</option>
+                                                    <option value="+373">🇲🇩 +373</option>
+                                                </select>
+                                                <input
+                                                    type="tel"
+                                                    placeholder="0XXXXXXXXX"
+                                                    value={authForm.phone}
+                                                    onChange={(e) => setAuthForm({...authForm, phone: e.target.value})}
+                                                    maxLength={13}
+                                                    pattern="[0-9\s\-]{9,13}"
+                                                    title="Введіть номер без коду країни (9-10 цифр)"
+                                                    className="flex-1 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium"
+                                                />
+                                            </div>
+                                            <p className="text-xs text-gray-400 mt-1">Наприклад: 0671234567</p>
                                         </div>
+
+                                        {/* Delivery address */}
                                         <div>
-                                            <input type="text" placeholder="Адреса доставки" value={authForm.address} onChange={(e) => setAuthForm({...authForm, address: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                            <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Адреса або відділення</label>
+                                            <input
+                                                type="text"
+                                                placeholder="Місто, відділення Нової Пошти №1"
+                                                value={authForm.address}
+                                                onChange={(e) => setAuthForm({...authForm, address: e.target.value})}
+                                                className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium"
+                                            />
                                         </div>
                                     </>
                                 )}
+
+                                {/* Email */}
                                 <div>
-                                    <input type="email" placeholder="Email *" value={authForm.email} onChange={(e) => setAuthForm({...authForm, email: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                    <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Email <span className="text-red-500">*</span></label>
+                                    <input
+                                        type="email"
+                                        placeholder="example@email.com"
+                                        value={authForm.email}
+                                        onChange={(e) => setAuthForm({...authForm, email: e.target.value})}
+                                        required
+                                        className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium"
+                                    />
                                 </div>
+
+                                {/* Password */}
                                 <div>
-                                    <input type="password" placeholder="Пароль *" value={authForm.password} onChange={(e) => setAuthForm({...authForm, password: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium" />
+                                    <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wider">Пароль <span className="text-red-500">*</span></label>
+                                    <input
+                                        type="password"
+                                        placeholder={authMode === 'register' ? 'Мінімум 6 символів' : 'Ваш пароль'}
+                                        value={authForm.password}
+                                        onChange={(e) => setAuthForm({...authForm, password: e.target.value})}
+                                        required
+                                        minLength={authMode === 'register' ? 6 : 1}
+                                        title={authMode === 'register' ? 'Пароль повинен містити мінімум 6 символів' : ''}
+                                        className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3 text-dark dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-medium"
+                                    />
+                                    {authMode === 'register' && <p className="text-xs text-gray-400 mt-1">Мінімум 6 символів</p>}
                                 </div>
-                                
+
                                 <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-1 mt-2">
                                     {authMode === 'login' ? 'Увійти' : 'Зареєструватись'}
                                 </button>
