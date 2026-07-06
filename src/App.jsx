@@ -1123,6 +1123,21 @@ const App = () => {
                 currentUser={currentUser}
                 setIsAuthModalOpen={setIsAuthModalOpen}
             />
+            
+            {/* Running text marquee banner (бегущая строка) */}
+            <div className="w-full bg-[#FFE600] text-black overflow-hidden py-2 font-black text-xs uppercase tracking-widest border-b border-black select-none z-20 relative">
+                <div className="flex whitespace-nowrap animate-marquee">
+                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОУАРІУ!</span>
+                    <span className="mx-8 flex items-center gap-2">🍬 ЧУПА ЧУПС ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
+                    <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
+                    <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
+                    
+                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОУАРІУ!</span>
+                    <span className="mx-8 flex items-center gap-2">🍬 ЧУПА ЧУПС ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
+                    <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
+                    <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
+                </div>
+            </div>
             {isSearchOverlayOpen && (
                 <>
                     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-30 transition-opacity" onClick={() => setIsSearchOverlayOpen(false)}></div>

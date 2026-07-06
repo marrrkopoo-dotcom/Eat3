@@ -146,7 +146,7 @@
     {
         "id":  18,
         "name":  "Monster Java Salted Caramel USA",
-        "price":  399,
+        "price":  275,
         "image":  "enc-da51520bbf27253d866ac044315e2cbe-0297d11cfe1d8b5421ec08075aa067c03b785d5e86a66a7c211f639e29d4ecca257247a71cbf427a33b9e4a5130e0cafd5fe1af104e9259ebfff4eb4ec19c41eec8b0aa2b7f54f13d3939cdef8bca772fe4337a367cc57bd3112c24dc3830f31d5abc3f993e86d161f2a39de1da349be",
         "category":  "Енергетики",
         "details":  {
@@ -157,7 +157,8 @@
                         "description":  "Занадто круто, щоб утриматися! Заряджайся енергією на весь день! Замовляй зараз та відчуй драйв."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  399
     },
     {
         "id":  19,
@@ -274,7 +275,7 @@
     {
         "id":  26,
         "name":  "Monster Ultra White",
-        "price":  129,
+        "price":  95,
         "image":  "/images/26.jpg",
         "category":  "Енергетики",
         "details":  {
@@ -285,7 +286,8 @@
                         "description":  "MONSTER без ЦУКРУ! Monster Energy Ultra White – це дієтичний енергетичний напій без цукру! Заряджайся енергією на весь день! Замовляй зараз та відчуй драйв."
                     },
         "localImage":  "/images/26.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  129
     },
     {
         "id":  27,
@@ -306,7 +308,7 @@
     {
         "id":  29,
         "name":  "Вода Monster Tour Water Deep Well Питна",
-        "price":  399,
+        "price":  291,
         "image":  "/images/29.jpg",
         "category":  "Енергетики",
         "details":  {
@@ -317,12 +319,13 @@
                         "description":  "Monster Tour Water Deep Well - у цій баночці немає кофеїну, цукру або інших добавок. Немає калорій. Заряджайся енергією на весь день! Замовляй зараз та відчуй драйв."
                     },
         "localImage":  "/images/29.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  399
     },
     {
         "id":  30,
         "name":  "Газировка Fanta Orange USA Апельсин",
-        "price":  99,
+        "price":  73,
         "image":  "/images/30.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -333,7 +336,8 @@
                         "description":  "Справжня американська Фанта. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/30.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  99
     },
     {
         "id":  31,
@@ -402,7 +406,7 @@
     {
         "id":  35,
         "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
-        "price":  189,
+        "price":  147,
         "image":  "enc-8f2bdc9e6503a663da0546368b051b6c-9f3a899db4291c397d2871aa91ee5d73a852d8190868eb948e6aa7fce873499fe39bbf723f6101d09d0310d97ea68ddd91b2e9cb2936bfef5b49d5ee4014216f2d68b1d389aa647879b3467085c4fde5fa4d08f33719ac23b45b0d73d08ab589f70b92d15d7f9fad8faa0b1930c7b4610decdf6027722e438f87c85c9f71982f28927dafdb85e0a46fbd92ba915e4b22",
         "category":  "Газовані напої",
         "details":  {
@@ -413,7 +417,8 @@
                         "description":  "Культовая Arizona объема XXL прямиком из Бруклина!Размер банки впечатляющий - хватит и друзьям. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  189
     },
     {
         "id":  36,
@@ -626,7 +631,7 @@
     {
         "id":  54,
         "name":  "Газована вода Fanta Grape Asia",
-        "price":  149,
+        "price":  121,
         "image":  "enc-3748f72fcec43cb63e7524d64a832936-80ca44c6868f3fe88f3d3ac39a5b766bd71d7cc55c9e9390f21a952e38729010843dca722be51079ff2d9458b8a088830d79d07caf103e5b2636280c64a195ec3952af215b069ce9f7e8f108187f9265fff524aa5356ee6b5f5f1c7805ae29ae1eb97e543f20f5c6b1c5af5e2d19f282cd837a4fd91e337076de26c2ec0bfb2b",
         "category":  "Газовані напої",
         "details":  {
@@ -637,7 +642,8 @@
                         "description":  "Фіолетова Fanta! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  149
     },
     {
         "id":  55,
@@ -786,7 +792,7 @@
     {
         "id":  65,
         "name":  "Газована вода Mountain Dew Code Red Вишня",
-        "price":  179,
+        "price":  145,
         "image":  "/images/65.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -797,7 +803,8 @@
                         "description":  "Хороша!) Американська газована вода Mountain Dew Code Red - дуже смачний напій. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/65.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  179
     },
     {
         "id":  66,
@@ -930,7 +937,7 @@
     {
         "id":  75,
         "name":  "Газована вода Pepsi Gold",
-        "price":  99,
+        "price":  69,
         "image":  "enc-2869091cf694d5fc0d54c90ca416f1f6-b03fb84535a1ce9adb3e2c25a08c67c0e8f26ec7b4db285a913a3f19d321d745850cbe6dfcf293a248bc147e31e6458d5cf9f983c18b779b5ca6487e84b2d889ebd73aa9513e2bf7d2fc8ef1857518692fb9bf6ecce4611712d892484b729292422fd59e8cb514a6b3b9ab45db19bbd22eddf857e79abe1d60ea9ee098a7d73a",
         "category":  "Газовані напої",
         "details":  {
@@ -941,12 +948,13 @@
                         "description":  "Лімітована святкова версія класичної Pepsi. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  99
     },
     {
         "id":  76,
         "name":  "Газована вода Pepsi Prebiotic Cola Cherry Vanilla з пребіотиками",
-        "price":  199,
+        "price":  157,
         "image":  "/images/76.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -957,7 +965,8 @@
                         "description":  "Вишнево-ванільна Pepsi повернулася! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/76.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  77,
@@ -1026,7 +1035,7 @@
     {
         "id":  81,
         "name":  "Газована вода Sprite Glass Пляшка скло",
-        "price":  299,
+        "price":  245,
         "image":  "/images/81.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -1037,7 +1046,8 @@
                         "description":  "Де купити Спрайт? У нас в інтернет-магазині! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/81.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  299
     },
     {
         "id":  82,
@@ -1058,7 +1068,7 @@
     {
         "id":  83,
         "name":  "Газована вода Sprite Zero Sugar Mint Chill Лимон-Лайм",
-        "price":  299,
+        "price":  221,
         "image":  "enc-c064f96d2f06e1e69a3180cc5c92277c-10a2bb4db925e9bd7e025579d5a9276ef8f5ba338b157c3c6c18cdb00d37a5fcdc34606375aac90b10010202629f77a3ef79ea254627d60b1cc6f25aebf7936423783f6389145f1c059ad38e87555eb133a1c98e89a1f86e27834abbecdf8d1baf3d54c33f73165d5d5c0481a129179ae9fe9281c7103206b7e11c27de92702bed906e8cd69db20a07ac28ec5643f0b3",
         "category":  "Газовані напої",
         "details":  {
@@ -1069,12 +1079,13 @@
                         "description":  "Sprite Chill — перший у світі напій із охолоджувальним ефектом. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  299
     },
     {
         "id":  84,
         "name":  "Газована вода Ultrapop Dragon Ball Drink Strawberry \u0026 Banana",
-        "price":  179,
+        "price":  150,
         "image":  "/images/84.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -1085,7 +1096,8 @@
                         "description":  "Спеціальна версія газованої води Ultrapop у стилі Dragon Ball. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/84.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  179
     },
     {
         "id":  85,
@@ -1170,7 +1182,7 @@
     {
         "id":  90,
         "name":  "Газована вода Warheads Sour! Watermelon Soda",
-        "price":  79,
+        "price":  58,
         "image":  "/images/90.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -1181,7 +1193,8 @@
                         "description":  "Warheads Sour! Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/90.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  79
     },
     {
         "id":  91,
@@ -1202,7 +1215,7 @@
     {
         "id":  92,
         "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Citrus Цитрус Равлик Гері",
-        "price":  199,
+        "price":  131,
         "image":  "/images/92.jpg",
         "category":  "Газовані напої",
         "details":  {
@@ -1213,7 +1226,8 @@
                         "description":  "MIAOW... і всім гарного дня! Мовчазний Гері знає, що освіжаюча содова - це чудовий вибір. Освіжаючий смак, який варто спробувати. Додай у кошик та насолоджуйся!"
                     },
         "localImage":  "/images/92.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  93,
@@ -1426,7 +1440,7 @@
     {
         "id":  107,
         "name":  "Горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Italian Red Meat Sauce",
-        "price":  199,
+        "price":  139,
         "image":  "enc-6dd0ebb3d2ec3d02f85768604bae93e0-671ac0c7939c8ba4d6c606f5f8184ab5f1a5e1cff14b59d0c89e413ecf3aebb87ff887684edf8c606d1309bdcbb7df4446414e159f563f498d2b1e1d899a54b3d6aad465af3691aa654c3265bf09f2aaba1a64102e81290ff59fba873d6d07527014870b0dc758cf689b1657e14e715aeb5472a74b23d7f7d8669f51de16192ccc000c198eed98a0458dfcb378aec340",
         "category":  "Снеки",
         "details":  {
@@ -1437,7 +1451,8 @@
                         "description":  "Змішати чіпси та кешью? Чому б і ні, якщо так смачно? У Азії так можуть! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  108,
@@ -1714,7 +1729,7 @@
     {
         "id":  125,
         "name":  "Гостра Локшина Samyang Buldak 2x Spicy Hot Chicken Ramen Булдак Рамен",
-        "price":  199,
+        "price":  147,
         "image":  "/images/125.webp",
         "category":  "Снеки",
         "details":  {
@@ -1725,7 +1740,8 @@
                         "description":  " Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  "/images/125.webp",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  126,
@@ -1778,7 +1794,7 @@
     {
         "id":  129,
         "name":  "Гострий снек Samyang 2X SPICY Zzaldduk Extreme Buldak HALAL Булдак",
-        "price":  199,
+        "price":  169,
         "image":  "enc-27ba1962d01a8bad50be99dee2259fb1-6cec026806ee857d5ba69ae670e39618e322c0e9fd70787556910e0f7ca44d391b8245824648e0c9d713dff074ac90f17fcb7454366c938fa103ba06dd78271d762e97e017d4213cc80f7d59f53cd10f6a7a3ad03c99fdde873910c694af271a0457e3db914b772ead7f1e91be3249f4109b1d299b34d7ee3ce6246aa03906714ab33c3389ad8c0c2ef787cc30d2aae2",
         "category":  "Снеки",
         "details":  {
@@ -1789,7 +1805,8 @@
                         "description":  "Дуже зігріваючий снек!2X гостріше, ніж думаєте! Без паузи зжерти всю порцію неможливо... Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  130,
@@ -2002,7 +2019,7 @@
     {
         "id":  144,
         "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі",
-        "price":  149,
+        "price":  109,
         "image":  "enc-859ac61fe3e1bf710f02277678668903-b42726b062fd76c64efca35c02ad20725e5e1b156078facfca76780a63ee551de4da1530be24b5ea17c879ab516caf7549b9a656b1a0a3a2e7eba5153fed5c8f933787331995b61360fd935c42bd348db83701992f95a4ed21ec846ac214ca9a83590a61e7f27143686b6242b0ccbd671b678f7dcaad102e707772b6f44ef0c3",
         "category":  "Снеки",
         "details":  {
@@ -2013,12 +2030,13 @@
                         "description":  "Хочеться приголомшливо смачного? Спробуйте сушені міні-крабики з Китаю. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  149
     },
     {
         "id":  145,
         "name":  "Китайські чіпси Lay\u0027s Big Wave Pork Свиняча грудинка Гриль",
-        "price":  219,
+        "price":  175,
         "image":  "/images/145.jpg",
         "category":  "Снеки",
         "details":  {
@@ -2029,7 +2047,8 @@
                         "description":  "Хто бажає влаштувати святкове барбекю?)Ідеально хрусткі, обсмажені до золотистої скоринки. Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  "/images/145.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  219
     },
     {
         "id":  146,
@@ -2098,7 +2117,7 @@
     {
         "id":  150,
         "name":  "Китайські чіпси Lay\u0027s Fried Crab Смажений краб",
-        "price":  219,
+        "price":  175,
         "image":  "/images/150.jpg",
         "category":  "Снеки",
         "details":  {
@@ -2109,7 +2128,8 @@
                         "description":  "Китайська версія від Lay\u0027s з морською темою: чіпси зі смаком смаженого краба! Ідеальний перекус для будь-якої ситуації. Хрумкай із задоволенням!"
                     },
         "localImage":  "/images/150.jpg",
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  219
     },
     {
         "id":  151,
@@ -2178,7 +2198,7 @@
     {
         "id":  155,
         "name":  "Nutella Biscuits",
-        "price":  199,
+        "price":  157,
         "image":  "enc-8cebd5b37c23ab2f5c8c393be1f326c4-6d4c7c1b377a13e106fbe91bbfb97928d32359a191f6f0d32d80450dec28966a3a4918ac693a9e7f371689cd0c13b29aa3ed3dc3ebd2d869b05ff0feaf42d9c6d16c25d265438e3d8baa08111b29ee4d804c25510cf21fd30fd92630fabde3bee443dea59e93920792187d77f189df00",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2189,7 +2209,8 @@
                         "description":  "Ідеальне печиво – це коли воно поєднується із Нутеллою, саме таку комбінацію ви знайдете у Nutella B.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  156,
@@ -2226,7 +2247,7 @@
     {
         "id":  158,
         "name":  "Їстівні шматочки бісквітного тіста Hostess Twinkies Cookie Dough Bites",
-        "price":  219,
+        "price":  151,
         "image":  "enc-7eb35065d1c172853073bcf13a5f5a60-87a3d203160ee67941230a95aed841c5b4b3ca6a2887baa3f7237a06a3f79976da2010381890e27e1eff7d750ab19d70bfe3d5f726b6141f6ab0c57b5247b77a78768c0523223a8bb0ec0aa7177eb69b5e3ae28611b37f211b8c071518ba5db0d4c716b255e414537e93a8e7d08f92463ac8b7fc603e078d3c997f62574e7732",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2237,12 +2258,13 @@
                         "description":  "Бісквіт - це добре!Формат відмінний, ніяких крихт - просто відкриваєте коробку і насолоджуєтеся. Їст.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  219
     },
     {
         "id":  160,
         "name":  "Італійська панеттоне Bauli Panettone Cointreau Крем Куантро",
-        "price":  999,
+        "price":  789,
         "image":  "enc-8dc35dffcc2a4d04a791f408de1d3a78-a0a2bfa4959b9e4966ed3c0d44c086d1d357d6778f1879f01c1aa0246fe416c879872485645d37dadc967c861321f4aaa738adfd18f92d281722b422bda4f409ed0cc218947a8609235e2e45b92f0c3ea49697b8b86bc9b22dbf9524ad7396d6cdcd366c883050a068702a4b978ecf56",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2253,7 +2275,8 @@
                         "description":  "Стильний подарунок до затишних зимових посиденьок.Шикарна компанія до чаю, кави або гарячого глінтве.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  999
     },
     {
         "id":  162,
@@ -2290,7 +2313,7 @@
     {
         "id":  165,
         "name":  "Італійський Торт Bauli Torte Bavarese Баварський із заварним кремом",
-        "price":  749,
+        "price":  494,
         "image":  "enc-93ce6ba2b185d5d1f7d4bf58a400a7a5-4dda6c5a74029756a69d0ffb850fb7f9848e6201d510fb647a8d37c444c7e27eb1815152a57c11a39595b2c2f1f0c48a0ef9ac9964b67994a04310904d9b63ae6b5c495ff4fec694d41518cec8a294a254f811a87d3787da35295335711a974cf8ee7d4019dfe42d1bae555828c2ed7e",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2301,12 +2324,13 @@
                         "description":  "Побалуйте себе італійським десертом у зимовий сезон)Повітряний пиріг чудово складе компанію за чашко.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  749
     },
     {
         "id":  166,
         "name":  "Бісквіт Hostess Original Twinkies Ванільний крем (1шт)",
-        "price":  59,
+        "price":  40,
         "image":  "enc-2d4af0a5f35bc5d6c7228297d35893a4-f94b19160137d778ca2c0281aee09b112470391fb79369dcf4e2477091fff3cc3099bdcd003d851509506f36bb1b2cc961ec8203f8d196210978106ce1890e89ccfb0648937d2727a8059c05d0867c97f1d6b1e80ccb6431730610d5ada6d3448049d9585ba9605a90027a4fc83e15ad4eea9c84b88d658d11318740afb4f0df",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2317,7 +2341,8 @@
                         "description":  "Легендарні Твінки!Американські бісквіти стали культовими особливо після кінохітів «Мисливці за приви.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  59
     },
     {
         "id":  167,
@@ -2434,7 +2459,7 @@
     {
         "id":  176,
         "name":  "Вафельні батончики Oreo Wafer Milk Chocolate Молочний шоколад",
-        "price":  279,
+        "price":  204,
         "image":  "enc-adf0d7898eeac031b31c3d490eeaba7b-9e7db88ccc0d66637b41220e121989298f08898b6f2ae2d25883f7c650c5ee62e5726e03a4141cf1009c7e2612646f2de75d9ceb083ec0efe666de975e6500f4ad2c6002e2d7818924ac6c2f52d9e44f19186f4b06e7ad7b36659d40491950f1a1ef0d5c987e345234ddf37336b877ce4ae362937e72934f8fd45d14f428a9bf",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2445,12 +2470,13 @@
                         "description":  "Вафельні батончики Oreo. Але... у китайській версії!У коробці — 12 вафельних батончиків у молочному .."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  279
     },
     {
         "id":  177,
         "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
-        "price":  279,
+        "price":  195,
         "image":  "enc-efd284b5cdf7ebc95ed435f980b9be6e-b655eb60c1aece2d3f482804a3a809a70d6698db1838cff9a7b03671dde0f619f26a5252e53a6e73da043d41904e52ecc63d133dd003077cf565c0a3232b369c7436bfbbc25089f7aa39f62f3d51c6a5f1dfcd36f9dbd3902b17a15b4f0a043a79ce155aed8f83c8d680c6de0206c6098083cb5582ce4d1700001bd54237e8ec",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2461,12 +2487,13 @@
                         "description":  "Азіатська версія вафельних батончиків Oreo!Oreo Wafer — хрусткі вафельні шари з ніжним кремом та шар.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  279
     },
     {
         "id":  178,
         "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
-        "price":  149,
+        "price":  106,
         "image":  "enc-ad26cf04b8cedeb7a5b24f9710cae534-ae65acd5065fff565390d9e5b34f04890088a41a55a40e9e38a96a90be8096c90bdf0e24583b238159f8496f0572c42d6d7bc97e441563964d4530fd48366672d8fe016632b04fea207cc512ddc9e62f69f9d75d2f7c6659558895988115fad5026e4e1a7ef09f25bdc13e1c9257acc6b86ee7d48783ace074643f54ca0bdda0",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2477,7 +2504,8 @@
                         "description":  "Знайомі Oreo в азіатській версії)Коробка компактна — 5 штук. Чудовий формат, щоб спробувати ще одну .."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  149
     },
     {
         "id":  179,
@@ -2626,7 +2654,7 @@
     {
         "id":  188,
         "name":  "Вафлі Knoppers BigPack Молочно-горіхові 15x25г",
-        "price":  369,
+        "price":  280,
         "image":  "enc-140d1d8bb37c236895528c2666f0e022-cb293ef255a73acfb1474524cfad0c8545e5d9c50685330c1f82c06d7257f6555bf6c870022274c685d1b7365dee301b865778cce81924cc3281f9e75482f516ea5dae65bc4837f728362f78f28963f3f8d71753d5589374118a7e5fc3f24d30b176d9b003d75af19d9f8bca8125b06c",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2637,7 +2665,8 @@
                         "description":  "Смакота для сніданку)Захочеться перекусити або відпочити за чашкою чаю - візьміть Knoppers. І не від.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  369
     },
     {
         "id":  189,
@@ -2706,7 +2735,7 @@
     {
         "id":  193,
         "name":  "Вафли Knoppers з арахісовою начинкою",
-        "price":  199,
+        "price":  143,
         "image":  "enc-4ddcd3c199ae11f4c325b08a25a25ca4-cf7550db635868251b68faf537e54a4d10c3b26ae2ce87266f1ae5df01c27a910ce14ac30dc99175fb7fdaeef68dafb73e5a98f97c38078e5d70b15479e697a63a09d5a68d466b5275bcb75d522fdf366499513bda4fd3cc94cb9ecd302b26de",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -2717,7 +2746,8 @@
                         "description":  "Оновлені Кнопперси 2020!KNOPPERS Gefüllte Waffelschnitte – нові  вафлі  фірми Кнопперс, як.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  194,
@@ -3010,7 +3040,7 @@
     {
         "id":  223,
         "name":  "Морозиво Astronaut Foods Cookies \u0026 Cream Ice Cream Sandwich сублімоване",
-        "price":  399,
+        "price":  275,
         "image":  "enc-5d7dcc74dfba7538d2e597d09eac2ef4-53bde737f25c1e4f41bbfdb1ad72510b5d93e26115072ed912de8c140882050639e94cd2c8909e761af83487887fbdcdeba9a808e33c1fe174407ecd843c75c337edaf7a75edf2cae5659a53405b8d19d44693a1dd8cdbc505a2e2e253f4abf9efa409cb47d4563b7a7344a2a42503293100a53b6f7906101dfb54bdc3c3968800a91f42fea29e21f70ed64fcd7cccf0",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -3021,7 +3051,8 @@
                         "description":  "Мрієте про космос? Скуштуйте неймовірне морозиво-сендвіч «Астронавт». Саме таке їдять космонавти!У в.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  399
     },
     {
         "id":  224,
@@ -3058,7 +3089,7 @@
     {
         "id":  226,
         "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Chase Щенячий Патруль Чейз",
-        "price":  209,
+        "price":  157,
         "image":  "enc-f643a855ad31c2ea15b07dfa4deb5601-048877772f9e3b43f93239e5cb01c5617bcd86f37086f58a449b35747c6fbd02ace6da16dcacd592b93d3bf7fab99b1771a196d73c1bbf1e50c9c66fd5511405a2622279eeb8a1533771549330e0fe30a56d3633083a8b77fd3e2e135307f43773cc45d8fe3478915e2baad552410e00d1d910a774719d98f9b6913ec4ff575ff9feaa170205d365348e8f0b84f7ef6e",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -3069,7 +3100,8 @@
                         "description":  "Діти в захваті. І батьки теж)Влаштуйте сімейний вечір з дітьми, пограйте в кондитерів і створіть свя.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  209
     },
     {
         "id":  227,
@@ -3330,7 +3362,7 @@
     {
         "id":  246,
         "name":  "Печиво Choco Pie Зелений чай 12шт",
-        "price":  299,
+        "price":  209,
         "image":  "enc-a4e3b4198b3e51d94c90e6a3bb915351-b7ff06740cad26077c89f13a875d91e1e3029b4045856e05e1e42344bd689b750474b3c531d396ebbca6ec2808b6552f87860deef32be3d1020d9c61c4d84372dde83376f056a73da0b8e669b61c19fb162c6f99f14d219fd0f501c19d0f76a12d98f9a22e0375b8f15b294c58d622ba",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -3341,12 +3373,13 @@
                         "description":  "ЧОКОПАЙ, ЧО-КО-ПА-І-ЩЕ!)Чо.копай - це не клич у археологів або заклик до копання картоплі на грядці!.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  299
     },
     {
         "id":  247,
         "name":  "Печиво Choco Pie Какао 12шт",
-        "price":  399,
+        "price":  327,
         "image":  "enc-33df13b0a31c0f2fb8153e2f4059ef31-188eb11bb9a3fce0146f5db59995fb508658a569f25592f795404be9be22a57df4975fdacbb149e3d67ecad0e5f767672b18e82d90c8a347af46ef2d99bbc6455e1397ceb2bee6bc1176d653a5e67ede51c7a43b4806fac3b5e914e76d5a3ef207ae3bd78d9acffec227390499c869d7",
         "category":  "Печиво та вафлі",
         "details":  {
@@ -3357,7 +3390,8 @@
                         "description":  "ЧОКОПАЙ, ЧО-КО-ПА-І-ЩЕ!)Чо.копай - це не клич у археологів або заклик до копання картоплі на грядці!.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  399
     },
     {
         "id":  248,
@@ -3474,7 +3508,7 @@
     {
         "id":  256,
         "name":  "Milka Hazelnut",
-        "price":  99,
+        "price":  71,
         "image":  "enc-9ac69d4050ea654cfc3d2125c7d4c112-310094d2050203884944cb8afc6405dfae27209aed6f8f38d30e7e88845a754780f3fd80509bbd56183de9f57317e8ab1ca98e016427b5d6ab005bf9df2eaeec08ec4b6e91bd80a16c063bf77d1098a79180a938ca819b647bbc5fe6eeb1c9ff",
         "category":  "Шоколад",
         "details":  {
@@ -3485,12 +3519,13 @@
                         "description":  "Смачний молочний шоколад Milka Hazelnut поєднаний з меленим лісовим горіхом..."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  99
     },
     {
         "id":  257,
         "name":  "Milka mmax Nusinni 270g",
-        "price":  259,
+        "price":  207,
         "image":  "enc-b9dc04722239c6be7f6ed39e8682c141-c3e87da6855644b233ae0483d0cee368046a54eef702cdf5cbe9b095bdb27fb5949cac8af195ca40d991cc6584417b038390c5b045e66e1672a2fdf18728071f4a034747cd144b801a8e57c84ebd3293455fad7b6143bb4a4b5c4584da5422d87df685f1456cd3ddf2fc052cae0616d7",
         "category":  "Шоколад",
         "details":  {
@@ -3501,7 +3536,8 @@
                         "description":  "Супер велика, супер смачна та супер горіхова - Milka mmax Nusinni 270g!!!!!Milka mmax Nusinni - це н.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  259
     },
     {
         "id":  258,
@@ -3682,7 +3718,7 @@
     {
         "id":  269,
         "name":  "Toblerone Dark Chocolate With Honey \u0026 Almond Nougat",
-        "price":  149,
+        "price":  124,
         "image":  "enc-29ac2c87c9073bff8202e9bb676011c7-1665997f4ba973e8e1ab8728e6b42a14f0bf4ab9a3224e46083f7b3d1638a633e058db912f95967771eac0291246042cf9c6f194211a9ec573bb35ad982a2ee176ffceae73198753bb13c4cf903c14439630665d00ff3978dfae91073b054ec4316c93c4f8d7df369b762218312afb364ab575c4f8bb58d2c84f17035f78be300c9cdb6208b3a80b9fa847ac6494152e",
         "category":  "Шоколад",
         "details":  {
@@ -3693,7 +3729,8 @@
                         "description":  "Шоколад Toblerone Dark Chocolane Honey Almond Nougat - це найсмачніший чорний швейцарський шоколад у.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  149
     },
     {
         "id":  270,
@@ -3778,7 +3815,7 @@
     {
         "id":  297,
         "name":  "Білий шоколад Lindt Nuss Selection Weiss-Mandel Фундук 150г",
-        "price":  249,
+        "price":  169,
         "image":  "enc-175d0d1499a137dcddfbae176f5407ea-17cd662dc4d043567e7e3cc0bf149398c30e9cdc59f2bedbd4dc37b4836d9d2fd55d5d31b0cc8337aa8eafd18555e3509a8fe4b512e5fa8d3cce5ccbead71f41730ea6539d6d7a7989078dbd73f877aa3d4b6b2d175750ff3fd8c605c1e8e05c2fcdcbb777023b03ba38fd9d215f7943e58c85aefe1b467647bd92af1cca8cff",
         "category":  "Шоколад",
         "details":  {
@@ -3789,7 +3826,8 @@
                         "description":  "Білий шоколад з лісовими горіхами.Упаковка виконана у стилі казки «Лускунчик».."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  249
     },
     {
         "id":  298,
@@ -3890,7 +3928,7 @@
     {
         "id":  304,
         "name":  "Бельгійський шоколад Tabby Crunch Chocolate Fried Chicken Курячі ніжки KFC 50г",
-        "price":  199,
+        "price":  167,
         "image":  "enc-28e6f840b11563848d1f7139fa7dca21-6925e79681fd72daff1e4eb3c956a7b9cd5bf6a92d12d63f2b458b420de39f2d13e5a035686e1fa5102503db0a4bf27e9f407bba350d5c6b626a5da6dfdc973c9f4b0326128fadbe8cdbe6446175657200b363c575df6f0d953f87098a6e69ed715cd96eae53111929e0b66e932f28cb0f4bd9b9ef7a34adc1f938da3d88d997dd0300860a60323fc588cd440e54c696",
         "category":  "Шоколад",
         "details":  {
@@ -3901,7 +3939,8 @@
                         "description":  "Яка частина курки KFC найсмачніша? Шоколадна!Якщо вас охоплюють сумніви - сходити в KFC чи перекусит.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  199
     },
     {
         "id":  305,
@@ -3954,7 +3993,7 @@
     {
         "id":  308,
         "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
-        "price":  549,
+        "price":  417,
         "image":  "enc-ddcbb7dda9ec9bcf373e9dd35947d401-f5f31987455a34b0b91aa20dba32861fbb34d84e088aade1cd912510c37b659089c8300c91ee57e1e32bb24620c787a33fd9c89079684f4bf2e54c301f516e23de3bb764a83a5d27c32d4026b5445e407cc74a0aa75342cce6d4f0853c3c1d5b829c2428dd9e3b9dd6e2c421156d84f2",
         "category":  "Шоколад",
         "details":  {
@@ -3965,7 +4004,8 @@
                         "description":  "Велика цукерка Raffaello – це розкішне святкове частування від Ferrero. У ній поєдналися витонченіст.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  549
     },
     {
         "id":  309,
@@ -4066,7 +4106,7 @@
     {
         "id":  323,
         "name":  "Дубайський шоколад FIX Biscoff Spread Біскофф 100 г",
-        "price":  409,
+        "price":  331,
         "image":  "enc-5c0195b03bf7a85834feb55229e68ac8-2e3d5342433d4441b169b4fa1c7f9897eb9545086a87168a08ce56273b54c8c89339accaa7a91c24c271e0f5b0cebdef5c3f6c2cde7f210801a497e3abd8fa0aba9dcd9f4f7935d760c10721c6ef17db5d3c2eab60d1a77177bda3c6dcb81ee1b3907277ef1dbdb06edd761fe6661fd2",
         "category":  "Шоколад",
         "details":  {
@@ -4077,7 +4117,8 @@
                         "description":  "Для шанувальників легендарного печива Lotus - це справжній must-have! Дубайський шоколад із кремовою.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  409
     },
     {
         "id":  324,
@@ -4386,7 +4427,7 @@
     {
         "id":  344,
         "name":  "Milka Whole Hazelnuts 270г",
-        "price":  259,
+        "price":  207,
         "image":  "enc-9ba338d7e6389c01752b90ef6c517836-3496b372147b03e1ada98688a02c17c84ff723556bfb30aaa953a2320577c2bca3cd6190dae058a7401b461d4847f37d42ccb4a724712599bb4f90ff7a4dc82256189dd74aec52d382b3e1ddd8b558fc8e006279d2aa08da584d918a66ef023684408032ac26f550c7f13324d243228c",
         "category":  "Шоколад",
         "details":  {
@@ -4397,7 +4438,8 @@
                         "description":  "Шоколад Мілка з цільними лісовими горіхами. Неповторний смак, вдале і багатьма улюблене поєднання ні.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  259
     },
     {
         "id":  345,
@@ -4482,7 +4524,7 @@
     {
         "id":  350,
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat",
-        "price":  149,
+        "price":  103,
         "image":  "enc-0cdc4797c70d8d13311e9421c40e69b2-844bd945c4b421c04249c6546565a39325957248d289b556cb9c70b426729ba4c7e8e247afdf8bbdf61d4b1c9a7b944852d88510475b88dfba1d377e9a51eb43d8654d26cf6ddeb868f62c8b47fd52c36334e549f76474f30a1a210310dc0ba5f444cbfe9e35ec7562927f5d5a530053722e317c582cb6056d3d771a3f0a19f0ddfeef66f667b56fc1f688378f0ff1b9",
         "category":  "Шоколад",
         "details":  {
@@ -4493,7 +4535,8 @@
                         "description":  "Всім підкорювачам гір приготується! Адже у нас з\u0027явилася нова вершина для ваших смакових сходжень!To.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  149
     },
     {
         "id":  351,
@@ -4530,7 +4573,7 @@
     {
         "id":  353,
         "name":  "Toblerone Родзинки Мед Мигдальний Нуга",
-        "price":  139,
+        "price":  111,
         "image":  "enc-935503052935afab2d2e403b8c62404c-488e65324b63d9147905bca78547523ce3f09a2cbc864e713b6f5f3a0624212823cdf2766c67f46aa6fe231bdbc9455d0e1507f61d12ef314e2b81978f74e8c5594a7ee616ee0b0299e3dcec1188aa403b7c0c100fc9a27a8b71103f26d0107af8261e8850400479bda8450a53062a56",
         "category":  "Шоколад",
         "details":  {
@@ -4541,7 +4584,8 @@
                         "description":  "Швейцарський шоколад преміум-якості TOBLERONE! ⠀Шоколадка виконана у формі маленьких пірамідок .."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  139
     },
     {
         "id":  376,
@@ -4738,7 +4782,7 @@
     {
         "id":  388,
         "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
-        "price":  549,
+        "price":  467,
         "image":  "enc-241a971b7ff8b514840c9162e99d8330-d37c4ac44939ff68d268cda101099b816bf32649e3a9f734fe11200def4092768905ef6b0a8ad5200f4179413df79e6588fbc1ecd52884d5d3fc3f18f14062a6ad0b8dd3d6b571736259bbab6b8eafec2ef0239bad63d0bc3db9d6b697f116b763d4ebb3550795a90c5465045d9bcc93",
         "category":  "Шоколад",
         "details":  {
@@ -4749,7 +4793,8 @@
                         "description":  "Велика цукерка Raffaello – це розкішне святкове частування від Ferrero. У ній поєдналися витонченіст.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  549
     },
     {
         "id":  389,
@@ -4818,7 +4863,7 @@
     {
         "id":  401,
         "name":  "Дубайський шоколад Bolci Dubai Chocolate Pistachio Kadayif у коробці 256г",
-        "price":  959,
+        "price":  777,
         "image":  "enc-bb1c0265eac802c757810f2cfd106107-a510abad92bdd783c3bdcf605d5f401432c399ec43a5f0fb7645b0a65f8a58d3530c206274852182f05e96c18e05a4d2970c8c8c3577cbddd5cd8202e99e56b414b4f3794c2785d88f910cc74191027488193050e1c01c9a9f60b605403d53ab5dc1f1d6e76dc660c81431ac6eb87b3431626da0ecbb674e8a71713fecd01d81",
         "category":  "Шоколад",
         "details":  {
@@ -4829,7 +4874,8 @@
                         "description":  "Серця гурманів по всьому світу підкорені Дубайським шоколадом. Цей розкішний десерт поєднує в собі т.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  959
     },
     {
         "id":  402,
@@ -4866,7 +4912,7 @@
     {
         "id":  404,
         "name":  "Дубайський Шоколад Fix Chocolate Dubai Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
-        "price":  799,
+        "price":  551,
         "image":  "enc-2769d7f525c04a820d2d07a3cedc93d3-5bbf4983df12e851f72c324a78d7c5361105e1934fd9edf0399cbdb3a063b9bf44ad6c878be6c07b9127ee4d5679fd2afa8bb695967aa231e1098b4f621f01b9a37289145492c73e4bd6e333e3c0e95355f2f47a80995facf981bdd26464ea6aa036c7cd4fd82108cd9e06ffc466d42c993ec258bff1b9fc8fd41650455a7e9ac3c1fdf89b9c4554d3cd7950bc9e7031",
         "category":  "Шоколад",
         "details":  {
@@ -4877,7 +4923,8 @@
                         "description":  "Популярність Дубайського шоколаду настільки величезна, що скуштувати плитку з фісташковою пастою хоч.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  799
     },
     {
         "id":  405,
@@ -4898,7 +4945,7 @@
     {
         "id":  406,
         "name":  "Дубайський шоколад Fix Chocolatie High On Hazelnut Лісовий Горіх 80г",
-        "price":  349,
+        "price":  269,
         "image":  "enc-4c87393b7afc29bd2d430bb695514144-94149213bbacf44456d64f2ddd78d83dd23a5f50a9ca8b4adca179ab9d760fe0c3bf849af991f9cfc5fa1bc35a30629b5910511e96cfcc5fe9278a179cf5a428e19693deb85f4878d7bf34a1a7cf80cf6468fd032e444c17b26360440da1dfc27ad1e890550806c19bc8ad1edadf64323bbc2d871a541bb1de0071b485ea5bfe",
         "category":  "Шоколад",
         "details":  {
@@ -4909,7 +4956,8 @@
                         "description":  "Дубайський шоколад зараз на піку популярності - його вірусять у соцмережах, дегустують блогери! І це.."
                     },
         "localImage":  null,
-        "outOfStock":  false
+        "outOfStock":  false,
+        "oldPrice":  349
     },
     {
         "id":  407,
