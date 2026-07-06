@@ -783,6 +783,7 @@ const App = () => {
     // Polling updates from Telegram bot (via Express server)
     useEffect(() => {
         const fetchUpdates = async () => {
+            if (!clientId) return;
             try {
                 const res = await fetch(`/api/chat-updates?clientId=${clientId}`);
                 const data = await res.json();
@@ -793,6 +794,43 @@ const App = () => {
                             setUnreadChatCount(c => c + data.updates.length);
                         }
                         return newMsgs;
+                    });
+                }
+                if (data.orderUpdates && data.orderUpdates.length > 0) {
+                    setCurrentUser(prevUser => {
+                        if (!prevUser || !prevUser.orders) return prevUser;
+                        
+                        let updated = false;
+                        const newOrders = prevUser.orders.map(order => {
+                            const updateObj = data.orderUpdates.find(u => u.orderId === order.id);
+                            if (updateObj) {
+                                updated = true;
+                                return {
+                                    ...order,
+                                    status: updateObj.status || order.status,
+                                    customerName: updateObj.customerName || order.customerName,
+                                    customerPhone: updateObj.customerPhone || order.customerPhone,
+                                    city: updateObj.city || order.city,
+                                    postOffice: updateObj.postOffice || order.postOffice
+                                };
+                            }
+                            return order;
+                        });
+                        
+                        if (updated) {
+                            const updatedUser = { ...prevUser, orders: newOrders };
+                            localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+                            
+                            // Also update this user in the 'users' list in localStorage
+                            let users = JSON.parse(localStorage.getItem('users') || '[]');
+                            const idx = users.findIndex(u => u.email === prevUser.email);
+                            if (idx !== -1) {
+                                users[idx] = updatedUser;
+                                localStorage.setItem('users', JSON.stringify(users));
+                            }
+                            return updatedUser;
+                        }
+                        return prevUser;
                     });
                 }
             } catch (err) {

@@ -40,6 +40,7 @@ const CHAT_ID = process.env.TELEGRAM_CHAT_ID || '-1003921545216';
 // In-memory queues and mapping
 let tgMap = {}; // tgMessageId -> clientId
 let messageQueues = {}; // clientId -> Array of messages
+let orderUpdates = {}; // clientId -> Array of order updates
 
 const MAP_FILE = path.join(__dirname, 'tg_map.json');
 
@@ -139,13 +140,26 @@ app.post('/api/send-order', async (req, res) => {
                          `💰 *Сума:* *${order.total} грн*\n\n` +
                          `🆔 *ID Клієнта:* \`${clientId}\``;
 
+            const keyboard = {
+                inline_keyboard: [
+                    [
+                        { text: "👍 Підтвердити", callback_data: `confirm_order:${order.id}` },
+                        { text: "❌ Скасувати", callback_data: `cancel_order:${order.id}` }
+                    ],
+                    [
+                        { text: "✏️ Редагувати", callback_data: `edit_order:${order.id}` }
+                    ]
+                ]
+            };
+
             const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     chat_id: CHAT_ID,
                     text: text,
-                    parse_mode: 'Markdown'
+                    parse_mode: 'Markdown',
+                    reply_markup: keyboard
                 })
             });
             const data = await response.json();
@@ -178,67 +192,266 @@ app.get('/api/chat-updates', (req, res) => {
 
     const updates = messageQueues[clientId] || [];
     messageQueues[clientId] = []; // Clear queue after fetching
-    res.json({ updates });
+
+    const ordUpdates = orderUpdates[clientId] || [];
+    orderUpdates[clientId] = []; // Clear queue after fetching
+
+    res.json({ updates, orderUpdates: ordUpdates });
 });
 
-// API: Telegram webhook endpoint
-app.post('/api/tg-webhook', (req, res) => {
-    const update = req.body;
+function parseOrderUpdate(text) {
+    if (!text) return null;
+    const lines = text.split('\n');
+    let orderId = null;
+    let name = null;
+    let phone = null;
+    let city = null;
+    let postOffice = null;
     
-    // Check for message reply
-    if (update.message && update.message.reply_to_message) {
-        const replyToId = update.message.reply_to_message.message_id;
-        const text = update.message.text;
-        
-        const clientId = tgMap[replyToId];
-        if (clientId && text) {
-            console.log(`Support reply to client ${clientId}: ${text}`);
-            if (!messageQueues[clientId]) messageQueues[clientId] = [];
-            
-            // Determine manager attribution
-            let managerName = 'Підтримка';
-            let managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
-            
-            const tgSender = update.message.from.first_name || '';
-            const lowerSender = tgSender.toLowerCase();
-            
-            if (lowerSender.includes('нат') || lowerSender.includes('nat')) {
-                managerName = 'Наташа';
-                managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
-            } else if (lowerSender.includes('дм') || lowerSender.includes('dm') || lowerSender.includes('дн') || lowerSender.includes('dmi')) {
-                managerName = 'Дмитро';
-                managerAvatar = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face';
-            } else {
-                // Alternating based on clientId characters hash
-                const clientHash = clientId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-                if (clientHash % 2 === 0) {
-                    managerName = 'Наташа';
-                    managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
-                } else {
-                    managerName = 'Дмитро';
-                    managerAvatar = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face';
-                }
-            }
-
-            messageQueues[clientId].push({
-                sender: 'support',
-                senderName: managerName,
-                senderAvatar: managerAvatar,
-                text: text,
-                timestamp: new Date().toISOString()
-            });
-
-            // Also map this new reply message ID to the same client ID, 
-            // so they can continue replying to the reply!
-            const newTgMessageId = update.message.message_id;
-            tgMap[newTgMessageId] = clientId;
-            saveMap();
-        } else {
-            console.log(`No active client found for reply message ID ${replyToId}`);
+    for (let line of lines) {
+        const lower = line.toLowerCase().trim();
+        if (lower.startsWith('замовлення:')) {
+            orderId = line.substring('замовлення:'.length).trim();
+        } else if (lower.startsWith('ім\'я:') || lower.startsWith('ім’я:') || lower.startsWith('имя:')) {
+            name = line.substring(line.indexOf(':') + 1).trim();
+        } else if (lower.startsWith('телефон:')) {
+            phone = line.substring('телефон:'.length).trim();
+        } else if (lower.startsWith('місто:') || lower.startsWith('город:')) {
+            city = line.substring('місто:'.length).trim();
+        } else if (lower.startsWith('пошта:') || lower.startsWith('почта:')) {
+            postOffice = line.substring('пошта:'.length).trim();
         }
     }
     
-    // Always respond 200 OK to Telegram
+    // We only need the orderId and at least one field to update
+    if (orderId && (name || phone || city || postOffice)) {
+        return { orderId, name, phone, city, postOffice };
+    }
+    return null;
+}
+
+// API: Telegram webhook endpoint
+app.post('/api/tg-webhook', async (req, res) => {
+    const update = req.body;
+    
+    // 1. Handle Inline Buttons Callback Queries
+    if (update.callback_query) {
+        const { id, data, message } = update.callback_query;
+        const callbackData = data || '';
+        
+        if (callbackData.startsWith('confirm_order:') || callbackData.startsWith('cancel_order:')) {
+            const isConfirm = callbackData.startsWith('confirm_order:');
+            const orderId = callbackData.split(':')[1];
+            
+            // Find client ID mapped to this TG message ID
+            const tgMessageId = message.message_id;
+            const clientId = tgMap[tgMessageId];
+            
+            if (clientId) {
+                const newStatus = isConfirm ? 'in_transit' : 'cancelled';
+                
+                // Push order update to client
+                if (!orderUpdates[clientId]) orderUpdates[clientId] = [];
+                orderUpdates[clientId].push({
+                    orderId: orderId,
+                    status: newStatus
+                });
+                
+                // Send service notification message to mini support chat
+                const statusLabel = isConfirm ? 'підтверджено (прямує до вас 🚚)' : 'скасовано ❌';
+                const notificationText = `🔔 Статус вашого замовлення ${orderId} змінено на: *${statusLabel}*.`;
+                
+                if (!messageQueues[clientId]) messageQueues[clientId] = [];
+                messageQueues[clientId].push({
+                    sender: 'support',
+                    senderName: 'Жуйка Бот 🤖',
+                    senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+                    text: notificationText,
+                    timestamp: new Date().toISOString()
+                });
+                
+                // Answer Telegram callback query
+                await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/answerCallbackQuery`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        callback_query_id: id,
+                        text: `Замовлення ${isConfirm ? 'підтверджено' : 'скасовано'}!`
+                    })
+                }).catch(err => console.error(err));
+                
+                // Update order report message in Telegram to show status and update buttons (keeping Edit button only)
+                const originalText = message.text || '';
+                const statusEmoji = isConfirm ? '✅ ПІДТВЕРДЖЕНО' : '❌ СКАСОВАНО';
+                const updatedText = `⚡️ *СТАТУС: ${statusEmoji}*\n\n` + originalText;
+                
+                await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/editMessageText`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: message.chat.id,
+                        message_id: tgMessageId,
+                        text: updatedText,
+                        parse_mode: 'Markdown',
+                        reply_markup: {
+                            inline_keyboard: [
+                                [
+                                    { text: "✏️ Редагувати дані", callback_data: `edit_order:${orderId}` }
+                                ]
+                            ]
+                        }
+                    })
+                }).catch(err => console.error(err));
+                
+            } else {
+                console.log(`No client mapped to message ID ${tgMessageId}`);
+                await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/answerCallbackQuery`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        callback_query_id: id,
+                        text: 'Помилка: не знайдено клієнта для цього замовлення.'
+                    })
+                }).catch(err => console.error(err));
+            }
+        } else if (callbackData.startsWith('edit_order:')) {
+            const orderId = callbackData.split(':')[1];
+            const tgMessageId = message.message_id;
+            const clientId = tgMap[tgMessageId];
+            
+            // Send template to manager
+            const promptResponse = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: message.chat.id,
+                    reply_to_message_id: tgMessageId,
+                    text: `✏️ *Редагування замовлення ${orderId}*\n\n` +
+                          `Скопіюйте шаблон нижче, змініть потрібні дані та надішліть як *відповідь (Reply)* на це повідомлення:\n\n` +
+                          `\`\`\`\n` +
+                          `Замовлення: ${orderId}\n` +
+                          `Ім'я: [Ім'я]\n` +
+                          `Телефон: [Телефон]\n` +
+                          `Місто: [Місто]\n` +
+                          `Пошта: [Відділення Нової Пошти]\n` +
+                          `\`\`\``,
+                    parse_mode: 'Markdown'
+                })
+            }).catch(err => console.error(err));
+            
+            if (clientId && promptResponse) {
+                try {
+                    const promptData = await promptResponse.json();
+                    if (promptData.ok && promptData.result) {
+                        const promptMsgId = promptData.result.message_id;
+                        tgMap[promptMsgId] = clientId;
+                        saveMap();
+                    }
+                } catch (e) {
+                    console.error('Failed to parse prompt message response', e);
+                }
+            }
+            
+            await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/answerCallbackQuery`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ callback_query_id: id })
+            }).catch(err => console.error(err));
+        }
+        
+        return res.sendStatus(200);
+    }
+    
+    // 2. Handle Text Messages & Edited Messages (Replies & Edits)
+    const msg = update.message || update.edited_message;
+    if (msg && msg.reply_to_message) {
+        const replyToId = msg.reply_to_message.message_id;
+        const text = msg.text;
+        
+        const clientId = tgMap[replyToId];
+        if (clientId && text) {
+            const parsed = parseOrderUpdate(text);
+            if (parsed) {
+                console.log(`Order edit parsed for client ${clientId}:`, parsed);
+                if (!orderUpdates[clientId]) orderUpdates[clientId] = [];
+                orderUpdates[clientId].push({
+                    orderId: parsed.orderId,
+                    customerName: parsed.name,
+                    customerPhone: parsed.phone,
+                    city: parsed.city,
+                    postOffice: parsed.postOffice
+                });
+                
+                let changeDetails = [];
+                if (parsed.name) changeDetails.push(`ім'я одержувача: ${parsed.name}`);
+                if (parsed.phone) changeDetails.push(`телефон: ${parsed.phone}`);
+                if (parsed.city) changeDetails.push(`місто: ${parsed.city}`);
+                if (parsed.postOffice) changeDetails.push(`відділення пошти: ${parsed.postOffice}`);
+                
+                const notificationText = `✏️ Менеджер оновив інформацію у вашому замовленні ${parsed.orderId}:\n${changeDetails.map(d => `• ${d}`).join('\n')}`;
+                
+                if (!messageQueues[clientId]) messageQueues[clientId] = [];
+                messageQueues[clientId].push({
+                    sender: 'support',
+                    senderName: 'Жуйка Бот 🤖',
+                    senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+                    text: notificationText,
+                    timestamp: new Date().toISOString()
+                });
+                
+                // Reply to confirm edit in Telegram
+                await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: msg.chat.id,
+                        reply_to_message_id: msg.message_id,
+                        text: `✅ Дані замовлення ${parsed.orderId} успішно оновлено на сайті!`
+                    })
+                }).catch(err => console.error(err));
+            } else {
+                // Otherwise, standard support chat message
+                console.log(`Support reply to client ${clientId}: ${text}`);
+                if (!messageQueues[clientId]) messageQueues[clientId] = [];
+                
+                let managerName = 'Підтримка';
+                let managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
+                
+                const tgSender = msg.from.first_name || '';
+                const lowerSender = tgSender.toLowerCase();
+                
+                if (lowerSender.includes('нат') || lowerSender.includes('nat')) {
+                    managerName = 'Наташа';
+                    managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
+                } else if (lowerSender.includes('дм') || lowerSender.includes('dm') || lowerSender.includes('дн') || lowerSender.includes('dmi')) {
+                    managerName = 'Дмитро';
+                    managerAvatar = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face';
+                } else {
+                    const clientHash = clientId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+                    if (clientHash % 2 === 0) {
+                        managerName = 'Наташа';
+                        managerAvatar = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face';
+                    } else {
+                        managerName = 'Дмитро';
+                        managerAvatar = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face';
+                    }
+                }
+
+                messageQueues[clientId].push({
+                    sender: 'support',
+                    senderName: managerName,
+                    senderAvatar: managerAvatar,
+                    text: text,
+                    timestamp: new Date().toISOString()
+                });
+
+                const newTgMessageId = msg.message_id;
+                tgMap[newTgMessageId] = clientId;
+                saveMap();
+            }
+        }
+    }
+    
     res.sendStatus(200);
 });
 
