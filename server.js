@@ -225,7 +225,19 @@ app.get('/images/cache/:token', async (req, res) => {
             return res.status(400).send('Invalid image URL');
         }
         
-        const response = await fetch(decryptedUrl);
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 6000);
+        
+        const response = await fetch(decryptedUrl, {
+            signal: controller.signal,
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+                'Referer': 'https://choco-yummy.com.ua/'
+            }
+        });
+        clearTimeout(timeoutId);
+        
         if (!response.ok) {
             return res.status(response.status).send('Failed to fetch image');
         }
