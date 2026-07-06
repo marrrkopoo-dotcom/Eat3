@@ -1514,7 +1514,7 @@ const App = () => {
                                                 scrolling="no" 
                                                 marginHeight="0" 
                                                 marginWidth="0" 
-                                                src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedCity)}&t=&z=12&ie=UTF8&iwloc=&output=embed&hl=uk`}
+                                                src={`https://maps.google.com/maps?q=${encodeURIComponent("Нова Пошта, " + selectedCity)}&t=&z=12&ie=UTF8&iwloc=&output=embed&hl=uk`}
                                                 style={{ border: 'none' }}
                                             ></iframe>
                                         </div>
