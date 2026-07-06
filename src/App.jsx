@@ -72,194 +72,6 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
     );
 };
 
-const CustomNovaPoshtaMap = ({ selectedCity }) => {
-    const mapContainerRef = React.useRef(null);
-    const mapInstanceRef = React.useRef(null);
-    const markerClusterGroupRef = React.useRef(null);
-
-    const cityData = {
-        "Київ": {
-            center: [50.4501, 30.5234],
-            branches: [
-                { id: 1, name: "Відділення №120", address: "вул. Хрещатик, 21", coords: [50.4501, 30.5234] },
-                { id: 2, name: "Відділення №15", address: "вул. Антоновича, 40", coords: [50.4418, 30.5217] },
-                { id: 3, name: "Відділення №30", address: "вул. Ярославська, 17", coords: [50.4682, 30.5159] },
-                { id: 4, name: "Відділення №85", address: "вул. Велика Васильківська, 85", coords: [50.4312, 30.5164] },
-                { id: 5, name: "Відділення №50", address: "вул. Дмитрівська, 50", coords: [50.4582, 30.4902] },
-                { id: 6, name: "Відділення №22", address: "вул. Шота Руставелі, 22", coords: [50.4485, 30.5312] },
-                { id: 7, name: "Відділення №90", address: "бул. Лесі Українки, 24", coords: [50.4355, 30.5422] },
-                { id: 8, name: "Відділення №1", address: "вул. Пироговського, 19", coords: [50.4215, 30.4851] },
-                { id: 9, name: "Відділення №10", address: "вул. Васильківська, 28", coords: [50.3952, 30.4984] },
-                { id: 10, name: "Відділення №48", address: "вул. Шолом-Алейхема, 18", coords: [50.4812, 30.6315] },
-                { id: 11, name: "Відділення №55", address: "пр-т Берестейський, 20", coords: [50.4502, 30.4721] },
-                { id: 12, name: "Відділення №99", address: "вул. Вишгородська, 21", coords: [50.5054, 30.4611] },
-                { id: 13, name: "Відділення №115", address: "вул. Героїв полку Азов, 34", coords: [50.5085, 30.5112] },
-                { id: 14, name: "Відділення №150", address: "вул. Радунська, 3", coords: [50.5284, 30.6015] }
-            ]
-        },
-        "Львів": {
-            center: [49.8397, 24.0297],
-            branches: [
-                { id: 101, name: "Відділення №1", address: "вул. Словацького, 1", coords: [49.8397, 24.0297] },
-                { id: 102, name: "Відділення №3", address: "вул. Городоцька, 35", coords: [49.8444, 24.0254] },
-                { id: 103, name: "Відділення №10", address: "вул. Франка, 20", coords: [49.8351, 24.0321] },
-                { id: 104, name: "Відділення №14", address: "вул. Личаківська, 8", coords: [49.8415, 24.0385] },
-                { id: 105, name: "Відділення №22", address: "вул. Шевченка, 32", coords: [49.8492, 24.0152] },
-                { id: 106, name: "Відділення №40", address: "вул. Чорновола, 67", coords: [49.8621, 24.0215] },
-                { id: 107, name: "Відділення №55", address: "вул. Наукова, 35", coords: [49.8035, 24.0092] },
-                { id: 108, name: "Відділення №77", address: "вул. Зелена, 115", coords: [49.8185, 24.0512] }
-            ]
-        },
-        "Одеса": {
-            center: [46.4825, 30.7233],
-            branches: [
-                { id: 201, name: "Відділення №10", address: "вул. Дерибасівська, 12", coords: [46.4825, 30.7233] },
-                { id: 202, name: "Відділення №2", address: "вул. Пушкінська, 25", coords: [46.4754, 30.7412] },
-                { id: 203, name: "Відділення №5", address: "вул. Канатна, 6", coords: [46.4682, 30.7214] },
-                { id: 204, name: "Відділення №18", address: "вул. Преображенська, 45", coords: [46.4889, 30.7122] },
-                { id: 205, name: "Відділення №30", address: "вул. Середньофонтанська, 19", coords: [46.4522, 30.7385] },
-                { id: 206, name: "Відділення №45", address: "вул. Академіка Корольова, 33", coords: [46.3982, 30.7182] },
-                { id: 207, name: "Відділення №60", address: "пр-т Добровольського, 114", coords: [46.5784, 30.7985] },
-                { id: 208, name: "Відділення №85", address: "вул. Балківська, 33", coords: [46.4851, 30.6985] }
-            ]
-        },
-        "Харків": {
-            center: [49.9935, 36.2304],
-            branches: [
-                { id: 301, name: "Відділення №11", address: "вул. Сумська, 10", coords: [49.9935, 36.2304] },
-                { id: 302, name: "Відділення №3", address: "вул. Полтавський Шлях, 15", coords: [49.9881, 36.2212] },
-                { id: 303, name: "Відділення №19", address: "вул. Пушкінська, 42", coords: [49.9995, 36.2415] },
-                { id: 304, name: "Відділення №25", address: "пр. Науки, 12", coords: [50.0045, 36.2291] },
-                { id: 305, name: "Відділення №50", address: "вул. Героїв Праці, 7", coords: [50.0264, 36.3312] },
-                { id: 306, name: "Відділення №65", address: "пр-т Гагаріна, 20", coords: [49.9754, 36.2482] },
-                { id: 307, name: "Відділення №80", address: "вул. Плеханівська, 115", coords: [49.9782, 36.2751] }
-            ]
-        },
-        "Дніпро": {
-            center: [48.4647, 35.0462],
-            branches: [
-                { id: 401, name: "Відділення №5", address: "пр. Дмитра Яворницького, 60", coords: [48.4647, 35.0462] },
-                { id: 402, name: "Відділення №12", address: "вул. Гагаріна, 15", coords: [48.4552, 35.0592] },
-                { id: 403, name: "Відділення №22", address: "вул. Робоча, 24", coords: [48.4715, 35.0315] },
-                { id: 404, name: "Відділення №30", address: "вул. Михайла Грушевського, 4", coords: [48.4611, 35.0495] },
-                { id: 405, name: "Відділення №55", address: "вул. Слобожанська, 17", coords: [48.4984, 35.0782] },
-                { id: 406, name: "Відділення №70", address: "пр-т Слобожанський, 85", coords: [48.5092, 35.0851] },
-                { id: 407, name: "Відділення №90", address: "Запорізьке шосе, 40", coords: [48.4052, 35.0382] }
-            ]
-        }
-    };
-
-    React.useEffect(() => {
-        const loadLeaflet = async () => {
-            if (!window.L) {
-                // Link stylesheet for Leaflet
-                const link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-                document.head.appendChild(link);
-
-                // CSS for MarkerCluster
-                const clusterCSS1 = document.createElement('link');
-                clusterCSS1.rel = 'stylesheet';
-                clusterCSS1.href = 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css';
-                document.head.appendChild(clusterCSS1);
-
-                const clusterCSS2 = document.createElement('link');
-                clusterCSS2.rel = 'stylesheet';
-                clusterCSS2.href = 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css';
-                document.head.appendChild(clusterCSS2);
-
-                // Leaflet JS Script
-                await new Promise((resolve) => {
-                    const script = document.createElement('script');
-                    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-                    script.onload = resolve;
-                    document.body.appendChild(script);
-                });
-
-                // MarkerCluster JS Script
-                await new Promise((resolve) => {
-                    const script = document.createElement('script');
-                    script.src = 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js';
-                    script.onload = resolve;
-                    document.body.appendChild(script);
-                });
-            }
-
-            initMap();
-        };
-
-        const initMap = () => {
-            if (!mapContainerRef.current) return;
-            const city = cityData[selectedCity] || cityData["Київ"];
-
-            if (!mapInstanceRef.current) {
-                mapInstanceRef.current = window.L.map(mapContainerRef.current, {
-                    zoomControl: true
-                }).setView(city.center, 12);
-
-                window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                    attribution: '&copy; OpenStreetMap'
-                }).addTo(mapInstanceRef.current);
-            } else {
-                mapInstanceRef.current.setView(city.center, 12);
-            }
-
-            if (markerClusterGroupRef.current) {
-                mapInstanceRef.current.removeLayer(markerClusterGroupRef.current);
-            }
-
-            markerClusterGroupRef.current = window.L.markerClusterGroup({
-                showCoverageOnHover: false,
-                maxClusterRadius: 40
-            });
-
-            // SVG Nova Poshta Pin Logo
-            const npIconSvg = `data:image/svg+xml;utf8,${encodeURIComponent(`
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 46" width="36" height="46">
-                    <path d="M18 0C8.06 0 0 8.06 0 18c0 12.6 15.3 26.6 17.1 27.8.5.4 1.3.4 1.8 0 1.8-1.2 17.1-15.2 17.1-27.8 0-9.94-8.06-18-18-18z" fill="#E22C2C"/>
-                    <circle cx="18" cy="18" r="11" fill="#FFFFFF"/>
-                    <text x="18" y="22" font-family="'Inter', Arial, sans-serif" font-weight="900" font-size="10" fill="#E22C2C" text-anchor="middle">НП</text>
-                </svg>
-            `)}`;
-
-            const npIcon = window.L.icon({
-                iconUrl: npIconSvg,
-                iconSize: [30, 38],
-                iconAnchor: [15, 38],
-                popupAnchor: [0, -38]
-            });
-
-            city.branches.forEach(branch => {
-                const marker = window.L.marker(branch.coords, { icon: npIcon })
-                    .bindPopup(`
-                        <div class="p-1 font-sans" style="min-width: 140px; color: #1e293b;">
-                            <div class="font-extrabold text-sm text-red-600 mb-0.5">${branch.name}</div>
-                            <div class="text-xs font-semibold">${branch.address}</div>
-                        </div>
-                    `);
-                
-                marker.bindTooltip(`<div style="color: #e11d48; font-weight: 800; font-size: 10px;">${branch.name}</div>`, {
-                    permanent: true,
-                    direction: 'top',
-                    offset: [0, -32],
-                    className: 'np-tooltip-label'
-                });
-
-                markerClusterGroupRef.current.addLayer(marker);
-            });
-
-            mapInstanceRef.current.addLayer(markerClusterGroupRef.current);
-        };
-
-        loadLeaflet();
-    }, [selectedCity]);
-
-    return (
-        <div ref={mapContainerRef} className="w-full h-full" style={{ zIndex: 1 }} />
-    );
-};
-
 const ThemeToggle = ({ isDark, toggleTheme }) => (
     <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-600 dark:text-gray-300">
         {isDark ? (
@@ -1695,7 +1507,16 @@ const App = () => {
                                         )}
 
                                         <div className="rounded-xl overflow-hidden h-64 border border-gray-200 dark:border-gray-800 relative group">
-                                            <CustomNovaPoshtaMap selectedCity={selectedCity} />
+                                            <iframe 
+                                                width="100%" 
+                                                height="100%" 
+                                                frameBorder="0" 
+                                                scrolling="no" 
+                                                marginHeight="0" 
+                                                marginWidth="0" 
+                                                src={`https://maps.google.com/maps?q=${encodeURIComponent("Нова Пошта, " + selectedCity)}&t=&z=12&ie=UTF8&iwloc=&output=embed&hl=uk`}
+                                                style={{ border: 'none' }}
+                                            ></iframe>
                                         </div>
                                     </div>
                                 </aside>
