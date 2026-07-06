@@ -30,52 +30,6 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
     const [isLoaded, setIsLoaded] = React.useState(false);
     const [failedLocal, setFailedLocal] = React.useState(false);
 
-    // Try to upgrade remote URLs to high quality in the background
-    React.useEffect(() => {
-        if (src) return; // Don't upgrade local images
-        if (!fallbackSrc) return;
-
-        const match = fallbackSrc.match(/(.*?)(?:-\d+x\d+)?(\.(?:webp|jpg|jpeg|png))$/i);
-        if (!match) return;
-
-        const base = match[1];
-        const ext = match[2].toLowerCase();
-        
-        const hqVariations = [
-            `${base}-495x495${ext}`,
-            `${base}-499x495${ext}`,
-            `${base}-500x500${ext}`,
-            `${base}-262x495${ext}`,
-            `${base}${ext}`
-        ];
-        
-        if (ext !== '.webp') {
-            hqVariations.push(`${base}-495x495.webp`, `${base}-499x495.webp`, `${base}-500x500.webp`);
-        }
-        if (ext !== '.jpg' && ext !== '.jpeg') {
-            hqVariations.push(`${base}-495x495.jpg`, `${base}-499x495.jpg`, `${base}-500x500.jpg`);
-        }
-
-        const tryLoadHQ = async () => {
-            for (let url of Array.from(new Set(hqVariations))) {
-                try {
-                    const img = new Image();
-                    await new Promise((resolve, reject) => {
-                        img.onload = () => resolve(img.src);
-                        img.onerror = reject;
-                        img.src = url;
-                    });
-                    setCurrentSrc(url);
-                    return; // Stop trying once we find a high quality one
-                } catch (e) {
-                    // Continue to next variation
-                }
-            }
-        };
-        
-        tryLoadHQ();
-    }, [src, fallbackSrc]);
-
     React.useEffect(() => {
         setCurrentSrc(src || fallbackSrc);
         setIsLoaded(false);
@@ -103,6 +57,7 @@ const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onL
                     if (typeof onLoad === 'function') onLoad();
                 }}
                 onError={handleError} 
+                loading="lazy"
             />
         </div>
     );

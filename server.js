@@ -191,12 +191,34 @@ app.post('/api/tg-webhook', (req, res) => {
     res.sendStatus(200);
 });
 
-// Image Proxy Endpoint to mask original image URLs
+const CACHE_DIR = path.join(__dirname, 'image_cache');
+if (!fs.existsSync(CACHE_DIR)) {
+    fs.mkdirSync(CACHE_DIR, { recursive: true });
+}
+
+// Image Proxy Endpoint to mask original image URLs with server-side caching
 app.get('/images/cache/:token', async (req, res) => {
     const { token } = req.params;
     if (!token) {
         return res.status(400).send('Missing token');
     }
+    
+    // Clean token for safety
+    const safeToken = token.replace(/[^a-zA-Z0-9-]/g, '');
+    const cachePath = path.join(CACHE_DIR, safeToken);
+    
+    // Check local cache
+    if (fs.existsSync(cachePath)) {
+        const metadataPath = cachePath + '.meta';
+        let contentType = 'image/webp';
+        if (fs.existsSync(metadataPath)) {
+            contentType = fs.readFileSync(metadataPath, 'utf8');
+        }
+        res.setHeader('content-type', contentType);
+        res.setHeader('cache-control', 'public, max-age=31536000');
+        return fs.createReadStream(cachePath).pipe(res);
+    }
+    
     try {
         const decryptedUrl = decrypt(token);
         if (!decryptedUrl.startsWith('http')) {
@@ -208,16 +230,17 @@ app.get('/images/cache/:token', async (req, res) => {
             return res.status(response.status).send('Failed to fetch image');
         }
         
-        const contentType = response.headers.get('content-type');
-        if (contentType) {
-            res.setHeader('content-type', contentType);
-        }
-        
-        const cacheControl = response.headers.get('cache-control') || 'public, max-age=31536000';
-        res.setHeader('cache-control', cacheControl);
-        
+        const contentType = response.headers.get('content-type') || 'image/webp';
         const buffer = await response.arrayBuffer();
-        res.send(Buffer.from(buffer));
+        const nodeBuffer = Buffer.from(buffer);
+        
+        // Save to cache asynchronously
+        fs.writeFile(cachePath, nodeBuffer, () => {});
+        fs.writeFile(cachePath + '.meta', contentType, 'utf8', () => {});
+        
+        res.setHeader('content-type', contentType);
+        res.setHeader('cache-control', 'public, max-age=31536000');
+        res.send(nodeBuffer);
     } catch (err) {
         console.error('Image proxy server error:', err);
         res.status(500).send('Image proxy error');
