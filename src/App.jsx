@@ -22,7 +22,7 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
+const categories = ["Всі", "Акції", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
@@ -709,6 +709,7 @@ const App = () => {
     const [brokenImages, setBrokenImages] = useState(new Set());
     const [viewMode, setViewMode] = useState('medium'); // 'large', 'medium', 'small'
     const [stockFilter, setStockFilter] = useState('all'); // 'all', 'inStock', 'outOfStock'
+    const [promoFilter, setPromoFilter] = useState(false);
     
     // City Selection State
     const [selectedCity, setSelectedCity] = useState("Київ");
@@ -1008,6 +1009,7 @@ const App = () => {
         setPriceRange({ min: '', max: '' });
         setCalRange({ min: '', max: '' });
         setStockFilter('all');
+        setPromoFilter(false);
     };
 
     // Filter logic
@@ -1025,6 +1027,7 @@ const App = () => {
             const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
             const matchCategory = 
                 selectedCategory === "Всі" ? true :
+                selectedCategory === "Акції" ? !!p.oldPrice :
                 selectedCategory === "Напої" ? drinkCategories.includes(p.category) :
                 p.category === selectedCategory;
             
@@ -1039,7 +1042,9 @@ const App = () => {
                                stockFilter === 'inStock' ? !p.outOfStock :
                                p.outOfStock;
 
-            return matchSearch && matchCategory && matchPrice && matchCal && matchStock;
+            const matchPromo = !promoFilter || !!p.oldPrice;
+
+            return matchSearch && matchCategory && matchPrice && matchCal && matchStock && matchPromo;
         }).sort((a, b) => {
             // Out of stock goes to the end
             if (a.outOfStock && !b.outOfStock) return 1;
@@ -1058,7 +1063,7 @@ const App = () => {
             if (selectedCategory === 'Всі') return a._rand - b._rand;
             return 0;
         });
-    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter]);
+    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter, promoFilter]);
 
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const paginatedProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -1125,14 +1130,18 @@ const App = () => {
             />
             
             {/* Running text marquee banner (бегущая строка) */}
-            <div className="w-full bg-[#FFE600] text-black overflow-hidden py-2 font-black text-xs uppercase tracking-widest border-b border-black select-none z-20 relative">
+            <div 
+                onClick={() => navigateTo('shop', 'Акції')} 
+                className="w-full bg-[#FFE600] text-black overflow-hidden py-2 font-black text-xs uppercase tracking-widest border-b border-black select-none z-20 relative cursor-pointer hover:bg-[#FFF000] transition-colors"
+                title="Перейти до акційних товарів"
+            >
                 <div className="flex whitespace-nowrap animate-marquee">
-                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОУАРІУ!</span>
+                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
                     <span className="mx-8 flex items-center gap-2">🍬 ЧУПА ЧУПС ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
                     <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
                     <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
                     
-                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОУАРІУ!</span>
+                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
                     <span className="mx-8 flex items-center gap-2">🍬 ЧУПА ЧУПС ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
                     <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
                     <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
@@ -1304,9 +1313,22 @@ const App = () => {
                                 <div className="glass-panel p-6 rounded-2xl shadow-sm">
                                     <h3 className="font-extrabold text-xl mb-5 text-dark dark:text-white flex items-center gap-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg>
-                                        Тонкі фільтри
+                                        Фільтри
                                     </h3>
-                                    
+
+                                    <div className="mb-5 flex items-center gap-2.5">
+                                         <input 
+                                             type="checkbox" 
+                                             id="promoFilter" 
+                                             checked={promoFilter} 
+                                             onChange={e => setPromoFilter(e.target.checked)} 
+                                             className="w-4 h-4 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary cursor-pointer bg-white dark:bg-gray-800"
+                                         />
+                                         <label htmlFor="promoFilter" className="text-sm font-extrabold text-gray-600 dark:text-gray-300 cursor-pointer select-none">
+                                             Тільки акційні товари
+                                         </label>
+                                    </div>
+
                                     <div className="mb-5">
                                         <label className="block text-sm font-bold text-gray-500 mb-2">Ціна (грн)</label>
                                         <div className="flex items-center gap-2">
