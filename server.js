@@ -228,7 +228,7 @@ app.get('/images/cache/:token', async (req, res) => {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 6000);
         
-        const response = await fetch(decryptedUrl, {
+        let response = await fetch(decryptedUrl, {
             signal: controller.signal,
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -237,6 +237,29 @@ app.get('/images/cache/:token', async (req, res) => {
             }
         });
         clearTimeout(timeoutId);
+        
+        // Smart fallback logic if the high-quality image returns 404
+        if (!response.ok && response.status === 404) {
+            let fallbackUrl = decryptedUrl;
+            if (decryptedUrl.includes('-197x495')) {
+                fallbackUrl = decryptedUrl.replace('-197x495', '-200x200');
+            } else if (decryptedUrl.includes('-495x495')) {
+                fallbackUrl = decryptedUrl.replace('-495x495', '-200x200');
+            }
+            
+            if (fallbackUrl !== decryptedUrl) {
+                const fallbackResponse = await fetch(fallbackUrl, {
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+                        'Referer': 'https://choco-yummy.com.ua/'
+                    }
+                });
+                if (fallbackResponse.ok) {
+                    response = fallbackResponse;
+                }
+            }
+        }
         
         if (!response.ok) {
             return res.status(response.status).send('Failed to fetch image');
