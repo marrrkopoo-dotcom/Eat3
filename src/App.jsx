@@ -2487,7 +2487,7 @@ const App = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-lg">✉️</span>
-                                    <a href="mailto:hello@juyka.com" className="hover:text-primary transition-colors">hello@juyka.com</a>
+                                    <a href="mailto:shop@juyka.com" className="hover:text-primary transition-colors">shop@juyka.com</a>
                                 </li>
                             </ul>
                         </div>
