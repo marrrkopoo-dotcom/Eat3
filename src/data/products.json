@@ -4,7 +4,7 @@
         "name":  "Енергетик Red Bull Krating Daeng Vitamin 800 Energy Drink Thai",
         "price":  179,
         "image":  "enc-05a694631ae6a5fe8d374120d3c60117-e7aca75aaa4300fe27e5196f3d24c2905eb63d45a3f24bff9f996f0c8bdefe1a36f8539c0b19b32d93f130c1b04e4acda6a316fc31d879f6d27d430c404b9ae33b6b037445889e9066e38e9b0e809c3d23f4f2696ff71c8cf7ab29c29745b84069bfad727571cb321ed0b9c86b9654c327a5b73039f871e53fd6bdaa7548af6f0dd35f956dd7b1e1f2700ac8be40e114",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Red Bull",
                         "country":  "Таїланд",
@@ -20,7 +20,7 @@
         "name":  "Енергетик Monster Energy Reserve Peaches N Creme",
         "price":  399,
         "image":  "enc-004408e08ed0f5f03c62a9209d6221fa-b817d73e6b0041f917ae5563a024dfbc66f0548de08ab7b51adfe3138ad4a95d2027a4992b1dc7465483dd2f34386d6a36a684b7ae86f4bd7f3a621b0d1bd1e956d4caf696a3880bfd8586c9c8ce865bb3c14291b5791b2ed736a4dbcc077a8a17f079f61dbfdf034aefc46a42187dd1ac7339a214a6c335cb9dacd1559b67615d776aaf7b6baf5c0c3926a0be9cb879",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -36,7 +36,7 @@
         "name":  "Картридж для напоїв Cirkul Puressence Cartridge Peach Персик 1шт",
         "price":  99,
         "image":  "/images/3.webp",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Cirkul Puressence Cartridge Peach",
                         "country":  "США",
@@ -52,7 +52,7 @@
         "name":  "Coca-Cola Ваніль",
         "price":  69,
         "image":  "/images/12.webp",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Coca-Cola",
                         "country":  "США",
@@ -68,7 +68,7 @@
         "name":  "Fanta Ананас",
         "price":  99,
         "image":  "enc-98f168ed1fcd8bd99a173249058bf779-34e4c090ae92325e95ba67e3f5c759ed883a19bf55a9e20b336062e278bf169c7813d022459ff7b4cc1450952c4a028c797469e56c466e1fec5ba227bae4f388c9bf4ae0599df485368d00422227d450013f37420100277924f3d49db3b75cec0e3dafe203964feb72d4adde41a708b4",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -84,7 +84,7 @@
         "name":  "Fanta Екзотик",
         "price":  69,
         "image":  "/images/14.webp",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -100,7 +100,7 @@
         "name":  "Fanta Лимон",
         "price":  59,
         "image":  "/images/15.webp",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -116,7 +116,7 @@
         "name":  "Fanta Полуниця",
         "price":  99,
         "image":  "enc-164420149fd6ef7ac55d4bca5b5ea95c-433977876846cc547038d1436651ba2455190b2633fea2f47aa1b078850cd8891837912863cc5248d1e0ca52b39c0b7d517c27c5211947c57cda284249f3d2b93230180f0fa6d46c669df4cb8e65476ef9e75facad4d024bbdc7a6aecb59177f62d49629ac62626f7668cd05433444a6",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -132,7 +132,7 @@
         "name":  "Fanta Полуниця Ківі",
         "price":  59,
         "image":  "/images/17.webp",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -148,7 +148,7 @@
         "name":  "Monster Java Salted Caramel USA",
         "price":  399,
         "image":  "enc-13be13801d88ce3209f683b5a8d153de-3309217d7d4b82916388acb09b2abce1d01765ef6e7b19066b396a002ae50fd7ad296ce359bea32c5001e9c6fb4e37197c8535e27bc65608b5865f3024d49f67f777468c408ec29941a26cba5d80453e7f8a9154e8654aac24d8583c40f2195ffcd45fb204e10ad5db9d3592422a6a30",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -164,7 +164,7 @@
         "name":  "Monster Juice Khaotic",
         "price":  99,
         "image":  "/images/19.webp",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -180,7 +180,7 @@
         "name":  "Monster Mango Loco",
         "price":  99,
         "image":  "enc-b8222a5830c077fde7d94902a9c6ebe6-ab89dbc3cf020cc282724fe1c593b22c03bba5e6b23555194a81e8f525b4229dbf6b70b2becb5324d08a2885e586c009684cf84705a0459ed94a38cd26d76953ef2e76ac069c9a68ab0645d93c5d318bf9ec30b6fe25520a033cf07ac92e00bbd927f74abf2afaf6ef38e5b05769e3b7",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -196,7 +196,7 @@
         "name":  "Monster Pipeline Punch",
         "price":  99,
         "image":  "enc-70619acc5f5489f2ab6b2e69f247bd1f-6a907236cb2d7e7b579ddf300506097d3d307eb5da9f2ccebdd9013077972c3964383cd6f89684143fe1a9a9d4d3d49a42b6a08cb7b0b6bcefbf84aaeba6ee061db052e399567d7533753b1dc3bae8cc2ac484f980b2438252dae63598174b960603a4dce1627deef4449a22c3c011d9",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -212,7 +212,7 @@
         "name":  "Monster The Doctor",
         "price":  129,
         "image":  "/images/22.webp",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -228,7 +228,7 @@
         "name":  "Monster Ultra Fiesta",
         "price":  99,
         "image":  "enc-8f70bea3c9fc6b43298d47b6af95700d-90b49ab13a18f71ac10f7353e957e36ca865dc95c2b698269b5bc42c1679fc0963d1da1d04cd065377ed89159c283258d67039b7ef801b2ee10d181f9ff1b074b7b89813d05efa838c0fe62495bbfe7827f91bd4725a2ed0b9d89151c9bc06682923b79eef5d803a11f8192888dcc9bd",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -244,7 +244,7 @@
         "name":  "Monster Ultra Paradise",
         "price":  99,
         "image":  "enc-7b3a90bd700e8ca62c5a88534cea6986-206c06bbde6f4b91000218fedc060dd9e6d31fc4a2246eee2898e9049606a0e82f6fd844ea468179363fef9bcd5d1f72da7d1d88566ea132ac7cf4a8a3d67b6746c07df859d948f076cfecb4c54bb2e0a8d3fe14e1c8373286696fd15cf1e1a013b5b36a0ac625dec055d471356e253c",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -260,7 +260,7 @@
         "name":  "Monster Ultra Watermelon",
         "price":  149,
         "image":  "enc-9019f36fa72b6aa33f1683cf1aa0c55e-2d5abe8498e2716ffb792393f8762a9d4006ba06e78e0ec75c4bb512a6b49439edf69bafc095ff58574245d74757b97326afa37b5ae02e78a38cc83b94fb573170e08acf649abe87ae436a9218eb0e76d1b9870108a4b22322369986fd6797bf34e8975df0c89530a2249ddf1bd69b0c",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -276,7 +276,7 @@
         "name":  "Monster Ultra White",
         "price":  129,
         "image":  "/images/26.jpg",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -292,7 +292,7 @@
         "name":  "Prime Arsenal Hydration Drink Arsenal",
         "price":  379,
         "image":  "/images/27.jpg",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Prime Arsenal Hydration Drink Arsenal",
                         "country":  "США",
@@ -308,7 +308,7 @@
         "name":  "Вода Monster Tour Water Deep Well Питна",
         "price":  399,
         "image":  "/images/29.jpg",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Monster Energy",
                         "country":  "США",
@@ -324,7 +324,7 @@
         "name":  "Газировка Fanta Orange USA Апельсин",
         "price":  99,
         "image":  "/images/30.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -340,7 +340,7 @@
         "name":  "Газировка Fanta Tutti-frutti Zero Sugar Тутти Фрутти Без сахара",
         "price":  99,
         "image":  "/images/31.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -356,7 +356,7 @@
         "name":  "Газировка Китайська Fanta White Peach Jasmine China Білий Персик Жасмин",
         "price":  149,
         "image":  "/images/32.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "Таїланд",
@@ -372,7 +372,7 @@
         "name":  "Газована вода 7-Up Tropical No Caffeine",
         "price":  99,
         "image":  "/images/33.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Up Tropical No Caffeine",
                         "country":  "США",
@@ -388,7 +388,7 @@
         "name":  "Газована вода A\u0026W Cream Soda No Caffeine",
         "price":  99,
         "image":  "enc-6e15f2411123c2e4e84900485378ccd5-380979216355ea63a525a325421a610aec171a6facf6be9e4012d3474a361ba22e2c81d410951f86e8fda15cc349cd87c75c89564fe1b6789aa079bf3e29a9d164a3e2ea3a340f36f1c02f2f87b592fd065e052f86ccea59c84e4c284994311b5a13838abf8311b28056da6f29c6551671a0bc150c37668cbe98d73ea2844e76330403d7e065ed905a8aa5ebafc16470",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Choco Yummy",
                         "country":  "США",
@@ -404,7 +404,7 @@
         "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
         "price":  189,
         "image":  "enc-8f2bdc9e6503a663da0546368b051b6c-9f3a899db4291c397d2871aa91ee5d73a852d8190868eb948e6aa7fce873499fe39bbf723f6101d09d0310d97ea68ddd91b2e9cb2936bfef5b49d5ee4014216f2d68b1d389aa647879b3467085c4fde5fa4d08f33719ac23b45b0d73d08ab589f70b92d15d7f9fad8faa0b1930c7b4610decdf6027722e438f87c85c9f71982f28927dafdb85e0a46fbd92ba915e4b22",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "AriZona",
                         "country":  "США",
@@ -420,7 +420,7 @@
         "name":  "Газована вода Arizona Cherry Lime Rickey Вишня і Лайм",
         "price":  149,
         "image":  "enc-f94d747d4e8278fe70b5db0d007e3e36-8cb230b727cc505b19a1f52539d9f8df6ccac1368f8f1b34ca3517eb8779bc4c48baac78ba5a8341d7e8e03f26ed204bbdc5ecf8d2869c15d2f8dc9fc833e41f27b197584d93f957eeaf4003283332c0017ed1bbeef7044a984c6ddc0ecdc76229f8612c27861facf438e0094fa6224986266ed1522d44cc30594034ce6b0f8b12fe64061ee8b3dea1e1589adcaa3709",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "AriZona",
                         "country":  "США",
@@ -436,7 +436,7 @@
         "name":  "Газована вода Coca-Cola Cherry Float Zero Sugar Вишня з ваніллю",
         "price":  199,
         "image":  "enc-869ebfe3d237d19c951e259f5e9e7eab-5955437078dae0966637c2370282cbd771b36bed2c8824dd98c18fb32d8c14dbf117e2be28c49b012a027f83775e871371e3209b8bf4694c02e7a37c4052e0110ae1940420f4cc44b06dd10e0e2bd575d1ecff482065875c0dab644f3745748b4e78640e615ac1c6a05e32772f85778219057f45774e15804a75f05f729837ebd6ea9f02bd3b48d854b42fe475c80dfe",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Coca-Cola",
                         "country":  "США",
@@ -452,7 +452,7 @@
         "name":  "Газована вода Coca-Cola Cherry Float Вишня з ваніллю",
         "price":  199,
         "image":  "enc-97834e535b1e5cb27abe9255b62e5403-5fad92e79df781bf2c7cbded24d7dd6b09c3dc6416958ac5e612a1d2e15dcbc793db80a83162819c721b9f47462d1845f197794fd844ffad265dc984ba3eb0ab4dd5a34c2454818719a5024f3f2bf5bf365bb182f36bb95ff2a562d853483508ea937cb1c0b5f42ee399b97d2790df016563fdb6489abe88676bbe8cb179cfa6",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Coca-Cola",
                         "country":  "США",
@@ -468,7 +468,7 @@
         "name":  "Газована вода Coca-Cola Holiday Creamy Vanilla Soda Ванільна",
         "price":  169,
         "image":  "enc-c69b7e8b0096fcb1f2c3ed31aa328ef7-8aa7199d506c884c7d8005b9bb4327c04e7426e4975b05ad8f4f8c8486d059cf78c98af8e02eadb323e555c3f9efd492aa8cf8fb876880d75c0fefe2599c8a6ba9d5e5c37f3533ce155f6f7d038f5ad5a74c506322bdd80a66fd7286643be0c17c58e1af4f8dc5646ad878ee7b898f70e19124e2f7b7af17df03a324bb44cfd336f8798ba1dea6a48c7d1e32878364f8",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Coca-Cola",
                         "country":  "США",
@@ -484,7 +484,7 @@
         "name":  "Газована вода Coca-Cola Zero Sugar Caffeine Free",
         "price":  179,
         "image":  "/images/45.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Coca-Cola",
                         "country":  "США",
@@ -500,7 +500,7 @@
         "name":  "Газована вода Coca-Cola Zero Sugar Кока Кола Без Цукру",
         "price":  129,
         "image":  "/images/46.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Coca-Cola",
                         "country":  "США",
@@ -516,7 +516,7 @@
         "name":  "Газована Вода Dr Pepper Cream Soda",
         "price":  99,
         "image":  "/images/47.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Dr. Pepper",
                         "country":  "США",
@@ -532,7 +532,7 @@
         "name":  "Газована вода Dr Pepper Original",
         "price":  59,
         "image":  "/images/48.png",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Dr. Pepper",
                         "country":  "США",
@@ -548,7 +548,7 @@
         "name":  "Газована вода Dr. Pepper Strawberries \u0026 Cream Полуниця і вершки",
         "price":  59,
         "image":  "enc-2cab11b6652a448b59614120ed9006cf-6b72085c6a05b0acff996e46d44c2fd743ed15ba0dc7c22ecb0761916fc204376426ed0add2defaf7c494b15d3f73ee00211f41937cbdd135dfdef1052c1a3a5745cb8a2933343566e35587c8d64957ad1ee07d6f1615b7658b438606288f135a8d2e5be7cb0b3f83c15d1bf1f357614c3be88cc81789071c30b431941a22a081857d7c620e19053fb4dff28d52349ba",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Dr. Pepper",
                         "country":  "США",
@@ -564,7 +564,7 @@
         "name":  "Газована вода Dr. Pepper Vanilla Float Ванільне морозиво",
         "price":  59,
         "image":  "/images/50.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Dr. Pepper",
                         "country":  "США",
@@ -580,7 +580,7 @@
         "name":  "Газована вода Dr.Pepper Blackberry Ожина",
         "price":  149,
         "image":  "/images/51.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Choco Yummy",
                         "country":  "США",
@@ -596,7 +596,7 @@
         "name":  "Газована вода Fanta Diablo Crimson Cherry",
         "price":  149,
         "image":  "enc-6c2458849e4d5f83efd6ccc2dad49a7f-ca3318b5801da61b78dcb114b9c9d98297c72946e768f0f1eb4b8d8bc9570378f6f7215f182ef4e1b13615fbcc32190b2735f7873d9e7fd6b9558bd257f785dc081a0b11df07c459675a296205617b765117de62cfd1b14d62a0cc4e03c1e4c75a36affc771b8321cfb3eb93baed4834ff8a3996c6620faba73ef23abd63afe4add0762d64bb6ee83a390918b6516ec5",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -612,7 +612,7 @@
         "name":  "Газована вода Fanta Fruit Twist Мультифрукт",
         "price":  99,
         "image":  "/images/53.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -628,7 +628,7 @@
         "name":  "Газована вода Fanta Grape Asia",
         "price":  149,
         "image":  "enc-3748f72fcec43cb63e7524d64a832936-80ca44c6868f3fe88f3d3ac39a5b766bd71d7cc55c9e9390f21a952e38729010843dca722be51079ff2d9458b8a088830d79d07caf103e5b2636280c64a195ec3952af215b069ce9f7e8f108187f9265fff524aa5356ee6b5f5f1c7805ae29ae1eb97e543f20f5c6b1c5af5e2d19f282cd837a4fd91e337076de26c2ec0bfb2b",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -644,7 +644,7 @@
         "name":  "Газована вода Fanta Grape Japan Виноград",
         "price":  169,
         "image":  "/images/55.png",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "Японія",
@@ -660,7 +660,7 @@
         "name":  "Газована вода Fanta Huong Xa Xi Sarsaparilla Vietnam",
         "price":  149,
         "image":  "enc-4f6ce2e5cda9617fc0f9ba98f33ae6ee-2336b1e0d7863f30cc60ea4e0720d0a81b5b4e827017b3c01c4f4ae0b3ec1dcb9012934571524d1ab193b6235015f62297e7fdc8d297f136a9f648b8192880b0206991e6a0560c64b8844745730651e98769c84b87b2d77df49efa959c7d4bb7d6b173847abe43e326c3338aed521b5ae899aa99eca74811b071f76246fd0733f0ce49b59259b29540d7eae34cef3f5a",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -676,7 +676,7 @@
         "name":  "Газована вода Fanta Orange USA Zero Sugar Апельсин",
         "price":  99,
         "image":  "/images/57.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -692,7 +692,7 @@
         "name":  "Газована вода Fanta Orange Xbox Ghost Call of Duty",
         "price":  149,
         "image":  "enc-9b58f46a3eef502016bc1fe152697120-025c00f11230fb2c877555af2beac80243b51103347a450bdc5a1c6961df3f9c2bf167d00517dbe5ed92f347891361a0c075e767308e8331253cd832a388e94b76643b7063127a7e317c8fa9f0da8598b7215a6f18eaa2c43af43c228ef2f2cbe837a44ef228fb3177b3ae3eafc9b7b842ceeb91b6a51891862a91391f1d4fd3fc077ecb7948bdae1d22b020ead51197",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -708,7 +708,7 @@
         "name":  "Газована вода Fanta Виноград",
         "price":  99,
         "image":  "enc-06d7a4686e23f3800dbee8cda5b11b8c-f49d843eb9e534d5f7ab0e9c660a130a1e5a431d8c523e6a98fed9b9d284a74e1f35570640a9c706d46c4dab8d123e17567083d026f2618fc51a24b44942591e3af0051ec0378e5f6e9b9edfcb0f6dc2c2cb4ad419d902b68c077df81bbebfef80278e60b7abed1414c9d716b7d0c07a",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -724,7 +724,7 @@
         "name":  "Газована вода Hata Soda Ramune Watermelon Кавун",
         "price":  199,
         "image":  "/images/60.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Hata Soda Ramune Watermelon",
                         "country":  "Японія",
@@ -740,7 +740,7 @@
         "name":  "Газована вода Lotte Chilsung Cider Soda Сидр",
         "price":  69,
         "image":  "enc-cb6fd5fe6315eeec2d90c6473402eb99-04de517e17b56ffc1577a5a155dfd749bcc7de342c2d4f79f5fb797599ea0226d56d772d78295a9e4b86563b4adbd8e58873f97ac39b6abd454f32b8d7d95483de77b99266ac896a21eb368b9fdd2283faf8bce689bbf875f781047565f31c473b0a7bf59063ff50400aee3f1f475778f5488e052853237c000c1f98e80d28e00aec7c82b4e967c9b3db4836c9809869",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Lotte Chilsung Cider Soda",
                         "country":  "США",
@@ -756,7 +756,7 @@
         "name":  "Газована вода Mountain Dew Baja Blast Лайм Апельсин Ананас",
         "price":  179,
         "image":  "enc-0849ab879fd185c01a705557438524ad-7394bf6319b12b6f40fefbd645cd59dfe7fcaab59d380c050f4f8f68851e3a6aa809633ff8b3a59f6c7da120017b909007e81da4cd114655992b72b9b117645537bf5ee4869c9c101970d2540644d7e557af22eb90d1db2e389a1260982d9e90650cd17880c0cfdb0c6e847f4fcf207aa7eb1631d733e98fff2b3428fae97e8c8d08747730937251e36c659eda6b9d04",
-        "category":  "Енергетики",
+        "category": "Енергетики",
         "details":  {
                         "brand":  "Mountain Dew Baja Blast",
                         "country":  "США",
@@ -772,7 +772,7 @@
         "name":  "Газована вода Mountain Dew Baja Cabo Citrus",
         "price":  179,
         "image":  "enc-0842038cb5104fef48ef00bd3bef16a6-4dc571b775e09af792aa6e16fbd9e732b66bf8bf4802b179d094a98833f5109972a09a8bf411a9c8a287dd75832154753fd927985334cbe51c69f0371d79ee958520f6753d79eefc1939a39e01420000596181c88cc6663a737acb91208e82acf486d4bfa9a83f23db8bd921ab84293e6da8437ad55c58320cf946a315ce6e3875c475e9a5f78b64c935738af409eb89",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Baja Cabo Citrus",
                         "country":  "США",
@@ -788,7 +788,7 @@
         "name":  "Газована вода Mountain Dew Code Red Вишня",
         "price":  179,
         "image":  "/images/65.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Code Red",
                         "country":  "США",
@@ -804,7 +804,7 @@
         "name":  "Газована вода Mountain Dew Dragon Fruit Драконів фрукт",
         "price":  179,
         "image":  "/images/66.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Dragon Fruit",
                         "country":  "США",
@@ -820,7 +820,7 @@
         "name":  "Газована вода Mountain Dew Kickstart Energizing Orange Citrus Апельсин  Цитрус",
         "price":  249,
         "image":  "/images/67.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Kickstart Energizing Orange Citrus",
                         "country":  "США",
@@ -836,7 +836,7 @@
         "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси",
         "price":  99,
         "image":  "enc-177591beda2ce1498181b5585f69e89d-e74100ef10150a1b244b45274146a8cf899f92bc586bdb686f6115e9a79b44a50930f71d32dd0bd9924c2f4bdd2656c1f65c7616fb62c3e93332e362e21d50f4b889e0118ebacda71f45fa23de4e403c3c3396cf706b72dccaf27cddafb4978e7326f6bec14a8fa9c0ac97a97b396cc59da4c8eea6d71da40ee1bd04b758b657547a9a0efb7c3fc42528f8daed1974bf",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Pitch Black",
                         "country":  "США",
@@ -852,7 +852,7 @@
         "name":  "Газована вода Mountain Dew Pitch Black Виноград і Цитруси",
         "price":  199,
         "image":  "/images/69.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Pitch Black",
                         "country":  "США",
@@ -868,7 +868,7 @@
         "name":  "Газована вода Mountain Dew Voltage Raspberry Ginseng Малина Женьшень",
         "price":  199,
         "image":  "/images/71.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Voltage Raspberry Ginseng",
                         "country":  "США",
@@ -884,7 +884,7 @@
         "name":  "Газована вода Mountain Dew Zero Sugar Цитрус Без цукру",
         "price":  159,
         "image":  "enc-150fffc3f6d9da02864359a52b51a9fc-cc855889ccc77e8145dbc739d899c088bb03ee1e1f3814951c08294cf90350995233b83240c6d2df24a0764949ec6aa1bb063767e8ea7b1e9fd56a76306d2161a56f7634b4d7d46b504625658982ba6f279022bfbe23a9202c94e2565b8a748dde9700005a64e47f164322a967a60807aba24d0ae3a2751cba5baa43f68a8ae9",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Mountain Dew Zero Sugar",
                         "country":  "США",
@@ -900,7 +900,7 @@
         "name":  "Газована вода Pepsi Caffeine Free Diet Дієтична Без Кофеїну",
         "price":  199,
         "image":  "enc-d7c805af859e7e7bc4103efcdefd34eb-4f688485fbf68c0590af2af324d26a41d5c3f51343a219a7c054dd1325945087d02fb3e2a5fbc1c05f82d94c271ec521ea220d5048381108796a21a0d6ebad77ba6bf0545acd1b63bca004853af18b8dc2d4ba5dd751475da197c919e64292d1",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi Caffeine Free Diet",
                         "country":  "США",
@@ -916,7 +916,7 @@
         "name":  "Газована вода Pepsi Cream Soda Zero Sugar Крем-Сода",
         "price":  149,
         "image":  "/images/74.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi Cream Soda Zero Sugar",
                         "country":  "США",
@@ -932,7 +932,7 @@
         "name":  "Газована вода Pepsi Gold",
         "price":  99,
         "image":  "enc-2869091cf694d5fc0d54c90ca416f1f6-b03fb84535a1ce9adb3e2c25a08c67c0e8f26ec7b4db285a913a3f19d321d745850cbe6dfcf293a248bc147e31e6458d5cf9f983c18b779b5ca6487e84b2d889ebd73aa9513e2bf7d2fc8ef1857518692fb9bf6ecce4611712d892484b729292422fd59e8cb514a6b3b9ab45db19bbd22eddf857e79abe1d60ea9ee098a7d73a",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi Gold",
                         "country":  "США",
@@ -948,7 +948,7 @@
         "name":  "Газована вода Pepsi Prebiotic Cola Cherry Vanilla з пребіотиками",
         "price":  199,
         "image":  "/images/76.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi Prebiotic Cola Cherry Vanilla",
                         "country":  "США",
@@ -964,7 +964,7 @@
         "name":  "Газована вода Pepsi Prebiotic Cola з пребіотиками",
         "price":  199,
         "image":  "/images/77.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi Prebiotic Cola",
                         "country":  "США",
@@ -980,7 +980,7 @@
         "name":  "Газована вода Pepsi Strawberries “N” Cream Zero Sugar Полуничний крем",
         "price":  149,
         "image":  "enc-1ba00cda5e37e7289bb3e168f05ffa6f-cfd3265fd8801a23c240b424b96607d2f2364900f4d5f21833f15be0889278595d29c5300d6d89d993314ff8615a0bfd7d26f433947473fea5a420d1ab15a18b55a5087be253d03f4a308eeac9092f636464f48fc521d4ec249ad4121be0ed582efa1e3ca22f4e7adbfc6cb78fe06a0f544ab6d3e1b085221d6ba50f21c5129c17c0f7a3c8b00d66e2b7d082a515b5dc",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi Strawberries",
                         "country":  "США",
@@ -996,7 +996,7 @@
         "name":  "Газована вода Pepsi White Peach Oolong Білий Персик та Улун",
         "price":  199,
         "image":  "/images/79.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Pepsi White Peach Oolong",
                         "country":  "США",
@@ -1012,7 +1012,7 @@
         "name":  "Газована вода Sprite Chill Strawberry Kiwi Полуниця Ківі",
         "price":  99,
         "image":  "/images/80.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Sprite Chill Strawberry Kiwi",
                         "country":  "США",
@@ -1028,7 +1028,7 @@
         "name":  "Газована вода Sprite Glass Пляшка скло",
         "price":  299,
         "image":  "/images/81.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Sprite Glass",
                         "country":  "США",
@@ -1044,7 +1044,7 @@
         "name":  "Газована вода Sprite Tea Lemon Чай з Лимоном",
         "price":  99,
         "image":  "/images/82.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Sprite Tea Lemon",
                         "country":  "США",
@@ -1060,7 +1060,7 @@
         "name":  "Газована вода Sprite Zero Sugar Mint Chill Лимон-Лайм",
         "price":  299,
         "image":  "enc-c064f96d2f06e1e69a3180cc5c92277c-10a2bb4db925e9bd7e025579d5a9276ef8f5ba338b157c3c6c18cdb00d37a5fcdc34606375aac90b10010202629f77a3ef79ea254627d60b1cc6f25aebf7936423783f6389145f1c059ad38e87555eb133a1c98e89a1f86e27834abbecdf8d1baf3d54c33f73165d5d5c0481a129179ae9fe9281c7103206b7e11c27de92702bed906e8cd69db20a07ac28ec5643f0b3",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Sprite Zero Sugar Mint Chill",
                         "country":  "США",
@@ -1076,7 +1076,7 @@
         "name":  "Газована вода Ultrapop Dragon Ball Drink Strawberry \u0026 Banana",
         "price":  179,
         "image":  "/images/84.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Ultrapop Dragon Ball Drink Strawberry",
                         "country":  "США",
@@ -1092,7 +1092,7 @@
         "name":  "Газована вода Ultrapop One Piece Soda Luffy Lemon \u0026 Strawberry Лимон і Полуниця",
         "price":  179,
         "image":  "/images/85.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Ultrapop One Piece Soda Luffy Lemon",
                         "country":  "США",
@@ -1108,7 +1108,7 @@
         "name":  "Газована вода Warheads Sour Peach Soda Персик",
         "price":  79,
         "image":  "/images/86.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Warheads Sour Peach Soda",
                         "country":  "США",
@@ -1124,7 +1124,7 @@
         "name":  "Газована вода Warheads Sour! Black Cherry Soda",
         "price":  79,
         "image":  "/images/87.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Warheads Sour",
                         "country":  "США",
@@ -1140,7 +1140,7 @@
         "name":  "Газована вода Warheads Sour! Blue Raspberry Soda",
         "price":  79,
         "image":  "/images/88.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Warheads Sour",
                         "country":  "США",
@@ -1156,7 +1156,7 @@
         "name":  "Газована вода Warheads SOUR! Green Apple Soda",
         "price":  79,
         "image":  "/images/89.png",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Warheads Sour",
                         "country":  "США",
@@ -1172,7 +1172,7 @@
         "name":  "Газована вода Warheads Sour! Watermelon Soda",
         "price":  79,
         "image":  "/images/90.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Warheads Sour",
                         "country":  "США",
@@ -1188,7 +1188,7 @@
         "name":  "Газована вода без цукру Fanta Chucky Forest Berries Zero Sugar зі смаком лісових ягід",
         "price":  179,
         "image":  "enc-af65e31920f28c69f2a2a55915f864c7-aa754c0fe102dfd7e7db4054ce2acff8b872d3b7a085b9f4fdadc21def6861091cad02d49f059906132e4cf102f3c570172657b35e1abdc57381888cc239d22573582b0859e73a5348e80e2fe32aa4fa0d66365144f8119d07dbb8f9523ee1b57b8821bf57e40d3b431f4924c72f635fcf9f65ba9aa228f6e236f2e19b139e63b19d24b8d56a4d09eaba7358d864c721dbeef349c996cc2f96bb9adc5cd6cd57d9ab2dc8bf5fe77075a01c577ddcd870f75430fd79418ebe4c2434da07a709f161ef01c7215a1c79fb582f6bfa170ad995be937a4450a3804ea00326d696672fe9344f0c6c533e09d65b79f2195937b0",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Fanta",
                         "country":  "США",
@@ -1204,7 +1204,7 @@
         "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Citrus Цитрус Равлик Гері",
         "price":  199,
         "image":  "/images/92.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Spongebob Squarepants Citrus",
                         "country":  "США",
@@ -1220,7 +1220,7 @@
         "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Grape Виноград Сквідвард",
         "price":  199,
         "image":  "/images/93.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Spongebob Squarepants Grape",
                         "country":  "США",
@@ -1236,7 +1236,7 @@
         "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Lychee Лічі Містер Крабс",
         "price":  199,
         "image":  "/images/94.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Spongebob Squarepants Lychee",
                         "country":  "США",
@@ -1252,7 +1252,7 @@
         "name":  "Газована вода Губка Боб Qdol Spongebob Squarepants Strawberry Полуниця Сенді Чікс",
         "price":  199,
         "image":  "/images/95.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Spongebob Squarepants Strawberry",
                         "country":  "США",
@@ -1268,7 +1268,7 @@
         "name":  "Газована вода Покемони Qdol Pokemon Citrus Squirtle Цитрус Сквіртл",
         "price":  199,
         "image":  "/images/96.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Pokemon Citrus Squirtle",
                         "country":  "США",
@@ -1284,7 +1284,7 @@
         "name":  "Газована вода Покемони Qdol Pokemon Grape Bulbasaur Виноград Бульбозавр",
         "price":  199,
         "image":  "/images/97.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Pokemon Grape Bulbasaur",
                         "country":  "США",
@@ -1300,7 +1300,7 @@
         "name":  "Газована вода Покемони Qdol Pokemon Lime Pikachu Лайм Пікачу",
         "price":  199,
         "image":  "/images/98.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Pokemon Lime Pikachu",
                         "country":  "США",
@@ -1316,7 +1316,7 @@
         "name":  "Газована вода Покемони Qdol Pokemon Lychee Charmander Лічі Чармандер",
         "price":  199,
         "image":  "/images/99.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Pokemon Lychee Charmander",
                         "country":  "США",
@@ -1332,7 +1332,7 @@
         "name":  "Газована вода Покемони Qdol Pokemon Peach Jigglypuff Персик Джиггліпуфф",
         "price":  199,
         "image":  "/images/100.jpg",
-        "category":  "Газовані32напої",
+        "category": "Газовані напої",
         "details":  {
                         "brand":  "Qdol Pokemon Peach Jigglypuff",
                         "country":  "США",
@@ -1348,7 +1348,7 @@
         "name":  "Lay\u0027s Cheese Cranberry",
         "price":  179,
         "image":  "enc-41ce09d54f3a1b5b9defce0901753bfb-5f5e3766446b0cfbe493bd87fa29e37757dc4e8a85a32873dfe87baaa77951776b68f1493169f735f67de547842c1e131b62c092ce561e490eeaea8a4100c63f0b09235be0783f5938470bfd41589f648a620d42612c71ff48e618a8c2af32148570c7a9219e56a29d60d7ec22955ef0",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
@@ -1364,7 +1364,7 @@
         "name":  "Гігантські снеки Spicy Snack Shuangzai Super Large Strips Гострі",
         "price":  99,
         "image":  "enc-2708c2dc4c40afd72d8fc5b549a467e7-4e8813fe93b4d48a2a5a904b15d2867412901f631a71d39ea55cb01bebf28a46d177ce0979b44f8cac06044de6a51a48bdf6523e17f4aa6e730ce2823f94a8eb8a5dfb33b1f08c60359edfcd9ceb95989367e8e25e5684ab21ab9f7d9e519545903ff1fbed46060c268485c5c6b7f8e6080874310c91e4f7cc3fb4efb4217a6e",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Spicy Snack Shuangzai Super Large Strips",
                         "country":  "США",
@@ -1380,7 +1380,7 @@
         "name":  "Гігантське сухе латяо Xiaolala Spicy Chips Indian Flying Cake Flavor Гостре",
         "price":  99,
         "image":  "enc-54d2e4e107640d5d0185d2bc6eee7ead-d1e84506c5d1357aaa679752197a85bff9d06f3b4a36d352c5323958d6b26ba7a48ff75688580313376dd983754c7205ba50e1cf88204f83c9552aa0054fbfe4c8d9c8a7102a86b7067dd53263c829de75c452ab4928cdfeb47b84cc609fe4cacee3161871528acdd04585554f8eceaa79e6d75689bf1d6a8dfa9adb2d2419f246a0b0312b8bf49ed3753fab735c7d5d",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Xiaolala Spicy Chips Indian Flying Cake Flavor",
                         "country":  "США",
@@ -1396,7 +1396,7 @@
         "name":  "Горіхи Takis Hot Nuts Flare Double Crunch Гострі",
         "price":  219,
         "image":  "/images/105.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Hot Nuts Flare Double Crunch",
                         "country":  "США",
@@ -1412,7 +1412,7 @@
         "name":  "Горіхи Takis Hot Nuts Fuego Double Crunch Гострі",
         "price":  219,
         "image":  "enc-3c69403283627d53e736d30cfd512313-96844f18195d15e91ae761b6045e63131c27da2fa365875377b0f13ef9e8a06191f25faef16c3feb2d9f57165aff8cf6a518d89fe17baec96ff54d3c4e8f2fff4540f231c757ef8ee882fabf565891b8964d062ab631898e77453c6ae373581fd794b501a588cfc56c7bcf532d84e738b575ae62a63ba3bd8a00b0fd038959a9c1b9dece8c461f2f41d7ca6c14cd1493",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Hot Nuts Fuego Double Crunch",
                         "country":  "США",
@@ -1428,7 +1428,7 @@
         "name":  "Горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Italian Red Meat Sauce",
         "price":  199,
         "image":  "enc-6dd0ebb3d2ec3d02f85768604bae93e0-671ac0c7939c8ba4d6c606f5f8184ab5f1a5e1cff14b59d0c89e413ecf3aebb87ff887684edf8c606d1309bdcbb7df4446414e159f563f498d2b1e1d899a54b3d6aad465af3691aa654c3265bf09f2aaba1a64102e81290ff59fba873d6d07527014870b0dc758cf689b1657e14e715aeb5472a74b23d7f7d8669f51de16192ccc000c198eed98a0458dfcb378aec340",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
@@ -1444,7 +1444,7 @@
         "name":  "Горіхи Кешью Alesto Selection Cashewkerne",
         "price":  99,
         "image":  "enc-0153900c78c2109d4dfc163737398586-a516f5c2b62fce52df392f8161ea965fe6f932eda8c761cca83fe68eda93a0fa8c1956af433ac137c57ad532fe4d42dd1f899b83f74e8c1c5702d13b3e71f8d260eb4bc2026b8f17756e77315bd83ab4d5087e2d4ebada8e2be411c145188232d0b043cb0d4527f67a6d3f874185dab9df03569eb8c4658ba912b404ea07ec54",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Alesto Selection Cashewkerne",
                         "country":  "США",
@@ -1460,7 +1460,7 @@
         "name":  "Гострі горіхи кеш\u0027ю Be \u0026 Cheery x Lay\u0027s Buldak Spicy",
         "price":  199,
         "image":  "enc-9bbf414de3c3ab6590bc4cdcbc443796-dc17b3d84dedc630c1ef93782aea95ffb28033050294b65d1a2a240e7c2a257c2d1d7b709670f564acd2d4fe88278ef3415cdc36c5c32a14664b485b62c240fcbc189e1832767c88cddf9bfacc886b2d5f557bf0c3e76db0af0e1e7e8436049335801f2ceb8f6131546e8da16af850ae59c71c93b7ed7c7b29ad91190c61686f",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
@@ -1476,7 +1476,7 @@
         "name":  "Гострі макарони з сиром Cheetos Mac\u0027n Cheese Flamin Hot",
         "price":  199,
         "image":  "/images/110.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Cheetos",
                         "country":  "США",
@@ -1492,7 +1492,7 @@
         "name":  "Гострі мариновані водорості DD\u0027 Classmate Kelp Knots",
         "price":  49,
         "image":  "enc-170a0047811776513dbde2623fe2b56a-94964dcdc13624e0b016c294ba27ef6b2c7b87b7457a77f32a378551afb908d61172a04dccfd757f555057b1f42e83724b1fe4a708169a19c9dceb26fa3756e7a95355bf6c2e8c5638b9cc5decf2dfb89e4d33f92b8a035eb8d5f933d9e8ffb8ba88efea53ad675e4447451585271f68db5cb61225753b42c3a3bba6137f4406",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Choco Yummy",
                         "country":  "США",
@@ -1508,7 +1508,7 @@
         "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак",
         "price":  49,
         "image":  "enc-e41ee5c62cb31b2374687d9a3954a13e-06b934ee56097db87c1286c835908486bd1300996443f233cf82fab3fb30ed22d34ee239d39b385cf923cd713c0addd3f8dc79924eed3d7b06b2e87470b20ee9f675bacb14dec826b962b57df1405c53aee91faacb9beabfee8b1c1507038c8d",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Da Mowang Konjac Hot",
                         "country":  "США",
@@ -1524,7 +1524,7 @@
         "name":  "Гострі снеки Samyang Buldak Da Mowang Konjac Hot \u0026 Spicy Конжак 20x15г",
         "price":  799,
         "image":  "enc-7ebc35665d7cd8ffb9fa7a27b954b344-373d768a49ef07e0ed25f60f9f571b8df1ba51590578f4f1cf6145d433eb86e75b2a316be798e51301292e56358dc6c1ab2a673a4d3287de2e4bcc7637c0d8327471e573658e69a7e47e16fd4de525428ff59b67a74c6f6b9b954b859984e574",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Da Mowang Konjac Hot",
                         "country":  "США",
@@ -1540,7 +1540,7 @@
         "name":  "Гострі чіпси Lay\u0027s Latiao Spicy Strip Латяо",
         "price":  219,
         "image":  "/images/114.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
@@ -1556,7 +1556,7 @@
         "name":  "Гострі Чіпси Lays Spicy Crayfish Раки",
         "price":  219,
         "image":  "/images/115.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "США",
@@ -1572,7 +1572,7 @@
         "name":  "Гострі чіпси Pringles Enchilada Adobada Potato Свинина в соусі чилі",
         "price":  299,
         "image":  "/images/116.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Pringles",
                         "country":  "США",
@@ -1588,7 +1588,7 @@
         "name":  "Гострі Чіпси Pringles HOT Smokin\u0027 BBQ Ribs Барбекю та Чилі",
         "price":  159,
         "image":  "/images/117.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Pringles",
                         "country":  "США",
@@ -1604,7 +1604,7 @@
         "name":  "Гострі чіпси Samyang Buldak 4 Cheese Chips 4 сири",
         "price":  259,
         "image":  "enc-aca778c846f41e62eca4335959731a8c-1b3a38747f19563e4baa2a9c47ea609c8cd0dfcbd044c61c3d617c654581590b6e318339a3ca2d153eea383c931639a1ea6d5a7d298c2c04da30f1b8fa2e59c2881f2aa0e403ed302c7d7dcb036f6400f64445e479dc03b267b04f873deb9c13ed7cfd61e282bd18e9dc6f9bb8326c97a32f80d4d2f73f5a62c3b2731c73a1f6",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak",
                         "country":  "США",
@@ -1620,7 +1620,7 @@
         "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро і Лайм",
         "price":  259,
         "image":  "/images/119.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Potato Chips Habanero Lime",
                         "country":  "США",
@@ -1636,7 +1636,7 @@
         "name":  "Гострі Чіпси Samyang Buldak Potato Chips Habanero Lime Хабанеро з Лаймом",
         "price":  499,
         "image":  "enc-03613aa99da7034a6fb263d306308654-4acaa71a24bfc4e5fd5f3b9a1aefdaa40bd57630419c80ffc37534e6f2fb726d2932b7282a4753a460cbf548685c76c8355466aa5fe0ae72f775075ca71b75f8014b575974dc141186568803b74d34cdaf4bde8af3cc230ff460ab2bd612128bc289e8bde2f49beadc42284056305ef79d79e4e21a3df1b21304c2271d52d273fd00b360a42c66aca7d91706779a2636",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Potato Chips Habanero Lime",
                         "country":  "США",
@@ -1652,7 +1652,7 @@
         "name":  "Гострі чіпси Samyang Burduck Chips Original Чилі",
         "price":  249,
         "image":  "enc-bf10e1b0ccb3e03f2201b936a56eb041-3069309776e13615bac6c0c10e9fc8839cffb8c5e39ca90d9310ce3a1e66efc99d2a49beba94f513a278977f7eb3813d83bee251316d09fe85108da9f367e1725f8985901752a4d88c106a2dc692bb84e8d9182091ba971008fd495a079ea14cedf03f62826d20af1ee9f1b30cd9af2220944b982403e33590f707e950d7a4a4",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Burduck Chips Original",
                         "country":  "США",
@@ -1668,7 +1668,7 @@
         "name":  "Гострі чіпси Takis Blue Heat Waves Hot Chili \u0026 Lime Чилі та Лайм",
         "price":  499,
         "image":  "/images/122.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Blue Heat Waves Hot Chili",
                         "country":  "США",
@@ -1684,7 +1684,7 @@
         "name":  "Гострі Чіпси латяо  Spicy Chips Latiao Indian Flying Cake Flavor зі Смаком Тістечка",
         "price":  99,
         "image":  "/images/123.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Spicy Chips Latiao Indian Flying Cake Flavor",
                         "country":  "США",
@@ -1700,7 +1700,7 @@
         "name":  "Гострі Японські снеки Tohato Demon King Jolokia",
         "price":  299,
         "image":  "enc-4224139545d5098513133ff3759eabbb-8e40ea434e444e707b0f469e0b303fdd2d797d4b16aa48ca256cb6a044a0a30ad7d22da4c89c7ebec1de0d82ddebb26b1892a408a5d89e13f3a3ddc37ca55e57cd667546adc33dac375bf30b5debbf097ccc78664755dd1300d3de474cc45c6e9e1f5d771f642129bfdc3596c5cfcb6c161e191908a5be85c02428e9e506034e",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Tohato Demon King Jolokia",
                         "country":  "Японія",
@@ -1716,7 +1716,7 @@
         "name":  "Гостра Локшина Samyang Buldak 2x Spicy Hot Chicken Ramen Булдак Рамен",
         "price":  199,
         "image":  "/images/125.webp",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak",
                         "country":  "США",
@@ -1732,7 +1732,7 @@
         "name":  "Гостра Локшина Samyang Buldak Habanero Lime Flavour Instant Noodles Лайм і Хабанеро",
         "price":  99,
         "image":  "enc-37b45bb91cd9cacd3dff988d218063c5-edf6cb9635a71455ece4099278d6f72b49ed51b6fe3a644207083b0c7b42cf0dde31307196ecf8113fbf219b41a7147dbc6e1e1b2356b3675ae8a4be2cb1f5ce8add8b1146377d4c191c004cb94831838c8ae6c16c691503d6769ce88bb9aaa66e83bf6ec533ebde120cdc3d48f6b4c1e76c72453bd5f067cd688d0fd97e1ef76e04537718443150f5ddb4cfc7ed20f9",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Habanero Lime Flavour Instant Noodles",
                         "country":  "США",
@@ -1748,7 +1748,7 @@
         "name":  "Гостра Локшина Рамен Samyang Buldak Hot Chicken Ramen Stew Курка",
         "price":  149,
         "image":  "/images/127.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Hot Chicken Ramen Stew",
                         "country":  "США",
@@ -1764,7 +1764,7 @@
         "name":  "Гострий Снек Cheetos Minis Cheese Cheddar Jalapeño Чеддер Халапеньо",
         "price":  299,
         "image":  "/images/128.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Cheetos",
                         "country":  "США",
@@ -1780,7 +1780,7 @@
         "name":  "Гострий снек Samyang 2X SPICY Zzaldduk Extreme Buldak HALAL Булдак",
         "price":  199,
         "image":  "enc-27ba1962d01a8bad50be99dee2259fb1-6cec026806ee857d5ba69ae670e39618e322c0e9fd70787556910e0f7ca44d391b8245824648e0c9d713dff074ac90f17fcb7454366c938fa103ba06dd78271d762e97e017d4213cc80f7d59f53cd10f6a7a3ad03c99fdde873910c694af271a0457e3db914b772ead7f1e91be3249f4109b1d299b34d7ee3ce6246aa03906714ab33c3389ad8c0c2ef787cc30d2aae2",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang",
                         "country":  "Великобританія",
@@ -1796,7 +1796,7 @@
         "name":  "Гострий снек Samyang x Yanjinpuzi Buldak Da Mowang Konjac Snack",
         "price":  49,
         "image":  "enc-6866b7edfc15a6a95a8c6d8ac8c58c2f-1b79aded6107cae71b9ba5d25e69caecb01164dba5635013d796b510e44c21ed756081f122489f3900f6341d71d9cd2dacf43be842a7eb030644b6e2d5776551807cd9ee9764648f55a457ffcbc3a918471094fce6823011ab4b6bcfdfe08879ce5486548954613eed5414772f697abd88ed4bced1be7ca20d677a7fb52591971401a29d8206a242ef5bb28605bfc8237a2ede1f56ca54a5ad68f414ddbfd005",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang X Yanjinpuzi Buldak Da Mowang Konjac Snack",
                         "country":  "США",
@@ -1812,7 +1812,7 @@
         "name":  "Гострий снек Samyang Zzaldduk Hot Chicken Курячий Рамен",
         "price":  199,
         "image":  "/images/131.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Zzaldduk Hot Chicken",
                         "country":  "Великобританія",
@@ -1828,7 +1828,7 @@
         "name":  "Гострий снек Weilong Konjac Shuang Sichuan",
         "price":  49,
         "image":  "enc-61232f4eadbc2088f305bc24ceff9d2b-b24653891512a4c062d9cbb46e6e033ba3c5ebb61b3fdc41c157171bd8540389cb128912d4ac57a56b587a4947a621ece98b046fa7bd465589107b6a746038b6cadddd0a7d1b8577c0cb1969154ab8404f3a446213139ba07234f3ebfb7a5c051c1cb245617db85351888d53abbf8870c6507896aa3cf956048f368fdf79bc47",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Weilong Konjac Shuang Sichuan",
                         "country":  "США",
@@ -1844,7 +1844,7 @@
         "name":  "Екстра гострі чіпси HOT-CHIP Challenge Solo Pack Кукурудзяні",
         "price":  99,
         "image":  "/images/133.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Hot",
                         "country":  "США",
@@ -1860,7 +1860,7 @@
         "name":  "Екстра гострі Чіпси Takis Fuego Hot Chili Pepper \u0026 Lime Extreme Spicy Tortilla Чилі і Лайм",
         "price":  69,
         "image":  "enc-0f979fc87b2865d2c4ad894d7fa1aa94-6af6e5c572850798ff1fcb36328cbbabe03ef3653f7f53adf8df6dd6ce7251c55baabd630431fbcccbbaad778a3040f9d6398185ee147a3ed707e48e934b118c9fc7ddab9069712744e03c0f0abec425d6d17b425c15a1172ac0d99576f2dec792fe7335ca8b1adb4d8bc57ee4d9dca0a4b1132dc0c53f3539734fccbe8374e570d709bc7f47b595fcdc3967ec502ae2",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Fuego Hot Chili Pepper",
                         "country":  "США",
@@ -1876,7 +1876,7 @@
         "name":  "Екстра гострі чіпси з перцем чилі Takis Blue Heat Blue Chips",
         "price":  379,
         "image":  "enc-f77ddb9ae0963e6671c5961422c1b4f8-ff6fee65d1383a74ed96eaa4323dd1b915128592d4fa396e0aec5ca6d94cdf5f24f4a7d5d04623ae2ec3fb7e150a868439d35ce9456ddc277211a63c1718070fc5fa5e1b63b6a11c45c89db47e413dea39b897ba1ab2c54da3d7afcf29da8dced291497f1ca3a4c01e03bbe2ca4dd925e5d32a64120669f76f2534dc829ad8f834677dbcaeb7e2ba7c89d75f4f208295",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Blue Heat Blue Chips",
                         "country":  "США",
@@ -1892,7 +1892,7 @@
         "name":  "Екстра Гострі чіпси з перцем Чилі Takis Blue Heat Blue Chips",
         "price":  249,
         "image":  "/images/137.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Blue Heat Blue Chips",
                         "country":  "США",
@@ -1908,7 +1908,7 @@
         "name":  "Екстра Гострі чіпси з перцем Чилі Takis Blue Heat Rolled Tortilla Chips",
         "price":  399,
         "image":  "/images/138.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Takis Blue Heat Rolled Tortilla Chips",
                         "country":  "США",
@@ -1924,7 +1924,7 @@
         "name":  "Екстра Гостра Локшина Samyang Buldak Hot Chicken Flavour Ramen Ramen Рамен з Куркою",
         "price":  149,
         "image":  "/images/139.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Samyang Buldak Hot Chicken Flavour Ramen Ramen",
                         "country":  "США",
@@ -1940,7 +1940,7 @@
         "name":  "Екстра солоні чіпси HOT-CHIP Salt Chip Challenge Extremely Кукурудзяні (1 штука)",
         "price":  99,
         "image":  "/images/140.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Hot",
                         "country":  "США",
@@ -1956,7 +1956,7 @@
         "name":  "Жувальні Гострі Снеки латяо Genji Food Latiao Spicy Snack Велика Упаковка 40 шт",
         "price":  99,
         "image":  "enc-6503a69bd3c43e9ee4f0aae20ee129dd-0e973b5ed161b5b5aa38940b9f09735a21c1e866572bce827257c9fabc4aa257fe2677f28f62788290ac91c8cf274f09f730c16aa1bc860299c7adbd7b7db8cb86981a038a24ac803302dca473f2841609fb32205988f3a236805cde651a9ccf2abfba522050677324f2903619c4d47d",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Genji Food Latiao Spicy Snack",
                         "country":  "США",
@@ -1972,7 +1972,7 @@
         "name":  "Кеш\u0027ю Planters Whole Cashews Dill Pickle",
         "price":  429,
         "image":  "enc-fef1a551f9cc567b1192107b1a395341-7a5bad845e8427236ae5d74bcdb9717f581b283101f36a2a114ae5bdbf5596cb240618a8213fa04cab5c3fd0e66eca047146eb89d69e1b12245a0191aaa3918bf8eab22c62db051d12ef4becfba8caef31f4f2589faeb9b4cbc839b1f6185dcbf0f53976b6309ed1fedabfcbf9b7916c59b3ff8592d862e674e2742929e03c68935af96c36148f9c8311415ca8949993",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Planters Whole Cashews Dill Pickle",
                         "country":  "США",
@@ -1988,7 +1988,7 @@
         "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі 10x18г",
         "price":  99,
         "image":  "enc-1d11406fd94569753ecd91166d5e5395-997d75dd30ce17b39b33f99d7951986a316bd3feaa1618029909e4f2c55a907437011d6f6d53965e657f53bfa1a117dba07c77454e38d566cc4ba8d5d581f531ef0406e252611049e13931aa4e068da2d14fd46ae4e24d1735e8d24f965d4f5068134aed3ca49b5c69ada765ee056a044231164cc5402002e1540b61d21b3f376f04be8176a1fd1d6807bd4fbd2e98a0",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Seafood Spicy Baby Crab",
                         "country":  "Таїланд",
@@ -2004,7 +2004,7 @@
         "name":  "Китайські сушені міні-крабики Seafood Spicy Baby Crab Гострі",
         "price":  149,
         "image":  "enc-859ac61fe3e1bf710f02277678668903-b42726b062fd76c64efca35c02ad20725e5e1b156078facfca76780a63ee551de4da1530be24b5ea17c879ab516caf7549b9a656b1a0a3a2e7eba5153fed5c8f933787331995b61360fd935c42bd348db83701992f95a4ed21ec846ac214ca9a83590a61e7f27143686b6242b0ccbd671b678f7dcaad102e707772b6f44ef0c3",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Seafood Spicy Baby Crab",
                         "country":  "Таїланд",
@@ -2020,7 +2020,7 @@
         "name":  "Китайські чіпси Lay\u0027s Big Wave Pork Свиняча грудинка Гриль",
         "price":  219,
         "image":  "/images/145.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
@@ -2036,7 +2036,7 @@
         "name":  "Китайські чіпси Lay\u0027s Big Wave Pure Spicy Чілі",
         "price":  219,
         "image":  "/images/146.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
@@ -2052,7 +2052,7 @@
         "name":  "Китайські чіпси Lay\u0027s Big Wave Roasted Chicken Wing Курячі крильця Гриль",
         "price":  219,
         "image":  "/images/147.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
@@ -2068,7 +2068,7 @@
         "name":  "Китайські чіпси Lay\u0027S China Keripik Kentang",
         "price":  299,
         "image":  "/images/148.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
@@ -2084,7 +2084,7 @@
         "name":  "Китайські чіпси Lay\u0027s Cucumber Огірок",
         "price":  199,
         "image":  "enc-224174ef6bba73e56695fda63c7d938c-b98f041d0f84477456450ef8a7390df0d4744537e6c7181c53955db3d25c15657a51c056a7b285fb83052b3c48f96b8c83d92abe493c326933e57fb5ed2445ddc90a056022f0f582f729ca44404cb3110281ee7db8ee205f37bd29eb059a230e9e95b8efb7bbfe5cbcc4dbf4c29a8cfa033d18270dd47008952b1e564f3d0220",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
@@ -2100,7 +2100,7 @@
         "name":  "Китайські чіпси Lay\u0027s Fried Crab Смажений краб",
         "price":  219,
         "image":  "/images/150.jpg",
-        "category":  "Снеки",
+        "category": "Снеки",
         "details":  {
                         "brand":  "Lay\u0027\u0027s",
                         "country":  "Таїланд",
@@ -2116,7 +2116,7 @@
         "name":  "Набір-сюрприз з печивом Stitch Mega Surprise Pack Cookies \u0026 Games Стіч",
         "price":  119,
         "image":  "enc-cd82c884fbf143c66b023ed781e00114-8840fa51203351aba131556b0b63fdcfdeb3af63006186bb24fbd5fe49fc51aaf222b0a25218cade46c7c76c0ac1d78f36800a65848edcc25ba5fb341e19448351ef04e6251c1c72815837357dac8d68a51f2e81399bf3f412979a9a9427eae135c83d1080d3eb001b1ac85d7c69d3c4bbb426ef8057bafe3e91deb0433302340136bdb5bab56038f988ac39633f6073",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Stitch Mega Surprise Pack Cookies",
                         "country":  "США",
@@ -2132,7 +2132,7 @@
         "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Skye Щенячий Патруль Скай",
         "price":  209,
         "image":  "enc-df22f1c5ba8b815307058ccdaf9a558c-41b9efcf2079b4b24fb7193e6a7fbfe0980acd36ef8885bad78767dd7eb3eac7419ba3f3df44f809412c3611fc586274a7e1a8117ff1a82ab9f69e41933d65381bcd392162136c466419992a9a555c94fc790495b3a03bbbaa9a99b164f8e41ade6e0e2a788880035ced4aa74393605b21834a9147fc70036e17b4ccd130ab866c651b419b0f78a0ab8f0bffd603cf34",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Gellwe Pierniczki Paw Patrol Skye",
                         "country":  "Польща",
@@ -2148,7 +2148,7 @@
         "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread",
         "price":  649,
         "image":  "enc-cd1e773a88d12ce3492319f8ba70cb55-db03393e40dd8c0c6eba8fb5c0fb634f3c34cb835e2ceadede347817be02e6c0922e6a1d989cfd5867864055f3f1237cc60e7eb42de4923bd54f8ec368eb53909225dd4d7eebbff4a2ca2e4f43ed0f0701f1abc3861f9a1215e272e748ee2ffbc606c14d4f27bfe913ebaf2eb01679998faab34b69e1f6618d1fdb9de7c9714be7b8a8bd734c88d6334fdb9f5d27fbfa",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Milk Chocolate Biscoff Spread",
                         "country":  "Бельгія",
@@ -2164,7 +2164,7 @@
         "name":  "Японські палички Glico Pocky Luxury Milk Chocolat Молочний шоколад",
         "price":  459,
         "image":  "enc-4bc69e0377670ec83c2ad61f1ddca66e-aa2fa1fa0eb6bb06e8ed3b04cf05eec28c21cc2e5f6b6dd7bc4c00f1f3e3111ce12b7620e51eefc365c2ceb02827e9e7342ce4f3163dfc02d8f266f5a345b39424605585ffbb175f828908fb04a6d0848e0df2b4bca0b723264d1de14ed4b80249e62ae39bc9a1c5e4ce8d3ab4b4db1a4f1671facf627069470660d98d59f8e0",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky Luxury Milk Chocolat",
                         "country":  "Японія",
@@ -2180,7 +2180,7 @@
         "name":  "Nutella Biscuits",
         "price":  199,
         "image":  "enc-8cebd5b37c23ab2f5c8c393be1f326c4-6d4c7c1b377a13e106fbe91bbfb97928d32359a191f6f0d32d80450dec28966a3a4918ac693a9e7f371689cd0c13b29aa3ed3dc3ebd2d869b05ff0feaf42d9c6d16c25d265438e3d8baa08111b29ee4d804c25510cf21fd30fd92630fabde3bee443dea59e93920792187d77f189df00",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Nutella",
                         "country":  "Італія",
@@ -2196,7 +2196,7 @@
         "name":  "Nutella Biscuits",
         "price":  349,
         "image":  "enc-d6160a784a23a5a798b039c6278b8412-ddeafaa4ea4a916506b75e9e530e95036db528c08ca726444c370ac0dd2abc4f28e8077710deda84eb03eeedc38e5856aba25e53cb5ca9ad8f3e041ca6815191f4fb7600ae742d4b4d63475b82c5d0d8f67afb526fc080cc78e3938272f9e7d8b5eddcd5ba4f71d8f2ce014cb25b42ca",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Nutella",
                         "country":  "Італія",
@@ -2212,7 +2212,7 @@
         "name":  "Їстівні Гроші Quintin Sweet Money 14 шт",
         "price":  79,
         "image":  "enc-c3bf3ab445dd778cbb0a155bb7220762-ee172b2d10d9a23cdefc8f11af70a1d9f9f3e55b3e45dbe34c40cfda39c93c045b644baea5aba15ee243c34962e790bce49abbb2a22047741f220e189154e2721d71b060198b9e5d0ab735b1cb42a0bbc69f4506faf5aba04de902b2df5a52ef06799755487e6e10f3ba2b711d9a78d6c0b171d084dbf36fd703f3d253448b6f",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Quintin Sweet Money",
                         "country":  "США",
@@ -2228,7 +2228,7 @@
         "name":  "Їстівні шматочки бісквітного тіста Hostess Twinkies Cookie Dough Bites",
         "price":  219,
         "image":  "enc-7eb35065d1c172853073bcf13a5f5a60-87a3d203160ee67941230a95aed841c5b4b3ca6a2887baa3f7237a06a3f79976da2010381890e27e1eff7d750ab19d70bfe3d5f726b6141f6ab0c57b5247b77a78768c0523223a8bb0ec0aa7177eb69b5e3ae28611b37f211b8c071518ba5db0d4c716b255e414537e93a8e7d08f92463ac8b7fc603e078d3c997f62574e7732",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Hostess Twinkies Cookie Dough Bites",
                         "country":  "США",
@@ -2244,7 +2244,7 @@
         "name":  "Італійська панеттоне Bauli Panettone Cointreau Крем Куантро",
         "price":  999,
         "image":  "enc-8dc35dffcc2a4d04a791f408de1d3a78-a0a2bfa4959b9e4966ed3c0d44c086d1d357d6778f1879f01c1aa0246fe416c879872485645d37dadc967c861321f4aaa738adfd18f92d281722b422bda4f409ed0cc218947a8609235e2e45b92f0c3ea49697b8b86bc9b22dbf9524ad7396d6cdcd366c883050a068702a4b978ecf56",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Bauli Panettone Cointreau",
                         "country":  "Італія",
@@ -2260,7 +2260,7 @@
         "name":  "Італійський Пандоро Bauli Pandori L\u0027Uovo Яйце",
         "price":  999,
         "image":  "enc-79c7e36f0be95a123f7754f9e9a84635-1d0fa56af488efc84f84a2b8dc2e6f3906fa0da664592f3b85a8e0fa2d8e5e3127954249c7fd95a6ada1d006a4a90e5e9636cf354e79fcc5331c69fdd3d7dd1e11c69bfe81f23ca99048d590e770a6ce937c074fa73e06ba5411dd9883dc5d54c1c49b2de48497dac3cafae5502b791b6ae6f8fc67c36a9d5b988e9a42bd95e4",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Bauli Pandori L",
                         "country":  "Італія",
@@ -2276,7 +2276,7 @@
         "name":  "Італійський Пандоро Bauli Pandoro Di Verona Lactose Free Без лактози",
         "price":  699,
         "image":  "enc-84ce5d2805604ddf1db95e0e3ff0307a-91e331cef0b0419182fdf862039fd370e848fb4e99208009b3a9ee7652c3e152c0e128814d19c75d3815d1b394c2df81115b6ae8702b2ab76e794eeb0a5574fdfbb5e8d91c26da3625b3828eedf087db45c20f6855314dfc7a1f0ab5f9084c3f2bc38db4b810dc6e7cd9605a1dab178fff24cc1cbd3e3bf70b6bfac72342c06a",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Bauli Pandoro Di Verona Lactose Free",
                         "country":  "Італія",
@@ -2292,7 +2292,7 @@
         "name":  "Італійський Торт Bauli Torte Bavarese Баварський із заварним кремом",
         "price":  749,
         "image":  "enc-93ce6ba2b185d5d1f7d4bf58a400a7a5-4dda6c5a74029756a69d0ffb850fb7f9848e6201d510fb647a8d37c444c7e27eb1815152a57c11a39595b2c2f1f0c48a0ef9ac9964b67994a04310904d9b63ae6b5c495ff4fec694d41518cec8a294a254f811a87d3787da35295335711a974cf8ee7d4019dfe42d1bae555828c2ed7e",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Bauli Torte Bavarese",
                         "country":  "Італія",
@@ -2308,7 +2308,7 @@
         "name":  "Бісквіт Hostess Original Twinkies Ванільний крем (1шт)",
         "price":  59,
         "image":  "enc-2d4af0a5f35bc5d6c7228297d35893a4-f94b19160137d778ca2c0281aee09b112470391fb79369dcf4e2477091fff3cc3099bdcd003d851509506f36bb1b2cc961ec8203f8d196210978106ce1890e89ccfb0648937d2727a8059c05d0867c97f1d6b1e80ccb6431730610d5ada6d3448049d9585ba9605a90027a4fc83e15ad4eea9c84b88d658d11318740afb4f0df",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Hostess Original Twinkies",
                         "country":  "США",
@@ -2324,7 +2324,7 @@
         "name":  "Бісквіт Hostess Strawberry Twinkies Полуничний крем (1шт)",
         "price":  59,
         "image":  "enc-82e6ed9e4f84ff224e7da51a1e3a146e-0d9b34052b2a6695a371d959ad297187a72f52918c6da55f0386331e548de576fd393ee36c01bc4e61830d2828a15a52cfe041665a343919b46567d9b0535d90382af02901cee7c6e0f1131489ceae0a98a05899473f9cfd18e9304175e15b6f1306da520cf2bee9ae0a301949f6fa33382fb32b49166dd2f5ab7f1af08f540b",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Hostess Strawberry Twinkies",
                         "country":  "США",
@@ -2340,7 +2340,7 @@
         "name":  "Бісквіт Kinder Pane Cioc",
         "price":  399,
         "image":  "enc-37c1585a0bcec9d1f803d5bb3f2caa9b-28bc94c11ec75a614d3a7d053f8c8a4585363789ee3087f56b8d6d6709b3a036d59de6efff58b3371dd97a0970aa72ce1d7c5fb52bd54ecfc1a877c279060db727d7f26cb60cbcc63580c5b0368fc893da0927f3b223b5e0d2d78554777f78a40aa7f6cf599a8209ed3cef31eef1c75b",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Італія",
@@ -2356,7 +2356,7 @@
         "name":  "Бісквіт Kinder Plum Cake Грецький Йогурт",
         "price":  259,
         "image":  "enc-dad09cdb9e7e01490a6acb640bff9015-1215a2774336d63c0ce8964ee28ab39c22bfc593ee0a9682ee6a796be9f05ce212fd961201ab4ef7935250073cc02952362e6f9acabef253c657697f4339464625a092609af1d083cf588816774c3ce573424d054548d96ab4b4eb8117fc2ba6ba606869015f1e69e022096cb320dd31",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Італія",
@@ -2372,7 +2372,7 @@
         "name":  "Бісквіт Kinder Plumcake con Carota e Granella di Mandorla Морква та Мигдаль",
         "price":  259,
         "image":  "enc-746daa9799d121117673ebec140b2de9-f7232de1a389d57080184e5ed26ac6336285b71b22aa44bcc86428d0a3fa49e326a05e3f695341e41f19429839fe89f0ad27af38ac0a0c5243b7792b0b51a3e7a72a8faa370ed39504bcd52fa779507c0b0b9bc338c8f21836dbe426f405102bae4141aa70bc01fa207423ee537f6ce6f3f0ded6f8346859d9803abfb8657ac13117990fb34ad58dcd20e7aeb5c64094",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Італія",
@@ -2388,7 +2388,7 @@
         "name":  "Бельгійські вафлі Everyday Liège Cocoa Waffles",
         "price":  299,
         "image":  "enc-444b47c66ab9a9c45f0bd6f7a9d43637-51b167e9c87ff3f86268ad4b9e4753f2ad1c66268ecf590b21083d487fa5d84c76b3a6ae164bbea0ca485a71a20394cf596e0c837958072f3a2882468964ffa1e82381202749c89acb870a1611372904874263ecc8586c64376feb6cc96c619ba49cfe6e789c2ad938b4562c8fd5c6f77a12d849f703ae497ad2b02981ccaa06",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Everyday Li",
                         "country":  "США",
@@ -2404,7 +2404,7 @@
         "name":  "Вафельні батончики Knoppers Kokos Riegel з кокосом",
         "price":  249,
         "image":  "enc-c110269c82f78243e2776db50e441b44-90b1b99b2b88b3a70999d6bad9511abbf17e8a77ed419b6e25a1f19c74e080ee3865f0725f52c44aef4af16bca69e1b85d34fc44b8dc50faeaead763f60961b3df03cc276e164c1dcfd0e1e72d121a78dcfeca3d589d39589a780a5e1c5fae361e617b88d9c71699e4e0f6e376ded80d47351ac4f878183ca97da2b1943bfab4",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers Kokos Riegel",
                         "country":  "США",
@@ -2420,7 +2420,7 @@
         "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад",
         "price":  279,
         "image":  "enc-a15f8aee438ccbaceecef580c61541f0-e8d08009e760b2cf9078084dc3d929a27be1f30bee98c17d21ad24eac5d30bbf2e3173297851a48711f8903803948e38711967b28e7040afbb541a77599d4f7dfb15bb254a2e80de435c425497e4dc0412ef70d55607be8ae52595390e4b7e255e6e18f7dc472b81db8016acb4b605bb3ce42a9c81b9134ec350d4595a342435",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2436,7 +2436,7 @@
         "name":  "Вафельні батончики Oreo Wafer Milk Chocolate Молочний шоколад",
         "price":  279,
         "image":  "enc-adf0d7898eeac031b31c3d490eeaba7b-9e7db88ccc0d66637b41220e121989298f08898b6f2ae2d25883f7c650c5ee62e5726e03a4141cf1009c7e2612646f2de75d9ceb083ec0efe666de975e6500f4ad2c6002e2d7818924ac6c2f52d9e44f19186f4b06e7ad7b36659d40491950f1a1ef0d5c987e345234ddf37336b877ce4ae362937e72934f8fd45d14f428a9bf",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2452,7 +2452,7 @@
         "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
         "price":  279,
         "image":  "enc-efd284b5cdf7ebc95ed435f980b9be6e-b655eb60c1aece2d3f482804a3a809a70d6698db1838cff9a7b03671dde0f619f26a5252e53a6e73da043d41904e52ecc63d133dd003077cf565c0a3232b369c7436bfbbc25089f7aa39f62f3d51c6a5f1dfcd36f9dbd3902b17a15b4f0a043a79ce155aed8f83c8d680c6de0206c6098083cb5582ce4d1700001bd54237e8ec",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2468,7 +2468,7 @@
         "name":  "Вафельні батончики Oreo Wafer White Chocolate Білий шоколад",
         "price":  149,
         "image":  "enc-ad26cf04b8cedeb7a5b24f9710cae534-ae65acd5065fff565390d9e5b34f04890088a41a55a40e9e38a96a90be8096c90bdf0e24583b238159f8496f0572c42d6d7bc97e441563964d4530fd48366672d8fe016632b04fea207cc512ddc9e62f69f9d75d2f7c6659558895988115fad5026e4e1a7ef09f25bdc13e1c9257acc6b86ee7d48783ace074643f54ca0bdda0",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2484,7 +2484,7 @@
         "name":  "Вафельні батончики Storck Knoppers Nussriegel з фундуком",
         "price":  239,
         "image":  "enc-42cacc339db6d69c7fc2009c89df9fe2-9c72d5c35e8861eeaf397e962ed3c3d77bcefd0ce6b3e6fee26b5dbeb46521b0dc80568bc47662efc8a0ebc7e4d8de0800fd6f1fc5ae20daeb85d18f28c24b1ab1c028fb46b4aaa32b1a2353a6e3d5e4e02390d9d55be403cbad7cb496bf08b457d9f52bb0ca685bee0e83701c16b8c009079042b00376ee6b1046c367e99fec",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Storck Knoppers Nussriegel",
                         "country":  "США",
@@ -2500,7 +2500,7 @@
         "name":  "Вафельні трубочки Oreo Cocoa Roll Guava \u0026 Grapes",
         "price":  149,
         "image":  "enc-9e654c737f2eb5f68d7e21211ce2e856-5d67bb3f6c1d75cad77ad2c9377e181bf92ef1f9b166a2f1d33f0d421d69175e6a8681a1fb7fdd6b95a7fcf93f6b712794bfecbeae8f1136c02bafbf10cfeb83d32619c5f259defc335cbcf5d1b6b535ae3a4e59c4a4a9d7be037d41e2e6c9b14d73b925a9cd4d9a9bfdee1b2045b415b750799943414f43ca3ec43cd1088354e0bca85feb1a4d2a71bd79ca35063698",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2516,7 +2516,7 @@
         "name":  "Вафельні трубочки Oreo Cocoa Roll Pickled Plum \u0026 Tomatoes",
         "price":  149,
         "image":  "enc-cb3baab06f302c3eb2ec70d1820a53fe-befadbb0a54811a19efb55177d8be589953efcaf3c780c9f94706fb3123192d2d208e18d78e9746fd8378c600b80861955e959c757182b44fcaaf2a4e32aa8aed718947e57090bc4bd737798f26c6f9debffeada92332b255e481dc0fdb39dd83a648e57dc9e77164b10ceadb3ecdcfeded3bd472606a7483c503549f42d49c43f7aced1b33f82b851496d96d6b9f02e",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2532,7 +2532,7 @@
         "name":  "Вафельні трубочки Oreo Cream-Filled Matcha Wafers Roll Матча",
         "price":  149,
         "image":  "enc-238f784942d91ba1f15c1a08be5cb7c9-f698830ea9a018e7828e7ceb582b989b9ed84210c1699a189e3b8fe96ae994907458c99e6d30161109d7547cfd1eeb77d2937de96c33d63346a0d731881bb9043628e5c8371b0ea89b8e94cca9004b6dc71041e224d6e4d5ee3704f4117fa44fa915e42f52043f1370d4670e3eedbde2ee259d3ebfccffeef29291d4faf17b55",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2548,7 +2548,7 @@
         "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Chocolate Шоколад",
         "price":  149,
         "image":  "enc-056bbe218a2695b4e9e7ce8745cf09c1-1315b149b9d5184d41a4db8d10f11c6e9d42ebac4738f96726d78f9c7c589c4f3716c081d54e945234b24f1643128f35908bb90d954c8db66c9c51627d8f378fe8b9792f6ed3448c243a32f10db55d809ad831c1176ec1a8b87d8cbbdd4c9762bd2363a9dd29c336e05b3377a0274c32e90326d21790b306465248175795f252",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2564,7 +2564,7 @@
         "name":  "Вафельні трубочки Oreo Cream-Filled Wafers Vanilla Ваніль",
         "price":  149,
         "image":  "enc-434d890fb2bda73a524e67f49cf3fde2-e2758deb55a7dfefc3375ec1749fe04209fb58a8fbc804420f5547396140188ba4fa7a57610e4666d84e1b982862f1dc254caef895cc48cf8133aa3f43428d11c9a6bbb1a6d0ecd3eef867d989e55e259c510aa3f2443a4dbaf1f771c00a9ef56daab21fd239d546dce1200ccb39f2c72f1f7e367d2aa751112baaea365c431e",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2580,7 +2580,7 @@
         "name":  "Вафлі Beyoglu Matchico Premium Matcha Strawberry Wafer",
         "price":  99,
         "image":  "enc-dcea46fcfa9025da7909e6870da9eedf-937692f70257a6c272d675998330d240517cb52b1b28efdc8423bbc5519d9c3f0c3a711729fc65a9416ef84e94ba153c096227ef0175b5099b1b2b80f3d884eb9197f8e2405fc6f7e8718f5e107844676820820eb1e917f6ab2ea0266ce4b1038a934bfeae2f4954e9597746129b6d75f9d6600a7345fd0d8edcef9fe617e870e573f322082790e969099d025958117b",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Beyoglu Matchico Premium Matcha Strawberry Wafer",
                         "country":  "Тайвань",
@@ -2596,7 +2596,7 @@
         "name":  "Вафлі Ferrero Hanuta",
         "price":  39,
         "image":  "enc-b9b2fcff6effa2d97dd3aecd4ff8697b-18811969fa36ecd3122130b0b265a4b97f438c771314d02239f5d3ac41b07652c3405b8cbfc9075c4954e87d4a844620b76cfa04f7c263aa69099f9b7f79cf5160d5e232c82490afbdaf5f96e3aa2ce1983525c96d52b94ab9c3e588d0b7b6df",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Ferrero Hanuta",
                         "country":  "Італія",
@@ -2612,7 +2612,7 @@
         "name":  "Вафлі Hanuta Kakao \u0026 Crispies",
         "price":  279,
         "image":  "enc-3494811784d4c49cfdde985954126a26-ec1c3c56e30955365deec908c98c5a4b7be99b635d4aea0bfba8314be8bda67d0a7f124d5a953932d39b6803c0d3c95e9352f2b7360eca3a61f456d193246cefd09e021b33bd4c1f78c6620dc3fe8c2126fb1571050707dc5e9c26e9d70c4083455bd7031fef1de5d200a4d243f2d36f",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Hanuta Kakao",
                         "country":  "США",
@@ -2628,7 +2628,7 @@
         "name":  "Вафлі Knoppers BigPack Молочно-горіхові 15x25г",
         "price":  369,
         "image":  "enc-140d1d8bb37c236895528c2666f0e022-cb293ef255a73acfb1474524cfad0c8545e5d9c50685330c1f82c06d7257f6555bf6c870022274c685d1b7365dee301b865778cce81924cc3281f9e75482f516ea5dae65bc4837f728362f78f28963f3f8d71753d5589374118a7e5fc3f24d30b176d9b003d75af19d9f8bca8125b06c",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers Bigpack",
                         "country":  "США",
@@ -2644,7 +2644,7 @@
         "name":  "Вафлі Knoppers Black \u0026 White",
         "price":  199,
         "image":  "enc-228cef0db3f80be79df98a91550f30b9-000310b5217e87f4441c3dc9d025faaa1711ae8636c7a4e46c4e566b45d00b4545331f63a61e054b614d337c8326070ca691642a9dfccf4c4156bc3d373704de7c15705018c3aa7685230cf3e3ea9d874f635ab01fc787ff600b3c5665c3aae251fde69d25061e2536ba1afab5beef7f",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers Black",
                         "country":  "США",
@@ -2660,7 +2660,7 @@
         "name":  "Вафлі Knoppers Minis",
         "price":  299,
         "image":  "enc-7d09baaf0c6929ed36485af84138f2db-50c50ab89b2c08e9f3acb7cbfe97c03638dc8093187b67e3598dca959e4b283f18b4dc5a9ece2bee98f81b4d587b105ca7dbdf4e19df5fb754f75da24fa7503012972f758e53cb4206fb84084bf0d9fadd2b1ce64c6806c727fb90b08321f30feb4842a049266b7f0bca66f9787e0ffe",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers Minis",
                         "country":  "США",
@@ -2676,7 +2676,7 @@
         "name":  "Вафлі Milka Nussini 5x31,",
         "price":  259,
         "image":  "enc-8211541610178c3adeae101efe67ba73-04c0020665cfea80ca2c13efa42a0445bca5c231d3d2461d1c6eed67bc09929c5d4d4fd9fc0e3569649900de9224a56055e1f746e486904cdbadd7464801d8cc72369b70043594654128389835b5f85179ea93916fdfcb8741a30cd823a1b6aeee2d5e9d7815e4602731cbba236cbc1a",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -2692,7 +2692,7 @@
         "name":  "Вафлі в шоколаді Milka Choco Mini Wafers",
         "price":  199,
         "image":  "enc-d5ca8167fdc5f6ebeb7733cec4d1db01-4ac19fdd8942d3d2c468fa68ed9cc68bd0e00011e7fa49e00cad93b7038329287774cf4532e7ea2dc86488f870bee2b0073302d13737524ed27fff3edd6fd45eb87bbfc214012a2bd076344f8458ce65a6859e6cf57560a5b98b41daddc986c185a6a3f1cf46156d62079701b2d298434cb595187053c2982ee07a3ae278b724",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -2708,7 +2708,7 @@
         "name":  "Вафли Knoppers з арахісовою начинкою",
         "price":  199,
         "image":  "enc-4ddcd3c199ae11f4c325b08a25a25ca4-cf7550db635868251b68faf537e54a4d10c3b26ae2ce87266f1ae5df01c27a910ce14ac30dc99175fb7fdaeef68dafb73e5a98f97c38078e5d70b15479e697a63a09d5a68d466b5275bcb75d522fdf366499513bda4fd3cc94cb9ecd302b26de",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers",
                         "country":  "США",
@@ -2724,7 +2724,7 @@
         "name":  "Вафли Knoppers з горіховою начинкой 1шт",
         "price":  35,
         "image":  "enc-afe020f0639cfd194effafed32c721fc-6000e03d5c533bfc91c65f483efe7f2ec56b50fd1a44344a7cb27f60c24773d69a7e2b1b5ee6a462928b7376ae75df79f6d04aaf92fcbe20e2f6d310d600f79c8d3d0bcd15e9f7f0c5d344610446d701c1c549bde072fd40a4da8318df622ca5dff2018dccb247bdc2f3477f647ff070",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers",
                         "country":  "США",
@@ -2740,7 +2740,7 @@
         "name":  "Вафли Knoppers з йогуртовою начинкою",
         "price":  199,
         "image":  "enc-8451578f1910f119cfaca94fc0da11cb-be3c404e9ccb4a1e83b37f92cb4591dc2e1fff23a1031cde6b34d4fdfc53327a87a6c30a893279ea85a837d19af61a487c96faef37b91f6942f19241a776c4d138d2966e94003171c55e03c13fb54fd5d82ee1bcb171198fb48391dc16b574b61b6f7cd4e625445a68d38216be917463",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Knoppers",
                         "country":  "США",
@@ -2756,7 +2756,7 @@
         "name":  "Дитяче печиво Yizhi Chocolate Biscuit Peppa Pig Свинка Пеппа 1шт",
         "price":  59,
         "image":  "enc-349283864a9dab8fd73a49c3c9237eda-8c730f60d2adc2fb7a5cac79a22aab940bd693b45a5abedce1990ddb0015301867c8081882af766aeee79d42a87ece5e39f21534ac0f18a385c13b4339cf56c25f003270adc88da41f2479969bfd7ddc97afd85129244d1731a4ee148a76c3b93c2624399dfc193bf65e462a2bf174cdcafa910afb9802b17eb5b58504d2d9a6",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Yizhi Chocolate Biscuit Peppa Pig",
                         "country":  "США",
@@ -2772,7 +2772,7 @@
         "name":  "Карамельне печиво Lotus Biscoff Biscuit",
         "price":  179,
         "image":  "enc-c8a6118c9d7bd1fdf452371725387ed9-7707cceba236a43fe69436b506d0d98a9416c6fa7a02d338edb3d790da113e788ade757cb803624c5203dd780d42ef47d4af589cd5ada0a0bf6aabc6347c16b0ef1310620fd4fcd14a80101851c289599f8de2ab4c66b0108c4bd9461a9926d1fe91cc2f2bf62d86db763b58fda02c13408b0d9649da24e96d41f922546d3e2c",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Biscuit",
                         "country":  "Бельгія",
@@ -2788,7 +2788,7 @@
         "name":  "Карамельне печиво Lotus Biscoff Biscuit",
         "price":  129,
         "image":  "enc-f6d88ec121b55aca11855ef691ae861a-5e83a30f00b5bdc40885bd5940a72749ef778724364e843891b97f1a6a980536973e45640dfc3f136bf1c37d80466566584ad6b42882cbad1449d663193eb9b41b8b6a58697e541b5470c7a296eca12e766ea984a1105b313b40fea860d9007e0974b62432a9484b8a8198c78ea52ac9e30105550c1957d670cc7e3cc824edf7",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Biscuit",
                         "country":  "Бельгія",
@@ -2804,7 +2804,7 @@
         "name":  "Карамельне печиво Lotus Biscoff Choco з шоколадом",
         "price":  299,
         "image":  "enc-1da204d7aee3d7cc6e62ed11d65bc633-89d3c6915a095b44c723d994c7c8a59771d510cab1e865b2960136446574847b473bf17abeedf7ef6602333045ba519fbf67171eb652ac9216bd95d78129bc28242db12085c9e39c0793048effc986e092dbb24bb31dd2fb4d2d4b6d41ed760c08a22190036fb591d5f70c40a4b016f4",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Choco",
                         "country":  "Бельгія",
@@ -2820,7 +2820,7 @@
         "name":  "Карамельне печиво Lotus Biscoff Cream Sandwich",
         "price":  169,
         "image":  "enc-448c2ba66aab7a5906758a1dd2b22348-6e7a3dee3c997c4a5a079e3654102c5ffbf9eb8e95c9c956e8cbb2c6713fb09789661533c45c464d8717f62c4c0497d0f0b7dd37b633d29a1967c11e71e80489eaea0451b715e7362f75363ccb4f7b47dc63204d8ccd3d34e0bae2184941b08b384c38a222c6814848c2c7bc6e56e2910dfce3050b38d1ac6a9aa8d96aa54f50c549b6ad17736255a892ac978dba787f014a3297939bec2ab5331fb211e5dba9bf70b6fd32e04d42ac484cb659bcaaac4d14d7677304467036adf723af9c4feaa8ca23a8545cde6d8837a1599be929a6",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Cream Sandwich",
                         "country":  "Бельгія",
@@ -2836,7 +2836,7 @@
         "name":  "Карамельне печиво Lotus Biscoff Mega Pack",
         "price":  299,
         "image":  "enc-21d0433aece095a4cbc05daad07d5ea7-bf4935fa555d01c83da9fde9931b2283bde927d8e668c6778b490defc98845e6dfcc664dd7496d458c0daa4ce730fbfc178ec13a720d6e897982e481ee15611f79aa7f284ba925aa97061ef3efa603320524e31d1c30bd97cfda24ee4de5c15caa3fab777ece91009459a851277f59a7c2e54de480ea19668a12ba4bc170f1d7",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Lotus Biscoff Mega Pack",
                         "country":  "Бельгія",
@@ -2852,7 +2852,7 @@
         "name":  "Коломба Шоколадна Bauli La Colomba Mora",
         "price":  1099,
         "image":  "enc-43f8530df796750232fd91c8759a43fc-873b5d78de5eba16d6ceaee116f12a891097425fdc98312f5002b982edd83850c64adeb21d37f96e26268706961ed10f971c8511b139398d7214bf12214a62c0439b0e12a6e074d9d5544b80cafe66110c116c55596066444292088047fca2ac6e9112a77d85abdf4f56305335907e5c",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Bauli La Colomba Mora",
                         "country":  "Італія",
@@ -2868,7 +2868,7 @@
         "name":  "Крекери з сиром Pepperidge Farm Goldfish Cheddar Crackers Halloween",
         "price":  75,
         "image":  "enc-a2c4f90250afdedc89a3073a14e8ead0-99bbd6152a2b3b635cd485130c89d5cc878422ed632cb0dcc8314c59c68c0dc865b0ff97681452b57b05ff8a4409af4e1c9ac8a3e7bf4c04adca27e2ec658d3c794a701150c7fcc47ef663805b6cdac103c38c76feea29ebf71ea96d4c31fc8dc1e0e83d3d697692e431952c5acce2932f86becee5c04fb27b4905d98f6ba67987ecaef51251d871db1905c51c5b29c6",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Pepperidge Farm Goldfish Cheddar Crackers Halloween",
                         "country":  "США",
@@ -2884,7 +2884,7 @@
         "name":  "Кренделі Reese\u0027s Peanut Butter and Jelly Filled Pretzels",
         "price":  999,
         "image":  "enc-1586506c5be44c835bfc71bdc5fe575e-33a58685b5a0e97db3f890f423b6eb804dbab02cb464bf74c54979c9ee1d77de6ac8258bc40da3655bf218767c6462b46d4d0db741a8ea055b98fdbbbf2c693784fa698c3af18384ce2dd85edf06195222c24b572afa8923a0206496e1ccef77348ced1859766c4d7086a3447dbedabf026c42a33a88b04a4bea9db5b195cb4af39a2106d591daafc705c530beaec077",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Reese\u0027\u0027s",
                         "country":  "США",
@@ -2900,7 +2900,7 @@
         "name":  "Круасани з фісташковим кремом Antonelli Croissant Pistachio",
         "price":  199,
         "image":  "enc-827a57785d53f32fc0702528478ba8d1-1327c081ccc47d2b1983bfb3a36a4a68aeac2d186df5244d8dabac7eeea3b5a991dff53b37a9e430afb70512881b5a2e0f01abb77571078a889433d5ffa5501d1cb69ca05915ff52e1ffe81fe2c29583e488baa21ab624ec51f7b78bdabbf6ba620cd10e781b2997742449dcf18a16e048e3e67e07c701eb35f1dad03750280a",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Antonelli Croissant Pistachio",
                         "country":  "США",
@@ -2916,7 +2916,7 @@
         "name":  "Міні-печиво Kandiz Crunchy Sweet Bites Naruto Cocoa Cream Шоколадний крем",
         "price":  129,
         "image":  "enc-13c332bdbcfcad75c849c5c572a65459-43f1749464b1138c7c8fbb96326d041fa03ad0fa5856e1d0edd9e56e8339230a3bd47195588a3de2c6aecf8cb4267b1d336e1b063d9a4a107d882d919a8d325296522cc6a46d9bf13e9718b71753eb08c091534e34ee47e8a6d75cebfb4ec5f04440f564612b75a6b0efc024a871b44d477f89711d1e30b1bc97ba3767409cde5440fc0c26335b20a545f3a6c18b2272",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kandiz Crunchy Sweet Bites Naruto Cocoa Cream",
                         "country":  "США",
@@ -2932,7 +2932,7 @@
         "name":  "Міні-печиво Oreo Classic Original Eggy Party в стаканчику",
         "price":  149,
         "image":  "enc-20a700883edba7db57ab0e0e674fd288-c7a5e79a99c607dea0bdd29cb808d0068385e57b5dc801e3207c7deab8086aad6fcaebc9eed7c3f322b32e25db1a4db6ac1496c68700a95a5f5d20ebf19159b935933f4306382161d4915c57c7f970d6f09d8ac7a56c6325061ff0b6ff1ce90a87fbf0affdd4510ed23dc2629317c3bcad72f6e078dbb4327a9c328a263ef386",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -2948,7 +2948,7 @@
         "name":  "Міні-тістечка Rose Vimto Mini Cakes з фруктовою начинкою. (14 шт.)",
         "price":  299,
         "image":  "enc-64534608d7e1af7c5dec87f2a0e92a0d-f4c0fe3fba4c5c392985c5f738f1720f79c2e388d3683f0f8cb02790508d373f169d54be208b07f1612095724dd4a9e6de622a1108cf7cbd144da3cd26fce4fd82fe3ac36ce8a6acb982b8c91f727099504ecdcd3bb9c951d59f965cd3aa0a930231c0ca9b34be9be2a2ae42b63bb41bc5e3b1b1e2b88ab7bdf43bcf5778c056",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Rose Vimto Mini Cakes",
                         "country":  "США",
@@ -2964,7 +2964,7 @@
         "name":  "Маршмеллоу Trolli MallowStars",
         "price":  149,
         "image":  "enc-29fd7bf97037a73e6649046edd316238-05658f7764d8e68019ea489096c3ecc81866add43c8860847d0573d1e23609bd97872e954fa4e63c65e3b2dfcde1a5ff46522b7ad39be8884ed7e809b2b1bce890384ea330a09cd52820a5c499f5d1c16a710b999d17ce75ab898aa0374ea093",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Trolli Mallowstars",
                         "country":  "Німеччина",
@@ -2980,7 +2980,7 @@
         "name":  "Молочний бісквіт Kinder Brioss",
         "price":  399,
         "image":  "enc-82c45d1f01a4e6b895155dbafa50f912-0fe83e742a00a00296ccccc8056f2495381598622b41792466dbe47387695eeb8109c62566b2e3af1eafd3a277c6e5aeabb89758e8e572d66561275a20dbcea456c440e32be60ad5b5ece5dfc43f9d8aaee55d2b31ffe9dc93b00bca294e70013e796b9b89cacede4f55d0857a35e8d5",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Італія",
@@ -2996,7 +2996,7 @@
         "name":  "Молочний бісквіт з какао Kinder Brioss",
         "price":  399,
         "image":  "enc-de71c93a9c91e90c3533d34eeaa89fc8-19fa186665df3a7de5138f66016d7ab1d19903ef03035fc21a8321e7b9e3cb90350c2f063546e3f2775a74f5bd5ed04a6a1f53ceb4684c74867fdd92f58c53c52e7abe574346865e66ddf9e2563c6ea20535925cc8bffd6b3767825dc5a905359ae9ecef0f32eead184ea8ebed591d90",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Італія",
@@ -3012,7 +3012,7 @@
         "name":  "Морозиво Astronaut Foods Cookies \u0026 Cream Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "enc-5d7dcc74dfba7538d2e597d09eac2ef4-53bde737f25c1e4f41bbfdb1ad72510b5d93e26115072ed912de8c140882050639e94cd2c8909e761af83487887fbdcdeba9a808e33c1fe174407ecd843c75c337edaf7a75edf2cae5659a53405b8d19d44693a1dd8cdbc505a2e2e253f4abf9efa409cb47d4563b7a7344a2a42503293100a53b6f7906101dfb54bdc3c3968800a91f42fea29e21f70ed64fcd7cccf0",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Astronaut Foods Cookies",
                         "country":  "США",
@@ -3028,7 +3028,7 @@
         "name":  "Морозиво Astronaut Foods Mint Choc Chip Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "enc-a216e5cd7515aded6c0e5ac828d2bf27-445172fd0ce3bf1a6617df2447d36983bad0c8623de5f8f4eddb28b48f2b753e50607cd2de02ecf18a83ceebd762f6151373885fd137202c8d01d358014c1f39a6cea48d4e26b35f1449b319074db357e585c0377d480a04a84463c0dee2d2ae9735181e77b2ee66049a79391fe0bd8a98e7d80c6fb1378ee6e02b2fe218b8a501ca9069e27660d3456eed078846b80d",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Astronaut Foods Mint Choc Chip Ice Cream Sandwich",
                         "country":  "США",
@@ -3044,7 +3044,7 @@
         "name":  "Морозиво Astronaut Foods Neapolitain Ice Cream Sandwich сублімоване",
         "price":  399,
         "image":  "enc-089575c23ca84c1bb855eacadee855ad-530a9c7d0d9d0c203457203ec4f23caf37cd3d018eac97feb1aa569ad299bd93cab30a72629bd83231f2b778ff28f9f8dadd04595ea57f40aa8116dd1d7050d9acd52553d440d8696338b8e2d17586acea4ed1ae5b537e061036959fa3cc12ca812af092a3395e8d5f629be38d8162b71fb65a21c46ad4f5a0800af35dc757033884dcf46d501ad098f482737f61cb75",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Astronaut Foods Neapolitain Ice Cream Sandwich",
                         "country":  "США",
@@ -3060,7 +3060,7 @@
         "name":  "Набір для випічки імбирних пряників Gellwe Pierniczki Paw Patrol Chase Щенячий Патруль Чейз",
         "price":  209,
         "image":  "enc-f643a855ad31c2ea15b07dfa4deb5601-048877772f9e3b43f93239e5cb01c5617bcd86f37086f58a449b35747c6fbd02ace6da16dcacd592b93d3bf7fab99b1771a196d73c1bbf1e50c9c66fd5511405a2622279eeb8a1533771549330e0fe30a56d3633083a8b77fd3e2e135307f43773cc45d8fe3478915e2baad552410e00d1d910a774719d98f9b6913ec4ff575ff9feaa170205d365348e8f0b84f7ef6e",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Gellwe Pierniczki Paw Patrol Chase",
                         "country":  "Польща",
@@ -3076,7 +3076,7 @@
         "name":  "Набір для приготування торта Funfetti Halloween Cake Mix with Candy Bits",
         "price":  399,
         "image":  "enc-4b7fe04c2621872c2ed48733ecec163a-fc1b538a98980e264b1ed1fd24b34cd7fdb76e57942e2e8daa7aecc718de93a1d4cc3e128fa8c45eb5cd443a66fbd0d30d35c25ee070b18fee271fa537183416a65d893581f3d0f9d1bd5747980c9afedf744fe0b551883a7fd872695db8c244e1e5b3d9056fda8d159c291836241fffa71f21e767528e1330e4b5c7c4b20668",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Funfetti Halloween Cake Mix With Candy Bits",
                         "country":  "США",
@@ -3092,7 +3092,7 @@
         "name":  "Набір для приготування торта Pillsbury Moist Supreme Perfectly Pumpkin Premium Cake Mix",
         "price":  399,
         "image":  "enc-c44ef55b1a2de03fc9febd27a010f643-3198695bde0b09a750793543d59a70ae39756a8373734ecdee3ebb1ea836aa02b45164ca9923ae261f0e0b4c90c2fad3a346a614e19da65f8e051b09724dfa3eae5a03f42fd2542f1107471b0d81486a7fc0ba7143ea839e045ede54363193066338d1cbbaeb8cc8ee2d6e46062b1b4a3d21a13f739f2977966c068edf49fdbed824efe793fffc1c4e5f048144fa97b5",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Pillsbury Moist Supreme Perfectly Pumpkin Premium Cake Mix",
                         "country":  "США",
@@ -3108,7 +3108,7 @@
         "name":  "Набір для прикрашання печива Create-A-Treat Harry Potter \u0026 Friends Cookie Kit",
         "price":  899,
         "image":  "enc-9df346ecc4a13b9fc2a116e3ceaf756a-fb721614e9b4d774d6b9797c010e9af7d16b859cd39f0d8f057cec8d596d4dfa52fe3ef32c59e324c52b898d52a1e335ddd9f4afa1f434ef9c5773c3c4b458a375be059668f2a07df95e05b81c28fd45954c065aeae85586681b5c75f46c9ceae8f5683b3a5b4e78c29e08b6f80b94a00de27076f2f517650e66c1a7de4ce3e52ce077b35e79836aba1b9b69eae875b1",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Create",
                         "country":  "США",
@@ -3124,7 +3124,7 @@
         "name":  "Набір для прикрашання печива Oreo Christmas Ornament Cookie Kit",
         "price":  1049,
         "image":  "enc-9c340880031498da555c4bb1bc69703b-c7bbd343c2897f1747bacf737ea23fb89d08f8a7e43c8ee4f23b69095c7df5bd7f4c3f3f9bbf15815a502df3b6c0cddc4d48c1bb62422f466d28517bcd9e82a7665d4e4b5fbd89a697303aa32661bf4042a8cd77d502d4f16493944b496d095a6fcebb1bc68a46053cde89b064e08eb8d39da0b6a4622036230b711bffd16c81",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -3140,7 +3140,7 @@
         "name":  "Набір печива OREO Gift Pack China 5 смаків",
         "price":  999,
         "image":  "enc-7a4aacb6bb25c754397fcd51c8f2b3ae-3cc1f2c297479bd25656bdb90e433f20ab944e0f5aa3b75644aee2096e25f358da74aba6712a3e210f112120b79e3bb2db9fc82bf00706b314361089624ecfa1fd2ed2f1604bce55d27f5c9c7c135901f0636d3633817a4b35d1cd8be5487e5dda234134852459c2056ab63a1cddd58f62cd76841a65583578480740528e5c34c634a646f718db3a8bbd02feae80b855",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "Китай",
@@ -3156,7 +3156,7 @@
         "name":  "Набір солодощів Great Value Halloween Pretzel Dipping Kit Крендельки Глазур Цукерки",
         "price":  799,
         "image":  "enc-0a0bad9251de35266ac5a31560fbfbb4-427efefb8c7d666e4cad2849280d58721141bc5044590cf6b054b64d824f48ba4463e2dfe60b6ea81aa43f96cad8fc17e6dfb4bfef907dee5ccd9d943052ac1cd9069cb6880a891fe418876439ed495cb9fb530372004e23c3bf0463a2694ec17fc8db784b872686c53ccd853977d84775e7e2c933d37748adfe3f37cd971c9e521354a9cc68b8bd68a723d026fe6e88",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Great Value Halloween Pretzel Dipping Kit",
                         "country":  "США",
@@ -3172,7 +3172,7 @@
         "name":  "Палички Glico Pocky Банановий Пудинг",
         "price":  99,
         "image":  "enc-2d5a96a287a9d0a5033cff3e5b0eb744-c7d46d89c5948f542bbc6594ee7e60e4ee9b189d026c7186cc40ac1757c4a92104dfcf875c24f02dba63d6625aa04dd5445842dbb843d89b9fdbf724655e928efe2d4817926720a022b39dd19f7cf7ae8dabed3ed11119aa53e7b00408c68a790cedad37c726d632981c2cf9af631f84",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3188,7 +3188,7 @@
         "name":  "Палички Glico Pocky Матча40г",
         "price":  179,
         "image":  "enc-f57af2876eaf02d7c1efada275c45199-b1379f587f0f1e26f2fd2df18214fbcdfc36a531b6204b06f898fbfb901a9b46567a9b9b659ed86ef3bba35c4ec37e700c8dad97a99b8162cc0b011c8ccd902b9ecb25dbcef1ef287be54ac54bf3a011b6f33b112f22a4d7919aaf831e96192a",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3204,7 +3204,7 @@
         "name":  "Палички Glico Pocky Печиво Крем",
         "price":  159,
         "image":  "enc-002252044230b60fd93b7416656abbcd-b288baf9a5cdd85020cbb3e2337cd85c1a14938bc508577672ca043fdc0dfae92667bedd5fce330779f98fb030aa3c81f280f0b0e384a878d3b51ec18e110312688f4b42f1fe4c431b1a348f5dcd484cb8a86c6d909a0c200dec2cd2c842764de783b23444c09cf57c79be65cc90c1a1",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3220,7 +3220,7 @@
         "name":  "Палички Glico Pocky Подвійний Шоколад",
         "price":  179,
         "image":  "enc-4ba766b211a2af81c3db880ecf149444-8888b197fe73f034433ff6fde97be6541969ef61f52c38f53f7efd7682082317e4871a808dea0fbab190ebf480dc7b23bdaa19cb2ad1b9448e029123f28783a43d5cf94b35d9aca38be1ea1cb3dbd5e55ddedcbc48c6f2c6a9099f1c010f1f11ae6b79a6c06774831a6f7fe0b8514b38",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3236,7 +3236,7 @@
         "name":  "Палички Glico Pocky Полуниця Крем",
         "price":  179,
         "image":  "enc-b314374fc309d110af9b9fffbd21d203-dab59caa4f02ede66448d4368b32beab4bac1487f49bd8e7f703200d1bff9bd59546e2b74488bedd7d7398fe71ca79eb927785ecbe33eaff8b26854b612985f2882e8bda72da3b30a5437884849fa4f9f3c8cc29cdf2f656247875a20a972a0e04ac048dc4062bc5f4a7fb7d049b03ed",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3252,7 +3252,7 @@
         "name":  "Палички Glico Pocky Полуничне молоко",
         "price":  199,
         "image":  "enc-27af5a330991d5d9a160fb3c0e38805b-69d3745c6b2197454f2d623a2bf3ddce3c2cff9e2f036c5dbc26d4c203da1f9f7acde7b2b0155bc47e9fae132d5666455db39168298b8e178dfee1fca83afa04b49373640f997a509543da755d6aca3dea4ec095d304567d9a16d6272577749aad62b3796b9ee1743b42619b7b6b0546",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3268,7 +3268,7 @@
         "name":  "Палички Glico Pocky Полуничний Пудинг",
         "price":  99,
         "image":  "enc-002dfeb45a7f92b2e8f5bacb73cd59f3-69bf65511f9827f675ed9a1a59198c0b284912955df566de6b95d94ba18d598e8098edbb527f8b9d44fc9c53523b5c57fd87419377bcf384023e2c3bc6386d49abfd733ed50e37b46120e29b2cfaea94687aebe67afa52a6d54d01965888adad6f6105e52d87f7d7daa988533eb6bb58",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3284,7 +3284,7 @@
         "name":  "Палички Glico Pocky Шоколад",
         "price":  149,
         "image":  "enc-3aeb2ce247f31a8aff63781833eab0da-2e57dd29be6c870caa12b888a670f7e346ddce6da02b743ea2a4be2c55e4a9f92fbf0e6649cb9f4f723656ab09f6a01f780ada94cbbda6560cdf73b9160775dff5c4e46f355ccb6f86589282b2ab89d50a465c676217bf7cc82d4f6f7964c0919b2f52cb1f65110717945b0902bcdda3",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Glico Pocky",
                         "country":  "Японія",
@@ -3300,7 +3300,7 @@
         "name":  "Панеттоне з грушевим кремом Bauli Creazioni Di Pandoro Pera Cioccolato",
         "price":  999,
         "image":  "enc-55870a6d474c46f80e43813a1a2aefb9-6b3cc4e780e155cad5c209dba4dadf5e69f8c44040ba93de7197829b1547538c4a4247a34ba4319ef24b6c80b2d383e7094992012452c7e5e9273682ecc3ee336418cbd47eafeac34d301156aa89e0d90ae48b67c25c957c75659c395b97a92fb2c7de8628d8d4bbdb82dfab7b3ecfba05392d1117c0878952d058fc563930e1",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Bauli Creazioni Di Pandoro Pera Cioccolato",
                         "country":  "Італія",
@@ -3316,7 +3316,7 @@
         "name":  "Печенье Oreo Golden Fresh Stacks Travel Box",
         "price":  209,
         "image":  "enc-92ef93c32b7da181c7a50ffc74ea1fdc-48a633e530f036e425b08d1caba533e420c510e7d737e3786f8d3f3a8c1a6ec7d599a7f07c41e03bbd394876df33d5a419647ea8e1a0d0e40bf4de07a948b3d8c1395afa6160ea5da4d126a18a465074cd54c9fe2343997547a01764d56bfbd36b59200bc9f9b6c3cd19960ec1b1454aa89d5b5f64d332942a0f779e9e7834eb",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Oreo",
                         "country":  "США",
@@ -3332,7 +3332,7 @@
         "name":  "Печиво Choco Pie Зелений чай 12шт",
         "price":  299,
         "image":  "enc-a4e3b4198b3e51d94c90e6a3bb915351-b7ff06740cad26077c89f13a875d91e1e3029b4045856e05e1e42344bd689b750474b3c531d396ebbca6ec2808b6552f87860deef32be3d1020d9c61c4d84372dde83376f056a73da0b8e669b61c19fb162c6f99f14d219fd0f501c19d0f76a12d98f9a22e0375b8f15b294c58d622ba",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Choco Pie",
                         "country":  "США",
@@ -3348,7 +3348,7 @@
         "name":  "Печиво Choco Pie Какао 12шт",
         "price":  399,
         "image":  "enc-33df13b0a31c0f2fb8153e2f4059ef31-188eb11bb9a3fce0146f5db59995fb508658a569f25592f795404be9be22a57df4975fdacbb149e3d67ecad0e5f767672b18e82d90c8a347af46ef2d99bbc6455e1397ceb2bee6bc1176d653a5e67ede51c7a43b4806fac3b5e914e76d5a3ef207ae3bd78d9acffec227390499c869d7",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Choco Pie",
                         "country":  "США",
@@ -3364,7 +3364,7 @@
         "name":  "Печиво Hershey\u0027s Cookies “N” Creme Rounds",
         "price":  199,
         "image":  "enc-a7c112bf77d6c7e6f48edaa14d6101de-8e0599380368cfe208604950418c2f6615de89afc5ca85455af669ae36644aa2f0357b0b86e6ef2530187245afad45fc131ae12fe35b2d3bd1cd4e5ce6a490b80926830205087d09792b6249ccab13af83b5525d061e0f02428483b5eda5614aad23ee3146096f36ccd7c0a83c6cf43e2b928e6a93a49e25694fc972d5f393c0",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Hershey\u0027\u0027s",
                         "country":  "США",
@@ -3380,7 +3380,7 @@
         "name":  "Печиво Kellogg\u0027s Scooby-Doo! Graham Cracker Snacks",
         "price":  69,
         "image":  "enc-b0cf8fe17d23bb4373e23edbc1410fab-de7e1192b7703d0a64b3c8da7c4ad68f39f4149183c0239c7bfd4a173d6c6d08b2ec4a349b619d0bb4c9bd6b91da089f9a9a10bb117d86fafba71285db3dcf750497339daa0266e485ca8ab300c0fc53ed70a5e776a852aff6ac7921e0b8b9a5415786dbb09a6644322b82d91089e97efd5a0660f9553c60eb0027984915898a26698986d1d4f4835ba14660fc1989fa",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kellogg",
                         "country":  "США",
@@ -3396,7 +3396,7 @@
         "name":  "Печиво Kinder Duo Biscuits",
         "price":  249,
         "image":  "enc-165160dd2dbefd0bdb062647fbf3e9d0-f0e24cc45c981438e7b9923d86b31fdc665d5d1407fc8754048513ce52faef7f64b72d2a96565908db00cb0dbc9d2ddff72f0d24f28de68331885bca6b3749e89964ea016a4d60e56637f4a75cbd3f92bb56af20c93440c29cdb18091e6be7d3877ca75226d707d359a0c30e5d7c36c6",
-        "category":  "Печиво32та32вафлі",
+        "category": "Печиво та вафлі",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Італія",
@@ -3412,7 +3412,7 @@
         "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread 180г",
         "price":  649,
         "image":  "enc-d841144ada6ae607cfb55bb06895c7b1-5adc12cdf72bf49cdaed5e9211455b908c6421ae9788e00d5d3c17a5fa7d111d0a07fafe126b6549a058edc823be3aa5e0f1fc40469ecc817392dd064a077d89fe9756cd6f8f61beae5b9425ef36a52d1ee71593f0826ec7995d93f4fc3077e4c88f51a47f282a1a216d248fbe83bdba07f0febd79968965596911f611011c068bc65c1a5a3a42f26cdeead6615fb60c",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lotus",
                         "country":  "Німеччина",
@@ -3428,7 +3428,7 @@
         "name":  "Kinder Гаррі Поттер Kinder Joy Funko Pop Harry Potter Return to Hogwarts Набір яєць 3x20г",
         "price":  549,
         "image":  "enc-65388c127068f5541007e41672ee0ab6-eca7537f51233eb87078d9137beb57547ecd766db0d494ade34b200b53e884f21bd18f530f360987e689c6aeb43dcf4da9980c34dc7fbf3d44a3e33ae6b2ab96c4df2da65913a2801403da6bf96cc85f9d536e4a84b020524b07098dd4466d11a3fc5040fb40f32cc69d5ea711a0302b257dea107c351fc1b279b3354b3926dc0d7571f240cd72f1a64ce16844be3f63b1036ada7aea76c900a5a28db0cc97df",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -3444,7 +3444,7 @@
         "name":  "Kinder для дівчаток Kinder Surprise Fairy Disney Egg Феї 20г",
         "price":  89,
         "image":  "enc-937bd90c78dc4a92e773cb919812661d-94b327c75d67c3c441854fa1f14407b1e4390ba9733f77e71c741ec8755246ab4e4e5ab58b2bf508ef00d25e5e7877c249311cfc35507ddd7835f81012bebbe52600abac484c05ae6174d7a45adc28f21a9a7208432642454ef2ec30f40661511fe371c4aea27bbaba4a57f2158572ee2de9ac5130109a85df627e5db0bf0cd6",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -3460,7 +3460,7 @@
         "name":  "Milka Bubbly Білий 95г",
         "price":  99,
         "image":  "enc-6bec021abcad969f472b1d3aecebfa84-d3b72d2cc96e0fc7cda6131d491bd61b76777f3945c5515f45ce32998d36265b3875ca31b51eff12efa67c902506c37906cb538883e1a4b32d82a683df08531eb329fca9a89544ea7e27f49089644730d996c1251861a2db552f21be416761dc799b261cac34451e2a87979692daff14",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3476,7 +3476,7 @@
         "name":  "Milka Hazelnut",
         "price":  99,
         "image":  "enc-9ac69d4050ea654cfc3d2125c7d4c112-310094d2050203884944cb8afc6405dfae27209aed6f8f38d30e7e88845a754780f3fd80509bbd56183de9f57317e8ab1ca98e016427b5d6ab005bf9df2eaeec08ec4b6e91bd80a16c063bf77d1098a79180a938ca819b647bbc5fe6eeb1c9ff",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3492,7 +3492,7 @@
         "name":  "Milka mmax Nusinni 270g",
         "price":  259,
         "image":  "enc-b9dc04722239c6be7f6ed39e8682c141-c3e87da6855644b233ae0483d0cee368046a54eef702cdf5cbe9b095bdb27fb5949cac8af195ca40d991cc6584417b038390c5b045e66e1672a2fdf18728071f4a034747cd144b801a8e57c84ebd3293455fad7b6143bb4a4b5c4584da5422d87df685f1456cd3ddf2fc052cae0616d7",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3508,7 +3508,7 @@
         "name":  "Milka Noisette 270г",
         "price":  269,
         "image":  "enc-5df9e76b907e8e7ba917e81532e67ef2-368bbf6416baea0b0943d8b4c2bf8811b188ad1fc0ca234efd3ac8a0742670845a30417bf432c3c6bf6d509e08c0a490763386b30a924e2de480d37e30d6b528cf63af102270f8db154776c34c6744049a49247efac895ca8c3c6a00ab3253ce",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3524,7 +3524,7 @@
         "name":  "Milka Oreo Brownie 100г",
         "price":  99,
         "image":  "enc-bf192ad3f251d7f61ee3fa4f60589377-67dc7a5309dd018a2e02a315495ffbdb030bad1edfeb22b0ad9f567e0e7c5fa9b397bdf45837bbb5ed1aa13cd6ae8e7f200d501e7d863c353d512546e4e8cc5eeb6ef9dee7c0b76669904ff4a49262b08bd65f601de2914498ef6458b580bd96",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3540,7 +3540,7 @@
         "name":  "Milka Peanut Crisp Caramel",
         "price":  99,
         "image":  "enc-d7b7e3bcbf5fc488d8907a98b6a94534-fdc918d3d69cd81f43697c9ccb62cd323887f08c2f380fcc5bcdb4dbd107013a06ddd46c8091fea818f687fb0895993e4182418863b5d61618f2518bf632ef9da31d20f37c8a5d221b176fb17967d1996bf3db2f60f0d7b22affa9ad1a45120d0dcf02dda6e9802873e6bb6cba7c23f2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3556,7 +3556,7 @@
         "name":  "Milka Raisins Hazelnuts 100г",
         "price":  99,
         "image":  "enc-94fb049491a420c7016f7a30f380e475-6590b752b6f8341073399a9d96a837cb939ef1167e4e6c4c9d3c817170434c8648b37b1ffde3963d5556fc7bbc74f589f9ae391cd15a25bef45d3fb237e121c80a2508164e4d8bdf4cf37228c971e5052b8260beb0a3b12c2944fcd68ffd8713414091014f01521a4774357848c1e9e5",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3572,7 +3572,7 @@
         "name":  "Milka Trauben Nuss Родзинки і Горіхи 270г",
         "price":  259,
         "image":  "enc-bdb03b12e569a5b9c5f7df19d617fb39-0d7dee8840f8ebcaa7d0478850c46bf1773abc81821042dcb292874116537a1e8651d3daa966f225017a40288098090c124dc14febb7b693ebecfced526e385664673eaafc1fd998783f0f4b2e37e7b86fe37719838affee968c616c3187062e00c5dac58cce6b5fb0beec4e71d3dea9",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3588,7 +3588,7 @@
         "name":  "Milka Triolade 300г",
         "price":  279,
         "image":  "enc-48fbd8b498bd0fb7bf3d62b1541c9b4f-b2c92938b658ec1b7c43c969c056bf6b31a834b70331eb77b7404681090bb1b80f3bc22ad15a17e994a16d0ab1695f2f981ac41d9c9322a459370f87674449a4e8fd33c030dc40ec6da46565c6cb896359abbe1196498239c08da39d9b44992e",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3604,7 +3604,7 @@
         "name":  "Milka Whole Hazelnuts 270г",
         "price":  259,
         "image":  "enc-b3582a6d041ca9338d3f18295f51a205-59848f59fe56eed8e10da270b4a3bbfc5aea2feaa6f96a1f2e6571ba306190ff0d0be442865aacd810fe85ebc73d4356c2ae6774dfc2e6afd070d831998acfe3357cbf26aa719c78a92f18a153620ed877fab129ca2a95ec75bc6e45ec0217a191e8548462d37f15def47cc291dde964",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3620,7 +3620,7 @@
         "name":  "Milka Карамель Daim 100г",
         "price":  99,
         "image":  "enc-5dd247f7275d0b5cfd951f77ee3f4a91-9a9d563ffe1584ae37083482cc9fe0b9cbeec8818d18978ff42442c8a2e6071b37efcfd85fbd32a10deedfc40830ce5d2d60c888c80fb8bc436a1895dbe068d10d961765b8002c70bbd6096c558c38a4fe16bc54c098a9b109c7ecf9cbd495e25af8ad12e7dc036add614237730c85c2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3636,7 +3636,7 @@
         "name":  "Milka Печиво Бісквіт 300г",
         "price":  259,
         "image":  "enc-4ba707fc574f852e4b1f926c9541a126-17962133ad3d66ffc987f0aa7f42ce4e691e188ed33e5f9aa72131078fecb7aaeaf71eeeedfa3ae42e9f292e6f472e7f1c18d6a204f484373355864294b9523ceb1545e4727a9f0c91e481e0f0aa7c383d354c52e081a84d9243ccb40373d6bf26b9316775c871f79a78b82f6a6fc14d",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3652,7 +3652,7 @@
         "name":  "Milka Полуниця 300г",
         "price":  269,
         "image":  "enc-d7685031298a90879782c801495a0ccd-5cde98d66d9461b5449757838d4bfdeb369bdba854930ad60f89f030044755a4fe44022881fe6cde2dc5adc70e2bdf6525971c586b2400c849f1ab26ae271b2fc41de5b2489ff599e5ff9476fef1d532975aff52c95b0bc2a281f1a20ca1f13d6e2ab15a8121473a3f4d5167d7e37ed6",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3668,7 +3668,7 @@
         "name":  "Milka Трюфель Мигдаль 300г",
         "price":  279,
         "image":  "enc-a940f31e754754d6446cbe5ac92c6e2f-73c2a2918d1cacd12f8aa581c94f52a1124fb99bf6686e6bd5450406af92ab5a2c96d40b17cf8343051b6f49a8e6c5121f2d4d5b82cab610a4661c356bf347679533bb37de99f08c9a0a6d264745221ede6d46116dd30471141045d7bdbc16ce",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -3684,7 +3684,7 @@
         "name":  "Toblerone Dark Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
         "image":  "enc-29ac2c87c9073bff8202e9bb676011c7-1665997f4ba973e8e1ab8728e6b42a14f0bf4ab9a3224e46083f7b3d1638a633e058db912f95967771eac0291246042cf9c6f194211a9ec573bb35ad982a2ee176ffceae73198753bb13c4cf903c14439630665d00ff3978dfae91073b054ec4316c93c4f8d7df369b762218312afb364ab575c4f8bb58d2c84f17035f78be300c9cdb6208b3a80b9fa847ac6494152e",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Швейцарія",
@@ -3700,7 +3700,7 @@
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
         "image":  "enc-4b35d848f14e564accda409239f6c9b3-807693d6024a96ae599f847bdf12f092d05699fbc0cd2fdf8bdf7278a235175eac1e55460a6d47e9deb396f67802fb8179d3b0e52c6368cf11b6b162f32b27042998993f2e796a96c8c50a36836b48323a30120decc8f4774c7b2d430346f66bc6052ad78d3e4c0abf4f0b2f2fe634340009d19cbca1b156671527c21a0ec9d0619c6c715d2ee73469aed5ace677ea43",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Німеччина",
@@ -3716,7 +3716,7 @@
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat 35г",
         "price":  49,
         "image":  "enc-23665f0c7bd05b47856dc2a99968aaee-b818995e48cd4f836b7ac3886323f536bcea6897a7c4710a6f1f6c6f81deb64b64c91ccbd9ab63f94cd89e27094b9d004be49e1b0f5f5f5886e8ae9c815851b810c9d9867a701425853ead125928b0b87479c2e8cb7807597ded97c5758f9b75665d5f2ac23b70a76074bedd60ed87c4bb7dc311983ee82eaf345d2c4a999f6802fdec68d15757e808e5711dbbf13879",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Німеччина",
@@ -3732,7 +3732,7 @@
         "name":  "Toblerone White Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
         "image":  "enc-71dd4f793bcd1d150f176671777bfffd-a627ad5e87b0e6a3a4e2db4e7edf338c4d63885f2f1f47c98d9581b912a26f51a1c27a59e606787e959247afb67a99704e30abe31c1dcd68777cd76d4c5b4ce2b676ec21d78b2f3190ed327897606fb18fb77669ce5e2bd10f17172c7f45ebd2630eebc9a79897cc4c2221a4f64336a73c9bda31c88282d5e7b8103f413c426848fc2c99ffa894591a812372473902c2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Швейцарія",
@@ -3748,7 +3748,7 @@
         "name":  "Toblerone Родзинки Мед Мигдальний Нуга",
         "price":  139,
         "image":  "enc-82ac0ecd4ec4063ef1ae79c392710b8e-8b5ee40989fc9fa73d9884f377d87c240f094927dde7d8bc6a1a7eac0b554cd934cd9246d9683840061ceae3e96d6fefd74ba2c46ead7a2b7d14db3fe10e9bb05f8785556e54961e7cdfd7d81662173b913c37cf874a7631d23487e163dd9e9a218574fcd2f7dad1425eb180ed8c72ef",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Швейцарія",
@@ -3764,7 +3764,7 @@
         "name":  "Апельсин шоколадний з м\u0027ятою Terry s Chocolate Orange Mint 145г",
         "price":  199,
         "image":  "enc-661a0664474ca6740bb8b223454e63b2-6a132eddb6b7103089131eee5439e0c2b5652505fa298149f3279d248b920b8c9231c1e9e44fb0124c2ce89d80e846cc783b583bf6e1e751c2c2d9eb2c9786daeeebf25f8bb88bd7bc7b60ab4959b03e271d10da6b624a951accd0462c3f2035a5dde7082c401187e56b26dbeacc1bbf",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Апельсин",
                         "country":  "Німеччина",
@@ -3780,7 +3780,7 @@
         "name":  "Білий шоколад Lindt Nuss Selection Weiss-Mandel Фундук 150г",
         "price":  249,
         "image":  "enc-175d0d1499a137dcddfbae176f5407ea-17cd662dc4d043567e7e3cc0bf149398c30e9cdc59f2bedbd4dc37b4836d9d2fd55d5d31b0cc8337aa8eafd18555e3509a8fe4b512e5fa8d3cce5ccbead71f41730ea6539d6d7a7989078dbd73f877aa3d4b6b2d175750ff3fd8c605c1e8e05c2fcdcbb777023b03ba38fd9d215f7943e58c85aefe1b467647bd92af1cca8cff",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -3796,7 +3796,7 @@
         "name":  "Білий шоколад Lindt Tokyo Style Chocolade Matcha Strawberry 145г",
         "price":  899,
         "image":  "enc-ed5cda521eb3d906ad740b040fb76290-4b5960fc6a6534205205a059c7ab50cc40642d5ea5272d6cd1160921f417971e4267b0fc82e5b64602285b73162baa5ec125ba4bd0569da1b9cc4790d4c338b55a1ad3d9992dcaf08f4ade3d18bb9fa5a7a601b67f9f92f1e76fd179b0429ed88e833f9c85ebeb321c4a8b0bb93510b62d7e5b7d11f34c59a331da290de9f6b3e8aa068d514cc4e150a6d72783bd5c14",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -3812,7 +3812,7 @@
         "name":  "Білий шоколад MrBeast Feastables Pretzel Mint Crunch з шматочками м\u0027ятних льодяників 95г.",
         "price":  399,
         "image":  "enc-9abbdbde9d0a23fce0e4dab4c80a23ae-ca9ec55f482d2ab2bac959128219b3ab4a621d2db84a29606f066f51a72e4d50148c92bb66340589139c89e6c53814f10e44698c878afa438009d8644a9773afb453ee1dc565045ca1406aa327e0a566ed9feb8faee42596cf229cde1fa074e1388cbcb8dd9103e9c8a507191324ada6afda0c0f2b7e197c03c9fc01a39641ac8f6b503d5bb6ecafaf27bd47c001b374d2d827c6222ba14be03a47a13999150f35dce9fe5dcba62d5e54270e920a876c8ed4ba8859a941a0bc6707fdd524d8111f9d55ed25ed6d37e999ec26d6d8c5d5a1e937616c51216bbe8003375ca2cbecbf07e193b8630c03e8a1e9537969568b29bdab418cc22727ec30fff8a4e7a470",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Білий",
                         "country":  "Німеччина",
@@ -3828,7 +3828,7 @@
         "name":  "Білий шоколад Reese\u0027s Peanut Butter Bar White 90г",
         "price":  259,
         "image":  "enc-6ed7d648ed2d6840f1ebad091f9be3b2-35945a7f5014adafe7f8be061d59c0ef9adf1c4faa339f607fe4f0a23f5e212c0ebd653f37505c99bc9aa78c849d889548dbc4802cb860d5adc99a622101f72daba1b2d103cb15778d4ec81678dd24abe3f1047d2daddf9bbfad761a362d9b516e87f8fae22a01a6cf2dfb5500ec7784bd1cd28a66c490bf31cbd612867304d2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Reese\u0027s",
                         "country":  "Німеччина",
@@ -3844,7 +3844,7 @@
         "name":  "Білий шоколад Twinkies Candy Bar з кремовою начинкою 60г",
         "price":  129,
         "image":  "enc-a9395d616351d7930218aae934820634-cdace6065b9908a31789ff90bb61f804c7b8aeb8e2cc80deaa03bbb859896d06a41f5093e144af75e6e8720da8ab7ac33c8807ad8a7718a1c203c0fe6417473a0108fc591a1cf1af3b44887d993330410c315fbfec79047d14a64ab32f412bd44273336ec80763d4a8842d9b771fce7a",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Білий",
                         "country":  "Німеччина",
@@ -3860,7 +3860,7 @@
         "name":  "Білий шоколад з драже Ritter Sport Smarties White 100г",
         "price":  149,
         "image":  "enc-bda49b742eeb485d929500906e2bc65b-55fcc4ca8f7b08e59bd5809084d0b256fce410c907151e5969b18f81f3c5d2d61a623a4363aee021c31aa87f64748bc8cbca1f3d4da4a9baa3b016b124c471cc3b8c99bcaea5f627d174b24cff7edd23228679d36d02a8327e735edffc0ee996cae61b49772d7c18b1514944219e38b43e23e406c300e6dc5d09375f95e8bebb",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Ritter Sport",
                         "country":  "Німеччина",
@@ -3876,7 +3876,7 @@
         "name":  "Бельгійський шоколад Chocoboo Exciting Taste молочний 40г.",
         "price":  209,
         "image":  "enc-30ece9d2bb8fd1abed139265f8bd4976-9a9a9a2801bfa429b438c494e3157f58e88b40d5de3d4c805f12e798c963eacf714db4b96227453c5d9dddd257a0eeafa9261f6d06bf3f9bd65147308f25bc5d81a18a5488dbd97f48d5c3b870af831d53260bcb0e0d851e9c1a1199fd42215635ec088c5720af1e4f22941b3daf31e89e22df2e72dee70cf31644f730e1bb08a2493acbf6f2e3a376cac6b9c3b33cd045ed28ce768fae0afb6589258a5a8f6dd60c46ce199fddc56bee09d0668a40d507fe67328a932c7e1ba3ff4e5494294ca4b76b80e12ea599ecdbe8533b1fb1d38e9cae78a0de46aed75596d8e610dde1",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
                         "country":  "Бельгія",
@@ -3892,7 +3892,7 @@
         "name":  "Бельгійський шоколад Tabby Crunch Chocolate Fried Chicken Курячі ніжки KFC 50г",
         "price":  199,
         "image":  "enc-28e6f840b11563848d1f7139fa7dca21-6925e79681fd72daff1e4eb3c956a7b9cd5bf6a92d12d63f2b458b420de39f2d13e5a035686e1fa5102503db0a4bf27e9f407bba350d5c6b626a5da6dfdc973c9f4b0326128fadbe8cdbe6446175657200b363c575df6f0d953f87098a6e69ed715cd96eae53111929e0b66e932f28cb0f4bd9b9ef7a34adc1f938da3d88d997dd0300860a60323fc588cd440e54c696",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
                         "country":  "Бельгія",
@@ -3908,7 +3908,7 @@
         "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад 139.2г",
         "price":  279,
         "image":  "enc-52294ed6ce327865d0ef77cabffb25db-fa4432d8deb8880aca41dd6033b0acfd0d9dbbb3e021bbf4414e2aed465acd2301ecda9b9dea9f19cc05bc7343ec1897aee6fe04a1777b88a365d2a4b1479c1caa116d5ad8ad054b6f24a74af3838c26c2f00a24270ecb46ac7972158de151bc29ffa478c35a7bce74d4c716f122a79f69f385cacea4f9d8aa188589a9569e16",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Вафельні",
                         "country":  "Німеччина",
@@ -3924,7 +3924,7 @@
         "name":  "Веганський шоколад Lindt Classic Vegan Hazelnut Chocolate Bar з фундуком 100 г.",
         "price":  269,
         "image":  "enc-1075f04bcfdc0428c490f56c215a8fe8-0ee568910d41c89e3f22d0a229cd9353162d0970d1d0068263d7cc91c405e8a9554e9066e0886041ebef12bec5742992eda18e42f807c9279f318ba9bc9f41a65531ccb62617964c552bdfd3fbcb5bc1405f2b3a1c6b2cc50dbce4906c92c4b83c81af06a30ca72c697dbab037e5ed9a17a2c30bcc16b0e98656bd02a7e81d7f36b55f1f799162f808d264292dec0cc962195a1627aa05eaf2fa2e26e65c25fc",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -3940,7 +3940,7 @@
         "name":  "Веганський шоколад Lindt Classic Vegan Milk Chocolate Bar молочний 100 г.",
         "price":  269,
         "image":  "enc-2e01509458ccb6e27f85748aae9db482-f1fbd603f93724e954f72057250fbaa2f98a1e06212104d5e408b45f93cdca1d2a3c79b0d0083e519104a2780db565beac41e8426f5eac62d4b101404491e4b23f969ebe727e410b80dd9c51ec379922905ea19d1de054dfc3852e38e370a1ba33a96f4dec8d408477dad179d5925a5f3d237c3909691c6ef5329e2db7d63c62e7faba9c338394a7d702f3be3a6d3063a0c958a63d53401b505e187aa534ef0d",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -3956,7 +3956,7 @@
         "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
         "price":  549,
         "image":  "enc-ddcbb7dda9ec9bcf373e9dd35947d401-f5f31987455a34b0b91aa20dba32861fbb34d84e088aade1cd912510c37b659089c8300c91ee57e1e32bb24620c787a33fd9c89079684f4bf2e54c301f516e23de3bb764a83a5d27c32d4026b5445e407cc74a0aa75342cce6d4f0853c3c1d5b829c2428dd9e3b9dd6e2c421156d84f2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Велика",
                         "country":  "Німеччина",
@@ -3972,7 +3972,7 @@
         "name":  "Велика шоколадка Lindt Swiss Premium White Chocolate Almond 300г",
         "price":  749,
         "image":  "enc-8f201b7e3d5af9cfa1e06da60b4b1238-f79a308b3c9cb247f0939e1d1aee1d5bf99d759d8319ca32004739042b371951d094ffca18979523913ecd7f92cfc1edfda5a47c2272ef1648e8714f9f24dfd122de980893a68ca92816bc7e68ac812317c51cc17634e804d05996b4d26d4ecd40ddce4500e39a26149d25977b2226e0330e8776ca65010488226c985c2bd00f",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Швейцарія",
@@ -3988,7 +3988,7 @@
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
         "image":  "enc-33a1a06a0aa51b6d797929a46607e179-765431ffe8e3d3a7c459c15be0191c9315298ecc30ecedfad6593e0a20a5219149ac7d3b6e4c1cd41f62690c45aa1089c4facde39561ba640e59b38a85ff42652be285a4dd843ba9f02ab4ef6a324027a2e7b69c1ffdc5674e7ed2f13e5a9484",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -4004,7 +4004,7 @@
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
         "image":  "enc-5d8829b2c47ee83c4ab3fba36b445740-75ff09f2aefaead2188d69e0992190f392a53e6eb2c94a1c2a1e97fe8c4e8c4bf4dc77d083438001493a48b2a3aa572f5dc884a3950285fd6ac414b78ceef4f31dee650f97722951b5cc57e825a7f99421b6d221c112c627d9a77aa33b75a6dba03b4d76e8d820a6ca02b8e19d84dfda",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -4020,7 +4020,7 @@
         "name":  "Дубайський молочний шоколад Bolci Dubai Chocolate Milk Kadayif Pistachio 200г.",
         "price":  549,
         "image":  "enc-a8f4d66c052d5d032cabe64755db6d74-04bd53fba3bfead533832970b9f6fda500cacd62ba34323064926c699d0ae7da8701c2c83705138311ab572a79372c2973bee78ad04d62d11f82293f95cffb39bb1b7925a514281a886afe16399de84a52f22e081e287a8ab659388b242e88306378fd8fc96ca7dc2f2daa9d79235f987277ef77a1cd626a3c53a2055b493d431e79e4829496b4c327441ae72cdc283f4d178d89ac9f6a41b7856c7e7204f3350e7049d2bef9b7e9e29a90029170c3f80434d8de38e8d648f31a47a76a8b34deafeed3a6cdd4e1c54afe21875d56fae7e4b5dfebecdb563e4ac086ee8131bd06090eecfdb9fa75804a3813cb6f44f0c65dd84900ec613d76b34700ddac16f8db",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4036,7 +4036,7 @@
         "name":  "Дубайський шоколад Bolci Dubai Chocolate Pistachio Kadayif у коробці 256г",
         "price":  959,
         "image":  "enc-f9129da185a13d3fc718f8d65f703320-94cfcc4c7300c6d9dc6bb74d3606f93e75becf2e5af7b2a5c4621a84e774b505e3968b76e03ee223bbc4a52093eaf6816fb49ab3001a7e10d9c7a78ba9d38b6789d7a8891c112d2e5d911522260592ba6d13c592b68edad15c0f31bba7be979cf6cff5a585ac389c2fd33b8e9c53f4bc94b99bf4b7ad9fa2d2f2db23dcda5e6f",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4052,7 +4052,7 @@
         "name":  "Дубайський шоколад Bolci Praliny Dubai Chocolate Цукерки 96г",
         "price":  429,
         "image":  "enc-5fa2d218c890fb1bb4a23ab215f5ae24-ef4f7ca4b7c900bd219d5335b238f6b5f4488eefb8df2f837626a09d24ff3032cbdc77e3eb317dbbb01ca5b7e5a1d187707fd268b78e8fd2e7a4d8b51778ed977a679dcdcad4ca1b53f2534712337320d945541e148de9ba092b2195c11ab90e853d7949b98b47287e412205caf0505fb55ddfa49c8afc632ebbcfeefc2d5043",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4068,7 +4068,7 @@
         "name":  "Дубайський шоколад FIX Biscoff Spread Біскофф 100 г",
         "price":  409,
         "image":  "enc-5c0195b03bf7a85834feb55229e68ac8-2e3d5342433d4441b169b4fa1c7f9897eb9545086a87168a08ce56273b54c8c89339accaa7a91c24c271e0f5b0cebdef5c3f6c2cde7f210801a497e3abd8fa0aba9dcd9f4f7935d760c10721c6ef17db5d3c2eab60d1a77177bda3c6dcb81ee1b3907277ef1dbdb06edd761fe6661fd2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4084,7 +4084,7 @@
         "name":  "Дубайський Шоколад Fix Chocolate Dubai Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
         "image":  "enc-3ba688a75478a99cd65a3e376469bf15-d8f00008dbf02a5edc72cc6984f016795ad0a2b5839a92673e6e191a85ed36dfc02713c70c33571e61fe42bf3db43c1c8527b8cc1202c1dc1933841b95060f32aa9cb43f73e5444492134e75504f03b89bc1da13417a0e5bace3ef364212c8f745593520a5ecefe6557b75a783c1ed1b1563d0c8d741d52d9512ad4e7b6de1a1f2573a125819885f4f3199c53af09213",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4100,7 +4100,7 @@
         "name":  "Дубайський Шоколад Fix Chocolate Dubai with Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
         "image":  "enc-c6a8f001cd6163d62f93f1f46e0b8851-b3ef389221730de782fc553ace493aa6edb50d452c8fdb44a61014aab02c15828d3488dc5d40cad3fd04bc13b2638dd4fa1f718cdd5b228d99d285449fdf313928b81604b1059683d37fd04159cfd46f95a6f4b5c0f0ac06f66bb1b033fb15461150ac7a879f7f7f1f24f34ef213ea8b662cf7e405a2a696a97e8471aca98aa0a4bb79e215f459919ed84e0ac5e25a20",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4116,7 +4116,7 @@
         "name":  "Дубайський шоколад Fix Chocolatie High On Hazelnut Лісовий Горіх 80г",
         "price":  349,
         "image":  "enc-5a3a9356970f1a5abdfd607cd1db29e2-5053a04b0d9801bef0bd6f27403b632efb54f98431f46a069de60170dc742349175dcec48e5a30d1735c5b37f91f0d86dd5a74455cc9350eb1a10bc5e81cd8326849292d6dd2b19be155df4e4015b083124a9d7dbdc1daee9311905b260355ca37a9fdea4153c26b1a6dd3ddf34dcbb5f9c10e579d23ab0d59daf47bb22da18f",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4132,7 +4132,7 @@
         "name":  "Дубайський шоколад Fix Mind Your Own Buiscoff з Карамельним печивом 80г",
         "price":  299,
         "image":  "enc-ef29ecf930361faf989b228ef0a9ba48-368f9d6f085d25a1f8ded8f40e77baade45d05c023c6b4b7cd46021ec9812951de446315cde8a061402f6153871fd6f62974cb357dacea2af748e9b0153c277a9c4a80dea7a7903b4279c382c3306b28473a84388d905f8175fdfef1f6d5240c7f778d8e212eeaa51b39a18eac0a7c7b314dc4d6831ac05586c0733b873f79b2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4148,7 +4148,7 @@
         "name":  "Дубайський шоколад Labudubai Chocolate з начинкою катаїфі та фісташкою 30г",
         "price":  99,
         "image":  "enc-47d77cebf4c1e5dd42a8f0b3875b1b3f-c645537d2420a2552bbb84342e88d5044a113f9421adbdaa50a4725505867c01c81ce1d2508f4755243856b0641c126d6af738291d71faead7baf8e8126078baf9925c219f51edbdf90f9bf2f6c3fb1608fafcb0df3b9312b8d4ada6cf6ae8c5862411cc8687f7fa1ca567916e8281cc075fca2bd0699eff4309cf642edafb674bc3ba60ccc8860c7d5d90e108881f96bb8c63d5a276d8cfb01b773f8d43c006",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4164,7 +4164,7 @@
         "name":  "Дубайський шоколад Lindt Dubai Chocolate Bars 150г",
         "price":  1199,
         "image":  "enc-7f7ba765583811fb7e258131eda16285-d2200c467bd15c8e58c5472ed29816540153bbb26e8ea16a7569808570be69f4d54845ee8f09f1d6c130c9a8208e8a1acbbe8035db7fed5898f140eacf6f5ff2a65072c14e4b0e7a7deb2ff7defdccb664907259bbc7879241de6684a153d999",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -4180,7 +4180,7 @@
         "name":  "Дубайський шоколадний батончик Rosso Bianco DubiGof Crispy \u0026 Creamy Фісташковий 30г",
         "price":  59,
         "image":  "enc-d9f92612e0564a674284fe9c9c94d056-f65c9995db8c114539d9c25c89d7874582fc404e888fc2a8f3f26017afc0ad5f90ab6cd32990df9f0174989232ccffd65403922824c35e468f9ded6909f781c4b9c26ea3c439c063cd66a013be7ad4c817a5f673127e0af2965fdb64b888a5edd579b426702c9c17b5524abdd85bf0183ae2d5064384677d9367b0c993cdb5ec5582e07aac42a4f040a09c5c0b6abb98",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4196,7 +4196,7 @@
         "name":  "Шоколад з печивом Lotus Biscoff Milk Chocolate Biscoff Spread 180г",
         "price":  649,
         "image":  "enc-262b7f3d7851aa53763bba7ec06c8999-d8fbdeb2b8524e417b0d26e7b174bad006a63b8a3531fc1e24d6b7dacde904c334756c67bc7358d988c2faf3b7fe42dbba78fd5489112ff3324fa1a2cb5cd204f5cb66da1692cf67595dc21e92b6b18b084b9c54a863fff5546e7478d4b3320335d400283e28bd11cbcf173a4cdce54e7a12b06c4fdc4c6c381245c50c82557459ee99446d9de5b559d137f4447d38b9",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lotus",
                         "country":  "Німеччина",
@@ -4212,7 +4212,7 @@
         "name":  "Kinder Гаррі Поттер Kinder Joy Funko Pop Harry Potter Return to Hogwarts Набір яєць 3x20г",
         "price":  549,
         "image":  "enc-e8c8c7d4023602d6da22842336881ce5-4128272ecfab30fbf481d81d2b1116dcd31a0eb8f0fdd241e651ee7de99fd21c10184a17c8c247b997e1e8d8fa162d39b212f7173b134447fa81b66f99a1526604cf7fb65f452af200035dbdb15a749f8992534ed6fab231d41aae04eb565ca16edbc9b718654cc15ba33894d0ec2b1af9e7a3d7b8019a4caf123963b1c200171c27db4de990b998083f8b5996f47d83f1300d240923bbbca07dc2f120fbf1c3",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -4228,7 +4228,7 @@
         "name":  "Kinder для дівчаток Kinder Surprise Fairy Disney Egg Феї 20г",
         "price":  89,
         "image":  "enc-035c92cb2d28abee04f23418cb271c69-6a00aa4b98226b984124da5aa9128667ad1fae27f872f06f575731d21f51c78c359be543496b2e6b255bfd518a3f9d584f611a3dea6cabb9bbe3946606497f39d80bc9b964bc434272908a7f76be6a949abd1d19d9f9e6cfdd0cf8f6f849bb57a5c84b70bb2182bdde9d2dd5e374893de78fc8ee0443e2e3840fef325130cc15",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -4244,7 +4244,7 @@
         "name":  "Milka Bubbly Білий 95г",
         "price":  99,
         "image":  "enc-b2df14cdf691ceb3019b62a02350fdbd-31114b3b9c3a645d000b29095314aed6ebee9f1487986ee3710ba329fe2656acf348dfe0d86a4112ee5d253dd9f55fae7611b8032473ca560d1a388b9b316f6b307a60fb99908c60c22a0fcf92c5097af3d96cfff47fb7d6b04d7063d4d4dc58a71648bec7dfe48776a9747ad940ac6e",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4260,7 +4260,7 @@
         "name":  "Milka Hazelnut",
         "price":  99,
         "image":  "enc-269df8b2ba3d45e59f430484187a760f-c3a4f1714a3d6014dc7c3e68704ae059309abe1e141852faa4e53b87f6dbaadeca2477c7a03bce9c7a6c1794b19dbcb3ed02fdaed93c4c3831cb8a717502932c2de2245c5253483aa14214ddc84da52bc65dea9ae2bca0bb485cc1ee8dfb206d",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4276,7 +4276,7 @@
         "name":  "Milka mmax Nusinni 270g",
         "price":  259,
         "image":  "enc-31492e28ff199ce9ad367548e840d982-b6f886c6bd5dbe7531468fe6ed2509e62ebc11b9130007206e0d3635d30aaa007db3f50d21adb31260685aeeb4c617324aa84d67e9b8e24ff74a4f38cd9c7b27311d3b6609ce5dd5b81e62106bb6e5ab85d8607e117a28afc49d62a0825cf7ccfc03e76f8654e931976dffc400a49dcc",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4292,7 +4292,7 @@
         "name":  "Milka Noisette 270г",
         "price":  269,
         "image":  "enc-3f68a24adc28ef36ec6843af54b7eba9-c7b24c82fb8560a73980b4aecbdaca71a92c4e374e4eaea88547d191b93b7ce85820f72c1872157b9855da028de2d540a3fe03c664d5f948390a00fb8b53b1e2a86ea66590b9099d835eb1577995a89e98a2d80d8a22438edbbf35afd9522523",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4308,7 +4308,7 @@
         "name":  "Milka Oreo Brownie 100г",
         "price":  99,
         "image":  "enc-1b65419931d3b8d782ba8418f2051a9c-d280658ccb676c90bfe6c7a8149839e4b117251624ee66916c5a3c0dfd824be2be94408d398f01464526b775f7ad9d47c47ca365787984a51565363a3ec91e4f3bd532ae4b618f00a04bb6c9acee79a122dad146a850593871cca87c0b33c0f6",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4324,7 +4324,7 @@
         "name":  "Milka Peanut Crisp Caramel",
         "price":  99,
         "image":  "enc-a69ba2393976190e83dddcb623c24bdc-8651106fbeeda29af7e04bd75acb1b0332714752334852874d555693cc0fe1a8cbc1bb62cadc4f2a22c3df6dcc586b95b2b63e9278ff430def495af68da8651c63b5e399ab5b82019b5e547a83c18f03f3f5d28a01dd5f99f8681384f55bab2ded0c0e6c30b2403171d01b29c648d9c3",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4340,7 +4340,7 @@
         "name":  "Milka Raisins Hazelnuts 100г",
         "price":  99,
         "image":  "enc-2685f7aabd56c557f27d559cd81ffbe0-aca97012865f386696f9200936a37e5fdcfcaee0059cdc565e21c43d0d8c594aab6086ee09f9496e3cbae2560f1e4de3d54333fdb3bd19135d5fcfd6900fcb3cf262cf8bce139c88f47ff1f32c39acbf9dcd05194fc9d6006831bdad80d532b5ca018fc9e5461e88d456fee3c70218c2",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4356,7 +4356,7 @@
         "name":  "Milka Trauben Nuss Родзинки і Горіхи 270г",
         "price":  259,
         "image":  "enc-a127f07a9cb16515830261ee35c5233a-0544f7307689100b77c7b2c12af577ff588d26a7eb6ca3512341dd384ea873e5735b5ebfb243a96fe6f4a7480db201ecb6eeb003c6fec5ec22e7b064e413790b76f69a3247651cf76b945376e3249d91a4525cff2d05b76ea8c74eb97882bdacb47007605457d3a61a1cde19e0d92e66",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4372,7 +4372,7 @@
         "name":  "Milka Triolade 300г",
         "price":  279,
         "image":  "enc-25d31d54f224e6c3466c7c7f2aa339ca-e2c82a30c632c4ec2a9b1f32ba487f6152c91dc334176bc960d45449906c6220732b9257e3a03a4551cc79510ee1b058e917c3c78ff23c8755cb7fd8eabc6a6d89e5a523b592df035c0fd77c784525587e2c631d6a0304b2488050d449de08e5",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4388,7 +4388,7 @@
         "name":  "Milka Whole Hazelnuts 270г",
         "price":  259,
         "image":  "enc-9ba338d7e6389c01752b90ef6c517836-3496b372147b03e1ada98688a02c17c84ff723556bfb30aaa953a2320577c2bca3cd6190dae058a7401b461d4847f37d42ccb4a724712599bb4f90ff7a4dc82256189dd74aec52d382b3e1ddd8b558fc8e006279d2aa08da584d918a66ef023684408032ac26f550c7f13324d243228c",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4404,7 +4404,7 @@
         "name":  "Milka Карамель Daim 100г",
         "price":  99,
         "image":  "enc-dcd23e439e3aab00e5e2514442de4c4f-a7595343286a62e08e7639166bf2b1ee17b7965aeb44e57a97f7a362668e1a8c16df93f6f8c25b460f1b597ba6ba0e79b4911bac2209ea8c983e4d607cf276be7142788f541b4f5102ce8700c9bd52812770f3528c3ca43a7975b30789a408c4502857d78487f3a478b7f62c3116d053",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4420,7 +4420,7 @@
         "name":  "Milka Печиво Бісквіт 300г",
         "price":  259,
         "image":  "enc-bf831130dba7d9e03624833832b40a3f-5a6de45d809f511498363f281d060725ba769ed3bf3843194f592ec895ef1f41e47d870031e87894eb302d0a958a1b5a5983ecec3c543ab3c088c54776024974c600316583d5b8e94424d53ed71788362ab748a2078bb41e900a093e36be6b054e070ad991959e1d384dc808dfa0a577",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4436,7 +4436,7 @@
         "name":  "Milka Полуниця 300г",
         "price":  269,
         "image":  "enc-5e396978f8fb549fb13116bfca4143fc-6f8e800dbdb573627df44307ecdcdae4d813f602d0c87e7a5d987d7cdcec25eeabb1690f2e36b98fe38cb68945afbd0ae418cb6d53e655e763c31dc181a4724f1c76d731a0dff6e2e191a33b597c4f583c017549ecfaf1112df39cd88b64fe4aea08bb972356d86ff5c8519253108c02",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4452,7 +4452,7 @@
         "name":  "Milka Трюфель Мигдаль 300г",
         "price":  279,
         "image":  "enc-f6dd00944c4a1041c735fc97a4d26613-e91fa4bc0e97c28283c69c7d806e04c0fe1be27fd7d7035b702cb8cde2e4422adb588484e0f561fb3cbda61567fdff86fa9aa039bfb648a3c682dcfed7ad2bdb8f99a1ff872bd5eb9e89480850ef91c9e45118587e9fc9292ac39b74e6761613",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Milka",
                         "country":  "Німеччина",
@@ -4468,7 +4468,7 @@
         "name":  "Toblerone Dark Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
         "image":  "enc-69fa8714e23971af5a56d271042bbacb-bbcc63468720c9a13e0a73d8fe489f407c0c563dc6d347c3b14d4ed4dd4919565b5a42a5d6be616d609d127bd5430289709944ec6fefe7447a69e7d12b6cd09257c83d8663f122a026bdef05f1b51f774f6a5f090459c364e3b821a03a887e4fd004a50e5fac4f84b9ea00214054348e66e1f9e8229731a8ec441fa1523cb359792da4ba12902ae188dfe7d88e2b9102",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Швейцарія",
@@ -4484,7 +4484,7 @@
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
         "image":  "enc-0cdc4797c70d8d13311e9421c40e69b2-844bd945c4b421c04249c6546565a39325957248d289b556cb9c70b426729ba4c7e8e247afdf8bbdf61d4b1c9a7b944852d88510475b88dfba1d377e9a51eb43d8654d26cf6ddeb868f62c8b47fd52c36334e549f76474f30a1a210310dc0ba5f444cbfe9e35ec7562927f5d5a530053722e317c582cb6056d3d771a3f0a19f0ddfeef66f667b56fc1f688378f0ff1b9",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Німеччина",
@@ -4500,7 +4500,7 @@
         "name":  "Toblerone Milk Chocolate With Honey \u0026 Almond Nougat 35г",
         "price":  49,
         "image":  "enc-a1e55698b117bd9f5bdf00bf3170db48-571791dc3df742f95e88bd09ceefdba90e93aefdd7a591ca0b1b0144e4e375b32381f675f87ab39f6f4939187afb7c061f325a7c0ca14f847c4a1739e4a66b71023fdaa5d274e0cbea6e4bf88cbcea388e24b577fe18cbd2f1ef255ec4ed47abdcf415bcb29881b343a3e559d452bfa7cde1072e92eca7a80efaaffe06b1a28629d2820539246346ddd29cf5867c552a",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Німеччина",
@@ -4516,7 +4516,7 @@
         "name":  "Toblerone White Chocolate With Honey \u0026 Almond Nougat",
         "price":  149,
         "image":  "enc-117bbf75e2fc5fdeea2f0bf71415c68a-2dc2952610e443c48ad2ab7b9c979f6139cec29718f4a7af4d7ae9ebdfe2257da870d8d132338c34c1e63c5dfa71b7c1295d744a87df19119174310c4652db78051b4e3361b3d0487d30ce2ef01737b7f2cbbe837c6fc8801da1e537062e6c95d007215fae125bf133ec082e41dd3475e576e0530b47dbf3bbb0cb0268a1c654b5aeba759c117d21ed0be4725c3418fd",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Швейцарія",
@@ -4532,7 +4532,7 @@
         "name":  "Toblerone Родзинки Мед Мигдальний Нуга",
         "price":  139,
         "image":  "enc-935503052935afab2d2e403b8c62404c-488e65324b63d9147905bca78547523ce3f09a2cbc864e713b6f5f3a0624212823cdf2766c67f46aa6fe231bdbc9455d0e1507f61d12ef314e2b81978f74e8c5594a7ee616ee0b0299e3dcec1188aa403b7c0c100fc9a27a8b71103f26d0107af8261e8850400479bda8450a53062a56",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Toblerone",
                         "country":  "Швейцарія",
@@ -4548,7 +4548,7 @@
         "name":  "Апельсин шоколадний з м\u0027ятою Terry s Chocolate Orange Mint 145г",
         "price":  199,
         "image":  "enc-31edd7a7c86451540335d69344fb4947-e183095b46ffe87619442d91f4e2ae335a527c7d958bc665e39c1e0984f29266e9219523ec3d20d5934470c89f18d825cfce9240ad8aa7b7a78c064654dbc338832ccd8f70491c32efce15c94b0711ee4c4b927ff1a8530f8cde0b68a4f8d84128b18eda0652ed7e6f87e84717f5a0da",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Апельсин",
                         "country":  "Німеччина",
@@ -4564,7 +4564,7 @@
         "name":  "Білий шоколад Lindt Nuss Selection Weiss-Mandel Фундук 150г",
         "price":  249,
         "image":  "enc-9dbac4c99ad7ff7cee25fef0d42a9ccb-a27e7da40860a0dcfc9c52d79948d1894446f956ceee29d33c5e4cef56a2ccd2a6c4c827b17727ddca7a11baebf06fc0aef60e6cb9bccea322517d45c02244f0dd889d88473dcd8e393e5ad1fcebe994685b9153719c930822d53b2e11f6ac8a08118bfd1a048906edf5cb0594e728eaf14695cb54a3acbdbc378adba1038cbf",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -4580,7 +4580,7 @@
         "name":  "Білий шоколад Lindt Tokyo Style Chocolade Matcha Strawberry 145г",
         "price":  899,
         "image":  "enc-ae00f2d9a5c6a3d38a2fd0d44b736e68-66e89ff870c22cc30e4736b9ddc8fb023fe4fab077c29185261d0c8a4b14401bdb45612698fb1de63e85192b9111924c40eb1bda6341e3ef56a536ffd358916069aea49cd305c90dd3e86a96e315588f1b341ff24c60b7c6153692a66bc57f7a6659b5ef245858632475d3e1b1b52a0ae20ef7ddbbc23322ed3db3c4e17c6a3eba8c0a426277fe5ae4ae864a278cc934",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -4596,7 +4596,7 @@
         "name":  "Білий шоколад MrBeast Feastables Pretzel Mint Crunch з шматочками м\u0027ятних льодяників 95г.",
         "price":  399,
         "image":  "enc-b4c19b13a07971796ed33680df51b162-55607b6ae4de8b76edad91f141f1fe8c4ea43e0ffbef396f04078f6c0e1aaed79c0e803ddee5c2643a2dcc89ce65e33790c928623b08b7ce71c72c33f8830e4bc63582ad629f2465ccc378dd41f5f42e4d00cbf9bf35bd6804e32acbe6a934f2e95f186166c74b0ca21662ae63f12d8565246897b8cba243aae5786d1692caffed9713fbf12fe8e471a9fb53ba57e67aeda13d5462998607adfd4eacf63adb4e788fb11648cbbe87d82a830725e56bdd26879841199ab7d4e000389eae1fa34c5a7cfdfc8fb7acd4b76123645cdc8be0cc677c3d016fc7b3f88346ddcfd41ee1edf0573730cc25ea121ea0a0c336833b96316188f355c3879445fcc334462936",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Білий",
                         "country":  "Німеччина",
@@ -4612,7 +4612,7 @@
         "name":  "Білий шоколад Reese\u0027s Peanut Butter Bar White 90г",
         "price":  259,
         "image":  "enc-442c7aaa6bbfc6648f56dbd7bafd53c6-8b18e30429fce851b642aeccb85a460bcf97435f754e7a846c991284f9a9254c8aa44d72db9a89d664e32ebbef5428afa21d2997ed3b859acd9f7d0645d8b1405b0be3b76623973bdead3b36957cdc7004dce0fcca8a99935787088b689237f12b8392e58c9f47fcae0a3f801e5445d4e5efdde9762f7f7e6319b78164aa4b19",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Reese\u0027s",
                         "country":  "Німеччина",
@@ -4628,7 +4628,7 @@
         "name":  "Білий шоколад Twinkies Candy Bar з кремовою начинкою 60г",
         "price":  129,
         "image":  "enc-fce9c3d8363be9e3c30e41fc7e810ce6-4a02f69ce2a9325fe13b98ef725e6e01f901dd58bfe4350c80d67372b86933bbf04066cb98297df164f228dd76297fdc4da320e98f1d3f633cec7fbc65669418694914cca9ee0bc53cc97d8a04adc5bd40dbbe0bcc27128c41b688019897ec9124bf43236c10a8224d338380a734e040",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Білий",
                         "country":  "Німеччина",
@@ -4644,7 +4644,7 @@
         "name":  "Білий шоколад з драже Ritter Sport Smarties White 100г",
         "price":  149,
         "image":  "enc-d4423eab78dd13e03ab16b948efaa4a7-b81abc7647ceec11987a51d8bf0c2da7929f0c901342cb76a022e74a1cbcb08ac36012bd544dc69f165413e94afcfd2ef36b659a0322b09b96533cd7eda1ab211ddfff6f876fdd5c49ec107cf069b7a773fc18bd9467cc38cd84437fc341b2a44f1b1e5a6e40b27136335d4d059919418755c783d6de964be8deb4ab2489b8ae",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Ritter Sport",
                         "country":  "Німеччина",
@@ -4660,7 +4660,7 @@
         "name":  "Бельгійський шоколад Chocoboo Exciting Taste молочний 40г.",
         "price":  209,
         "image":  "enc-dc0d37dbe7235fb02e4dec749a5cbfcb-415113be5a68d9837402a73283f590f9d8deaf2117ecd444d9d46d8f8cfa017ef3846a9b1fd33bb18d13b2566e553e0b6c330202e87eb1d3a88d2690e97201ebd1c52d405a7488a73c1b12a0480e4cef713537b13a71a91ee7b49f3da27e7315e491a00f3e8f45fb54ac60451d67303e72ff62626210384582ff79c06ed28983b7ec6cfa6dcd86584d80fd9ce8cb4ab7f5df6ca8fdfbabe8baabc7e997b421872f1ea6720015556ed38d04da93e0782ef80a6ab1d540f88c9b96cb04778c2985fa7f5d35d381de91e8302c3648e9092ef8ef64c95079ce7ef0ab395570d1fe6a",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
                         "country":  "Бельгія",
@@ -4676,7 +4676,7 @@
         "name":  "Бельгійський шоколад Tabby Crunch Chocolate Fried Chicken Курячі ніжки KFC 50г",
         "price":  199,
         "image":  "enc-4a8faa8e151ca06308f62b156cfe76c5-a683205037fd851c3d597a8b16ff5ba8acc86210e1fcdb5bdbc594a6ebf00a24bdeab7e12af9786053d293222eb34191f2b23768cef817f5e55fa6b66b413ee89affbfe49f8b7538df0d7594126779681b3bb23d54cdf338e7b6f8f82c14a31c710bfe70336cb10848d10c234633c6087915092c93488e40bd2febcc865ad515b45a58c02bd97e0598eb98b5925aa95a",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Бельгійський",
                         "country":  "Бельгія",
@@ -4692,7 +4692,7 @@
         "name":  "Вафельні батончики Oreo Dark Chocolate Wafer Темний шоколад 139.2г",
         "price":  279,
         "image":  "enc-c1fb840f92ca2bf6eabaca4722a9746e-10f8b628b24221b37df3450680c7ab6d2cfa7f70a26c06af972b3e67c94f33fdeb86b5b29ecc0e7e18a170dbedcd69cec77e80daa572b32b56b6a6c9d82978dae347c84a4b273f31f7e7c447613c2b65b18978beeb8fc04dc61c0d9386e8a389ad824c05cd5be5299709b8fd26cc22fbddb5f38eb986a67a36bfcfdc07aa1a9c",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Вафельні",
                         "country":  "Німеччина",
@@ -4708,7 +4708,7 @@
         "name":  "Веганський шоколад Lindt Classic Vegan Hazelnut Chocolate Bar з фундуком 100 г.",
         "price":  269,
         "image":  "enc-67037c59ab563df5560e90866fc11cf3-7792fce8e812fc8da2e028227d6db61ebdb2f42ea2ef05dce0dd102924f17a964893dd993ae493efeb887003d3f63f6f362b15177fc57f998593e278d2163254e56e4e7f4affca284e59a23baa26127bace89616949fe73f929b935215c19104117f05e1ed461d5c089b952ac89e79e976e9c106765093385a4ed95089f7b699dff639535a941eb29b6f0201f3e1e63565ca7f179e022e417054f26bea527ca9",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -4724,7 +4724,7 @@
         "name":  "Веганський шоколад Lindt Classic Vegan Milk Chocolate Bar молочний 100 г.",
         "price":  269,
         "image":  "enc-6159b8f2387ffa2d090ca4a5d5861a28-a198a3328a8b9048e4051ce356668ad320444e155e1d90453430a3f44e93e7466a3622fdc8c60fe2449179239a8557cd65ab79ca0be23911885eba9d09610fc68c604c180dd42952b958fb531e3996b12e7cba87dfa3aca898327e5b12a190f76f2be97b21c9dba5e84c7a77d13fe7ac2e38fe49ed91057bdb8a9765ba227c26a215888f08aa6edc60c38c88e5486abfb6c02fe58de4a6657a5db97918202b4f",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -4740,7 +4740,7 @@
         "name":  "Велика Цукерка Raffaello Grand White Chocolate Білий шоколад 125г",
         "price":  549,
         "image":  "enc-241a971b7ff8b514840c9162e99d8330-d37c4ac44939ff68d268cda101099b816bf32649e3a9f734fe11200def4092768905ef6b0a8ad5200f4179413df79e6588fbc1ecd52884d5d3fc3f18f14062a6ad0b8dd3d6b571736259bbab6b8eafec2ef0239bad63d0bc3db9d6b697f116b763d4ebb3550795a90c5465045d9bcc93",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Велика",
                         "country":  "Німеччина",
@@ -4756,7 +4756,7 @@
         "name":  "Велика шоколадка Lindt Swiss Premium White Chocolate Almond 300г",
         "price":  749,
         "image":  "enc-f69204bc1af9ec36f84667e47cdae18d-a0f745ccbc0a3b2f7db629aa1a2c61c1cddaa3f80b1ef459e68ba2fd382af4c986fa0cab7845a281e255bb0db8272032014fed58a04b33b9ac7124d65930c82f278289803c64842f8e18662e1d795ffbf7f887205adbb32c28699ef1980074751ca7b18206d08f22ee9a59641af3de59cb3d0b40e6fa4aa78ddc7b0d37ad2b2d",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Швейцарія",
@@ -4772,7 +4772,7 @@
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
         "image":  "enc-1e578c57b9fa41abe1b3ac594597e5d2-a7905d0aa5933ae6908c4360e6715bbe7f7bd788825d97b67ff2554ecc1defac5156b220c9923b629b343545a9d5b8e9806c50c6bec12dfe0ed7c304f971fd4c57ec6b4da64652df7e2e2e4d3cf69b513c2c7c2d87775623e901f9ccb80b8408",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -4788,7 +4788,7 @@
         "name":  "Величезне яйце Kinder Surprise XXL 220г",
         "price":  999,
         "image":  "enc-44401ef5664dad9e480776fa893a9cd5-fe9da972506406f702d886b0320fb40f4da8b4bb1b14824ce8330e6714208b5148cae6d515172877d3379b23d93acf48d5efa2048d2b8ea0241db89d01962b3f24cbe6432b6cc03722e2c36050b1671eb9bc43860ea33144ec5750b457e10a6595e6ccefbd958ca475b08fe71c9db96c",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Kinder",
                         "country":  "Німеччина",
@@ -4804,7 +4804,7 @@
         "name":  "Дубайський молочний шоколад Bolci Dubai Chocolate Milk Kadayif Pistachio 200г.",
         "price":  549,
         "image":  "enc-eb7ada24c17a947f3708fb9a7d53f0c8-c0361a57d38404090d6ef61f79907c2273db41ff9a4a5f4307196db8b085b474640fabf3c0249e39e46d4c0ac0738b7b7fe5e4c19409bb85a1997ea2ac1a48bb22fdf3f5502d8e1f3158e2698d57f82405f34b2c39c42b0a7bd6e86ff0a4e257a82cc8b0fc2aa81bc19cbc8d98e92a88f1aa8b310683573ea386ba8c2c7c4b1cebd46a00ef86f78505747da11584052f44c180152c2d4e6d17b036c7aa3039347d2944399103dd4cfb638830e3ac7e64f9b2d0e6f988e68b608b00197cb8f92d5afe5b515313bc7ed29119c7e15db41703c2e3073d4fa5734fbe21590993543436ee7a661c468fe7612f9f2b06d609bf83dd55d83fe50eee100bc6a247d39472",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4820,7 +4820,7 @@
         "name":  "Дубайський шоколад Bolci Dubai Chocolate Pistachio Kadayif у коробці 256г",
         "price":  959,
         "image":  "enc-bb1c0265eac802c757810f2cfd106107-a510abad92bdd783c3bdcf605d5f401432c399ec43a5f0fb7645b0a65f8a58d3530c206274852182f05e96c18e05a4d2970c8c8c3577cbddd5cd8202e99e56b414b4f3794c2785d88f910cc74191027488193050e1c01c9a9f60b605403d53ab5dc1f1d6e76dc660c81431ac6eb87b3431626da0ecbb674e8a71713fecd01d81",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4836,7 +4836,7 @@
         "name":  "Дубайський шоколад Bolci Praliny Dubai Chocolate Цукерки 96г",
         "price":  429,
         "image":  "enc-48d8a2bc92696b78a96bd9b49ceab86d-e9e2865dd8592639cdc216378d3201c1cd0a33b413e726a1648cbf1ceb7eaeb1022f64b08d301bef1211fa8b3e7537320e7e731a5b53b35d76fbe89e36577a1d80eeeca944299adf079141d53d782bd9f6843957c97f0dec48f07f639840128a9f7022b9a328997b4bffcf3313d61281662ff4cd257893609cb218c900731c76",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4852,7 +4852,7 @@
         "name":  "Дубайський шоколад FIX Biscoff Spread Біскофф 100 г",
         "price":  409,
         "image":  "enc-a97a1ac74ae1c07733750e9615a8e426-8b4660b21a5bd2747734e31cb6e63861b3f65fb9cc86767af936b3063f2d3ad62377090eabad76acde00efbb5160339c0fbeb56773cdcb9030ebdb83abb057a6b3bd24ba70b4e3caec9ecaa1612c6035236039eecd5bb1e93b05927b5987b9e973c15dd5b296243885bbb070aab3ad4c",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4868,7 +4868,7 @@
         "name":  "Дубайський Шоколад Fix Chocolate Dubai Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
         "image":  "enc-2769d7f525c04a820d2d07a3cedc93d3-5bbf4983df12e851f72c324a78d7c5361105e1934fd9edf0399cbdb3a063b9bf44ad6c878be6c07b9127ee4d5679fd2afa8bb695967aa231e1098b4f621f01b9a37289145492c73e4bd6e333e3c0e95355f2f47a80995facf981bdd26464ea6aa036c7cd4fd82108cd9e06ffc466d42c993ec258bff1b9fc8fd41650455a7e9ac3c1fdf89b9c4554d3cd7950bc9e7031",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4884,7 +4884,7 @@
         "name":  "Дубайський Шоколад Fix Chocolate Dubai with Knafeh and Pistachio з фісташковою пастою і кадаїфі 200г",
         "price":  799,
         "image":  "enc-02988a2fd1bc1ef6cd4cd30196820f2a-e78a0afd61e3263990d43ac17a06a7d00d2d2a428d5da740866b624bfff2ce5b70df2c9829b5ae6c9e801109f882188094387ee390329a3f11f284dc0c6fdaafeeb5b5cf001cbf200bffbdf7da16e83431578d46794506a6c35ec2a4ccd2ea73c5f0f3a92d9f31063536bba6c580852c0f4b23bf72bbc29932bc7955a986cca8a1aecf463ae20f83a4baccca7b062a71",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4900,7 +4900,7 @@
         "name":  "Дубайський шоколад Fix Chocolatie High On Hazelnut Лісовий Горіх 80г",
         "price":  349,
         "image":  "enc-4c87393b7afc29bd2d430bb695514144-94149213bbacf44456d64f2ddd78d83dd23a5f50a9ca8b4adca179ab9d760fe0c3bf849af991f9cfc5fa1bc35a30629b5910511e96cfcc5fe9278a179cf5a428e19693deb85f4878d7bf34a1a7cf80cf6468fd032e444c17b26360440da1dfc27ad1e890550806c19bc8ad1edadf64323bbc2d871a541bb1de0071b485ea5bfe",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4916,7 +4916,7 @@
         "name":  "Дубайський шоколад Fix Mind Your Own Buiscoff з Карамельним печивом 80г",
         "price":  299,
         "image":  "enc-2876812128774379326668dbed61a4a0-5ca0c3da902b8279cb5c326502ce1887aaccf378593832fb66589d00fe3bcbfabeafa934ffc7d99787b4fc5caefcc7e4000b63f170e5a6603b1a7e0146184939ec1219642e948eabcc31f55a06a4fbaac950af48fb5c00f09a32ab7d04d5e38686d20c78b0d2261ae9e46571b0cf03525db32052eca08015a67c97e9ae31d20d",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4932,7 +4932,7 @@
         "name":  "Дубайський шоколад Labudubai Chocolate з начинкою катаїфі та фісташкою 30г",
         "price":  99,
         "image":  "enc-6699599b08b629d1dbeae98745a55f7f-917ff9c45344d91736a1a72047a99040acb595857ec5a8c9379a65b08c99a635a0ec34261df64deba6c11c835886a49ba92edef023894ef3266464fdad541b1993264faebb80592c70bdfd1647ffce7ba537402d862274a8cf810de98004d96c8401e6ddd473056019a8a8ff3d0073094f12ece187fb1b0201dced34b9e4a6ad174d1cb052ebf3b0b08bbc217c745efd03ac5677c76e0c182eae25e566ef2cc5",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
@@ -4948,7 +4948,7 @@
         "name":  "Дубайський шоколад Lindt Dubai Chocolate Bars 150г",
         "price":  1199,
         "image":  "enc-e5d6a3398e40c84b99eca3b1262cf930-41bc65c45a2045c84c045b43dd04d2f05d9c62f9bb03db914df3aa5b19288b17ec36ab12d208835ad5fe2a8d9321cefafe0aca89b31172f5fb06ee056bc69a72d44e96271930a775ecb312d2586edd7838f1f545ab7f27797bc2a5741fba2727",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Lindt",
                         "country":  "Німеччина",
@@ -4964,7 +4964,7 @@
         "name":  "Дубайський шоколадний батончик Rosso Bianco DubiGof Crispy \u0026 Creamy Фісташковий 30г",
         "price":  59,
         "image":  "enc-407d63cc83249e20b8f90fd3a2200c51-3a68d1f7a31e4db25dd641331cfa4fc50ee23314c1063c555bb80b5fbd0c11d29ffafd230543f880fdd32b0bcfac7d0ee28a622f0ba39aceb615fa29d51b06dec282a74c089445531255791b9f8e675579032b92e08cad576b22ae19c0837b73082683f666726b0b8cd41c5c66bbe10cc6f431bba2d3a5ce3844caabc114df9ea8c66418fd139f04e36eb637e9acfc35",
-        "category":  "Шоколад",
+        "category": "Шоколад",
         "details":  {
                         "brand":  "Дубайський",
                         "country":  "Німеччина",
