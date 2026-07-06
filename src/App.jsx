@@ -23,7 +23,7 @@ allProducts.forEach((p, index) => {
 });
 
 const categories = ["Всі", "Акції", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі"];
-const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
+const navItems = ["Всі", "Акції", "Напої", "Снеки", "Шоколад", "Печиво та вафлі"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
     const [currentSrc, setCurrentSrc] = React.useState(src || fallbackSrc);
