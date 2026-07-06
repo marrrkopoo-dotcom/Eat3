@@ -1341,8 +1341,6 @@ const App = () => {
     return (
         <div className="min-h-screen flex flex-col transition-colors duration-300 relative bg-gray-50/50 dark:bg-darkBg">
             <Header 
-                isDark={isDark} 
-                toggleTheme={() => setIsDark(!isDark)} 
                 cartItemsCount={cart.reduce((s, i) => s + i.quantity, 0)}
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
