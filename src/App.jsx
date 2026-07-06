@@ -22,7 +22,7 @@ allProducts.forEach((p, index) => {
     }
 });
 
-const categories = ["Всі", "Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики", "Снеки", "Шоколад", "Печиво та вафлі", "Акції"];
+const categories = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі", "Акції"];
 const navItems = ["Всі", "Напої", "Снеки", "Шоколад", "Печиво та вафлі", "Акції"];
 
 const SmartImage = ({ src, fallbackSrc, alt, className, style, onFinalError, onLoad }) => {
@@ -1307,8 +1307,10 @@ const App = () => {
                                     <ul className="space-y-2">
                                         {categories.map(cat => {
                                             const isPromo = cat === "Акції";
+                                            const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
                                             const catCount = cat === "Всі" ? allProducts.length : 
                                                              isPromo ? allProducts.filter(p => !!p.oldPrice).length :
+                                                             cat === "Напої" ? allProducts.filter(p => drinkCategories.includes(p.category)).length :
                                                              allProducts.filter(p => p.category === cat).length;
                                             if (cat !== "Всі" && !isPromo && catCount === 0) return null;
                                             return (
