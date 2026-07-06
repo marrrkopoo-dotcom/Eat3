@@ -2215,11 +2215,12 @@ const App = () => {
                                                 {expandedOrderId === order.id && (
                                                     <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 space-y-3 animate-in slide-in-from-top-2 duration-200">
                                                         {/* Customer info */}
-                                                        {(order.customerName || order.customerPhone) && (
+                                                        {(order.customerName || order.customerPhone || order.id) && (
                                                             <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4 space-y-2">
                                                                 <h5 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Покупець</h5>
+                                                                {order.id && <div className="text-sm font-semibold text-primary">🔢 Замовлення {order.id}</div>}
                                                                 {order.customerName && <div className="text-sm font-semibold text-dark dark:text-white">👤 {order.customerName}</div>}
-                                                                {order.customerPhone && <div className="text-sm text-gray-600 dark:text-gray-400">📞 {order.customerPhone}</div>}
+                                                                {order.customerPhone && <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">📞 {order.customerPhone}</div>}
                                                             </div>
                                                         )}
                                                         {/* Delivery address */}
