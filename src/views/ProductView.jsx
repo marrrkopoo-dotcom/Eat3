@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import { useAppContext } from '../../contexts/AppContext';
-import { useCart } from '../../contexts/CartContext';
+import { useAppContext } from '../contexts/AppContext';
+import { useCart } from '../contexts/CartContext';
 import { ProductCard } from '../components/product/ProductCard';
 import { SmartImage } from '../components/ui/SmartImage';
-import { allProducts } from '../../utils/data';
+import { allProducts } from '../utils/data';
 
 export const ProductView = () => {
     const { 

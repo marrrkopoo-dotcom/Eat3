@@ -1,8 +1,8 @@
 import React from 'react';
-import { useAppContext } from '../../contexts/AppContext';
-import { useCart } from '../../contexts/CartContext';
-import { useAuth } from '../../contexts/AuthContext';
-import { useChat } from '../../contexts/ChatContext';
+import { useAppContext } from '../contexts/AppContext';
+import { useCart } from '../contexts/CartContext';
+import { useAuth } from '../contexts/AuthContext';
+import { useChat } from '../contexts/ChatContext';
 
 export const CheckoutView = () => {
     const { navigateTo, setActiveView, setActiveNav } = useAppContext();

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAppContext } from '../../contexts/AppContext';
-import { useCart } from '../../contexts/CartContext';
+import { useAppContext } from '../contexts/AppContext';
+import { useCart } from '../contexts/CartContext';
 
 export const SuccessView = () => {
     const { navigateTo } = useAppContext();

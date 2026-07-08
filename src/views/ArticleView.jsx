@@ -1,8 +1,8 @@
 import React from 'react';
-import { useAppContext } from '../../contexts/AppContext';
-import { useCart } from '../../contexts/CartContext';
+import { useAppContext } from '../contexts/AppContext';
+import { useCart } from '../contexts/CartContext';
 import { ProductCard } from '../components/product/ProductCard';
-import { allProducts } from '../../utils/data';
+import { allProducts } from '../utils/data';
 
 export const ArticleView = () => {
     const { activeArticle, navigateTo, activeNav, viewMode, setBrokenImages } = useAppContext();

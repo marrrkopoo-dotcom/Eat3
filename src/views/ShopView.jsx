@@ -1,9 +1,9 @@
 import React, { useMemo, useEffect } from 'react';
-import { useAppContext } from '../../contexts/AppContext';
-import { useCart } from '../../contexts/CartContext';
+import { useAppContext } from '../contexts/AppContext';
+import { useCart } from '../contexts/CartContext';
 import { ProductCard } from '../components/product/ProductCard';
-import { allProducts } from '../../utils/data';
-import { promotions } from '../../utils/promotions';
+import { allProducts } from '../utils/data';
+import { promotions } from '../utils/promotions';
 
 const categories = ["Всі", "Акції", "Напої", "Снеки", "Енергетики", "Шоколад"];
 const itemsPerPage = 20;

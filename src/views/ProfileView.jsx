@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useAppContext } from '../../contexts/AppContext';
-import { useAuth } from '../../contexts/AuthContext';
-import { useCart } from '../../contexts/CartContext';
-import { allProducts } from '../../utils/data';
+import { useAppContext } from '../contexts/AppContext';
+import { useAuth } from '../contexts/AuthContext';
+import { useCart } from '../contexts/CartContext';
+import { allProducts } from '../utils/data';
 
 export const ProfileView = () => {
     const { navigateTo } = useAppContext();
