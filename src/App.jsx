@@ -168,7 +168,6 @@ const Header = ({ cartItemsCount, searchQuery, setSearchQuery, isSearchOverlayOp
                                                     ? 'text-primary border-b-2 border-primary' 
                                                     : 'hover:text-primary dark:hover:text-primary'
                                         }`}>
-                                        {isPromo && <span>🏷️</span>}
                                         <span>{item}</span>
                                     </li>
                                 );
@@ -327,7 +326,7 @@ const promotions = [
                         <p>2) Зверніть увагу, що мінімальна сума замовлення на нашому сайті становить 350 грн.</p>
                         <p>3) Після вибору солодощів перейдіть до кошика у верхній частині сайту.</p>
                         <p>4) Перевірте кількість товарів, введіть свої контактні дані (для повторних замовлень вони збережуться та підставляться автоматично) та оберіть відділення пошти.</p>
-                        <p>5) Натисніть кнопку «Оформити замовлення». Замовлення миттєво надійде нашому менеджеру і в чат підтримки Telegram!</p>
+                        <p>5) Натисніть кнопку «Оформити замовлення».</p>
                     </div>
                 </div>
 
@@ -714,6 +713,32 @@ const parseHash = () => {
         }
     }
     return { view, nav, productId, articleId };
+};
+
+const getAvatarSvg = (name) => {
+    const lowercaseName = (name || '').toLowerCase();
+    const isFemale = lowercaseName.endsWith('а') || 
+                     lowercaseName.endsWith('я') || 
+                     lowercaseName.includes('ольга') || 
+                     lowercaseName.includes('олена') || 
+                     lowercaseName.includes('ірина') || 
+                     lowercaseName.includes('марія') || 
+                     lowercaseName.includes('підтримка') ||
+                     lowercaseName.includes('ольга');
+    
+    if (isFemale) {
+        return (
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-pink-400 p-1">
+                <path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-1.63 3.69c.8 1.48 2.37 2.31 4.13 3.31A2 2 0 0 1 21 16.73V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3.27a2 2 0 0 1 1.5-1.93c1.76-1 3.33-1.83 4.13-3.31A5 5 0 0 1 7 8V7a5 5 0 0 1 5-5zM12 4a3 3 0 0 0-3 3v1a3 3 0 0 0 6 0V7a3 3 0 0 0-3-3z"/>
+            </svg>
+        );
+    } else {
+        return (
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-blue-400 p-1">
+                <path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-5 5 5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 10a8 8 0 0 1 8 8v2H4v-2a8 8 0 0 1 8-8z"/>
+            </svg>
+        );
+    }
 };
 
 const App = () => {
@@ -1426,15 +1451,15 @@ const App = () => {
                 title="Перейти до акційних товарів"
             >
                 <div className="flex whitespace-nowrap animate-marquee">
-                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
-                    <span className="mx-8 flex items-center gap-2">🍬 ІМПОРТНІ СОЛОДОЩІ ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
-                    <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
-                    <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
+                    <span className="mx-8 flex items-center gap-2">СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
+                    <span className="mx-8 flex items-center gap-2">ІМПОРТНІ СОЛОДОЩІ ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
+                    <span className="mx-8 flex items-center gap-2">ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
+                    <span className="mx-8 flex items-center gap-2">КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
                     
-                    <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
-                    <span className="mx-8 flex items-center gap-2">🍬 ІМПОРТНІ СОЛОДОЩІ ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
-                    <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
-                    <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
+                    <span className="mx-8 flex items-center gap-2">СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
+                    <span className="mx-8 flex items-center gap-2">ІМПОРТНІ СОЛОДОЩІ ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
+                    <span className="mx-8 flex items-center gap-2">ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
+                    <span className="mx-8 flex items-center gap-2">КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
                 </div>
             </div>
             {isSearchOverlayOpen && (
@@ -1669,7 +1694,6 @@ const App = () => {
                                                                 : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                                                     }`}>
                                                         <span className="flex items-center gap-1">
-                                                            {isPromo && <span>🏷️</span>}
                                                             {cat}
                                                         </span>
                                                         <span className={`text-xs px-2 py-1 rounded-full ${
@@ -2571,7 +2595,7 @@ const App = () => {
                     </div>
                     <div className="text-center text-sm font-medium text-gray-500 pt-8 border-t border-gray-800 flex flex-col items-center gap-1">
                         <span>&copy; {new Date().getFullYear()} juyka.com. Всі права захищені.</span>
-                        <span className="text-xs text-gray-600">ТОВ "СБИТ-ВОСТОК" | код ЄДРПОУ 41899847</span>
+                        <span className="text-xs text-gray-600">ТОВ "СБИТ-ВОСТОК", 41899847</span>
                     </div>
                 </div>
             </footer>
@@ -2615,11 +2639,9 @@ const App = () => {
                                 chatMessages.map((msg, index) => (
                                     <div key={index} className={`flex gap-2 ${msg.sender === 'client' ? 'justify-end' : 'justify-start'}`}>
                                         {msg.sender === 'support' && (
-                                            <img 
-                                                src={msg.senderAvatar || 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face'} 
-                                                alt={msg.senderName || 'Підтримка'} 
-                                                className="w-7 h-7 rounded-full object-cover self-end mb-1 border border-gray-100 dark:border-gray-800" 
-                                            />
+                                            <div className="w-7 h-7 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden self-end mb-1 border border-gray-200 dark:border-gray-700 flex-shrink-0">
+                                                {getAvatarSvg(msg.senderName || 'Підтримка')}
+                                            </div>
                                         )}
                                         <div className={`max-w-[70%] rounded-2xl px-4 py-2.5 text-sm ${
                                             msg.sender === 'client' 
