@@ -1,0 +1,118 @@
+import React from 'react';
+import { useAppContext } from '../../contexts/AppContext';
+import { useAuth } from '../../contexts/AuthContext';
+import { useCart } from '../../contexts/CartContext';
+
+export const Header = () => {
+    const { 
+        searchQuery, setSearchQuery, 
+        isSearchOverlayOpen, setIsSearchOverlayOpen, 
+        activeView, setActiveView, 
+        activeNav, setActiveNav, 
+        navigateTo 
+    } = useAppContext();
+    
+    const { currentUser, setIsAuthModalOpen } = useAuth();
+    
+    const { 
+        cart, 
+        selectedCity, setIsCityConfirmed, 
+        setRepeatedOrderDetails 
+    } = useCart();
+
+    const cartItemsCount = cart.reduce((s, i) => s + i.quantity, 0);
+
+    return (
+        <header className="glass-header sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 dark:border-gray-800">
+            <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+                <div className="flex items-center gap-6">
+                    <div className="flex items-center group cursor-pointer" onClick={() => navigateTo('shop', 'Всі')}>
+                        <img src="images/logo.svg?v=8" alt="жуйка" className="h-16 w-auto object-contain block select-none" />
+                    </div>
+                    
+                    {selectedCity && (
+                        <div 
+                            className="hidden lg:flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-xl cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors border border-gray-200 dark:border-gray-700" 
+                            onClick={() => setIsCityConfirmed(false)}
+                            title="Змінити місто"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                            <span className="text-sm font-bold text-dark dark:text-white">{selectedCity}</span>
+                        </div>
+                    )}
+                </div>
+                
+                <div className="flex-1 max-w-2xl mx-6 hidden sm:block">
+                    <div className="relative group">
+                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <svg className="h-5 w-5 text-gray-400 group-focus-within:text-primary transition-colors" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </div>
+                        <input 
+                            type="text" 
+                            value={searchQuery}
+                            onFocus={() => setIsSearchOverlayOpen(true)}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter') {
+                                    setIsSearchOverlayOpen(false);
+                                    if (activeView !== 'shop' || activeNav !== 'Всі') {
+                                        navigateTo('shop', 'Всі');
+                                    }
+                                }
+                            }}
+                            placeholder="Пошук солодощів (назва, категорія, смак, бренд)..." 
+                            className="w-full pl-11 pr-4 py-2.5 bg-gray-100/50 dark:bg-darkCard/50 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-full focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all shadow-inner relative z-50" 
+                        />
+                    </div>
+                </div>
+
+                <div className="flex items-center gap-4 ml-auto">
+                    {/* User Action */}
+                    {currentUser ? (
+                        <div className="flex items-center gap-3">
+                            <div className="hidden md:flex flex-col items-end">
+                                <span className="text-sm font-bold text-dark dark:text-white leading-none">{currentUser.name.split(' ')[0]}</span>
+                                <span className="text-xs text-primary font-bold">Особистий кабінет</span>
+                            </div>
+                            <button onClick={() => navigateTo('profile')} className="w-10 h-10 rounded-full border-2 border-primary/20 overflow-hidden hover:border-primary transition-colors cursor-pointer shadow-sm">
+                                <img src={currentUser.avatar} alt={currentUser.name} className="w-full h-full object-cover" />
+                            </button>
+                        </div>
+                    ) : (
+                        <button onClick={() => setIsAuthModalOpen(true)} className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-dark dark:text-white rounded-xl font-bold transition-colors shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" /></svg>
+                            <span className="hidden sm:inline">Увійти</span>
+                        </button>
+                    )}
+
+                    {/* Cart Action */}
+                    <button 
+                        className="relative p-2.5 bg-primary/10 hover:bg-primary/20 text-primary rounded-xl transition-all hover:scale-105 active:scale-95 group shadow-sm"
+                        onClick={() => {
+                            if (activeView === 'checkout') {
+                                navigateTo('shop', 'Всі');
+                            } else {
+                                setRepeatedOrderDetails(null);
+                                navigateTo('checkout');
+                            }
+                        }}
+                    >
+                        <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-10 rounded-xl transition-opacity"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        {cartItemsCount > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-black w-5 h-5 flex items-center justify-center rounded-full shadow-lg border-2 border-white dark:border-darkBg animate-pulse-soft z-20">
+                                {cartItemsCount > 99 ? '99+' : cartItemsCount}
+                            </span>
+                        )}
+                    </button>
+                </div>
+            </div>
+            {/* Search Overlay */}
+            <div className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-opacity duration-300 ${isSearchOverlayOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsSearchOverlayOpen(false)}></div>
+        </header>
+    );
+};
