@@ -100,10 +100,13 @@ export const AppProvider = ({ children }) => {
                 (p.details?.country && p.details.country.toLowerCase().includes(q));
 
             const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
+            const sweetCategories = ["Цукерки", "Жуйки", "Печиво та вафлі", "Шоколад", "Десерти", "Мармелад", "Драже", "Льодяники", "Мочі", "Кекси", "Бісквіти", "Солодощі"];
+            
             const matchCategory = 
                 selectedCategory === "Всі" ? true :
                 selectedCategory === "Акції" ? !!p.oldPrice :
                 selectedCategory === "Напої" ? drinkCategories.includes(p.category) :
+                selectedCategory === "Солодощі" ? sweetCategories.includes(p.category) :
                 p.category === selectedCategory;
             
             const matchPrice = (!priceRange.min || p.price >= Number(priceRange.min)) && 
