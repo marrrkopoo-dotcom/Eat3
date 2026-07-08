@@ -689,21 +689,73 @@ const dummyOrders = [
     }
 ];
 
+const parseHash = () => {
+    const hash = window.location.hash;
+    if (!hash) {
+        const view = localStorage.getItem('activeView') || 'shop';
+        const nav = localStorage.getItem('activeNav') || 'Всі';
+        const savedProdId = localStorage.getItem('selectedProductId');
+        const productId = savedProdId ? parseInt(savedProdId) : null;
+        const savedArtId = localStorage.getItem('activeArticleId');
+        const articleId = savedArtId ? parseInt(savedArtId) : null;
+        return { view, nav, productId, articleId };
+    }
+    
+    let view = 'shop';
+    let nav = 'Всі';
+    let productId = null;
+    let articleId = null;
+
+    if (hash.startsWith('#/product/')) {
+        view = 'product';
+        productId = parseInt(hash.replace('#/product/', ''));
+    } else if (hash.startsWith('#/article/')) {
+        view = 'article';
+        articleId = parseInt(hash.replace('#/article/', ''));
+    } else if (hash.startsWith('#/checkout')) {
+        view = 'checkout';
+    } else if (hash.startsWith('#/success')) {
+        view = 'success';
+    } else if (hash.startsWith('#/profile')) {
+        view = 'profile';
+    } else if (hash.startsWith('#/shop')) {
+        view = 'shop';
+        const match = hash.match(/category=([^&]+)/);
+        if (match) {
+            nav = decodeURIComponent(match[1]);
+        }
+    }
+    return { view, nav, productId, articleId };
+};
+
 const App = () => {
     // State
     const [cookieAccepted, setCookieAccepted] = useState(() => {
         return localStorage.getItem('cookieAccepted') === 'true';
     });
-    const [activeView, setActiveView] = useState(() => localStorage.getItem('activeView') || 'shop'); // 'shop', 'product', 'checkout', 'success', 'profile', 'article'
+    const [activeView, setActiveView] = useState(() => {
+        const route = parseHash();
+        return route.view;
+    }); // 'shop', 'product', 'checkout', 'success', 'profile', 'article'
     const [activeArticle, setActiveArticle] = useState(() => {
+        const route = parseHash();
+        if (route.articleId) {
+            return promotions.find(p => p.id === route.articleId) || null;
+        }
         const savedId = localStorage.getItem('activeArticleId');
         return savedId ? promotions.find(p => p.id === parseInt(savedId)) || null : null;
     });
-    const [activeNav, setActiveNav] = useState(() => localStorage.getItem('activeNav') || 'Всі');
+    const [activeNav, setActiveNav] = useState(() => {
+        const route = parseHash();
+        return route.nav;
+    });
     const [cart, setCart] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
     const [isSearchOverlayOpen, setIsSearchOverlayOpen] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState(() => localStorage.getItem('selectedCategory') || 'Всі');
+    const [selectedCategory, setSelectedCategory] = useState(() => {
+        const route = parseHash();
+        return route.nav;
+    });
     const [currentPage, setCurrentPage] = useState(1);
     const [brokenImages, setBrokenImages] = useState(new Set());
     const [viewMode, setViewMode] = useState('medium'); // 'large', 'medium', 'small'
@@ -1150,6 +1202,10 @@ const App = () => {
     
     const [lastOrderDetails, setLastOrderDetails] = useState(null);
     const [selectedProduct, setSelectedProduct] = useState(() => {
+        const route = parseHash();
+        if (route.productId) {
+            return allProducts.find(p => p.id === route.productId) || null;
+        }
         const savedId = localStorage.getItem('selectedProductId');
         return savedId ? allProducts.find(p => p.id === parseInt(savedId)) || null : null;
     });
@@ -1164,37 +1220,63 @@ const App = () => {
 
     // Browser History Integration
     useEffect(() => {
-        const handlePopState = (e) => {
-            if (e.state) {
-                setActiveView(e.state.view || 'shop');
-                if (e.state.nav) setActiveNav(e.state.nav);
-                
-                if (e.state.productId) {
-                    const prod = allProducts.find(p => p.id === e.state.productId);
-                    setSelectedProduct(prod || null);
-                } else if (e.state.product) {
-                    setSelectedProduct(e.state.product);
-                } else {
-                    setSelectedProduct(null);
+        const handleRouteUpdate = () => {
+            const route = parseHash();
+            setActiveView(prev => prev !== route.view ? route.view : prev);
+            setActiveNav(prev => prev !== route.nav ? route.nav : prev);
+            setSelectedCategory(prev => prev !== route.nav ? route.nav : prev);
+            
+            setSelectedProduct(prev => {
+                if (route.productId) {
+                    if (prev && prev.id === route.productId) return prev;
+                    return allProducts.find(p => p.id === route.productId) || null;
                 }
+                return null;
+            });
 
-                if (e.state.articleId) {
-                    const art = promotions.find(p => p.id === e.state.articleId);
-                    setActiveArticle(art || null);
-                } else {
-                    setActiveArticle(null);
+            setActiveArticle(prev => {
+                if (route.articleId) {
+                    if (prev && prev.id === route.articleId) return prev;
+                    return promotions.find(p => p.id === route.articleId) || null;
                 }
-            }
+                return null;
+            });
         };
-        window.history.replaceState({ 
-            view: activeView, 
-            nav: activeNav, 
-            productId: selectedProduct ? selectedProduct.id : null,
-            articleId: activeArticle ? activeArticle.id : null
-        }, '');
-        window.addEventListener('popstate', handlePopState);
-        return () => window.removeEventListener('popstate', handlePopState);
+
+        window.addEventListener('popstate', handleRouteUpdate);
+        window.addEventListener('hashchange', handleRouteUpdate);
+        return () => {
+            window.removeEventListener('popstate', handleRouteUpdate);
+            window.removeEventListener('hashchange', handleRouteUpdate);
+        };
     }, []);
+
+    // Sync state changes to browser URL/History
+    useEffect(() => {
+        let hash = '#/';
+        if (activeView === 'shop') {
+            hash = `#/shop?category=${encodeURIComponent(activeNav || 'Всі')}`;
+        } else if (activeView === 'product' && selectedProduct) {
+            hash = `#/product/${selectedProduct.id}`;
+        } else if (activeView === 'article' && activeArticle) {
+            hash = `#/article/${activeArticle.id}`;
+        } else if (activeView === 'checkout') {
+            hash = `#/checkout`;
+        } else if (activeView === 'success') {
+            hash = `#/success`;
+        } else if (activeView === 'profile') {
+            hash = `#/profile`;
+        }
+
+        if (window.location.hash !== hash) {
+            window.history.pushState({ 
+                view: activeView, 
+                nav: activeNav, 
+                productId: selectedProduct ? selectedProduct.id : null,
+                articleId: activeArticle ? activeArticle.id : null
+            }, '', hash);
+        }
+    }, [activeView, activeNav, selectedProduct, activeArticle]);
 
     useEffect(() => {
         localStorage.setItem('activeView', activeView);
@@ -1207,12 +1289,6 @@ const App = () => {
     }, [activeView, activeNav, selectedCategory, selectedProduct, activeArticle]);
 
     const navigateTo = (view, nav = activeNav, product = selectedProduct, article = activeArticle) => {
-        window.history.pushState({ 
-            view, 
-            nav, 
-            productId: product ? product.id : null, 
-            articleId: article ? article.id : null 
-        }, '');
         setActiveView(view);
         if (nav !== activeNav) {
             setSelectedCategory(nav);
