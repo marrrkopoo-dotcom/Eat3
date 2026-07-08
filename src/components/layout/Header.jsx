@@ -2,6 +2,7 @@ import React from 'react';
 import { useAppContext } from '../../contexts/AppContext';
 import { useAuth } from '../../contexts/AuthContext';
 import { useCart } from '../../contexts/CartContext';
+import { SmartImage } from '../ui/SmartImage';
 
 export const Header = () => {
     const { 
@@ -9,7 +10,11 @@ export const Header = () => {
         isSearchOverlayOpen, setIsSearchOverlayOpen, 
         activeView, setActiveView, 
         activeNav, setActiveNav, 
-        navigateTo 
+        navigateTo,
+        filteredProducts,
+        selectedCategory, setSelectedCategory,
+        priceRange, setPriceRange,
+        calRange, setCalRange
     } = useAppContext();
     
     const { currentUser, setIsAuthModalOpen } = useAuth();
@@ -112,7 +117,77 @@ export const Header = () => {
                 </div>
             </div>
             {/* Search Overlay */}
-            <div className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-opacity duration-300 ${isSearchOverlayOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsSearchOverlayOpen(false)}></div>
+            {isSearchOverlayOpen && (
+                <>
+                    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-30 transition-opacity" onClick={() => setIsSearchOverlayOpen(false)}></div>
+                    <div className="fixed top-[72px] left-0 w-full bg-white dark:bg-darkBg z-40 border-b border-gray-200 dark:border-gray-800 shadow-2xl p-6 max-h-[80vh] overflow-y-auto animate-in slide-in-from-top-4 duration-300">
+                        <div className="container mx-auto max-w-4xl">
+                            <div className="flex justify-between items-center mb-6">
+                                <h3 className="text-xl font-bold text-dark dark:text-white">Пошук та Фільтри</h3>
+                                <button onClick={() => setIsSearchOverlayOpen(false)} className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                                </button>
+                            </div>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                                <div>
+                                    <h4 className="font-bold text-sm text-gray-500 mb-3 uppercase tracking-wider">Категорія</h4>
+                                    <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-bold">
+                                        <option value="Всі">Всі товари</option>
+                                        <option value="Напої">Всі напої</option>
+                                        <option value="Солодощі">Солодощі</option>
+                                        <option value="Снеки">Снеки</option>
+                                        <option value="Газовані напої">Газовані напої</option>
+                                        <option value="Азіатські напої">Азіатські напої</option>
+                                        <option value="Соки зі шматочками">Соки зі шматочками</option>
+                                        <option value="Енергетики">Енергетики</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-sm text-gray-500 mb-3 uppercase tracking-wider">Ціна (₴)</h4>
+                                    <div className="flex items-center gap-2">
+                                        <input type="number" placeholder="Від" value={priceRange.min} onChange={e => setPriceRange({...priceRange, min: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                        <span className="text-gray-400">-</span>
+                                        <input type="number" placeholder="До" value={priceRange.max} onChange={e => setPriceRange({...priceRange, max: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-sm text-gray-500 mb-3 uppercase tracking-wider">Калорії (ккал)</h4>
+                                    <div className="flex items-center gap-2">
+                                        <input type="number" placeholder="Від" value={calRange.min} onChange={e => setCalRange({...calRange, min: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                        <span className="text-gray-400">-</span>
+                                        <input type="number" placeholder="До" value={calRange.max} onChange={e => setCalRange({...calRange, max: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div className="flex justify-between items-center mb-4">
+                                    <h4 className="font-bold text-lg text-dark dark:text-white">Результати ({filteredProducts.length})</h4>
+                                    <span className="text-sm text-gray-500 hidden sm:inline">Натисніть Enter у пошуку, щоб переглянути всі</span>
+                                </div>
+                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                                    {filteredProducts.slice(0, 5).map(product => (
+                                        <div key={product.id} onClick={() => { setIsSearchOverlayOpen(false); navigateTo('product', activeNav || 'Всі', product); }} className="bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-3 cursor-pointer hover:border-primary hover:shadow-md transition-all group flex flex-col items-center text-center">
+                                            <div className="h-20 w-20 mb-3 relative flex items-center justify-center bg-white dark:bg-gray-700/50 rounded-lg p-1">
+                                                <SmartImage src={product.localImage} fallbackSrc={product.image} alt={product.name} className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300" />
+                                            </div>
+                                            <div className="text-[10px] text-accent font-semibold mb-1 uppercase tracking-wider line-clamp-1">{product.category}</div>
+                                            <div className="text-xs font-bold text-dark dark:text-gray-200 line-clamp-2 leading-snug mb-2 flex-grow">{product.name}</div>
+                                            <div className="mt-auto font-extrabold text-primary text-sm">{product.price} ₴</div>
+                                        </div>
+                                    ))}
+                                    {filteredProducts.length === 0 && (
+                                        <div className="col-span-full py-8 text-center text-gray-500 font-medium">
+                                            Нічого не знайдено за вашим запитом.
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
         </header>
     );
 };

@@ -51,6 +51,63 @@ export const AppProvider = ({ children }) => {
         return savedId ? allProducts.find(p => p.id === parseInt(savedId)) || null : null;
     });
 
+    const clearFilters = () => {
+        setSearchQuery(''); 
+        setSelectedCategory('Всі');
+        setPriceRange({ min: '', max: '' });
+        setCalRange({ min: '', max: '' });
+        setStockFilter('all');
+        setPromoFilter(false);
+    };
+
+    const filteredProducts = React.useMemo(() => {
+        return allProducts.filter(p => {
+            const q = searchQuery.toLowerCase();
+            const matchSearch = !q || 
+                (p.name && p.name.toLowerCase().includes(q)) || 
+                (p.category && p.category.toLowerCase().includes(q)) ||
+                (p.details?.description && p.details.description.toLowerCase().includes(q)) ||
+                (p.details?.brand && p.details.brand.toLowerCase().includes(q)) ||
+                (p.details?.country && p.details.country.toLowerCase().includes(q));
+
+            const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
+            const matchCategory = 
+                selectedCategory === "Всі" ? true :
+                selectedCategory === "Акції" ? !!p.oldPrice :
+                selectedCategory === "Напої" ? drinkCategories.includes(p.category) :
+                p.category === selectedCategory;
+            
+            const matchPrice = (!priceRange.min || p.price >= Number(priceRange.min)) && 
+                               (!priceRange.max || p.price <= Number(priceRange.max));
+                               
+            const calories = p.details?.calories ? parseInt(p.details.calories) : 0;
+            const matchCal = (!calRange.min || calories >= Number(calRange.min)) && 
+                             (!calRange.max || calories <= Number(calRange.max));
+
+            const matchStock = stockFilter === 'all' ? true : 
+                               stockFilter === 'inStock' ? !p.outOfStock :
+                               p.outOfStock;
+
+            const matchPromo = !promoFilter || !!p.oldPrice;
+
+            return matchSearch && matchCategory && matchPrice && matchCal && matchStock && matchPromo;
+        }).sort((a, b) => {
+            if (a.outOfStock && !b.outOfStock) return 1;
+            if (!a.outOfStock && b.outOfStock) return -1;
+            
+            const aBroken = brokenImages.has(a.id);
+            const bBroken = brokenImages.has(b.id);
+            if (aBroken && !bBroken) return 1;
+            if (!aBroken && bBroken) return -1;
+
+            if (a.localImage && !b.localImage) return -1;
+            if (!a.localImage && b.localImage) return 1;
+
+            if (selectedCategory === 'Всі') return (a._rand || 0) - (b._rand || 0);
+            return 0;
+        });
+    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter, promoFilter]);
+
     const navigateTo = (view, navItem = 'Всі', product = null, article = null) => {
         if (view === 'shop') {
             setActiveNav(navItem);
@@ -164,7 +221,8 @@ export const AppProvider = ({ children }) => {
             priceRange, setPriceRange,
             calRange, setCalRange,
             selectedProduct, setSelectedProduct,
-            navigateTo
+            navigateTo, handleAcceptCookie,
+            filteredProducts, clearFilters
         }}>
             {children}
         </AppContext.Provider>

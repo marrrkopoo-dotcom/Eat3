@@ -9,88 +9,30 @@ const categories = ["Всі", "Акції", "Напої", "Снеки", "Ене�
 const itemsPerPage = 20;
 
 export const ShopView = () => {
-    const {
-        searchQuery, setSearchQuery,
-        selectedCategory, setSelectedCategory,
-        priceRange, setPriceRange,
-        calRange, setCalRange,
+    const { 
+        searchQuery, 
+        selectedCategory, setSelectedCategory, 
+        currentPage, setCurrentPage,
+        brokenImages, setBrokenImages,
+        viewMode, setViewMode,
         stockFilter, setStockFilter,
         promoFilter, setPromoFilter,
-        brokenImages, setBrokenImages,
-        currentPage, setCurrentPage,
-        activeNav,
-        navigateTo,
-        viewMode, setViewMode
+        priceRange, setPriceRange,
+        calRange, setCalRange,
+        navigateTo, activeNav,
+        filteredProducts, clearFilters
     } = useAppContext();
 
     const {
         addToCart,
-        selectedCity, setSelectedCity,
-        isSelectingCity, setIsSelectingCity,
-        isCityConfirmed, setIsCityConfirmed,
-        availableCities
+        selectedCity,
+        isSelectingCity,
+        isCityConfirmed, setIsCityConfirmed
     } = useCart();
-
-    const clearFilters = () => {
-        setSearchQuery(''); 
-        setSelectedCategory('Всі');
-        setPriceRange({ min: '', max: '' });
-        setCalRange({ min: '', max: '' });
-        setStockFilter('all');
-        setPromoFilter(false);
-    };
 
     const handleSelectProduct = (product) => {
         navigateTo('product', activeNav, product);
     };
-
-    const filteredProducts = useMemo(() => {
-        return allProducts.filter(p => {
-            const q = searchQuery.toLowerCase();
-            const matchSearch = !q || 
-                (p.name && p.name.toLowerCase().includes(q)) || 
-                (p.category && p.category.toLowerCase().includes(q)) ||
-                (p.details?.description && p.details.description.toLowerCase().includes(q)) ||
-                (p.details?.brand && p.details.brand.toLowerCase().includes(q)) ||
-                (p.details?.country && p.details.country.toLowerCase().includes(q));
-
-            const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
-            const matchCategory = 
-                selectedCategory === "Всі" ? true :
-                selectedCategory === "Акції" ? !!p.oldPrice :
-                selectedCategory === "Напої" ? drinkCategories.includes(p.category) :
-                p.category === selectedCategory;
-            
-            const matchPrice = (!priceRange.min || p.price >= Number(priceRange.min)) && 
-                               (!priceRange.max || p.price <= Number(priceRange.max));
-                               
-            const calories = p.details?.calories ? parseInt(p.details.calories) : 0;
-            const matchCal = (!calRange.min || calories >= Number(calRange.min)) && 
-                             (!calRange.max || calories <= Number(calRange.max));
-
-            const matchStock = stockFilter === 'all' ? true : 
-                               stockFilter === 'inStock' ? !p.outOfStock :
-                               p.outOfStock;
-
-            const matchPromo = !promoFilter || !!p.oldPrice;
-
-            return matchSearch && matchCategory && matchPrice && matchCal && matchStock && matchPromo;
-        }).sort((a, b) => {
-            if (a.outOfStock && !b.outOfStock) return 1;
-            if (!a.outOfStock && b.outOfStock) return -1;
-            
-            const aBroken = brokenImages.has(a.id);
-            const bBroken = brokenImages.has(b.id);
-            if (aBroken && !bBroken) return 1;
-            if (!aBroken && bBroken) return -1;
-
-            if (a.localImage && !b.localImage) return -1;
-            if (!a.localImage && b.localImage) return 1;
-
-            if (selectedCategory === 'Всі') return (a._rand || 0) - (b._rand || 0);
-            return 0;
-        });
-    }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter, promoFilter]);
 
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const paginatedProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
