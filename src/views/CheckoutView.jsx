@@ -307,7 +307,7 @@ export const CheckoutView = () => {
                         {/* City - plain input */}
                         <div>
                             <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5">
-                                МіМісто <span className="text-red-500">*</span>
+                                Місто <span className="text-red-500">*</span>
                             </label>
                             <input
                                 required
