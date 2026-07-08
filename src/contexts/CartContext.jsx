@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
     const [selectedCity, setSelectedCity] = useState("Київ");
     const [isSelectingCity, setIsSelectingCity] = useState(false);
     const [isCityConfirmed, setIsCityConfirmed] = useState(false);
-    const availableCities = ["Київ", "Львів", "Одеса", "Харків", "Дніпро"];
+    const availableCities = ["Київ", "Львів", "Одеса", "Харків", "Дніпро", "Вінниця"];
 
     const [lastOrderDetails, setLastOrderDetails] = useState(null);
     const [repeatedOrderDetails, setRepeatedOrderDetails] = useState(null);

@@ -324,7 +324,7 @@ export const CheckoutView = () => {
                                 className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                             />
                             <div className="flex flex-wrap gap-2 mt-2">
-                                {['Київ', 'Львів', 'Одеса', 'Дніпро', 'Харків'].map(c => (
+                                {['Київ', 'Львів', 'Одеса', 'Дніпро', 'Харків', 'Вінниця'].map(c => (
                                     <button 
                                         type="button" 
                                         key={c}
