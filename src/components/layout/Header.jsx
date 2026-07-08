@@ -30,7 +30,7 @@ export const Header = () => {
 
     return (
         <>
-            <div className="bg-primary text-white text-xs overflow-hidden hidden md:block">
+            <div className="bg-primary text-white text-xs overflow-hidden hidden md:block relative z-[60]">
                 <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center py-2">
                     <div className="flex gap-5 font-medium">
                         <Link view="article" article={10} className="hover:text-white/80 transition-colors">Про нас</Link>
@@ -164,7 +164,7 @@ export const Header = () => {
             {isSearchOverlayOpen && (
                 <>
                     <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 transition-opacity" onClick={() => setIsSearchOverlayOpen(false)}></div>
-                    <div className="fixed top-[72px] left-0 w-full bg-gray-50 dark:bg-gray-900 z-50 border-b border-gray-200 dark:border-gray-800 shadow-2xl p-6 max-h-[80vh] overflow-y-auto animate-in slide-in-from-top-4 duration-300">
+                    <div className="fixed top-[72px] left-0 w-full bg-gray-100 dark:bg-gray-900 z-50 border-b border-gray-200 dark:border-gray-800 shadow-2xl p-6 max-h-[80vh] overflow-y-auto animate-in slide-in-from-top-4 duration-300">
                         <div className="container mx-auto max-w-4xl">
                             <div className="flex justify-between items-center mb-6">
                                 <h3 className="text-xl font-bold text-dark dark:text-white">Пошук та Фільтри</h3>
