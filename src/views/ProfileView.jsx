@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAppContext } from '../contexts/AppContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useCart } from '../contexts/CartContext';
+import { useChat } from '../contexts/ChatContext';
 import { allProducts } from '../utils/data';
 import { Link } from '../components/ui/Link';
 
@@ -14,8 +15,38 @@ export const ProfileView = () => {
         handleEditProfileSave
     } = useAuth();
     const { addToCart, setRepeatedOrderDetails } = useCart();
+    const { setIsChatOpen, setChatMessages } = useChat();
     
     const [expandedOrderId, setExpandedOrderId] = useState(null);
+
+    const handleCancelOrder = (orderId) => {
+        if(window.confirm('Ви впевнені, що хочете скасувати це замовлення?')) {
+            const updatedUser = {
+                ...currentUser,
+                orders: currentUser.orders.map(o => o.id === orderId ? {...o, status: 'cancelled'} : o)
+            };
+            setCurrentUser(updatedUser);
+            localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+            const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
+            localStorage.setItem('users', JSON.stringify(updatedUsers));
+            
+            const cancelMsg = {
+                 sender: 'user',
+                 text: `Хочу скасувати замовлення №${orderId}`,
+                 timestamp: new Date().toISOString()
+            };
+            const botReply = {
+                 sender: 'support',
+                 senderName: 'Жуйка Бот 🤖',
+                 senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+                 text: `✅ Замовлення №${orderId} успішно скасовано. Кошти (якщо була оплата карткою) буде повернуто на ваш рахунок найближчим часом.`,
+                 timestamp: new Date().toISOString()
+            };
+            setChatMessages(prev => [...prev, cancelMsg, botReply]);
+            setExpandedOrderId(null);
+        }
+    };
 
     if (!currentUser) return null;
 
@@ -111,7 +142,18 @@ export const ProfileView = () => {
                                                      order.status === 'processing' ? 'В обробці ⏳' : 'Скасовано ❌'}
                                                 </span>
                                             </div>
-                                            <div className="text-sm text-gray-500">{order.date}</div>
+                                            <div className="pt-2 text-xs text-gray-400">
+                                                Оформлено: {order.date}
+                                            </div>
+                                            {order.status === 'processing' ? (
+                                                <button onClick={() => handleCancelOrder(order.id)} className="w-full mt-2 py-2.5 bg-red-50 dark:bg-red-900/20 text-red-500 dark:text-red-400 font-bold rounded-xl text-sm hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors">
+                                                    Скасувати замовлення
+                                                </button>
+                                            ) : order.status !== 'cancelled' ? (
+                                                <div className="mt-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-xl text-xs text-gray-500 dark:text-gray-400 text-center">
+                                                    Замовлення вже підтверджено або відправлено. Для скасування або зміни зверніться у <button onClick={() => setIsChatOpen(true)} className="text-primary font-bold hover:underline">підтримку</button>.
+                                                </div>
+                                            ) : null}
                                         </div>
                                         <div className="text-right">
                                             <div className="font-extrabold text-lg text-dark dark:text-white">{order.total} ₴</div>
