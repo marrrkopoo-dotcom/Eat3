@@ -6,7 +6,7 @@ import { allProducts } from '../utils/data';
 import { promotions } from '../utils/promotions';
 import { Link } from '../components/ui/Link';
 
-const categories = ["Всі", "Напої", "Снеки", "Енергетики", "Шоколад", "Акції"];
+const categories = ["Всі", "Напої", "Солодощі", "Снеки", "Енергетики", "Шоколад", "Акції"];
 const itemsPerPage = 20;
 
 export const ShopView = () => {
@@ -60,9 +60,11 @@ export const ShopView = () => {
                             {categories.map(cat => {
                                 const isPromo = cat === "Акції";
                                 const drinkCategories = ["Газовані напої", "Азіатські напої", "Соки зі шматочками", "Енергетики"];
+                                const sweetCategories = ["Цукерки", "Жуйки", "Печиво та вафлі", "Шоколад", "Десерти", "Мармелад", "Драже", "Льодяники", "Мочі", "Кекси", "Бісквіти", "Солодощі"];
                                 const catCount = cat === "Всі" ? allProducts.length : 
                                                  isPromo ? allProducts.filter(p => !!p.oldPrice).length :
                                                  cat === "Напої" ? allProducts.filter(p => drinkCategories.includes(p.category)).length :
+                                                 cat === "Солодощі" ? allProducts.filter(p => sweetCategories.includes(p.category)).length :
                                                  allProducts.filter(p => p.category === cat).length;
                                 if (cat !== "Всі" && !isPromo && catCount === 0) return null;
                                 return (
