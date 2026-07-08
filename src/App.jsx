@@ -521,36 +521,36 @@ const promotions = [
         content: (
             <div className="space-y-6">
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">1. Збір інформації</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">1. Які дані ми збираємо</h3>
                     <div className="space-y-3 text-gray-600 dark:text-gray-400">
-                        <p>Ми збираємо інформацію, коли ви оформлюєте замовлення на нашому сайті, реєструєтесь або заповнюєте форми зворотного зв'язку.</p>
-                        <p>До персональних даних, які можуть збиратися, відносяться: Ваше ім'я, номер телефону, адреса електронної пошти та адреса для доставки (відділення Нової Пошти).</p>
+                        <p>Під час оформлення замовлення, реєстрації особистого кабінету або відправлення повідомлень через форми зворотного зв'язку на нашому сайті, ми просимо вас надати необхідну контактну інформацію.</p>
+                        <p>До цих даних належать: ваше повне ім'я, актуальний номер мобільного телефону, адреса електронної пошти, а також місто та номер відділення/поштомату «Нової Пошти» для організації доставки.</p>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">2. Використання інформації</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">2. Мета обробки персональних даних</h3>
                     <div className="space-y-3 text-gray-600 dark:text-gray-400">
-                        <p>Будь-яка зібрана нами інформація може використовуватися для:</p>
+                        <p>Отримана інформація використовується нами виключно для забезпечення комфортного обслуговування:</p>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Швидкої та якісної обробки і доставки Ваших замовлень;</li>
-                            <li>Зв'язку з Вами для підтвердження деталей замовлення;</li>
-                            <li>Покращення роботи нашого сайту та підвищення рівня обслуговування клієнтів.</li>
+                            <li>Оформлення, складання та своєчасної доставки ваших замовлень;</li>
+                            <li>Оперативного зв'язку з вами для уточнення деталей замовлення або інформування про статус посилки;</li>
+                            <li>Аналізу роботи інтерфейсу сайту для покращення користувацького досвіду та підвищення якості нашого сервісу.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">3. Захист даних</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">3. Заходи безпеки та конфіденційність</h3>
                     <div className="space-y-3 text-gray-600 dark:text-gray-400">
-                        <p>Ми впроваджуємо різноманітні засоби безпеки для забезпечення збереження Ваших персональних даних. Доступ до конфіденційних даних мають лише ті співробітники, які безпосередньо займаються складанням та відправкою замовлень.</p>
+                        <p>Ми відповідально ставимося до захисту ваших особистих відомостей. Нами застосовуються надійні технічні рішення та протоколи безпеки, щоб запобігти несанкціонованому доступу чи розголоженню даних. Доступ до ваших контактів надається лише тим працівникам, які безпосередньо відповідають за пакування та відправлення товарів.</p>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">4. Згода з умовами</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">4. Згода користувача</h3>
                     <div className="space-y-3 text-gray-600 dark:text-gray-400">
-                        <p>Користуючись послугами нашого інтернет-магазину та вказуючи свої дані при оформленні замовлення, Ви автоматично погоджуєтесь з даною Політикою конфіденційності.</p>
+                        <p>Здійснюючи покупки в нашому інтернет-магазині та вказуючи персональні дані в електронних формах, ви даєте згоду на їх обробку та зберігання відповідно до чинного законодавства України та положень цієї Політики.</p>
                     </div>
                 </div>
             </div>
@@ -603,29 +603,29 @@ const promotions = [
         content: (
             <div className="space-y-6">
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4">Вітаємо у світі Жуйки!</h3>
+                    <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4">Жуйка — ваш провідник у світ екзотичних смаків</h3>
                     <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-                        <p><strong>Жуйка</strong> - це не просто черговий інтернет-магазин солодощів. Це ваш персональний телепорт у найсолодші та найекзотичніші куточки планети! Ми знаходимо, привозимо та доставляємо те, чого ви ніколи не знайдете на полицях звичайних супермаркетів.</p>
-                        <p>Наш шлях почався з простої ідеї: перетворити звичайне споживання їжі на захоплюючу пригоду. Ми закохані в незвичайні смаки, лімітовані колекції та яскраві емоції, якими хочемо ділитися з кожним із вас.</p>
+                        <p><strong>Жуйка</strong> — це унікальний інтернет-магазин, створений для справжніх гурманів та шукачів гастрономічних пригод. Наша мета — відкрити для вас яскраві, оригінальні солодощі та екзотичні напої з найвіддаленіших куточків планети, які важко чи неможливо зустріти на полицях звичайних супермаркетів.</p>
+                        <p>Ми переконані, що кожен смак здатний дарувати нові емоції та створювати незабутні спогади. Саме тому ми ретельно відбираємо кожен продукт, віддаючи перевагу лімітованим релізам та перевіреним світовим брендам.</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
                         <span className="text-3xl mb-3 block">🌍</span>
-                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Ексклюзивний імпорт</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Прямі поставки унікальних солодощів та напоїв із США, Японії, Великобританії та країн Європи.</p>
+                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Прямий імпорт</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Ми напряму доставляємо солодощі та газовані напої зі США, країн Європи, Японії та інших азіатських ринків.</p>
                     </div>
                     <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
                         <span className="text-3xl mb-3 block">⚡</span>
-                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Швидкість та якість</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Надсилаємо замовлення день у день, надійно та дбайливо пакуючи кожну баночку та цукерку.</p>
+                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Надійний сервіс</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Дбайливо та надійно упаковуємо кожне замовлення і відправляємо його день у день, щоб ви якомога швидше насолодилися покупкою.</p>
                     </div>
                 </div>
 
                 <div className="bg-primary/10 border border-primary/20 p-6 rounded-2xl text-gray-800 dark:text-gray-200">
-                    <h4 className="font-bold mb-2">Дякуємо, що обираєте нас!</h4>
-                    <p className="text-sm">Жуйка - це про радість, про нові відкриття та про любов до солодкого життя. Замовляйте, куштуйте та діліться своїми враженнями з нами у соціальних мережах!</p>
+                    <h4 className="font-bold mb-2">Дякуємо, що ви з нами!</h4>
+                    <p className="text-sm">Жуйка створена для того, щоб наповнювати ваше повсякденне життя яскравими смаками та солодкими митями радості. Обирайте найкраще, відкривайте нове та діліться своїми смаковими подорожами!</p>
                 </div>
             </div>
         ),
@@ -2569,8 +2569,9 @@ const App = () => {
                             {/* Social networks removed */}
                         </div>
                     </div>
-                    <div className="text-center text-sm font-medium text-gray-500 pt-8 border-t border-gray-800 flex justify-center items-center">
+                    <div className="text-center text-sm font-medium text-gray-500 pt-8 border-t border-gray-800 flex flex-col items-center gap-1">
                         <span>&copy; {new Date().getFullYear()} juyka.com. Всі права захищені.</span>
+                        <span className="text-xs text-gray-600">ТОВ "СБИТ-ВОСТОК" | код ЄДРПОУ 41899847</span>
                     </div>
                 </div>
             </footer>
