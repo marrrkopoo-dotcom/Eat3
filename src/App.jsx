@@ -357,7 +357,7 @@ const promotions = [
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">5.</span> Де можна забрати замовлення самовивозом?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        <p>Самовивіз доступний у місті Києві за адресою нашого шоуруму: вул. Хрещатик, 24. Детальний час та умови отримання замовлення з вами погодить менеджер під час телефонного дзвінка або через чат підтримки.</p>
+                        <p>Самовивіз доступний у місті Києві. Детальний час та умови отримання замовлення з вами погодить менеджер під час телефонного дзвінка або через чат підтримки.</p>
                     </div>
                 </div>
 
@@ -650,7 +650,7 @@ const dummyUser = {
     name: "Олександр Петренко",
     phone: "+38 (099) 123-45-67",
     email: "oleksandr.p@example.com",
-    address: "м. Київ, вул. Хрещатик, 24, кв. 15",
+    address: "м. Київ",
     avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
     bonuses: 350
 };
@@ -2474,10 +2474,7 @@ const App = () => {
                         <div>
                             <h4 className="font-bold text-white mb-4 uppercase tracking-wider text-sm">Контакти</h4>
                             <ul className="text-sm text-gray-400 space-y-3">
-                                <li className="flex items-start gap-3">
-                                    <span className="text-lg">📍</span>
-                                    <span>м. Київ, вул. Хрещатик, 24<br/>Україна, 01001</span>
-                                </li>
+
                                 <li className="flex items-center gap-3">
                                     <span className="text-lg">📞</span>
                                     <a href="tel:+380779152365" className="hover:text-primary transition-colors font-medium">+38 (077) 915-23-65</a>
