@@ -172,17 +172,17 @@ export const Header = () => {
                                 <div>
                                     <h4 className="font-bold text-sm text-gray-500 mb-3 uppercase tracking-wider">Ціна (₴)</h4>
                                     <div className="flex items-center gap-2">
-                                        <input type="number" placeholder="Від" value={priceRange.min} onChange={e => setPriceRange({...priceRange, min: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                        <input type="number" min="0" placeholder="Від" value={priceRange.min} onChange={e => setPriceRange({...priceRange, min: e.target.value.replace(/[^0-9]/g, '')})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
                                         <span className="text-gray-400">-</span>
-                                        <input type="number" placeholder="До" value={priceRange.max} onChange={e => setPriceRange({...priceRange, max: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                        <input type="number" min="0" placeholder="До" value={priceRange.max} onChange={e => setPriceRange({...priceRange, max: e.target.value.replace(/[^0-9]/g, '')})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
                                     </div>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-sm text-gray-500 mb-3 uppercase tracking-wider">Калорії (ккал)</h4>
                                     <div className="flex items-center gap-2">
-                                        <input type="number" placeholder="Від" value={calRange.min} onChange={e => setCalRange({...calRange, min: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                        <input type="number" min="0" placeholder="Від" value={calRange.min} onChange={e => setCalRange({...calRange, min: e.target.value.replace(/[^0-9]/g, '')})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
                                         <span className="text-gray-400">-</span>
-                                        <input type="number" placeholder="До" value={calRange.max} onChange={e => setCalRange({...calRange, max: e.target.value})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
+                                        <input type="number" min="0" placeholder="До" value={calRange.max} onChange={e => setCalRange({...calRange, max: e.target.value.replace(/[^0-9]/g, '')})} className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-dark dark:text-white rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" />
                                     </div>
                                 </div>
                             </div>
