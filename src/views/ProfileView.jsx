@@ -9,7 +9,7 @@ import { Link } from '../components/ui/Link';
 export const ProfileView = () => {
     const { navigateTo } = useAppContext();
     const { 
-        currentUser, handleLogout,
+        currentUser, setCurrentUser, handleLogout,
         isEditProfileOpen, setIsEditProfileOpen,
         editProfileForm, setEditProfileForm,
         handleEditProfileSave
