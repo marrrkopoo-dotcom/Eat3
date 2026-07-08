@@ -362,14 +362,7 @@ const promotions = [
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">6.</span> Чи створюєте ви індивідуальні солодкі Candy-бокси?</h3>
-                    <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        <p>Так! Ми можемо зібрати для вас ексклюзивний «Сюрприз-бокс» на будь-яку зручну суму від 500 грн. Ви можете написати свої побажання (наприклад, більше жуйок, без шоколаду чи суперкислі цукерки), а повний вміст боксу залишиться для вас приємним сюрпризом до моменту відкриття коробки!)</p>
-                    </div>
-                </div>
-
-                <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">7.</span> Чи працюєте ви з гуртом (оптом) або за дропшипінгом?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">6.</span> Чи працюєте ви з гуртом (оптом) або за дропшипінгом?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
                         Наразі ми працюємо як роздрібний інтернет-магазин. Дропшипінгу немає, але для великих замовлень (наприклад, для офісів, вечірок або свят від 40 одиниць одного найменування товару) ми з радістю надамо вам індивідуальну знижку. Пишіть на нашу пошту: <a href="mailto:shop@juyka.com" className="text-primary hover:underline">shop@juyka.com</a>.
                     </div>
@@ -617,7 +610,7 @@ const promotions = [
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
                         <span className="text-3xl mb-3 block">🌍</span>
                         <h4 className="font-bold text-gray-900 dark:text-white mb-2">Ексклюзивний імпорт</h4>
@@ -627,11 +620,6 @@ const promotions = [
                         <span className="text-3xl mb-3 block">⚡</span>
                         <h4 className="font-bold text-gray-900 dark:text-white mb-2">Швидкість та якість</h4>
                         <p className="text-sm text-gray-600 dark:text-gray-400">Надсилаємо замовлення день у день, надійно та дбайливо пакуючи кожну баночку та цукерку.</p>
-                    </div>
-                    <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
-                        <span className="text-3xl mb-3 block">🎁</span>
-                        <h4 className="font-bold text-gray-900 dark:text-white mb-2">Бокси-сюрпризи</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Створюємо емоційні Mystery Boxes, наповнені несподіваними смаками та солодощами спеціально для вас.</p>
                     </div>
                 </div>
 
