@@ -15,7 +15,7 @@ export const ProfileView = () => {
         handleEditProfileSave
     } = useAuth();
     const { addToCart, setRepeatedOrderDetails } = useCart();
-    const { setIsChatOpen, setChatMessages } = useChat();
+    const { setIsChatOpen, setChatMessages, clientId } = useChat();
     
     const [expandedOrderId, setExpandedOrderId] = useState(null);
     const [cancelModalOrderId, setCancelModalOrderId] = useState(null);
@@ -43,6 +43,21 @@ export const ProfileView = () => {
                 localStorage.setItem('users', JSON.stringify(updatedUsers));
             } catch (e) {
                 console.error("Failed to update users array", e);
+            }
+            
+            // Відправляємо сповіщення в телеграм
+            try {
+                fetch('/api/send-message', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        clientId: clientId || 'unknown',
+                        message: `❌ Клієнт самостійно скасував замовлення №${orderId}`,
+                        clientName: currentUser ? currentUser.name : 'Гість'
+                    })
+                });
+            } catch (e) {
+                console.error("Failed to send telegram notification", e);
             }
             
             const cancelMsg = {
