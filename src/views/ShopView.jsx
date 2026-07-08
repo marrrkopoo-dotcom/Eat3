@@ -204,7 +204,7 @@ export const ShopView = () => {
                 <div className="flex-1 min-w-0">
                     <div className="mb-8 overflow-x-auto pb-4">
                         <div className="flex gap-4 pb-2 w-max">
-                            {promotions.filter(promo => !['ІНФОРМАЦІЯ', 'ДОПОМОГА', 'ДОКУМЕНТИ', 'ПОВЕРНЕННЯ', 'ПРО НАС'].includes(promo.tag)).map(promo => (
+                            {promotions.filter(promo => !['ІНФОРМАЦІЯ', 'ДОПОМОГА', 'ДОКУМЕНТ', 'ПОВЕРНЕННЯ', 'ПРО НАС'].includes(promo.tag)).map(promo => (
                                 <div key={promo.id} onClick={() => navigateTo('article', activeNav, null, promo)} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
                                     <img src={promo.image} alt={promo.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80"></div>
