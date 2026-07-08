@@ -86,10 +86,12 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #f43f5e, #9f1239);
+    /* Gradient disabled (Uncomment to restore): background: linear-gradient(135deg, #f43f5e, #9f1239); */
+    background: #f43f5e;
 }
 .gradient-bg:hover {
-    background: linear-gradient(135deg, #e11d48, #881337);
+    /* Gradient disabled (Uncomment to restore): background: linear-gradient(135deg, #e11d48, #881337); */
+    background: #e11d48;
 }
 
 /* Marquee Animation */
