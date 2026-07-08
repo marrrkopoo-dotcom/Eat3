@@ -144,12 +144,18 @@ export const AppProvider = ({ children }) => {
             setCurrentPage(page);
         }
         if (product) {
-            setSelectedProduct(product);
-            localStorage.setItem('selectedProductId', product.id);
+            const productObj = typeof product === 'object' ? product : allProducts.find(p => p.id === Number(product));
+            if (productObj) {
+                setSelectedProduct(productObj);
+                localStorage.setItem('selectedProductId', productObj.id);
+            }
         }
         if (article) {
-            setActiveArticle(article);
-            localStorage.setItem('activeArticleId', article.id);
+            const articleObj = typeof article === 'object' ? article : promotions.find(p => p.id === Number(article));
+            if (articleObj) {
+                setActiveArticle(articleObj);
+                localStorage.setItem('activeArticleId', articleObj.id);
+            }
         }
         setActiveView(view);
         
