@@ -158,6 +158,8 @@ export const Header = () => {
                     </Link>
                 </div>
             </div>
+            </header>
+            
             {/* Search Overlay */}
             {isSearchOverlayOpen && (
                 <>
@@ -183,7 +185,7 @@ export const Header = () => {
                                         <option value="Азіатські напої">Азіатські напої</option>
                                         <option value="Соки зі шматочками">Соки зі шматочками</option>
                                         <option value="Енергетики">Енергетики</option>
-                                    </select>
+                                     </select>
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-sm text-gray-500 mb-3 uppercase tracking-wider">Ціна (₴)</h4>
@@ -230,7 +232,6 @@ export const Header = () => {
                     </div>
                 </>
             )}
-            </header>
         </>
     );
 };
