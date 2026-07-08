@@ -25,33 +25,50 @@ export const ProfileView = () => {
     };
 
     const confirmCancelOrder = () => {
-        if(!cancelModalOrderId) return;
-        const orderId = cancelModalOrderId;
-        const updatedUser = {
-            ...currentUser,
-            orders: currentUser.orders.map(o => o.id === orderId ? {...o, status: 'cancelled_by_client'} : o)
-        };
-        setCurrentUser(updatedUser);
-        localStorage.setItem('currentUser', JSON.stringify(updatedUser));
-        const users = JSON.parse(localStorage.getItem('users') || '[]');
-        const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
-        localStorage.setItem('users', JSON.stringify(updatedUsers));
-        
-        const cancelMsg = {
-             sender: 'user',
-             text: `Хочу скасувати замовлення №${orderId}`,
-             timestamp: new Date().toISOString()
-        };
-        const botReply = {
-             sender: 'support',
-             senderName: 'Жуйка Бот 🤖',
-             senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
-             text: `✅ Замовлення №${orderId} успішно скасовано. Кошти (якщо була оплата карткою) буде повернуто на ваш рахунок найближчим часом.`,
-             timestamp: new Date().toISOString()
-        };
-        setChatMessages(prev => [...prev, cancelMsg, botReply]);
-        setExpandedOrderId(null);
-        setCancelModalOrderId(null);
+        try {
+            if(!cancelModalOrderId) return;
+            const orderId = cancelModalOrderId;
+            
+            const updatedUser = {
+                ...currentUser,
+                orders: currentUser.orders.map(o => o.id === orderId ? {...o, status: 'cancelled_by_client'} : o)
+            };
+            
+            setCurrentUser(updatedUser);
+            localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+            
+            try {
+                const users = JSON.parse(localStorage.getItem('users') || '[]');
+                const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
+                localStorage.setItem('users', JSON.stringify(updatedUsers));
+            } catch (e) {
+                console.error("Failed to update users array", e);
+            }
+            
+            const cancelMsg = {
+                 sender: 'user',
+                 text: `Хочу скасувати замовлення №${orderId}`,
+                 timestamp: new Date().toISOString()
+            };
+            const botReply = {
+                 sender: 'support',
+                 senderName: 'Жуйка Бот 🤖',
+                 senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+                 text: `✅ Замовлення №${orderId} успішно скасовано. Кошти (якщо була оплата карткою) буде повернуто на ваш рахунок найближчим часом.`,
+                 timestamp: new Date().toISOString()
+            };
+            
+            if (setChatMessages) {
+                setChatMessages(prev => [...(Array.isArray(prev) ? prev : []), cancelMsg, botReply]);
+            }
+            
+            setExpandedOrderId(null);
+            setCancelModalOrderId(null);
+        } catch (error) {
+            console.error("Error in confirmCancelOrder:", error);
+            alert("Виникла помилка при скасуванні: " + error.message);
+            setCancelModalOrderId(null);
+        }
     };
 
     if (!currentUser) return null;
