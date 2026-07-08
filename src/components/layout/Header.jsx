@@ -38,10 +38,17 @@ export const Header = () => {
                         <Link view="article" article={9} className="hover:text-white/80 transition-colors">Умови повернення</Link>
                     </div>
                     <div className="w-1/2 overflow-hidden flex items-center" style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)' }}>
-                        <div className="whitespace-nowrap animate-marquee flex gap-8 w-full font-bold">
-                            <span>🔥 Знижка 20% на всі американські напої за промокодом USA20</span>
-                            <span>✨ Безкоштовна доставка Новою Поштою при замовленні від 2000 грн</span>
-                            <span>🎁 Отримайте секретний подарунок до кожного замовлення</span>
+                        <div className="whitespace-nowrap animate-marquee flex w-max font-bold hover:[animation-play-state:paused]">
+                            <div className="flex gap-8 px-4">
+                                <span>🔥 Скуштуй найпопулярніші азіатські солодощі та екзотичні напої!</span>
+                                <span>✨ Безкоштовна доставка Новою Поштою при замовленні від 2000 грн</span>
+                                <span>🎁 Величезний вибір жуйок, енергетиків та снеків з усього світу</span>
+                            </div>
+                            <div className="flex gap-8 px-4" aria-hidden="true">
+                                <span>🔥 Скуштуй найпопулярніші азіатські солодощі та екзотичні напої!</span>
+                                <span>✨ Безкоштовна доставка Новою Поштою при замовленні від 2000 грн</span>
+                                <span>🎁 Величезний вибір жуйок, енергетиків та снеків з усього світу</span>
+                            </div>
                         </div>
                     </div>
                 </div>
