@@ -103,6 +103,22 @@ export const Header = () => {
                 </div>
 
                 <div className="flex items-center gap-4 ml-auto">
+                    {/* City Selector Toggle */}
+                    <button 
+                        onClick={() => {
+                            if (activeView !== 'shop') navigateTo('shop');
+                            setIsCityConfirmed(false);
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }} 
+                        className="hidden md:flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-gray-500 hover:text-dark dark:text-gray-400 dark:hover:text-white transition-colors"
+                        title="Змінити місто"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                        <span>{selectedCity}</span>
+                    </button>
+
                     {/* User Action */}
                     {currentUser ? (
                         <div className="flex items-center gap-3">

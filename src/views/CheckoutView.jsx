@@ -14,6 +14,10 @@ export const CheckoutView = () => {
     const { currentUser, setCurrentUser } = useAuth();
     const { setChatMessages, clientId } = useChat();
 
+    const [cityInput, setCityInput] = React.useState(() => {
+        return repeatedOrderDetails ? repeatedOrderDetails.city || '' : currentUser ? (currentUser.city || '') : '';
+    });
+
     const cartTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
     const handleCheckoutSubmit = (e) => {
@@ -313,11 +317,24 @@ export const CheckoutView = () => {
                                 required
                                 name="city"
                                 type="text"
-                                defaultValue={repeatedOrderDetails ? repeatedOrderDetails.city || '' : currentUser ? (currentUser.city || '') : ''}
+                                value={cityInput}
+                                onChange={(e) => setCityInput(e.target.value)}
                                 placeholder="Наприклад: Київ"
                                 minLength={2}
                                 className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                             />
+                            <div className="flex flex-wrap gap-2 mt-2">
+                                {['Київ', 'Львів', 'Одеса', 'Дніпро', 'Харків'].map(c => (
+                                    <button 
+                                        type="button" 
+                                        key={c}
+                                        onClick={() => setCityInput(c)}
+                                        className="text-xs px-2.5 py-1 rounded-md bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors"
+                                    >
+                                        {c}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
 
                         {/* Post office - plain input */}
