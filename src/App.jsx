@@ -321,60 +321,57 @@ const promotions = [
         content: (
             <div className="space-y-6">
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">1.</span> Як оформити замовлення?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">1.</span> Як зробити замовлення на «Жуйці»?</h3>
                     <div className="space-y-2 text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        <p>1) Вибрати будь-який з товарів, що сподобалися, розташованих у категоріях, натиснувши на кнопку кошика.</p>
-                        <p>2) Якщо ви закінчили вибирати товар - перейдіть в розділ "Кошик", розташований у шапці сайту.</p>
-                        <p>3) Перевірте ваше замовлення та кількість обраного товару.</p>
-                        <p>4) Внесіть свої контактні дані та виберіть бажаний спосіб доставки, заповнивши необхідні дані одержувача.</p>
-                        <p>5) Вкажіть побажання до замовлення у вікні "Коментарі".</p>
-                        <p>6) Після цього натисніть кнопку "Оформити замовлення".</p>
+                        <p>1) Перейдіть до нашого каталогу товарів та додайте в кошик улюблені імпортні солодощі та снеки.</p>
+                        <p>2) Зверніть увагу, що мінімальна сума замовлення на нашому сайті становить 350 грн.</p>
+                        <p>3) Після вибору солодощів перейдіть до кошика у верхній частині сайту.</p>
+                        <p>4) Перевірте кількість товарів, введіть свої контактні дані (для повторних замовлень вони збережуться та підставляться автоматично) та оберіть відділення пошти.</p>
+                        <p>5) Натисніть кнопку «Оформити замовлення». Замовлення миттєво надійде нашому менеджеру і в чат підтримки Telegram!</p>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">2.</span> Чому потрібна передоплата?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">2.</span> Навіщо потрібна передоплата і як вона працює?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        Передоплата обов'язкова та береться на випадок якщо у вас зміняться плани або не буде можливості забрати посилку з будь-яких причин – а нам у такому випадку прийдеться оплачувати доставку замовлення в обидва кінці.
+                        Кожне замовлення з екзотичними солодощами ми пакуємо індивідуально та дбайливо. Часткова передоплата (або повна оплата за реквізитами) потрібна на випадок, якщо у вас зміняться плани або не буде можливості забрати посилку з пошти — тоді нам не доведеться оплачувати доставку в обидва боки.
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">3.</span> Скільки часу їде посилка?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">3.</span> Як швидко доставляється посилка?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        Ми завжди намагаємось відправляти ваши замовлення день у день, але все залежить від часу його оформлення та внесення оплати/передоплати. Звичайно доставка займає 1-2 дні, у деякі віддалені міста та селища - 3-4.
+                        Ми відправляємо ваші замовлення щодня. Зазвичай доставка Новою Поштою по Україні займає всього 1–2 робочих дні (у віддалені населені пункти — до 3–4 днів). Ви завжди можете відстежити актуальний статус доставки у своєму особистому кабінеті на нашому сайті.
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">4.</span> Як оформити посилку другу?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">4.</span> Чи можу я відправити замовлення як подарунок другу?</h3>
                     <div className="space-y-2 text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        <p>Це зробити дуже легко, потрібно лише:</p>
-                        <p>1) Всі поля отримувача заповнити даними друга, окрім номеру телефона, його потрібно ввести ваш.</p>
-                        <p>2) У коментарях указати коректний номер телефона друга та побажання до замовлення.</p>
+                        <p>Так, це чудовий спосіб зробити солодкий сюрприз! Для цього необхідно:</p>
+                        <p>1) Заповнити поля отримувача (ім'я, місто та відділення пошти) даними вашого друга, але вказати свій номер телефону для підтвердження замовлення менеджером.</p>
+                        <p>2) Вказати реальний телефон друга в коментарі до замовлення, щоб він отримав СМС-повідомлення від Нової Пошти про прибуття посилки.</p>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">5.</span> Де у вас самовивіз?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">5.</span> Де можна забрати замовлення самовивозом?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        <p>Самовивіз є у Києві. Конкретно місце і час самовивозу уточнює менеджер після оформлення вашого замовлення!)</p>
-                        <p className="text-sm mt-2 text-gray-500">p.s. зазвичай це або 10:00 або 18:00</p>
+                        <p>Самовивіз доступний у місті Києві за адресою нашого шоуруму: вул. Хрещатик, 24. Детальний час та умови отримання замовлення з вами погодить менеджер під час телефонного дзвінка або через чат підтримки.</p>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">6.</span> Чи є у вас бокси?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">6.</span> Чи створюєте ви індивідуальні солодкі Candy-бокси?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        <p>Так, звісно - ми можемо зібрати для тебе найкрутіший бокс на будь-яку зручну суму. Але є одна умова: це буде СЮРПРИЗ бокс, з усіма твоїми побажаннями, про вміст якого ти зможеш дізнатися тільки після отримання!)</p>
-                        <p className="mt-2">У інших випадках ти можеш самостійно додати солодощів до корзини та оформити свій власний бокс!</p>
+                        <p>Так! Ми можемо зібрати для вас ексклюзивний «Сюрприз-бокс» на будь-яку зручну суму від 500 грн. Ви можете написати свої побажання (наприклад, більше жуйок, без шоколаду чи суперкислі цукерки), а повний вміст боксу залишиться для вас приємним сюрпризом до моменту відкриття коробки!)</p>
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">7.</span> Чи є опт та дропшипінг?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">7.</span> Чи працюєте ви з гуртом (оптом) або за дропшипінгом?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        Дуже популярне питання, але нажаль ні. Єдине, що можемо запропонувати - це знижка на замовлення для "Офісу, компанії, гурту людей від 40 одиниць одного найменування"
+                        Наразі ми працюємо як роздрібний інтернет-магазин. Дропшипінгу немає, але для великих замовлень (наприклад, для офісів, вечірок або свят від 40 одиниць одного найменування товару) ми з радістю надамо вам індивідуальну знижку. Пишіть на нашу пошту: <a href="mailto:shop@juyka.com" className="text-primary hover:underline">shop@juyka.com</a>.
                     </div>
                 </div>
             </div>
