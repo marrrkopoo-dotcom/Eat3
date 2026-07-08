@@ -119,18 +119,18 @@ export const ShopView = () => {
                         <div className="mb-5">
                             <label className="block text-sm font-bold text-gray-500 mb-2">Ціна (грн)</label>
                             <div className="flex items-center gap-2">
-                                <input type="number" placeholder="Від" value={priceRange.min} onChange={e => setPriceRange({...priceRange, min: e.target.value})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                                <input type="number" min="0" placeholder="Від" value={priceRange.min} onChange={e => setPriceRange({...priceRange, min: e.target.value.replace(/[^0-9]/g, '')})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
                                 <span className="text-gray-400">-</span>
-                                <input type="number" placeholder="До" value={priceRange.max} onChange={e => setPriceRange({...priceRange, max: e.target.value})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                                <input type="number" min="0" placeholder="До" value={priceRange.max} onChange={e => setPriceRange({...priceRange, max: e.target.value.replace(/[^0-9]/g, '')})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
                             </div>
                         </div>
                         
                         <div className="mb-5">
                             <label className="block text-sm font-bold text-gray-500 mb-2">Калорійність (ккал)</label>
                             <div className="flex items-center gap-2">
-                                <input type="number" placeholder="Від" value={calRange.min} onChange={e => setCalRange({...calRange, min: e.target.value})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                                <input type="number" min="0" placeholder="Від" value={calRange.min} onChange={e => setCalRange({...calRange, min: e.target.value.replace(/[^0-9]/g, '')})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
                                 <span className="text-gray-400">-</span>
-                                <input type="number" placeholder="До" value={calRange.max} onChange={e => setCalRange({...calRange, max: e.target.value})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
+                                <input type="number" min="0" placeholder="До" value={calRange.max} onChange={e => setCalRange({...calRange, max: e.target.value.replace(/[^0-9]/g, '')})} className="w-full px-3 py-2 rounded-lg bg-gray-50 dark:bg-darkBg border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" />
                             </div>
                         </div>
                         
