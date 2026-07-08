@@ -2,41 +2,74 @@ import React from 'react';
 
 export const parseHash = () => {
     const hash = window.location.hash;
-    if (!hash) {
+    if (!hash || hash === '#/') {
         const view = localStorage.getItem('activeView') || 'shop';
         const nav = localStorage.getItem('activeNav') || 'Всі';
         const savedProdId = localStorage.getItem('selectedProductId');
         const productId = savedProdId ? parseInt(savedProdId) : null;
         const savedArtId = localStorage.getItem('activeArticleId');
         const articleId = savedArtId ? parseInt(savedArtId) : null;
-        return { view, nav, productId, articleId };
+        return { view, nav, productId, articleId, page: 1 };
     }
     
     let view = 'shop';
     let nav = 'Всі';
     let productId = null;
     let articleId = null;
+    let page = 1;
 
-    if (hash.startsWith('#/product/')) {
-        view = 'product';
-        productId = parseInt(hash.replace('#/product/', ''));
-    } else if (hash.startsWith('#/article/')) {
-        view = 'article';
-        articleId = parseInt(hash.replace('#/article/', ''));
-    } else if (hash.startsWith('#/checkout')) {
-        view = 'checkout';
-    } else if (hash.startsWith('#/success')) {
-        view = 'success';
-    } else if (hash.startsWith('#/profile')) {
-        view = 'profile';
-    } else if (hash.startsWith('#/shop')) {
-        view = 'shop';
-        const match = hash.match(/category=([^&]+)/);
-        if (match) {
-            nav = decodeURIComponent(match[1]);
+    // Handle new URL search params format (#/?view=shop&nav=Всі)
+    if (hash.startsWith('#/?') || hash.startsWith('#?')) {
+        const queryStr = hash.replace(/^#\/?\?/, '');
+        const params = new URLSearchParams(queryStr);
+        if (params.has('view')) view = params.get('view');
+        if (params.has('nav')) nav = params.get('nav');
+        if (params.has('product')) productId = parseInt(params.get('product'));
+        if (params.has('article')) articleId = parseInt(params.get('article'));
+        if (params.has('page')) page = parseInt(params.get('page')) || 1;
+    } else {
+        // Legacy support
+        if (hash.startsWith('#/product/')) {
+            view = 'product';
+            productId = parseInt(hash.replace('#/product/', ''));
+        } else if (hash.startsWith('#/article/')) {
+            view = 'article';
+            articleId = parseInt(hash.replace('#/article/', ''));
+        } else if (hash.startsWith('#/checkout')) {
+            view = 'checkout';
+        } else if (hash.startsWith('#/success')) {
+            view = 'success';
+        } else if (hash.startsWith('#/profile')) {
+            view = 'profile';
+        } else if (hash.startsWith('#/shop')) {
+            view = 'shop';
+            const match = hash.match(/category=([^&]+)/);
+            if (match) {
+                nav = decodeURIComponent(match[1]);
+            }
+        } else if (hash.startsWith('#view=')) {
+            const queryStr = hash.replace('#', '');
+            const params = new URLSearchParams(queryStr);
+            if (params.has('view')) view = params.get('view');
+            if (params.has('nav')) nav = params.get('nav');
+            if (params.has('product')) productId = parseInt(params.get('product'));
+            if (params.has('article')) articleId = parseInt(params.get('article'));
+            if (params.has('page')) page = parseInt(params.get('page')) || 1;
         }
     }
-    return { view, nav, productId, articleId };
+    
+    return { view, nav, productId, articleId, page };
+};
+
+export const generateHash = ({ view = 'shop', nav, product, article, page }) => {
+    const params = new URLSearchParams();
+    params.set('view', view);
+    if (nav && view === 'shop') params.set('nav', nav);
+    if (product) params.set('product', product.id || product);
+    if (article) params.set('article', article.id || article);
+    if (page && page > 1) params.set('page', page);
+    
+    return `#/?${params.toString()}`;
 };
 
 export const getAvatarSvg = (name) => {

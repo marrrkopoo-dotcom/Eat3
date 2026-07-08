@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { parseHash } from '../utils/helpers';
+import { parseHash, generateHash } from '../utils/helpers';
 import { allProducts } from '../utils/data';
 import { promotions } from '../utils/promotions';
 
@@ -34,7 +34,10 @@ export const AppProvider = ({ children }) => {
         const route = parseHash();
         return route.nav;
     });
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = useState(() => {
+        const route = parseHash();
+        return route.page || 1;
+    });
     const [brokenImages, setBrokenImages] = useState(new Set());
     const [viewMode, setViewMode] = useState('medium'); 
     const [stockFilter, setStockFilter] = useState('all'); 
@@ -50,6 +53,32 @@ export const AppProvider = ({ children }) => {
         const savedId = localStorage.getItem('selectedProductId');
         return savedId ? allProducts.find(p => p.id === parseInt(savedId)) || null : null;
     });
+
+    // Listen to hash changes (browser back/forward or new tabs)
+    useEffect(() => {
+        const handleHashChange = () => {
+            const route = parseHash();
+            if (route.view) setActiveView(route.view);
+            if (route.nav) {
+                setActiveNav(route.nav);
+                setSelectedCategory(route.nav);
+            }
+            if (route.productId) {
+                const p = allProducts.find(prod => prod.id === route.productId);
+                if (p) setSelectedProduct(p);
+            }
+            if (route.articleId) {
+                const a = promotions.find(promo => promo.id === route.articleId);
+                if (a) setActiveArticle(a);
+            }
+            if (route.page) {
+                setCurrentPage(route.page);
+            }
+        };
+
+        window.addEventListener('hashchange', handleHashChange);
+        return () => window.removeEventListener('hashchange', handleHashChange);
+    }, []);
 
     const clearFilters = () => {
         setSearchQuery(''); 
@@ -108,10 +137,11 @@ export const AppProvider = ({ children }) => {
         });
     }, [searchQuery, selectedCategory, priceRange, calRange, brokenImages, stockFilter, promoFilter]);
 
-    const navigateTo = (view, navItem = 'Всі', product = null, article = null) => {
+    const navigateTo = (view, navItem = 'Всі', product = null, article = null, page = 1) => {
         if (view === 'shop') {
             setActiveNav(navItem);
             setSelectedCategory(navItem);
+            setCurrentPage(page);
         }
         if (product) {
             setSelectedProduct(product);
@@ -123,10 +153,7 @@ export const AppProvider = ({ children }) => {
         }
         setActiveView(view);
         
-        let hash = `#view=${view}`;
-        if (navItem && view === 'shop') hash += `&nav=${encodeURIComponent(navItem)}`;
-        if (product) hash += `&product=${product.id}`;
-        if (article) hash += `&article=${article.id}`;
+        const hash = generateHash({ view, nav: navItem, product, article, page });
         
         window.history.pushState(null, '', hash);
         window.scrollTo({ top: 0, behavior: 'smooth' });

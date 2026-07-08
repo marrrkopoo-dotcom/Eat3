@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAppContext } from '../contexts/AppContext';
 import { useCart } from '../contexts/CartContext';
+import { Link } from '../components/ui/Link';
 
 export const SuccessView = () => {
     const { navigateTo } = useAppContext();
@@ -78,9 +79,9 @@ export const SuccessView = () => {
                 </div>
 
                 <div className="mt-10 text-center relative z-10">
-                    <button onClick={() => navigateTo('shop', 'Напої')} className="px-8 py-4 gradient-bg text-white font-bold rounded-full shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1">
+                    <Link view="shop" nav="Напої" className="px-8 py-4 gradient-bg text-white font-bold rounded-full shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1 inline-block">
                         Повернутися на головну
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useAppContext } from '../contexts/AppContext';
 import { useCart } from '../contexts/CartContext';
 import { useAuth } from '../contexts/AuthContext';
+import { Link } from '../components/ui/Link';
 import { useChat } from '../contexts/ChatContext';
 
 export const CheckoutView = () => {
@@ -173,8 +174,8 @@ export const CheckoutView = () => {
 
     return (
         <div className="max-w-5xl mx-auto">
-            <div className="py-2 text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
-                <span onClick={() => {setActiveView('shop'); setActiveNav('Напої');}} className="hover:text-primary cursor-pointer transition-colors">Головна</span>
+            <div className="py-2 text-sm text-gray-500 dark:text-gray-400 font-medium mb-6 flex items-center gap-2">
+                <Link view="shop" nav="Напої" className="hover:text-primary cursor-pointer transition-colors inline-block">Головна</Link>
                 <span className="mx-3 text-gray-300 dark:text-gray-600">/</span>
                 <span className="text-dark dark:text-gray-200">Оформлення замовлення</span>
             </div>
@@ -188,7 +189,7 @@ export const CheckoutView = () => {
                         <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
                             <div className="text-6xl mb-4">🛒</div>
                             <p className="mb-6 font-medium">Кошик поки порожній</p>
-                            <button onClick={() => navigateTo('shop', 'Напої')} className="px-6 py-2.5 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-colors">Перейти до покупок</button>
+                            <Link view="shop" nav="Напої" className="px-6 py-2.5 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-colors inline-block text-center">Перейти до покупок</Link>
                         </div>
                     ) : (
                         <>
@@ -370,9 +371,9 @@ export const CheckoutView = () => {
                             <button type="submit" disabled={cart.length === 0 || cartTotal < 350} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 || cartTotal < 350 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
                                 Оформити замовлення
                             </button>
-                            <button type="button" onClick={() => navigateTo('shop', 'Всі')} className="w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors">
+                            <Link view="shop" nav="Всі" className="block w-full mt-3 font-bold py-4 rounded-xl text-gray-500 hover:text-dark dark:hover:text-white transition-colors text-center">
                                 Повернутися до покупок
-                            </button>
+                            </Link>
                         </div>
                     </form>
                 </div>

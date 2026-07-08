@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAppContext } from '../../contexts/AppContext';
 import { promotions } from '../../utils/promotions';
+import { Link } from '../ui/Link';
 
 export const Footer = () => {
     const { navigateTo } = useAppContext();
@@ -33,12 +34,12 @@ export const Footer = () => {
                     <div>
                         <h4 className="font-bold text-white mb-4 uppercase tracking-wider text-sm">Інформація</h4>
                         <ul className="text-sm text-gray-400 space-y-3">
-                            <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 10)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Про нас</a></li>
-                            <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 5)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Доставка та оплата</a></li>
-                            <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 6)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Питання-відповідь</a></li>
-                            <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 7)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Договір публічної оферти</a></li>
-                            <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 8)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Політика конфіденційності</a></li>
-                            <li><a href="#" onClick={(e) => { e.preventDefault(); navigateTo('article', null, null, promotions.find(p => p.id === 9)); window.scrollTo(0, 0); }} className="hover:text-primary transition-colors">Умови повернення</a></li>
+                            <li><Link view="article" article={promotions.find(p => p.id === 10)} className="hover:text-primary transition-colors">Про нас</Link></li>
+                            <li><Link view="article" article={promotions.find(p => p.id === 5)} className="hover:text-primary transition-colors">Доставка та оплата</Link></li>
+                            <li><Link view="article" article={promotions.find(p => p.id === 6)} className="hover:text-primary transition-colors">Питання-відповідь</Link></li>
+                            <li><Link view="article" article={promotions.find(p => p.id === 7)} className="hover:text-primary transition-colors">Договір публічної оферти</Link></li>
+                            <li><Link view="article" article={promotions.find(p => p.id === 8)} className="hover:text-primary transition-colors">Політика конфіденційності</Link></li>
+                            <li><Link view="article" article={promotions.find(p => p.id === 9)} className="hover:text-primary transition-colors">Умови повернення</Link></li>
                         </ul>
                     </div>
                     <div>

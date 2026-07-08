@@ -46,9 +46,9 @@ export const promotions = [
     {
         id: 5,
         title: "Доставка та оплата",
-        image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=800&q=80",
+        image: "/images/banner_delivery.png",
         tag: "ІНФОРМАЦІЯ",
-        content: <DeliveryText />,
+        content: DeliveryText,
         featuredProducts: [],
         btnText: ""
     },
@@ -82,7 +82,7 @@ export const promotions = [
     {
         id: 9,
         title: "Умови повернення",
-        image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80",
+        image: "/images/banner_returns.png",
         tag: "ІНФОРМАЦІЯ",
         content: <ReturnsPage />,
         featuredProducts: [],
@@ -91,7 +91,7 @@ export const promotions = [
     {
         id: 10,
         title: "Про нас",
-        image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+        image: "/images/banner_about.png",
         tag: "ІНФОРМАЦІЯ",
         content: <AboutPage />,
         featuredProducts: [],

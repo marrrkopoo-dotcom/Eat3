@@ -4,8 +4,9 @@ import { useCart } from '../contexts/CartContext';
 import { ProductCard } from '../components/product/ProductCard';
 import { allProducts } from '../utils/data';
 import { promotions } from '../utils/promotions';
+import { Link } from '../components/ui/Link';
 
-const categories = ["Всі", "Акції", "Напої", "Снеки", "Енергетики", "Шоколад"];
+const categories = ["Всі", "Напої", "Снеки", "Енергетики", "Шоколад", "Акції"];
 const itemsPerPage = 20;
 
 export const ShopView = () => {
@@ -65,7 +66,7 @@ export const ShopView = () => {
                                 if (cat !== "Всі" && !isPromo && catCount === 0) return null;
                                 return (
                                     <li key={cat}>
-                                        <button onClick={() => setSelectedCategory(cat)} className={`w-full flex justify-between items-center px-4 py-3 rounded-xl transition-all ${
+                                        <Link view="shop" nav={cat} className={`w-full flex justify-between items-center px-4 py-3 rounded-xl transition-all ${
                                             selectedCategory === cat 
                                                 ? isPromo 
                                                     ? 'bg-red-500/10 dark:bg-red-500/20 text-red-500 font-extrabold shadow-sm'
@@ -86,7 +87,7 @@ export const ShopView = () => {
                                                         ? 'bg-red-100 dark:bg-red-950/50 text-red-500'
                                                         : 'bg-gray-200 dark:bg-gray-700'
                                             }`}>{catCount}</span>
-                                        </button>
+                                        </Link>
                                     </li>
                                 );
                             })}
@@ -147,14 +148,14 @@ export const ShopView = () => {
                     <div className="mb-8 overflow-x-auto pb-4">
                         <div className="flex gap-4 pb-2 w-max">
                             {promotions.filter(promo => !['ІНФОРМАЦІЯ', 'ДОПОМОГА', 'ДОКУМЕНТ', 'ПОВЕРНЕННЯ', 'ПРО НАС'].includes(promo.tag)).map(promo => (
-                                <div key={promo.id} onClick={() => navigateTo('article', activeNav, null, promo)} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all">
+                                <Link key={promo.id} view="article" nav={activeNav} article={promo} className="relative w-64 h-80 rounded-2xl overflow-hidden flex-shrink-0 cursor-pointer group shadow-sm hover:shadow-lg transition-all block">
                                     <img src={promo.image} alt={promo.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                     <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80"></div>
                                     <div className="absolute inset-0 p-5 flex flex-col">
                                         <span className="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md self-start uppercase tracking-wider mb-auto">{promo.tag}</span>
                                         <h4 className="text-white font-extrabold text-lg leading-tight mt-auto drop-shadow-md">{promo.title}</h4>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -179,7 +180,7 @@ export const ShopView = () => {
                             {totalPages > 1 && (
                                 <div className="flex justify-center mt-14">
                                     <div className="flex flex-wrap items-center justify-center gap-2 glass-panel p-2 rounded-2xl shadow-sm">
-                                        <button onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))} disabled={currentPage === 1} className="w-10 h-10 rounded-xl bg-gray-50 dark:bg-darkCard font-bold">&laquo;</button>
+                                        <Link view="shop" nav={activeNav} page={Math.max(1, currentPage - 1)} className={`w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 dark:bg-darkCard font-bold ${currentPage === 1 ? 'opacity-50 pointer-events-none' : ''}`}>&laquo;</Link>
                                         {(() => {
                                             let pages = [];
                                             if (totalPages <= 7) {
@@ -197,11 +198,11 @@ export const ShopView = () => {
                                                 page === '...' ? (
                                                     <span key={`ellipsis-${index}`} className="w-10 h-10 flex items-center justify-center font-bold text-gray-400">...</span>
                                                 ) : (
-                                                    <button key={page} onClick={() => setCurrentPage(page)} className={`w-10 h-10 rounded-xl font-bold transition-all ${currentPage === page ? 'gradient-bg text-white shadow-md scale-105' : 'bg-gray-50 dark:bg-darkCard hover:bg-gray-200 dark:hover:bg-gray-700'}`}>{page}</button>
+                                                    <Link key={page} view="shop" nav={activeNav} page={page} className={`w-10 h-10 flex items-center justify-center rounded-xl font-bold transition-all ${currentPage === page ? 'gradient-bg text-white shadow-md scale-105 pointer-events-none' : 'bg-gray-50 dark:bg-darkCard hover:bg-gray-200 dark:hover:bg-gray-700'}`}>{page}</Link>
                                                 )
                                             );
                                         })()}
-                                        <button onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))} disabled={currentPage === totalPages} className="w-10 h-10 rounded-xl bg-gray-50 dark:bg-darkCard font-bold">&raquo;</button>
+                                        <Link view="shop" nav={activeNav} page={Math.min(totalPages, currentPage + 1)} className={`w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 dark:bg-darkCard font-bold ${currentPage === totalPages ? 'opacity-50 pointer-events-none' : ''}`}>&raquo;</Link>
                                     </div>
                                 </div>
                             )}

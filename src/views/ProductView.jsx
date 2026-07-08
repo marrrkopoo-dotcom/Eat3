@@ -4,6 +4,7 @@ import { useCart } from '../contexts/CartContext';
 import { ProductCard } from '../components/product/ProductCard';
 import { SmartImage } from '../components/ui/SmartImage';
 import { allProducts } from '../utils/data';
+import { Link } from '../components/ui/Link';
 
 export const ProductView = () => {
     const { 
@@ -34,12 +35,12 @@ export const ProductView = () => {
     return (
         <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="py-2 text-sm text-gray-500 dark:text-gray-400 font-medium mb-6 flex items-center gap-2">
-                <span onClick={() => navigateTo('shop', 'Напої')} className="hover:text-primary cursor-pointer transition-colors flex items-center gap-1">
+                <Link view="shop" nav={activeNav || 'Всі'} className="hover:text-primary cursor-pointer transition-colors flex items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                     Назад до каталогу
-                </span>
+                </Link>
                 <span className="mx-2 text-gray-300 dark:text-gray-600">|</span>
-                <span onClick={() => { setSelectedCategory(selectedProduct.category); navigateTo('shop', 'Напої'); }} className="hover:text-primary cursor-pointer transition-colors">{selectedProduct.category}</span>
+                <Link view="shop" nav={selectedProduct.category} className="hover:text-primary cursor-pointer transition-colors">{selectedProduct.category}</Link>
                 <span className="mx-2 text-gray-300 dark:text-gray-600">/</span>
                 <span className="text-dark dark:text-gray-200 line-clamp-1">{selectedProduct.name}</span>
             </div>

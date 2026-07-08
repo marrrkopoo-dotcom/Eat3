@@ -3,6 +3,7 @@ import { useAppContext } from '../contexts/AppContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useCart } from '../contexts/CartContext';
 import { allProducts } from '../utils/data';
+import { Link } from '../components/ui/Link';
 
 export const ProfileView = () => {
     const { navigateTo } = useAppContext();
@@ -21,9 +22,9 @@ export const ProfileView = () => {
     return (
         <div className="max-w-6xl mx-auto py-8 px-4 animate-in slide-in-from-bottom-4 duration-500">
             <div className="flex items-center gap-4 mb-8">
-                <button onClick={() => navigateTo('shop')} className="p-2 bg-white dark:bg-darkCard rounded-full shadow-sm hover:shadow-md transition-all text-dark dark:text-white">
+                <Link view="shop" nav="Всі" className="p-2 bg-white dark:bg-darkCard rounded-full shadow-sm hover:shadow-md transition-all text-dark dark:text-white inline-flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                </button>
+                </Link>
                 <h2 className="text-3xl font-extrabold text-dark dark:text-white">Особистий кабінет</h2>
             </div>
             
@@ -89,7 +90,7 @@ export const ProfileView = () => {
                                 </div>
                                 <h4 className="font-bold text-dark dark:text-white mb-2">У вас ще немає замовлень</h4>
                                 <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Але це ніколи не пізно виправити!</p>
-                                <button onClick={() => navigateTo('shop')} className="px-6 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-colors">Перейти до каталогу</button>
+                                <Link view="shop" nav="Всі" className="px-6 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-colors inline-block text-center">Перейти до каталогу</Link>
                             </div>
                         ) : (
                         <div className="space-y-4">
