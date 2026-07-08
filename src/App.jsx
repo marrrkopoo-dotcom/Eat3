@@ -279,7 +279,7 @@ const promotions = [
         title: "Шалені знижки на Monster Energy 🦖",
         image: "/images/banner_monster_new.jpg", 
         tag: "ГАРЯЧЕ",
-        content: "Вибухова добірка Monster Energy для справжніх фанатів! Monster Ultra White без цукру, тропічний Mango Loco та лімітований The Doctor — заряджайтеся на максимум. Тільки цього тижня діють спеціальні знижені ціни!",
+        content: "Вибухова добірка Monster Energy для справжніх фанатів! Monster Ultra White без цукру, тропічний Mango Loco та лімітований The Doctor - заряджайтеся на максимум. Тільки цього тижня діють спеціальні знижені ціни!",
         featuredProducts: [26, 20, 21, 22],
         btnText: "Всі енергетики"
     },
@@ -334,14 +334,14 @@ const promotions = [
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">2.</span> Навіщо потрібна передоплата і як вона працює?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        Кожне замовлення з екзотичними солодощами ми пакуємо індивідуально та дбайливо. Часткова передоплата (або повна оплата за реквізитами) потрібна на випадок, якщо у вас зміняться плани або не буде можливості забрати посилку з пошти — тоді нам не доведеться оплачувати доставку в обидва боки.
+                        Кожне замовлення з екзотичними солодощами ми пакуємо індивідуально та дбайливо. Часткова передоплата (або повна оплата за реквізитами) потрібна на випадок, якщо у вас зміняться плани або не буде можливості забрати посилку з пошти - тоді нам не доведеться оплачувати доставку в обидва боки.
                     </div>
                 </div>
 
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><span className="text-primary">3.</span> Як швидко доставляється посилка?</h3>
                     <div className="text-gray-600 dark:text-gray-400 pl-6 border-l-2 border-gray-200 dark:border-gray-600 ml-2">
-                        Ми відправляємо ваші замовлення щодня. Зазвичай доставка Новою Поштою по Україні займає всього 1–2 робочих дні (у віддалені населені пункти — до 3–4 днів). Ви завжди можете відстежити актуальний статус доставки у своєму особистому кабінеті на нашому сайті.
+                        Ми відправляємо ваші замовлення щодня. Зазвичай доставка Новою Поштою по Україні займає всього 1-2 робочих дні (у віддалені населені пункти - до 3-4 днів). Ви завжди можете відстежити актуальний статус доставки у своєму особистому кабінеті на нашому сайті.
                     </div>
                 </div>
 
@@ -612,7 +612,7 @@ const promotions = [
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4">Вітаємо у світі Жуйки! 🍬</h3>
                     <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-                        <p><strong>Жуйка</strong> — це не просто черговий інтернет-магазин солодощів. Це ваш персональний телепорт у найсолодші та найекзотичніші куточки планети! Ми знаходимо, привозимо та доставляємо те, чого ви ніколи не знайдете на полицях звичайних супермаркетів.</p>
+                        <p><strong>Жуйка</strong> - це не просто черговий інтернет-магазин солодощів. Це ваш персональний телепорт у найсолодші та найекзотичніші куточки планети! Ми знаходимо, привозимо та доставляємо те, чого ви ніколи не знайдете на полицях звичайних супермаркетів.</p>
                         <p>Наш шлях почався з простої ідеї: перетворити звичайне споживання їжі на захоплюючу пригоду. Ми закохані в незвичайні смаки, лімітовані колекції та яскраві емоції, якими хочемо ділитися з кожним із вас.</p>
                     </div>
                 </div>
@@ -637,7 +637,7 @@ const promotions = [
 
                 <div className="bg-primary/10 border border-primary/20 p-6 rounded-2xl text-gray-800 dark:text-gray-200">
                     <h4 className="font-bold mb-2">Дякуємо, що обираєте нас!</h4>
-                    <p className="text-sm">Жуйка — це про радість, про нові відкриття та про любов до солодкого життя. Замовляйте, куштуйте та діліться своїми враженнями з нами у соціальних мережах!</p>
+                    <p className="text-sm">Жуйка - це про радість, про нові відкриття та про любов до солодкого життя. Замовляйте, куштуйте та діліться своїми враженнями з нами у соціальних мережах!</p>
                 </div>
             </div>
         ),
@@ -2225,7 +2225,7 @@ const App = () => {
                                     <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
                                         {cartTotal < 350 && cart.length > 0 && (
                                             <div className="mb-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300 text-sm font-bold p-4 rounded-xl text-center">
-                                                ⚠️ Мінімальна сума замовлення — 350 грн.
+                                                ⚠️ Мінімальна сума замовлення - 350 грн.
                                             </div>
                                         )}
                                         <button type="submit" disabled={cart.length === 0 || cartTotal < 350} className={`w-full font-bold py-4 rounded-xl shadow-lg transition-all ${cart.length === 0 || cartTotal < 350 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'gradient-bg text-white hover:-translate-y-1'}`}>
