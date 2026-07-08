@@ -18,34 +18,40 @@ export const ProfileView = () => {
     const { setIsChatOpen, setChatMessages } = useChat();
     
     const [expandedOrderId, setExpandedOrderId] = useState(null);
+    const [cancelModalOrderId, setCancelModalOrderId] = useState(null);
 
-    const handleCancelOrder = (orderId) => {
-        if(window.confirm('Ви впевнені, що хочете скасувати це замовлення?')) {
-            const updatedUser = {
-                ...currentUser,
-                orders: currentUser.orders.map(o => o.id === orderId ? {...o, status: 'cancelled'} : o)
-            };
-            setCurrentUser(updatedUser);
-            localStorage.setItem('currentUser', JSON.stringify(updatedUser));
-            const users = JSON.parse(localStorage.getItem('users') || '[]');
-            const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
-            localStorage.setItem('users', JSON.stringify(updatedUsers));
-            
-            const cancelMsg = {
-                 sender: 'user',
-                 text: `Хочу скасувати замовлення №${orderId}`,
-                 timestamp: new Date().toISOString()
-            };
-            const botReply = {
-                 sender: 'support',
-                 senderName: 'Жуйка Бот 🤖',
-                 senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
-                 text: `✅ Замовлення №${orderId} успішно скасовано. Кошти (якщо була оплата карткою) буде повернуто на ваш рахунок найближчим часом.`,
-                 timestamp: new Date().toISOString()
-            };
-            setChatMessages(prev => [...prev, cancelMsg, botReply]);
-            setExpandedOrderId(null);
-        }
+    const handleCancelClick = (orderId) => {
+        setCancelModalOrderId(orderId);
+    };
+
+    const confirmCancelOrder = () => {
+        if(!cancelModalOrderId) return;
+        const orderId = cancelModalOrderId;
+        const updatedUser = {
+            ...currentUser,
+            orders: currentUser.orders.map(o => o.id === orderId ? {...o, status: 'cancelled_by_client'} : o)
+        };
+        setCurrentUser(updatedUser);
+        localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
+        localStorage.setItem('users', JSON.stringify(updatedUsers));
+        
+        const cancelMsg = {
+             sender: 'user',
+             text: `Хочу скасувати замовлення №${orderId}`,
+             timestamp: new Date().toISOString()
+        };
+        const botReply = {
+             sender: 'support',
+             senderName: 'Жуйка Бот 🤖',
+             senderAvatar: 'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=150&h=150&fit=crop',
+             text: `✅ Замовлення №${orderId} успішно скасовано. Кошти (якщо була оплата карткою) буде повернуто на ваш рахунок найближчим часом.`,
+             timestamp: new Date().toISOString()
+        };
+        setChatMessages(prev => [...prev, cancelMsg, botReply]);
+        setExpandedOrderId(null);
+        setCancelModalOrderId(null);
     };
 
     if (!currentUser) return null;
@@ -139,17 +145,18 @@ export const ProfileView = () => {
                                                 }`}>
                                                     {order.status === 'in_transit' ? 'Прямує до вас 🚚' :
                                                      order.status === 'delivered' ? 'Доставлено ✅' :
-                                                     order.status === 'processing' ? 'В обробці ⏳' : 'Скасовано ❌'}
+                                                     order.status === 'processing' ? 'В обробці ⏳' : 
+                                                     order.status === 'cancelled_by_client' ? 'Скасовано клієнтом ❌' : 'Скасовано ❌'}
                                                 </span>
                                             </div>
                                             <div className="pt-2 text-xs text-gray-400">
                                                 Оформлено: {order.date}
                                             </div>
                                             {order.status === 'processing' ? (
-                                                <button onClick={() => handleCancelOrder(order.id)} className="w-full mt-2 py-2.5 bg-red-50 dark:bg-red-900/20 text-red-500 dark:text-red-400 font-bold rounded-xl text-sm hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors">
+                                                <button onClick={() => handleCancelClick(order.id)} className="w-full mt-2 py-2.5 bg-red-50 dark:bg-red-900/20 text-red-500 dark:text-red-400 font-bold rounded-xl text-sm hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors">
                                                     Скасувати замовлення
                                                 </button>
-                                            ) : order.status !== 'cancelled' ? (
+                                            ) : (order.status !== 'cancelled' && order.status !== 'cancelled_by_client') ? (
                                                 <div className="mt-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-xl text-xs text-gray-500 dark:text-gray-400 text-center">
                                                     Замовлення вже підтверджено або відправлено. Для скасування або зміни зверніться у <button onClick={() => setIsChatOpen(true)} className="text-primary font-bold hover:underline">підтримку</button>.
                                                 </div>
@@ -269,6 +276,28 @@ export const ProfileView = () => {
                                     <button onClick={() => { handleEditProfileSave(); setIsEditProfileOpen(false); }} className="flex-1 py-3 gradient-bg text-white font-bold rounded-xl hover:opacity-90 transition-opacity shadow-md">Зберегти</button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Custom Cancel Confirmation Modal */}
+            {cancelModalOrderId && (
+                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-300">
+                    <div className="bg-white dark:bg-darkBg w-full max-w-sm rounded-3xl shadow-2xl overflow-hidden relative p-8 text-center animate-in zoom-in-95 duration-200">
+                        <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </div>
+                        <h2 className="text-2xl font-extrabold text-dark dark:text-white mb-2">Скасувати замовлення?</h2>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Ви впевнені, що хочете скасувати це замовлення? Цю дію неможливо відмінити.</p>
+                        
+                        <div className="flex gap-3">
+                            <button onClick={() => setCancelModalOrderId(null)} className="flex-1 py-3 bg-gray-100 dark:bg-gray-800 text-dark dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                                Ні, залишити
+                            </button>
+                            <button onClick={confirmCancelOrder} className="flex-1 py-3 bg-red-500 text-white font-bold rounded-xl hover:bg-red-600 transition-colors shadow-md shadow-red-500/20">
+                                Так, скасувати
+                            </button>
                         </div>
                     </div>
                 </div>
