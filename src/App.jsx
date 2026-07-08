@@ -249,7 +249,7 @@ allProducts.push(...customProducts);
 const promotions = [
     { 
         id: 1, 
-        title: "Тропічний вибух Chupa Chups 🥭", 
+        title: "Тропічний вибух Chupa Chups", 
         image: "/images/banner_chupachups_new.jpg", 
         tag: "АКЦІЯ",
         content: "Відчуй смак сонячного літа з неймовірною серією газованих напоїв Chupa Chups! Справжні соковиті манго, апельсин та виноград в улюбленому форматі. Спеціальна пропозиція: купуй солодкі напої Chupa Chups за суперціною!",
@@ -258,7 +258,7 @@ const promotions = [
     },
     { 
         id: 3, 
-        title: "Американська класика Dr Pepper та Fanta 🇺🇸", 
+        title: "Американська класика Dr Pepper та Fanta", 
         image: "/images/banner_drpepper_fanta_new.jpg", 
         tag: "ЕКСКЛЮЗИВ",
         content: "Справжні Dr Pepper Strawberries & Cream та класична американська Fanta Orange вже на складі Жуйки! Особливі рецептури з насиченим смаком прямо з США. Зберіть свій унікальний набір улюблених американських напоїв.",
@@ -267,7 +267,7 @@ const promotions = [
     },
     { 
         id: 4, 
-        title: "Азіатський хрускіт: Lay's та міні-краби 🥢", 
+        title: "Азіатський хрускіт: Lay's та міні-краби", 
         image: "/images/banner_asian_new.jpg", 
         tag: "ЕКЗОТИКА",
         content: "Справжній гастрономічний вибух прямо з Азії! Спробуйте унікальні смаки китайських чіпсів Lay's Big Wave (Свиняча грудинка, Смажений краб, Свіжий огірок) та екзотичних сушених міні-крабиків Seafood Spicy Baby Crab. Такого ви більше ніде не спробуєте!",
@@ -276,7 +276,7 @@ const promotions = [
     },
     {
         id: 11,
-        title: "Шалені знижки на Monster Energy 🦖",
+        title: "Шалені знижки на Monster Energy",
         image: "/images/banner_monster_new.jpg", 
         tag: "ГАРЯЧЕ",
         content: "Вибухова добірка Monster Energy для справжніх фанатів! Monster Ultra White без цукру, тропічний Mango Loco та лімітований The Doctor - заряджайтеся на максимум. Тільки цього тижня діють спеціальні знижені ціни!",
@@ -603,7 +603,7 @@ const promotions = [
         content: (
             <div className="space-y-6">
                 <div className="bg-white/60 dark:bg-gray-800/60 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-                    <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4">Вітаємо у світі Жуйки! 🍬</h3>
+                    <h3 className="text-2xl font-black text-gray-900 dark:text-white mb-4">Вітаємо у світі Жуйки!</h3>
                     <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
                         <p><strong>Жуйка</strong> - це не просто черговий інтернет-магазин солодощів. Це ваш персональний телепорт у найсолодші та найекзотичніші куточки планети! Ми знаходимо, привозимо та доставляємо те, чого ви ніколи не знайдете на полицях звичайних супермаркетів.</p>
                         <p>Наш шлях почався з простої ідеї: перетворити звичайне споживання їжі на захоплюючу пригоду. Ми закохані в незвичайні смаки, лімітовані колекції та яскраві емоції, якими хочемо ділитися з кожним із вас.</p>
@@ -1427,12 +1427,12 @@ const App = () => {
             >
                 <div className="flex whitespace-nowrap animate-marquee">
                     <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
-                    <span className="mx-8 flex items-center gap-2">🍬 ЧУПА ЧУПС ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
+                    <span className="mx-8 flex items-center gap-2">🍬 ІМПОРТНІ СОЛОДОЩІ ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
                     <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
                     <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
                     
                     <span className="mx-8 flex items-center gap-2">🔥 СУПЕР АКЦІЯ! ЗНИЖКИ ДО -35% НА 15% ТОВАРІВ!</span>
-                    <span className="mx-8 flex items-center gap-2">🍬 ЧУПА ЧУПС ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
+                    <span className="mx-8 flex items-center gap-2">🍬 ІМПОРТНІ СОЛОДОЩІ ТА ШОКОЛАД ЗА СУПЕРЦІНОЮ!</span>
                     <span className="mx-8 flex items-center gap-2">⚡ ШВИДКА ДОСТАВКА ПО УКРАЇНІ!</span>
                     <span className="mx-8 flex items-center gap-2">🎁 КУПУЙ ВИГІДНО НА JUYKA.COM!</span>
                 </div>
