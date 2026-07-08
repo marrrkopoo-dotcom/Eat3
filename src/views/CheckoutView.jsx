@@ -122,11 +122,11 @@ export const CheckoutView = () => {
             city: city,
             postOffice: postOffice,
             paymentMethod: "Накладений платіж",
-            doNotCall: formData.get('doNotCall') === 'on'
+            doNotCall: formData.has('doNotCall')
         });
 
         const orderItemsText = cart.map(item => `• ${item.name} x${item.quantity} (${item.price} грн)`).join('\n');
-        const doNotCallText = formData.get('doNotCall') === 'on' ? '❌ Не телефонувати' : '📞 Зателефонувати для підтвердження';
+        const doNotCallText = formData.has('doNotCall') ? '❌ Не телефонувати' : '📞 Зателефонувати для підтвердження';
         const orderMessageText = `📦 Нове замовлення #${newOrderId} успішно оформлено!\n\n` +
             `👤 Одержувач: ${name}\n` +
             `📞 Телефон: ${fullPhone}\n` +
@@ -151,7 +151,7 @@ export const CheckoutView = () => {
             customerPhone: fullPhone,
             city: city,
             postOffice: postOffice,
-            doNotCall: formData.get('doNotCall') === 'on',
+            doNotCall: formData.has('doNotCall'),
             items: cart.map(item => ({
                 name: item.name,
                 quantity: item.quantity,
