@@ -36,7 +36,9 @@ export const ArticleView = () => {
                 </div>
             ) : (
                 <div className="mb-8 px-2">
-                    <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider mb-3 inline-block">{activeArticle.tag}</span>
+                    {!['ІНФОРМАЦІЯ', 'ДОКУМЕНТ'].includes(activeArticle.tag) && (
+                        <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider mb-3 inline-block">{activeArticle.tag}</span>
+                    )}
                     <h1 className="text-3xl sm:text-5xl font-black text-dark dark:text-white leading-tight">{activeArticle.title}</h1>
                 </div>
             )}

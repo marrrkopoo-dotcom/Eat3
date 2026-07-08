@@ -182,7 +182,7 @@ export const CheckoutView = () => {
             
             <div className="bg-white dark:bg-darkBg rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-100 dark:border-gray-800">
                 {/* Order Summary */}
-                <div className="w-full md:w-5/12 bg-gray-50 dark:bg-darkCard p-6 sm:p-8 border-r border-gray-100 dark:border-gray-800 flex flex-col h-full min-h-[500px]">
+                <div className="w-full md:w-5/12 bg-gray-50 dark:bg-darkCard p-6 sm:p-8 border-r border-gray-100 dark:border-gray-800 flex flex-col min-h-[500px]">
                     <h2 className="text-2xl font-black text-dark dark:text-white mb-6">Ваш кошик</h2>
                     
                     {cart.length === 0 ? (
