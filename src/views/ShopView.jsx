@@ -26,9 +26,10 @@ export const ShopView = () => {
 
     const {
         addToCart,
-        selectedCity,
-        isSelectingCity,
-        isCityConfirmed, setIsCityConfirmed
+        selectedCity, setSelectedCity,
+        isSelectingCity, setIsSelectingCity,
+        isCityConfirmed, setIsCityConfirmed,
+        availableCities
     } = useCart();
 
     const handleSelectProduct = (product) => {
