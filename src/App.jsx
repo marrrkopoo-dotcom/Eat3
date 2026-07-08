@@ -24,7 +24,7 @@ const AppContent = () => {
         <div className="min-h-screen flex flex-col transition-colors duration-300 relative bg-gray-50/50 dark:bg-darkBg">
             <Header />
 
-            <main className="flex-1 container mx-auto px-4 py-8 relative z-10">
+            <main className="flex-1 container mx-auto px-4 py-8 relative z-20">
                 {activeView === 'shop' && <ShopView />}
                 {activeView === 'article' && <ArticleView />}
                 {activeView === 'product' && <ProductView />}
