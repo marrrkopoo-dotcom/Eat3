@@ -208,22 +208,28 @@ function parseOrderUpdate(text) {
     let city = null;
     let postOffice = null;
     
+    const isPlaceholder = (val) => val.startsWith('[') && val.endsWith(']');
+    
     for (let line of lines) {
         const lower = line.toLowerCase().trim();
+        const colonIdx = line.indexOf(':');
+        if (colonIdx === -1) continue;
+        
+        const val = line.substring(colonIdx + 1).trim();
+        
         if (lower.startsWith('замовлення:')) {
-            orderId = line.substring('замовлення:'.length).trim();
+            orderId = val;
         } else if (lower.startsWith('ім\'я:') || lower.startsWith('ім’я:') || lower.startsWith('имя:')) {
-            name = line.substring(line.indexOf(':') + 1).trim();
+            if (!isPlaceholder(val) && val !== '') name = val;
         } else if (lower.startsWith('телефон:')) {
-            phone = line.substring('телефон:'.length).trim();
+            if (!isPlaceholder(val) && val !== '') phone = val;
         } else if (lower.startsWith('місто:') || lower.startsWith('город:')) {
-            city = line.substring('місто:'.length).trim();
+            if (!isPlaceholder(val) && val !== '') city = val;
         } else if (lower.startsWith('пошта:') || lower.startsWith('почта:')) {
-            postOffice = line.substring('пошта:'.length).trim();
+            if (!isPlaceholder(val) && val !== '') postOffice = val;
         }
     }
     
-    // We only need the orderId and at least one field to update
     if (orderId && (name || phone || city || postOffice)) {
         return { orderId, name, phone, city, postOffice };
     }
