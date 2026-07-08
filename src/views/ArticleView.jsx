@@ -24,10 +24,22 @@ export const ArticleView = () => {
                 Повернутися до магазину
             </Link>
             
-            <div className="mb-8 px-2">
-                <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider mb-3 inline-block">{activeArticle.tag}</span>
-                <h1 className="text-3xl sm:text-5xl font-black text-dark dark:text-white leading-tight">{activeArticle.title}</h1>
-            </div>
+            {activeArticle.featuredProducts && activeArticle.featuredProducts.length > 0 ? (
+                <div className="rounded-3xl overflow-hidden mb-8 shadow-md relative h-80 sm:h-96">
+                    <img src={activeArticle.image} alt={activeArticle.title} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                        <div className="p-8">
+                            <span className="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider mb-3 inline-block">{activeArticle.tag}</span>
+                            <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">{activeArticle.title}</h1>
+                        </div>
+                    </div>
+                </div>
+            ) : (
+                <div className="mb-8 px-2">
+                    <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider mb-3 inline-block">{activeArticle.tag}</span>
+                    <h1 className="text-3xl sm:text-5xl font-black text-dark dark:text-white leading-tight">{activeArticle.title}</h1>
+                </div>
+            )}
 
             <div className="glass-panel p-8 sm:p-10 rounded-3xl mb-12 text-lg text-gray-700 dark:text-gray-300 leading-relaxed shadow-sm">
                 {typeof activeArticle.content === 'string' ? (

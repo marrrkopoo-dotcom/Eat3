@@ -37,7 +37,7 @@ export const Header = () => {
                         <Link view="article" article={5} className="hover:text-white/80 transition-colors">Доставка та оплата</Link>
                         <Link view="article" article={9} className="hover:text-white/80 transition-colors">Умови повернення</Link>
                     </div>
-                    <div className="w-1/2 overflow-hidden flex items-center">
+                    <div className="w-1/2 overflow-hidden flex items-center" style={{ maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)' }}>
                         <div className="whitespace-nowrap animate-marquee flex gap-8 w-full font-bold">
                             <span>🔥 Знижка 20% на всі американські напої за промокодом USA20</span>
                             <span>✨ Безкоштовна доставка Новою Поштою при замовленні від 2000 грн</span>
