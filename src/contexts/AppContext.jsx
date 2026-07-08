@@ -51,12 +51,27 @@ export const AppProvider = ({ children }) => {
         return savedId ? allProducts.find(p => p.id === parseInt(savedId)) || null : null;
     });
 
-    const navigateTo = (view, navItem = 'Всі') => {
+    const navigateTo = (view, navItem = 'Всі', product = null, article = null) => {
         if (view === 'shop') {
             setActiveNav(navItem);
             setSelectedCategory(navItem);
         }
+        if (product) {
+            setSelectedProduct(product);
+            localStorage.setItem('selectedProductId', product.id);
+        }
+        if (article) {
+            setActiveArticle(article);
+            localStorage.setItem('activeArticleId', article.id);
+        }
         setActiveView(view);
+        
+        let hash = `#view=${view}`;
+        if (navItem && view === 'shop') hash += `&nav=${encodeURIComponent(navItem)}`;
+        if (product) hash += `&product=${product.id}`;
+        if (article) hash += `&article=${article.id}`;
+        
+        window.history.pushState(null, '', hash);
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
